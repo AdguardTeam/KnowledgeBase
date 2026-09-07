@@ -3,15 +3,9 @@ title: Extensões
 sidebar_position: 7
 ---
 
-:::info
-
-Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
-
-:::
-
 O AdGuard pode estender a funcionalidade do site atuando como um [gerenciador de userscript](/general/extensions.md). Isso permite que você adicione seus próprios scripts, assim como gerencie os existentes.
 
-![Extensões](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
 ## Detectar automaticamente scripts de usuário
 
@@ -26,9 +20,9 @@ O AdGuard vem com quatro scripts de usuário pré-instalados:
 - Bloqueador de pop-ups do AdGuard
 - Web of Trust
 
-### AdGuard Assistant (Beta)
+### Assistente AdGuard (Beta)
 
-O Assistente do navegador é a versão legada do Assistente, que você pode usar se o [novo Assistente](/archive/adguard-for-windows/browser-assistant.md) não estiver disponível para o seu navegador. Como o nome sugere, ele ajuda você a gerenciar as configurações básicas do AdGuard diretamente do seu navegador, sem precisar abrir o aplicativo.
+AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. Como o nome sugere, ele ajuda você a gerenciar as configurações básicas do AdGuard diretamente do seu navegador, sem precisar abrir o aplicativo.
 
 O AdGuard Assistant funciona com todos os navegadores compatíveis com o Microsoft Windows. Não aparecerá em sites excluídos da filtragem ou em determinadas páginas onde possa causar problemas de exibição.
 
@@ -44,7 +38,7 @@ Esta extensão para janelas pop-up indesejadas de abrirem enquanto você navega.
 
 Esta extensão não funciona nos sites permitidos.
 
-### Web of Trust (Beta)
+### Web of Trust
 
 O Web of Trust permite que você veja a reputação dos sites com base nas avaliações dos usuários. Os sites são avaliados de acordo com vários critérios, incluindo confiança e segurança.
 

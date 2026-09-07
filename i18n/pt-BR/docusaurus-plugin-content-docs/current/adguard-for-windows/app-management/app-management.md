@@ -3,12 +3,6 @@ title: Gerenciamento de aplicativos
 sidebar_position: 1
 ---
 
-:::info
-
-Este artigo descreve o AdGuard para Windows v8.0, um bloqueador de anúncios completo que protege seu dispositivo em nível de sistema. Esta é uma versão beta que ainda está em desenvolvimento. Para experimentá-lo, baixe a [versão beta do AdGuard para Windows](https://agrd.io/windows_beta).
-
-:::
-
 Na seção _Gerenciamento de apps_, você pode gerenciar as configurações de roteamento e filtragem para todos os apps instalados no seu dispositivo.
 
 Uma vez que o AdGuard detecta que um aplicativo está online, ele é automaticamente adicionado ao _Gerenciamento de aplicativos_, e seu tráfego é roteado através do AdGuard.
@@ -21,7 +15,7 @@ Quando o roteamento e a filtragem estão ativados para um aplicativo, os ícones
 
 Você pode deixar as configurações como estão, desativar tanto a filtragem quanto o roteamento, ou ajustá-los manualmente para cada aplicativo. Você também pode acessar as estatísticas do aplicativo.
 
-![Estatísticas do aplicativo](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Como funcionam a filtragem e o roteamento de aplicativos no AdGuard para Windows v8.0
 

@@ -63,7 +63,7 @@ Eroarea sună mai înfricoșător decât este de fapt. În realitate, aceasta es
 
 - Alegeți un folder de instalare diferit. Este posibil ca folderul de instalare actual să aibă unele restricții de acces. De asemenea, asigurați-vă că nu selectați un disc extern, un disc virtual etc.
 
-- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
@@ -99,7 +99,7 @@ Este foarte probabil să fi instalat deja AdGuard înainte.
 
 - Verificați dacă AdGuard este deja instalat pe computerul dumneavoastră. Puteți face acest lucru apăsând tasta *Win* și tastând ***AdGuard***.
 
-- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 ### Alte erori {#other}
 

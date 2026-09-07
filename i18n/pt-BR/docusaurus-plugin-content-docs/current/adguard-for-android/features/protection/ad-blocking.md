@@ -9,10 +9,10 @@ Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifunci
 
 :::
 
-![Ad blocking \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
+![Bloqueio de anúncios \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+O módulo de bloqueio de anúncios pode ser acessado tocando na guia _Proteção_ (segundo ícone à esquerda na parte inferior da tela) e selecionando _Bloqueio de anúncios_.
 
-The feature removes ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+A proteção básica bloqueia efetivamente anúncios na maioria dos sites. Para saber mais sobre o mecanismo de bloqueio de anúncios, você pode ler um [artigo dedicado](/general/ad-filtering/how-ad-blocking-works).
 
-_Basic protection_ effectively blocks ads on most websites. For more customized ad blocking, you can enable _Language-specific ad blocking_ — it contains filtering rules for websites in specific languages.
+A _proteção básica_ bloqueia anúncios de forma eficaz na maioria dos sites. Para um bloqueio de anúncios mais personalizado, você pode ativar o _bloqueio de anúncios específico por idioma_ — ele contém regras de filtragem para sites em idiomas específicos.

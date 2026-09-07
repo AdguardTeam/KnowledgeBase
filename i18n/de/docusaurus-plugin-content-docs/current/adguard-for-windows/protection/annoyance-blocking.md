@@ -1,19 +1,13 @@
 ---
-title: Blockieren von Belästigungen
+title: Belästigungsblockierung
 sidebar_position: 3
 ---
-
-:::info
-
-Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Dies ist eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
-
-:::
 
 Belästigungsfilter wurden entwickelt, um die Benutzerfreundlichkeit von Websites zu verbessern, indem sie Elemente blockieren, die keine Werbung sind und die Interaktion mit der Website oder die Nutzung von Inhalten stören oder beeinträchtigen. Zu diesen Elementen gehören modale Fenster, interaktive Formulare, Benachrichtigungen und Anfragen zur Cookie-Zustimmung, Banner für mobile Apps und verschiedene Widgets.
 
 Diese Filter können Regeln enthalten, die nicht für alle geeignet sind. Manchmal ist es empfehlenswert, sie zu deaktivieren. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Entwicklern des Filters auf der Grundlage der einzelnen Regeln getroffen.
 
-![Belästigungsfilter](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Annoyance filters \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
 **Cookies-Hinweise blockieren** entfernt Cookie-Einwilligungsbanner von Websites.
 

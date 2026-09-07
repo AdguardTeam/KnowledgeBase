@@ -13,7 +13,7 @@ A guia _Proteção_ inclui os seguintes recursos ou configurações. Você encon
 
 - [Bloqueio de anúncios](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  Configurações para bloquear anúncios em navegadores e aplicativos
 
 - [Proteção contra rastreamento](/adguard-for-android/features/protection/tracking-protection.md)
 

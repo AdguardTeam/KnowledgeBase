@@ -63,7 +63,7 @@ sidebar_position: 6
 
 - 选择不同的安装文件夹。 当前安装文件夹可能有一些访问限制。 用户还要确保没有选择外部驱动器、虚拟驱动器等。
 
-- 使用我们的专用[卸载工具](/archive/adguard-for-windows/installation#advanced)卸载 AdGuard，然后重复安装。
+- Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 - 启动并重新注册 Microsoft Installer 服务。 请执行以下操作：
 
@@ -99,7 +99,7 @@ sidebar_position: 6
 
 - 检查 AdGuard 是否已安装在计算机上。 您可以通过按「*Win*」键并输入 ***AdGuard*** 来完成。
 
-- 也许有一些以前安装 AdGuard 时遗留下来的文件。 使用我们的专用[卸载工具](/archive/adguard-for-windows/installation#advanced)卸载 AdGuard，然后重复安装。
+- 也许有一些以前安装 AdGuard 时遗留下来的文件。 Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 ### 其他错误 {#other}
 

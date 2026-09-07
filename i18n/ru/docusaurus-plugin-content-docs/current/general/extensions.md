@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note Поддерживаемые приложения
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Вы можете добавлять собственные скрипты или управлять существующими в наших трёх продуктах: [AdGuard для Windows](/adguard-for-windows/protection/extensions), [AdGuard для Android](/adguard-for-android/features/settings#userscripts) и [AdGuard для Mac](/adguard-for-mac/features/extensions).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -75,7 +75,7 @@ SponsorBlock пропускает спонсорские сегменты в в�
 
 #### tinyShield
 
-Пользовательский скрипт для тех, кто посещает корейские и некоторые международные сайты. Скрипт блокирует рекламу Ad-Shield и программы, обходящие блокировщики рекламы. Этот пользовательский скрипт можно установить с помощью приложений AdGuard на основе CoreLibs, а также с помощью Violentmonkey, Tampermonkey и [quoid/userscripts](https://github.com/quoid/userscripts). [На GitHub](https://github.com/List-KR/tinyShield) есть подробности об этом пользовательском скрипте и о том, как его установить.
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### Где взять больше пользовательских скриптов{#more-userscripts}
 
@@ -95,25 +95,29 @@ SponsorBlock пропускает спонсорские сегменты в в�
 
 [OpenUserJS.org](https://openuserjs.org/) — каталог пользовательских скриптов с открытым кодом, разработанный с использованием Node.js. Он не модерируется, поэтому проверяйте скрипты внимательно.
 
-#### Сообщество
+#### NamuLink
 
-Если вы хотите персонализировать браузер при помощи пользовательских скриптов и у вас есть вопросы на эту тему, задать их можно на любом из этих сайтов:
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### Разработка
+### Development
 
-#### Запросить лицензию
+#### Request license
 
-Если вы разрабатываете собственный пользовательский скрипт и хотите протестировать, как он работает с AdGuard, вы можете запросить лицензию, заполнив [форму](https://surveys.adguard.com/ru/for_developers_request/form.html).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Совместимость
+#### Compatibility
 
-##### Блок метаданных
+##### Metadata block
 
-###### Поддерживаемые свойства
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ SponsorBlock пропускает спонсорские сегменты в в�
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### Неподдерживаемые свойства
+###### Unsupported properties
 
-AdGuard проигнорирует эти свойства.
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### Поддерживаемые функции GM
+##### Supported GM functions
 
-AdGuard поддерживает как старые функции GM\_, так и новый GM4 API, использующий объект GM.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-Все перечисленные функции Greasemonkey устарели, но всё ещё поддерживаются.
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -167,7 +171,7 @@ AdGuard поддерживает как старые функции GM\_, так
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 - [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
-Подробную информацию об API Greasemonkey можно найти в [руководстве](https://wiki.greasespot.net/Greasemonkey_Manual:API).
+You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
 #### Пример
 
@@ -202,6 +206,7 @@ AdGuard поддерживает как старые функции GM\_, так
 // @grant           GM_openInTab
 // @grant           GM_registerMenuCommand
 // @grant           GM_addElement
+// @grant           window.onurlchange
 // @run-at          document-start
 // ==/UserScript==
 !function(){(
@@ -211,32 +216,32 @@ AdGuard поддерживает как старые функции GM\_, так
 
 #### Trusted Types API
 
-AdGuard предоставляет экземпляр класса `PolicyApi`, который позволяет управлять Trusted Types в ваших пользовательских скриптах.
+AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
-Вы можете получить доступ к экземпляру этого класса, используя переменную `ADG_policyApi` в пользовательском скрипте.
+You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### Свойства
+##### Properties
 
-- `name: string` — название политики (по умолчанию `AGPolicy`).
-- `isSupported: boolean` — флаг, указывающий, поддерживается ли API Trusted Types текущим браузером.
+- `name: string` — a name of the policy (Default is `"AGPolicy"`).
+- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
 
-##### Методы с полифилом
+##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Если не поддерживается, возвращает `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Если не поддерживается, возвращает `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Если не поддерживается, возвращает `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Если не поддерживается, возвращает `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Если не поддерживается, возвращает `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Если не поддерживается, возвращает `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Если не поддерживается, возвращает `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Если не поддерживается, возвращает `false`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
-##### Дополнительные типы
+##### Additional Types
 
 ```typescript
 /**
- * Перечисление, представляющее возвращаемые значения методов `getAttributeType` и
- * `getPropertyType` нативного API Trusted Types.
+ * Enum representation of the return values of the `getAttributeType` and
+ * `getPropertyType` methods of the native Trusted Types API.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType}
@@ -247,12 +252,12 @@ enum TrustedType {
     ScriptURL = 'TrustedScriptURL',
 }
 
-// Вы можете получить доступ к нему следующим образом внутри пользовательского скрипта
+// You can access it like that inside of userscript
 ADG_TrustedType.HTML // "TrustedHTML"
 
 /**
- * Изоморфный тип доверенного значения. Если браузер поддерживает API Trusted Types, это будет один из перечисленных Trusted Types
- * (`TrustedHTML`, `TrustedScript` или `TrustedScriptURL`); в противном случае это будет обычная строка `string`.
+ * Isomorphic trusted value type. If a browser supports the Trusted Types API, it will be one of the enum Trusted Types
+ * (`TrustedHTML`, `TrustedScript` or `TrustedScriptURL`); otherwise, it will be regular `string`.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript}
@@ -261,20 +266,20 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### Дополнительные методы
+##### Additional methods
 
 ```typescript
 /**
- * Создаёт доверенный тип в зависимости от `type`:
+ * Creates a Trusted Type depending on `type`:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - или возвращает `value`, если ни один из них не подходит.
+ * - or returns `value` if none of them is applicable.
  *
- * @param type          Доверенный тип.
- * @param value         Значение, из которого создаётся доверенный тип.
- * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
- * @returns             Созданное значение.
+ * @param type          Trusted Type.
+ * @param value         Value from which a Trusted Type is created.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Created value.
  */
 function create(
     type: TrustedType,
@@ -283,23 +288,23 @@ function create(
 ): TrustedValue
 
 
-// Пример: Создаёт TrustedHTML
+// Example: Creates TrustedHTML
 const trustedHTML = ADG_policyApi.create(ADG_TrustedType.HTML, '<div></div>');
 
 /**
- * Конвертирует `value` атрибута `attribute` в один из доверенных типов:
+ * Converts `value` of `attribute` into one of the Trusted Types:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - или возвращает `value`, если ни один из них не подходит.
+ * - or returns `value` if none of them is applicable.
  *
- * @param tagName       Имя HTML-тега.
- * @param attribute     Атрибут.
- * @param value         Значение атрибута для конвертирования.
- * @param elementNS     Пространство имён элемента. Если не указано, по умолчанию используется пространство имён HTML.
- * @param attrNS        Пространство имён атрибута. Если не указано, по умолчанию null.
- * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
- * @returns             Конвертированное значение.
+ * @param tagName       Name of an HTML tag.
+ * @param attribute     Attribute.
+ * @param value         Value of an attribute to be converted.
+ * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
+ * @param attrNS        Attribute namespace. If empty, defaults to null.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Converted value.
  */
 function convertAttributeToTrusted(
     tagName: string,
@@ -310,23 +315,23 @@ function convertAttributeToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Пример: Конвертирует в TrustedScriptURL
+// Example: Converts to TrustedScriptURL
 const trustedScriptURL = ADG_policyApi.convertAttributeToTrusted("script", "src", 'SOME_URL');
 scriptElement.setAttribute("src", trustedScriptURL);
 
 /**
- * Конвертирует `value` свойства `property` в один из доверенных типов:
+ * Converts `value` of `property` into one of the Trusted Types:
  * - `TrustedHTML`
  * - `TrustedScript`
  * - `TrustedScriptURL`
- * - или возвращает `value`, если ни один из них не подходит.
+ * - or returns `value` if none of them is applicable.
  *
- * @param tagName       Имя HTML-тега.
- * @param property      Свойство.
- * @param value         Значение свойства для конвертирования.
- * @param elementNS     Пространство имён элемента. Если не указано, по умолчанию используется пространство имён HTML.
- * @param createArgs    Дополнительные аргументы, передаваемые в функцию, представленную `TrustedTypePolicy`.
- * @returns             Конвертированное значение.
+ * @param tagName       Name of an HTML tag.
+ * @param property      Property.
+ * @param value         Value of a property to be converted.
+ * @param elementNS     Element namespace. If empty, defaults to the HTML namespace.
+ * @param createArgs    Additional arguments to be passed to the function represented by `TrustedTypePolicy`.
+ * @returns             Converted value.
  */
 function convertPropertyToTrusted(
     tagName: string,
@@ -336,21 +341,21 @@ function convertPropertyToTrusted(
     ...createArgs: unknown[]
 ): TrustedValue
 
-// Пример: Конвертирует в TrustedHTML
+// Example: Converts to TrustedHTML
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
-#### Взаимодействие со SPA-сайтами
+#### Matching SPA sites
 
-:::info Совместимость
+:::info Compatibility
 
-Этот раздел относится только к AdGuard для Windows, AdGuard для Mac, AdGuard для Android и AdGuard для Linux с [CoreLibs] версии 1.19 или более поздней.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
 :::
 
-Многие современные сайты, такие как YouTube, используют возможности [одностраничных приложений (Single Page Application, SPA)](https://en.wikipedia.org/wiki/Single-page_application). В отличие от традиционных веб-приложений, такая страница не перезагружается при переходе между страницами. Вместо этого содержимое обновляется динамически с помощью JavaScript, что обеспечивает более плавное взаимодействие с пользователем.
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
-На подобных сайтах пользовательскитй скрипт запускается только один раз, когда директивы `@match` или `@include` совпадают (если только не совпала директива `@exclude`). Из-за особенностей одностраничных приложений (SPA) скрипт не может быть повторно вызван при последующих изменениях страницы, так как глобальный контекст JavaScript остаётся неизменным. Чтобы решить эту проблему, пользовательские скрипты могут использовать директиву `@grant window.onurlchange`.
+On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is matched). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
 ```javascript
 // ==UserScript==
@@ -373,26 +378,26 @@ window.addEventListener('urlchange', (event) => {
 });
 ```
 
-Это позволит пользовательским скриптам отслеживать изменения URL и соответствующим образом их обрабатывать.
+This will allow userscripts to listen for URL changes and handle them accordingly.
 
 :::note
 
-Событие `urlchange` срабатывает только при полном изменении URL, например, при изменении пути или запроса, но не при изменении фрагмента (хеша).
-Примеры:
+The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
+Examples:
 
-- Переход с `https://example.com/page1` на `https://example.com/page2` вызовет событие.
-- Переход с `https://example.com/page1?query=1` на `https://example.com/page1?query=2` вызовет событие.
-- Переход с `https://example.com/page1#section1` на `https://example.com/page1#section2` **НЕ** вызовет событие.
+- Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
+- Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
+- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will **NOT** trigger the event.
 
 :::
 
 :::note
 
-API `window.onurlchange` и `window.addEventListener(\'urlchange\', ...)` являются нестандартными. Чтобы использовать их, вы должны явно предоставить разрешение в вашем польщовательском скрипте с помощью `@grant window.onurlchange`.
+The `window.onurlchange` and `window.addEventListener('urlchange', ...)` APIs are non-standard. To use them, you must explicitly grant them in your userscript with `@grant window.onurlchange`.
 
 :::
 
-Если сайт использует хеш-маршрутизацию, пользовательские скрипты могут использовать нативное DOM-событие [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
+If a website uses hash routing, userscripts can use the native DOM [`hashchange` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
 
 ```javascript
 // ==UserScript==
@@ -414,47 +419,47 @@ window.addEventListener('hashchange', (event) => {
 });
 ```
 
-## Пользовательские стили
+## Userstyles
 
-Пользовательские стили позволяют изменять внешний вид популярных сайтов.
+Userstyles allow users to change the appearance of popular websites.
 
-В AdGuard есть возможность загружать или создавать собственные пользовательские стили. Это продвинутая функция, поэтому вам понадобятся некоторые знания HTML и CSS.
+AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
 
 :::info Поддерживаемые приложения
 
-Сейчас создавать и управлять пользовательскими стилями можно в двух приложениях AdGuard: AdGuard для Windows (версии 7.19 или выше) и AdGuard для Mac (версии 2.16 или выше). Мы также планируем добавить эту функцию в AdGuard 4.8 для Android в ближайшем будущем.
+Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 
 This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
-### Как настроить пользовательский стиль в AdGuard
+### How to set up a userstyle in AdGuard
 
-Вы можете скачивать пользовательские стили с разных сайтов. Один из самых популярных сайтов — [https://userstyles.world/](https://userstyles.world/explore). Возьмём его в качестве примера.
+You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
 
-1. Перейдите по ссылке выше и выберите пользовательский стиль, который вам нравится
+1. Follow the link above and choose the userstyle you like
 
-2. Нажмите _Copy_ (Копировать) рядом с URL-адресом стиля
+2. Click _Copy_ next to the userstyle address
 
-3. Откройте настройки AdGuard → _Расширения_
+3. Open AdGuard settings → _Extensions_
 
-4. Нажмите на кнопку [+] и вставьте ссылку на пользовательский стиль
+4. Press the [+] button and paste the userstyle link
 
 5. Готово!
 
-Если вы знакомы с правилами CSS, вы также можете создавать пользовательские стили самостоятельно.
+If you’re familiar with CSS rules, you can also create userstyles yourself.
 
 :::note
 
-Мы не поддерживаем пользовательские стили, которые содержат `@var` или `@advanced` в метаданных. AdGuard также не поддерживает `@preprocessor` без значения `default`.
+We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
 
 :::
 
-1. Откройте настройки AdGuard → _Расширения_
+1. Open AdGuard settings → _Extensions_
 
-2. Нажмите на кнопку [+] и выберите опцию _Создать стиль_. Откроется новое окно
+2. Press the [+] button and choose the _Create userstyle_ option. A new window will appear on your screen
 
-3. Чтобы создать пользовательский стиль, сначала напишите заголовок с метаданными, например:
+3. To create a userstyle, first write the title with metadata, for example
 
    ```CSS
    /* ==UserStyle==
@@ -463,7 +468,7 @@ This is an experimental feature, so if you encounter any problems while adding o
    ==/UserStyle== */
    ```
 
-4. После метаданных добавьте сам пользовательский стиль на основе CSS. AdGuard поддерживает доменные имена, соответствующие (`@-moz-document domain(…), …`). Например:
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). Например:
 
    ```CSS
    body {
@@ -471,7 +476,7 @@ This is an experimental feature, so if you encounter any problems while adding o
      }
    ```
 
-   Или:
+   Or:
 
    ```CSS
    @-moz-document domain('example.org'),
@@ -481,7 +486,7 @@ This is an experimental feature, so if you encounter any problems while adding o
      }
    ```
 
-5. Когда закончите, нажмите _Сохранить и закрыть_. Готово, пользовательский стиль добавлен в AdGuard
+5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
 ### Пример
 

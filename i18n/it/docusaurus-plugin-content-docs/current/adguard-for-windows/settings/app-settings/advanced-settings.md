@@ -3,12 +3,6 @@ title: Impostazioni avanzate
 sidebar_position: 4
 ---
 
-:::info
-
-Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
-
-:::
-
 La sezione _Impostazioni avanzate_ contiene opzioni che vanno oltre ciò di cui la maggior parte degli utenti ha generalmente bisogno. AdGuard per Windows funziona perfettamente sin dall'inizio, ma queste impostazioni possono essere utili in casi particolari o per la risoluzione dei problemi.
 
 :::caution

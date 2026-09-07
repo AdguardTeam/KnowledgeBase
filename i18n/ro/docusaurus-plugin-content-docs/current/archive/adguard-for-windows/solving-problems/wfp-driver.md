@@ -13,8 +13,8 @@ Pentru a filtra traficul de rețea, AdGuard folosește un driver de rețea. Exis
 
 Dacă întâlniți o problemă de care suspectați că ar putea fi cauzată de aceasta, puteți comuta întotdeauna la driverul de rețea TDI, mai vechi, dar mai stabil. Pentru a face acest lucru:
 
-1. Mergi la *Setări → Rețea*.
+1. Go to _Settings → Network_.
 
 2. Dezactivați driverul WFP așa cum este arătat în această imagine:
 
-![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

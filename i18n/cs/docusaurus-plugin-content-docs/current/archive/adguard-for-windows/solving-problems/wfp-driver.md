@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,8 +13,8 @@ K filtrování síťového provozu používá AdGuard síťový ovladač. Existu
 
 Pokud narazíte na problém, u kterého máte podezření, že by mohl být způsoben tímto problémem, můžete vždy přejít na starší, ale stabilnější síťový ovladač TDI. K tomu je třeba:
 
-1. Přejděte do *Nastavení → Síť*.
+1. Go to _Settings → Network_.
 
 2. Deaktivujte ovladač WFP, jak je to zobrazeno na tomto obrázku:
 
-![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

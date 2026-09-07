@@ -35,7 +35,7 @@ Um die Wiedereinblendung einer Werbung oder die fehlerhafte Anzeige einer Websit
 
 ### Windows {#windows}
 
-- Öffnen Sie den [AdGuard Browser-Assistenten](/archive/adguard-for-windows/browser-assistant) und klicken Sie auf **Problem melden**:
+- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

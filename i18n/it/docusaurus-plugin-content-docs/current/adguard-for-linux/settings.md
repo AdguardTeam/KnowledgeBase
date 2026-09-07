@@ -263,7 +263,7 @@ To view the current `outbound_proxy` configuration, enter:
 adguard-cli config show outbound_proxy
 ```
 
-:::info Compatibilità
+:::info Compatibility
 
 Configuring `outbound_proxy` via URL is available starting from AdGuard for Linux v1.1.26 nightly and v1.1 stable release.
 
@@ -340,7 +340,7 @@ adguard-cli install-browser-integration --uninstall
 2. Sotto il nome del tuo browser, seleziona _Installa_.
 3. Installa l'Assistant dallo store delle estensioni del tuo browser.
 
-:::info Compatibilità
+:::info Compatibility
 
 Support for AdGuard Browser Assistant is available starting from AdGuard for Linux v1.4.
 

@@ -1,51 +1,45 @@
 ---
-title: Extensions
+title: Udvidelser
 sidebar_position: 7
 ---
 
-:::info
+AdGuard kan udvide webstedsfunktionaliteten ved at fungere som en [userscript-håndtering](/general/extensions.md). Dette muliggør at tilføje egne scripts samt håndtere eksisterende.
 
-This article describes AdGuard for Windows v8.0, a comprehensive ad blocker that protects your device at the system level. This is a beta release that is still under development. To try it, download the [beta version of AdGuard for Windows](https://agrd.io/windows_beta).
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
-:::
+## Detektér automatisk userscripts
 
-AdGuard can extend website functionality by acting as a [userscript manager](/general/extensions.md). This allows you to add your own scripts as well as manage existing ones.
+Når denne indstilling er slået til, detekterer AdGuard automatisk, når webbrowseren anmoder om et userscript og tilbyder at installere det. Om ønsket kan userscripts også downloades og Installeres manuelt.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+## Præinstallerede userscripts
 
-## Automatically detect userscripts
+AdGuard leveres med fire præinstallerede userscripts:
 
-When this option is enabled, AdGuard automatically notices when your browser requests a userscript and offers to install it. If you prefer, you can also download and install userscripts manually.
-
-## Pre-installed userscripts
-
-AdGuard comes with four pre-installed userscripts:
-
-- AdGuard Assistant (Beta)
+- AdGuard Assistent (Beta)
 - AdGuard Extra (Beta)
-- AdGuard Popup blocker (Beta)
+- AdGuard Popup Blocker (Beta)
 - Web of Trust (Beta)
 
-### AdGuard Assistant (Beta)
+### AdGuard Assistent (Beta)
 
-AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. As the name suggests, it helps you manage basic AdGuard settings directly from your browser without opening the app.
+AdGuard Assistent er den ældre version af Assistent, der kan bruges, hvis [den nye Assistant](/archive/adguard-for-windows/browser-assistant.md) ikke er tilgængelig til en given webbrowser. Som navnet antyder, assisterer den med at håndtere grundlæggende AdGuard-indstillinger direkte fra webbrowseren uden at åbne appen.
 
-AdGuard Assistant works with all browsers compatible with Microsoft Windows. It will not appear on websites excluded from filtering or on certain pages where it could cause display issues.
+AdGuard Assistent fungerer med alle webbrowsere, som er kompatible med Microsoft Windows. Den vises ikke på websteder, som er undtaget fra filtrering, eller på visse sider, hvor den kan forårsage visningsproblemer.
 
-### AdGuard Extra
+### AdGuard Ekstra
 
-AdGuard Extra is a custom extension created to fight ad-blocker circumvention and ad reinjection methods used by websites. Such techniques are becoming more common as advertisers try to bypass ad blockers.
+AdGuard Extra er en tilpasset udvidelse skabt til at bekæmpe adblocker-omgåelse og annonce-geninjiceringsmetoder brugt af websteder. Sådanne teknikker bliver mere almindelige, eftersom annoncører forsøger at omgå adblockere.
 
-AdGuard Extra works by modifying the way pages are loaded, making it more difficult for websites to bypass ad blockers using these advanced methods.
+AdGuard Extra fungerer ved at ændre måden, sider indlæses på, hvilket gør det vanskeligere for websteder at omgå adblockere med disse avancerede metoder.
 
 ### AdGuard Popup Blocker (Beta)
 
-This extension stops unwanted pop-up windows from opening while you browse. Some popups can be useful — for example, settings for website management or extra reference information that appears after clicking a link. If needed, you can turn off the Popup Blocker.
+Denne udvidelse stopper uønskede pop op-vinduer i at åbne, mens der surfes. Nogle pop op-vinduer kan være nyttige — f.eks. indstillinger til webstedshåndtering eller ekstra referenceinformation, som vises efter et klik på et link. Hvis nødvendigt, kan Popup Blocker slås fra.
 
-This extension does not work on the allowlisted websites.
+Denne udvidelse fungerer ikke på de hvidlistede websteder.
 
 ### Web of Trust (Beta)
 
-Web of Trust lets you see the reputation of websites based on user ratings. Websites are reviewed according to several criteria, including trust and security.
+Web of Trust muliggør at se websteders omdømme baseret på brugervurderinger. Websteder vurderes efter flere kriterier, herunder tillid og sikkerhed.
 
-This extension is off by default. Keep in mind that it is developed by a third party, not AdGuard.
+Denne udvidelse er slået fra som standard. Husk, at den er udviklet af en tredjepart, ikke af AdGuard.

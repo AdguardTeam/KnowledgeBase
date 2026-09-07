@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::note 지원되는 앱
 
-AdGuard는 유저스크립트 관리자 역할을 수행하여 웹사이트 기능을 크게 확장할 수 있습니다. 다음 제품에서 사용자 정의 스크립트를 추가하거나 기존 스크립트를 관리할 수 있습니다: [Windows용 AdGuard](/adguard-for-windows/protection/extensions), [Android용 AdGuard](/adguard-for-android/features/settings#userscripts), [Mac용 AdGuard](/adguard-for-mac/features/extensions).
+AdGuard는 유저스크립트 관리자 역할을 수행하여 웹사이트 기능을 크게 확장할 수 있습니다. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-한국어 웹사이트 및 일부 해외 웹사이트 방문자를 위한 유저스크립트입니다. tinyShield 사용자 스크립트는 Ad-Shield 광고와 안티블록을 차단합니다. 이 유저스크립트는 AdGuard CoreLibs 기반 앱, Violentmonkey, Tampermonkey, [quoid/userscripts](https://github.com/quoid/userscripts)에 설치할 수 있습니다. tinyShield에 대한 자세한 내용과 설치 방법은 [GitHub](https://github.com/List-KR/tinyShield)에서 확인할 수 있습니다.
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### 더 많은 유저스크립트는 어디서 구할 수 있나요?{#more-userscripts}
 
@@ -95,25 +95,29 @@ To try it out:
 
 [OpenUserJS.org](https://openuserjs.org/)는 nodeJS로 작성된 오픈 소스 유저스크립트 카탈로그입니다. 중재되지 않으므로 의심스러운 스크립트를 주시하세요.
 
-#### 커뮤니티
+#### NamuLink
 
-유저스크립트로 브라우저를 맞춤 설정하는 아이디어가 마음에 드시고 질문이 있으시면 다음 웹사이트 중 한 곳에서 질문할 수 있습니다.
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### 개발
+### Development
 
-#### 라이선스 요청
+#### Request license
 
-자체 사용자 스크립트를 개발 중이고 AdGuard와 함께 작동하는 방식을 테스트하고 싶다면 [양식](https://surveys.adguard.com/en/for_developers_request/form.html)을 작성하여 라이선스를 요청할 수 있습니다.
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### 호환성
+#### Compatibility
 
-##### 메타데이터 블록
+##### Metadata block
 
-###### 지원되는 속성
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ To try it out:
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### 지원되지 않는 속성
+###### Unsupported properties
 
-이러한 속성은 AdGuard에서 무시됩니다.
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### 지원되는 GM 기능
+##### Supported GM functions
 
-AdGuard는 기존 GM\_ 기능과 GM 개체를 사용하는 새로운 GM4 API를 모두 지원합니다.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-나열된 모든 이전 Greasemonkey 기능은 더 이상 사용되지 않지만 여전히 지원됩니다.
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -167,9 +171,9 @@ AdGuard는 기존 GM\_ 기능과 GM 개체를 사용하는 새로운 GM4 API를 
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 - [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
-Greasemonkey API에 대한 자세한 내용은 [설명서](https://wiki.greasespot.net/Greasemonkey_Manual:API)에서 확인할 수 있습니다.
+You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
-#### 예시
+#### Example
 
 ```javascript
 // ==UserScript==
@@ -210,29 +214,29 @@ Greasemonkey API에 대한 자세한 내용은 [설명서](https://wiki.greasesp
 )}();
 ```
 
-#### 신뢰할 수 있는 유형 API
+#### Trusted Types API
 
-AdGuard는 유저스크립트에서 신뢰할 수 있는 유형을 관리할 수 있는 `PolicyApi` 클래스의 인스턴스를 제공합니다.
+AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
-이 클래스의 인스턴스는 유저스크립트에서 `ADG_policyApi` 변수를 사용하여 액세스할 수 있습니다.
+You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### 속성
+##### Properties
 
-- `name: string` — 정책의 이름(기본값은 `"AGPolicy"`입니다).
-- `isSupported: boolean` — 현재 브라우저에서 신뢰할 수 있는 유형 API가 지원되는지 여부를 나타내는 플래그입니다.
+- `name: string` — a name of the policy (Default is `"AGPolicy"`).
+- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
 
-##### 폴리필 메서드
+##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML)． 지원되지 않으면 `input: string`을 반환합니다.
-- `[ADG_policyApi.createScript](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript)． 지원되지 않으면 `input: string\`을 반환합니다.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL)． 지원되지 않으면 `input: string`을 반환합니다.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType)． 지원되지 않으면 `null`을 반환합니다.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType)． 지원되지 않으면 `null`을 반환합니다.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML)． 지원되지 않으면 `false`를 반환합니다.
-- `[ADG_policyApi.isScript](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript)． 지원되지 않으면 `false\`를 반환합니다.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL)． 지원되지 않으면 `false`를 반환합니다.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
-##### 추가 유형
+##### Additional Types
 
 ```typescript
 /**
@@ -262,7 +266,7 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### 추가 방법
+##### Additional methods
 
 ```typescript
 /**
@@ -343,7 +347,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info 호환성
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 

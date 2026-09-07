@@ -155,13 +155,13 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
     | 代理主机 | *127.0.0.1* |
     | 代理端口 | *7891*      |
 
-### How to use AdGuard with WG Tunnel
+### 如何同时使用 AdGuard 和 WG Tunnel
 
-*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
+*4.0 版本增加了代理模式。 我们假定您已经在设备上安装了 WG Tunnel 并添加了 WireGuard 配置。*
 
-1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
+1. 打开 WG Tunnel，进入 「**设置**」（底部的齿轮）→「**应用程序模式**」→「**代理（试验性）**」。 这将把 WG Tunnel 设置为代理模式。
 
-1. 打开 AdGuard 并转到「**应用管理**」。 Choose **WG Tunnel** and disable **Route traffic through AdGuard**. 这将消除流量循环。
+1. 打开 AdGuard 并转到「**应用管理**」。 选择「**WG Tunnel**」并关闭「**通过 AdGuard 路由流量**」。 这将消除流量循环。
 
 1. 然后转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
@@ -175,7 +175,7 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 1. 点击「**选择并保存**」。
 
-1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
+1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
 ## 限制
 

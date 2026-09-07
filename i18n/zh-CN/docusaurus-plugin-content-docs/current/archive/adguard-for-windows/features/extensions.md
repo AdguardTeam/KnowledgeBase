@@ -1,5 +1,5 @@
 ---
-title: 扩展
+title: 浏览器扩展
 sidebar_position: 3
 ---
 
@@ -23,7 +23,7 @@ AdGuard 可作为[用户脚本管理器](/general/extensions.md)以显著扩展�
 
 **AdGuard 助手**
 
-如[新版助手](/archive/adguard-for-windows/browser-assistant.md)不可用于您的浏览器，您可以使用旧版助手，即 AdGuard 助手。 此扩展的名称是经过深思熟虑的：其协助用户在浏览器内直接更改 AdGuard 的基本设置，而无需打开程序。 AdGuard 助手可协同所有 Windows 兼容的浏览器一起工作。 此外，在用户排除的网站上以及某些存在内容不能正确显示的网页内，AdGuard 助手的图标是不会显示的。
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. 此扩展的名称是经过深思熟虑的：其协助用户在浏览器内直接更改 AdGuard 的基本设置，而无需打开程序。 AdGuard 助手可协同所有 Windows 兼容的浏览器一起工作。 此外，在用户排除的网站上以及某些存在内容不能正确显示的网页内，AdGuard 助手的图标是不会显示的。
 
 **AdGuard Extra**
 

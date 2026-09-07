@@ -1,33 +1,33 @@
 ---
-title: Browser-protected pages
+title: Webbrowserbeskyttede sider
 sidebar_position: 6
 ---
 
 :::info
 
-Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://adguard.com/download.html?auto=true)
 
 :::
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
+Ved brug af en webudvidelse, såsom AdGuard Browser Extension, er der visse begrænsede domæner, som forbyder adgang eller nægter tilladelser. Som konsekvens heraf får adblockerudvidelser ikke lov til at interagere med eller ændre indholdet på sådanne sider. De må med andre ord ikke blokere annoncer og andre irriterende elementer på sådanne websider.
 
-## Chromium browser restrictions
+## Chromium-webbrowserrestriktioner
 
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
+Chromium-baserede webbrowsere, såsom Google Chrome, opretholder en liste over domæner med restriktioner, som udvidelser ikke har lov at tilgå. Disse domæner inkluderer:
 
 - clients.google.com
 - clients[0-9]+.google.com
 - sb-ssl.google.com
-- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-- PDF files
-- Pages where Javascript is disabled
-- Security warning pages
-- Error pages such as 404 errors and network errors
-- URLs starting with `view-source:` or `data:`
+- URL'er startende med `chrome://`, `chrome-extension://` eller `https://chrome.google.com/webstore/`
+- PDF-filer
+- Sider, hvor Javascript er deaktiveret
+- Sikkerhedsadvarselssider
+- Fejlbeskedsider, såsom 404- og netværksfejl
+- URL'er startende med `view-source:` eller `data:`
 
-## Firefox browser restrictions
+## Firefox-webbrowserrestriktioner
 
-Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
+Tilsvarende har Firefox-webbrowseren sit eget sæt af domæner med restriktioner, hvor udvidelser ikke har lov til at fungere. Disse domæner med restriktioner omfatter:
 
 - accounts-static.cdn.mozilla.net
 - accounts.firefox.com
@@ -42,20 +42,20 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-## Modifying restrictions in Firefox
+## Ændring af restriktioner i Firefox
 
-Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
+Ændring af avancerede indstillinger kan påvirke stabiliteten og sikkerheden i Firefox. Dette anbefales derfor kun til avancerede brugere. Accepteres den tilknyttede risiko og ønskes tilføjelser stadig aktiveret, som ikke er tilladt på en beskyttet side, kan nedenstående trin følges:
 
-1. Click the menu button → **Add-ons and themes** → **Extensions**.
-2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
-3. Select **Allow** in the section **Run on sites with restrictions**.
+1. Klik på menuknappen → **Tilføjelser og temaer** → **Udvidelser**.
+2. Klik på den udvidelse, der skal aktiveres på websteder med restriktioner (i dette tilfælde AdGuard).
+3. Vælg **Tillad** i afsnittet **Kør på websteder med restriktioner**.
 
-Alternatively, you can:
+Alternativ fremgangsmåde:
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. Åbn en ny fane og indtast **about:config** i adressebjælken.
+2. Tryk på **Retur**. En advarsel vises muligvis. I så tilfælde, klik på **Acceptér risikoen og fortsæt**.
+3. Søg efter `extensions.webextensions.restrictedDomains`. Findes denne præference ikke, kan den oprettes. Vælg blot typen **Boolean** og klik på **+** for at tilføje den.
+4. Klik på kontakten ved siden af denne præference, så dens værdi viser `false`.
+5. Genstart Firefox.
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+For yderligere information om dette emne, læs [artiklen på Mozillas supportwebsted](https://mzl.la/3POXoWi).

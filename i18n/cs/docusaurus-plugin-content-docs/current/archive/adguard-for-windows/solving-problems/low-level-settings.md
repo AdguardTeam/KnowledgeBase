@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,13 +13,13 @@ Pokročilá nastavení, dříve známá jako nízkoúrovňová nastavení větš
 
 :::caution
 
-Změna *Pokročilých nastavení* může nečekaně způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
 
 :::
 
 ## Jak dosáhnout pokročilých nastavení
 
-Chcete-li přejít na *Pokročilá nastavení*, v hlavním okně klikněte na *Nastavení → Obecná nastavení* a přejděte dolů na *Pokročilá nastavení*. Případně vyberte *Pokročilé → Pokročilá nastavení...* v menu.
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## Pokročilá nastavení
 
@@ -31,7 +31,7 @@ Pokud je tato funkce povolena, zablokuje AdGuard v prohlížeči Edge funkci TCP
 
 ### Použít Encrypted Client Hello
 
-Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. Chcete-li to využít, povolte možnost *Použít Encrypted Client Hello*. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. Pokud je nalezen, paket Client Hello bude zašifrován.
+Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. To benefit from it, enable the _Use Encrypted Client Hello_ option. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. Pokud je nalezen, paket Client Hello bude zašifrován.
 
 ### Zkontrolovat transparentnost certifikátů webových stránek
 
@@ -59,7 +59,7 @@ Povolením této funkce zobrazíte vyskakovací oznámení AdGuardu. Nezobrazuj�
 
 ### Automaticky zachytávat URL adresy pro odběr filtrů
 
-Tuto funkci povolte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL pro přihlášení k odběru filtrů (tj. `abp:subscribe` a podobné) a otevíral dialogové okno pro instalaci vlastního filtru.
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### Filtrování HTTP/3
 
@@ -79,15 +79,15 @@ V opačném případě bude AdGuard filtrovat veškerý provoz za běhu bez pře
 
 ### Otevřít hlavní okno při startu systému
 
-Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. Toto nastavení nemá vliv na to, zda je skutečná služba filtrování spuštěna, nebo ne, toto nastavení se nachází v *Nastavení → Obecná nastavení*.
+Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### Zapnout filtrování při spuštění systému
 
 Od verze 7.12 služba AdGuard ve výchozím nastavení nefiltruje provoz po spuštění operačního systému, pokud je zakázána možnost Spustit AdGuard při startu systému. Jinými slovy, služba AdGuard je spuštěna v režimu „nečinnosti“. Tuto možnost povolte, aby AdGuard filtroval provoz i v případě, že aplikace není spuštěna.
 
-:::note:::note
+:::note
 
-Před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému*). Pokud vám vyhovovalo staré chování, tuto možnost povolte.
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). Pokud vám vyhovovalo staré chování, tuto možnost povolte.
 
 :::
 
@@ -97,11 +97,11 @@ Pokud chcete, aby AdGuard filtroval zpětná připojení, zaškrtněte toto pol�
 
 ### Vyloučit zadané rozsahy IP z filtrování
 
-Pokud nechcete, aby AdGuard filtroval určité podsítě, povolte tuto funkci a zadejte rozsahy IP v notaci CIDR (např. 98.51.100.14/24) v části **Rozsahy IP vyloučené z filtrování** níže.
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### Povolit zápis HAR
 
-Tato možnost by měla být zapnuta **pouze pro účely ladění**. Zaškrtnutím tohoto políčka vytvoří AdGuard soubor ve formátu HAR 1.2 obsahující informace o všech filtrovaných HTTP požadavcích. Tento soubor lze analyzovat pomocí aplikace Fiddler. Upozorňujeme, že to může výrazně zpomalit prohlížení webu.
+This option should be enabled **only for debugging purposes**. Zaškrtnutím tohoto políčka vytvoří AdGuard soubor ve formátu HAR 1.2 obsahující informace o všech filtrovaných HTTP požadavcích. Tento soubor lze analyzovat pomocí aplikace Fiddler. Upozorňujeme, že to může výrazně zpomalit prohlížení webu.
 
 ### Přidat do běžného požadavku HTTP dodatečnou mezeru
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Upravit velikost fragmentu úvodního paketu TLS
 
@@ -127,13 +127,13 @@ Určuje velikost fragmentace paketů TCP, čímž se zabrání hloubkové kontro
 
 Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket TLS (paket Client Hello) na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého počátečního paketu TLS.
 
-Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Velikost fragmentu běžného požadavku HTTP
 
 Upraví velikost fragmentace požadavků HTTP. Tato možnost má vliv pouze na prostý HTTP provoz. Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého původního paketu.
 
-Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Zobrazit QUIC
 
@@ -147,9 +147,9 @@ Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodn
 
 Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací sondy. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+:::note
 
-Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -157,15 +157,15 @@ Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit ud
 
 Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy neodpovídajícímu partnerovi. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+:::note
 
-Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
 ### Blokovat Java
 
-Některé webové stránky a webové služby stále podporují zásuvné moduly Java. Rozhraní API, které slouží jako základ pro zásuvné moduly Java, obsahuje závažné bezpečnostní chyby. Tyto zásuvné moduly můžete z bezpečnostních důvodů zakázat. Nicméně, i když se rozhodnete použít možnost *Blokovat Java*, JavaScript bude stále povolen.
+Některé webové stránky a webové služby stále podporují zásuvné moduly Java. Rozhraní API, které slouží jako základ pro zásuvné moduly Java, obsahuje závažné bezpečnostní chyby. Tyto zásuvné moduly můžete z bezpečnostních důvodů zakázat. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### Časový limit DNS serveru
 
@@ -185,7 +185,7 @@ Všechny odchozí připojení budou dotazovány paralelně a je vrácena první 
 
 ### Vždy odpovídat na neúspěšné DNS dotazy
 
-Pokud se překládání adres nezdařilo v každém z předávaných odchozích připojení a také v záložních doménách, bude odpovědí na požadavek DNS `SERVFAIL`.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
 ### Povolit filtrování zabezpečených DNS požadavků
 
@@ -193,7 +193,7 @@ Kromě běžných DNS požadavků bude AdGuard přesměrovávat zabezpečené DN
 
 ### Režim blokování pro pravidla hosts
 
-Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe pravidla hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 - Odpověď s chybou "Refused"
 - Odpověď s chybou "NxDomain"
@@ -201,7 +201,7 @@ Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované 
 
 ### Režim blokování pro pravidla stylu adblock
 
-Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe stylu ad-block](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 - Odpověď s chybou "Refused"
 - Odpověď s chybou "NxDomain"
@@ -233,7 +233,7 @@ Pokud chcete, aby AdGuard používal vlastní záložní servery, uveďte je v t
 
 ### Seznam vlastních bootstrap adres
 
-Bootstrap je zprostředkující DNS server používaný k získání IP adresy zabezpečeného DNS serveru, který jste vybrali dříve v menu *DNS ochrana*. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
 
 Ve výchozím nastavení je použit systémový překladač DNS a bootstrap požadavek je odeslán prostřednictvím portu 53. Pokud vám to nevyhovuje, uveďte zde IP adresy DNS serverů, které budou použity k určení adresy šifrovaného DNS serveru v pořadí shora dolů. Zadané IP adresy budou použity v uvedeném pořadí. Pokud zadáte neplatné adresy nebo nezadáte žádné, budou použity systémové IP adresy.
 

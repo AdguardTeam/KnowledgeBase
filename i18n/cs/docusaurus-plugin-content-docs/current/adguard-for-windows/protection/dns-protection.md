@@ -3,12 +3,6 @@ title: DNS ochrana
 sidebar_position: 4
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 DNS ochrana vám poskytuje větší kontrolu nad tím, jak se vaše zařízení připojuje k internetu. Existují tři hlavní důvody, proč to může být užitečné:
 
 ## 1. Ochrana soukromí před ISP
@@ -23,13 +17,13 @@ Moderní protokoly jako DNS-over-TLS a DNS-over-HTTPS zajišťují šifrování 
 
 DNS ochrana dokáže odfiltrovat reklamy, slídiče, phishingové weby a další škodlivý nebo obtěžující obsah ještě předtím, než se načte do vašeho prohlížeče nebo aplikací. [Další informace o DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS protection](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![DNS protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
 V rámci DNS ochrany můžete nakonfigurovat následující:
 
 ## Vybrat DNS server
 
-![DNS servers](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![DNS servers \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
 Můžete si vybrat z několika důvěryhodných poskytovatelů DNS. AdGuard sám o sobě nabízí několik možností pro různé potřeby:
 

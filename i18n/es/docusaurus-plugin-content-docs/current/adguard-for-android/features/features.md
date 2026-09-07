@@ -11,7 +11,7 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 - [Protección DNS](/adguard-for-android/features/protection/protection.md)
 
-  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+  Configuración disponible en la pestaña _Protección_: _Bloqueo de anuncios_, _Protección contra el rastreo_, _Bloqueo de elementos molestos_, _Protección DNS_, _Cortafuegos_ y _Seguridad de navegación_
 
 - [Administración de la app](/adguard-for-android/features/app-management.md)
 
@@ -27,7 +27,7 @@ Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multi
 
 - [Guía de configuración de bajo nivel](/adguard-for-android/features/low-level-settings.md)
 
-  Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+  Descripciones de los ajustes de bajo nivel disponibles en AdGuard para Android v4.3 y versiones posteriores.
 
 - [Asistente de AdGuard](/adguard-for-android/features/assistant.md)
 

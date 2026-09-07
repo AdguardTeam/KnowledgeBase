@@ -15,34 +15,35 @@ De nombreux utilisateurs d'AdGuard pour Windows apprécient la fonctionnalité d
 
 ## Adresse DNS d’amorçage
 
-Les adresses des serveurs DNS peuvent être écrites sous forme d'IPs ou de noms de domaine. Dans le cas des adresses IP, il n'y a aucune difficulté : AdGuard transmet la requête DNS directement au serveur spécifié dans le module de protection DNS. Cependant, les adresses des serveurs DNS chiffrées, comme DoT ou DoH, sont le plus souvent écrites sous forme de noms de domaine. Dans ce cas, pour résoudre d’abord l’adresse du serveur DNS cryptée, AdGuard envoie une requête DNS à l’adresse d'amorçage, qui est par défaut un serveur DNS système. Cette connexion est ce que les services de contrôle perçoivent comme une fuite.
+Les adresses des serveurs DNS peuvent être écrites sous forme d'IPs ou de noms de domaine.
+Dans le cas des adresses IP, il n'y a aucune difficulté : AdGuard transmet la requête DNS directement au serveur spécifié dans le module de protection DNS. Cependant, les adresses des serveurs DNS chiffrées, comme DoT ou DoH, sont le plus souvent écrites sous forme de noms de domaine. Dans ce cas, pour résoudre d’abord l’adresse du serveur DNS cryptée, AdGuard envoie une requête DNS à l’adresse d'amorçage, qui est par défaut un serveur DNS système. Cette connexion est ce que les services de contrôle perçoivent comme une fuite.
 
-**Pour éliminer cette fuite :**
+**To eliminate this leak:**
 
-- allez dans les *Paramètres avancés*
-- faites défiler jusqu'à la section *Liste des adresses d'amorçage personnalisées*
-- saisissez l'adresse de démarrage personnalisée sous format d'adresse IP (vous pouvez utiliser [la liste des fournisseurs DNS connus](https://adguard-dns.io/kb/general/dns-providers/))
-- cliquez sur *Enregistrer*
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click _Save_
 
 ## Serveur DNS de repli
 
 Il pourrait arriver qu'AdGuard ne puisse pas atteindre le serveur spécifié à cause d'une connexion Internet faible, d'un délai dépassé défini par défaut ou de problèmes liés au serveur. Dans ce cas, il se connectera au serveur de repli, qui est par défaut un serveur DNS système. Cette connexion sera également considérée par le service de contrôle comme une fuite.
 
-**Pour éliminer cette fuite :**
+**To eliminate this leak:**
 
-- allez dans les *Paramètres avancés*
-- faites défiler jusqu'à la section *serveurs de repli*
-- cochez l'option *Utiliser des serveurs personnalisés*
-- recherchez ensuite la section *Liste des serveurs de repli personnalisés* et saisissez les serveurs de secours personnalisés un par ligne
-
-ou
-
-- allez dans les *Paramètres avancés*
-- faites défiler jusqu'à la section *serveurs de repli*
-- cochez l'option *Ne pas utiliser de serveurs de repli*
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
 
 ou
 
-- allez dans les *Paramètres avancés*
-- faites défiler jusqu'à la section *période de délai dépassé du serveur DNS*
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
+
+ou
+
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
 - saisissez un numéro aléatoire élevé

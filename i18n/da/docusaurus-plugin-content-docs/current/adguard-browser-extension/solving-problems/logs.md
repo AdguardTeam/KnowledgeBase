@@ -1,55 +1,55 @@
 ---
-title: How to export logs from the background page
+title: Sådan eksporteres logfiler fra baggrundssiden
 sidebar_position: 1
 ---
 
-## Exporting logs from the background page in the extension
+## Eksport af logfiler fra baggrundssiden i udvidelsen
 
 ### Chrome
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Åbn AdGuard Browser Extension og gentag — om muligt — handlingerne, som førte til fejlen. Notér det nøjagtige tidspunkt for fejlens opståen.
 
-2. Navigate to `chrome://extensions`.
+2. Gå til `chrome://extensions`.
 
-3. Enable _Developer mode_.
+3. Slå _Udviklertilstand_ til.
 
-   ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
+   ![Udviklertilstand \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. Find AdGuard Browser Extension and click `service worker`.
+4. Find AdGuard Browsers Extension og klik på `service worker`.
 
-   ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
+   ![Baggrund \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
+5. Åbn fanen _Konsol_, højreklik hvor som helst i konsolområdet og vælg _Gem som…_.
 
-   ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
+   ![Gem som \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
 ### Firefox
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Åbn AdGuard Browser Extension og gentag — om muligt — handlingerne, som førte til fejlen. Notér det nøjagtige tidspunkt for fejlens opståen.
 
-2. Navigate to `about:addons`.
+2. Gå til `about:addons`.
 
-3. Click the gear icon and select _Debug Add-ons_.
+3. Klik på tandhjulsikonet _Fejlfind Tilføjelser_.
 
-   ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
+   ![Fejlfind Tilføjelser \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
-4. Click _Inspect_.
+4. Klik på _Inspicér_.
 
-   ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
+   ![Inspicér \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
+5. I fanen _Konsol_, højreklik hvor som helst i konsolområdet og vælg _Gem alle beskeder til fil_.
 
-   ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
+   ![Konsol \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 
-## Sending logs
+## Indsendelse af logfiler
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi overholder nøje vores [Fortrolighedspolitik](https://adguard.com/privacy/browser-extension.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logger til supportteamet, bedes filen gennemgået, da den kan indeholde yderligere oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
 
 :::
 
-Now that you have collected the logs, please follow these steps to submit them to our development team:
+Nu hvor logfilerne er indsamlet, følg da disse trin for at indsende dem til vores udviklingsteam:
 
-1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
+1. Anmeld fejlen på [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Indsend arkivfilen indeholdende logfilerne og afspilningstid til `devteam@adguard.com` og føj et link til GitHub-problematikken. Arkivfilen kan også uploades til Google Drev og et link til filen tilføjes i stedet for at vedhæfte filen.

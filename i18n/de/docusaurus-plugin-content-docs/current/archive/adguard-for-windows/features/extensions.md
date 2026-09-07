@@ -23,7 +23,7 @@ Die folgenden Erweiterungen werden mit AdGuard installiert:
 
 **AdGuard-Assistent**
 
-AdGuard-Assistent ist ein Assistent für ältere Browser, den Sie verwenden können, wenn der [neue Assistent](/archive/adguard-for-windows/browser-assistant.md) für Ihren Browser nicht verfügbar ist. Der Name dieser Erweiterung ist durchaus beabsichtigt: Sie unterstützt den Benutzer:innen bei der Änderung grundlegender AdGuard-Einstellungen direkt im Browser, ohne dass er die App selbst öffnen muss. Assistent funktioniert mit allen mit Microsoft Windows kompatiblen Browsern. Außerdem wird das AdGuard Assistent-Symbol nicht auf Websites angezeigt, die als Ausschlüsse aufgeführt sind, sowie auf bestimmten Seiten, bei denen die Gefahr besteht, dass falsche Inhalte angezeigt werden.
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. Der Name dieser Erweiterung ist durchaus beabsichtigt: Sie unterstützt den Benutzer:innen bei der Änderung grundlegender AdGuard-Einstellungen direkt im Browser, ohne dass er die App selbst öffnen muss. Assistent funktioniert mit allen mit Microsoft Windows kompatiblen Browsern. Außerdem wird das AdGuard Assistent-Symbol nicht auf Websites angezeigt, die als Ausschlüsse aufgeführt sind, sowie auf bestimmten Seiten, bei denen die Gefahr besteht, dass falsche Inhalte angezeigt werden.
 
 **AdGuard Extra**
 

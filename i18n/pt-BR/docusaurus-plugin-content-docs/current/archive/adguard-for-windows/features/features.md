@@ -1,5 +1,5 @@
 ---
-title: Recursos
+title: Features
 sidebar_position: 1
 ---
 
@@ -9,22 +9,22 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-- [Tela inicial](/archive/adguard-for-windows/features/home-screen/)
+- [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
   On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-- [Configurações](/archive/adguard-for-windows/features/settings/)
+- [Settings](/archive/adguard-for-windows/features/settings/)
 
   Configurações de tema e idioma, personalização do bloqueio de anúncios, Proteção de DNS, controles parentais, gerenciamento de extensões e opções avançadas para usuários experientes
 
-- [Extensões](/archive/adguard-for-windows/features/extensions/)
+- [Extensions](/archive/adguard-for-windows/features/extensions/)
 
   Um recurso que permite ampliar a funcionalidade dos sites adicionando scripts e estilos de usuário
 
-- [Rede](/archive/adguard-for-windows/features/network/)
+- [Network](/archive/adguard-for-windows/features/network/)
 
   Opções adicionais relacionadas à rede e configurações de proxy
 
-- [Outros recursos](/archive/adguard-for-windows/features/others/)
+- [Other features](/archive/adguard-for-windows/features/others/)
 
   Suporte, gerenciamento de licença, opções do menu de bandeja, versão do aplicativo e atualizações

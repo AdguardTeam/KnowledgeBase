@@ -5,48 +5,48 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Modulet Firewall kan tilgås ved tryk på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _Firewall_.
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+Denne funktion assisterer med at håndtere internetadgang for enheden generelt samt for bestemte apps installeret på den.
 
 ![Firewall \*mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-### Global firewall rules
+### Globale firewall-regler
 
-This section allows you to control Internet access for the entire device.
+Dette afsnit muliggør styring af internetadgang for hele enheden.
 
-![Global firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Globale firewall-regler \*mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+Disse regler gælder for alle apps på enheden, medmindre tilpassede regler er angivet for dem.
 
-### Custom firewall rules
+### Tilpassede firewall-regler
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+I dette afsnit kan internetadgang styres for bestemte apps — begræns tilladelser for dem, som ikke findes troværdige, eller afblokér dem, som skal kunne omgå de globale firewall-regler.
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. Åbn _Tilpassede firewall-regler_. Tryk på _Tilføj app_ under _Apps med tilpassede regler_.
 
-   ![Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Tilpassede firewall-regler \*mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+2. Vælg den app, for hvilken individuelle regler skal angives.
 
-   ![Adding an app to Custom firewall rules \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Føje en app til Tilpassede firewall-regler \*mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. Vælg i _Tilgængelige tilpassede regler_ dem, som skal opsættes, og tryk på "+"-ikonet. Reglerne vil nu fremgå i _Anvendte tilpassede regler_.
 
-   ![Added rule \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Tilføjet regel \*mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. Ved behov for blokering af en bestemt forbindelsestype, skift kontakten til venstre. Skal den tillades, lad kontakten være slået til. **Tilpassede regler tilsidesætter globale ditto**: Evt. ændringer foretaget i _Globale firewall-regler_ vil ikke påvirke denne app.
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+For at slette en regel eller app fra _Tilpassede regler_, stryg den mod venstre.
 
-### Notifications
+### Notifikationer
 
-If enabled, this feature notifies you when an app is attempting to violate an applicable firewall rule, e.g. attempts to access mobile data from which it is blocked. You can turn notifications on and off for all apps or for each app separately.
+Hvis aktiveret, giver denne funktion besked, når en app forsøger at overtræde en gældende firewall-regel, f.eks. forsøger at få adgang til mobildata, som den er blokeret fra. Notifikationer kan slås til/fra for alle apps eller for hver app individuelt.
 
-Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+Tryk på notifikationen for at tilgå appens firewall-indstillinger, eller deaktivér midlertidigt alle firewall-regler for appen ved at trykke på den relevante knap i notifikationen. Alle firewall-notifikationer kan også tavsgøres for appen ved at trykke på knappen _Tavsgør_ i notifikationen for appen.
 
-Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
+Bemærk, at vises notifikationer for flere apps, præsenteres de i stedet via én enkelt notifikation.

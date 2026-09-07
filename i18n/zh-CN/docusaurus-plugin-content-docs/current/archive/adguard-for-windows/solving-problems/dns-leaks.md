@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,34 +15,35 @@ Windows 版 AdGuard 让用户指定 DNS 服务器地址来解决查询，而不�
 
 ## Bootstrap DNS 地址
 
-DNS 服务器地址可以写为 IP 或域名。 在 IP 地址的情况下没有什么困难：AdGuard 将 DNS 请求直接转发到 DNS 保护模块中指定的服务器。 不过，加密的 DNS 服务器地址（如 DoT 或 DoH）最常见的写法是域名。 在这种情况下，首先要解析加密的 DNS 服务器地址，因此 AdGuard 发送 DNS 查询到 Bootstrap（引导）地址，默认情况下是一个系统 DNS 服务器。 这种连接就是检查服务所认为的泄漏。
+DNS 服务器地址可以写为 IP 或域名。
+在 IP 地址的情况下没有什么困难：AdGuard 将 DNS 请求直接转发到 DNS 保护模块中指定的服务器。 不过，加密的 DNS 服务器地址（如 DoT 或 DoH）最常见的写法是域名。 在这种情况下，首先要解析加密的 DNS 服务器地址，因此 AdGuard 发送 DNS 查询到 Bootstrap（引导）地址，默认情况下是一个系统 DNS 服务器。 这种连接就是检查服务所认为的泄漏。
 
-**要消除此泄漏，请执行以下操作：**
+**To eliminate this leak:**
 
-- 转到「*高级设置*」
-- 向下滚动到「*自定义 Bootstrap 地址的列表*」部分
-- 以 IP 地址格式输入自定义引导地址（可以使用「[已知 DNS 提供商列表](https://adguard-dns.io/kb/general/dns-providers/)」）
-- 单击「*保存*」
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click _Save_
 
 ## 后备 DNS 服务器
 
 有时，由于互联网连接不畅、默认服务器响应超时或其他服务器相关的问题，AdGuard 无法连接到指定服务器。 在这种情况下，软件将连接到后备服务器，默认情况下是系统 DNS 服务器。 检查部门也会将这种连接视为泄漏。
 
-**要消除此泄漏，请执行以下操作：**
+**To eliminate this leak:**
 
-- 转到「*高级设置*」
-- 向下滚动到「*后备服务器*」部分
-- 勾选「*使用自定义服务器*」
-- 然后找到「*自定义后备服务器的列表*」部分，每行输入一个自定义后备服务器
-
-或者
-
-- 转到「*高级设置*」
-- 向下滚动到「*后备服务器*」部分
-- 勾选「*不要使用后备服务器*」
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
 
 或者
 
-- 转到「*高级设置*」
-- 向下滚动到「*DNS 服务器的超时期限*」部分
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
+
+或者
+
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
 - 输入任意大数

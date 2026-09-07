@@ -1,17 +1,11 @@
 ---
-title: Protección de rastreo
+title: Tracking protection
 sidebar_position: 2
 ---
 
-:::info
-
-Este artículo describe AdGuard para Windows v8.0, un bloqueador de anuncios integral que protege su dispositivo a nivel del sistema. Esta es una versión beta que aún está en desarrollo. Para probarlo, descarga la [versión beta de AdGuard para Windows](https://agrd.io/windows_beta).
-
-:::
-
 Muchos sitios web recopilan datos sobre sus visitantes, incluidas las direcciones IP, la información del navegador y del sistema operativo, la resolución de pantalla e incluso la página de la que provienes. Las cookies pueden utilizarse para identificar tu navegador, recordar tus preferencias o reconocerte cuando regreses. La protección de seguimiento impide que estos sistemas recopilen tus datos personales. Descubre más en nuestro [artículo sobre protección de seguimiento en AdGuard](https://adguard.com/kb/general/stealth-mode/)
 
-![Protección de rastreo](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
 Si no quieres dedicar tiempo a ajustar los filtros manualmente, puedes simplemente elegir uno de los niveles de protección predefinidos:
 
@@ -33,7 +27,7 @@ Para obtener la máxima flexibilidad, selecciona _Personalizado_ y ajusta todo m
 
 ## Configuración general
 
-![Configuración general](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![General settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
 
 ### Bloquear rastreadores
 
@@ -43,17 +37,21 @@ Bloquea rastreadores y analítica web usando el _filtro de Protección de Seguim
 
 Elimina los parámetros de seguimiento como `utm_*` y `fb_ref` de las URL de las páginas mediante el _filtro de seguimiento de URL de AdGuard_.
 
-### Oculta tus consultas de búsqueda
+### Ocultar consultas de búsqueda
 
 Oculta las consultas de los sitios web visitados desde un motor de búsqueda. Cuando Google, Yahoo o cualquier otro motor de búsqueda te dirigen a un sitio web, esta opción oculta la consulta de búsqueda que utilizaste para encontrar ese sitio web.
 
-### Pedir a los sitios web que no te rastreen
+### Pedir a los sitios web que no me rastreen
 
 Envía las señales de [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) y [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) a los sitios web que visitas.
 
+### Otros filtros de privacidad
+
+Applies a set of additional privacy protection filters. The number next to _Enabled in Filters_ shows how many filters are currently active.
+
 ## Métodos de seguimiento
 
-![Métodos de seguimiento](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking methods \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_tracking_methods.png)
 
 ### Eliminar cookies de terceros
 
@@ -63,7 +61,7 @@ Las cookies de terceros funcionan de la misma manera, pero son creadas por domin
 
 Con esta opción, puedes establecer un límite de tiempo (en minutos) después del cual se eliminarán todas las cookies de terceros. Si estableces el temporizador en 0, dichas cookies se bloquearán completamente.
 
-![Time-to-live](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Time-to-live \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -95,13 +93,13 @@ El valor del encabezado Authorization es almacenado en caché por el navegador y
 
 ## API del navegador
 
-![Browser API](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
+![Browser API \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_browser_api.png)
 
-### Bloquear WebRTC
+### Prevent IP address leaks through WebRTC
 
-Bloquea WebRTC, una vulnerabilidad conocida que puede filtrar tu dirección IP real incluso si usas un proxy o VPN.
+Makes WebRTC use a stricter IP address policy to prevent your real IP address from being exposed, even if you use a proxy or VPN.
 
-WebRTC (Comunicación en Tiempo Real Web) es una tecnología que permite la transmisión directa de datos entre navegadores y aplicaciones. Puede revelar tu dirección IP real, incluso si usas un proxy o una VPN. Activar esta opción puede interrumpir ciertas aplicaciones del navegador, como mensajeros, chats, cines o juegos.
+WebRTC (Comunicación en Tiempo Real Web) es una tecnología que permite la transmisión directa de datos entre navegadores y aplicaciones. By default, it can reveal your true IP address even when a proxy or VPN is active. This option enforces a stricter IP address policy instead of blocking WebRTC entirely, so browser applications such as messengers, chats, and games are less likely to be affected.
 
 ### Bloquear API Push
 
@@ -111,17 +109,17 @@ Push permite a los servidores enviar mensajes a apps web independientemente del 
 
 Cuando esta opción esté habilitada, el navegador ya no enviará datos de GPS a los sitios web. Esto evita que determinen tu ubicación, alteren los resultados de búsqueda o adapten el contenido según dónde te encuentres.
 
-### Bloquear Flash
-
-El complemento Flash Player está desactualizado y es muy vulnerable a virus y exploits. También puede ralentizar la carga de sitios web. Al habilitar esta opción se evita que los navegadores detecten componentes de Flash (como complementos o objetos ActiveXObject), lo que desactiva efectivamente la compatibilidad con Flash.
-
 ## Seguimiento de Windows
 
-![Windows tracking](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
+![Windows tracking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_windows_tracking.png)
 
 ### Deshabilitar telemetría de Windows
 
 Deshabilita el envío de datos técnicos sobre tu sistema y el uso de la app.
+
+### Disable Windows Recall
+
+Disables the Windows Recall feature, which periodically takes snapshots of your screen and stores them locally. This prevents sensitive information visible on your screen from being captured and saved.
 
 ### Deshabilitar Advertising ID
 
@@ -133,17 +131,17 @@ Bloquea el envío automático de informes y el muestreo de malware sospechoso.
 
 ### Deshabilitar el servicio de enrutamiento de mensajes WAP Push
 
-Deshabilita la recopilación de datos sobre problemas de componentes de Windows
+Disables data collection about Windows component problems.
 
 ## Misceláneo
 
-![Miscellaneous](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
+![Miscellaneous \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_miscellaneous.png)
 
 ### Ocultar Referer de terceros
 
 Referer es un encabezado HTTP incluido en las solicitudes del navegador al servidor. Contiene la URL del origen de la petición. Cuando navegas de una página a otra, el Referer guarda la URL de la página inicial. El servidor que aloja la página web de destino suele tener un software que analiza Referer y extrae diversos datos de él.
 
-Activar la opción _Ocultar el Referer de terceros_ evita que los sitios web de terceros vean esta información al modificar o eliminar el encabezado.
+Enabling the _Hide Referer from third parties_ option prevents third-party websites from seeing this information by altering or removing the header.
 
 También puede introducir un valor personalizado en el campo _Custom Referer_. Para utilizar el Referer predeterminado, deja el campo en blanco.
 
@@ -151,13 +149,13 @@ Ten en cuenta que para poder filtrar el tráfico, las aplicaciones de AdGuard in
 
 Lo mismo ocurre con la opción _Ocultar Referer de terceros_: Para filtrar el tráfico, AdGuard intercepta las solicitudes HTTP(S) y puede modificarlas o bloquearlas antes de que lleguen al servidor. El cambio ocurre solo después de que la solicitud sale de tu navegador. Por esta razón, si revisas los encabezados dentro del navegador (por ejemplo, con las herramientas de desarrollo de Chrome), aún verás el Referer original. Para confirmar que se ha modificado, puede utilizar herramientas externas como Fiddler.
 
-### Oculta tu User-Agent
+### Ocultar User-Agent
 
 Cuando visitas un sitio web, tu navegador envía un encabezado llamado User-Agent como parte de la solicitud HTTP. Parece una línea de texto que comienza con “User-Agent:”. Esta línea generalmente contiene detalles como el nombre y la versión del navegador, el sistema operativo y la configuración de idioma.
 
 Al habilitar esta opción, AdGuard elimina la información identificativa del User-Agent para que los anunciantes y rastreadores no puedan usarla para perfilarte. Si lo prefieres, puedes introducir un valor personalizado en el campo _Custom User-Agent_. Para mantener el valor predeterminado, simplemente deje el campo en blanco.
 
-### Enmascara tu dirección IP
+### Enmascarar dirección IP
 
 AdGuard no puede ocultar completamente tu dirección IP real, pero sí puede reemplazarla por otra diferente para que las webs interpreten tu conexión como si llegara a través de un proxy. En algunos casos esto ayuda a ocultar tu IP real.
 
@@ -169,16 +167,29 @@ Impide que Google Chrome envíe información sobre su versión y modificaciones 
 
 ### Proteger contra DPI
 
-Deep Packet Inspection es un sistema de análisis profundo y filtrado de tráfico por contenido de paquetes, así como de acumulación de datos estadísticos. Al utilizar esta tecnología, los ISP tienen la capacidad de controlar el tráfico que pasa por ello y limitar el acceso al contenido para sus clientes.
+![Protect against DPI \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protect_against_dpi.png)
 
-La Inspección Profunda de Paquetes (DPI) es una tecnología utilizada por algunos proveedores de servicios de Internet (ISP) para analizar y filtrar el tráfico según el contenido de los paquetes. Les permite supervisar las conexiones, restringir el acceso a ciertos recursos y recopilar estadísticas sobre los usuarios.
+Deep Packet Inspection (DPI) is a technology that allows ISPs to analyze and filter traffic based on packet content. With this option enabled, AdGuard modifies outgoing packet data to make it harder for DPI systems to identify and analyze your traffic, helping protect your connection privacy.
 
-Cuando esta opción está habilitada, AdGuard modifica los datos de los paquetes salientes para que ya no coincidan con los criterios de bloqueo de DPI. Esto puede ayudarte a eludir restricciones y acceder al contenido que necesitas. Sin embargo, no todos los sistemas DPI pueden eludirse todavía — las mejoras aún están en curso.
+When you click on _Protect against DPI_, a separate screen opens with three groups of settings:
 
-La función _Proteger contra DPI_ ya está implementada en AdGuard para Windows, AdGuard para Mac y AdGuard para Android.
+**ClientHello split** — modifies the TLS ClientHello message to make it harder for DPI systems to detect and block encrypted connections. The following strategies are available:
+
+- _Split TCP packet at fixed position_ — splits the ClientHello TCP packet at a specified byte position.
+- _Split TLS record at fixed position_ — splits the TLS record containing the ClientHello at a specified byte position.
+- _Split TLS before SNI_ — splits the ClientHello before the Server Name Indication field.
+- _Split TLS after SNI_ — splits the ClientHello after the Server Name Indication field.
+- _Split TLS in the middle of SNI_ — splits the ClientHello in the middle of the Server Name Indication field.
+- _Split TLS randomly within SNI_ — splits the ClientHello at a random position within the Server Name Indication field.
+
+When using a fixed-position strategy, set the _Split byte position_ (1–1500) to specify where the split occurs.
+
+**HTTP request split** — splits HTTP requests into multiple TCP packets to bypass DPI systems that rely on inspecting complete HTTP requests.
+
+**HTTP space juggling** — manipulates whitespace in HTTP requests to confuse DPI systems that parse HTTP headers, making it harder for them to identify and block specific traffic.
 
 :::caution
 
-Si esta función está habilitada en AdGuard para Windows, puede interferir con el antivirus ESET. En este caso, ESET no podrá filtrar el tráfico, dejando accesibles algunos sitios web maliciosos o bloqueados.
+This feature can break access to some unencrypted websites. If this feature is enabled in AdGuard for Windows, it may also interfere with the ESET antivirus — ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
 
 :::

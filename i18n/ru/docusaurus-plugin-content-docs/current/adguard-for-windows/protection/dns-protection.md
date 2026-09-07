@@ -3,12 +3,6 @@ title: DNS-защита
 sidebar_position: 4
 ---
 
-:::info
-
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
-
-:::
-
 DNS-защита предоставляет больше возможностей для контроля подключения вашего устройства к интернету. Есть три основные причины, по которым это может быть полезным:
 
 ## 1. Защита конфиденциальности от интернет-провайдера
@@ -23,13 +17,13 @@ DNS-защита предоставляет больше возможносте�
 
 DNS-защита может фильтровать рекламу, трекеры, фишинговые веб-сайты и другой вредоносный или навязчивый контент до того, как он даже загрузится в вашем браузере или приложениях. [Подробнее о DNS-фильтрации](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS-защита](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![DNS protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
 Вот что вы можете настроить в DNS-защите:
 
 ## Выбрать DNS-сервер
 
-![DNS-серверы](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![DNS servers \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
 Вы можете выбрать DNS-провайдера из обширного списка доверенных. Сам AdGuard предлагает несколько вариантов для различных потребностей:
 

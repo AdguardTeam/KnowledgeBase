@@ -206,5 +206,9 @@
   "sidebar.tutorialSidebar.category.solving-problems-adguard-for-linux": {
     "message": "Решение проблем",
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AdGuard for Windows v7": {
+    "message": "AdGuard for Windows v7",
+    "description": "The label for category 'AdGuard for Windows v7' in sidebar 'tutorialSidebar'"
   }
 }

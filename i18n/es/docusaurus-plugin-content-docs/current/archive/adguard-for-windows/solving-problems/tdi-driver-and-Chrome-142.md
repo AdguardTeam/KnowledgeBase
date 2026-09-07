@@ -1,6 +1,6 @@
 ---
 title: Filtering issues in Chrome 142+ when using the TDI driver
-sidebar_position: 14
+sidebar_position: 16
 ---
 
 :::info
@@ -35,7 +35,7 @@ AdGuard already treats the TDI driver as deprecated, and its complete removal is
 
 ## Permanent solution
 
-From v7.22.4, we’ve added experimental support for the SockFilter driver. Soluciona el problema al resolver conflictos en la stack WFP. [Más información](/archive/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
+From v7.22.4, we’ve added experimental support for the SockFilter driver. Soluciona el problema al resolver conflictos en la stack WFP. [More information](/archive/adguard-for-windows/features/network/#sockfilter-and-other-network-drivers).
 
 Para usarlo, ve a _Configuración → Red → Filtrado de tráfico_, habilita el filtrado de tráfico y selecciona _SockFilter (Experimental)_ de la lista de opciones disponibles.
 

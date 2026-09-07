@@ -3,13 +3,7 @@ title: Editor filtrů
 sidebar_position: 2
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
-![Filter editor](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![Filter editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
 Editor filtrů je nástroj, který umožňuje prohlížet a spravovat filtry na úrovni jednotlivých pravidel. Filtry jsou rozděleny do tematických kategorií: _Blokování reklam_, _Soukromí_, _Jazykově specifické_ filtry, _Vlastní_ a _Ostatní_.
 

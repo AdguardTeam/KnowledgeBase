@@ -31,7 +31,7 @@ Wireshark'ı açın ve ağ arayüzlerinin bir listesini göreceksiniz. İhtiyac�
 
 Hangi arayüzü seçeceğinizden emin değilseniz, grafikte en fazla etkinliğe sahip olanı seçin — grafik ne kadar yüksekse, üzerinden geçen trafik de o kadar fazladır.
 
-![Ana ekran](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
+![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
 Double-click the selected interface to start the capture. Now, reproduce the issue you are experiencing, making sure to perform only the necessary actions to trigger the problem and avoid any other processes. Bu, sorunun izole edilmesine yardımcı olur ve ilgili trafiğin kaydedilmesini sağlar.
 

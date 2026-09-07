@@ -173,97 +173,97 @@ Pour configurer le travail en arrière-plan d'AdGuard pour les appareils Xiaomi,
 
 ## Samsung
 
-On many Samsung devices, apps that have been unused for three days will not be able to start from the background. To prevent this, you should turn off the **Adaptive Battery** and **Put apps to sleep** options wherever possible. Note that after an app or OS update, these settings often revert to their default values and must be turned off again.
+Sur de nombreux appareils Samsung, toute application inutilisée pendant 3 jours ne pourra pas démarrer en arrière-plan. Il est conseillé de désactiver les options **Batterie adaptative** et **Mise en veille des applications** dans la mesure du possible pour éviter cela. Notez qu'après une mise à jour de l'application ou du système d'exploitation, ces paramètres reviennent souvent à leurs valeurs par défaut et doivent être à nouveau désactivés.
 
 ### Android 11+
 
-On Android 11, Samsung prevents apps (including AdGuard) from working in the background by default, unless you exclude them from battery optimizations. To ensure that AdGuard will not be terminated in the background:
+Sur Android 11, Samsung empêchera par défaut les applications (y compris AdGuard) de fonctionner en arrière-plan, à moins que vous ne les excluiez des optimisations de la batterie. Pour s'assurer qu'AdGuard ne sera pas tué en arrière-plan :
 
-1. Lock AdGuard in **Recent apps**: open **Recent apps**, find AdGuard, and long-press the AdGuard app icon.
+1. Verrouillez AdGuard dans les **Applications récentes** : ouvrez les **Applications récentes**, trouvez AdGuard, puis maintenez appuyée l’icône de l’application AdGuard.
 
-1. To keep AdGuard working properly:
+1. Pour assurer le bon fonctionnement d'AdGuard :
 
-    Go to **Settings** → **Apps** → **AdGuard** → **Battery** → **Optimize battery usage**
+    Allez dans **Paramètres** → **Apps** → **AdGuard** → **Batterie** → **Optimiser l'utilisation de la batterie**
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
 
-    In the drop-down menu, select **All**. Then find AdGuard on the list and set the state for it to **Don’t optimize** (on some models, there may be a switch that you need to toggle off).
+    Dans le menu déroulant, sélectionnez **Tous.**. Recherchez ensuite AdGuard dans la liste et définissez son état sur **Ne pas optimiser** (sur certains modèles, il peut y avoir un commutateur que vous devez désactiver).
 
     ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
 
-    On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is **Settings** → **Apps** → (⁝) menu → **Special access** → **Optimize battery usage**. Find AdGuard on the list and uncheck it.
+    Sur certains appareils, le paramètre concerné peut être nommé différemment et se trouver à d'autres endroits. L’un des chemins possibles est **Paramètres** → **Applications** → menu (⁝) → **Accès spécial** → **Optimiser l’utilisation de la batterie**. Trouvez AdGuard dans la liste et décochez-le.
 
-1. Disable automatic optimization:
+1. Désactiver l'optimisation automatique :
 
-    Open **Battery** → (⁝) menu → **Automation** and toggle off all the settings there.
+    Ouvrez le menu **Batterie** → menu (⁝) → **Automatisation** → Désactivez tous les paramètres.
 
-    Again, the exact path may differ. For example, on some devices you should go to phone **Settings** → **Device care** → (⁝) menu → **Advanced** and isable **Auto optimization** and **Optimize settings**.
+    Encore une fois, le chemin exact peu varier. Par exemple, sur certains appareils, vous devez accéder aux **Paramètres** du téléphone → **Maintenance de l’appareil** → menu (⁝) → **Avancé**, puis désactiver **Optimisation automatique** et **Optimiser les paramètres**.
 
-1. If your phone has this option, disable **Adaptive battery**:
+1. Si votre téléphone a cette option, désactivez la **Batterie adaptative** :
 
-    Open phone **Settings** → **Battery** → **More battery settings** and toggle off **Adaptive battery**
+    Ouvrez les **Paramètres** → **Batterie** → **Plus de paramètres de batterie** et désactivez la **Batterie adaptative**
 
-1. Disable **Sleeping apps** (the exact name of this setting and the path to it may vary depending on the device):
+1. Désactivez les **applications de veille** (le nom exact de ce paramètre et le chemin d'accès peuvent varier en fonction de l'appareil) :
 
-    Open phone **Settings** → **Battery** → **Background usage limits** and disable **Put unused apps to sleep**
+    Ouvrez les **Paramètres** → **Batterie** → **Limites d'utilisation en arrière-plan** et désactivez **Mettre les applications inutilisées en veille**
 
-If you’re still experiencing issues, try these additional battery optimization adjustments:
+Si vous rencontrez toujours des problèmes, essayez ces réglages supplémentaires pour optimiser la batterie :
 
- 1. Navigate to **Settings** → **Apps** → **AdGuard** → **Battery** and turn on the **Optimised** option:
+ 1. Accédez à **Paramètres** → **Applications** → **AdGuard** → **Batterie**, puis activez l'option **Optimisé** :
 
-    ![Optimised settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/app__battery_optimised_mode.png)
+    ![Paramètres optimisés *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/app__battery_optimised_mode.png)
 
- 1. Go to **Settings** → **Battery** → **Background usage limits** → **Never auto sleeping apps**:
+ 1. Accédez à **Paramètres** → **Batterie** → **Limites d'utilisation en arrière-plan** → **Ne jamais mettre en veille automatiquement les applications**:
 
-    ![Never auto sleeping apps settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
+    ![Paramètres ne jamais mettre en veille automatiquement les applications *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/background_usage_limits.png)
 
- 1. Choose AdGuard from the list of apps. If you don’t see it, return to step 1 and make sure that the *Optimized* battery mode is active:
+ 1. Choisissez AdGuard dans la liste d'applications. Si vous ne la voyez pas, retournez à l'étape 1 et assurez-vous que le mode de batterie *Optimisé* est actif :
 
-    ![Choose the app *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
+    ![Choisir l'application *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/never_auto_sleeping_apps.png)
 
 ### Android 9 & 10
 
-- Go to **Phone settings** → **Device care**, tap the **Battery** item, go to (⁝) **3-dot menu** → **Settings**, and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
+- Accédez aux **Paramètres du téléphone** → **Maintenance de l'appareil**, appuyez sur l'élément **Batterie**, accédez au **menu à trois points** (⁝) → **Paramètres**, puis décochez les options **Mettre les applications inutilisées en veille** et **Désactiver automatiquement les applications inutilisées**.
 
-- In **Phone settings** → **Apps** → **Sleep as Android** → **Battery**, check that **Background restriction** is set to **App can use battery in background** for AdGuard.
+- Dans les **Paramètres du téléphone** → **Applications** → **Veille Android** → **Batterie**, vérifiez que l'option **Restriction en arrière-plan** est réglée sur **L'application peut utiliser la batterie en arrière-plan** pour AdGuard.
 
-- Remove AdGuard from **Sleeping apps**:
+- Supprimez AdGuard des **Applications en veille** :
 
-    1. Go to **Phone settings** → **Device care**:
+    1. Accédez aux **paramètres du téléphone** → **Maintenance de l'appareil** :
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-    1. Tap **Battery**:
+    1. Appuyez sur **Batterie** :
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-    1. Tap the **3-dot menu** → **Settings**:
+    1. Appuyez sur le **menu à trois points** →**Paramètres** :
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-    1. Tap **Sleeping apps**:
+    1. Appuyez sur **Applications en veille** :
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
-    1. Wake up AdGuard using the trash can icon:
+    1. Réveillez AdGuard en utilisant l'icône de la corbeille :
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 ### Anciens appareils Samsung
 
-For early Samsung devices, there is no huge need for setting up the background operation, but if in your case the AdGuard app is getting closed or disappears from the recent tasks after a while, do the following:
+Pour les anciens appareils Samsung, il n'est pas vraiment nécessaire de configurer le fonctionnement en arrière-plan, mais si dans votre cas l'application AdGuard se ferme ou disparaît des tâches récentes après un certain temps, procédez comme suit :
 
-- Tap the **Recent tasks** button, tap the **Additional settings** icon. Elle devrait ressembler à ceci :
+- Appuyez sur le bouton **Tâches récentes** , appuyez sur l'icône **Paramètres supplémentaires** . Elle devrait ressembler à ceci :
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
+ ![Paramètres Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
-- Tap **Lock Apps**:
+- Appuyez sur **Verrouiller les applications** :
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
+ ![Paramètres Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Tap the lock icon:
+- Appuyez sur l'icône de verrouillage :
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
+ ![Paramètres Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
@@ -360,7 +360,7 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
     ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- Tap the lock icon:
+- Appuyez sur l'icône de verrouillage :
 
     ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
@@ -654,29 +654,29 @@ ZTE devices functioning under the MyOS operating system have an aggressive appro
 
 - Go to **Settings → Battery → App Management**
 - Turn off **AI Control**
-- Select **Manual Management**
-- Find **AdGuard** in the list and set **Background Work** to **Allow**
+- Sélectionnez **Gestion Manuelle**
+- Trouvez **AdGuard** dans la liste et définissez **Travail en arrière-plan** sur **Autoriser**
 
 ## Infinix
 
-Infinix devices apply strict battery and power-saving rules that may interrupt AdGuard’s work in the background. Follow these steps to prevent AdGuard from being closed automatically by the system and ensure stable protection:
+Les appareils Infinix appliquent des règles strictes en matière de batterie et d'économie d'énergie qui peuvent interrompre le fonctionnement d'AdGuard en arrière-plan. Suivez ces étapes pour empêcher AdGuard d'être fermé automatiquement par le système et garantir une protection stable :
 
-1. Disable protection and close the AdGuard app.
+1. Désactivez la protection AdGuard et fermez l'application AdGuard.
 
-1. Go to system settings → *App management* → *App list* → *AdGuard* → *Battery* and enable *Allow background usage*. Then go to *Allow background usage* setting and switch the mode to *Unrestricted*.
+1. Accédez aux paramètres système → *Gestion des applications* → *Liste des applications* → *AdGuard* → *Batterie*, puis activez *Autoriser l’utilisation en arrière-plan*. Accédez ensuite au paramètre *Autoriser l’utilisation en arrière-plan*, puis sélectionnez le mode *Sans restriction*.
 
-    ![Allow background usage *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
+    ![Autoriser l'utilisation en arrière-plan *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_allow.png)
 
-1. Open system settings → *App management* → *Auto-start management* and enable *AdGuard*.
+1. Ouvrez les paramètres système → *Gestion des applications* → *Gestion du démarrage automatique*, puis activez *AdGuard*.
 
-    ![Auto-start management *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
+    ![Gestion du démarrage automatique *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_app_launch.png)
 
-1. Navigate to system settings → *Battery & Power Saving* → *Power Saver* and disable *Battery Saver*.
+1. Accédez aux paramètres système → *Batterie et économie d’énergie* → *Économiseur d’énergie*, puis désactivez *Économiseur de batterie*.
 
-1. From the *Battery & Power Saving* tab, find *AdGuard*, and select *No Restrictions*.
+1. Dans l’onglet *Batterie et économie d’énergie*, recherchez *AdGuard*, puis sélectionnez *Aucune restriction*.
 
-    ![Power saving management for apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
+    ![Gestion de l’économie d’énergie pour les applications *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_power_saving.png)
 
-1. Go to *App management* → *Special App Access* → *Battery Optimisation*. At the top of the screen, select *All apps* from the dropdown menu, tap *AdGuard*, and set it to *Not Optimised*.
+1. Accédez à *Gestion des applications* → *Accès spécial aux applications* → *Optimisation de la batterie*. En haut de l’écran, sélectionnez *Toutes les applications* dans le menu déroulant, appuyez sur *AdGuard*, puis définissez l’option sur *Non optimisée*.
 
-    ![Battery optimisation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)
+    ![Optimisation de la batterie *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/infinix_not_optimized.png)

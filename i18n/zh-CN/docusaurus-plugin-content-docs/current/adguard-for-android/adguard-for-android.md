@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [功能](/adguard-for-android/features/features.md)
 
-  Main features and settings available in AdGuard for Android
+  Android 版 AdGuard 的主要功能和可用设置。
 
 - [安装](/adguard-for-android/installation.md)
 

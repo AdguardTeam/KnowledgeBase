@@ -3,15 +3,9 @@ title: Impostazioni di rete
 sidebar_position: 3
 ---
 
-:::info
-
-Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
-
-:::
-
 Questa sezione ti permette di gestire come AdGuard filtra il tuo traffico nella rete globale e fornisce strumenti aggiuntivi per il controllo delle funzioni correlate alla rete.
 
-![Impostazioni rete dedicata](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Network settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
 ## Usa AdGuard come proxy HTTP
 
@@ -39,7 +33,7 @@ Con questa opzione, puoi:
 
 Qui puoi scegliere quale proxy AdGuard deve usare per scaricare gli aggiornamenti dei filtri o nuove versioni dell'app — il proxy di sistema, un proxy personale o nessun proxy.
 
-![Impostazioni proxy](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Proxy settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
 ## Usa il driver SockFilter
 

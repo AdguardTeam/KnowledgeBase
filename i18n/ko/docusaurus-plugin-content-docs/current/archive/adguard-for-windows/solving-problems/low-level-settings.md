@@ -3,9 +3,9 @@ title: 고급(로우 레벨) 설정 가이드
 sidebar_position: 7
 ---
 
-:::정보
+:::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
 
 :::
 
@@ -13,13 +13,13 @@ sidebar_position: 7
 
 :::caution
 
-*고급 설정*을 무심코 변경하면 AdGuard의 성능에 문제가 발생하거나 인터넷 연결이 끊어지거나 보안 및 개인정보가 손상될 수 있습니다. 이러한 설정은 본인이 무엇을 하고 있는지 알고 있거나 지원팀에서 요청하는 경우에만 변경하세요.
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. 이러한 설정은 본인이 무엇을 하고 있는지 알고 있거나 지원팀에서 요청하는 경우에만 변경하세요.
 
 :::
 
 ## 고급 설정으로 이동하는 방법
 
-*고급 설정*으로 이동하려면 기본 창에서 *설정 → 일반 설정* 을 클릭하고 아래로 스크롤하여 *고급 설정*으로 이동합니다. 또는 트레이 메뉴에서 *고급 → 고급 설정...* 을 선택합니다.
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## 고급 설정
 
@@ -31,7 +31,7 @@ sidebar_position: 7
 
 ### Encrypted Client Hello 사용
 
-모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. 이 기능을 사용하려면 *Encrypted Client Hello 사용* 옵션을 활성화하세요. 로컬 DNS 프록시를 사용하여 도메인에 대한 ECH 구성을 찾습니다. ECH 구성이 발견되면 Client Hello 패킷이 암호화됩니다.
+모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. To benefit from it, enable the _Use Encrypted Client Hello_ option. 로컬 DNS 프록시를 사용하여 도메인에 대한 ECH 구성을 찾습니다. ECH 구성이 발견되면 Client Hello 패킷이 암호화됩니다.
 
 ### 웹사이트의 인증서 투명성 확인
 
@@ -59,7 +59,7 @@ Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확
 
 ### 필터 구독 URL 자동 차단
 
-AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채고 사용자 정의 필터 설치 대화 상자를 열도록 하려면 이 기능을 활성화합니다.
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### HTTP/3 필터링
 
@@ -79,7 +79,7 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 ### 시스템 시작 시 메인 창 열기
 
-이 옵션을 활성화하면 시스템이 로드된 후 기본 AdGuard 창이 열립니다. 이 설정은 *설정 → 일반 설정*에 있으며 실제 필터링 서비스가 실행되는지 여부에는 영향을 미치지 않습니다.
+이 옵션을 활성화하면 시스템이 로드된 후 기본 AdGuard 창이 열립니다. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### 시스템 시작 시 필터링 활성화
 
@@ -87,7 +87,7 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 :::note
 
-v7.12 이전에는 *시스템 시작 시 AdGard 실행이* 비활성화되어 있어도 기본적으로 필터링 모드에서 AdGard 서비스가 시작되었습니다. 애플리케이션의 이전 동작에 만족했다면 이 옵션을 활성화하세요.
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). 애플리케이션의 이전 동작에 만족했다면 이 옵션을 활성화하세요.
 
 :::
 
@@ -97,11 +97,11 @@ AdGuard가 루프백 연결을 필터링하도록 하려면 확인란을 선택�
 
 ### 필터링에서 지정된 IP 범위 제외
 
-AdGuard가 특정 서브넷을 필터링하지 않도록 설정하려면 이 기능을 활성화하고 아래 **필터링에서 제외되는 IP 범위** 섹션에서 CIDR 표기법(예: 98.51.100.14/24)으로 IP 범위를 지정하세요.
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### HAR 기록 사용
 
-이 옵션은 **디버깅 목적**으로만 활성화해야 합니다. 체크박스를 선택하면 AdGuard가 필터링된 모든 HTTP 요청에 대한 정보가 포함된 HAR 1.2 형식의 파일을 생성합니다. 이 파일은 Fiddler 앱으로 분석할 수 있습니다. 웹 브라우징 속도가 상당히 느려질 수 있습니다.
+This option should be enabled **only for debugging purposes**. 체크박스를 선택하면 AdGuard가 필터링된 모든 HTTP 요청에 대한 정보가 포함된 HAR 1.2 형식의 파일을 생성합니다. 이 파일은 Fiddler 앱으로 분석할 수 있습니다. 웹 브라우징 속도가 상당히 느려질 수 있습니다.
 
 ### 일반 HTTP 요청에 추가 공백 추가
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### 초기 TLS 패킷의 조각화 크기 조정
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### 일반 HTTP 조각 크기
 
 HTTP 요청 조각화의 크기를 조정합니다. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-유효한 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### QUIC 보기
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
 ### Java 차단
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### DNS 서버 시간 초과 기간
 
@@ -233,7 +233,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 ### 사용자 정의 부트스트랩 주소 목록
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

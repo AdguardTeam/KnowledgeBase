@@ -17,7 +17,7 @@ HAR 文件将根据 [AdGuard 隐私政策](https://adguard.com/en/privacy.html)�
 
 ## 什么是 HAR 文件？
 
-HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。 More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
+HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。 您可以在 [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/)  网站上找到有关 HAR 文件格式及其使用规范的更详细说明。
 
 ## 如何生成 HAR 文件
 

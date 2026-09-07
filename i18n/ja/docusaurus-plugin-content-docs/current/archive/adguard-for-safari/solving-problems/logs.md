@@ -25,6 +25,6 @@ AdGuard は、お客様のプライバシーを保護することに強くコミ
 
 :::
 
-1. [AdGuard for Safari の GitHub リポジトリ](https://github.com/AdguardTeam/AdGuardForSafari/issues)を開き、「_New issue_」をクリックします。
+1. Open the [GitHub repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) and click _New issue_.
 2. ログファイルを devteam@adguard.com に送信してください。 Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title).
    もう一つの方法として、ログファイルをGoogle Driveにアップロードして、devteam@adguard.com にリンクを送りください。 GitHub のissueにもファイルへのリンクを追加してください。

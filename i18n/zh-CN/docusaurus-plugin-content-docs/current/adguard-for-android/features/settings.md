@@ -15,11 +15,11 @@ sidebar_position: 4
 
 此部分可帮助用户管理本应用的外观和行为：可以设置颜色主题和语言，管理通知等。 如您想帮助 AdGuard 团队检测应用崩溃并研究可用性，您可以开启「自动报告崩溃」和「发送技术和交互数据」。
 
-![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![常规 \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
 用户可在「应用和过滤器更新」下配置自动更新过滤器，以及选择应用更新通道。 选择「稳定版」可试用正式发布版本，选择「测试版」或「Nightly」可提前使用最新功能。
 
-![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![更新 \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### 高级设置
 
@@ -29,146 +29,146 @@ sidebar_position: 4
 
 「日志级别」定义应记录哪些有关应用程序运行的数据。 默认情况下，应用程序会收集有关其事件的数据。 「调试」级别记录更多事件，有时 AdGuard 团队要求启用调试级别，因为它们可以帮助支持团队更好地了解问题原因。 [了解有关收集和发送日志的更多信息](/adguard-for-android/solving-problems/log/)。
 
-![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![进阶设置 \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 「低级设置」部分适用于专家用户。 [了解有关低级设置的更多信息](/adguard-for-android/features/low-level-settings/)
 
-![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![低级设置 \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## 过滤
 
-This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
+此部分让用户管理过滤器、扩展、网络设置、将网站添加到允许列表以及创建用户规则。
 
-[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+[了解如何创建自己的用户规则](/general/ad-filtering/create-own-filters)
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
+![过滤 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### 过滤器
 
-AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
+AdGuard 通过应用过滤器中的规则来拦截广告、跟踪器和干扰内容。 「保护」板块的大多数功能均由 [AdGuard 过滤器](/general/ad-filtering/adguard-filters/#adguard-filters)驱动。 如果启用「基本保护」，将自动开启 AdGuard 基础过滤器和 AdGuard 移动广告过滤器。 反之亦然：如果关闭这两个过滤器，「基本保护」也将被停用。
 
-![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![过滤器 \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
+默认启用的过滤器足以满足 AdGuard 的正常运行。 不过，如果想自定义广告拦截，可以使用其他 AdGuard 或第三方过滤器。 为此，请选择一个类别并启用所需的过滤器。 要添加自定义过滤器，请点击「自定义过滤器」→「添加自定义过滤器」并输入其 URL 或文件路径。
 
 :::note
 
-If you activate too many filters, some websites may work incorrectly.
+如果启用的过滤器过多，部分网站可能无法正常工作。
 
 :::
 
-[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
+[阅读更多关于过滤器的信息](https://adguard.com/zh_cn/blog/what-are-filters.html)
 
 ### 浏览器扩展
 
-Extensions allow you to add userscripts and userstyles.
+扩展允许您添加用户脚本和用户样式。
 
-![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+![扩展程序 \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+用户脚本是用 JavaScript 编写的小程序，用于扩展一个或多个网站的功能。 要安装用户脚本，需要一个专门的用户脚本管理器。 AdGuard 内置了此功能，支持通过 URL 或从文件添加用户脚本。
 
-Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+用户样式与用户脚本类似，可以在不修改网页内容的情况下改变网页在浏览器中的外观。 其原理是向网站现有样式添加 CSS 样式。 例如，如果某个网站没有深色主题，而您想要一个，就可以使用用户样式来实现。
 
-To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+要添加用户样式，请前往「设置」→「过滤」→「扩展」→「添加扩展」→「从文件或 URL 导入」。 [网上](https://userstyles.world/)可以找到现成的用户样式。
 
-To create your own style, tap _Add extension_ → _Create userstyle_.
+要创建自己的样式，请点击「添加扩展」→「创建用户样式」。
 
 #### AdGuard Extra
 
-AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
+AdGuard Extra 是一款自定义用户脚本，可拦截复杂广告以及将广告重新注入网站的机制。
 
-#### Disable AMP
+#### 关闭 AMP
 
-Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
+关闭 AMP 是一款用户脚本，可在 Google 搜索结果页面上关闭[加速移动页面](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages)。
 
 ### 网络
 
 #### HTTPS 过滤
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
+要在大多数网站和大多数应用中拦截广告和跟踪器，AdGuard 需要过滤其 HTTPS 流量。 [阅读更多关于 HTTPS 过滤的信息](/general/https-filtering/what-is-https-filtering)。
 
-##### Security certificates
+##### 安全证书
 
-To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
+为管理加密流量，AdGuard 会在您的设备上安装其 CA 证书。 这是安全的：流量在本地过滤，AdGuard 会验证连接的安全性。
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+在较旧版本的 Android 上，证书会自动安装。 在 Android 11 及更高版本上，则需要手动安装。 [安装说明](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+用户存储中的 CA 证书足以过滤浏览器和部分应用中的 HTTPS 流量。 但是，有些应用仅信任系统存储中的证书。 要过滤这些应用中的 HTTPS 流量，需要将 AdGuard 的 CA 证书安装到系统存储中。 [说明](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### HTTPS-filtered apps
+##### 进行 HTTPS 过滤的应用
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+此部分包含 AdGuard 过滤其 HTTPS 流量的应用列表。 请注意，只有同时在用户存储和系统存储中都安装 CA 证书，此设置才能应用于所有应用。
 
-##### HTTPS-filtered websites
+##### 进行 HTTPS 过滤的网站
 
-This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
+此设置允许用户管理 AdGuard 应对哪些网站过滤 HTTPS 流量。
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS 过滤允许 AdGuard 过滤请求和响应的内容，但我们绝不会收集或存储这些数据。 不过，为了提高安全性，我们会[将可能包含敏感信息的网站从 HTTPS 过滤中排除](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data)。
 
-You can also add websites that you consider necessary to exclusions by selecting one of the modes:
+您还可以通过选择以下模式之一，将您认为必要的网站添加到排除项：
 
-- Exclude specific websites from HTTPS filtering
-- Filter HTTPS traffic only on the websites added to exclusions
+- 从 HTTPS 过滤中排除特定网站
+- 仅对添加到排除项的网站过滤 HTTPS 流量
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. 如果需要，用户还可以启用「过滤带 EV 证书的网站」。
+默认情况下，我们也不会过滤具有扩展验证 (EV) 证书的网站，例如金融网站。 如有需要，可以启用「过滤具有 EV 证书的网站」选项。
 
-#### Proxy
+#### 代理
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+用户可以将 AdGuard 设置为通过代理服务器路由设备的所有流量。 [如何设置出站代理](/adguard-for-android/solving-problems/outbound-proxy)
 
-In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
+在此板块中，如果 VPN 提供商允许，您还可以设置第三方 VPN 与 AdGuard 协同工作。
 
-Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
+在「通过代理运行的应用」下，您可以选择哪些应用通过您指定的代理路由流量。 如果启用了「与 AdGuard VPN 的集成」，此设置相当于 AdGuard VPN 的应用排除功能：它允许您指定哪些应用通过 AdGuard VPN 隧道路由。
 
-#### Routing mode
+#### 路由模式
 
-This section allows you to select the traffic filtering method.
+此板块允许用户选择流量过滤方式。
 
-- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
-
-:::note
-
-The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
-
-:::
-
-- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+- **本地 VPN** 通过本地创建的 VPN 过滤流量。 这是最可靠的方式。 由于 Android 的限制，它也是非 Root 设备上唯一可用的系统级流量过滤方式。
 
 :::note
 
-Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+「本地 VPN」模式不允许 AdGuard 与其他 VPN 同时使用。 要将其他 VPN 与 AdGuard 一起使用，您需要将其重新配置为代理模式工作，并在 AdGuard 中设置出站代理。 对于 AdGuard VPN，这通过[**集成模式**](/adguard-for-android/features/integration-with-vpn)自动完成。
 
 :::
 
-- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
+- **自动代理**是一种不需要使用 VPN 的替代流量路由方式。 一个显著优势是它可以与 VPN 并行运行。 此模式需要 Root 权限。
+
+:::note
+
+请注意，在「自动代理路由」模式下，DNS 过滤仍将生效，但您的设备可能无法过滤来自特定应用的 DNS 请求。 在「VPN」路由模式下，应用由系统手段从本地 VPN 中排除。 因此，系统解析器知道哪些应用包含在 VPN 中，哪些没有。 它要么让它们进入本地 VPN，要么让它们绕过 VPN。 然而，DNS 请求来自系统解析器，而非应用程序。 在「自动代理」模式下，只能排除应用的流量，而不能排除其 DNS 查询，因为 AdGuard 将其视为系统查询。
+
+:::
+
+- **手动代理** 涉及在特定端口上设置代理服务器，然后在 Wi-Fi 设置中进行配置。 此模式在 Android 10 及以上版本需要 Root 权限。
 
 ## 许可证
 
-In this section, you can find information about your license and manage it:
+在此板块中，您可以找到有关您的许可证的信息并对其进行管理：
 
-- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the activation code to activate your license
-- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
-- Refresh the license status from the three-dots menu (⋮)
-- Open the AdGuard account to manage your license there
-- Reset your license — for example, if you've reached device limit for this license and want to apply another one
+- 购买 AdGuard 许可证以激活[完整版功能](/adguard-for-android/features/free-vs-full)。
+- 登录 AdGuard 账号或输入激活码以激活许可证。
+- 注册以激活 14 天试用期。 激活码可用于不同设备和平台。
+- 通过三点菜单 (⋮) 刷新许可证状态。
+- 打开 AdGuard 账号以在其中管理许可证。
+- 重置许可证：例如，如果此许可证的设备数量已达上限，而您想应用另一个许可证。
 
-![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
+![许可证页面 \*mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## 支持
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
+如果您对 AdGuard Android 版有任何疑问或建议，请使用此板块。 在联系支持团队之前，建议先查阅[常见问题](https://adguard.com/support/adguard_for_android.html)或本知识库。
 
-![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![支持 \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-If you notice a missed ad, please report it via _Report incorrect blocking_.
+如果您发现遗漏的广告，请通过「报告错误的拦截」进行反馈。
 
-For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+如遇应用异常行为，请选择「报告错误」。 如有可能，请详细描述问题并附上应用日志。 [如何描述问题](/guides/report-bugs/#how-to-describe-a-problem)
 
-For your suggestions, use _Request a feature_.
+如需提出建议，请使用「请求新功能」。
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub 是报告错误和提出新功能建议的另一种方式。 [说明和仓库链接](/guides/report-bugs/#adguard-for-android)
 
 :::

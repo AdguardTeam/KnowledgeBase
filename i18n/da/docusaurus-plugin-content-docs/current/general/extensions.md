@@ -1,5 +1,5 @@
 ---
-title: Extensions
+title: Udvidelser
 sidebar_position: 6
 ---
 
@@ -17,7 +17,7 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you are exposing yourself to a certain risk, as some scripts may be harmful to your computer.
 
-#### AdGuard Extra
+#### AdGuard Ekstra
 
 An extension that blocks ads in difficult cases when the usual filter-based approach is not enough. AdGuard Extra comes pre-installed in AdGuard standalone apps, except for the one for iOS, so you don't need to do anything to enable it. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
 
@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-A userscript for people visiting Korean websites and some international websites. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Læs mere om tinyShield og installation heraf på [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### Where can you get more userscripts?{#more-userscripts}
 
@@ -94,6 +94,10 @@ Here we will describe some of the most popular userscript catalogs.
 #### OpenUserJS.org
 
 [OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
+
+#### NamuLink
+
+[NamuLink](https://github.com/FilteringDev/NamuLink) er et open source-brugerskript, der fjerner Naver PowerLink-annoncer fra NamuWiki ved at omgå webstedets avancerede linksløringsmekanismer. Projektet vedligeholdes af AdGuard-teamet og det generelle adblocking-fællesskab.
 
 #### Community
 
@@ -223,14 +227,14 @@ You can access the instance of this class by using the `ADG_policyApi` variable 
 
 ##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Hvis uunderstøttet, returneres `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Hvis uunderstøttet, returneres `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Hvis uunderstøttet, returneres `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Hvis uunderstøttet, returneres `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Hvis uunderstøttet, returneres `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Hvis uunderstøttet, returneres `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Hvis uunderstøttet, returneres `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Hvis uunderstøttet, returneres `false`.
 
 ##### Additional Types
 
@@ -379,7 +383,7 @@ This will allow userscripts to listen for URL changes and handle them accordingl
 :::note
 
 The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
-Eksempler:
+Examples:
 
 - Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
 - Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.

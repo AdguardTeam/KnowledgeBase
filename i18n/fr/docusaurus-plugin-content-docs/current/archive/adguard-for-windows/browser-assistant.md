@@ -5,7 +5,7 @@ sidebar_position: 3
 
 La fonction principale de l'Assistant AdGuard est de gérer le filtrage directement depuis le navigateur. Il existe depuis assez longtemps, et sa forme et son contenu ont évolué. Plus précisément, il s’agissait auparavant d’un simple script utilisateur intégré à l’application AdGuard pour Windows qui est ensuite devenu une extension complète de navigateur. Maintenant, il offre plus d’avantages.
 
-![Assistant de navigateur *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Avantages
 
@@ -15,7 +15,7 @@ L'Assistant de navigateur AdGuard est une extension de navigateur, qui est insta
 
 ### Compatibilité avec l'application principale
 
-Si vous avez pris l'habitude d'utiliser notre extension [AdGuard Ad Blocker](/adguard-browser-extension/compatibility) précédente, vous aimerez peut-être la solution que nous avons développée pour le nouvel assistant de navigateur.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Informations de base :
 
@@ -29,17 +29,18 @@ Lors de l'utilisation de l'Assistant de navigateur, tous ces problèmes n'ont pa
 
 Le nouvel Assistant de navigateur a son propre onglet dans les paramètres d'AdGuard pour Windows, accompagné du Mode furtif, de la Navigation sécurisée, du Contrôle parental et d'autres. Là, vous trouverez un lien pour télécharger l'extension pour votre navigateur par défaut. De plus, il y a une case à cocher pour activer l'Ancien assistant.
 
-![Paramètres *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Ancien Assistant
 
-L'ancien assistant est la version précédente de l'Assistant, qui n'est qu'un simple script utilisateur, pas une extension de navigateur. En gros, il y a deux cas où vous pourriez vouloir le choisir au lieu du nouvel Assistant de navigateur :
+L'ancien assistant est la version précédente de l'Assistant, qui n'est qu'un simple script utilisateur, pas une extension de navigateur.
+En gros, il y a deux cas où vous pourriez vouloir le choisir au lieu du nouvel Assistant de navigateur :
 
 1. Le nouvel Assistant n'est pas disponible pour votre navigateur.
-1. Vous êtes habitué à l'icône du bouclier vert et souhaitez laisser les choses telles qu'elles étaient.
+2. Vous êtes habitué à l'icône du bouclier vert et souhaitez laisser les choses telles qu'elles étaient.
 
 ## Comment installer l'Assistant de navigateur AdGuard
 
 Si vous souhaitez installer l'Assistant de navigateur pour votre navigateur par défaut, vous pouvez le faire directement à partir des paramètres de l'application, mais vous avez également la possibilité de l'installer pour d'autres navigateurs.
 
-L'Assistant de navigateur AdGuard est disponible pour tous les navigateurs populaires : Chrome, Firefox, Edge, Opera et Yandex. Pour installer celui dont vous avez besoin (ou plusieurs, ce n'est pas interdit mais même encouragé), allez sur [notre site web](https://adguard.com/adguard-assistant/overview.html), cliquez sur l'icône du navigateur et ensuite sur le bouton *Installer*. Voilà !
+L'Assistant de navigateur AdGuard est disponible pour tous les navigateurs populaires : Chrome, Firefox, Edge, Opera et Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. Voilà !

@@ -101,7 +101,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at [support@adguard.com](mailto:support@adguard.com).
+    将创建的 `txt` 文件以及问题复现的时间（来自第 2 步）一并发送至我们的支持团队：[support@adguard.com](mailto:support@adguard.com)。
 
 ### ROOT 用户的替代方法
 

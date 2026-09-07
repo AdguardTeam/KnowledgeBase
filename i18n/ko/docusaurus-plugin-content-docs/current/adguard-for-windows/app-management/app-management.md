@@ -3,12 +3,6 @@ title: 앱 관리
 sidebar_position: 1
 ---
 
-:::info
-
-이 문서는 Windows용 AdGuard v8.0을 소개합니다. Windows용 AdGuard는 기기를 시스템 수준에서 보호하는 광고 차단 프로그램입니다. 이 버전은 아직 개발 중인 베타입니다. [Windows용 AdGuard 베타](https://agrd.io/windows_beta)를 내려받아 사용해 보세요.
-
-:::
-
 **앱 관리** 섹션에서는 기기에 설치된 모든 앱의 라우팅 및 필터링 설정을 관리할 수 있습니다.
 
 AdGuard가 앱의 네트워크 연결을 감지하면 해당 앱은 자동으로 **앱 관리**에 추가되며, 그 트래픽은 AdGuard를 거쳐 처리됩니다.
@@ -21,7 +15,7 @@ AdGuard는 기본적으로 모든 트래픽을 필터링하지만, 제외할 항
 
 설정을 그대로 둘 수도 있고, 필터링과 라우팅을 모두 끌 수도 있으며, 앱별로 세부 설정을 직접 조정할 수도 있습니다. 또한 해당 앱의 통계도 확인할 수 있습니다. 앱 통계 정보도 확인할 수 있습니다.
 
-![앱 통계](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Windows용 AdGuard v8.0에서 앱 필터링 및 라우팅이 작동하는 방식
 

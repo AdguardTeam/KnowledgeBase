@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Основная функция Браузерного Помощника — это управление фильтрацией прямо из браузера. Он существует уже довольно давно, и его форма и содержание менялись. Раньше он был обычным пользовательским скриптом, встроенным в приложение AdGuard для Windows, а потом превратился в полноценное браузерное расширение. Теперь он определённо приносит больше пользы.
 
-![Браузерный помощник *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Преимущества
 
@@ -15,7 +15,7 @@ sidebar_position: 3
 
 ### Совместимость с основным приложением
 
-Если вы привыкли использовать предыдущее расширение [блокировщика рекламы AdGuard](/adguard-browser-extension/compatibility), вам может понравиться решение, которое мы разработали для нового Браузерного помощника.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Справочная информация:
 
@@ -29,17 +29,18 @@ sidebar_position: 3
 
 У нового Браузерного помощника есть своя вкладка в настройках AdGuard для Windows, наряду с Защитой от трекинга, Защитой от фишинга, Родительским контролем и другими. Там вы найдёте ссылку для загрузки расширения для вашего браузера по умолчанию. Кроме того, там можно установить флажок для включения прежней версии Помощника.
 
-![Настройки *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Предыдущая версия Помощника
 
-Легаси — это предыдущая версия Помощника, который по сути был пользовательским скриптом, а не браузерным расширением. Есть два случая, когда вы можете выбрать его вместо нового Браузерного помощника:
+Легаси — это предыдущая версия Помощника, который по сути был пользовательским скриптом, а не браузерным расширением.
+Есть два случая, когда вы можете выбрать его вместо нового Браузерного помощника:
 
 1. Новый Помощник недоступен для вашего браузера.
-1. Вы привыкли к иконке с зелёным щитом и хотите оставить всё как есть.
+2. Вы привыкли к иконке с зелёным щитом и хотите оставить всё как есть.
 
 ## Как установить Браузерный помощник AdGuard
 
 Если вы хотите установить Браузерный Помощник для своего браузера по умолчанию, вы можете сделать это прямо из настроек приложения. Однако у вас также есть возможность установить его для других браузеров.
 
-Браузерный помощник AdGuard доступен для всех популярных браузеров: Chrome, Firefox, Edge, Opera и Яндекс. Чтобы установить Помощник для нужного браузера (или несколько, это не запрещено, а даже приветствуется), перейдите [на наш сайт](https://adguard.com/adguard-assistant/overview.html), нажмите на иконку браузера и выберите *Установить*. Вот и всё!
+Браузерный помощник AdGuard доступен для всех популярных браузеров: Chrome, Firefox, Edge, Opera и Яндекс. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. Вот и всё!

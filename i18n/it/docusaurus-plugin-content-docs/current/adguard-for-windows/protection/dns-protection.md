@@ -3,12 +3,6 @@ title: Protezione DNS
 sidebar_position: 4
 ---
 
-:::info
-
-Questo articolo descrive AdGuard per Windows v8.0, un blocca-inserzioni completo che protegge il tuo dispositivo a livello di sistema. Questo è una versione beta ancora in fase di sviluppo. Per provarlo, scarica la [versione beta di AdGuard per Windows](https://agrd.io/windows_beta).
-
-:::
-
 La protezione DNS ti dà maggior controllo su come il tuo dispositivo si connette alla rete globale. Ci sono tre ragioni principali per cui può essere utile:
 
 ## 1. Proteggi la tua riservatezza dal tuo ISP
@@ -23,13 +17,13 @@ I protocolli moderni come DNS-over-TLS e DNS-over-HTTPS assicurano che le tue ri
 
 La protezione DNS può filtrare inserzioni, tracciatori, siti web di phishing e altri contenuti dannosi o fastidiosi prima che siano caricati nel tuo browser o nelle tue app. [Scopri di più sul filtraggio DNS](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![Protezione DNS](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![DNS protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
 Ecco cosa puoi configurare nella protezione DNS:
 
 ## Scegli un server DNS
 
-![Server DNS](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![DNS servers \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
 Puoi selezionare tra diversi fornitore DNS affidabili. AdGuard offre diverse opzioni per diverse esigenze:
 

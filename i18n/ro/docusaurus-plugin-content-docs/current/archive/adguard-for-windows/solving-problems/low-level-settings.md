@@ -11,15 +11,15 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 Anterior cunoscute ca setări de nivel scăzut, Setările Avansate conțin în principal opțiuni care depășesc competența medie a utilizatorului și nu sunt aplicate în utilizarea zilnică. AdGuard pentru Windows este conceput să funcționeze fără a fi nevoie să modificați niciuna dintre ele, dar acestea vor oferi funcții suplimentare în anumite cazuri sau când se rezolvă o problemă neobișnuită.
 
-:::atenție
+:::caution
 
-Schimbarea fără a gândi *Setărilor Avansate* poate provoca probleme cu performanța AdGuard, poate întrerupe conexiunea la Internet sau compromite securitatea și intimitatea dumneavoastră. Ar trebui să modificați aceste setări doar dacă sunteți siguri de ceea ce faceți sau dacă echipa noastră de suport v-a cerut să faceți acest lucru.
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Ar trebui să modificați aceste setări doar dacă sunteți siguri de ceea ce faceți sau dacă echipa noastră de suport v-a cerut să faceți acest lucru.
 
 :::
 
 ## Cum să accesați Setările Avansate
 
-Pentru a accesa *setările avansate*, în fereastra principală faceți clic pe *Setări → Setări generale* și derulați în jos până la *Setări Avansate*. Alternativ, selectați *Avansat → Setări avansate...* în meniul din sistem.
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## Setări Avansate
 
@@ -31,7 +31,7 @@ Dacă este activat, AdGuard va bloca TCP Fast Open în browserul Edge. Pentru a 
 
 ### Use Encrypted Client Hello
 
-Fiecare conexiune Internet criptată are o parte necriptată. Acesta este primul pachet care conține numele serverului la care vă conectați. Tehnologia Encrypted Client Hello este destinată să rezolve această problemă și să criptaze acel ultim bit de informație necriptată. To benefit from it, enable the *Use Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, Client Hello packet will be encrypted.
+Fiecare conexiune Internet criptată are o parte necriptată. Acesta este primul pachet care conține numele serverului la care vă conectați. Tehnologia Encrypted Client Hello este destinată să rezolve această problemă și să criptaze acel ultim bit de informație necriptată. To benefit from it, enable the _Use Encrypted Client Hello_ option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, Client Hello packet will be encrypted.
 
 ### Verificați transparența certificatelor site-urilor web
 
@@ -59,7 +59,7 @@ Activați această funcție pentru a vedea notificările pop-up AdGuard. Acestea
 
 ### Interceptați automat URL-urile de abonament la filtru
 
-Activați această opțiune dacă doriți ca AdGuard să intercepteze automat URL-urile de abonament la filtru (adică `abp:subscribe` și asemenea) și să deschidă un dialog de instalare a filtrului personalizat.
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### Filter HTTP/3
 
@@ -79,7 +79,7 @@ Dacă această opțiune este activată, AdGuard intercepta tot traficul și îl 
 
 ### Deschideți fereastra principală la demarajul sistemului
 
-Activați această opțiune pentru a face fereastra principală AdGuard să se deschidă după ce sistemul este încărcat. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
+Activați această opțiune pentru a face fereastra principală AdGuard să se deschidă după ce sistemul este încărcat. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### Activați filtrarea la demarajul sistemului
 
@@ -87,7 +87,7 @@ Activați această opțiune pentru a face fereastra principală AdGuard să se d
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). If you were satisfied with the old behavior, enable this option.
 
 :::
 
@@ -97,11 +97,11 @@ Dacă doriți ca AdGuard să filtreze conexiunile de loopback, bifați căsuța.
 
 ### Excludeți intervalele IP specificate de la filtrare
 
-Dacă nu doriți ca AdGuard să filtreze anumite subrețele, activați această funcție și specificați intervalele IP în notația CIDR (ex. 98.51.100.14/24) în secțiunea **Intervale IP excluse de la filtrare** de mai jos.
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### Activați scrierea HAR
 
-Această opțiune ar trebui să fie activată **doar pentru scopuri de depanare**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Acest fișier poate fi analizat cu aplicația Fiddler. Rețineți că acest lucru poate încetini semnificativ navigarea dumneavoastră pe internet.
+This option should be enabled **only for debugging purposes**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Acest fișier poate fi analizat cu aplicația Fiddler. Rețineți că acest lucru poate încetini semnificativ navigarea dumneavoastră pe internet.
 
 ### Adăugați un spațiu suplimentar la cererea HTTP simplă
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Adjust size of fragmentation of initial TLS packet
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size
 
 Ajustează dimensiunea fragmentării cererilor HTTP. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Arată QUIC
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
 ### Block Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### Perioada de expirare a serverului DNS
 
@@ -233,7 +233,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 ### Lista de adrese bootstrap personalizate
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

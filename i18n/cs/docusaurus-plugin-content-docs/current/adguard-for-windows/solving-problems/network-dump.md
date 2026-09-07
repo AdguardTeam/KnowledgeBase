@@ -31,7 +31,7 @@ Otevřete Wireshark a uvidíte seznam síťových rozhraní. Vyberte si to, kter
 
 Pokud si nejste jisti, které rozhraní zvolit, vyberte to, které má v grafu největší aktivitu — čím vyšší je graf, tím více provozu jím prochází.
 
-![Main screen](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
+![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
 Poklepáním na vybrané rozhraní spustíte zachycení provozu. Nyní reprodukujte problém, který se u vás vyskytl, a ujistěte se, že jste provedli pouze nezbytné akce, které problém vyvolaly, a že jste se vyhnuli jakýmkoli jiným procesům. To pomáhá izolovat problém a zajistit, aby byl zaznamenán příslušný provoz.
 

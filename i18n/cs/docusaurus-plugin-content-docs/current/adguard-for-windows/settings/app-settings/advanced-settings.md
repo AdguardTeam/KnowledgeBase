@@ -3,12 +3,6 @@ title: Pokročilá nastavení
 sidebar_position: 4
 ---
 
-:::info
-
-Tento článek popisuje AdGuard pro Windows v8.0, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Jedná se o beta verzi, která je stále ve vývoji. Chcete-li vyzkoušet, stáhněte si [beta verzi AdGuard pro Windows](https://agrd.io/windows_beta).
-
-:::
-
 Sekce _Pokročilá nastavení_ obsahuje možnosti, které přesahují to, co většina uživatelů obvykle potřebuje. AdGuard pro Windows funguje ihned po instalaci, ale tato nastavení mohou být užitečná ve zvláštních případech nebo při řešení problémů.
 
 :::caution

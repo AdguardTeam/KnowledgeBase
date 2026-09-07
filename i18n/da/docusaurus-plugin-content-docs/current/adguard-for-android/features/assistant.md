@@ -1,22 +1,22 @@
 ---
-title: Assistant
+title: Assistent
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Assistant is a handy tool to quickly change app or website settings and view statistics without opening the AdGuard UI.
+Assistent er et praktisk værktøj til hurtigt at ændre app- eller webstedsindstillinger og se statistik uden at åbne AdGuard-brugerfladen.
 
-### How to access Assistant
+### Sådan tilgås Assistent
 
-1. On your Android device, swipe down from the top of the screen to open the notification shade.
-2. Find and **expand** the AdGuard notification.
+1. Stryg ned fra toppen af skærmen for at åbne Androids notifikationspanel.
+2. Find og **ekspandér** AdGuard-notifikationen.
 
-![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+![Ekspandér AdGuard-notifikationen i notifikationspanelet \*mobil](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
 1. Tap _Assistant_.
 
@@ -48,7 +48,7 @@ You'll be taken to the AdGuard app, where you'll see detailed statistics about C
 - Data saved by blocking Chrome's ad or tracking requests
 - Companies that Chrome sends requests to
 
-#### App management
+#### App-håndtering
 
 You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
 

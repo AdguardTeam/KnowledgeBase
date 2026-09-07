@@ -21,7 +21,7 @@ sidebar_position: 9
 
 Для сбора файлов минидампа вам потребуется доступ администратора на вашем компьютере. По умолчанию, Windows сохраняет эти файлы в папке `C:\Windows\Minidump\`. Файлы, которые вы ищете, будут называться либо `MEMORY.DMP`, либо соответствовать шаблону `Mini(ddmmmyy-xxx).dmp`, где буквы и цифры обозначают даты и порядковые номера.
 
-![Файл минидампа](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
+![Minidump file \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
 
 Если вы не можете найти эти файлы, возможно, ваша система не настроена на автоматическое создание минидампов.
 

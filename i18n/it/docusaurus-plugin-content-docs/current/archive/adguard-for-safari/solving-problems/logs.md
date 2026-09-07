@@ -25,6 +25,6 @@ AdGuard si impegna a proteggere la tua privacy. Seguiamo rigorosamente la nostra
 
 :::
 
-1. Apri il [repo GitHub di AdGuard per Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) e fai clic su _Nuovo problema_.
+1. Open the [GitHub repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) and click _New issue_.
 2. Invia i registri a devteam@adguard.com. Includi l'ora del bug e allega un link al tuo problema o il suo numero (appare come #numero accanto al titolo).
    In alternativa, puoi caricare il file di registro su Google Drive e inviarlo a devteam@adguard.com. Aggiungi il link del file al tuo problema su GitHub.

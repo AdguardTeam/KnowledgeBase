@@ -1,54 +1,54 @@
 ---
-title: Other features and options
+title: Øvrige funktioner og indstillinger
 sidebar_position: 4
 ---
 
 :::info
 
-Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter selve webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Apart from the main settings of AdGuard Browser Extension, there are several more specific features that can be configured in the [_General_](#general) and [_Additional settings_](#misc) tabs.
+Udover AdGuard Browser Extensions hovedindstillinger findes flere mere specifikke funktioner, som kan opsættes via fanerne [_Generelt_](#general) og [_Yderligere indstillinger_](#misc).
 
-## General {#general}
+## Generelt {#general}
 
-The _General_ tab contains the main extension settings and lets you control its basic filtering behavior. Here you can allow search ads and [self‑promotion on websites](/general/ad-filtering/search-ads/), enable automatic activation of language-specific filters, set the update interval for the filters, and turn on [protection against phishing and malicious websites](/general/browsing-security/).
+Fanen _Generelt_ indeholder udvidelsens hovedindstillinger, herunder styring af dens basisfiltreringsadfærd. Her kan der tillades søgeannoncer og [selvpromovering på websteder](/general/ad-filtering/search-ads/), aktiveres automatisk aktivering af sprogspecifikke filtre, angives filteropdateringsintervaller og aktiveres [beskyttelse mod phishing og ondsindede websites](/general/browsing-security/).
 
-![General settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_settings.png)
+![Generelle indstillinger \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_settings.png)
 
-You can also save your current configuration and quickly apply it to another browser or device. To do this, click _Share settings_: the extension will generate a special link and a QR code that contain your current settings. You can either copy the link and open it in a browser, or scan the QR code on a device with AdGuard to open the link directly in the app. You will then see a prompt to apply the shared configuration so that you can restore the same setup after reinstalling your browser or on a new device.
+Den aktuell opsætning kan også gemmes og hurtigt anvendes på en anden webbrowser eller enhed. For at gøre dette, klik på _Del indstillinger_: Udvidelsen genererer så et særligt link og en QR-kode indeholdende de aktuelle indstillinger. Linket kan enten kopieres og åbnes i en webbrowser, eller QR-koden kan skannes på en enhed med AdGuard for at åbne linket direkte i appen. Dernæst vises en prompt om at anvende den delte opsætning, så samme opsætning kan gendannes efter geninstallation af webbrowseren eller på en ny enhed.
 
-If needed, you can also share this link with other people or attach it to a support request so the team can see your exact configuration.
+Om nødvendigt kan dette link også deles med andre eller vedhæftes en supportanmodning, så teamet kan se den præcise opsætning.
 
-In addition, you can still export your settings to a .json file by clicking _Export settings_ and import them via the _Import settings_ option. This makes it easy to switch between different configuration profiles or move them between browsers.
+Derudover kan indstillingerne stadig eksporteres til en .json-fil via klik på _Eksportere indstillinger_ og importeres via klik på _Importere indstillinger_. Dette gør det nemt at skifte mellem forskellige opsætningsprofiler eller flytte dem mellem webbrowsere.
 
-## Additional settings {#misc}
+## Yderligere indstillinger {#misc}
 
-The _Additional settings_ section contains various settings that are related to the ad-blocking process and usability.
+Afsnittet _Yderligere indstillinger_ har et antal indstillinger relateret til adblockingprocessen samt app-anvendeligheden.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_settings.png)
+![Yderligere indstillinger \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_settings.png)
 
-Enabling _Use optimized filters_ activates lightweight versions of the ad-blocking rules. It focuses only on the most popular filters to save internet traffic and system memory, which is ideal for mobile browsing.
+Aktivering af _Brug optimerede filtre_ aktiverer letvægtsversionerne af adblockingreglerne. Den fokuserer kun på de mest populære filtre for at spare internettrafik og systemhukommelse, hvilket er ideelt til mobil browsing.
 
 _Hvidliste_ kan inverteres, hvilket afblokerer annoncer på alle websteder som standard, undtagen for de specifikke domæner, som manuelt føjes til listen
 
-AdGuard-elementet kan også føjes til webbrowserens kontekstmenu, visning af antallet af blokerede annoncer kan aktiveres på AdGuard-ikonet og notifikationer om opdateringer af udvidelsen kan slås til eller fra.
+AdGuard-elementet kan også føjes til webbrowserens kontekstmenu, visning af antal blokerede annoncer kan aktiveres på AdGuard-ikonet og opdateringsnotifikationer for udvidelsen kan slås til/fra.
 
-Additionally, this section lets you enable notifications about the AdGuard app, open the _Filtering log_, clear the statistics of blocked ads and trackers, or reset the settings.
+Derudover muliggør dette afsnit at aktivere notifikationer om AdGuard-appen, åbne _Filtreringslog_, rydde statistikker over blokerede annoncer og trackere eller nulstille indstillingerne.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+Desuden er det muligt at hjælpe os med udviklingen af filtre ved at indsende statistikker over anvendte regler: Hvilke, som udløses, på hvilke websteder og hvor ofte. Denne indstilling er som standard slået fra, da vi ikke indsamler brugerdata uden samtykke. Men såfremt den aktiveres, vil alle data blive strengt anonymiseret.
 
-You can also choose to help us improve the extension by sending us anonymized usage data. This includes the names of the screens you interact with, the names of the buttons you click, and session identifiers. These insights help us understand where users run into friction, refine the experience, and make the extension faster and easier to use. The _Send anonymized usage data_ option is disabled by default. If you enable it, all data will be strictly anonymized and used only internally. It will never be shared with third parties.
+Det er også muligt at hjælpe os med at forbedre udvidelsen ved at indsende anonymiserede brugsdata. Dette omfatter navnene på de skærme, som der interageres med, navnene på de knapper, som der klikkes på og sessionsidentifikatorer. Disse indsigter hjælper os med at forstå, hvor brugerne støder på modstand, forfine oplevelsen og gøre udvidelsen hurtigere og nemmere at bruge. Indstillingen _Indsend anonymiseret brugsdata_ er som standard slået fra. Aktiveres den, vil alle data blive strengt anonymiseret og kun brugt internt. De vil aldrig blive delt med tredjeparter.
 
 :::note
 
-The _Send anonymized usage data_ option can also be enabled on the post-installation page in Chromium-based browsers.
+Indstillingen _Indsend anonymiserede brugsdata_ kan også aktiveres på efterinstallationssiden i Chromium-webbrowsere.
 
 :::
 
-## About {#about}
+## Om {#about}
 
-I afsnittet _Om_ kan findes oplysninger om den aktuelle version, links til Fortrolighedspolitik samt et link til webbrowserudvidelsens repo på GitHub.
+I afsnittet _Om_ findes oplysninger om den aktuelle version, links til Fortrolighedspolitik samt et link til Browser Extension-repo'et på GitHub.
 
 ![Om \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about.png)

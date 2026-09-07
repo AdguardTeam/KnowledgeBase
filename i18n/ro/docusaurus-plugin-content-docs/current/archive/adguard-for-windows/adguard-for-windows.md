@@ -1,5 +1,5 @@
 ---
-title: AdGuard for Windows
+title: AdGuard for Windows v7
 sidebar_position: 1
 ---
 
@@ -9,11 +9,11 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 :::
 
-- [Caracteristici](/archive/adguard-for-windows/features/features.md)
+- [Features](/archive/adguard-for-windows/features/features.md)
 
   Main features and settings available in AdGuard for Windows
 
-- [Instalare](/archive/adguard-for-windows/installation.md)
+- [Installation](/archive/adguard-for-windows/installation.md)
 
   Installation, removal, and system requirements for AdGuard for Windows
 
@@ -21,10 +21,10 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
   An extension that complements the desktop app and allows you to manage filtering from your browser
 
-- [Rezolvarea problemelor](/archive/adguard-for-windows/solving-problems/solving-problems.md)
+- [Solving problems](/archive/adguard-for-windows/solving-problems/solving-problems.md)
 
   Known issues and possible solutions
 
-- [Documentație pentru administratori](/archive/adguard-for-windows/admins-documentation.md)
+- [Documentation for admins](/archive/adguard-for-windows/admins-documentation.md)
 
   Configuration guide for system administrators

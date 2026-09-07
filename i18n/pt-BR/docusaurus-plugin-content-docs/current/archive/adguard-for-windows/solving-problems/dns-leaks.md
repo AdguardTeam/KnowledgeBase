@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,34 +15,35 @@ Muitos usuários do AdGuard para Windows gostam do recurso de proteção DNS. Ma
 
 ## Endereço DNS de bootstrap
 
-Os endereços dos servidores DNS podem ser escritos como IPs ou nomes de domínio. No caso dos endereços IP não há dificuldades: o AdGuard encaminha a solicitação DNS diretamente para o servidor especificado no módulo de proteção DNS. No entanto, endereços de servidores DNS criptografados, como DoT ou DoH, são geralmente escritos como nomes de domínio. Neste caso, para primeiro resolver o endereço do servidor DNS criptografado, o AdGuard envia uma consulta DNS para o endereço de inicialização, que é por padrão um servidor DNS do sistema. Essa conexão é o que os serviços de verificação consideram um vazamento.
+Os endereços dos servidores DNS podem ser escritos como IPs ou nomes de domínio.
+No caso dos endereços IP não há dificuldades: o AdGuard encaminha a solicitação DNS diretamente para o servidor especificado no módulo de proteção DNS. No entanto, endereços de servidores DNS criptografados, como DoT ou DoH, são geralmente escritos como nomes de domínio. Neste caso, para primeiro resolver o endereço do servidor DNS criptografado, o AdGuard envia uma consulta DNS para o endereço de inicialização, que é por padrão um servidor DNS do sistema. Essa conexão é o que os serviços de verificação consideram um vazamento.
 
-**Para eliminar esse vazamento:**
+**To eliminate this leak:**
 
-- vá para *Configurações avançadas*
-- role para baixo até a seção *Lista de endereços de bootstrap personalizados*
-- insira o endereço de bootstrap personalizado no formato de Endereço de IP (você pode usar [a lista de provedores DNS conhecidos](https://adguard-dns.io/kb/general/dns-providers/))
-- clique em *Salvar*
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click _Save_
 
 ## Servidor DNS fallback
 
 Pode ser que o AdGuard não consiga acessar o servidor especificado devido a uma conexão de Internet fraca, à expiração do tempo limite definido por padrão ou a alguns problemas relacionados ao servidor. Neste caso, ele se conectará ao servidor substituto, que por padrão é um servidor DNS do sistema. Esta conexão também será considerada pelo serviço de verificação como vazamento.
 
-**Para eliminar esse vazamento:**
+**To eliminate this leak:**
 
-- vá para *Configurações avançadas*
-- role para baixo até a seção *Servidores de fallback*
-- marque a opção *Usar servidores personalizados*
-- em seguida, encontre a seção *Lista de servidores fallback personalizados* e insira os servidores alternativos personalizados, um por linha
-
-ou
-
-- vá para *Configurações avançadas*
-- role para baixo até a seção *Servidores de fallback*
-- marque a opção *Não usar servidores substitutos*
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
 
 ou
 
-- vá para *Configurações avançadas*
-- role para baixo até a seção *Período de tempo limite do servidor DNS*
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
+
+ou
+
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
 - insira um número grande arbitrário

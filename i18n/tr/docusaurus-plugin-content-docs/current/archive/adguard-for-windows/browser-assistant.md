@@ -5,7 +5,7 @@ sidebar_position: 3
 
 AdGuard Asistanı'nın birincil işlevi filtrelemeyi doğrudan tarayıcıdan yönetmektir. Oldukça uzun bir süredir kullanılmakta olup, şekli ve içeriği değişmiştir. Daha doğrusu, Windows için AdGuard uygulamasına dahil edilen yalnızca bir kullanıcı metniydi ve tam teşekküllü bir tarayıcı uzantısı hâline geldi. Artık daha fazla avantaj sağlıyor.
 
-![Tarayıcı Asistanı *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Avantajlar
 
@@ -15,7 +15,7 @@ AdGuard Tarayıcı Asistanı bir tarayıcı uzantısıdır, bir tarayıcıya yü
 
 ### Ana uygulama ile uyumluluk
 
-Önceki [AdGuard Reklam Engelleyici uzantımızı](/adguard-browser-extension/compatibility) kullanmayı alışkanlık hâline getirdiyseniz, yeni Tarayıcı Asistanı için geliştirdiğimiz çözümü beğenebilirsiniz.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Arka plan bilgisi:
 
@@ -29,17 +29,18 @@ Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayaca
 
 Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
 
-![Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Eski Asistan
 
-Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
+Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür.
+Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
 
 1. Yeni Asistan tarayıcınızda kullanılamıyor.
-1. Yeşil kalkan simgesine alışkınsınız ve her şeyi olduğu gibi bırakmak istiyorsunuz.
+2. Yeşil kalkan simgesine alışkınsınız ve her şeyi olduğu gibi bırakmak istiyorsunuz.
 
 ## AdGuard Tarayıcı Asistanı nasıl yüklenir
 
 Tarayıcı Asistanını varsayılan tarayıcınız için yüklemek isterseniz bunu doğrudan uygulama ayarlarından yapabilirsiniz ancak diğer tarayıcılar için de yükleme olanağınız vardır.
 
-AdGuard Tarayıcı Asistanı tüm popüler tarayıcılarda kullanılabilir: Chrome, Firefox, Edge, Opera ve Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Bu kadar!
+AdGuard Tarayıcı Asistanı tüm popüler tarayıcılarda kullanılabilir: Chrome, Firefox, Edge, Opera ve Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. Bu kadar!

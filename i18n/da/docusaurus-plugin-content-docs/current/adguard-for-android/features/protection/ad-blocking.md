@@ -1,18 +1,18 @@
 ---
-title: Ad blocking
+title: Adblocking
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-![Ad blocking \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
+![Adblocking \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/ad-blocking.png)
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+Modulet Adblocking kan tilgås ved at trykke på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _Adblocking_.
 
-The feature removes ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+Funktionen fjerner annoncer ved at anvende adblocking og sprogspecifikke filtre. Læs evt. den [dedikerede artikel](/general/ad-filtering/how-ad-blocking-works) for yderligere info om adblockingmekanismen.
 
-_Basic protection_ effectively blocks ads on most websites. For more customized ad blocking, you can enable _Language-specific ad blocking_ — it contains filtering rules for websites in specific languages.
+_Basisbeskyttelse_ blokerer effektivt annoncer på de fleste websteder. For mere tilpasset adblocking kan _Sprogspecifik adblocking_ aktiveres, der indeholder filtreringsregler for websteder på bestemte sprog.

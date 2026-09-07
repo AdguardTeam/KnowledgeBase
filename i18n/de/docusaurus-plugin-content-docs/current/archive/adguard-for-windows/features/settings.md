@@ -13,11 +13,11 @@ _Einstellungen_ ist der Bereich, der die meiste Aufmerksamkeit erfordert. Hier k
 
 ### Allgemeine Einstellungen
 
-Hier können Sie die Sprache und das Design (dunkel oder hell) festlegen, den Start von AdGuard beim Systemstart und automatische Aktualisierungen im Hintergrund aktivieren, den Aktualisierungskanal auswählen und die Häufigkeit der Filteraktualisierungen festlegen. Die Einstellungen sind auch der richtige Ort, wenn AdGuard für Windows nicht richtig funktioniert und das Support-Team Sie gebeten hat, _Fehlersuchprotokolle_ zu erfassen (/archive/adguard-for-windows/solving-problems/adguard-logs.md).
+Hier können Sie die Sprache und das Design (dunkel oder hell) festlegen, den Start von AdGuard beim Systemstart und automatische Aktualisierungen im Hintergrund aktivieren, den Aktualisierungskanal auswählen und die Häufigkeit der Filteraktualisierungen festlegen. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/archive/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Einstellungen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-Ganz unten auf dem Bildschirm finden Sie _Erweiterte Einstellungen_. Wenn Sie einige von ihnen unbedacht ändern, kann dies zu Problemen mit der Leistung führen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Deshalb empfehlen wir Ihnen, diesen Bereich nur zu öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie danach gefragt hat. Wenn Sie wissen möchten, was unter _Erweiterte Einstellungen_ eingestellt werden kann, lesen Sie den [entsprechenden Artikel](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
+Ganz unten auf dem Bildschirm finden Sie _Erweiterte Einstellungen_. Wenn Sie einige von ihnen unbedacht ändern, kann dies zu Problemen mit der Leistung führen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Deshalb empfehlen wir Ihnen, diesen Bereich nur zu öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie danach gefragt hat. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Erweiterte Einstellungen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
@@ -93,4 +93,4 @@ Im Modul _Kindersicherung_ können Sie die _Sichere Suche_ aktivieren und die _S
 
 ![Browser-Assistent \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-Von diesem Tab aus können Sie ganz einfach den AdGuard Browser-Assistenten installieren, dessen Hauptfunktion darin besteht, das Filtern direkt über den Browser zu verwalten. Wie Sie damit arbeiten und was zu tun ist, wenn es für Ihren Browser keinen Browser-Assistenten gibt, wird in einem [separaten Artikel](/archive/adguard-for-windows/browser-assistant.md) näher erläutert.
+Von diesem Tab aus können Sie ganz einfach den AdGuard Browser-Assistenten installieren, dessen Hauptfunktion darin besteht, das Filtern direkt über den Browser zu verwalten. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/archive/adguard-for-windows/browser-assistant.md).

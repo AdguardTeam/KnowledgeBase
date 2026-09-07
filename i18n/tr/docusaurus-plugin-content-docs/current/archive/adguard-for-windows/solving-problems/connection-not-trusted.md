@@ -3,29 +3,29 @@ title: Sertifika ile ilgili konular
 sidebar_position: 2
 ---
 
-:::bilgi
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-HTTPS trafiğini filtreleyebilmek, reklamları ve izleyicileri etkili bir şekilde engelleyebilmek için AdGuard, özel (ve benzersiz) bir kök sertifika oluşturur ve bunu sistem depolama alanına yükler. Sertifikanın neden gerekli olduğu hakkında daha fazla bilgi edinmek için [bu makaleyi](/general/https-filtering/what-is-https-filtering) okuyabilirsiniz.
+HTTPS trafiğini filtreleyebilmek, reklamları ve izleyicileri etkili bir şekilde engelleyebilmek için AdGuard, özel (ve benzersiz) bir kök sertifika oluşturur ve bunu sistem depolama alanına yükler. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering).
 
 Normalde tarayıcılar, kurulum işlemi sırasında sistem sertifika depolama alanına eklendiğinde AdGuard sertifikasına güvenir. Ancak bazı durumlarda bu yeterli olmaz ve uyarı veya hatalarla karşılaşabilirsiniz. Bu durum çoğunlukla Mozilla Firefox, PaleMoon, Waterfox, vb. gibi Firefox tabanlı tarayıcılarda veya Yandex.Browser'da meydana gelir.
 
 İşte bazı yaygın sorunlar:
 
-- [*Potential Security Risk* error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
-- [Yandex.Browser sertifika uyarısı](#yandexbrowser-certificate-warning)
-- [Resmi olmayan uzantılar Firefox tabanlı tarayıcılarda güncellenmiyor](#non-official-add-ons-dont-update-in-firefox-based-browsers)
+- [_Potential Security Risk_ error in Firefox-based browsers](#potential-security-risk-error-in-firefox-based-browsers)
+- [Yandex.Browser certificate warning](#yandexbrowser-certificate-warning)
+- [Non-official add-ons don’t update in Firefox-based browsers](#non-official-add-ons-dont-update-in-firefox-based-browsers)
 
-## *Potential Security Risk* error in Firefox-based browsers
+## _Potential Security Risk_ error in Firefox-based browsers
 
-![Güvenlik riski hatası](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
+![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Eski FireFox sürümleri ve bunları temel alan tarayıcılar, sistem depolamasındaki sertifikalara değil, yalnızca kendi yerel depolamasındaki sertifikalara güvenir. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. Böyle bir şey olursa, önce *Sertifikayı Yeniden Yükle* düğmesine tıklamayı deneyin — bunu *Ağ* sekmesinde bulabilirsiniz.
+Eski FireFox sürümleri ve bunları temel alan tarayıcılar, sistem depolamasındaki sertifikalara değil, yalnızca kendi yerel depolamasındaki sertifikalara güvenir. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the _Reinstall Certificate_ button — you will find it in the _Network_ tab.
 
-![Sertifikayı yeniden yükle](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 Bu işe yaramazsa, AdGuard sertifikasını FireFox depolamasına elle eklemek için talimatları izleyin.
 
@@ -33,36 +33,35 @@ Bu işe yaramazsa, AdGuard sertifikasını FireFox depolamasına elle eklemek i�
 
 1. AdGuard'ı çalıştırın.
 
-1. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the *Download* button. Tarayıcı **cert.cer** dosyasını indirmeye başlamalıdır.
+2. Go to [https://local.adguard.org/cert](https://local.adguard.org/cert) and click the _Download_ button. The browser should start downloading **cert.cer** file.
 
-    :::note
+   :::note
 
-    İndirme sayfasını AdGuard uygulaması üzerinden *Ayarlar → Ağ → HTTPS filtreleme* öğesindeki bağlantıya tıklayarak da açabilirsiniz.
+   You can also open the download page by clicking the link via the AdGuard app at _Settings → Network → HTTPS filtering_.
 
+   :::
 
-:::
+   ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-    ![Sertifika ayarları](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+3. Open your browser and then open _Settings_.
 
-1. Tarayıcınızı açın ve ardından *Ayarlar* öğesini açın.
+4. Go to _Privacy & Security_ tab.
 
-1. *Gizlilik ve Güvenlik* sekmesine gidin.
+5. Scroll down to _Certificates_ and click the _View Certificates_ button.
 
-1. *Sertifikalar* öğesine ilerleyin ve *Sertifikaları göster* düğmesine tıklayın.
+   ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-    ![Sertifikaları göster penceresi](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+6. Select _Authorities_ tab.
 
-1. *Makamlar* sekmesini seçin.
+7. Click _Import..._.
 
-1. *İçe aktar...* öğesine tıklayın.
+   ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-    ![Sertifika ayarları — içe aktarma](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+8. Browse the downloaded **cert.cer** file and click _Open_.
 
-1. İndirilen **cert.cer** dosyasına göz atın ve *Aç* öğesine tıklayın.
+9. Check the _Trust this CA to identify websites_ box and then click _OK_.
 
-1. *Web sitelerini tanımlamak için bu CA'ya güven* kutusunu işaretleyin ve ardından *Tamam* öğesini tıklatın.
-
-    ![Sertifika ayarları — onay kutusu](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+   ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 AdGuard sertifikasını başarıyla yüklediniz. Tarayıcıyı yeniden başlatın; hata ortadan kalkmalıdır.
 
@@ -70,7 +69,7 @@ AdGuard sertifikasını başarıyla yüklediniz. Tarayıcıyı yeniden başlatı
 
 Hem Windows için AdGuard hem de Yandex.Browser kullanıcısıysanız şu uyarıyla karşılaşmış olabilirsiniz:
 
-![Yandex sertifika uyarısı](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Bu neden oluyor
 
@@ -80,9 +79,9 @@ Ancak AdGuard, sertifikasını da güvenilir olanların arasına ekler. Bu karş
 
 ### Sorun nasıl çözülür
 
-En kolay yol, **Siteye git** düğmesine tıklamaktır. Bu, Yandex.Browser'a AdGuard sertifikasını en azından bir süreliğine güvenilir sertifika olarak hatırlamasını söyler. Normalde bu mesajı artık görmeniz gerekmez, ancak herhangi bir nedenle ara sıra görünmesi olasılık dışı değildir. Bu gibi durumlarda aynı düğmeye tekrar basmanız yeterlidir *(AdGuard sertifikası olduğundan emin olun!)*.
+The easiest way is to click the **Go to site** button. Bu, Yandex.Browser'a AdGuard sertifikasını en azından bir süreliğine güvenilir sertifika olarak hatırlamasını söyler. Normalde bu mesajı artık görmeniz gerekmez, ancak herhangi bir nedenle ara sıra görünmesi olasılık dışı değildir. In such cases, simply press the same button again _(make sure it is AdGuard's certificate!)_.
 
-AdGuard'da HTTPS filtrelemesini devre dışı bırakmak Yandex.Browser'ın bu mesajı tekrar göstermesini de engeller, ancak bunun büyük bir bedeli vardır: HTTPS ile yüklenen tüm reklamlar (**Yandex'in kendi reklamları** dahil) YouTube, Facebook, Instagram ve daha birçok sitede görünür. Reklam engelleme kalitesini yüksek tutmak istiyorsanız kesinlikle bunu yapmamanızı öneririz.
+Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. Reklam engelleme kalitesini yüksek tutmak istiyorsanız kesinlikle bunu yapmamanızı öneririz.
 
 ## Resmi olmayan uzantılar Firefox tabanlı tarayıcılarda güncellenmiyor
 

@@ -13,11 +13,11 @@ _Configurações_ é a seção que requer mais atenção. É aqui que você pode
 
 ### Configurações gerais
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Além disso, você pode recorrer às configurações se o AdGuard para Windows não estiver funcionando corretamente e o Suporte ao cliente solicitar que você [colete _Logs de depuração_](/archive/adguard-for-windows/solving-problems/adguard-logs.md).
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/archive/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. Se você quiser saber o que pode ser configurado em _Configurações avançadas_, leia o [nosso artigo](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
+At the very bottom of the screen you will find _Advanced Settings_. Changing some of them mindlessly may potentially cause problems with AdGuard’s performance, break the Internet connection or compromise your security and privacy. That’s why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Advanced Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
@@ -93,4 +93,4 @@ In the _Parental control_ module you can enable the _Safe search_ and manage the
 
 ![Browser Assistant \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. Explicamos mais sobre como trabalhar com ele e o que fazer se não houver um Assistente de Navegador para o seu navegador no [artigo separado](/archive/adguard-for-windows/browser-assistant.md).
+From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/archive/adguard-for-windows/browser-assistant.md).

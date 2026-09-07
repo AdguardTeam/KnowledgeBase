@@ -21,7 +21,7 @@ sidebar_position: 5
 
 ## 低级设置
 
-For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. 我们重新整理了设置列表，将它们按主题分组，并优化了设置描述。 我们还添加了输入验证和其他安全措施。
+在 Android 版 AdGuard v4.x 版本中，我们重新设计了低级设置。 我们重新整理了设置列表，将它们按主题分组，并优化了设置描述。 我们还添加了输入验证和其他安全措施。
 
 ### DNS 保护功能
 
@@ -137,11 +137,11 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 
 **关于 HTTP/3**：这是基于 QUIC 的 HTTP 协议的最新版本。
 
-**Limitations**:
+**限制**：
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- 基于 Chrome 内核的浏览器不接受用户证书，因此在这些浏览器中不支持 HTTP/3 过滤。
+- 基于 Firefox 的浏览器默认行为类似，但您可以在 `about:config` 中将 `network.http.http3.disable_when_third_party_roots_found` 选项设置为 `false`，以允许用户证书用于 HTTP/3。
+- Safari 无需额外配置的情况下支持 HTTP/3 过滤。
 
 ### 出站代理
 
@@ -242,14 +242,14 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 
 **开发者工具**是 Android 版 AdGuard v4.3 及更高版本中的一个专用部分，旨在快速导航和在功能之间切换。 这使用户能够快速启用或停用自定义过滤器、访问日志记录、启用各种日志等。
 
-#### Simplified UI mode
+#### 简化界面模式
 
-If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+如果启用此设置，AdGuard 将仅在应用主屏幕上显示 DNS 图标。
 
 #### 检测 Samsung Pay
 
 如果启用，在打开 Samsung Pay 应用时将暂停 AdGuard 保护。 韩国用户需要此功能，因为在启用 AdGuard 时，他们会遇到[与 Samsung Pay 有关的问题](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)。
 
-#### Show cloned apps
+#### 显示克隆应用
 
-If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.
+如果启用此设置，您将能够在「应用管理」中更改克隆应用的路由、过滤和防火墙设置。

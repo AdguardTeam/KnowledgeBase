@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 - [DNS protection](/adguard-for-ios/features/dns-protection/)
 
-  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+  DNS-servere og DNS-filtre, som muliggør blokering af annoncer, trackere og farlige websteder
 
 - [Advanced protection](/adguard-for-ios/features/advanced-protection.md)
 

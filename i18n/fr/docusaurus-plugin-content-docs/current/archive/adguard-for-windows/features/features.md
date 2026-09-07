@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités
+title: Features
 sidebar_position: 1
 ---
 
@@ -9,11 +9,11 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
 :::
 
-- [Écran d'accueil](/archive/adguard-for-windows/features/home-screen/)
+- [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
   Sur l'écran principal, vous trouverez _Paramètres_, _Assistance_, _Licence_ et _À propos_, ainsi que des statistiques sur les publicités et les traqueurs bloqués
 
-- [Paramètres](/archive/adguard-for-windows/features/settings/)
+- [Settings](/archive/adguard-for-windows/features/settings/)
 
   Paramètres de thème et de langue, personnalisation du blocage des publicités, Protection DNS, contrôles parentaux, gestion des extensions et options avancées pour les utilisateurs experts
 
@@ -21,10 +21,10 @@ Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonction
 
   Une fonctionnalité qui vous permet d'étendre la fonctionnalité des sites Web en ajoutant des scripts utilisateur et des styles utilisateur
 
-- [Réseau](/archive/adguard-for-windows/features/network/)
+- [Network](/archive/adguard-for-windows/features/network/)
 
   Options supplémentaires liées au réseau et paramètres du proxy
 
-- [Autres fonctionnalités](/archive/adguard-for-windows/features/others/)
+- [Other features](/archive/adguard-for-windows/features/others/)
 
   Assistance, gestion des licences, options de menu de la barre d'état, version de l'app et les mises à jour

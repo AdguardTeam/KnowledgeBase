@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: Sporingsbeskyttelse (tidligere Skjult tilstand (Stealth Mode))
 sidebar_position: 3
 ---
 
@@ -9,24 +9,24 @@ Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowsere
 
 :::
 
-The purpose of _Tracking protection_ is to safeguard your sensitive personal data from online trackers and fraudsters. There are slight differences in the tracking protection features between Chromium-based browsers, which support MV3, and non-Chromium browsers, which support MV2.
+Formålet med _Sporingsbeskyttelse_ er at beskytte følsomme personlige data mod onlinetrackere og svindlere. Der er små forskelle i sporingsbeskyttelsesfunktionerne mellem Chromium-baserede webbrowsere, som understføtter MV3, og ikke-Chromium-webbrowsere, som understføtter MV2.
 
-_Tracking protection_ in Chromium-based browsers
-![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
+_Sporingsbeskyttelse_ i Chromium-baserede webbrowsere
+![Sporingsbeskyttelse i Chromium-baserede webbrowsere \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-_Tracking protection_ in non-Chromium browsers
-![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv2.png)
+_Sporingsbeskyttelse_ i ikke-Chromium-webbrowsere
+![Sporingsbeskyttelse i ikke-Chromium-webbrowsere \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv2.png)
 
-_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
+Funktionaliteten _Sporingsbeskyttelse_ forhindrer websteder i at se den søgeforespørgsel, der blev brugt til at finde dem på internet, automatisk slette tredjeparts- og webstedscookies mv. En [særskilt artikel](/general/stealth-mode) is devoted to all these features.
 
 :::note
 
-Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
+Webbrowserudvidelser er begrænset til en bestemt webbrowser og er underlagt dens tekniske restriktioner. De kan derfor ikke tilbyde alle de sporingsbeskyttelsesfunktioner, som findes i fuldt udviklede adblocking-apps.
 
 :::
 
 :::caution
 
-In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+I AdGuard Browser Extension fungerer indstillingen _Blokér WebRTC_ globalt — den enten blokerer eller tillader WebRTC for alle websteder. Det kan ikke styres pr. websted. Undtagelsesregler, såsom `@@||example.com^$stealth=webrtc`, har ingen effekt i webbrowserudvidelsen, da `webrtc`-indstillingen ikke er blandt de [understøttede `$stealth`-modifikatorindstillinger](/general/ad-filtering/create-own-filters#stealth-modifier). Ved behov for WebRTC-styring pr. websted, benyt den komplette AdGuard-app til Windows, Mac eller Android.
 
 :::

@@ -3,15 +3,9 @@ title: Расширения
 sidebar_position: 7
 ---
 
-:::info
-
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
-
-:::
-
 AdGuard может расширить функциональность сайта, выступая в роли [менеджера пользовательских скриптов](/general/extensions.md). Это позволяет вам добавлять собственные скрипты, а также управлять существующими.
 
-![Расширения](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
 ## Автоматически определять расширения
 
@@ -28,7 +22,7 @@ AdGuard может расширить функциональность сайт�
 
 ### Помощник AdGuard (Beta)
 
-Помощник AdGuard — это устаревшая версия Помощника, который вы можете использовать, если [новый Помощник](/archive/adguard-for-windows/browser-assistant.md) недоступен для вашего браузера. Как следует из названия, он помогает управлять основными настройками AdGuard прямо из браузера без необходимости открывать приложение.
+AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. Как следует из названия, он помогает управлять основными настройками AdGuard прямо из браузера без необходимости открывать приложение.
 
 Помощник AdGuard работает со всеми браузерами, совместимыми с Microsoft Windows. Он не будет отображаться на веб-сайтах, исключённых из фильтрации, или на определённых страницах, где это может вызвать проблемы с отображением.
 

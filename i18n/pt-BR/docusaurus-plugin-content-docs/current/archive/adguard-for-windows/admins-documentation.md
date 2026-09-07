@@ -5,31 +5,33 @@ sidebar_position: 5
 
 Esta página descreve os recursos e detalhes sobre a gestão central de políticas e preferências do AdGuard.
 
-## 1. Baixe o MSI {#msi-download}
+## 1. Download the MSI {#msi-download}
 
-Baixe o [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
+Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
 
-Baixe o [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
+Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
-## 2. Configure as configurações da sua rede {#settings-configuring}
+## 2. Configure the settings for your network {#settings-configuring}
 
-Em máquinas que estão associadas a um domínio do Active Directory, as configurações de política também podem ser armazenadas no registro sob `HKEY_LOCAL_MACHINE` no seguinte caminho: `Software\Policies\AdGuard\`.
+On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
 
-A única política compatível é `LicenseKey`. Se esta política for definida, o AdGuard a preferirá em vez do que o usuário pode inserir na interface. Esta chave de licença será usada para verificar o status da licença.
+The only supported policy is `LicenseKey`. Se esta política for definida, o AdGuard a preferirá em vez do que o usuário pode inserir na interface. Esta chave de licença será usada para verificar o status da licença.
 
-## 3. Certifique-se de que os servidores do AdGuard estejam disponíveis {#servers-available}
+## 3. Make sure that AdGuard servers are available {#servers-available}
 
-AdGuard conecta-se a dois hosts: `api.adguard.org` e `filters.adtidy.org`. Certifique-se de que ambos os servidores estejam disponíveis.
+AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Certifique-se de que ambos os servidores estejam disponíveis.
 
-## 4. Envie o MSI para sua rede {#msi-push}
+## 4. Push the MSI out to your network {#msi-push}
 
 Se você geralmente usa SMS ou outras ferramentas, use-as para implantar o AdGuard MSI assim como faria normalmente com qualquer outro pacote de instalação.
 
-Caso contrário, você pode executar o MSI na máquina de destino diretamente (e silenciosamente) com este comando: `Msiexec /q /i AdGuard.msi`
+Otherwise, you can run the MSI on the target machine directly (and silently) with this command:
+`Msiexec /q /i AdGuard.msi`
 
-Se você precisar implementar uma atualização, use este comando: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+If you need to roll out an update, use this command:
+`Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
+:::note
 
 Você deve executar esses comandos com privilégios de administrador.
 
@@ -37,18 +39,18 @@ Você deve executar esses comandos com privilégios de administrador.
 
 Se você quiser instalar o AdGuard em um computador com Windows 7, certifique-se de que o .NET 4 Client Profile esteja instalado: https://www.microsoft.com/es/download/details.aspx?id=24872
 
-Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
+:::note
 
 Se você instalou o AdGuard para Windows a partir de um arquivo MSI, o AdGuard não será atualizado automaticamente. Para permitir atualizações manuais:
 
-- Nas versões estáveis lançadas após a v7.16, exclua o parâmetro `ForbidCheckUpdates` ou defina seu valor como `NO` (sem distinção entre maiúsculas e minúsculas) no registro sob `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
-- Nas versões v7.16 e anteriores, defina como `SIM` (não diferencia maiúsculas de minúsculas) o parâmetro `AllowCheckUpdates` para a chave `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` no sistema operacional x86 ou a chave `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` no sistema operacional x64. Qualquer outro valor ou nenhum valor para este parâmetro desativará atualizações automáticas.
+- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Qualquer outro valor ou nenhum valor para este parâmetro desativará atualizações automáticas.
 
 Observe que tal instalação do aplicativo e atualizações manuais não são recomendadas e podem causar problemas técnicos.
 
 :::
 
-## 5. Teste sua instalação {#installation-test}
+## 5. Test your installation {#installation-test}
 
 Em uma máquina de destino, inicie o AdGuard. Abra a tela de licença para verificar se está usando a licença especificada. Você pode precisar clicar em "Atualizar status" para fazer com que o AdGuard valide a chave de licença.

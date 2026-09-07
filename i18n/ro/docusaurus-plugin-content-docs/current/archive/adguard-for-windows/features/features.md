@@ -9,22 +9,22 @@ Acest articol se referă la AdGuard pentru Windows, un blocant de reclame multif
 
 :::
 
-- [Ecranul principal](/archive/adguard-for-windows/features/home-screen/)
+- [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
   On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
 
-- [Setări](/archive/adguard-for-windows/features/settings/)
+- [Settings](/archive/adguard-for-windows/features/settings/)
 
   Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
 
-- [Extensii](/archive/adguard-for-windows/features/extensions/)
+- [Extensions](/archive/adguard-for-windows/features/extensions/)
 
   A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
 
-- [Rețea](/archive/adguard-for-windows/features/network/)
+- [Network](/archive/adguard-for-windows/features/network/)
 
   Additional network-related options and proxy settings
 
-- [Alte caracteristici](/archive/adguard-for-windows/features/others/)
+- [Other features](/archive/adguard-for-windows/features/others/)
 
   Support, license management, tray menu options, app version and updates

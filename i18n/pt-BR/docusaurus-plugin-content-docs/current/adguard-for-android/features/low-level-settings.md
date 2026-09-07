@@ -21,7 +21,7 @@ Para acessar _Configurações de baixo nível_, abra o aplicativo AdGuard e toqu
 
 ## Configurações de baixo nível
 
-For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. Refizemos a lista de configurações e as reorganizamos em grupos temáticos com descrições aprimoradas. Também adicionamos validação de entrada e outras válvulas de segurança.
+Para o AdGuard para Android v4.x, redesenhamos completamente as configurações de baixo nível. Refizemos a lista de configurações e as reorganizamos em grupos temáticos com descrições aprimoradas. Também adicionamos validação de entrada e outras válvulas de segurança.
 
 ### Proteção DNS
 
@@ -138,11 +138,11 @@ Se esta configuração estiver ativada, o AdGuard filtrará as solicitações en
 
 **Sobre o HTTP/3**: Esta é a versão mais recente do protocolo HTTP, baseado em QUIC.
 
-**Limitations**:
+**Limitações**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Os navegadores baseados em Chrome não aceitam certificados de usuário, portanto, a filtragem HTTP/3 não é compatível com eles.
+- Os navegadores baseados no Firefox se comportam de maneira semelhante por padrão, mas você pode definir a opção `network.http.http3.disable_when_third_party_roots_found` como `false` em `about:config` para permitir certificados de usuário para HTTP/3.
+- O Safari suporta filtragem HTTP/3 sem configuração adicional.
 
 ### Proxy de saída
 
@@ -243,14 +243,14 @@ Se esta configuração estiver ativada, o AdGuard exibirá o ícone de **Ferrame
 
 **Ferramentas de desenvolvedor** é uma seção especializada disponível no AdGuard para Android v4.3 e posterior, projetada para navegação rápida e alternância entre funcionalidades. Ele permite que você ative ou desative rapidamente filtros personalizados, acesse registros, ative vários registros e muito mais.
 
-#### Simplified UI mode
+#### Modo de interface simplificada
 
-If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+Se essa configuração estiver ativada, o AdGuard exibirá apenas o ícone de DNS na tela inicial do aplicativo.
 
 #### Detectar Samsung Pay
 
 Se esta configuração estiver ativada, a proteção do AdGuard será pausada quando você abrir o aplicativo Samsung Pay. Os usuários coreanos precisam desse recurso, pois enfrentam [problemas com o Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) quando o AdGuard está ativado.
 
-#### Show cloned apps
+#### Mostrar aplicativos clonados
 
-If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.
+Se esta configuração estiver habilitada, você poderá alterar as configurações de roteamento, filtragem e firewall para aplicativos clonados em _Gerenciamento de aplicativos_.

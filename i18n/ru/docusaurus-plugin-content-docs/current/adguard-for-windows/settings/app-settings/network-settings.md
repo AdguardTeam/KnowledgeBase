@@ -3,15 +3,9 @@ title: Настройки сети
 sidebar_position: 3
 ---
 
-:::info
-
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
-
-:::
-
 Этот раздел позволяет управлять тем, как AdGuard фильтрует ваш интернет-трафик, и предоставляет дополнительные инструменты для контроля сетевых функций.
 
-![Сетевые настройки](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Network settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
 ## Использовать AdGuard как HTTP-прокси
 
@@ -39,7 +33,7 @@ sidebar_position: 3
 
 Здесь можно выбрать, какой прокси AdGuard должен использовать для скачивания обновлений фильтров или новых версий приложений — системный прокси, пользовательский прокси или вообще без прокси.
 
-![Настройки прокси](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Proxy settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
 ## Использовать драйвер SockFilter
 

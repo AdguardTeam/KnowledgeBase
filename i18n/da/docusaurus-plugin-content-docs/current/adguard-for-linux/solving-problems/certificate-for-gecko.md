@@ -1,38 +1,38 @@
 ---
-title: Installing the AdGuard certificate in Gecko-based browsers
+title: Installation af AdGuard-certifikatet i Gecko-baserede webbrowsere
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Linux, a multifunctional ad blocker that protects your device at the system level. To see how it works, [install AdGuard for Linux](https://adguard.com/adguard-linux/overview.html)
+Denne artikel dækker AdGuard til Linux, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [installér AdGuard til Linux](https://adguard.com/adguard-linux/overview.html)
 
 :::
 
-To filter HTTPS traffic, AdGuard uses its own certificate. Unlike most browsers, Gecko-based browsers such as Firefox keep a separate certificate store, so you need to add it manually. Otherwise, HTTPS filtering won’t work.
+For at filtrere HTTPS-trafik benytter AdGuard sit eget certifikat. I modsætning til de fleste webbrowsere har Gecko-baserede webbrowsere såsom Firefox et separat certifikatlager, så det skal tilføjes manuelt. Ellers fungerer HTTPS-filtrering ikke.
 
-We’ll use Firefox as an example. Other Gecko-based browsers work in a similar way, though some menu names may differ.
+Vi bruger Firefox som eksempel. Andre Gecko-baserede webbrowsere fungerer på en lignende måde, selvom nogle menunavne kan være anderledes.
 
-## Before you start
+## Inden man starter
 
-Make sure that:
+Sørg for, at:
 
-- AdGuard for Linux is running
-- HTTPS filtering is enabled
+- AdGuard til Linux kører
+- HTTPS-filtrering er slået til
 
-**Both are required to open the certificate link in the next step.**
+**Begge kræves for at åbne certifikatlinket i næste trin.**
 
-## Install the certificate
+## Installér certifikatet
 
-Follow the instructions:
+Følg vejledningen:
 
-1. Download the [AdGuard certificate](https://local.adguard.org/cert).
-2. Open Firefox.
-3. Click the menu icon and open _Settings_.
-4. Go to _Privacy and Security_, scroll down to the _Connection and software security_ part, and click _Advanced settings_.
-5. Find the _Certificates_ section and click _Manage certificates_.
-6. Select the _Authorities_ tab and click _Import_.
-7. Select the file you downloaded earlier and click _Open_.
-8. Choose _Trust this CA to identify websites_ and click _OK_.
+1. Download [AdGuard-certifikate](https://local.adguard.org/cert).
+2. Åbn Firefox.
+3. Klik på menuikonet, og åbn _Indstillinger_.
+4. Gå til _Fortrolighed og sikkerhed_, rul ned til afsnittet _Forbindelses- og softwaresikkerhed_ og klik på _Avancerede indstillinger_.
+5. Find afsnittet _Certifikater_, og klik på _Håndtér certifikater_.
+6. Vælg fanen _Myndigheder_, og klik på _Importere_.
+7. Vælg den tidligere downloadede fil, og klik på _Åbn_.
+8. Vælg _Stol på denne CA til at identificere websteder_, og klik på _OK_.
 
-All done! HTTPS filtering should now work in your Gecko-based browser.
+Færdig! HTTPS-filtrering bør nu fungere i den Gecko-baserede webbrowser.

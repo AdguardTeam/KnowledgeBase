@@ -15,14 +15,15 @@ Many AdGuard for Windows users appreciate the DNS protection feature. But some o
 
 ## Bootstrap DNS address
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+The DNS server addresses could be written as IPs or as domain names.
+In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
 
 **To eliminate this leak:**
 
-- go to the *Advanced settings*
-- scroll down to the *List of custom bootstrap addresses* section
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
 - enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click *Save*
+- click _Save_
 
 ## Fallback DNS server
 
@@ -30,19 +31,19 @@ It could happen that AdGuard cannot reach the specified server because of a weak
 
 **To eliminate this leak:**
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter the custom fallback servers one per line
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
 
 or
 
-- go to the *Advanced settings*
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
 
 or
 
-- go to the *Advanced settings*
-- scroll down to the *DNS server timeout period* section
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
 - enter an arbitrary large number

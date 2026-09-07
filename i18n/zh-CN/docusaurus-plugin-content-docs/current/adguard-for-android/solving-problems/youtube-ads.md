@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-用户最常所提的问题是：“有没有办法在安卓设备上屏蔽 YouTube 应用里的广告?”。 Due to the technical restrictions of the Android OS, there is no way to *completely* [remove ads from the YouTube app](https://adguard.com/en/adguard-youtube/overview.html). 但是我们找到了一种让我们尽可能接近拦截广告以及绕过安卓限制的方法。
+用户最常所提的问题是：“有没有办法在安卓设备上屏蔽 YouTube 应用里的广告?”。 由于 Android 操作系统的技术限制，无法从 YouTube 应用中[*彻底*移除广告](https://adguard.com/en/adguard-youtube/overview.html)。 但是我们找到了一种让我们尽可能接近拦截广告以及绕过安卓限制的方法。
 
 ## 在 AdGuard 应用内观看 YouTube
 

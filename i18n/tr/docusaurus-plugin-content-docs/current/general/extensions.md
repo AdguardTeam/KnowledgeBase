@@ -75,7 +75,7 @@ Denemek için:
 
 #### tinyShield
 
-A userscript for people visiting Korean websites and some international websites. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). tinyShield hakkında daha fazla bilgi edinin ve [GitHub'da](https://github.com/List-KR/tinyShield) nasıl yükleneceğini öğrenin.
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). tinyShield hakkında daha fazla bilgi edinin ve [GitHub'da](https://github.com/FilteringDev/tinyShield) nasıl yükleneceğini öğrenin.
 
 ### Where can you get more userscripts?{#more-userscripts}
 
@@ -95,6 +95,10 @@ Here we will describe some of the most popular userscript catalogs.
 
 [OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
 
+#### NamuLink
+
+[NamuLink](https://github.com/FilteringDev/NamuLink), sitenin gelişmiş bağlantı gizleme mekanizmalarını atlayarak Naver PowerLink reklamlarını NamuWiki'den kaldıran açık kaynaklı bir kullanıcı betiğidir. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
 #### Community
 
 If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
@@ -105,11 +109,11 @@ If you like the idea of customizing your browser with userscripts and have quest
 
 ### Development
 
-#### Lisans talep et
+#### Request license
 
-Kendi kullanıcı betiğinizi geliştiriyorsanız ve bunun AdGuard ile nasıl çalıştığını test etmek istiyorsanız, [formu](https://surveys.adguard.com/en/for_developers_request/form.html) doldurarak lisans talebinde bulunabilirsiniz.
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Uyumluluk
+#### Compatibility
 
 ##### Metadata block
 
@@ -223,13 +227,13 @@ You can access the instance of this class by using the `ADG_policyApi` variable 
 
 ##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Desteklenmiyorsa, `input: string` döndürür.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Desteklenmiyorsa, `input: string` döndürür.
 - [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Desteklenmiyorsa, `null` döndürür.
 - [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Desteklenmiyorsa, `false` döndürür.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Desteklenmiyorsa, `false` döndürür.
 - [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
 ##### Additional Types
@@ -343,13 +347,13 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info Uyumluluk
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
 :::
 
-YouTube gibi birçok modern site [Tek Sayfa Uygulama (SPA)](https://en.wikipedia.org/wiki/Single-page_application) yeteneklerini kullanmaktadır. Geleneksel web uygulamalarından farklı olarak, sayfalar arasında gezinirken sayfa yeniden yüklenmez. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
 On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is matched). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
@@ -379,7 +383,7 @@ This will allow userscripts to listen for URL changes and handle them accordingl
 :::note
 
 The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
-Örnekler:
+Examples:
 
 - Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
 - Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.

@@ -9,7 +9,7 @@ Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto minipr
 
 :::note Podporované aplikace
 
-AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/protection/extensions), [AdGuard pro Android](/adguard-for-android/features/settings#userscripts) a [AdGuard pro macOS](/adguard-for-mac/features/extensions).
+AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/protection/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
@@ -75,7 +75,7 @@ Vyzkoušejte to:
 
 #### tinyShield
 
-Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript tinyShield blokuje Ad-Shield a anti-adblock. Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o skriptu microShield a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/tinyShield).
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
@@ -95,25 +95,29 @@ Zde popíšeme některé z nejoblíbenějších katalogů uživatelských skript
 
 [OpenUserJS.org](https://openuserjs.org/) je open-source katalog uživatelských skriptů napsaný v nodeJS. Není moderován, takže si dávejte pozor na podezřelé skripty.
 
-#### Komunita
+#### NamuLink
 
-Pokud se vám líbí myšlenka přizpůsobení prohlížeče pomocí uživatelských skriptů a máte dotazy, můžete je položit na jedné z těchto webových stránek:
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
+
+If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### Vývoj
+### Development
 
-#### Žádost o licenci
+#### Request license
 
-Pokud vyvíjíte vlastní uživatelský skript a chcete si vyzkoušet, jak funguje s AdGuardem, můžete požádat o licenci vyplněním [formuláře](https://surveys.adguard.com/en/for_developers_request/form.html).
+If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Kompatibilita
+#### Compatibility
 
-##### Blokování metadat
+##### Metadata block
 
-###### Podporované vlastnosti
+###### Supported properties
 
 - [`@name`](https://wiki.greasespot.net/Metadata_Block#@name)
 - [`@namespace`](https://wiki.greasespot.net/Metadata_Block#@namespace)
@@ -134,19 +138,19 @@ Pokud vyvíjíte vlastní uživatelský skript a chcete si vyzkoušet, jak fungu
 - [`@icon`, `@iconURL`, `@defaulticon`](https://www.tampermonkey.net/documentation.php#meta:icon)
 - [`@icon64`, `@icon64URL`](https://www.tampermonkey.net/documentation.php#meta:icon64)
 
-###### Nepodporované vlastnosti
+###### Unsupported properties
 
-Tyto vlastnosti bude AdGuard jednoduše ignorovat.
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
-##### Podporované funkce GM
+##### Supported GM functions
 
-AdGuard podporuje jak staré funkce GM\_, tak nové rozhraní GM4 API, které používá objekt GM.
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
-Všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporované.
+All listed old Greasemonkey functions are deprecated but still supported.
 
 :::
 
@@ -167,7 +171,7 @@ Všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporo
 - [`GM.addElement`, `GM_addElement`](https://www.tampermonkey.net/documentation.php#api:GM_addElement)
 - [`window.onurlchange`](https://www.tampermonkey.net/documentation.php#api:window.onurlchange)
 
-Další informace o Greasemonkey API najdete v [jeho příručce](https://wiki.greasespot.net/Greasemonkey_Manual:API).
+You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
 #### Příklad
 
@@ -210,29 +214,29 @@ Další informace o Greasemonkey API najdete v [jeho příručce](https://wiki.g
 )}();
 ```
 
-#### Důvěryhodné typy API
+#### Trusted Types API
 
-AdGuard poskytuje instanci třídu `PolicyApi`, která umožňuje spravovat důvěryhodné typy v uživatelských skriptech.
+AdGuard provides an instance of the `PolicyApi` class that allows you to manage Trusted Types in your userscripts.
 
-K instanci této třídy můžete přistupovat pomocí proměnné `ADG_policyApi` v uživatelském skriptu.
+You can access the instance of this class by using the `ADG_policyApi` variable in your userscript.
 
-##### Vlastnosti
+##### Properties
 
-- `name: string` — název zásady (výchozí je `"AGPolicy"`).
-- `isSupported: boolean` — příznak určující, zda je rozhraní API důvěryhodných typů podporováno aktuálním prohlížečem.
+- `name: string` — a name of the policy (Default is `"AGPolicy"`).
+- `isSupported: boolean` — a flag indicating whether or not the Trusted Types API is supported by the current browser.
 
-##### Metody s vícenásobným plněním
+##### Polyfilled methods
 
-- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). Pokud není podporováno, vrací `input: string`.
-- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). Pokud není podporováno, vrací `input: string`.
-- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). Pokud není podporováno, vrací `input: string`.
-- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). Pokud není podporováno, vrací `null`.
-- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). Pokud není podporováno, vrací `null`.
-- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). Pokud není podporováno, vrací `false`.
-- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). Pokud není podporováno, vrací `false`.
-- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). Pokud není podporováno, vrací `false`.
+- [`ADG_policyApi.createHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript). If not supported, returns `input: string`.
+- [`ADG_policyApi.createScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL). If not supported, returns `input: string`.
+- [`ADG_policyApi.getAttributeType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType). If not supported, returns `null`.
+- [`ADG_policyApi.getPropertyType`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType). If not supported, returns `null`.
+- [`ADG_policyApi.isHTML`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML). If not supported, returns `false`.
+- [`ADG_policyApi.isScript`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript). If not supported, returns `false`.
+- [`ADG_policyApi.isScriptURL`](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL). If not supported, returns `false`.
 
-##### Další typy
+##### Additional Types
 
 ```typescript
 /**
@@ -262,7 +266,7 @@ ADG_TrustedType.HTML // "TrustedHTML"
 type TrustedValue = string | TrustedHTML | TrustedScript | TrustedScriptURL;
 ```
 
-##### Další metody
+##### Additional methods
 
 ```typescript
 /**
@@ -341,17 +345,17 @@ function convertPropertyToTrusted(
 divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML", "<div></div>");
 ```
 
-#### Shodné stránky SPA
+#### Matching SPA sites
 
-:::info Kompatibilita
+:::info Compatibility
 
-Tato část platí pouze pro AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a Adguardem pro Linux s [CoreLibs] v1.19 nebo novější.
+This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
 :::
 
-Mnoho moderních webových stránek, například YouTube, využívá možnosti [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application). Na rozdíl od tradičních webových aplikací se stránka při přecházení mezi stránkami znovu nenačítá. Místo toho se obsah aktualizuje dynamicky pomocí JavaScriptu, což umožňuje plynulejší uživatelské prostředí.
+Many modern websites, such as YouTube, utilize [Single Page Application (SPA)](https://en.wikipedia.org/wiki/Single-page_application) capabilities. Unlike traditional web applications, the page does not reload when navigating between pages. Instead, the content is updated dynamically using JavaScript, allowing for a smoother user experience.
 
-Na takových webových stránkách je uživatelský skript vyvolán pouze jednou, když jsou splněny direktivy `@match` nebo `@include` (pokud není splněna direktiva `@exclude`). Vzhledem k povaze SPA nelze uživatelský skript znovu vyvolat při následných změnách stránky, protože globální kontext JavaScriptu zůstává stejný. Pro řešení tohoto problému mohou uživatelské skripty použít direktivu `@grant window.onurlchange`.
+On such websites, a userscript is invoked only once when the `@match` or `@include` directives are matched (unless `@exclude` is matched). Due to the nature of SPAs, the userscript cannot be re-invoked on subsequent page changes because the global JavaScript context remains the same. To address this issue, userscripts can use the `@grant window.onurlchange` directive.
 
 ```javascript
 // ==UserScript==
@@ -374,26 +378,26 @@ window.addEventListener('urlchange', (event) => {
 });
 ```
 
-To umožní uživatelským skriptům naslouchat změnám adresy URL a podle toho je zpracovávat.
+This will allow userscripts to listen for URL changes and handle them accordingly.
 
 :::note
 
-Událost `urlchange` se spouští pouze při úplných změnách adresy URL, například při změně cesty nebo dotazu, nikoli však při změnách fragmentů (hash).
-Příklady:
+The `urlchange` event is only triggered for full URL changes, such as a change in the path or query, but not for fragment (hash) changes.
+Examples:
 
-- Navigace z `https://example.com/page1` na `https://example.com/page2` vyvolá událost.
-- Navigace z `https://example.com/page1?query=1` na `https://example.com/page1?query=2` vyvolá událost.
-- Navigace z `https://example.com/page1#section1` na `https://example.com/page1#section2` NEVYVOLÁ událost.
+- Navigation from `https://example.com/page1` to `https://example.com/page2` will trigger the event.
+- Navigation from `https://example.com/page1?query=1` to `https://example.com/page1?query=2` will trigger the event.
+- Navigation from `https://example.com/page1#section1` to `https://example.com/page1#section2` will **NOT** trigger the event.
 
 :::
 
 :::note
 
-API `window.onurlchange` a `window.addEventListener('urlchange', ...)` jsou nestandardní. Chcete-li je použít, musíte je explicitně přidělit ve svém uživatelském skriptu pomocí příkazu `@grant window.onurlchange`.
+The `window.onurlchange` and `window.addEventListener('urlchange', ...)` APIs are non-standard. To use them, you must explicitly grant them in your userscript with `@grant window.onurlchange`.
 
 :::
 
-Pokud webová stránka používá směrování hash, mohou uživatelské skripty používat nativní událost DOM [`hashchange`](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
+If a website uses hash routing, userscripts can use the native DOM [`hashchange` event](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event):
 
 ```javascript
 // ==UserScript==
@@ -415,47 +419,47 @@ window.addEventListener('hashchange', (event) => {
 });
 ```
 
-## Uživatelské styly
+## Userstyles
 
-Uživatelské styly umožňují uživatelům změnit vzhled oblíbených webových stránek.
+Userstyles allow users to change the appearance of popular websites.
 
-AdGuard má možnost nahrát nebo vytvořit vlastní uživatelské styly. Jedná se o pokročilou funkci, takže budete potřebovat určité znalosti HTML a CSS.
+AdGuard has the option to upload or create your own userstyles. This is an advanced feature, so you will need some knowledge of HTML and CSS.
 
 :::info Podporované aplikace
 
-V současné době umožňují vytvářet a spravovat uživatelské styly dvě aplikace AdGuard: AdGuard pro Windows (verze 7.19 nebo novější) a AdGuard pro macOS (verze 2.16 nebo novější). Tuto novou funkci plánujeme v nejbližší době implementovat také do AdGuardu pro Android v4.8.
+Currently, two AdGuard apps allow you to create and manage userstyles: AdGuard for Windows (v7.19 or later) and AdGuard for Mac (v2.16 or later). We also plan to implement this new feature in AdGuard for Android v4.8 in the nearest future.
 
 :::
 
-Jedná se o experimentální funkci, takže pokud se při přidávání nebo vytváření uživatelského stylu setkáte s jakýmikoli problémy, kontaktujte prosím náš tým podpory na [support@adguard.com](mailto:support@adguard.com).
+This is an experimental feature, so if you encounter any problems while adding or creating a userstyle, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
 
-### Jak nastavit uživatelský styl v AdGuardu
+### How to set up a userstyle in AdGuard
 
-Uživatelské styly si můžete stáhnout z různých webových stránek. Jednou z nejoblíbenějších webových stránek s uživatelskými styly je [https://userstyles.world/](https://userstyles.world/explore), kterou použijeme jako příklad pro následující pokyny, jak nastavit uživatelský styl v AdGuardu.
+You can download userstyles from various websites. One of the most popular userstyle websites is [https://userstyles.world/](https://userstyles.world/explore), which we will use as an example for the following instructions on how to set up the userstyle in AdGuard.
 
-1. Přejděte na výše uvedený odkaz a vyberte si uživatelský styl, který se vám líbí
+1. Follow the link above and choose the userstyle you like
 
-2. Klikněte na _Kopírovat_ vedle adresy uživatelského stylu
+2. Click _Copy_ next to the userstyle address
 
-3. Otevřete nastavení AdGuardu → _Rozšíření_
+3. Open AdGuard settings → _Extensions_
 
-4. Stiskněte tlačítko [+] a vložte odkaz na uživatelský styl
+4. Press the [+] button and paste the userstyle link
 
 5. Hotovo!
 
-Pokud znáte pravidla CSS, můžete si uživatelské styly vytvořit sami.
+If you’re familiar with CSS rules, you can also create userstyles yourself.
 
 :::note
 
-Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@advanced`. AdGuard také nepodporuje `@preprocessor` bez hodnoty `default`.
+We don’t support userstyles that contain `@var` or `@advanced` in the metadata. AdGuard also doesn’t support `@preprocessor` without the `default` value.
 
 :::
 
-1. Otevřete nastavení AdGuardu → _Rozšíření_
+1. Open AdGuard settings → _Extensions_
 
-2. Stiskněte tlačítko [+] a vyberte možnost _Vytvořit uživatelský styl_. Na obrazovce se zobrazí nové okno
+2. Press the [+] button and choose the _Create userstyle_ option. A new window will appear on your screen
 
-3. Chcete-li vytvořit uživatelský styl, napište nejprve název s metadaty, např.
+3. To create a userstyle, first write the title with metadata, for example
 
    ```CSS
    /* ==UserStyle==
@@ -464,7 +468,7 @@ Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@a
    ==/UserStyle== */
    ```
 
-4. Část CSS zapište až za metadata. AdGuard podporuje porovnávání názvů domén webových stránek (`@-moz-document domain(…), …`). Např:
+4. Write the CSS part after the meta data. AdGuard supports website domain names matching (`@-moz-document domain(…), …`). Např:
 
    ```CSS
    body {
@@ -472,7 +476,7 @@ Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@a
      }
    ```
 
-   nebo:
+   Or:
 
    ```CSS
    @-moz-document domain('example.org'),
@@ -482,7 +486,7 @@ Nepodporujeme uživatelské styly, které v metadatech obsahují `@var` nebo `@a
      }
    ```
 
-5. Po dokončení stiskněte tlačítko _Uložit a zavřít_. Váš nový uživatelský styl byl úspěšně přidán do AdGuardu
+5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
 ### Příklad
 

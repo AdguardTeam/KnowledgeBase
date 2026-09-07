@@ -1,80 +1,80 @@
 ---
-title: Tracking protection
+title: Sporingsbeskyttelse
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-To access the Tracking protection module, tap the _Protection_ tab (the second icon from the bottom of the screen) and then select _Tracking protection_.
+Modulet Sporingsbeskyttelse kan tilgås ved tryk på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _Sporingsbeskyttelse_.
 
-_Tracking protection_ (formerly _Stealth Mode_) prevents websites from collecting information about you, such as your IP address, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+_Sporingsbeskyttelse_ (tidligere Stealth Mode) forhindrer websteder i at indsamle brugeroplysninger, såsom IP-adresser, oplysninger om webbrowseren og operativsystemet, skærmopløsning, samt den side brugeren kom eller blev omdirigeret fra. Den kan også blokere cookies brugt af websteder til at markere webbrowseren og gemme personlige indstillinger, brugerpræferencer eller genkende brugeren ved næste besøg.
 
-![Tracking protection \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
+![Sporingsbeskyttelse \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/tracking_protection.png)
 
-_Tracking protection_ has three pre-configured privacy protection levels (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+_Sporingsbeskyttelse_ har tre præopsatte niveauer af fortrolighedsbeskyttelse, (_Standard_, _Høj_ og _Ekstrem_) og et brugerdefineret niveau, (_Tilpasset_).
 
-Here are the active features of the pre-configured levels:
+Her er de aktive funktioner på de præopsatte niveauer:
 
 1. **Standard**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   a. _Blokér trackere_. Denne funktion bruger _AdGuard Sporingsbeskyttelse-filteret_ til at beskytte mod onlinetællere og webanalyseværktøjer
 
-   b. _Ask websites not to track me_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   b. _Bed websteder om at undlade sporing_. Denne funktion sender signalerne [Global Privacy Control](https://globalprivacycontrol.org/) og [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) til de besøgte websteder og beder web-apps deaktivere brugeraktivitetssporing
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+   c. _Fjern X-Client-Data-header_. Denne funktion forhindrer Google Chrome i at sende sine versions- og ændringsinfo til Google-domæner (herunder DoubleClick og Google Analytics)
 
-2. **High**
+2. **Høj**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   a. _Blokér trackere_. Denne funktion bruger _AdGuard Sporingsbeskyttelse-filteret_ til at beskytte mod onlinetællere og webanalyseværktøjer
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+   b. _Fjern sporingsparametre fra URL'er_. Denne funktion bruger _AdGuard URL Tracking-filteret_ til at fjerne sporingsparametre, såsom `utm_*` og `fb_ref`, fra side-URL'er
 
-   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
+   c. _Skjul søgeforespørgsler_. Denne funktion skjuler søgeforespørgsler for websteder besøgt fra en søgemaskine
 
-   d. _Ask websites not to track me_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   d. _Bed websteder om at undlade sporing_. Denne funktion sender signalerne [Global Privacy Control](https://globalprivacycontrol.org/) og [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) til de besøgte websteder og beder web-apps deaktivere brugeraktivitetssporing
 
-   e. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
-
-   :::caution
-
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
-
-   :::
-
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
-
-3. **Extreme** (formerly known as _Ultimate_)
-
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
-
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
-
-   c. _Hide search queries_. This feature hides your searches from websites visited through search engine results
-
-   d. _Ask websites not to track me_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
-
-   e. _Delete third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes and prevents advertisers from tracking your behavior across multiple pages
+   e. _Slet tredjepartscookies_. Denne funktion begrænser levetiden for tredjepartscookies til 180 minutter og forhindrer annoncører i at spore brugeradfærd på tværs af flere sider
 
    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+   Denne funktion sletter alle tredjepartscookies efter deres tvungne udløb. Dette omfatter brugerens logins gennem sociale netværk eller andre tredjepartstjenester. Brugeren kan periodisk skulle logge ind på nogle websteder igen eller opleve andre cookie-relaterede problemer. Brug beskyttelsesniveauet _Standard_ til kun at blokere sporingscookies.
 
    :::
 
-   f. _Block WebRTC_. This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN. Some messengers, streaming platforms, or games may stop working properly
+   f. _Fjern X-Client-Data-header_. Denne funktion forhindrer Google Chrome i at sende sine versions- og ændringsinfo til Google-domæner (herunder DoubleClick og Google Analytics)
 
-   g. _Block Push API_. This feature blocks push notifications from websites
+3. **Ekstrem** (tidligere kaldet _Ultimate_)
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+   a. _Blokér trackere_. Denne funktion bruger _AdGuard Sporingsbeskyttelse-filteret_ til at beskytte mod onlinetællere og webanalyseværktøjer
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+   b. _Fjern sporingsparametre fra URL'er_. Denne funktion bruger _AdGuard URL Tracking-filteret_ til at fjerne sporingsparametre, såsom `utm_*` og `fb_ref`, fra side-URL'er
 
-   j. _Hide User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+   c. _Skjul søgeforespørgsler_. Denne funktion skjuler søgeforespørgsler for websteder besøgt fra en søgemaskine
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+   d. _Bed websteder om at undlade sporing_. Denne funktion sender signalerne [Global Privacy Control](https://globalprivacycontrol.org/) og [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) til de besøgte websteder og beder web-apps deaktivere brugeraktivitetssporing
 
-You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.
+   e. _Slet tredjepartscookies_. Denne funktion begrænser levetiden for tredjepartscookies til 180 minutter og forhindrer annoncører i at spore brugeradfærd på tværs af flere sider
+
+   :::caution
+
+   Denne funktion sletter alle tredjepartscookies efter deres tvungne udløb. Dette omfatter brugerens logins gennem sociale netværk eller andre tredjepartstjenester. Brugeren kan periodisk skulle logge ind på nogle websteder igen eller opleve andre cookie-relaterede problemer. Brug beskyttelsesniveauet _Standard_ til kun at blokere sporingscookies.
+
+   :::
+
+   f. _Blokér WebRTC_. Denne funktion blokerer WebRTC, der kan lække den reelle IP-adresse selv ved brug af proxy eller VPN. Nogle messengers, streamingplatforme eller spil kan muligvis ophøre med at fungere korrekt
+
+   g. _Blokér Push-API_. Denne funktion blokerer push-notifikationer fra websteder
+
+   h. _Blokér Lokations-API_. Denne funktion forhindrer webbrowsere i at tilgå brugerens GPS-data og bestemme placeringen
+
+   i. _Skjul Referer fra tredjeparter_. Denne funktion forhindrer tredjeparter i at vide, hvilke websteder, som besøges. Den skjuler HTTP-headeren indeholdende URL'en på den indledende side og erstatter den med en standard eller en egen tilpasset URL, der kan opsættes
+
+   j. _Skjul Brugeragent_. Denne indstilling fjerner identificerende oplysninger fra Brugeragent (User-Agent) headeren, som normalt omfatter webbrowsernavnet og -versionen, operativsystemet og sprogindstillingerne
+
+   k. _Fjern X-Client-Data-header_. Denne funktion forhindrer Google Chrome i at sende sine versions- og ændringsinfo til Google-domæner (herunder DoubleClick og Google Analytics)
+
+You can tweak individual settings in _Tracking protection_ to create a custom configuration. Hver indstilling har en beskrivelse, der oplyser mere om dens formål. [Læs mere om forskellige _Sporingsbeskyttelse_-indstillinger](/general/stealth-mode), og anvend dem med forsigtighed, da nogle kan forstyrre funktionaliteten af websteder og webbrowserudvidelser.

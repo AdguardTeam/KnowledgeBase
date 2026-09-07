@@ -11,14 +11,14 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 Aqui estão alguns problemas que você pode encontrar e as suas respectivas soluções, além de guias e instruções úteis.
 
-- [Compatibilidade do driver WFP](/archive/adguard-for-windows/solving-problems/wfp-driver/)
-- [Problemas relacionados a certificados](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [Como coletar registros do AdGuard](/archive/adguard-for-windows/solving-problems/adguard-logs/)
+- [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
+- [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [How to collect AdGuard logs](/archive/adguard-for-windows/solving-problems/adguard-logs/)
 - [Como coletar registros de instalação do AdGuard](/adguard-for-windows/solving-problems/installation-logs/)
 - [Como coletar registros do sistema Windows](/adguard-for-windows/solving-problems/system-logs/)
 - [Erros comuns do instalador](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Guia de configurações avançadas (baixo nível)](/archive/adguard-for-windows/solving-problems/low-level-settings/)
+- [Advanced (low-level) Settings guide](/archive/adguard-for-windows/solving-problems/low-level-settings/)
 - [Como criar um arquivo dump](/adguard-for-windows/solving-problems/dump-file/)
-- [Possíveis vazamentos de DNS](/archive/adguard-for-windows/solving-problems/dns-leaks/)
+- [Possible DNS leaks](/archive/adguard-for-windows/solving-problems/dns-leaks/)
 - [Problemas conhecidos do AdGuard para Windows](/adguard-for-windows/solving-problems/known-issues/)
 - [Como corrigir o erro `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`](/adguard-for-windows/solving-problems/mozilla-error/)

@@ -1,26 +1,26 @@
 ---
-title: Comparison to standalone apps
+title: Sammenligning med selvstændige apps
 sidebar_position: 7
 ---
 
 :::info
 
-Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter selve webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
+Den største fordel ved selvstændige AdGuard-programmer fremfor webbrowserudvidelser er, at programmerne kan blokere annoncer i alle webbrowsere og i næsten alle apps. Forskellige webbrowsere kan benyttes sideløbende, da appen filtrerer annoncer og onlinetrusler lige godt i dem alle.
 
-The second difference is that the possibilities of extension-based ad blockers are strictly limited by browser guidelines. The browser extensions have to conform to the policies of the browsers, where ad blocking might be restricted. Thus, some types of filtering rules are not supported by the extensions. The functionality of the desktop apps is not limited, so they have a better filtering quality.
+En anden forskel er, at mulighederne i udvidelsesbaserede adblockere er strengt begrænset af webbrowserretningslinjer. Webbrowserudvidelserne skal overholde webbrowserens politikker, hvor adblocking kan være underlagt restriktioner. Visse filtreringsregeltyper understøttes derfor ikke af udvidelserne. Funktionaliteten af computer-apps er ikke begrænset, så de har en bedre filtreringskvalitet.
 
-Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
+Mens AdGuard Browser Extension er gratis, nem at installere og har filtre til adblocking og bekæmpelse af onlinetrusler, er de komplette apps mere kraftfulde og har en række avancerede funktioner. Se alle forskellene i sammenligningstabellen nedenfor.
 
-![Extension vs. App \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+![Udvidelse kontra App \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`1` — within browser restrictions and only in the browser where it is installed;
+`1` – indenfor webbrowserrestriktioner og kun i dén webwebbrowser, hvori den er installeret;
 
-`2` — the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
+`2` — udvidelsen kan ikke detektere forespørgsler fra andre udvidelser. Sender en ondsindet udvidelse eller sporingsudvidelse en anmodning til sin server om at vise annoncer eller spore aktivitet, vil AdGuard Browser Extension ikke kunne blokere den;
 
-`3` — not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`3` — ikke alle typer annoncer og trusler kan blokeres af webbrowserudvidelser grundet visse webbrowserbegrænsninger. Nogle elementer kan nå frem til siden og sænke indlæsningshastigheden. Modsat webbrowserbaserede adblockere blokerer AdGuard-appen desuden annoncer, før de indlæses i webbrowseren. Dette reducerer både trafik og indlæsningstid.

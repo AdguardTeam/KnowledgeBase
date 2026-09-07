@@ -48,7 +48,7 @@ You can adjust the _Tracking Protection_ settings as needed. For example, you ca
 
 To learn everything about _Tracking protection_ and its many options, [read this article](/general/stealth-mode).
 
-### Browsing security
+### Browsingsikkerhed
 
 Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it’s already started, nor delete the already existing ones. But it will warn you if you’re about to proceed to a website whose domain has been added to our “untrusted sites” database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 

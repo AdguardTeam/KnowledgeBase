@@ -1,28 +1,28 @@
 ---
-title: Browsing security
+title: Browsingsikkerhed
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Browsing security module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Browsing security_.
+Modulet Browsingsikkerhed kan tilgås ved tryk på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _Browsingsikkerhed_.
 
-Browsing security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
+Browsingsikkerhed beskytter mod uforvarende besøg på ondsindede og phishing-websteder. Den advarer også om potentiel malware.
 
-![Browsing security \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Browsingsikkerhed \*mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing security will show you the following warning:
+Er et farligt websted ved at blive besøgt, viser Browsingsikkerhed flg. advarsel:
 
-![Browsing security warning \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Browsingsikkerhedsadvarsel \*mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 
-Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
+Bemærk dog, at AdGuard til Android ikke er et antivirusprogram. Den forhindrer hverken vira i at downloades eller sletter allerede downloadede. For fuld beskyttelse af enheden anbefales AdGuard brugt sammen med et antivirusprodukt
 
 :::
 
-Browsing security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security. [Learn more about how Browsing security works from this article](/general/browsing-security/).
+Browsingsikkerhed er sikker: AdGuard ved ikke, hvilke websteder, som besøges. Den bruger hash-præfikser i stedet for URL'er til at tjekke webstedssikkerheden. [Læs mere om, hvordan Browsersikkerhed fungerer i denne artikel](/general/browsing-security/).

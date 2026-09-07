@@ -35,7 +35,7 @@ AdGuard для Windows запускает два процесса: `Adguard.exe`
 
 ![Два процесса *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/dump_file/new/two_processes_en.png)
 
-Поскольку файлы дампов могут быть большими, пожалуйста, заархивируйте их перед отправкой команде поддержки. Также приложите логи AdGuard, чтобы мы могли более эффективно диагностировать проблему. [Инструкция по сбору логов](/archive/adguard-for-windows/solving-problems/adguard-logs).
+Поскольку файлы дампов могут быть большими, пожалуйста, заархивируйте их перед отправкой команде поддержки. Также приложите логи AdGuard, чтобы мы могли более эффективно диагностировать проблему. See [Instructions for collecting logs](/adguard-for-windows/solving-problems/adguard-logs).
 
 ## Сбор файла `wfpdiag.cab`
 
@@ -59,3 +59,5 @@ AdGuard для Windows запускает два процесса: `Adguard.exe`
 1. Откройте любой сайт, чтобы направить трафик через AdGuard и зафиксировать процесс фильтрации
 
 1. Чтобы остановить логирование, введите `netsh wfp capture stop`
+
+1. Compress the `wfpdiag.cab` file and send it to our support team at **support@adguard.com**.

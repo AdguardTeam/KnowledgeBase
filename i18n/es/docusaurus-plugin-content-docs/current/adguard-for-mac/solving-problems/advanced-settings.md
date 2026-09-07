@@ -87,9 +87,9 @@ Al configurar `true`, permites que AdGuard filtre el tráfico enviado a través 
 
 **Limitations**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
+- Los navegadores basados en "Chrome" no aceptan certificados de usuario, por lo que el filtro HTTP/3 no funciona en ellos.
 - Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Safari soporta filtrado HTTP/3 sin configuración adicional.
 
 #### `network.filtering.localnetwork`
 

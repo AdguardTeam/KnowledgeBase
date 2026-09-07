@@ -2867,7 +2867,7 @@ Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android
 
 #### **`$urltransform`** {#urltransform-modifier}
 
-Pravidla `$urltransform` vám umožňují upravit URL požadavku nahrazením textu, který odpovídá regulárnímu výrazu.
+The `$urltransform` rules allow you to modify the request URL by applying a series of transformations.
 
 **Funkce**
 
@@ -2879,7 +2879,7 @@ Hodnota `$urltransform` může být pro pravidla výjimek prázdná.
 
 **Vícenásobná pravidla odpovídajících jednomu požadavku**
 
-Pokud jednomu požadavku odpovídá více pravidel `$urltransform`, použijeme každé z nich. **Pořadí je stanoveno abecedně.**
+If multiple `$urltransform` rules match a single request, they are applied one-by-one in lexicographical order, each rule being applied to the result of the previous one.
 
 **Syntaxe**
 
@@ -2916,7 +2916,7 @@ This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for A
 
 :::
 
-Jak bylo uvedeno výše, pravidla `$urltransform` mohou normálně měnit pouze část URL obsahující cestu a dotaz. Pokud však pravidlo `regexp` začíná řetězcem `^http`, pak se prohledává celá adresa URL a pravidlo ji může upravit. Takové pravidlo se neuplatní, pokud transformace adresy URL nelze dosáhnout přesměrováním HTTP (například pokud je metoda požadavku `POST`).
+Jak bylo uvedeno výše, pravidla `$urltransform` mohou normálně měnit pouze část URL obsahující cestu a dotaz. However, if the value of the `$urltransform` modifier begins with the string `/^http`, then the full URL becomes the input for, and can be modified by, the rule. Takové pravidlo se neuplatní, pokud transformace adresy URL nelze dosáhnout přesměrováním HTTP (například pokud je metoda požadavku `POST`).
 
 **Příklady**
 
@@ -2965,25 +2965,41 @@ Mnoho webových stránek používá sledovací URL ke sledování kliknutí pře
 
 Níže je uveden příklad, jak získat čistý odkaz na cíl, abyste obešli sledovací webové stránky a přešli přímo na cíl.
 
-V našem příkladu:
+In our first example, the destination URL is percent-encoded:
 
- 1. Počáteční URL (se sledováním kliknutí): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F%26referrer%3Dhttps%3A%2F%2Fwww.aff.example.com%2F%26ref%3Dref-123`
- 1. Sledování URL po dekódování speciálních znaků: `https://www.aff.example.com/visit?url=https://www.somestore.com/`
- 1. Webové stránky, které chcete navštívit: `https://www.somestore.com`
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F&ref=ref-123`
+ 1. The website you want to visit: `https://www.somestore.com/`
 
-Abychom mohli vyčistit URL, musíme nejprve dekódovat speciální znaky (jako `%3A` → `:`, `%2F` → `/`, atd.) a získat skutečnou URL z parametrů sledování. K tomu použijeme modifikátor `$urltransform`. Následující 4 pravidla nahrazují symboly URL jejich skutečnými znaky:
+To clean the URL, extract the encoded destination from the `url` parameter and decode it with the `pct` transformation:
 
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3A/:/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%2F/\//` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3F/?/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%3D/=/` `/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/%26/&/`
+```adblock
+/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|pct
+```
 
-Poté musíme napsat pravidlo, které zablokuje sledovací webovou stránku a přesměruje vás přímo na cílovou adresu (somestore.com):
+The first transformation extracts `https%3A%2F%2Fwww.somestore.com%2F`, and `pct` decodes it to `https://www.somestore.com/`.
 
-`/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com.*url=([^&]*).*/\$1/`
+If the full target URL with a tracking parameter is Base64-encoded, the same approach can be used with the `b64` transformation, followed by another substitution that removes the tracking parameter:
 
-Sledovací odkazy se nyní automaticky vyčistí a umožní přímou navigaci na cílovou webovou stránku bez sledování.
+ 1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=`
+ 1. The website you want to visit: `https://www.somestore.com/`
+
+```adblock
+/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|b64|/[?&]ref=[^&]*//
+```
+
+The first transformation extracts `aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=`, and `b64` decodes it to `https://www.somestore.com/?ref=ref-123`. The final substitution removes the `ref` tracking parameter.
+
+:::caution Changing the origin
+
+Note that in both rules, the `$urltransform` value starts with `/^http`, so the full request URL is transformed. Without this prefix, only the path and query parts of the URL can be transformed.
+
+:::
+
+Tracking links will now be automatically cleaned up, allowing direct navigation to the destination website without tracking.
 
 :::caution Omezení
 
-Pravidla s modifikátorem `$urltransform` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
+Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
 `$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
 
@@ -3695,13 +3711,13 @@ For such DOM:
 the element `div#match` can be selected by any of these extended selectors:
 
 ```adblock
-! prostý text
+! plain text
 div:contains(banner)
 
-! regulární výraz
+! regular expression
 div:contains(/as .*banner/)
 
-! regulární výraz s příznaky
+! regular expression with flags
 div:contains(/it .*banner/gi)
 ```
 
@@ -4327,7 +4343,7 @@ In addition to checking standard HTML attributes, you can filter elements based 
 
 The recommended way to filter elements by their content is using the `:contains()` pseudo-class. It allows you to target elements based on the actual text or script variables they contain, supporting both plain text strings and regular expressions.
 
-**Příklady:**
+**Examples:**
 
 ```example.com$$script:contains(Adverts)
 example.com$$div:contains("Sponsored by")
@@ -4800,7 +4816,7 @@ targets = [target0, target1[, ...[, targetN]]]
  target = domain [path]
 ```
 
-**Příklady:**
+**Examples:**
 
 - `example.org/checkout##.promo-banner` — hides `.promo-banner` elements only on checkout pages
 - `news.site.com/article##.sidebar-ad` — hides sidebar ads only on article pages
@@ -5299,7 +5315,7 @@ The following scriptlets also may be used for debug purposes:
 
 ### Zkratky produktů {#what-product}
 
-1. `CoreLibs apps` — [AdGuard for Windows](/archive/adguard-for-windows/), [AdGuard for Mac](/adguard-for-mac/features/main), [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking), and [AdGuard for Linux](/adguard-for-linux)
+1. `CoreLibs apps` — [AdGuard for Windows](/adguard-for-windows/), [AdGuard for Mac](/adguard-for-mac/features/main), [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking), and [AdGuard for Linux](/adguard-for-linux)
 1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge and Opera
 1. `AdGuard for Chrome MV3` — [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version)
 1. `AdGuard for Firefox` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Firefox

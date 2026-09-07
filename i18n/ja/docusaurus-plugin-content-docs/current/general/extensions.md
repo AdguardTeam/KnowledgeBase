@@ -75,7 +75,7 @@ To try it out:
 
 #### tinyShield
 
-A userscript for people visiting Korean websites and some international websites. The tinyShield userscript blocks Ad-Shield ads and anti-adblocks. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/List-KR/tinyShield).
+tinyShield is primarily designed for Korean websites protected by Ad-Shield, but it also supports many international websites that use the same ad anti-adblocking technology. This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about tinyShield and how to install it on [GitHub](https://github.com/FilteringDev/tinyShield).
 
 ### さらに多くのユーザースクリプトはどこで入手できますか？
 
@@ -95,7 +95,11 @@ Since userscripts are mainly created by enthusiasts, you should be cautious when
 
 [OpenUserJS.org](https://openuserjs.org/) is an open-source userscript catalog written in nodeJS. It's not moderated, so keep an eye out for suspicious scripts.
 
-#### コミュニティ
+#### NamuLink
+
+[NamuLink](https://github.com/FilteringDev/NamuLink) is an open-source userscript that removes Naver PowerLink advertisements from NamuWiki by bypassing the site's advanced link obfuscation mechanisms. The project is maintained by the AdGuard team and the broader ad-blocking community.
+
+#### Community
 
 If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:
 
@@ -103,13 +107,13 @@ If you like the idea of customizing your browser with userscripts and have quest
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-### 開発者向け
+### Development
 
-#### AdGuardライセンスをリクエストする
+#### Request license
 
 If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### 互換性
+#### Compatibility
 
 ##### Metadata block
 
@@ -136,13 +140,13 @@ If you are developing your own userscript and want to test how it works with AdG
 
 ###### Unsupported properties
 
-これらのプロパティは、AdGuardによって無視されます:
+These properties will be simply ignored by AdGuard.
 
 - [`@unwrap`](https://www.tampermonkey.net/documentation.php#meta:unwrap)
 
 ##### Supported GM functions
 
-AdGuard は、古い GM\_ 関数と、GM オブジェクトを使用する新しい GM4 API の両方をサポートしています。
+AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 :::note
 
@@ -343,7 +347,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info 互換性
+:::info Compatibility
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 

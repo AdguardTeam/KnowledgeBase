@@ -7,7 +7,7 @@ AdGuard Mini for Mac’s full version unlocks advanced features that provide ext
 
 To activate it, you can use a regular AdGuard license, which is obtainable [on our website](https://adguard.com/license.html) or through in-app purchase. You can also use the 14-day trial to test the features beforehand.
 
-### AdGuard Extra
+### AdGuard Ekstra
 
 AdGuard Extra is an advanced script that handles complex ads, mostly on social media and online video platforms. It also shuts down ad blocking circumvention technologies such as ad re-insertion.
 

@@ -3,15 +3,9 @@ title: 浏览器扩展
 sidebar_position: 7
 ---
 
-:::info
-
-本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载[适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
-
-:::
-
 AdGuard 可作为[用户脚本管理器](/general/extensions.md)，用于扩展网站功能。 借助此功能，您可以添加自己的脚本，并管理现有脚本。
 
-![扩展](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
 ## 自动检测用户脚本
 
@@ -28,7 +22,7 @@ AdGuard 预装了四个用户脚本：
 
 ### AdGuard 助手（Beta）
 
-AdGuard 助手是旧版助手，当[新版助手](/archive/adguard-for-windows/browser-assistant.md)不适用于您的浏览器时，可使用此版本。 顾名思义，它可以帮助您直接从浏览器中管理 AdGuard 的基本设置，无需打开应用程序。
+AdGuard Assistant is the legacy version of Assistant, which you can use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. 顾名思义，它可以帮助您直接从浏览器中管理 AdGuard 的基本设置，无需打开应用程序。
 
 AdGuard 助手适用于所有与 Microsoft Windows 兼容的浏览器。 它不会出现在被排除过滤的网站上，也不会出现在某些可能导致显示问题的页面上。
 

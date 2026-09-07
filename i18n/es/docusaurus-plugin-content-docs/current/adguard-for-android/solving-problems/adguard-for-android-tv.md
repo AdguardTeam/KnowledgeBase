@@ -1,6 +1,6 @@
 ---
 title: Cómo instalar AdGuard para Android TV
-sidebar_position: 15
+sidebar_position: 17
 ---
 
 :::info
@@ -59,30 +59,30 @@ Listo, AdGuard para Android TV está instalado.
    - En el terminal, introduce el comando `adb install Downloads/adguard_tv.apk`. Si es necesario, reemplaza `Downloads/adguard_tv.apk` con tu ruta.
    - Espera un mensaje en la terminal indicando la instalación exitosa de la aplicación.
 
-## Installing AdGuard for Android TV via atvTools
+## Instalación de AdGuard para Televisión Android mediante atvTools
 
-**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+**Importante:** Tu smartphone y tu televisor con Android TV (TV box) deben estar conectados a la misma red local.
 
-1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+1. Instala la aplicación [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) en tu smartphone Android
 
-2. Connect **atvTools** to **Android TV**
+2. Conecta **atvTools** a **Android TV**
 
-   1. Enable developer mode on your Android TV device
+   1. Activa el modo de desarrollador en tu dispositivo Android TV
 
-      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+      `Ajustes` → `Ajustes del dispositivo` → `Información del dispositivo` → Pulsa `Compilación de Android TV` hasta que veas un mensaje que confirme que has obtenido correctamente el estado de desarrollador
 
-   2. Enable USB debugging on your Android TV device
+   2. Habilita la depuración USB en tu dispositivo Android TV
 
-      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+      Ve a `Ajustes` → `Ajustes del dispositivo` → `Para desarrolladores` → `Depuración`, permite y activa `Depuración por USB`
 
-3. Launch **atvTools** on your smartphone
+3. Abre **atvTools** en tu smartphone
 
-4. Find the desired **Android TV** device in the list and click it
+4. Busca el dispositivo **Android TV** deseado en la lista y haz clic en él
 
-5. Allow the connection on the TV
+5. Permite la conexión en el televisor
 
-6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+6. Descarga el instalador de [AdGuard para Android TV](https://agrd.io/tvapk) en tu smartphone como un archivo **APK**
 
-7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+7. En **atvTools**, haz clic en **Instalar** en la pantalla principal y espera (menos de un minuto) hasta que aparezca el icono de **AdGuard para Android TV** en la lista de aplicaciones
 
-![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)
+![Pantalla principal \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

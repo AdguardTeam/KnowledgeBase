@@ -5,32 +5,32 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _Protection_ tab includes the following features or settings. You’ll find a detailed article for each of them in this Knowledge Base.
+Fanen _Beskyttelse_ indeholder flg. funktioner eller indstillinger. En detaljeret artikel for hver af dem findes i denne Vidensbase.
 
-- [Ad blocking](/adguard-for-android/features/protection/ad-blocking.md)
+- [Adblocking](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  Indstillinger til blokering af annoncer i webbrowsere og apps
 
-- [Tracking protection](/adguard-for-android/features/protection/tracking-protection.md)
+- [Sporingsbeskyttelse](/adguard-for-android/features/protection/tracking-protection.md)
 
-  Settings that allow you to block tracking tools that collect user information
+  Indstillinger, som muliggør blokering af sporingsværktøjer, som indsamler brugeroplysninger
 
-- [Annoyance blocking](/adguard-for-android/features/protection/annoyance-blocking.md)
+- [Irritationsblokering](/adguard-for-android/features/protection/annoyance-blocking.md)
 
-  Settings to block annoyances such as cookie consent popups, social widgets, and banners that prompt you to download mobile apps
+  Indstillinger til blokering af irritationer, såsom pop op-vinduer om cookiesamtykke, sociale widgets og bannere, som opfordrer til at downloade mobil-apps
 
-- [DNS protection](/adguard-for-android/features/protection/dns-protection.md)
+- [DNS-beskyttelse](/adguard-for-android/features/protection/dns-protection.md)
 
-  DNS servers and DNS filters that let you block ads, trackers, and dangerous websites
+  DNS-servere og DNS-filtre, som muliggør blokering af annoncer, trackere og farlige websteder
 
 - [Firewall](/adguard-for-android/features/protection/firewall/firewall.md)
 
-  A feature that allows you to control Internet access for individual apps
+  En funktion, der muliggør styring af internetadgangen for individuelle apps
 
-- [Browsing security](/adguard-for-android/features/protection/browsing-security.md)
+- [Browsingsikkerhed](/adguard-for-android/features/protection/browsing-security.md)
 
-  A feature that blocks access to malicious and phishing websites and protects you from online threats
+  En funktion, der blokerer adgangen til ondsindede og phishing-websteder og beskytter mod onlinetrusler

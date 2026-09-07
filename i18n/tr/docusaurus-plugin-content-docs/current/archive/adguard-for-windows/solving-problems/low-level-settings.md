@@ -3,7 +3,7 @@ title: Gelişmiş (düşük düzey) Ayarlar kılavuzu
 sidebar_position: 7
 ---
 
-:::bilgi
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
@@ -11,15 +11,15 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 Daha önce düşük düzey ayarlar olarak bilinen Gelişmiş Ayarlar çoğunlukla ortalama kullanıcı yetkinliğinin ötesine geçen ve günlük kullanımda uygulanmayan seçenekleri içerir. Windows için AdGuard, hiçbirini değiştirmenize gerek kalmadan çalışacak şekilde tasarlanmıştır, ancak bazı önemli durumlarda veya nadir görülen bir sorunu çözerken ek özellikler sağlar.
 
-:::dikkat
+:::caution
 
-*Gelişmiş Ayarlar* düşüncesizce değiştirilmesi, AdGuard'ın performansında sorunlara neden olabilir, internet bağlantısını kesebilir veya güvenliğinizi ve gizliliğinizi tehlikeye atabilir. Bu ayarlarda yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz bunu yapmanızı istediyse değişiklik yapmalısınız.
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Bu ayarlarda yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz bunu yapmanızı istediyse değişiklik yapmalısınız.
 
 :::
 
 ## Gelişmiş Ayarlara nasıl ulaşılır
 
-*Gelişmiş ayarlar* öğesine gitmek için, ana pencerelerde *Ayarlar → Genel Ayarlar* öğesine tıklayın ve *Gelişmiş Ayarlar* öğesine ilerleyin. Alternatif olarak, tepsi menüsünde *Gelişmiş → Gelişmiş ayarlar...* öğesini seçin.
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## Gelişmiş Ayarlar
 
@@ -31,11 +31,11 @@ Etkinleştirilirse, AdGuard Edge tarayıcısında TCP Fast Open'ı engeller. Aya
 
 ### Use Encrypted Client Hello
 
-Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Use Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, Client Hello packet will be encrypted.
+Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the _Use Encrypted Client Hello_ option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, Client Hello packet will be encrypted.
 
 ### Sitelerin sertifika şeffaflığını kontrol et
 
-Chrome Sertifika Şeffaflığı Politikasını temel alarak alan adı için tüm sertifikaların orijinalliğini doğrular. Sertifika, Chrome Sertifika Şeffaflığı Politikasına uymuyorsa, AdGuard siteyi filtrelemez. Chrome da onu engeller.
+Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. Sertifika, Chrome Sertifika Şeffaflığı Politikasına uymuyorsa, AdGuard siteyi filtrelemez. Chrome da onu engeller.
 
 ### SSL/TLS sertifika iptal kontrollerini etkinleştir
 
@@ -59,7 +59,7 @@ AdGuard açılır bildirimlerini görmek için bu özelliği etkinleştirin. Ço
 
 ### Filtre aboneliği URL bağlantılarını otomatik yakala
 
-AdGuard'ın filtre aboneliği URL'lerini (ör. `abp:subscribe` ve benzeri) otomatik olarak engellemesini ve özel bir filtre yükleme uyarı kutusu açmasını istiyorsanız bu özelliği etkinleştirin.
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### HTTP/3'ü filtrele
 
@@ -79,15 +79,15 @@ Aksi takdirde, AdGuard tüm trafiği yönlendirme olmadan anında filtreler. Bu 
 
 ### Sistem başlangıcında ana pencereyi aç
 
-Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in *Settings → General Settings*.
+Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### Sistem başlangıcında filtrelemeyi etkinleştir
 
 v7.12'den başlayarak, varsayılan olarak AdGuard'ın hizmeti, AdGuard'ı sistem başlangıcında başlat seçeneği devre dışı bırakılırsa işletim sistemi başlatıldıktan sonra trafiği filtrelemez. Başka bir deyişle, AdGuard'ın hizmeti "boşta" modunda başlatılır. Uygulama başlatılmamış olsa bile AdGuard'ın trafiği filtrelemesini sağlamak için bu seçeneği etkinleştirin.
 
-:::not
+:::note
 
-v7.12'den önce, AdGuard hizmeti varsayılan olarak filtreleme modunda başlatılıyordu ( *AdGuard'ı sistem başlangıcında başlat* devre dışı bırakılmış olsa bile). Eski davranıştan memnunsanız, bu seçeneği etkinleştirin.
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). Eski davranıştan memnunsanız, bu seçeneği etkinleştirin.
 
 :::
 
@@ -97,11 +97,11 @@ AdGuard'ın geri dönen bağlantılarını filtrelemesini istiyorsanız, kutuyu 
 
 ### Belirtilen IP aralıklarını filtrelemeden hariç tut
 
-AdGuard'ın belirli alt ağları filtrelemesini istemiyorsanız, bu özelliği etkinleştirin ve IP aralıklarını CIDR gösteriminde (örn. 98.51.100.14/24) aşağıdaki **Filtrelemeden hariç tutulan IP aralıkları** bölümünde belirtin.
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### HAR yazımını etkinleştir
 
-Bu seçenek **yalnızca hata ayıklama amacıyla** etkinleştirilmelidir. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Bu dosya Fiddler uygulamasıyla analiz edilebilir. İnternette gezinmeyi önemli ölçüde yavaşlatabileceğini unutmayın.
+This option should be enabled **only for debugging purposes**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. Bu dosya Fiddler uygulamasıyla analiz edilebilir. İnternette gezinmeyi önemli ölçüde yavaşlatabileceğini unutmayın.
 
 ### Düz HTTP isteğine fazladan boşluk ekle
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### İlk TLS paketinin parçalanma boyutunu ayarla
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Düz HTTP istek parçası boyutu
 
 HTTP istek parçalanmasının boyutunu ayarlar. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### QUIC'i göster
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
-### Java'yı engelle
+### Block Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### DNS sunucusu zaman aşımı süresi
 
@@ -233,7 +233,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 ### Özel önyükleme adresleri listesi
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

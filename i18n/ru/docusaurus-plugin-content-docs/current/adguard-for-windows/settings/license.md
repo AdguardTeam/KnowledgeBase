@@ -3,13 +3,7 @@ title: Лицензия
 sidebar_position: 2
 ---
 
-:::info
-
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
-
-:::
-
-![Лицензия](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
+![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
 
 Вкладка _Лицензия_ содержит сведения о вашей текущей лицензии. Здесь вы можете:
 

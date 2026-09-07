@@ -155,13 +155,13 @@ Você deve remover o aplicativo Shadowsocks da filtragem antes de configurar o p
     | Host do proxy  | *127.0.0.1* |
     | Porta do proxy | *7891*      |
 
-### How to use AdGuard with WG Tunnel
+### Como usar o AdGuard com o WG Tunnel
 
-*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
+*O modo proxy foi adicionado na versão 4.0. Presumimos que você já tenha o WG Tunnel instalado em seu dispositivo e tenha adicionado a configuração do WireGuard.*
 
-1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
+1. Abra o WG Tunnel e acesse **Configurações** (o ícone de engrenagem na parte inferior) → **Modo do aplicativo** → **Proxy (experimental)**. Isso definirá o WG Tunnel para o modo proxy.
 
-1. Abra o AdGuard e vá para **Gerenciamento de aplicativos**. Choose **WG Tunnel** and disable **Route traffic through AdGuard**. Isso eliminará o looping de tráfego.
+1. Abra o AdGuard e vá para **Gerenciamento de aplicativos**. Escolha **WG Tunnel** e desative **Encaminhar tráfego pelo AdGuard**. Isso eliminará o looping de tráfego.
 
 1. Em seguida, vá para **Configurações** → **Filtragem** → **Rede** → **Proxy** → **Servidor proxy**.
 
@@ -175,7 +175,7 @@ Você deve remover o aplicativo Shadowsocks da filtragem antes de configurar o p
 
 1. Toque em **Salvar e selecionar**.
 
-1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
+1. Ative o interruptor principal do proxy e a proteção do AdGuard para rotear o tráfego do seu dispositivo por meio do proxy.
 
 ## Limitações
 

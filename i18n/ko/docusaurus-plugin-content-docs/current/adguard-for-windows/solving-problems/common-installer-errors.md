@@ -63,7 +63,7 @@ sidebar_position: 6
 
 - 다른 설치 폴더를 선택하세요. 현재 설치 폴더에 일부 액세스 제한이 있을 수 있습니다. 또한 외장 드라이브, 가상 드라이브 등을 선택하지 않았는지 확인하세요.
 
-- 전용 [제거 도구를](/archive/adguard-for-windows/installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
+- Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 - Microsoft 설치 관리자 서비스를 시작하고 다시 등록합니다. 다음 단계를 따르세요.
 
@@ -99,7 +99,7 @@ sidebar_position: 6
 
 - 컴퓨터에 AdGuard가 이미 설치되어 있는지 확인하세요. *Win* 키를 누르고 다음을 입력하면 됩니다. ***AdGuard***.
 
-- 이전에 AdGuard를 설치한 후 남은 파일이 있을 수 있습니다. 전용 [제거 도구를](/archive/adguard-for-windows/installation#advanced) 사용하여 AdGuard를 제거한 다음 설치를 반복하세요.
+- 이전에 AdGuard를 설치한 후 남은 파일이 있을 수 있습니다. Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 ### 기타 오류 {#other}
 

@@ -1,16 +1,16 @@
 ---
-title: Annoyance blocking
+title: Irritationsblokering
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Annoyance blocking feature can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Annoyance blocking_.
+Modulet Irritationsblokering kan tilgås ved at trykke på fanen _Beskyttelse_ (2. ikon til venstre nederst på skærmen) og dernæst vælge _Irritationsblokering_.
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances that aren't ads but still detract from your online experience. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+Denne funktion er baseret på AdGuards irritationsfiltre og muliggør blokering af pop op'er, onlineassistentvinduer, cookie-notifikationer, opfordringer til download af mobil-apps o.lign. irritationer, som ikke er annoncer, men stadig distraherer. [Læs mere om irritationsfiltre](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Annoyance blocking \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![Irritationsblokering \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

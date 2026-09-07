@@ -13,8 +13,8 @@ Per filtrare il traffico di rete, AdGuard usa un driver di rete. Esistono due op
 
 Se riscontri un problema che sospetti possa esser causato da ciò, puoi sempre passare al driver di rete TDI, più vecchio, ma più stabile. Per farlo:
 
-1. Vai in *Impostazioni → Rete*.
+1. Go to _Settings → Network_.
 
 2. Disabilita il driver WFP come nell'immagine:
 
-![Driver WFP *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

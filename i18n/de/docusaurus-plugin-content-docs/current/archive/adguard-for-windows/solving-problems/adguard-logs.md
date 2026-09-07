@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 :::note
 
-Die in den Protokollen enthaltenen Daten und/oder Dateien werden in Übereinstimmung mit der [Datenschutzrichtlinie von AdGuard](https://adguard.com/de/privacy.html) verarbeitet.
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
 
 :::
 
@@ -19,54 +19,54 @@ Zur Analyse und Diagnose verschiedener Probleme, die möglicherweise auftreten k
 
 :::note
 
-AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. Wir halten uns konsequent an unsere [Datenschutzerklärung](https://adguard.com/privacy/windows.html) und sammeln keine privaten Informationen über Nutzer:innen. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
+AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
 
 :::
 
-### Fehlersuch-Protokolle {#debug-logs}
+### Debug logs {#debug-logs}
 
-1. Öffnen Sie die AdGuard-Einstellungen. Wechseln Sie zum Abschnitt *Allgemeine Einstellungen*, blättern Sie zum unteren Rand des Bildschirms und stellen Sie die *Protokollierungstufe* auf *Fehlersuche*.
+1. Öffnen Sie die AdGuard-Einstellungen. Go to the _General Settings_ section, scroll down to the bottom of the screen, and switch the _Logging Level_ to _Debug_.
 
-    ![Stufe der Fehlersuch-Protokollierung *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+   ![Debug logging level \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Reproduzieren Sie das Problem.
+2. Reproduzieren Sie das Problem.
 
-    Wir empfehlen Ihnen dringend, sich den genauen Zeitpunkt zu notieren, zu dem Sie das Problem reproduziert haben: Das hilft unserem Support-Team, relevante Protokolleinträge zu finden und das Problem schneller zu lösen.
+   Wir empfehlen Ihnen dringend, sich den genauen Zeitpunkt zu notieren, zu dem Sie das Problem reproduziert haben: Das hilft unserem Support-Team, relevante Protokolleinträge zu finden und das Problem schneller zu lösen.
 
-1. Exportieren Sie die erfassten Protokolle über die Schaltfläche *Protokoll exportieren*.
+3. Export the collected logs using the _Export Logs_ button.
 
-    ![Protokoll exportieren *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Speichern Sie das Archiv in einem beliebigen Ordner.
+   Speichern Sie das Archiv in einem beliebigen Ordner.
 
-1. **Wichtig**: Setzen Sie nach dem Exportieren die Protokollierungstufe wieder auf *Standard*. Die Protokollierungsstufe *Zur Fehlersuche* verlangsamt die Anwendung.
+4. **Important**: after exporting the logs, set the logging level back to _Default_. _Debug_ logging level will slow down the application.
 
-1. Senden Sie das Archiv an den AdGuard-Support unter **support@adguard.com**, beschreiben Sie das Problem und vergessen Sie nicht, den Zeitpunkt anzugeben, zu dem Sie das Problem reproduziert haben.
+5. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
 
-### Protokolle der Ablaufverfolgung {#trace-logs}
+### Trace logs {#trace-logs}
 
-Manchmal bittet das Support-Team Sie, *Ablaufverfolgungsprotokollen* zu senden. Dann müssen Sie Folgendes tun:
+Sometimes support team members may ask you to send _trace_ logs. Dann müssen Sie Folgendes tun:
 
-1. Beenden Sie AdGuard, indem Sie mit der rechten Maustaste auf das AdGuard-Symbol im Infobereich der Taskleiste klicken und *AdGuard beenden* wählen:
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing _Exit AdGuard_:
 
-    ![AdGuard beenden *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+   ![Exit AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-    Bitte lassen Sie den Dienst nicht laufen:
+   Bitte lassen Sie den Dienst nicht laufen:
 
-    ![AdGuard-Dienst beenden *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+   ![Stop AdGuard Service \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-1. Öffnen Sie die Eingabeaufforderung (geben Sie `cmd` in der Startleiste ein).
+2. Open the console (type `cmd` in the start panel).
 
-1. Starten Sie die App mit dem Befehl `C:\"Program Files"\Adguard\Adguard.exe /trace` unabhängig von der Windows-Bitrate, wenn Sie AdGuard für Windows v7.16 oder höher installiert haben.
+3. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
 
 Wenn Sie eine ältere Version von AdGuard für Windows haben, führen Sie die Anwendung mit dem Befehl C:\"Program Files (x86)"\Adguard\Adguard.exe /trace aus, wenn Sie ein 64-Bit-Windows verwenden, und C:\"Program Files"\Adguard\Adguard.exe /trace, wenn Sie ein 32-Bit-Windows verwenden.
 
 1. Reproduzieren Sie das Problem.
 
-    Wir empfehlen Ihnen dringend, sich den genauen Zeitpunkt zu notieren, zu dem Sie das Problem reproduziert haben: Das hilft unserem Support-Team, relevante Protokolleinträge zu finden und das Problem schneller zu lösen.
+   Wir empfehlen Ihnen dringend, sich den genauen Zeitpunkt zu notieren, zu dem Sie das Problem reproduziert haben: Das hilft unserem Support-Team, relevante Protokolleinträge zu finden und das Problem schneller zu lösen.
 
-1. Exportieren Sie die erfassten Protokolle über die Schaltfläche *Protokoll exportieren*.
+2. Export the collected logs using the _Export Logs_ button.
 
-    ![Protokoll exportieren *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-    Machen Sie sich keine Sorgen, wenn die Protokolldatei groß ist. Wir müssen so viele Details wie möglich wissen, um Ihr Problem lösen zu können.
+   Machen Sie sich keine Sorgen, wenn die Protokolldatei groß ist. Wir müssen so viele Details wie möglich wissen, um Ihr Problem lösen zu können.

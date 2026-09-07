@@ -3,12 +3,6 @@ title: App-Verwaltung
 sidebar_position: 1
 ---
 
-:::info
-
-Dieser Artikel beschreibt AdGuard für Windows v8.0, einen umfassenden Werbeblocker, der Ihr Gerät auf Systemebene schützt. Dies ist eine Beta-Version, die sich noch in der Entwicklung befindet. Um es auszuprobieren, laden Sie die [Beta-Version von AdGuard für Windows](https://agrd.io/windows_beta) herunter.
-
-:::
-
 Im Abschnitt _App-Verwaltung_ können Sie die Routing- und Filtereinstellungen für alle auf Ihrem Gerät installierten Apps verwalten.
 
 Sobald AdGuard erkennt, dass eine App mit dem Internet verbunden ist, wird sie automatisch zur _App-Verwaltung_ hinzugefügt und ihr Datenverkehr wird über AdGuard geleitet.
@@ -21,7 +15,7 @@ Wenn Routing und Filterung für eine App aktiviert sind, werden die Symbole unte
 
 Sie können die Einstellungen unverändert lassen, sowohl das Filtern als auch das Routing deaktivieren oder sie für jede App manuell anpassen. Sie können zudem auf die Statistiken der App zugreifen.
 
-![App-Statistiken](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Wie App-Filterung und Routing in AdGuard für Windows v8.0 funktionieren
 

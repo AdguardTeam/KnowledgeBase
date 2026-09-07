@@ -1,42 +1,42 @@
 ---
-title: AdGuard Browser Extension
+title: AdGuard Browser Extesion
 sidebar_position: 1
 ---
 
 :::info
 
-Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowseren. For at beskytte hele enheden, [download AdGuard-appen](https://adguard.com/download.html?auto=true)
 
 :::
 
-- [Features](/adguard-browser-extension/features)
+- [Funktioner](/adguard-browser-extension/features)
 
-  Main features and settings available in AdGuard Browser Extension
+  Hovedfunktioner og indstillinger tilgængelige i AdGuard Browser Extension
 
-- [Availability](/adguard-browser-extension/availability)
+- [Tilgængelighed](/adguard-browser-extension/availability)
 
-  Supported browsers and platforms where the extension can be installed
+  Understøttede webbrowsere og platforme, hvor udvidelsen kan installeres
 
 - [Installation](/adguard-browser-extension/installation)
 
-  Installation and removal
+  Installation og afinstallation
 
-- [Compatibility with the standalone app](/adguard-browser-extension/compatibility)
+- [Kompatibilitet med den selvstændige app](/adguard-browser-extension/compatibility)
 
-  Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
+  Kompatibilitet af AdGuard Browser Extension med AdGuard computer-apps
 
-- [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension til Chrome MV3](/adguard-browser-extension/mv3-version/)
 
-  A separate AdGuard Browser Extension compatible with the Manifest V3 API
+  En separat AdGuard Browser Extension kompatibel med Manifest V3-API'en
 
-- [Browser-protected pages](/adguard-browser-extension/protected-pages)
+- [Browserbeskyttede sider](/adguard-browser-extension/protected-pages)
 
-  Restricted domains whose content can’t be modified with ad blocking extensions
+  Begrænsede domæner, hvis indhold ikke kan ændres med adblockingudvidelser
 
-- [Solving problems](/adguard-browser-extension/solving-problems)
+- [Problemløsninger](/adguard-browser-extension/solving-problems)
 
-  Known issues and possible solutions
+  Kendte problemer og mulige løsninger
 
-- [Comparison to standalone apps](/adguard-browser-extension/comparison-standalone)
+- [Sammenligning med selvstændige apps](/adguard-browser-extension/comparison-standalone)
 
-  The differences in functionality and features between the AdGuard extensions and desktop apps
+  Forskellene i funktionalitet og funktioner mellem AdGuard-udvidelserne og computer-apps

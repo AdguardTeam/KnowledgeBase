@@ -35,7 +35,7 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 
 ### Windows {#windows}
 
-- Abre [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) y presiona **Reportar un problema**:
+- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 

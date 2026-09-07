@@ -1,5 +1,5 @@
 ---
-title: Tracking protection (formerly Stealth Mode)
+title: Sporingsbeskyttelse (tidligere Skjult tilstand (Stealth Mode))
 sidebar_position: 4
 ---
 
@@ -33,7 +33,7 @@ This feature hides your search queries from websites that you visit via search e
 
 Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
-### Other privacy filters {#otherprivacyfilters}
+### Andre fortrolighedsfiltre {#otherprivacyfilters}
 
 This feature displays other privacy filters enabled in **Filters**.
 
@@ -119,7 +119,7 @@ Only the **Block WebRTC** feature is available for AdGuard Browser Extension. Yo
 
 ### Block WebRTC {#webrtc}
 
-This feature blocks WebRTC that can leak your real IP address even if you use a proxy or VPN.
+Denne funktion blokerer WebRTC, der kan lække den reelle IP-adresse selv ved brug af proxy eller VPN.
 
 WebRTC (Web Real-Time Communication) is a technology that enables direct streaming of data between browsers and apps. However, it can let others know your true IP address, even when using a proxy or VPN.
 
@@ -215,7 +215,7 @@ Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
-### Mask IP address {#ip}
+### Maskér IP-adresse {#ip}
 
 This feature tricks websites into believing you are a proxy with the IP address you specify.
 

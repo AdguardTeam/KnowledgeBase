@@ -21,7 +21,7 @@ Při používání AdGuardu může občas dojít k chybám modré obrazovky smrt
 
 Chcete-li shromáždit soubory minidump, potřebujete v počítači přístup správce. Ve výchozím nastavení ukládá systém Windows tyto soubory do složky `C:\Windows\Minidump\`. Hledané soubory budou pojmenovány buď `MEMORY.DMP`, nebo podle vzoru `Mini(ddmmmyy-xxx).dmp`, kde písmena a čísla představují data a pořadová čísla.
 
-![Minidump file](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
+![Minidump file \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/minidump.png)
 
 Pokud tyto soubory nemůžete najít, je možné, že váš systém není nakonfigurován na automatické vytváření souborů minidump.
 

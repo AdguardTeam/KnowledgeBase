@@ -1,76 +1,75 @@
 ---
-title: AdGuard Browser Extension for Chrome MV3
+title: AdGuard Browser Extension til Chrome MV3
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+Da MV2-udvidelser er under udfasning i Chrome Webshop, skal Chrome-brugere muligvis skifte til MV3-udvidelser, som er kompatible med Chromes nye API Manifest V3. Vores tanker om dette emne er udførligt drøftet på [vores blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
-Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
+Vores MV3-udvidelse blokerer effektivt annoncer og trackere, mens den ubemærket håndterer sociale widgets, bannere og videoreklamer. De fleste brugere vil ikke bemærke nogen operationelle forskelle, men der er visse begrænsninger og ændringer at være opmærksom på.
 
-## Where to find our extensions
+## Her findes vores udvidelser
 
-The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+**MV3-versionen** har erstattet vores ældre udvidelse i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
-The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+**Betaversionen af MV3** vil stadig være tilgængelig i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+Den ældre betaudvidelse omdøbes til [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) og vil være understøttet, indtil den udfases af Google.
 
-## Main changes in features and settings
+## Vigtigste ændringer i funktioner og indstillinger
 
-- **No auto and manual filter updates.** The options _Auto-update filters_ and _Check filters update_ are no longer available in the _Filters_ tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **Ingen automatiske og manuelle filteropdateringer.** Indstillingerne _Auto-opdatér filtre_ og _Tjek filteropdatering_ er ikke længere tilgængelige via fanen _Filtre_. Da nogle af reglerne nu anvendes i DNR-form, kan filtre ikke opdateres pr. anmodning, men kun gennem hele processen med at opdatere udvidelsen sammen med gennemgangen i butikkerne.
 
-- **Filtering log**
+- **Filtreringslog**
 
-  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
+  ![Filtreringslog \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
+  Grundet DNR-restriktioner kan den præcise regel, der virkede, ikke vises, men vi vil angive en "omtrentlig regel, der blev udløst" baseret på vores motor. For præcise oplysninger vil den "udpakkede" version af udvidelsen skulle installeres i webbrowser. Detaljeret vejledning til, hvordan dette gøres, kan findes i en [separat artikel](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Tracking protection_ (formerly known as _Stealth mode_)
+- _Sporingsbeskyttelse_ (tidligere kendt som _Stealth mode_)
 
-  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
+  ![Sporingsbeskyttelse \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+  Der er intet _Cookies_-afsnit sammen med _Selvdestruktion af førstepartscookies_ og _Selvdestruktion af tredjepartscookies_, da TTL for cookies ikke kan indstilles med deklarative regler.
 
-- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+- _Phishing- og malwarebeskyttelse_ er ikke længere tilgængelig i de generelle indstillinger. For beskyttelse mod ondsindede websteder og svindel, aktivér de relevante _Sikkerhedsfiltre_ via fanen _Filtre_.
 
-  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
+  ![Sikkerhed \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
-## Limitations
+## Begrænsninger
 
-### Maximum number of rules and filters
+### Maks. antal regler og filtre
 
-Manifest V3 imposes limits on static and regex rules per extension. Users may receive notifications when these limits are exceeded.
+Manifest V3 pålægger kvoter for statiske og regex-regler pr. udvidelse. Brugere kan modtage notifikationer, når disse kvoter overskrides.
 
-![Rule limits \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
+![Regelkvoter \*border](https://cdn.adtidy.org/content/blog/new/rulelimits.png)
 
-![Too many extensions \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
+![For mange udvidelser \*border](https://cdn.adtidy.org/content/blog/new/other_extension.png)
 
-Basically, Manifest V3 divides rules into static (built-in) and dynamic, with strict limits in place.
+Grundlæggende opdeler Manifest V3 regler i statisk (indbygget) og dynamisk med strikse kvoter pålagt.
 
-**Static rules:** minimum **30,000** rules per extension, with a cumulative limit of **330,000** for all extensions installed by a single user.
+**Statiske regler:** Minimum **30.000** regler pr. udvidelse, med en kumulativ kvotegrænse på **330.000** for alle udvidelser installeret af en enkelt bruger.
 
-For regex rules, the limit is set at **1,000 per extension**.
+For regex-regler er kvotegrænsen sat til **1.000 pr. udvidelse**.
 
-The maximum number of simultaneously enabled filters is **50**.
+Det maksimale antal samtidigt aktiverede filtre er **50**.
 
-**Dynamic rules:** a strict cap of **5,000** rules is imposed, which includes a maximum of 1,000 regex rules.
+**Dynamiske regler:** En striks kvotegrænse på **5.000** regler er pålagt, hvilket omfattende maks. 1.000 regex-regler.
 
-If this limit is exceeded, only **5,000 converted rules** will be applied in the following order: first Allowlist, then User rules and finally Custom filters.
+Overskrides denne kvote, vil kun **5.000 konverterede regler** blive anvendt i flg. rækkefølge: Først Hvidliste, dernæst Brugerregler og endelig Tilpassede filtre.
 
-> **Converted rules** are rules that have been transformed
-> to [DNR format] using the [declarative converter][github-declarative-converter].
-> During this conversion process, some rules may overwrite others (`$badfilter`), some may be combined (`$removeparam`),
-> resulting in a list of rules with a slightly different order.
+> **Konverterede regler** er regler, som er blevet transformeret
+> til \[DNR-format] med den [deklarative konverter][github-declarative-converter].
+> Under denne konverteringsproces kan nogle regler overskrive andre (`$badfilter`), nogle kan blive kombineret (`$removeparam`), hvilket resulterer i en liste af regler med en lidt anden rækkefølge.
 >
-> From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
+> Fra denne liste over konverterede regler vil kun 5.000 regler blive anvendt. De øvrige vises i editoren, men de anvendes ikke.
 
-Here's how a rule with a basic modifier is converted to a declarative rule:
+Sådan konverteres en regel med en basismodifikator til en deklarativ regel:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com
 ```
 
-is converted to
+konverteres til
 
 ```json
 [
@@ -94,14 +93,14 @@ is converted to
 ]
 ```
 
-More examples can be found on [GitHub][github-declarative-converter-examples].
+Flere eksempler kan findes på [GitHub][github-declarative-converter-examples].
 
-### Network rule modifiers
+### Netværksregelmodifikatorer
 
-Network rule modifiers have limitations: some of them cannot be implemented in MV3, or can only be implemented with restrictions.
+Netværksregler har begrænsninger: Nogle regeltyper kan ikke implementeres i MV3 eller kan kun implementeres med restriktioner.
 
-More details about the limitations can be found on [GitHub][github-declarative-converter].
-For further information on modifiers, please refer to our [Knowledge base](/general/ad-filtering/create-own-filters).
+Flere detaljer om begrænsningerne kan findes på [GitHub][github-declarative-converter].
+For yderligere oplysninger om modifikatorer, se vores [Vidensbase](/general/ad-filtering/create-own-filters).
 
 [DNR format]: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#build-rules
 [github-declarative-converter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/dnr-converter/src/examples/README.md#table-of-contents

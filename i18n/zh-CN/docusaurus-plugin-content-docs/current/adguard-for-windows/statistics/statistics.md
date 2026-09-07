@@ -3,15 +3,9 @@ title: 统计
 sidebar_position: 1
 ---
 
-:::info
-
-本文适用于 Windows 版的 AdGuard v8.0，一款全面的广告拦截器，可在系统层面保护您的设备。 这是一个仍在开发中的 Beta 测试版本。 要试用，请下载 [适用于 Windows 的 AdGuard 测试版](https://agrd.io/windows_beta)。
-
-:::
-
 在「统计」部分，用户可以全面了解电脑上的流量情况：发送了多少请求、发往哪些公司、上传和下载了多少数据、哪些请求被拦截。 您还可以按不同时间范围查看统计数据：所有时间、最近 14 天、最近 7 天、最近 24 小时，并按广告、跟踪器或请求分类查看。
 
-![自定义统计](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
+![Customize stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 
@@ -23,7 +17,7 @@ sidebar_position: 1
 
 ## 应用程序
 
-本部分显示设备上已安装所有应用的统计数据。 您可以按拦截的广告数、跟踪器数或发送的请求数对应用进行排序。
+此部分显示您设备上安装的所有应用程序的统计信息。 用户可按已拦截的广告数量，已拦截的跟踪器数量或发送的请求数量排序应用。
 
 点击某个应用，即可查看其完整统计信息：它发送的请求以及访问的域名和公司。
 

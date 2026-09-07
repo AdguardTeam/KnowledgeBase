@@ -59,30 +59,30 @@ sidebar_position: 15
    - 在终端中，输入命令 `adb install Downloads/adguard_tv.apk`。 如有必要，请将 `Downloads/adguard_tv.apk` 替换为您的路径。
    - 等待终端中出现指示应用程序安装成功的消息。
 
-## Installing AdGuard for Android TV via atvTools
+## 通过 atvTools 安装适用于 Android TV的 AdGuard
 
-**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+**重要提示**：您的智能手机和搭载 Android TV 的电视（电视盒子）必须位于同一本地网络中。
 
-1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+1. 在 Android 智能手机上安装 [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) 应用。
 
-2. Connect **atvTools** to **Android TV**
+2. 将 **atvTools** 连接到 **Android TV**。
 
-   1. Enable developer mode on your Android TV device
+   1. 在 Android TV 设备上启用开发者模式：
 
-      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+      「设置」→「设备设置」→「关于设备」→ 连续点击「Android TV 版本号」，直到看到确认已成功获得开发者身份的消息。
 
-   2. Enable USB debugging on your Android TV device
+   2. 在 Android TV 设备上启用 USB 调试：
 
-      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+      前往「设置」→「设备设置」→「开发者选项」→「调试」，允许并启用「USB 调试」。
 
-3. Launch **atvTools** on your smartphone
+3. 在智能手机上启动 **atvTools**。
 
-4. Find the desired **Android TV** device in the list and click it
+4. 在列表中找到目标 **Android TV** 设备并点击。
 
-5. Allow the connection on the TV
+5. 在电视上允许连接。
 
-6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+6. 将 [AdGuard Android TV 版本](https://agrd.io/tvapk)安装包以 **APK** 文件形式下载到智能手机。
 
-7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+7. 在 **atvTools** 主屏幕上点击「安装」，等待（不到一分钟），直到 **AdGuard Android TV 版本**图标出现在应用列表中。
 
-![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)
+![主页 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
 
-## Before you start
+## Inden man starter
 
 ### When to report bugs
 
@@ -76,7 +76,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard Browser Extension
+### AdGuard Browser Extesion
 
 1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
 
@@ -86,8 +86,8 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 ### AdGuard til Safari
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.

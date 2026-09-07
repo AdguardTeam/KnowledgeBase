@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
@@ -13,13 +13,13 @@ sidebar_position: 7
 
 :::caution
 
-*詳細設定*を考えずに変更することは AdGuard のパフォーマンスの悪化やインターネット接続の切断、もしくはあなたのセキュリティやプライバシーを侵害してしまう可能性があります。 このセクションで何かを変更するのは、あなたが何をしているのか自信がある場合、またはサポートチームから依頼された場合のみとすることをお勧めします。
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. このセクションで何かを変更するのは、あなたが何をしているのか自信がある場合、またはサポートチームから依頼された場合のみとすることをお勧めします。
 
 :::
 
 ## 詳細設定にアクセスする方法
 
-*詳細設定*に移動するには、メインウィンドウで⚙️*「設定」→「一般設定」を*クリックし、「*詳細設定*」までスクロールダウンします。 または、トレイメニューで*「詳細設定」→「詳細設定...」* を選択します。
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## 詳細設定
 
@@ -31,7 +31,7 @@ sidebar_position: 7
 
 ### Encrypted Client Hello を使用する
 
-暗号化されたインターネット接続には、暗号化されていない部分があります。 その部分とは、接続先のサーバー名を含む最初の通信パケットです。 Encrypted Client Hello 技術は、この問題を解決し、この暗号化されていない部分を暗号化してくれます。 この機能を利用するには、「*Encrypted Client Hello を使用する*」オプションを有効にします。 このオプションは、ローカル DNS プロキシを使用して、ドメインの ECH 構成を検索します。 見つかった場合、ClientHello パケットは暗号化されます。
+暗号化されたインターネット接続には、暗号化されていない部分があります。 その部分とは、接続先のサーバー名を含む最初の通信パケットです。 Encrypted Client Hello 技術は、この問題を解決し、この暗号化されていない部分を暗号化してくれます。 To benefit from it, enable the _Use Encrypted Client Hello_ option. このオプションは、ローカル DNS プロキシを使用して、ドメインの ECH 構成を検索します。 見つかった場合、ClientHello パケットは暗号化されます。
 
 ### Webサイトの証明書の透明性を確認する
 
@@ -59,7 +59,7 @@ AdGuardが特定のアプリをフィルタリングしないようにしたい�
 
 ### フィルタ・サブスクリプションURLを自動的に傍受する
 
-AdGuard に購読 URL (例: `abp:subscribe` など) を自動的に傍受させ、カスタムフィルタインストールウィンドウを開くようにさせたい場合は、この機能を有効にします。
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### HTTP/3 をフィルタリングする
 
@@ -79,7 +79,7 @@ AdGuard に購読 URL (例: `abp:subscribe` など) を自動的に傍受させ�
 
 ### システム起動時にメインウィンドウを開く
 
-このオプションを有効にすると、システムの起動後に AdGuard のメインウィンドウが開きます。 ※実際のフィルタリングサービスが起動するかどうかには影響しないことにご注意ください。その設定は*「設定」→「一般設定*」にあります。
+このオプションを有効にすると、システムの起動後に AdGuard のメインウィンドウが開きます。 This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### システム起動時にフィルタリングを有効にする
 
@@ -87,7 +87,7 @@ v7.12以降、デフォルトでは、[システム起動時にAdGuardを起動]
 
 :::note
 
-v7.12 以前では、AdGuard サービスはデフォルトでフィルタリングモードで開始されていました ( *システム起動時に AdGuard を起動* が無効になっている場合でも)。 以前の動作に満足していた場合は、このオプションを有効にしてください。
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). 以前の動作に満足していた場合は、このオプションを有効にしてください。
 
 :::
 
@@ -97,11 +97,11 @@ AdGuard がループバック接続をフィルタリングするようにした
 
 ### 指定のIP範囲をフィルタリングから除外する
 
-AdGuardに特定のサブネットをフィルタリングさせたくない場合は、この機能を有効にし、下の「**フィルタリングから除外するIP範囲**」セクションで、CIDR表記（例：98.51.100.14/24）でIP範囲を指定します。
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### HAR writing を有効にする
 
-このオプションは、**デバッグ目的でのみ**有効にしてください。 チェックボックスをオンにすると、AdGuard は、フィルタされたすべての HTTP リクエストに関する情報を含む HAR 1.2 形式のファイルを作成します。 このファイルは Fiddler アプリで分析できます。 ※このオプションがオンの時は、ウェブブラウジングの速度が著しく低下する可能性がありますのでご注意ください。
+This option should be enabled **only for debugging purposes**. チェックボックスをオンにすると、AdGuard は、フィルタされたすべての HTTP リクエストに関する情報を含む HAR 1.2 形式のファイルを作成します。 このファイルは Fiddler アプリで分析できます。 ※このオプションがオンの時は、ウェブブラウジングの速度が著しく低下する可能性がありますのでご注意ください。
 
 ### プレーンHTTPリクエストに余分なスペースを追加する
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### 最初のTLSパケットのフラグメントサイズを調整する
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. 無効なサイズを指定すると、システムによって選択された値が使用されます。 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. 無効なサイズを指定すると、システムによって選択された値が使用されます。 This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size（プレーンHTTPリクエストフラグメントサイズ）
 
 HTTPリクエストフラグメンテーションのサイズを調整します。 This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-有効な値は 1～1500 です。 無効なサイズを指定すると、システムによって選択された値が使用されます。 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. 無効なサイズを指定すると、システムによって選択された値が使用されます。 This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### QUICを表示する
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
-### Javaをブロックする
+### Block Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### DNSサーバーのタイムアウト期間
 
@@ -215,7 +215,7 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### フォールバックサーバー
+### Fallback servers
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
@@ -233,7 +233,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 ### カスタムbootstrapアドレスのリスト
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

@@ -11,7 +11,7 @@ Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifunci
 
 :::info
 
-To use _Integration with AdGuard VPN_, both apps — AdGuard for Android and AdGuard VPN for Android — must be updated to their latest versions. Otherwise, the Integration mode will not be available
+Para usar a _Integração com o AdGuard VPN_, ambos os aplicativos — AdGuard para Android e AdGuard VPN para Android — devem ser atualizados para as versões mais recentes. Caso contrário, o modo de Integração não estará disponível
 
 :::
 

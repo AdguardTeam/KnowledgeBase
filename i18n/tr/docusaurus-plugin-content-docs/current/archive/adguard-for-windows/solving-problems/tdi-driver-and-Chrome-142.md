@@ -5,31 +5,31 @@ sidebar_position: 14
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock).
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
 
-Bu davranış AdGuard'daki bir hata değil, modern tarayıcılardaki son mimari ve güvenlik değişikliklerinin bir sonucudur.
+This behavior is not a bug in AdGuard, but a result of recent architectural and security changes in modern browsers.
 
-## Bu neden oluyor
+## Why this happens
 
-Chromium tabanlı tarayıcılar (Chrome, Edge, Brave, Vivaldi, vb.) güvenlik mimarilerini güçlendiriyorlar. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
+Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthening their security architecture. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
 
-### Chrome 142'de neler değişti
+### What changed in Chrome 142
 
-Chrome 142'den itibaren, Ağ Hizmeti işlemi artık varsayılan olarak AppContainer içinde başlatılıyor.
+Starting from Chrome 142, the Network Service process is now launched inside AppContainer by default.
 
-Bu olduğunda, bir AppContainer içinde çalışan uygulamalar eski TDI ağ arayüzünü kullanmaz; bunun yerine, akışları daha modern WSK (Winsock Kernel) yığını üzerinden yönlendirilir. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
+When this happens, applications running in an AppContainer do not use the legacy TDI networking interface; instead, their traffic is routed through the more modern WSK (Winsock Kernel) stack. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
 
 This behavior is controlled entirely by Chrome’s sandboxing policies and internal experiments (field trials), not by user settings.
 
-## Bu durum AdGuard'ı neden etkiliyor
+## Why this affects AdGuard
 
 The TDI driver is an outdated Windows technology that has been deprecated and unsupported by Microsoft for many years. It is not compatible with modern isolation and sandboxing models used by browsers.
 
-Bu sebeple, TDI tabanlı trafik görünürlüğü giderek daha istikrarsız hâle geliyor. In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
+Because of this, TDI-based traffic visibility becomes increasingly unstable. In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
 
 AdGuard already treats the TDI driver as deprecated, and its complete removal is planned as the product evolves.
 
@@ -41,7 +41,7 @@ To use it, go to _Settings → Network → Traffic filtering_, enable traffic fi
 
 Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
 
-## Geçici çözüm
+## Temporary solution
 
 Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. AdGuard then regains the ability to filter browser traffic.
 
@@ -85,10 +85,10 @@ If your browser is not listed, follow the manual instructions below to create th
 
 2. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
 
-3. Kayıt Defteri Düzenleyicisini açın:
+3. Open the Registry Editor:
 
-   - _Win + R_ tuşlarına basın
-   - _regedit_ yazın ve _Enter_ tuşuna basın
+   - Press _Win + R_
+   - Type _regedit_ and press _Enter_
    - Approve the UAC prompt by running it as administrator
 
 4. Back up the Policies branch:
@@ -102,11 +102,11 @@ If your browser is not listed, follow the manual instructions below to create th
 5. Navigate to your browser’s policy key:
 
    - Expand the path `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
-   - Tarayıcınıza karşılık gelen klasörü bulun.
+   - Locate the folder corresponding to your browser.
 
-If the key does not exist, you can create it manually. Chrome için örnek:
+If the key does not exist, you can create it manually. Example for Chrome:
 
-- _Politikalar_ → _Yeni_ → _Anahtar_ öğesine sağ tıklayın ve `Google` adını verin
+- Right-click _Policies_ → _New_ → _Key_ and name it `Google`
 - Inside `Google`, create another key named `Chrome`
 
 Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
@@ -130,7 +130,7 @@ Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. Y
 
 2. Close the browser and apply the settings. To ensure the policy is loaded:
 
-   - Tarayıcıyı tamamen kapatın
+   - Fully close the browser
    - Check Task Manager and make sure no processes such as _chrome.exe_, _msedge.exe_, _brave.exe_ remain running
    - Reopen the browser
 

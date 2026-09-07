@@ -24,7 +24,7 @@ Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowsere
 
 ![AdGuard Browser Extension i Chrome Webshop *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
 
-In the opened dialog, click *Add extension*.
+Klik på *Tilføj udvidelse* i den viste dialog.
 
 ![Dialog i Chrome Webshop *kant](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 

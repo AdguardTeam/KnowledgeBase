@@ -3,37 +3,31 @@ title: Проблемы с фильтрацией в Chrome 142+ при испо
 sidebar_position: 1
 ---
 
-:::info
+Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
 
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
+This behavior is not a bug in AdGuard, but a result of recent architectural and security changes in modern browsers.
 
-:::
+## Why this happens
 
-Некоторые пользователи AdGuard для Windows могут заметить, что [приложение перестаёт фильтровать трафик в браузерах на основе Chromium](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Начиная с Chrome версии 142 и выше, трафик браузера просто не отображается на уровне TDI-драйвера, а значит, AdGuard не может проверять и фильтровать его.
+Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthening their security architecture. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
 
-Такое поведение не ошибка AdGuard, а результат недавних изменений в архитектуре и безопасности современных браузеров.
+### What changed in Chrome 142
 
-## Почему это происходит
+Starting from Chrome 142, the Network Service process is now launched inside AppContainer by default.
 
-Браузеры на основе Chromium (Chrome, Edge, Brave, Vivaldi и др.) укрепляют свою архитектуру безопасности. Одно из значительных изменений — перенос важных внутренних процессов [в песочницу Windows AppContainer](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), включая Network Service, который обрабатывает весь трафик браузера.
+When this happens, applications running in an AppContainer do not use the legacy TDI networking interface; instead, their traffic is routed through the more modern WSK (Winsock Kernel) stack. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
 
-### Что изменилось в Chrome 142
+This behavior is controlled entirely by Chrome’s sandboxing policies and internal experiments (field trials), not by user settings.
 
-Начиная с Chrome 142, Network Service по умолчанию запускается внутри AppContainer.
+## Why this affects AdGuard
 
-В таких случаях приложения, работающие в AppContainer, не используют устаревший сетевой интерфейс TDI; вместо этого их трафик маршрутизируется через более современный стек WSK (Winsock Kernel). В результате TDI-драйвер не может видеть, перехватывать или обрабатывать соединения, проходящие через WSK, и весь трафик браузера становится невидимым для TDI-драйвера, используемого AdGuard.
+The TDI driver is an outdated Windows technology that has been deprecated and unsupported by Microsoft for many years. It is not compatible with modern isolation and sandboxing models used by browsers.
 
-Такое поведение полностью контролируется политикой «песочницы» Chrome и внутренними экспериментами, а не настройками пользователя.
+Because of this, TDI-based traffic visibility becomes increasingly unstable. In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
 
-## Почему это влияет на AdGuard
+AdGuard already treats the TDI driver as deprecated, and its complete removal is planned as the product evolves.
 
-TDI-драйвер — это устаревшая технология Windows, которая уже много лет не поддерживается Microsoft. Он не совместим с современными моделями изоляции и песочницы, которые используют браузеры.
-
-Из-за этого видимость трафика на основе TDI становится всё менее стабильной. В некоторых браузерах она уже полностью исчезла и в конечном итоге перестанет работать совсем.
-
-AdGuard уже считает TDI-драйвер устаревшим и планирует его полное удаление.
-
-## Постоянное решение
+## Permanent solution
 
 From v8.0 RC, we’ve added experimental support for the SockFilter driver. It fixes the issue by solving conflicts in the WFP stack. [More information](/adguard-for-windows/settings/app-settings/network-settings/).
 
@@ -41,93 +35,93 @@ To use it, go to _Settings → Network → Traffic filtering_, enable traffic fi
 
 Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
 
-## Временное решение
+## Temporary solution
 
-Определённые изменения в реестре Windows могут заставить браузер перестать использовать AppContainer, в результате чего его процессы снова будут работать вне песочницы. Network Service прекращает использование стека WSK и переключается на сетевой путь, который виден TDI-драйверу. После этого AdGuard восстанавливает способность фильтровать трафик браузера.
+Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. AdGuard then regains the ability to filter browser traffic.
 
-### Как изменить реестр в браузерах на основе Chromium
+### How to modify the registry in Chromium-based browsers
 
 :::warning
 
-Для редактирования реестра требуются права администратора. Неправильные изменения могут повлиять на стабильность и безопасность системы или браузера. Всегда создавайте резервную копию ветки реестра перед её изменением.
+Administrator rights are required to edit the registry. Incorrect changes may affect system or browser stability and security. Always create a backup of the registry branch before modifying it.
 
-Прежде чем продолжить, имейте в виду, что это решение снижает уровень безопасности песочницы/AppContainer, что делает браузер менее изолированным. Это правило применяется ко всей системе, поскольку оно изменяет `HKLM`, и должно использоваться только для отладки, временных обходных решений, в контролируемых средах или когда перехват трафика на основе TDI строго необходим.
+Before proceeding, keep in mind that this solution reduces sandbox/AppContainer security, making the browser less isolated. It applies system-wide because it modifies `HKLM`, and should only be used for debugging, temporary workarounds, in controlled environments, or when TDI-based traffic interception is strictly necessary.
 
-Его **не** следует применять повсеместно на компьютерах пользователей. **Продолжите только если понимаете последствия.**
+It should **not** be applied broadly across end-user machines. **Proceed only if you understand the implications.**
 
 :::
 
-Изменения в реестре можно применить автоматически, используя один из предварительно сгенерированных файлов .reg ниже. Каждый из этих файлов отключает изоляцию AppContainer/Network Service для конкретного браузера на основе Chromium:
+You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
 
-- [Скачать Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
-- [Скачать Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
-- [Скачать Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
-- [Скачать Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
-- [Скачать Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
-- [Скачать YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
+- [Download Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
+- [Download Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
+- [Download Edge.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Edge.reg)
+- [Download Brave.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Brave.reg)
+- [Download Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
+- [Download YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
 
-Если вашего браузера нет в списке, следуйте приведённой ниже инструкции, чтобы создать записи в реестре:
+If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
 
-1. Изучите официальную документацию производителя или откройте страницу внутренней политики. В Chrome перейдите по адресу `chrome://policy`. В других браузерах используется аналогичный путь.
+1. Determine its policy branch by checking the vendor’s official documentation or by opening the internal policy page. In Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
 
-2. Определите правильную ветку реестра для вашего браузера. Различные браузеры на основе Chromium используют разные пути в рамках `HKLM`. Путь должен соответствовать модели `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
+2. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
 
-3. Откройте редактор реестра:
+3. Open the Registry Editor:
 
-   - Нажмите _Win + R_
-   - Введите _regedit_ и нажмите _Enter_
-   - Подтвердите запрос UAC, запустив его от имени администратора
+   - Press _Win + R_
+   - Type _regedit_ and press _Enter_
+   - Approve the UAC prompt by running it as administrator
 
-4. Создайте резервную копию ветки Policies:
+4. Back up the Policies branch:
 
-   - В левой панели перейдите к разделу `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
-   - Щёлкните правой кнопкой мыши на _Policies_ → _Export_
-   - Сохраните файл как _Policies_backup.reg_
+   - In the left panel, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
+   - Right-click _Policies_ → _Export_
+   - Save the file as _Policies_backup.reg_
 
-   Если что-то пойдёт не так, вы можете восстановить резервную копию, дважды кликнув по этому файлу.
+   If something goes wrong, you can restore the backup by double-clicking this file.
 
-5. Перейдите к ключу политики браузера:
+5. Navigate to your browser’s policy key:
 
-   - Разверните путь `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
-   - Найдите папку, соответствующую вашему браузеру.
+   - Expand the path `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
+   - Locate the folder corresponding to your browser.
 
-Если ключа не существует, вы можете создать его вручную. Пример для Chrome:
+If the key does not exist, you can create it manually. Example for Chrome:
 
-- Щёлкните правой кнопкой мыши _Policies_ → _New_ → _Key_ и назовите его `Google`
-- Внутри `Google` создайте ещё один ключ с именем `Chrome`
+- Right-click _Policies_ → _New_ → _Key_ and name it `Google`
+- Inside `Google`, create another key named `Chrome`
 
-Повторите ту же логику для Chromium, Edge, Brave, Vivaldi, Yandex Browser и т. д. В итоге у вас должен получиться ключ, выглядящий как `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>\`.
+Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
 
-1. Добавьте необходимые значения реестра:
+1. Add the required registry values:
 
-   - В нужном ключе нажмите на правую панель → _New_ → _DWORD (32-bit) Value_
+   - In the correct key, click the right panel → _New_ → _DWORD (32-bit) Value_
 
-   - Назовите его `RendererAppContainerEnabled`
+   - Name it `RendererAppContainerEnabled`
 
-   - Дважды кликните и установите:
+   - Double-click it and set:
 
      - **Value:** 0
-     - **Base:** Hexadecimal или Decimal (оба подходят)
+     - **Base:** Hexadecimal or Decimal (either is fine)
 
-   - Повторите процесс и создайте второй DWORD `NetworkServiceSandboxEnabled`.
+   - Repeat the process and create a second DWORD `NetworkServiceSandboxEnabled`.
 
-   - Установите его значение равным 0.
+   - Set its value to 0.
 
-   Оба параметра должны быть типа `REG_DWORD` и иметь значение **0**.
+   Both parameters must be `REG_DWORD` and have the value **0**.
 
-2. Закройте браузер и примените настройки. Чтобы убедиться, что политика загружена:
+2. Close the browser and apply the settings. To ensure the policy is loaded:
 
-   - Полностью закройте браузер
-   - Проверьте диспетчер задач и убедитесь, что никакие процессы, такие как _chrome.exe_, _msedge.exe_ или _brave.exe_, не запущены
-   - Откройте браузер снова
+   - Fully close the browser
+   - Check Task Manager and make sure no processes such as _chrome.exe_, _msedge.exe_, _brave.exe_ remain running
+   - Reopen the browser
 
-3. Убедитесь, что политика применена, открыв её в браузере.
+3. Verify that the policies have been applied by opening the policy viewer for your browser.
 
-Вы должны видеть следующие активные политики:
+You should see the following policies active:
 
 - `RendererAppContainerEnabled` — **0 / false**
 - `NetworkServiceSandboxEnabled` — **0 / false**
 
-Если такая опция есть, нажмите _Reload policies_.
+If available, click _Reload policies_.
 
 Готово!

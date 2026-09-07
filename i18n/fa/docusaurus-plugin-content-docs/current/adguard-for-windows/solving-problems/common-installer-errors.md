@@ -63,7 +63,7 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
 
 - Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
 
-- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
@@ -99,7 +99,7 @@ It's very likely that you've already installed AdGuard before.
 
 - Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
 
-- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
 
 ### Other errors {#other}
 

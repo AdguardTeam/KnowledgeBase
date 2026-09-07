@@ -23,7 +23,7 @@ AdGuard にインストールされている拡張機能は以下の通りです
 
 **AdGuard アシスタント**
 
-AdGuard アシスタントは、[新しいアシスタント](/archive/adguard-for-windows/browser-assistant.md)がブラウザで利用できない場合に使用できるレガシー アシスタントです。 ユーザーがAdGuardアプリを開かなくても、ブラウザ上で AdGuard の基本設定をすばやく変更できるようにする拡張機能です。 AdGuard アシスタントは、Microsoft Windowsと互換性のあるブラウザの全てで動作します。 ※ユーザーによって例外としてリストされたウェブサイト、およびコンテンツが不正に表示される可能性がある特定のウェブページには、AdGuard アシスタントのアイコンは表示されません。
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. ユーザーがAdGuardアプリを開かなくても、ブラウザ上で AdGuard の基本設定をすばやく変更できるようにする拡張機能です。 AdGuard アシスタントは、Microsoft Windowsと互換性のあるブラウザの全てで動作します。 ※ユーザーによって例外としてリストされたウェブサイト、およびコンテンツが不正に表示される可能性がある特定のウェブページには、AdGuard アシスタントのアイコンは表示されません。
 
 **AdGuard Extra**
 

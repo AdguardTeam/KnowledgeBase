@@ -3,15 +3,9 @@ title: Paramètres réseau
 sidebar_position: 3
 ---
 
-:::info
-
-Cet article décrit AdGuard pour Windows v8.0, un bloqueur de publicité complet qui protège votre appareil au niveau du système. Il s'agit d'une version bêta encore en développement. Pour l'essayer, téléchargez la [version bêta d'AdGuard pour Windows](https://agrd.io/windows_beta).
-
-:::
-
 Cette section vous permet de gérer la façon dont AdGuard filtre votre trafic Internet et fournit des outils supplémentaires pour contrôler les fonctionnalités liées au réseau.
 
-![Paramètres réseau](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
+![Network settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
 ## Utiliser AdGuard comme proxy HTTP
 
@@ -39,7 +33,7 @@ Avec cette option, vous pouvez :
 
 Ici, vous pouvez choisir quel proxy AdGuard doit utiliser pour télécharger les mises à jour des filtres ou les nouvelles versions de l'app — le proxy système, un proxy personnalisé ou aucun proxy.
 
-![Paramètres du proxy](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
+![Proxy settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
 ## Utiliser le pilote SockFilter
 

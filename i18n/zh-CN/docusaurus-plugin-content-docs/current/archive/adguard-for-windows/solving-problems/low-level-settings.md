@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,13 +13,13 @@ sidebar_position: 7
 
 :::caution
 
-盲目地更改「*高级设置*」可能会导致 AdGuard 的运作问题，也会断开互联网连接或侵害安全和隐私。 只有用户确定自己在做什么或我们的支持团队要求这样做，用户才应该更改这些设置。
+Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. 只有用户确定自己在做什么或我们的支持团队要求这样做，用户才应该更改这些设置。
 
 :::
 
 ## 如何转到高级设置
 
-要进入「*高级设置*」，请在主窗口单击*「设置」→「常规设置」*，然后向下滚动到「*高级设置*」。 或者在托盘菜单中选择*「高级」→「高级设置…」*。
+To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
 
 ## 高级设置
 
@@ -31,7 +31,7 @@ sidebar_position: 7
 
 ### 使用 Encrypted ClientHello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 Client Hello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 To benefit from it, enable the _Use Encrypted Client Hello_ option. 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 Client Hello 数据包进行加密。
 
 ### 检查网站的证书透明度
 
@@ -59,16 +59,16 @@ sidebar_position: 7
 
 ### 自动截取过滤器订阅 URL
 
-如果用户想让 AdGuard 自动拦截过滤器订阅 URL（如 `abp:subscribe` 等）并打开自定义过滤器安装对话框，请启用此功能。
+Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
 ### 过滤 HTTP/3
 
 如果启用此设置，AdGuard 除过滤其他请求类型外，还会过滤通过 HTTP/3 发送的请求。
 
-**Limitations**:
+**限制**：
 
 - Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- 基于 Firefox 的浏览器默认行为类似，但您可以在 `about:config` 中将 `network.http.http3.disable_when_third_party_roots_found` 选项设置为 `false`，以允许用户证书用于 HTTP/3。
 - Safari supports HTTP/3 filtering without additional configuration.
 
 ### 使用重定向驱动模式
@@ -79,7 +79,7 @@ sidebar_position: 7
 
 ### 随系统启动时显示主窗口
 
-启用此选项可在加载系统后打开 AdGuard 主窗口。 该设置位于*设置 → 常规*，不会影响实际过滤服务是否启动。
+启用此选项可在加载系统后打开 AdGuard 主窗口。 This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
 ### 在系统启动时启用过滤
 
@@ -87,7 +87,7 @@ sidebar_position: 7
 
 :::note
 
-在 v7.12 之前的版本，AdGuard 服务默认是以过滤模式启动的（即使是在「*AdGuard 随系统启动运行*」被禁用的情况下）。 如您满足旧版本的行为，则可开启此项。
+Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). 如您满足旧版本的行为，则可开启此项。
 
 :::
 
@@ -97,11 +97,11 @@ sidebar_position: 7
 
 ### 从过滤中排除特定 IP 范围
 
-如果用户不希望 AdGuard 过滤特定的子网，请启用此功能，并在下面**「无需进行过滤的 IP 范围」**指定 CIDR 表记中的 IP 范围（例如 98.51.100.14/24）。
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### 启用 HAR 写入
 
-此选项**仅用于调试目的**。 勾选复选框将使 AdGuard 创建一个以 HAR 1.2 格式包含有关所有经过过滤的 HTTP 请求信息的文件。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
+This option should be enabled **only for debugging purposes**. 勾选复选框将使 AdGuard 创建一个以 HAR 1.2 格式包含有关所有经过过滤的 HTTP 请求信息的文件。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
 
 ### 在普通的 HTTP 请求中添加额外的空间
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### 调整初始 TLS 数据包的碎片大小
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### 普通 HTTP 请求片段大小
 
 调整 HTTP 请求片段大小。 This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
 
 ### 显示 QUIC
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+This setting only works when the _Enable TCP keepalive_ option is enabled.
 
 :::
 
 ### 拦截 Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
 
 ### DNS 服务器的超时期限
 
@@ -215,7 +215,7 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### 后备（Fallback）服务器
+### 后备服务器
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
@@ -233,7 +233,7 @@ If you want AdGuard to use custom fallback servers, list them in this section, o
 
 ### 自定义 bootstrap 地址的列表
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
 
 By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
 

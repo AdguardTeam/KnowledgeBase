@@ -86,8 +86,8 @@ Reakce najdete v pravém horním rohu nebo na konci hlášení.
 
 ### AdGuard pro Safari
 
-1. Podívejte se na [repozitář Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) a ujistěte se, že problém ještě nebyl nahlášen.
+1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) a vyberte *Bug report*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
 
 3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.

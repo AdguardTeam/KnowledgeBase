@@ -11,14 +11,14 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení, průvodci a pokyny, které můžete potřebovat.
 
-- [Kompatibilita ovladače WFP](/archive/adguard-for-windows/solving-problems/wfp-driver/)
-- [Problémy související s certifikátem](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
-- [Jak shromažďovat protokoly AdGuard](/archive/adguard-for-windows/solving-problems/adguard-logs/)
+- [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
+- [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
+- [How to collect AdGuard logs](/archive/adguard-for-windows/solving-problems/adguard-logs/)
 - [Jak shromažďovat protokoly instalace AdGuardu](/adguard-for-windows/solving-problems/installation-logs/)
 - [Jak shromažďovat protokoly ve Windows](/adguard-for-windows/solving-problems/system-logs/)
 - [Běžné chyby instalátoru](/adguard-for-windows/solving-problems/common-installer-errors/)
-- [Průvodce pokročilým (nízkoúrovňovým) nastavením](/archive/adguard-for-windows/solving-problems/low-level-settings/)
+- [Advanced (low-level) Settings guide](/archive/adguard-for-windows/solving-problems/low-level-settings/)
 - [Jak vytvořit soubor dump](/adguard-for-windows/solving-problems/dump-file/)
-- [Možné úniky DNS](/archive/adguard-for-windows/solving-problems/dns-leaks/)
+- [Possible DNS leaks](/archive/adguard-for-windows/solving-problems/dns-leaks/)
 - [Známé problémy s AdGuard pro Windows](/adguard-for-windows/solving-problems/known-issues/)
 - [Jak opravit chybu `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE`](/adguard-for-windows/solving-problems/mozilla-error/)

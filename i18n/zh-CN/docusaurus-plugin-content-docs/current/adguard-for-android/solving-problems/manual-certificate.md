@@ -20,19 +20,19 @@ sidebar_position: 11
 1. 然后您将看到三个画面：
     - HTTPS 过滤对广告拦截至关重要
     - AdGuard 的 HTTPS 过滤是安全的
-    - AdGuard certificate
+    - AdGuard 证书
 
-1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. 依次点击「*继续*」→「*下一步*」→「*保存证书*」。
 
-1. Tap *Save* at the bottom of the opened *Download* folder.
+1. 在打开的*下载*文件夹底部点击「*保存*」。
 
-1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
+1. 保存后，从「*CA 证书*」字段复制文本，然后点击「*打开设置*」。
 
-1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
+1. 打开*设置*，在搜索栏中粘贴或输入「*CA 证书*」。 点击相应选项。
 
-1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
+1. 可能会看到警告提示。 如果出现，请点击「*仍然安装*」，如有必要请输入 PIN 码。
 
-1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
+1. 选择 AdGuard 证书文件。 它其名称应类似于 *adguard_1342_020322.crt*。
 
 完成！ 证书安装成功后，即可启用 HTTPS 过滤。
 
@@ -51,4 +51,4 @@ sidebar_position: 11
 
 [了解有关 HTTPS 过滤以及证书如何工作的更多信息](/general/https-filtering/what-is-https-filtering.md)。
 
-If you still encounter a problem and can’t install the certificate, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
+如问题仍然存在使您无法安装证书，请联系我们的客户支持团队 [support@adguard.com](mailto:support@adguard.com)。

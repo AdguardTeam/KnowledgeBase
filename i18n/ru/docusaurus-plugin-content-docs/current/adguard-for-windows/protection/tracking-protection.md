@@ -3,15 +3,9 @@ title: Защита от трекинга
 sidebar_position: 2
 ---
 
-:::info
-
-В этой статье описывается AdGuard для Windows v8.0 — комплексный блокировщик рекламы, который защищает ваше устройство на системном уровне. Это бета-релиз, который ещё находится в стадии разработки. Чтобы начать им пользоваться, скачайте [бета-версию AdGuard для Windows](https://agrd.io/windows_beta).
-
-:::
-
 Многие сайты собирают данные о своих посетителях, включая IP-адреса, информацию о браузере и операционной системе, разрешение экрана и даже страницу, с которой вы пришли. Куки могут использоваться для идентификации вашего браузера, запоминания предпочтений или распознавания вас при повторном посещении сайта. Защита от трекинга предотвращает сбор ваших личных данных такими системами. Подробнее в нашей [статье о Защите от трекинга в AdGuard](https://adguard.com/kb/general/stealth-mode/)
 
-![Защита от трекинга](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
 Если вы не хотите тратить время на ручную настройку фильтров, вы можете просто выбрать один из готовых уровней защиты:
 
@@ -33,7 +27,7 @@ sidebar_position: 2
 
 ## Основные настройки
 
-![Основные настройки](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general.png)
+![General settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
 
 ### Блокировать трекеры
 
@@ -47,13 +41,17 @@ sidebar_position: 2
 
 Скрывает ваши запросы от сайтов, на которые вы перешли из поисковой системы. При переходах из результатов поиска Google, Yandex или других поисковых систем эта опция скрывает от сайта поисковый запрос, по которому вы нашли его.
 
-### Просить сайты не отслеживать меня
+### Отправлять сигналы, чтобы отказаться от отслеживания
 
 Отправляет сигналы [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) сайтам, которые вы посещаете.
 
+### Другие фильтры защиты от трекинга
+
+Applies a set of additional privacy protection filters. The number next to _Enabled in Filters_ shows how many filters are currently active.
+
 ## Методы отслеживания
 
-![Методы отслеживания](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_tracking_methods.png)
+![Tracking methods \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_tracking_methods.png)
 
 ### Удалять сторонние файлы куки
 
@@ -63,7 +61,7 @@ sidebar_position: 2
 
 С помощью этой функции вы можете задать ограничение по времени (в минутах), по истечении которого все сторонние куки будут удалены. Если установить таймер на 0, такие файлы будут полностью заблокированы.
 
-![Время жизни](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
+![Time-to-live \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
@@ -71,7 +69,7 @@ sidebar_position: 2
 
 :::
 
-### Удалять куки сайта (не рекомендуется)
+### Удалять основные файлы куки (не рекомендуется)
 
 Этот параметр удаляет куки, установленные сайтом, на котором вы сейчас находитесь, после выбранного периода времени (в минутах). По истечении таймера все упомянутые выше куки будут удалены. Установите таймер на 0, чтобы заблокировать их полностью.
 
@@ -95,13 +93,13 @@ sidebar_position: 2
 
 ## API браузера
 
-![API браузера](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_browser_api.png)
+![Browser API \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_browser_api.png)
 
-### Блокировать WebRTC
+### Prevent IP address leaks through WebRTC
 
-Блокирует WebRTC — известную уязвимость, которая может привести к утечке вашего реального IP-адреса, даже если вы используете прокси или VPN.
+Makes WebRTC use a stricter IP address policy to prevent your real IP address from being exposed, even if you use a proxy or VPN.
 
-WebRTC (Web Real-Time Communications) — технология, которая разрешает прямой стриминг данных между браузерами и приложениями. Это может раскрыть ваш настоящий IP-адрес, даже если вы используете прокси или VPN. Включение этой опции может нарушить работу некоторых браузерных приложений, таких как мессенджеры, чаты, кинотеатры, игры.
+WebRTC (Web Real-Time Communications) — технология, которая разрешает прямой стриминг данных между браузерами и приложениями. By default, it can reveal your true IP address even when a proxy or VPN is active. This option enforces a stricter IP address policy instead of blocking WebRTC entirely, so browser applications such as messengers, chats, and games are less likely to be affected.
 
 ### Блокировать Push API
 
@@ -111,17 +109,17 @@ Push API позволяет серверам отправлять сообщен
 
 Когда эта опция включена, браузер не отправляет GPS-данные на веб-сайты. Это предотвращает определение вашей локации, изменение результатов поиска или адаптацию контента на основе вашего местоположения.
 
-### Блокировать Flash
-
-Плагин Flash Player устарел и сильно уязвим для вирусов и эксплойтов. Его работа также может замедлять загрузку сайтов. Включение этой опции предотвращает обнаружение браузерами Flash-компонентов (таких как плагины или объекты ActiveXObject), что фактически отключает поддержку Flash.
-
 ## Windows-трекинг
 
-![Windows-трекинг](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_windows_tracking.png)
+![Windows tracking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_windows_tracking.png)
 
 ### Отключить телеметрию Windows
 
 Отключает отправку данных о вашей системе и использовании приложений.
+
+### Отключить Windows Recall
+
+Disables the Windows Recall feature, which periodically takes snapshots of your screen and stores them locally. This prevents sensitive information visible on your screen from being captured and saved.
 
 ### Выключить рекламные идентификаторы
 
@@ -133,17 +131,17 @@ Push API позволяет серверам отправлять сообщен
 
 ### Отключить WAP Push
 
-Отключает сбор данных о проблемах компонентов Windows
+Disables data collection about Windows component problems.
 
 ## Разное
 
-![Дополнительные настройки](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_misc.png)
+![Miscellaneous \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_miscellaneous.png)
 
 ### Скрывать Referer от сторонних ресурсов
 
 Referer — это HTTP-заголовок, включаемый в запросы от браузера к серверу. Он содержит URL-адрес источника запроса. Когда вы переходите с одной страницы на другую, Referer сохраняет URL начальной страницы. Часто на сервере, где размещена веб-страница, устанавливается программное обеспечение, которое анализирует Referer и извлекает из него различную информацию.
 
-Включение опции _Скрывать Referer от сторонних ресурсов_ изменяет или удаляет заголовок, что предотвращает доступ сторонних сайтов к этой информации.
+Enabling the _Hide Referer from third parties_ option prevents third-party websites from seeing this information by altering or removing the header.
 
 Вы также можете ввести своё значение в поле _Пользовательский Referer_. Оставьте поле пустым, чтобы использовать Referer по умолчанию.
 
@@ -169,16 +167,29 @@ AdGuard не может полностью скрыть ваш реальный 
 
 ### Защита от DPI
 
-DPI (Deep Packet Inspection) — это система глубокого анализа и фильтрации трафика по содержимому пакетов, а также накопления статистических данных. Используя её, интернет-провайдеры могут контролировать проходящий трафик и ограничивать любому своему клиенту доступ к контенту.
+![Protect against DPI \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protect_against_dpi.png)
 
-Технология глубокого анализа пакетов (Deep Packet Inspection, DPI) используется некоторыми интернет-провайдерами для анализа и фильтрации трафика на основе содержимого пакетов. Это позволяет им отслеживать соединения, ограничивать доступ к определённым ресурсам и собирать статистику о пользователях.
+Deep Packet Inspection (DPI) is a technology that allows ISPs to analyze and filter traffic based on packet content. With this option enabled, AdGuard modifies outgoing packet data to make it harder for DPI systems to identify and analyze your traffic, helping protect your connection privacy.
 
-Когда эта опция включена, AdGuard изменяет данные исходящих пакетов таким образом, чтобы они больше не соответствовали критериям блокировки DPI. Это может помочь вам обойти ограничения и получить доступ к нужному контенту. Однако не все системы DPI пока можно обойти — мы работаем над улучшениями.
+When you click on _Protect against DPI_, a separate screen opens with three groups of settings:
 
-Функция _Защита от DPI_ уже реализована в AdGuard для Windows, AdGuard для Mac и AdGuard для Android.
+**ClientHello split** — modifies the TLS ClientHello message to make it harder for DPI systems to detect and block encrypted connections. The following strategies are available:
+
+- _Split TCP packet at fixed position_ — splits the ClientHello TCP packet at a specified byte position.
+- _Split TLS record at fixed position_ — splits the TLS record containing the ClientHello at a specified byte position.
+- _Split TLS before SNI_ — splits the ClientHello before the Server Name Indication field.
+- _Split TLS after SNI_ — splits the ClientHello after the Server Name Indication field.
+- _Split TLS in the middle of SNI_ — splits the ClientHello in the middle of the Server Name Indication field.
+- _Split TLS randomly within SNI_ — splits the ClientHello at a random position within the Server Name Indication field.
+
+When using a fixed-position strategy, set the _Split byte position_ (1–1500) to specify where the split occurs.
+
+**HTTP request split** — splits HTTP requests into multiple TCP packets to bypass DPI systems that rely on inspecting complete HTTP requests.
+
+**HTTP space juggling** — manipulates whitespace in HTTP requests to confuse DPI systems that parse HTTP headers, making it harder for them to identify and block specific traffic.
 
 :::caution
 
-Если эта функция включена в AdGuard для Windows, она может мешать работе антивируса ESET. В этом случае ESET не сможет фильтровать трафик, оставляя доступными некоторые вредоносные или заблокированные сайты.
+This feature can break access to some unencrypted websites. If this feature is enabled in AdGuard for Windows, it may also interfere with the ESET antivirus — ESET will not be able to filter traffic, leaving some malicious or blocked websites accessible.
 
 :::
