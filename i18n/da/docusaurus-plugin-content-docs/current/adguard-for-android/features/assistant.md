@@ -18,67 +18,67 @@ Assistent er et praktisk værktøj til hurtigt at ændre app- eller webstedsinds
 
 ![Ekspandér AdGuard-notifikationen i notifikationspanelet \*mobil](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
-1. Tap _Assistant_.
+1. Tryk på _Assistent_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Tryk på Assistent \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
-### How to use Assistant
+### Sådan bruges Assistent
 
-When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+Når Assistent åbnes, vises to faner: **Apps** og **Websteder**. Hver af disse indeholder en liste over hhv. nyligt brugte apps og websteder.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Assistent-hovedvindue \*mobil](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
-### Apps tab
+### Fanen Apps
 
-After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+Efter valg af en app (**her bruges Chrome som eksempel**), vises en række valgmuligheder.
 
-![Assistant Chrome menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistent Chrome-menu \*mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
-#### Recent activity
+#### Seneste aktivitet
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+Visningen skifter til AdGuard-appen, hvori detaljerede oplysninger om Chromes seneste 10K forespørgsler vil fremgå.
 
-![App recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Appens seneste aktivitet \*mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
-#### App statistics
+#### App-statistikker
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+Visningen skifter til AdGuard-appen, hvori detaljerede statistikker om Chrome vil fremgå:
 
-- Number of ads and trackers blocked in Chrome
-- Data saved by blocking Chrome's ad or tracking requests
-- Companies that Chrome sends requests to
+- Antal blokerede annoncer og trackere i Chrome
+- Data sparet ved at blokere Chromes annonce eller sporingsforespørgsler
+- Virksomheder, til hvilke Chrome sender forespørgsler
 
 #### App-håndtering
 
-You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+Visningen skifter til AdGuards app-skærm, hvorfra AdGuard-beskyttelsen for appen kan deaktiveres.
 
-#### Firewall settings
+#### Firewall-indstillinger
 
-You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+Visningen skifter til AdGuard-skærmen, hvorfra Firewall-indstillinger for appen kan ændres, dvs. håndtering af appens internetadgang.
 
-### Websites tab
+### Fanen Websteder
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Assistent-webstedsfane \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
-Select a website (**we use google.com here purely as an example**) and you'll see few options of what you can do.
+Vælg et websted (**google.com bruges her som eksempel**), hvorefter en række valgmuligheder vises.
 
-![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![Assistent google.com-info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
-#### Add to allowlist
+#### Føj til hvidliste
 
-Tapping this option will instantly add `google.com` to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
+Tryk på denne valgmulighed føjer straks `google.com` til hvidlisten, og AdGuard filtrerer det ikke længere (annoncer og trackere for webstedet blokeres ikke).
 
-#### Recent activity (websites)
+#### Seneste aktivitet (websteder)
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+Visningen skifter til AdGuard-appen, hvori detaljeret info om de seneste 10K forespørgsler til google.com vil fremgå.
 
-![website recent activity \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![webstedets seneste aktivitet \*mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
-#### Website statistics
+#### Webstedsstatistik
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+Visningen skifter til AdGuard-appen, hvori detaljerede statistikker for google.com vil fremgå:
 
-- Number of blocked ad and tracking requests to google.com
-- Data saved by blocking ad and tracking requests to google.com
-- Apps that send requests to google.com
-- Information about google.com's subdomains
+- Antal blokerede annonce- og sporingsforespørgsler til google.com
+- Data sparet ved at blokere annonce- og sporingsforespørgsler til google.com
+- Apps, som sender forespørgsler til google.com
+- Oplysninger om google.com' underdomæner

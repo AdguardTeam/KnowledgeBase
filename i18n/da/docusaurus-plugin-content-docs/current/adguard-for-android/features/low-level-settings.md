@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,64 +13,64 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Ændring af Lavniveauindstillinger kan forårsage problemer med AdGuards ydeevne, afbryde internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. Use the low-level features only if you are an experienced user and know what you are doing, or if our support team has asked you to do so.
+Ændring af Lavniveauindstillinger kan forårsage problemer med AdGuards ydeevne, afbryde internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. Lavniveaufunktionerne bør kun benyttes af en erfaren bruger, der ved, hvad vedkommende foretager sig, eller hvis vores supportteam anmoder om det.
 
 :::
 
-To access _Low-level settings_, open the AdGuard app and tap the gear icon in the lower-right corner of the screen. Then select _General → Advanced → Low-level settings_.
+For at tilgå _Lavniveuaindstillinger_, åbn AdGuard-appen og tryk på tandhjulsikonet nederst til højre på skærmen. Vælg dernæst _Generelt → Avanceret → Lavniveauindstillinger_.
 
 ## Lavniveauindstillinger
 
-For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. Vi har omarbejdet listen over indstillinger og organiseret dem i tematiske grupper med forbedrede beskrivelser. Vi har også tilføjet inputvalidering og andre sikkerhedsforanstaltninger.
+I AdGuard til Android v4.x har vi helt redesignet lavniveauindstillingerne. Vi har omarbejdet listen over indstillinger og organiseret dem i tematiske grupper med forbedrede beskrivelser. Vi har også tilføjet inputvalidering og andre sikkerhedsforanstaltninger.
 
 ### DNS-beskyttelse
 
 #### Reserve-upstreams
 
-Her kan angives omvendt-DNS-opløser(e) til brug, når den opsatte server er utilgængelig. Tilgængelige indstillinger:
+Her kan angives reserve-DNS-opløser(e) til brug, når den opsatte server er utilgængelig. Tilgængelige indstillinger:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS.
-- _None_: Select this option if you do not want to have any fallback.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Disse adresser bruges som upstreams.
+- _Automatisk DNS_: Vælg denne mulighed, hvis systemets DNS eller AdGuard DNS ønskes brugt.
+- _Ingen_: Vælg denne mulighed, hvis ingen reserve ønskes brugt.
+- _Tilpasset DNS_: Vælg denne mulighed og angiv almindelig DNS-server IPv4- eller IPv6-adresser, én pr. linje. Disse adresser bruges som upstreams.
 
 #### Reservedomæner
 
-Her kan angives de domæner, som videresendes til reserve-upstreams, hvis tilgængelige. Der kan angives flere domæner, ét pr. linje. Der kan bruges begrænsede jokertegn.
+Her kan angives de domæner, som omdirigeres til reserve-upstreams, hvis tilgængelige. Der kan angives flere domæner, ét pr. linje. Der kan bruges begrænsede jokertegn.
 
 #### Detektér søgedomæner
 
-Er denne indstilling slået til, registrerer AdGuard søgedomæner og videresende dem automatisk til reserve-upstreams, hvis tilgængelige.
+Er denne indstilling slået til, registrerer AdGuard søgedomæner og omdirigerer dem automatisk til reserve-upstreams, hvis tilgængelige.
 
-#### Bootstrap upstreams
+#### Bootstrap-upstreams
 
-Bootstrap DNS til krypterede upsteams, såsom DoH-, DoT- og DoQ-servere. Tilgængelige indstillinger:
+Bootstrap-DNS til krypterede upsteams, såsom DoH-, DoT- og DoQ-servere. Tilgængelige indstillinger:
 
-- _Automatic DNS_: Select this option if you want to use the system DNS or AdGuard DNS. Denne indstilling er valgt som standard.
-- _Custom DNS_: Select this option and enter plain DNS server IPv4 or IPv6 addresses, one per line. Disse adresser vil blive brugt som bootstrap-upstreams.
+- _Automatisk DNS_: Vælg denne mulighed, hvis systemets DNS eller AdGuard DNS ønskes brugt. Denne indstilling er valgt som standard.
+- _Tilpasset DNS_: Vælg denne mulighed og angiv almindelig DNS-server IPv4- eller IPv6-adresser, én pr. linje. Disse adresser vil blive brugt som bootstrap-upstreams.
 
 #### Blokeringstilstand for adblock-lignende regler
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Tilgængelige indstillinger:
+Her kan angives svartypen for domæner blokeret af DNS-regler baseret på adblock-regelsyntaks (f.eks. `||example.org^`). Tilgængelige indstillinger:
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Der skal angives en IPv4-adresse for blokerede A-forespørgsler og en IPv6-adresse for blokerede AAAA-forespørgsler.
+- _REFUSED_: Svar med REFUSED
+- _NXDOMAIN_: Svar med NXDOMAIN
+- _Tilpasset IP-adresse_: Vælg denne mulighed for at svare med en tilpasset IP-adresse. Der skal angives en IPv4-adresse for blokerede A-forespørgsler og en IPv6-adresse for blokerede AAAA-forespørgsler.
 
 #### Blokeringstilstand for hosts-regler
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax
-(for example, `<ip> <domain> 0.0.0.0 example.com`).
+Her kan angives svartypen for domæner blokeret af DNS-regler baseret på hosts-regelsyntaks
+(f.eks. `<ip> <domain> 0.0.0.0 example.com`).
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Der skal angives en IPv4-adresse for blokerede A-forespørgsler og en IPv6-adresse for blokerede AAAA-forespørgsler.
+- _REFUSED_: Svar med REFUSED
+- _NXDOMAIN_: Svar med NXDOMAIN
+- _Tilpasset IP-adresse_: Vælg denne mulighed for at svare med en tilpasset IP-adresse. Der skal angives en IPv4-adresse for blokerede A-forespørgsler og en IPv6-adresse for blokerede AAAA-forespørgsler.
 
 #### DNS-forespørgselstimeout
 
-Her kan angives den timeout i millisekunder, AdGuard afventer svar på hver DNS-forespørgsel, før der omdirigeres til en reserve-DNS-opløser. Ved tomt felt eller ugyldig værdi, benyttes standardværdien 5000.
-Har man flere upstreams, vil reserve-DNS'en kun blive brugt, efter at timeouts for hver upstream er udløbet.
+Her kan angives den timeout i millisekunder, AdGuard afventer svar på hver DNS-forespørgsel, før der omdirigeres til en reserve-DNS-opløser. Ved tomt felt, eller ugyldig værdi, benyttes standardværdien 5000.
+Haves flere upstreams, vil reserve-DNS'en kun blive brugt, efter at timeouts for hver upstream er udløbet.
 
-#### Blocked response TTL
+#### Blokeret svar-TTL
 
 Her kan angives levetid (TTL) for posten for blokerede domæner. Standardværdien er 3600 sekunder.
 
@@ -80,11 +80,11 @@ Her kan angives det maksimale antal cachelagrede svar. Standardværdien er 1000.
 
 #### ECH-blokering
 
-Hvis slået til, fjerner AdGuard Encrypted Client Hello-parametre fra DNS-svar.
+Hvis slået til, blokerer AdGuard TLS Encrypted Hello (ECH) parametre fra DNS-svar.
 
 #### Prøv HTTP/3 til DNS-over-HTTPS-upstreams
 
-Er denne indstilling slået til, bruger AdGuard HTTP/3 til at accelerere DNS-forespørgselsopløsning for DNS-over-HTTPS-upstreams. Ellers vil AdGuard vende tilbage til sin standardadfærd og bruge HTTP/2 til at sende alle DNS-over-HTTPS relaterede DNS-forespørgsler.
+Er denne indstilling slået til, bruger AdGuard HTTP/3 til at accelerere DNS-forespørgselsopløsning for DNS-over-HTTPS-upstreams. AdGuard vil ellers returnere til sin standardadfærd og bruge HTTP/2 til at sende alle DNS-over-HTTPS-relaterede DNS-forespørgsler.
 
 #### SERVFAIL-fejlsvar
 

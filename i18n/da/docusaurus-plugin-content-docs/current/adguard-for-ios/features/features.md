@@ -39,8 +39,8 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 - [Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
-  Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
+  Integreret tilstand, der tillader AdGuard Ad Blocker og AdGuard VPN at køre sideløbende trods systembegrænsninger
 
 - [Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
 
-  Comparison of features between the free and paid versions
+  Sammenligning af funktioner mellem den gratis og den betalte version

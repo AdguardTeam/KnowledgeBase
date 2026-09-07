@@ -99,6 +99,10 @@ Here we will describe some of the most popular userscript catalogs.
 
 [NamuLink](https://github.com/FilteringDev/NamuLink) er et open source-brugerskript, der fjerner Naver PowerLink-annoncer fra NamuWiki ved at omgå webstedets avancerede linksløringsmekanismer. Projektet vedligeholdes af AdGuard-teamet og det generelle adblocking-fællesskab.
 
+#### Crackle
+
+[Crackle](https://github.com/FilteringDev/crackle/) is an open-source userscript designed to remove ads and bypass anti-adblock measures on the Chzzk web platform. It detects and replaces ad-related responses used by Chzzk’s advertising systems with compatible ad-free responses and disables pre-roll and mid-roll video ads.
+
 #### Community
 
 If you like the idea of customizing your browser with userscripts and have questions, you can ask them on one of these websites:

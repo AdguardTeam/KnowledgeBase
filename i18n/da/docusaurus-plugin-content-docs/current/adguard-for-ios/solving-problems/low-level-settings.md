@@ -47,7 +47,7 @@ In this module you can select the way AdGuard will respond to DNS queries that s
 
 By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
 
-### Blocked response TTL
+### Blokeret svar-TTL
 
 Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
 

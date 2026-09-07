@@ -5,42 +5,42 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-- [Protection](/adguard-for-android/features/protection/protection.md)
+- [Beskyttelse](/adguard-for-android/features/protection/protection.md)
 
-  Available settings in the _Protection_ tab: _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Firewall_, and _Browsing security_
+  Tilgængelige indstillinger på fanen _Beskyttelse_: _Adblocking_, _Sporingsbeskyttelse_, _Irritationsblocking_, _DNS-beskyttelse_, _Firewall_ og _Browsingsikkerhed_
 
-- [App management](/adguard-for-android/features/app-management.md)
+- [App-håndtering](/adguard-for-android/features/app-management.md)
 
-  Features that allow you to customize traffic filtering and routing for each app
+  Funktioner, som muliggør tilpasning af trafikfiltrering og ruting for hver app
 
-- [Statistics](/adguard-for-android/features/statistics.md)
+- [Statistik](/adguard-for-android/features/statistics.md)
 
-  Detailed statistics on blocked ads, trackers, and data usage
+  Detaljeret statistik over blokerede annoncer, trackere og dataforbrug
 
-- [Settings](/adguard-for-android/features/settings.md)
+- [Indstillinger](/adguard-for-android/features/settings.md)
 
-  General, advanced, and low-level settings that let you select the language and theme, customize DNS protection, enable HTTPS filtering, and manage userscripts
+  Generelle, avancerede og lavniveau-indstillinger, som muliggør at vælge sprog og tema, tilpasse DNS-beskyttelse, aktivere HTPPS-filtrering og håndtere userscripts
 
-- [Low-level settings guide](/adguard-for-android/features/low-level-settings.md)
+- [Guide til Lavniveauindstillinger](/adguard-for-android/features/low-level-settings.md)
 
-  Descriptions of the low-level settings available in AdGuard for Android v4.3 and later.
+  Beskrivelse af de tilgængelige Lavniveauindstillinger i AdGuard til Android v4.3 og senere.
 
-- [Assistant](/adguard-for-android/features/assistant.md)
+- [Assistent](/adguard-for-android/features/assistant.md)
 
-  A tool that lets you quickly change app or website settings and view statistics without opening the AdGuard interface
+  Et værktøj, der muliggør hurtigt at skifte app- eller webstedsindstillinger og se statistikker uden at åbne AdGuard-grænsefladen
 
-- [Free vs. full version](/adguard-for-android/features/free-vs-full.mdx)
+- [Gratis kontra fuld version](/adguard-for-android/features/free-vs-full.mdx)
 
-  Comparison of features between the free and paid versions
+  Sammenligning af funktioner mellem den gratis og den betalte version
 
-- [Integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
+- [Integration med AdGuard VPN](/adguard-for-android/features/integration-with-vpn.md)
 
-  Integrated mode that allows AdGuard Ad Blocker and AdGuard VPN to run simultaneously despite system limitations
+  Integreret tilstand, der tillader AdGuard Ad Blocker og AdGuard VPN at køre sideløbende trods systembegrænsninger
 
-- [Rooted devices](/adguard-for-android/features/rooted.md)
+- [Rootede enheder](/adguard-for-android/features/rooted.md)
 
-  Features available in AdGuard for Android on rooted devices: HTTPS filtering in all apps, _Automatic proxy_ and _Manual proxy_ modes
+  Funktioner tilgængelige i AdGuard til Android på rootede enheder: HTTPS-filtrering i alle apps, tilstandene _Automatisk proxy_ og _Manuel proxy_
