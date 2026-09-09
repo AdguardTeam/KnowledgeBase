@@ -23,6 +23,6 @@ As an alternative, the following method is also available:
 6. Extract the contents of the ZIP file from the first step and replace the following files:
    - `adguard.db` → `C:\ProgramData\Adguard`
    - `agflm_dns.db` and `agflm_standard.db` → `C:\ProgramData\Adguard\FLM`
-7. Launch AdGuard.
+7. Start AdGuard.
 
 All set!

@@ -1,5 +1,5 @@
 ---
-title: Free vs. full version
+title: Gratis kontra fuld version
 sidebar_position: 9
 ---
 
