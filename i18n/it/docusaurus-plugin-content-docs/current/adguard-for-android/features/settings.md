@@ -41,7 +41,7 @@ This section lets you manage filters, extensions, network settings, add websites
 
 [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
+![Filtraggio \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filtri
 
