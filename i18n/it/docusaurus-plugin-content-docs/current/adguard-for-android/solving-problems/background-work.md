@@ -173,15 +173,15 @@ Per configurare il funzionamento in background di AdGuard per i dispositivi Xiao
 
 ## Samsung
 
-On many Samsung devices, apps that have been unused for three days will not be able to start from the background. To prevent this, you should turn off the **Adaptive Battery** and **Put apps to sleep** options wherever possible. Note that after an app or OS update, these settings often revert to their default values and must be turned off again.
+Su molti dispositivi Samsung, qualsiasi app non sia utilizzata per 3 giorni, non potrà avviarsi in background. Dovresti disattivare le opzioni della **Batteria adattiva** e **Sospensione app** quando possibile, per impedirlo. Nota che, in seguito all'aggiornamento di un'app o del sistema operativo, spesso, queste impostazioni si ripristinano ai valori predefiniti e dovranno essere nuovamente disattivate.
 
 ### Android 11 e successive
 
-On Android 11, Samsung prevents apps (including AdGuard) from working in the background by default, unless you exclude them from battery optimizations. To ensure that AdGuard will not be terminated in the background:
+Su Android 11, Samsung impedisce per impostazione predefinita alle app (incluso AdGuard) di funzionare in background, a meno che non vengano escluse dalle ottimizzazioni della batteria. Per assicurarti che AdGuard non sarà arrestata in background:
 
-1. Lock AdGuard in **Recent apps**: open **Recent apps**, find AdGuard, and long-press the AdGuard app icon.
+1. Blocca AdGuard in **App recenti**: apri **App recenti**, trova AdGuard e tieni premuta l'icona dell'app AdGuard.
 
-1. To keep AdGuard working properly:
+1. Per mantenere il corretto funzionamento di AdGuard:
 
     Go to **Settings** → **Apps** → **AdGuard** → **Battery** → **Optimize battery usage**
 

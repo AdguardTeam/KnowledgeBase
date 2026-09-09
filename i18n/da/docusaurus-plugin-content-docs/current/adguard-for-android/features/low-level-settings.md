@@ -104,9 +104,9 @@ Er denne indstilling slået til, filtrerer AdGuard krypterede DNS-forespørgsler
 
 Denne indstilling har to tilstande:
 
-- **Filter on the fly**. I denne tilstand filtrerer AdGuard DNS-over-HTTPS-trafik uden omdirigering heraf til den lokale DNS-proxy. Den bruger DNS-serveren, der er angivet i webbrowserindstillingerne.
+- **Filtrér i farten**. I denne tilstand filtrerer AdGuard DNS-over-HTTPS-trafik uden omdirigering heraf til den lokale DNS-proxy. Den bruger DNS-serveren angivet i webbrowserindstillingerne.
 
-- **Redirect to DNS proxy**. I denne tilstand omdirigerer AdGuard DNS-over-HTTPS-forespørgsler til den lokale DNS-proxy for filtrering. Den bruger den DNS-server, der er valgt i DNS-indstillingerne i AdGuard-appen.
+- **Omdirigér til DNS-proxy**. I denne tilstand omdirigerer AdGuard DNS-over-HTTPS-forespørgsler til den lokale DNS-proxy for filtrering. Den bruger den DNS-server, der er valgt i DNS-indstillingerne i AdGuard-appen.
 
 ### Filtrering
 
@@ -122,7 +122,7 @@ Denne indstilling kan gøre enheden langsommere. Brug den kun til fejlfinding.
 
 Er denne indstilling slået til, krypterer AdGuard ClientHellos, hvis nødvendigt. Denne funktion kræver, at HTTPS-filtrering er slået til. Denne funktion bruger en lokal DNS-proxy til at lede efter ECH-opsætningen for domænet. Findes den, krypteres ClientHello-pakken. Sørg for at bruge en krypteret DNS-server med denne funktion.
 
-**About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. Dette er den allerførste pakke indeholdende navnet på serveren, der oprettes forbindelse til. Encrypted Client Hello-teknologien er designet til at løse dette problem ved at kryptere denne pakke.
+**Om ClientHellos og ECH**: Alle krypterede internetforbindelser har en ukrypteret del. Dette er den allerførste pakke indeholdende navnet på serveren, der oprettes forbindelse til. Encrypted Client Hello-teknologien er designet til at løse dette problem ved at kryptere denne pakke.
 
 #### OCSP-tjek
 
@@ -132,33 +132,33 @@ Afsluttes tjekket inden for den krævede timeout, tillader AdGuard forbindelsen,
 
 Tager bekræftelsen for langt tid, tillader AdGuard forbindelsen og fortsætter med at tjekke certifikatstatussen i baggrunden. Er certifikatet tilbagekaldt, blokeres nuværende og fremtidige forbindelser til domænet.
 
-#### Filter HTTP/3
+#### Filterér HTTP/3
 
 Er denne indstilling slået til, filtrerer AdGuard forespørgsler sendt over HTTP/3 i tillæg til andre forespørgselstyper. Denne funktion kræver, at HTTPS-filtrering er slået til.
 
-**About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
+**Om HTTP/3**: Dette er den seneste version af HTTP-protokollen baseret på QUIC.
 
-**Limitations**:
+**Begrænsninger**:
 
 - Chrome-baserede webbrowsere accepterer ikke brugercertifikater og understøtter dermed ikke HTTP/3-filtrering.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Firefox-baserede webbrowsere opfører sig som standard tilsvarende, men `network.http.http3.disable_when_third_party_roots_found`-indstillingen kan i `about:config` sættes til `false` for at tillade brugercertifikater til HTTP/3.
 - Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
 ### Udgående proxy
 
 #### Vis indstillingen for Filtrér DNS-forespørgsler
 
-When this setting is enabled, the _Filter DNS requests_ switch is displayed in the _Add proxy server_ dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click _+ Add proxy server_. Slås kontakten til, aktiveres filtrering af DNS-forespørgsler, som passerer igennem den angivne udgående proxy.
+Når denne indstilling er aktiveret, vises kontakten _Filtrér DNS-forespørgsler_ i dialogen _Tilføj proxyserver_. For at tilgå dialogen, åbn **Indstillinger**, gå dernæst til **Filtrering** → **Netværk** → **Proxy** → **Proxyserver**, og klik på _+ Tilføj proxyserver_. Slås kontakten til, aktiveres filtrering af DNS-forespørgsler, som passerer igennem den angivne udgående proxy.
 
 ### Beskyttelse
 
 #### Portintervaller
 
-Denne indstilling muliggør at angive de portintervaller, som skal filtreres. Angiv portintervaller, ét tinterval pr. linje. Use `..` to specify the range. For example, `80..5221`.
+Denne indstilling muliggør at angive de portintervaller, som skal filtreres. Angiv portintervaller, ét tinterval pr. linje. Brug `..` til at angive området. F.eks.:80..5221\`.
 
-#### Logfør fjernet HTML-begivenheder
+#### Logfør fjernede HTML-begivenheder
 
-If this setting is enabled, AdGuard will write information about blocked HTML elements to _Recent activity_. To access the logs, go to go to **Statistics** → **Recent activity**.
+Er denne indstilling aktiveret, skriver AdGuard oplysninger om blokerede HTML-elementer til _Seneste aktivitet_. For at tilgå logfilerne, gå til **Statistik** → **Seneste aktivitet**.
 
 #### Scriptlet-fejlfinding
 
@@ -166,15 +166,15 @@ Er denne indstilling slået til, viser appen fejlfindingsoplysninger i webbrowse
 
 #### Undtagne apps
 
-Denne indstilling muliggør at liste de pakker og UID'er, som skal undtages fra AdGuard-beskyttelse. Angiv pakkenavne eller UID'er, én pr. linje. You can use `//` for comments.
+Denne indstilling muliggør at liste de pakker og UID'er, som skal undtages fra AdGuard-beskyttelse. Angiv pakkenavne eller UID'er, én pr. linje. Brug `//` til kommentarer.
 
 #### QUIC-omgåelsespakker
 
-Her kan angives de pakkenavne, for hvilke AdGuard skal omgå QUIC-trafik. Angiv pakkenavne, ét pr. linje. You can use `//` for comments.
+Her kan angives de pakkenavne, for hvilke AdGuard skal omgå QUIC-trafik. Angiv pakkenavne, ét pr. linje. Brug `//` til kommentarer.
 
 #### Genopsæt Automatisk proxy ved netværksændringer
 
-Er denne indstilling slået til, genstarter AdGuard-beskyttelsen for at genopsætte de automatiske proxyparametre, når enheden tilsluttes et andet netværk. This setting only applies when _Routing mode_ is set to _Automatic proxy_.
+Er denne indstilling slået til, genstarter AdGuard-beskyttelsen for at genopsætte de automatiske proxyparametre, når enheden tilsluttes et andet netværk. Denne indstilling gælder kun, såfremt _Rutningstilstand_ er sat til _Automatisk proxy_.
 
 #### IPv6-filtrering
 
@@ -182,11 +182,11 @@ Er denne indstilling slået til, filtrerer AdGuard IPv6-netværk, hvis en IPv6-n
 
 #### IPv4-områder undtaget fra filtrering
 
-Her kan angives de IPv4-områder, som ønskes undtaget fra filtrering. Angiv ét IP-område pr. linje. You can use `//` for comments.
+Her kan angives de IPv4-områder, som ønskes undtaget fra filtrering. Angiv ét IP-område pr. linje. Brug `//` til kommentarer.
 
 #### IPv6-områder undtaget fra filtrering
 
-Her kan angives de IPv6-områder, som ønskes undtaget fra filtrering. Angiv ét IP-område pr. linje. You can use `//` for comments.
+Her kan angives de IPv6-områder, som ønskes undtaget fra filtrering. Angiv ét IP-område pr. linje. Brug `//` til kommentarer.
 
 #### TCP-keepalive for udgående sockets
 
@@ -194,8 +194,8 @@ Er denne indstilling slået til, sender AdGuard efter det angivne tidsinterval e
 
 Denne indstilling muliggør at angive:
 
-- **Idle time**, in seconds, before sending TCP keepalive probes to outgoing sockets. Standardværdien er 0. Opleves problemer med NAT, sæt denne til 20.
-- **Time between keepalive probes** for an unresponsive peer. Standardværdien er 0 sekunder.
+- **Inaktiv tid** i sekunder før afsendelse af TCP keepalive-probes til udgående sockets. Standardværdien er 0. Opleves problemer med NAT, sæt denne til 20.
+- **Tid mellem keepalive-probes** til en peer, der ikke svarer. Standardværdien er 0 sekunder.
 
 ### Indstillinger for Lokalt VPN
 
@@ -213,7 +213,7 @@ Her kan angives VPN-grænsefladens maksimale transmissionsenhed (MTU). Dette er 
 
 #### Pakkeoptagelse (PCAP)
 
-Denne indstilling aktiverer logning af TUN-grænseflader. When enabled, AdGuard creates a file `timestamp.pcap`, such as  1682599851461.pcap, in the app cache directory. Denne fil viser alle netværkspakker, transmitteret igennem VPN'et, og kan analyseres med Wireshark-værktøjet.
+Denne indstilling aktiverer logning af TUN-grænseflader. Når aktiveret, opretter AdGuard en `timestamp.pcap`-fil, såsom 1682599851461.pcap, i appens cache-mappe. Denne fil viser alle netværkspakker, transmitteret igennem VPN'et, og kan analyseres med Wireshark-værktøjet.
 
 #### Inkludér Wi-Fi-gateway i VPN-rutninger
 
@@ -221,36 +221,36 @@ Er denne indstilling aktiveret, føjes gateway IP-adresserne til VPN-ruter, når
 
 #### IPv4-adresse
 
-Her kan angives IP-adressen til brug ved oprettelsen af en TUN-grænseflade. The default value is `172.18.11.218`.
+Her kan angives IP-adressen til brug ved oprettelsen af en TUN-grænseflade. Standardværdien er `172.18.11.218`.
 
-#### Tving LAN IPv4-routning
+#### Tving LAN IPv4-rutning
 
-If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the _Route all LAN IPv4 connections_ option is enabled.
+Er denne indstilling slået til, filtrerer AdGuard alle LAN-forbindelser, herunder lokal IPv4-netværkstrafik, selv hvis indstillingen _Rut all LAN IPv4-forbindelser_ er slået til.
 
 #### Rut alle LAN IPv4-forbindelser
 
-Når slået til, undtager AdGuard LAN-forbindelser fra filtrering for simple netværk. Fungerer muligvis ikke for komplekse netværk. This setting only applies if _Forcibly route LAN IPv4_ is disabled.
+Når slået til, undtager AdGuard LAN-forbindelser fra filtrering for simple netværk. Fungerer muligvis ikke for komplekse netværk. Denne indstilling gælder kun, hvis _Tving LAN IPv4-rutning_ er slået fra.
 
 #### IPv6-adresse
 
-Her kan angives IP-adressen til brug for oprettelse af en TUN-grænseflade. The default value is `2001:db8:ad:0:ff::`.
+Her kan angives IP-adressen til brug for oprettelse af en TUN-grænseflade. Standardværdien er `2001:db8:ad:0:ff::`.
 
 ### Diverse
 
 #### Vis Udviklerværktøjer på hovedskærmen
 
-If this setting is enabled, AdGuard will display the **Developer tools** icon in the upper right corner of the app’s home screen.
+Er denne indstilling aktiveret, viser AdGuard ikonet **Udviklerværktøjer** øverste til højre på appens startskærm.
 
-**Developer tools** is a specialized section available in AdGuard for Android v4.3 and later, designed for quick navigation and switching between features. Det muliggør hurtigt aktivering/deaktivering af tilpassede filtre, adgang til logfiler, aktivering af div. logfiler mv.
+**Udviklerværktøjer** er et specialiseret afsnit tilgængeligt i AdGuard til Android v4.3 og senere, designet til hurtig navigering og skift mellem funktioner. Det muliggør hurtigt aktivering/deaktivering af tilpassede filtre, adgang til logfiler, aktivering af div. logfiler mv.
 
-#### Simplified UI mode
+#### Forenklet UI-tilstand
 
-If this setting is enabled, AdGuard will only display the DNS icon on the app’s home screen.
+Er denne indstilling aktiveret, viser AdGuard kun DNS-ikonet på appens startskærm.
 
 #### Detektér Samsung Pay
 
 Er denne indstilling slået til, pauseres AdGuard-beskyttelsen, når Samsung Pay-appen åbnes. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
 
-#### Show cloned apps
+#### Vis klonede apps
 
-If this setting is enabled, you will be able to change routing, filtering, and firewall settings for cloned apps in _App management_.
+Er denne indstilling aktiveret, vil rutings-, filtrerings- og firewallindstillinger kunne ændres for klonede apps i _App-håndtering_.
