@@ -106,7 +106,7 @@ and load the build again.
   as some maintainers removed MV2 support.
 
 For the full *Developer mode* → *Load unpacked* flow, see the *How to install unpacked in the
-browser* section in [How to debug rules in AdGuard for Chrome MV3](/kb/adguard-browser-extension/solving-problems/debug-rules/).
+browser* section in [How to debug rules in AdGuard for Chrome MV3](/adguard-browser-extension/solving-problems/debug-rules/).
 
 ### Microsoft Edge
 

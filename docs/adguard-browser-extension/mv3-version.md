@@ -16,7 +16,7 @@ The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.g
 
 **AdGuard Ad Blocker MV2** was removed from the Chrome Web Store on 31 August 2026 together with all
 other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
-support for it — see [How to keep using AdGuard after Chrome removed MV2](/kb/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Main changes in features and settings
 
