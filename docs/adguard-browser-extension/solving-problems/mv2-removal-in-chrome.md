@@ -35,7 +35,7 @@ automatically: the two versions have different extension IDs. To switch to MV3:
 1. Reload open tabs.
 
 MV3 applies most blocking rules through the browser’s declarative engine, which limits the number
-of rules and changes how filters update. Before switching, read [AdGuard Browser Extension for Chrome MV3](/kb/adguard-browser-extension/mv3-version/).
+of rules and changes how filters update. Before switching, read [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/).
 
 ## Continuing with MV2 in other browsers
 
