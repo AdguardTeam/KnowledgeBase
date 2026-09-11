@@ -29,10 +29,6 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 
     A separate AdGuard Browser Extension compatible with the Manifest V3 API
 
-- [AdGuard Browser Extension MV2: where to use it and how to install it](/adguard-browser-extension/mv2-version/)
-
-    Browsers where MV2 can still be used and practical installation options
-
 - [Browser-protected pages](/adguard-browser-extension/protected-pages)
 
     Restricted domains whose content can’t be modified with ad blocking extensions
