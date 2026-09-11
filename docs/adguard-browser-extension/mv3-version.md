@@ -3,21 +3,33 @@ title: AdGuard Browser Extension for Chrome MV3
 sidebar_position: 5
 ---
 
-As MV2 extensions are being phased out in the Chrome Web Store, Chrome users may need to switch to MV3 extensions that are compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), so Chrome users need an MV3 extension, compatible with Chrome's new API Manifest V3.  Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
 
 ## Where to find our extensions
 
-The **MV3 version** has replaced our old extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** is our primary Chrome extension and is available in the
+[Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip`.
 
-The **beta version of MV3** will still be available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-The old beta extension will be renamed to [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) and will be supported until Google phases it out.
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store on 31 August 2026 together with all
+other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/kb/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Main changes in features and settings
 
-- **No auto and manual filter updates.** The options *Auto-update filters* and *Check filters update* are no longer available in the *Filters* tab. Since some of the rules are now applied in DNR form, we can’t update filters on request, only through the full process of updating the extension along with the review in the stores.
+- **Filter updates.** The options *Auto-update filters* and *Check filters update* are not available
+  in the *Filters* tab: rules that ship as part of the extension can be updated only together with a
+  new extension version, after store review. Keep automatic extension updates enabled in your
+  browser.
+
+  Custom filters you add by URL update on their own, independently of extension updates.
+
+- **AdGuard Quick Fixes filter.** Because built-in rules can't be updated on request, the extension
+  ships the *AdGuard Quick Fixes* filter. It uses dynamic rules to react to newly introduced ads and
+  broken websites between releases, so keep it enabled.
 
 - **Filtering log**
 
