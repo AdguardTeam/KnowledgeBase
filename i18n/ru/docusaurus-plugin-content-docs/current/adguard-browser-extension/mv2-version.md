@@ -52,4 +52,4 @@ Brave поддерживает MV2 через собственный режим 
 1. Выберите папку с MV2-расширением.
 1. Убедитесь, что расширение включено после установки.
 
-Если нужно освежить общий сценарий установки unpacked-расширения, используйте [эту инструкцию](/adguard-browser-extension/solving-problems/debug-rules/).
+Скриншоты и точный сценарий *Режим разработчика* → *Load unpacked* есть в разделе *How to install unpacked in the browser* [этой инструкции](/adguard-browser-extension/solving-problems/debug-rules/).

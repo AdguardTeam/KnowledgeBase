@@ -52,4 +52,4 @@ Helium supports manual installation of unpacked extensions.
 1. Select the MV2 extension folder.
 1. Make sure the extension is enabled after installation.
 
-If you need a refresher on unpacked installation flow, see [this guide](/adguard-browser-extension/solving-problems/debug-rules/).
+For screenshots and the exact *Developer mode* → *Load unpacked* flow, see the *How to install unpacked in the browser* section in [this guide](/adguard-browser-extension/solving-problems/debug-rules/).
