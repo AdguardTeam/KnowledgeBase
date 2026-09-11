@@ -39,13 +39,13 @@ Many Chromium-based builds outside Chrome Web Store infrastructure still allow M
 You can use MV2 there in two ways:
 
 - install [AdGuard Ad Blocker MV2](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) if your build supports Chrome Web Store installs
-- install an unpacked MV2 build manually (recommended when Web Store install is unavailable): download `chrome.zip` from [AdGuard Browser Extension releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) and unpack the archive
+- install an unpacked MV2 build manually (recommended when Web Store install is unavailable)
 
 ### Helium (manual unpacked installation)
 
 Helium supports manual installation of unpacked extensions.
 
-1. Open [AdGuard Browser Extension releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest), download `chrome.zip`, and unpack it.
+1. Get an MV2 unpacked build of AdGuard Browser Extension.
 1. Open Helium extension management page.
 1. Enable *Developer mode*.
 1. Click *Load unpacked*.

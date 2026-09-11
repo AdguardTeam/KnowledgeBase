@@ -39,13 +39,13 @@ Brave поддерживает MV2 через собственный режим 
 Использовать MV2 можно двумя способами:
 
 - установить [AdGuard Ad Blocker MV2](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl), если сборка поддерживает установку из Chrome Web Store
-- установить MV2-версию вручную как распакованное расширение (рекомендуется, если установка из Web Store недоступна): скачать `chrome.zip` со страницы [релизов AdGuard Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) и распаковать архив
+- установить MV2-версию вручную как распакованное расширение (рекомендуется, если установка из Web Store недоступна)
 
 ### Helium (пошаговая установка распакованной MV2-версии)
 
 В Helium можно установить расширение вручную в формате unpacked.
 
-1. Откройте страницу [релизов AdGuard Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest), скачайте `chrome.zip` и распакуйте архив.
+1. Подготовьте распакованную MV2-сборку Браузерного расширения AdGuard.
 1. Откройте страницу управления расширениями в Helium.
 1. Включите *Режим разработчика*.
 1. Нажмите *Load unpacked*.
