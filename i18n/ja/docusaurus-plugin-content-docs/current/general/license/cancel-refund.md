@@ -1,0 +1,31 @@
+---
+title: 解約・返金する方法
+sidebar_position: 5
+---
+
+## サブスクリプションを解約・停止する方法
+
+サブスクリプションは、AdGuardアカウントでキャンセルすることができます。 その方法以下の通りです:
+
+ 1. Go to your [AdGuard account](https://adguardaccount.com).
+ 1. メニューで「*ライセンス*」を押します。
+ 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![キャンセル](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
+
+ ※解約されたサブスクリプションは、有効期限まで有効のままで、有効期間が終了するまでご利用いただけます。
+
+:::note
+
+※App Storeで購入したサブスクリプションは、App StoreのアカウントまたはiOS端末の設定で解約する必要があります。
+
+:::
+
+## 返金を受ける方法
+
+当社の[販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。 返金をご希望の場合は、AdGuardサポートチーム（ *support@adguard.com* （日本語対応））まで、ご購入の際にご利用になられたお支払い方法を明記の上、返金ご希望であることをご連絡ください。
+
+以下のような場合、返金をお断りすることがありますのでご了承ください:
+
+- ライセンス購入日から61日間以上経過した場合
+- ライセンスがAdGuard公式サイトではなく販売代理店から購入されたものである場合
+- ライセンスが App Store から購入されたものである場合
+- ライセンスキーのアップグレードまたは延長という一部返金をご希望の場合

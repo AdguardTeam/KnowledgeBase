@@ -1,0 +1,36 @@
+---
+title: ネットワーク
+sidebar_position: 10
+---
+
+:::info
+
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+
+:::
+
+## 一般
+
+![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/network.png)
+
+### アプリを自動的にフィルタリングする
+
+デフォルトでは、AdGuardはほとんどのブラウザで広告とトラッカーをブロックします（[Tor Browserは例外です](/adguard-for-mac/solving-problems/tor-filtering)）。 この設定により、AdGuardはアプリ内の広告もブロックできるようになります。
+
+フィルタリングされているアプリを管理するには、「_アプリ…_」をクリックします。
+
+### HTTPSプロトコルをフィルタリングする
+
+この設定により、AdGuardは、安全なHTTPSプロトコルをフィルタリングできるようになります。・（HTTPSは現在ほとんどのウェブサイトやアプリで使用されています。） デフォルトでは、銀行サービスのような潜在的に機密性の高い情報を含むウェブサイトはフィルタリングされません。 HTTPSの除外を管理するには、「_除外リスト_」をクリックします。
+
+デフォルトでは、Extended Validation (EV) 証明書を持つウェブサイトをAdGuardはフィルタリングしません。 必要であれば、「_EV証明書を持つウェブサイトをフィルタリング_」オプションを有効にすることができます。
+
+## アウトバウンドプロキシ
+
+デバイスのすべてのトラフィックをプロキシサーバー経由でルーティングするよう、AdGuardを設定できます。
+
+## HTTPプロキシ
+
+AdGuardをHTTPプロキシサーバーとして使用できます。 これにより、プロキシに接続されている他のデバイスのトラフィックをフィルタリングできるようになります。
+
+Macと他のデバイスが同じネットワークに接続されていることを確認し、プロキシサーバーを経由させたいデバイスのプロキシポートを入力します（ポートは通常、ネットワーク設定で確認できます）。 To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](https://local.adguard.org/cert) to this device. [プロキシ証明書のインストールについて詳しくはこちら](/guides/proxy-certificate)

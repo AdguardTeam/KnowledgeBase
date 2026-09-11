@@ -1,0 +1,20 @@
+---
+title: Как установить AdGuard
+sidebar_position: 10
+---
+
+В зависимости от того, какое приложение или браузерное расширение AdGuard вы хотите установить, перейдите по одной из этих ссылок и найдите соответствующую инструкцию:
+
+[AdGuard для Android](/adguard-for-android/installation)
+
+[AdGuard для iOS](/adguard-for-ios/installation)
+
+[AdGuard для Windows](/adguard-for-windows/)
+
+[AdGuard для Mac](/adguard-for-mac/installation)
+
+[Браузерное расширение AdGuard](/adguard-browser-extension/installation)
+
+[AdGuard для Safari](/archive/adguard-for-safari/installation)
+
+[AdGuard Content Blocker](/adguard-content-blocker/installation)

@@ -1,0 +1,49 @@
+{
+  "name": "adguard-knowledge-base",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start --host 0.0.0.0",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "pnpm crowdin:sync && docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "lint:md": "markdownlint-cli2",
+    "crowdin": "crowdin",
+    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download --export-only-approved"
+  },
+  "dependencies": {
+    "@crowdin/cli": "3.13.0",
+    "@docusaurus/core": "3.10.0",
+    "@docusaurus/preset-classic": "3.10.0",
+    "@mdx-js/react": "3.1.1",
+    "@svgr/webpack": "^5.5.0",
+    "@swc/core": "^1.15.24",
+    "docusaurus-theme-search-typesense": "^0.26.0",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@docusaurus/faster": "^3.10.0",
+    "@docusaurus/utils": "^2.2.0",
+    "markdownlint": "^0.37.4",
+    "markdownlint-cli2": "^0.17.2"
+  }
+}

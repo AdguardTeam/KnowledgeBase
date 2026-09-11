@@ -1,0 +1,24 @@
+---
+title: Совместимость с основным приложением
+sidebar_position: 4
+---
+
+:::info
+
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы защитить устройство целиком
+
+:::
+
+Браузерное расширение AdGuard может блокировать рекламу в браузерах, а [приложения AdGuard](/adguard-browser-extension/comparison-standalone) фильтруют весь трафик на устройстве, в том числе из браузеров и приложений.
+
+Если вы решите установить на компьютер и расширение, и приложение, вы можете столкнуться с проблемами совместимости. В некоторых случаях приложение и расширение могут мешать друг другу. Некоторые сайты больше не будут защищены десктопной программой и будут защищены только расширением, у которого меньше возможностей. Кроме того, фильтрация на них может работать некорректно. Therefore, we don’t recommend using the extension together with the application.
+
+Если на вашем компьютере установлена десктопная версия AdGuard, лучше использовать Браузерный помощник AdGuard вместо расширения.
+
+## Браузерный помощник AdGuard
+
+![AdGuard Browser Assistant \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/browser_assistant.png)
+
+Браузерный помощник AdGuard — это расширение, которое работает и выглядит так же, как и Браузерное расширение AdGuard, но оно намного легче и не мешает работе десктопных приложений. You can [read more about Browser Assistant for Windows](/archive/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+
+Браузерный помощник AdGuard доступен во всех основных браузерах.

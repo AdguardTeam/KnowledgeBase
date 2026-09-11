@@ -1,0 +1,56 @@
+---
+title: Documentație pentru administratori
+sidebar_position: 5
+---
+
+Această pagină descrie caracteristicile și detaliile gestionării centrale a politicilor și preferințelor AdGuard.
+
+## 1. Download the MSI {#msi-download}
+
+Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
+
+Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
+
+## 2. Configure the settings for your network {#settings-configuring}
+
+On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
+
+The only supported policy is `LicenseKey`. Dacă această politică este setată, AdGuard o va prefera în locul a ceea ce utilizatorul poate introduce în interfață. Această cheie de licență va fi folosită pentru verificarea statutului licenței.
+
+## 3. Make sure that AdGuard servers are available {#servers-available}
+
+AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Asigurați-vă că ambele servere sunt disponibile.
+
+## 4. Push the MSI out to your network {#msi-push}
+
+Dacă de obicei utilizați SMS sau alte instrumente, folosiți-le pentru a trimite MSI-ul AdGuard exact așa cum ați face normal cu orice alt pachet de instalare.
+
+Otherwise, you can run the MSI on the target machine directly (and silently) with this command:
+`Msiexec /q /i AdGuard.msi`
+
+If you need to roll out an update, use this command:
+`Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+
+:::note
+
+Trebuie să rulați aceste comenzi cu privilegii de administrator.
+
+:::
+
+Dacă doriți să instalați AdGuard pe un computer Windows 7, asigurați-vă că are .NET 4 Client Profile instalat: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+
+:::note
+
+Dacă ați instalat AdGuard pentru Windows dintr-un fișier MSI, AdGuard nu va fi actualizat automat. Pentru a permite actualizările manuale:
+
+- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+
+- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Orice altă valoare sau fără valoare pentru acest parametru va dezactiva actualizările automate.
+
+Vă rugăm să rețineți că o astfel de instalare a aplicației și actualizările manuale nu sunt recomandate și pot provoca probleme tehnice.
+
+:::
+
+## 5. Test your installation {#installation-test}
+
+Pe o mașină țintă, lansați AdGuard. Deschideți ecranul de licență pentru a verifica că utilizează licența specificată. Este posibil să fie necesar să faceți clic pe "Reîmprospătați statutul" pentru a face AdGuard să verifice cheia de licență.

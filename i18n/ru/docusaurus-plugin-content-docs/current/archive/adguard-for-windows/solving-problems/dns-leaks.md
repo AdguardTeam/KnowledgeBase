@@ -1,0 +1,51 @@
+---
+title: Возможные утечки DNS
+sidebar_position: 10
+---
+
+:::info
+
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы увидеть, как оно работает
+
+:::
+
+В AdGuard для Windows можно указать адрес DNS-сервера, который будет обрабатывать запросы вместо системного DNS-сервера, обычно предоставляемого провайдером (если это не отменено в настройках системы).
+Замена DNS-сервера, может защитить ваш DNS-трафик от прослушивания провайдером.
+Более того, выбрав зашифрованный и/или фильтрующий DNS-сервер, вы получите дополнительную защиту от киберпреступников и назойливой рекламы.
+
+Многие пользователи AdGuard для Windows ценят функцию защиты DNS. Но некоторые из них сталкиваются со следующей проблемой: проверка на сайте типа https://ipleak.net/ показывает, что запросы обрабатываются системным DNS-сервером, а не выбранным. В этой статье мы расскажем, почему это происходит и как этого избежать.
+
+## Bootstrap DNS-адрес
+
+Адреса DNS-серверов могут быть записаны как IP-адреса или как доменные имена.
+В случае с IP-адресами сложностей не возникает: AdGuard перенаправляет DNS-запрос непосредственно на сервер, указанный в модуле DNS-защиты. Однако адреса зашифрованных DNS-серверов, таких как DoT или DoH, чаще всего записываются как доменные имена. В этом случае, чтобы сначала разрешить адрес зашифрованного DNS-сервера, AdGuard отправляет DNS-запрос на bootstrap-адрес, который по умолчанию является системным DNS-сервером. Это соединение службы проверки воспринимают как утечку.
+
+**To eliminate this leak:**
+
+- go to the _Advanced settings_
+- scroll down to the _List of custom bootstrap addresses_ section
+- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click _Save_
+
+## Резервный (fallback) DNS-сервер
+
+Иногда AdGuard не может связаться с указанным сервером из-за плохого интернет-соединения, истечения времени ожидания ответа сервера, установленного по умолчанию, или других проблем, связанных с сервером.В этом случае он подключится к резервному серверу, который по умолчанию является системным DNS-сервером. Это соединение также будет рассматриваться службой проверки как утечка.
+
+**To eliminate this leak:**
+
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Use custom servers_ option
+- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
+
+или
+
+- go to the _Advanced settings_
+- scroll down to the _Fallback servers_ section
+- check the _Don’t use fallback servers_ option
+
+или
+
+- go to the _Advanced settings_
+- scroll down to the _DNS server timeout period_ section
+- введите произвольное большое число

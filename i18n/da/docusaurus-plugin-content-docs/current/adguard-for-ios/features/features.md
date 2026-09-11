@@ -1,0 +1,46 @@
+---
+title: Funktioner
+sidebar_position: 1
+---
+
+:::info
+
+This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+
+:::
+
+- [Safari protection](/adguard-for-ios/features/safari-protection.md)
+
+  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+
+- [DNS protection](/adguard-for-ios/features/dns-protection/)
+
+  DNS-servere og DNS-filtre, som muliggør blokering af annoncer, trackere og farlige websteder
+
+- [Advanced protection](/adguard-for-ios/features/advanced-protection.md)
+
+  A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
+
+- [Activity and statistics](/adguard-for-ios/features/activity.md)
+
+  Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
+
+- [Assistant](/adguard-for-ios/features/assistant.md)
+
+  A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
+
+- [Low-level settings](/adguard-for-ios/features/low-level-settings.md)
+
+  Settings that allow advanced users to fine-tune app performance and adjust DNS protection
+
+- [Other features](/adguard-for-ios/features/other-features.md)
+
+  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+
+- [Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
+
+  Integreret tilstand, der tillader AdGuard Ad Blocker og AdGuard VPN at køre sideløbende trods systembegrænsninger
+
+- [Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
+
+  Sammenligning af funktioner mellem den gratis og den betalte version

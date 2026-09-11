@@ -1,0 +1,40 @@
+# AdGuard VPN for Mac: Mac App Store version vs. standalone version
+
+AdGuard VPN for Mac is available to download from two sources: our [official website](https://adguard-vpn.com/welcome.html) and the [Mac App Store](https://www.apple.com/ca/osx/apps/app-store/). While both these versions offer effective privacy protection, some features may differ between the two due to Apple’s policies regarding apps distributed through the Mac App Store. We will highlight and explain the main differences below.
+
+## Subscription plans and payment methods
+
+Both the standalone and Mac App Store versions of AdGuard VPN for Mac require a subscription to access all paid features. You can use AdGuard VPN for Mac without purchasing a subscription, but some functions will be limited. The available plans and payment methods differ depending on where you download the app: 
+
+- One-month subscription: available on both platforms
+- One-year subscription: available on both platforms
+- Two-year subscription: available on our official website
+
+> If needed, users of the Mac App Store version can purchase a two-year subscription on our website using the same email address as for previous purchases of AdGuard VPN or AdGuard Ad Blocker.
+
+### Standalone app
+
+If you purchase AdGuard VPN for Mac on our website, your license will be linked to the email address provided during the purchase. You can then use this email address to activate AdGuard VPN on any supported device and manage the license in your [AdGuard account](https://adguardaccount.com/account/licenses). Alternatively, you can apply the license using the activation code you’ll receive after purchase.
+
+### Mac App Store version
+
+After completing the purchase, we recommend binding the license to your email address. Once bound, you can activate AdGuard VPN on any supported platform using your email address and access your license at any time via your [AdGuard account](https://adguardaccount.com/account/licenses). To do it, go to the *License* tab and click *Bind license*.
+
+All devices activated by your license, regardless of which version you use, will appear in your AdGuard account as usual.
+
+## Apple’s policies 
+
+Because of Apple’s App Store restrictions, some traffic attribution features work differently in the Mac App Store version. As a result, *Statistics* and app exclusions are not available in the current MAS version. We are working to get these features back in the future versions of the app.
+
+## Different ways of operating
+
+Another difference between the two app versions is the processes they use to do their work, and again the difference is due to Apple limitations.
+
+The MAS version of AdGuard VPN for Mac uses Apple’s NetworkExtension framework. It allows developers to customize and extend key network functions of the operating system — for example, VPN management, Wi‑Fi configuration, and interaction with access points through Hotspot Helper — making networks more flexible and adaptable to specific app needs.
+More broadly, the term “network extension” can also refer to any hardware or software means of expanding a network to improve its coverage, performance, or functionality.
+
+The standalone version operates under the *utun* interface. Utun (short for user tunnel) is a virtual network interface in macOS that apps use to create a secure tunnel for your internet traffic. In practice, this means the app can route your data through an encrypted connection without changing your regular network settings.
+
+## Summary
+
+Both versions of AdGuard VPN for Mac protect your privacy, though they use slightly different means to achieve this. The main differences lie in the available subscription options and the way the apps work, based on Apple’s technical policies.

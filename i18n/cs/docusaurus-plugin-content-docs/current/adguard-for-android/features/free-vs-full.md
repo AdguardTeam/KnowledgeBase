@@ -1,0 +1,32 @@
+---
+title: Bezplatná vs. plná verze
+sidebar_position: 6
+---
+
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+
+:::
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+AdGuard pro Android má bezplatnou a placenou verzi. Placené funkce rozšiřují možnosti AdGuardu:
+
+- _Blokování reklam v aplikacích_ umožňuje blokovat reklamy v aplikacích, které nevyužívají prohlížeč. Aplikace pro filtrování můžete zadat v nabídce [_Správa aplikací_](/adguard-for-android/features/app-management)
+
+:::note
+
+AdGuard používá k blokování reklam ve videích YouTube vlastní přehrávač médií bez reklam. Chcete-li otevřít přehrávač médií, otevřete aplikaci YouTube a sdílejte video pomocí AdGuardu. Tato funkce je zdarma.
+
+:::
+
+- _Ochrana před sledováním_ zvyšuje vaše soukromí tím, že blokuje požadavky na sledování, online čítače, značky UTM, analytické systémy a další. [Více o ochraně před sledováním](/adguard-for-android/features/protection/tracking-protection)
+
+- _Bezpečné prohlížení_ vás upozorní, pokud se chystáte navštívit potenciálně nebezpečnou webovou stránku. [Více o bezpečném prohlížení](/adguard-for-android/features/protection/browsing-security)
+
+- _Vlastní filtry a uživatelská pravidla_ vám umožňují přidávat vlastní pravidla filtrování a filtry třetích stran pro vylepšení blokování reklam. [Více o filtrech](/adguard-for-android/features/settings#filters)
+
+- _Uživatelské skripty_ umožňují rozšířit funkčnost prohlížeče a používat [AdGuard Extra](/adguard-for-android/features/settings#adguard-extra), který zabraňuje opětovnému vkládání reklamy. [Více o uživatelských skriptech](/adguard-for-android/features/settings#userscripts)
+
+Přístup k těmto funkcím získáte [zakoupením licence](https://adguard.com/license.html). [Jak aktivovat licenci](/general/license/activation/#activating-adguard-for-android)

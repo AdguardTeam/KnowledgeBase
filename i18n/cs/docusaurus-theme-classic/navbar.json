@@ -1,0 +1,22 @@
+{
+  "item.label.docs": {
+    "message": "Dokumenty",
+    "description": "Navbar item with label docs"
+  },
+  "item.label.blog": {
+    "message": "Blog",
+    "description": "Navbar item with label blog"
+  },
+  "item.label.official_website": {
+    "message": "Oficiální stránka",
+    "description": "Navbar item with label official_website"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "logo.alt": {
+    "message": "AdGuard",
+    "description": "The alt text of navbar logo"
+  }
+}
