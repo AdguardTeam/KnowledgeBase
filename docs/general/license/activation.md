@@ -42,15 +42,15 @@ Then choose one of the two options:
   also available in your [AdGuard account](https://adguardaccount.com/) and on the *License* screen
   of another device where AdGuard is already activated.
 
-    ![Licenses in account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_licenses.png)
+    ![Licenses in account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/licenses_in_account.png)
 
   :::note
 
-*Log in* only works if the license is already in your AdGuard account. If you have an activation
-code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account,
-click *Bind license*, enter the key, and click *Bind*.
+    *Log in* only works if the license is already in your AdGuard account. If you have an activation
+    code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account,
+    click *Bind license*, enter the key, and click *Bind*.
 
-![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license.png)
+    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license.png)
 
 :::
 
