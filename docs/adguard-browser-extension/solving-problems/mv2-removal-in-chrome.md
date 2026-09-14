@@ -6,7 +6,7 @@ sidebar_position: 4
 This article describes two ways to keep blocking ads: switching to the MV3 version of AdGuard
 Browser Extension in Chrome, or continuing with MV2 in a browser that still supports it.
 
-On 31 August 2026, the [Chrome Web Store removed all remaining Manifest V2 (MV2) extensions,
+In August 2026, the [Chrome Web Store removed all remaining Manifest V2 (MV2) extensions,
 including **AdGuard Ad Blocker MV2**](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html). Chrome disables such extensions and reports them as no longer supported. The MV3 version is not
 affected.
 
@@ -62,7 +62,7 @@ Brave supports MV2 through its own compatibility mode and hosts the AdGuard buil
 independent of the Chrome Web Store. Brave installs and updates it automatically.
 
 1. Go to `brave://settings/extensions/v2`.
-1. Find **AdGuard Ad Blocker** and enable it.
+1. Turn on *Enable AdGuard*.
 
 ![MV2 extensions in Brave settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/adguard_brave.png)
 
@@ -78,7 +78,7 @@ installed manually:
 - **Helium** is an open-source Chromium-based browser that supports Chromium extensions and can
   import the ones already installed in your previous browser. It blocks ads and trackers by default
   — disable that if AdGuard should do the filtering.
-- **Portable Chromium builds** that kept MV2 use the same steps. Check the build's documentation,
+- **Portable Chromium builds** that kept MV2 use the same steps. Check the build’s documentation,
   as some maintainers removed MV2 support.
 
 1. Download `chrome.zip` from [AdGuard Browser Extension releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) and unpack it to a folder you won’t move or delete.
@@ -97,13 +97,6 @@ moved or deleted. Unpacked extensions don’t update automatically: to get a new
 and load the build again.
 
 :::
-
-- **ungoogled-chromium** is a modified Chromium that patches MV2 support back in.
-- **Helium** is an open-source Chromium-based browser that supports Chromium extensions and can
-  import the ones already installed in your previous browser. It blocks ads and trackers by default
-  — disable that if AdGuard should do the filtering.
-- **Portable Chromium builds** that kept MV2 use the same steps. Check the build’s documentation,
-  as some maintainers removed MV2 support.
 
 For the full *Developer mode* → *Load unpacked* flow, see the *How to install unpacked in the
 browser* section in [How to debug rules in AdGuard for Chrome MV3](/adguard-browser-extension/solving-problems/debug-rules/).

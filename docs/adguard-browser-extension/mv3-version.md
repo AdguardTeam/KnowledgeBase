@@ -3,7 +3,7 @@ title: AdGuard Browser Extension for Chrome MV3
 sidebar_position: 5
 ---
 
-[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), so Chrome users need an MV3 extension, compatible with Chrome's new API Manifest V3.  Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), so Chrome users need an MV3 extension, compatible with Chrome’s new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Our MV3 extension effectively blocks ads and trackers while seamlessly managing social widgets, banners, and video ads. Most users will not notice any operational differences, but there are some limitations and changes to be aware of.
 
@@ -14,7 +14,7 @@ The **MV3 version** is our primary Chrome extension and is available in the
 
 The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store on 31 August 2026 together with all
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store in August 2026 together with all
 other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
 support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
@@ -27,7 +27,7 @@ support for it — see [How to keep using AdGuard after Chrome removed MV2](/adg
 
   Custom filters you add by URL update on their own, independently of extension updates.
 
-- **AdGuard Quick Fixes filter.** Because built-in rules can't be updated on request, the extension
+- **AdGuard Quick Fixes filter.** Because built-in rules can’t be updated on request, the extension
   ships the *AdGuard Quick Fixes* filter. It uses dynamic rules to react to newly introduced ads and
   broken websites between releases, so keep it enabled.
 
@@ -76,7 +76,7 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 >
 > From this list of converted rules, we will only use 5,000 rules. The rest of them will be displayed in the editor, but not applied.
 
-Here's how a rule with a basic modifier is converted to a declarative rule:
+Here’s how a rule with a basic modifier is converted to a declarative rule:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com
