@@ -33,7 +33,7 @@ Then choose one of the two options:
   there. If the account has a valid license with a free device slot, it is applied to the app
   automatically.
 
-  ![Log in through the browser *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/log_in_enter_code.png)
+  ![Log in through the browser *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/log_in_enter_codeactivation_choice.png)
 
   If the browser tab was closed or the app didn’t pick up the license, click *Reopen login page* or
   use *Refresh license status* in the same menu (⋮).
