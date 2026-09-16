@@ -1,60 +1,60 @@
 ---
-title: Problems caused by extending restricted settings
+title: Problemer forårsaget af udvidede restriktive indstillinger
 sidebar_position: 17
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. More settings, such as _App usage access_, now require an additional permission to be enabled. Since the _[Firewall](/adguard-for-android/features/protection/firewall)_ and _[Detect Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ features require the _App usage access_ setting to be enabled for them to work properly, you may have experienced problems using them. To resolve these issues, please follow the steps below.
+I et forsøg på at forbedre brugerfortroligheden har Google udvidet restriktionsindstillingerne i Android 15. Flere indstillinger, såsom _App-brugsadgang_, kræver nu en ekstra tilladelse for at kunne aktiveres. Da funktionerne i _[Firewall](/adguard-for-android/features/protection/firewall)_ og _[Detektér Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south- korea)_ kræver, at indstillingen _App-brugsadgang_ er aktiveret mhp. korrekt funktion, kan der opleves problemer under brug af dem. Følg nedenstående trin for at løse disse problemer:
 
 :::note
 
-AdGuard has a strict no-logging policy, which means that we do not collect your data or send it to third parties. We only ask for access to data without which the application cannot function.
+AdGuard har en striks nul logning-politik, hvilket betyder, at vi hverken indsamler eller sender brugerdata til tredjeparter. Vi beder kun om adgang til data, uden hvilke appen ikke vil kunne fungere.
 
 :::
 
-## Basic instructions
+## Basisvejledning
 
-1. On your Android device, open the **Settings app**.
-2. Tap **Apps**.
-3. Tap **AdGuard**
+1. Gå til **Indstillinger** på Android-enheden.
+2. Tryk på **Apps**.
+3. Tryk på **AdGuard**
 
-![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
+![AdGuard i Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-If you can't find it, first tap **See all apps** or **App info**.
+Kan den ikke findes, tryk først på **Vis alle apps** eller **App-info**.
 
-1. Tap **More** (⁝) → _Allow restricted settings_.
+1. Tryk på **Mere** (⁝) → _Tillad begrænsede indstillinger_.
 
-![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+![Tillad begrænsede indstillinger \*mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-Follow the on-screen instructions.
+Følg skærmvejledningen.
 
-Færdig! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+Færdig! Nu vil funktionerne _Firewall_ og _Detektér Samsung Pay_ fungere korrekt.
 
-![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+![Begrænsede indstillinger tilladt for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
 
-## For OneUI 7.0 users
+## OneUI 7.0-brugere
 
-For Samsung devices with OneUI 7.0, the app permission settings follow a different path. Follow these steps to configure app usage access:
+På Samsung-enheder med OneUI 7.0 følger app-tilladelsesindstillingerne en anden sti. Følg disse trin for at opsætte adgang til app-brug:
 
-1. Open _System settings_ → _Apps_
+1. Åbn _Systemindstillinger_ → _Apps_
 
-![Apps settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
+![App-indstillinger \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
 
-1. Tap the menu icon (⋮) in the top-right corner, then select _Special access_
+1. Tryk på menuikonet (⋮) øverste til højre og vælg _Særlig adgang_
 
-![Special access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
+![Særlig adgang \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
 
-1. Select _Usage data access_
+1. Vælg _Brugsdataadgang_
 
-![Special access menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
+![Særlig adgang-menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
 
-1. Find and enable _AdGuard_
+1. Find og aktivér _AdGuard_
 
-![Usage data access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
+![Brugsdataadgang \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
 
 Færdig!

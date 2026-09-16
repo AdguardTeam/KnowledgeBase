@@ -1,88 +1,88 @@
 ---
-title: How to install AdGuard for Android TV
+title: Sådan installeres AdGuard til Android TV
 sidebar_position: 15
 ---
 
 :::info
 
-This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. To see how it works, [download the AdGuard TV app](https://agrd.io/tvapk)
+Denne artikel omhandler AdGuard til Android TV, en adblocker, der beskytter TV'et på systemniveau. For at se, hvordan den fungerer, [download AdGuard TV-appen](https://agrd.io/tvapk)
 
 :::
 
-In most cases, stock browsers cannot install a file on your TV, but you can download a browser from the Google Play Store that has this functionality. In our guide, we will go through an example of installation using the TV Bro browser, but there are other options and you can choose the one that better suits your needs. As an alternative, you can use the [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader) app.
+I de fleste tilfælde kan standardwebbrowsere ikke installere en fil på TV'et, men en webbrowser med denne funktionalitet kan downloades fra Google Play. I vores guide gennemgås et eksempel på installation med TV Bro-webbrowseren, men der er mulighed for at vælge andre, såfremt det ønskes. Som et alternativ kan appen [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader) bruges.
 
-## Installing AdGuard for Android TV via browser
+## Installation af AdGuard til Android TV via webbrowser
 
-1. Install the [TV Bro browser](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser) on your Android TV.
+1. Installér [TV Bro-webbrowseren](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser) på Android TV'et.
 
-2. Download and install AdGuard for Android TV:
+2. Download og installér AdGuard til Android TV:
 
-- Open the installed TV Bro browser on your Android TV.
-- In the address bar of the browser, type `https://agrd.io/tvapk` and press _Enter_ or follow the link.
-- The browser will start downloading the AdGuard for Android TV installation file automatically.
-- Once the download is complete, select _Downloads_ in the browser control bar, then select the downloaded file.
-- In a warning message, allow installing files from the browser.
-- Return to your browser, open _Downloads_, and click the downloaded file.
-- In the system window that appears, click _Install_, then _Done_ or _Open_.
+- Åbn den installerede TV Bro-webbrowser på Android TV'et.
+- Skriv på webbrowserens adressebjælke `https://agrd.io/tvapk` og tryk på _Retur_ eller følg linket.
+- Webbrowseren begynder automatisk at downloade AdGuard til Android TV-installationsfilen.
+- Når download er færdig, vælg _Downloads_ i webbrowserens kontrolbjælke og dernæst den downloadede fil.
+- Tillad installation af filer fra webbrowseren i advarselsmeddelelsen.
+- Returnér til webbrowseren, åbn _Downloads_ og klik på den downloadede fil.
+- Klik i det viste systemvindue på _Installér_ og dernæst på _Udført_ eller _Åbn_.
 
-Done, AdGuard for Android TV is installed.
+Færdig, AdGuard til Android TV er installeret.
 
-1. Launch AdGuard for Android TV:
+1. Start AdGuard til Android TV:
 
-- After the installation is complete, find the AdGuard app in the list of installed apps on your Android TV.
-- Click the AdGuard icon to launch the app.
-- Follow the on-screen instructions to complete the setup.
+- Når installationen er fuldført, find AdGuard-appen på listen over installerede apps på Android TV'et.
+- Klik på AdGuard-ikonet for at starte appen.
+- Følg vejledningen på skærmen for at færdiggøre opsætningen.
 
-## Installing AdGuard for Android TV via ADB
+## Installation af AdGuard til Android TV via ADB
 
-1. Make sure that Android Debug Bridge (ADB) is installed on your computer. If not, you can follow the instructions on XDA Developers: [ADB Installation Guide](https://www.xda-developers.com/install-adb-windows-macos-linux).
+1. Sørg for, at Android Debug Bridge (ADB) er installeret på computeren. Ellers følg vejledningen på XDA Developers: [ADB Installation Guide](https://www.xda-developers.com/install-adb-windows-macos-linux).
 
-2. Download [AdGuard for Android TV](https://agrd.io/tvapk).
+2. Download [AdGuard til Android TV](https://agrd.io/tvapk).
 
-3. In your TV settings, go to _System_ → _About_ and press the build number seven times to unlock developer options. Enable _USB debugging_.
+3. Gå i TV-indstillingerne til _System_ → _Om_ og tryk på build-nummeret syv gange for at oplåse Udviklerindstillinger. Aktivér _USB-fejlretning_.
 
-4. Write down the IP address of your Android TV:
+4. Notér Android TV'ets IP-adresse:
 
-   - On your Android TV, navigate to Settings.
-   - Select _System_ → _About_.
-   - Find _Network_ and select _Wi-Fi_ or _Ethernet_, depending on your connection type.
-   - Go to the network section and find _IP address_. Note down this IP address.
+   - Gå til Indstillinger på Android TV'et.
+   - Vælg _System_ → _Om_.
+   - Find _Netværk_ og vælg den relevante forbindelsestype, dvs. _Wi-Fi_ eller _Ethernet_.
+   - Gå til netværksafsnittet og find _IP-adresse_. Notér denne IP-adresse.
 
-5. Connect to Android TV via ADB:
+5. Oprettelse af forbindelse til Android TV via ADB:
 
-   - Open the terminal or command prompt on your computer.
-   - Enter the command `adb connect` and paste the IP address of your TV.
-   - The connection will be established.
+   - Åbn terminalen eller kommandoprompten på computeren.
+   - Indtast kommandoen 'adb connect' og indsæt TV'ets IP-adresse.
+   - Forbindelsen etableres.
 
-6. Install AdGuard for Android TV via ADB:
+6. Installation af AdGuard til Android TV via ADB:
 
-   - In the terminal, enter the command `adb install Downloads/adguard_tv.apk`. If necessary, replace `Downloads/adguard_tv.apk` with your path.
-   - Wait for a message in the terminal indicating the successful installation of the app.
+   - Indtast i terminalen kommandoen `adb install Downloads/adguard_tv.apk`. Erstat om nødvendigt `Downloads/adguard_tv.apk` med den relevante sti.
+   - Afvent en besked i terminalen, der indikerer gennemført installation af appen.
 
-## Installing AdGuard for Android TV via atvTools
+## Installation af AdGuard til Android TV via atvTools
 
-**Important:** Your smartphone and TV with Android TV (TV box) must be on the same local network.
+**Vigtigt:** Smartphonen og TV'et med Android TV (TV-boks) skal være på det samme lokalnetværk.
 
-1. Install the [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools) app on your Android smartphone
+1. Installér [atvTools](https://play.google.com/store/apps/details?id=dev.vodik7.atvtools)-appen på Android-smartphonen
 
-2. Connect **atvTools** to **Android TV**
+2. Forbind **atvTools** til **Android TV**
 
-   1. Enable developer mode on your Android TV device
+   1. Aktivér udviklertilstand på Android TV-enheden
 
-      `Settings` → `Device settings` → `About device` → Tap `Android TV build` until you see a message confirming that you have successfully obtained developer status
+      `Indstillinger` → `Enhedsindstillinger` → `Om enhed` → Tryk på `Android TV-build` indtil en meddelelse bekræfter, at udviklerstatus er aktiveret
 
-   2. Enable USB debugging on your Android TV device
+   2. Aktivér USB-fejlretning på Android TV-enheden
 
-      Go to `Settings` → `Device settings` → `For developers` → `Debugging`, allow and enable `USB debugging`
+      Gå til `Indstillinger` → `Enhedsindstillinger` → `Til udviklere` → `Fejlretning`, tillad og aktivér `USB-fejlretning`
 
-3. Launch **atvTools** on your smartphone
+3. Start **atvTools** på smartphonen
 
-4. Find the desired **Android TV** device in the list and click it
+4. Find og klik på den ønskede **Android TV**-enhed på listen
 
-5. Allow the connection on the TV
+5. Tillad forbindelsen på TV'et
 
-6. Download the [AdGuard for Android TV](https://agrd.io/tvapk) installer to your smartphone as an **APK** file
+6. Download [AdGuard til Android TV](https://agrd.io/tvapk)-installeren på smartphonen som en **APK**-fil
 
-7. In **atvTools**, click **Install** on the main screen and wait (less than a minute) until the **AdGuard for Android TV** icon appears in the list of applications
+7. Klik i **atvTools** på **Installér** på hovedskærmen og afvent (under et minut), at **AdGuard til Android TV**-ikonet vises på listen over apps
 
-![Main screen \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)
+![Hovedskærm \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/android-tv/main-screen.png)

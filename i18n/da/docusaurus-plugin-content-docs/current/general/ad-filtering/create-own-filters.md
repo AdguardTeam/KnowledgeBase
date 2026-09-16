@@ -4464,7 +4464,7 @@ or
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Compatibility
+:::note Kompatibilitet
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 

@@ -5,5 +5,7 @@ sidebar_position: 1
 
 Ecco alcune guide che potrebbero esserti utili per risolvere i problemi con l'Estensione di browser AdGuard.
 
-- [Come esportare i registri dalla pagina in background](/adguard-browser-extension/solving-problems/logs.md)
+- [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome.md)
 - [Come eseguire il debug delle regole in AdGuard per Chrome MV3](/adguard-browser-extension/solving-problems/debug-rules.md)
+- [Come esportare i registri dalla pagina in background](/adguard-browser-extension/solving-problems/logs.md)
+- [Ad blocking issues on search websites in Opera](/adguard-browser-extension/solving-problems/ads-not-blocked-in-opera.md)
