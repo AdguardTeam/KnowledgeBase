@@ -1,16 +1,16 @@
 ---
-title: Rooted devices
+title: Rootede enheder
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
+Grundet sikkerhedsforanstaltninger i Android OS'et er visse AdGuard-funktioner kun tilgængelige på rootede enheder. Her er listen over dem:
 
-- In most cases, **HTTPS filtering in apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps don't trust certificates in the user store
-- The [**Automatic proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
+- I de fleste tilfælde kræver **HTTPS-filtrering i apps** [installation af et CA-certifikat i systemlageret](/adguard-for-android/features/settings#security-certificates), da de fleste apps ikke har tillid til certifikater i brugerlageret
+- [**Automatisk proxy**-rutningstilstanden](/adguard-for-android/features/settings#routing-mode) kræver root-adgang grundet Androids restriktioner for systemomfattende trafikfiltrering
 - The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
