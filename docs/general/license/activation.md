@@ -50,7 +50,7 @@ Then choose one of the two options:
     code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account,
     click *Bind license*, enter the key, and click *Bind*.
 
-    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license.png)
+    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license_to_account.png)
 
 :::
 
