@@ -61,14 +61,14 @@ Aktivér denne funktion for at se AdGuard pop op-notifikationer. De vises ikke f
 
 Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
-### Filter HTTP/3
+### Filterér HTTP/3
 
 If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-**Limitations**:
+**Begrænsninger**:
 
 - Chrome-baserede webbrowsere accepterer ikke brugercertifikater og understøtter dermed ikke HTTP/3-filtrering.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
+- Firefox-baserede webbrowsere opfører sig som standard tilsvarende, men `network.http.http3.disable_when_third_party_roots_found`-indstillingen kan i `about:config` sættes til `false` for at tillade brugercertifikater til HTTP/3.
 - Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
 ### Use redirect driver mode
