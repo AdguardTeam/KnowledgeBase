@@ -20,7 +20,7 @@ Alternatively, you can use a [license key (activation code)](../what-is#license-
 To activate a license you already have, open the menu (⋮) in the upper right corner of the
 *License* screen and click *Already purchased?*.
 
-![License screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased.png)
+![License screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_license.png)
 
 You can also click *Already purchased?* on the trial-expiration screen the app shows when the trial
 ends.
