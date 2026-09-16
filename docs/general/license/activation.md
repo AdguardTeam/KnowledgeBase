@@ -25,7 +25,7 @@ To activate a license you already have, open the menu (⋮) in the upper right c
 You can also click *Already purchased?* on the trial-expiration screen the app shows when the trial
 ends.
 
-![Trial expired screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/expired_trial_already_purchased.png)
+![Trial expired screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/trial_expired.png)
 
 Then choose one of the two options:
 
