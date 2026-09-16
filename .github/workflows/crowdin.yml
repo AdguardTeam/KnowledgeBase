@@ -10,13 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: node:20
+      image: node:24
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -24,7 +20,7 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Sync translations
         env:
@@ -40,7 +36,6 @@ jobs:
           body: Transactions are synced from Crowdin
           reviewers: |
             el-termikael
-            vbagirov
           branch: update-translations
           base: master
           delete-branch: true
