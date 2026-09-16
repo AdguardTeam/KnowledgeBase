@@ -1,12 +1,12 @@
 ---
 title: How to keep using AdGuard after Chrome removed MV2
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 This article describes two ways to keep blocking ads: switching to the MV3 version of AdGuard
 Browser Extension in Chrome, or continuing with MV2 in a browser that still supports it.
 
-[Chrome Web Store removed all remaining Manifest V2 (MV2) extensions,
+The [Chrome Web Store removed all remaining Manifest V2 (MV2) extensions,
 including **AdGuard Ad Blocker MV2**](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html). Chrome disables such extensions and reports them as no longer supported. The MV3 version is not
 affected.
 
@@ -35,7 +35,7 @@ automatically: the two versions have different extension IDs. To switch to MV3:
 1. Reload open tabs.
 
 MV3 applies most blocking rules through the browser’s declarative engine, which limits the number
-of rules and changes how filters update. Before switching, read [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/).
+of rules and changes how filters update. Before switching, see the [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/) article.
 
 ## Continuing with MV2 in other browsers
 
@@ -50,7 +50,8 @@ MV2 and distributed through Firefox Add-ons, so it installs and updates like any
 
 1. Go to the [AdGuard ad blocker add-on page](https://addons.mozilla.org/firefox/addon/adguard-adblocker/).
 1. Click *Add to Firefox* and confirm the permissions.
-  ![AdGuard in Firefox *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/adguard_firefox.png)
+
+    ![AdGuard in Firefox *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/adguard_firefox.png)
 
 Firefox’s Enhanced Tracking Protection blocks trackers rather than ads and can stay enabled
 alongside AdGuard.
@@ -62,7 +63,8 @@ independent of the Chrome Web Store. Brave installs and updates it automatically
 
 1. Go to `brave://settings/extensions/v2`.
 1. Turn on *Enable AdGuard*.
-  ![MV2 extensions in Brave settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/adguard_brave.png)
+
+    ![MV2 extensions in Brave settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/adguard_brave.png)
 
 Brave describes MV2 support as best-effort rather than a permanent guarantee. Brave Shields also
 blocks ads — turn it off if AdGuard should do the filtering.
