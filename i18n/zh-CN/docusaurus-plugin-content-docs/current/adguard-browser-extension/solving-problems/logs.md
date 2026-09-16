@@ -1,6 +1,6 @@
 ---
 title: 如何从后台页面导出日志
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## 从扩展程序的后台页面导出日志

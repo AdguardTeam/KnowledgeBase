@@ -3,35 +3,47 @@ title: AdGuard Browsererweiterung für Chrome MV3
 sidebar_position: 5
 ---
 
-Da die MV2-Erweiterungen im Chrome Web Store eingestellt werden, müssen Chrome-Benutzer:innen möglicherweise zu MV3-Erweiterungen wechseln, die mit dem neuen Manifest V3-API von Chrome kompatibel sind. Unsere Gedanken zu diesem Thema werden in [unserem Blog](https://adguard.com/en/blog/tag/manifest-v3.html) ausführlich erörtert.
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), so Chrome users need an MV3 extension, compatible with Chrome’s new API Manifest V3. Unsere Gedanken zu diesem Thema werden in [unserem Blog](https://adguard.com/en/blog/tag/manifest-v3.html) ausführlich erörtert.
 
 Unsere MV3-Erweiterung sperrt effektiv Werbung und Tracker und verwaltet gleichzeitig nahtlos soziale Widgets, Banner und Videoanzeigen. Die meisten Benutzer:innen werden keine Unterschiede bei der Bedienung feststellen, aber es gibt einige Einschränkungen und Änderungen, die zu beachten sind.
 
 ## Wo Sie unsere Erweiterungen finden
 
-Die **MV3-Version** ersetzt unsere alte Erweiterung im [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** is our primary Chrome extension and is available in the
+[Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip`.
 
-Die **Beta-Version von MV3** wird weiterhin im [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf) verfügbar sein.
+The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-Die alte Beta-Erweiterung wird in [**AdGuard Werbeblocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) umbenannt und wird unterstützt, bis Google sie abkündigt.
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store together with all
+other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Wichtigste Änderungen bei Funktionen und Einstellungen
 
-- **Keine automatische und manuelle Filteraktualisierung.** Die Optionen _Filter automatisch aktualisieren_ und _Filteraktualisierung prüfen_ sind auf der Registerkarte _Filter_ nicht mehr verfügbar. Da einige der Regeln jetzt in DNR-Form angewendet werden, können wir die Filter nicht auf Anfrage aktualisieren, sondern nur durch den gesamten Prozess der Aktualisierung der Erweiterung zusammen mit der Überprüfung in den Stores.
+- **Filter updates.** The options _Auto-update filters_ and _Check filters update_ are not available
+  in the _Filters_ tab: rules that ship as part of the extension can be updated only together with a
+  new extension version, after store review. Keep automatic extension updates enabled in your
+  browser.
 
-- **Filter-Protokoll**
+  Custom filters you add by URL update on their own, independently of extension updates.
+
+- **AdGuard Quick Fixes filter.** Because built-in rules can’t be updated on request, the extension
+  ships the _AdGuard Quick Fixes_ filter. It uses dynamic rules to react to newly introduced ads and
+  broken websites between releases, so keep it enabled.
+
+- **Filtering log**
 
   ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  Aufgrund von DNR-Beschränkungen können wir nicht genau angeben, welche Regel funktioniert hat, aber wir werden eine „mutmaßliche Regel, die ausgelöst wurde“ auf der Grundlage unserer Engine angeben. Um genaue Informationen zu erhalten, müssen Sie die „entpackte" Form der Erweiterung selbst in Ihrem Browser installieren. Eine ausführliche Anleitung dazu finden Sie in einem [separaten Artikel](/adguard-browser-extension/solving-problems/debug-rules/).
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Tracking-Schutz_ (früher bekannt als _Privatsphären-Modus_)
+- _Tracking protection_ (formerly known as _Stealth mode_)
 
   ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-  Es gibt keinen Abschnitt _Cookies_ sowie _Selbstzerstörung von Erstanbieter-Cookies_ und _Selbstzerstörung von Drittanbieter-Cookies_, da wir die TTL von Cookies nicht mit deklarativen Regeln festlegen können.
+  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
-- Der _Schutz vor Phishing und Malware_ ist in den allgemeinen Einstellungen nicht mehr verfügbar. Um sich vor bösartigen Websites und Betrügereien zu schützen, aktivieren Sie die entsprechenden _Sicherheitsfilter_ im Tab _Filter_.
+- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
   ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
@@ -62,7 +74,7 @@ Wenn diese Grenze überschritten wird, werden nur **5.000 umgewandelte Regeln** 
 >
 > Von dieser Liste der konvertierter Regeln werden nur 5.000 Regeln verwendet. Die übrigen werden zwar im Editor angezeigt, aber nicht angewendet.
 
-So wird eine Regel mit einem einfachen Modifikator in eine deklarative Regel umgewandelt:
+Here’s how a rule with a basic modifier is converted to a declarative rule:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com

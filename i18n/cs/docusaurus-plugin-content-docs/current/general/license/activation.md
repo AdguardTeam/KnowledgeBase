@@ -3,7 +3,7 @@ title: Jak aktivovat
 sidebar_position: 3
 ---
 
-Chcete-li aktivovat licenci, přejděte do části *Licence* svého produktu AdGuard a vyhledejte pole *Přihlásit se* nebo tlačítko *Aktivovat*. K přihlášení použijte e-mail a heslo svého AdGuard účtu. Pokud ještě nemáte účet, bude vám nabídnuto jeho vytvoření.
+Chcete-li aktivovat licenci, přejděte do části *Licence* svého produktu AdGuard a vyhledejte pole *Přihlásit se* nebo tlačítko *Aktivovat*. K přihlášení použijte e-mail a heslo svého AdGuard účtu. If you don’t have an account yet, you will be offered to create one.
 
 :::note
 
@@ -11,25 +11,39 @@ K aktivaci licence prostřednictvím účtu AdGuard je nutná platná licence s 
 
 :::
 
-Případně můžete k aktivaci použít [licenční klíč](../what-is#license-key).
+Alternatively, you can use a [license key (activation code)](../what-is#license-key) to activate the license.
 
 **Níže se můžete podívat na pokyny k aktivaci krok za krokem pro každou platformu.**
 
 ### Aktivace AdGuardu pro Windows
 
-1. Na obrazovce s prošlou licencí klikněte na *Activate*.
+To activate a license you already have, open the menu (⋮) in the upper right corner of the *License* screen and click *Already purchased?*.
 
-    ![Expired license screen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+![License screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_license.png)
 
-    Případně vyberte položku *Licence* v pravém horním rohu hlavní obrazovky a klikněte na *Aktivovat*.
+You can also click *Already purchased?* on the trial-expiration screen the app shows when the trial ends.
 
-    ![Main screen *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+![Trial expired screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/trial_expired.png)
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+Then choose one of the two options:
 
-1. Aktivujte licenci preferovaným způsobem. Pokud je licence spojena s vaší e-mailovou adresou, klikněte na *AdGuard účet* nebo vyberte sociální síť spojenou s touto e-mailovou adresou. Případně vložte svůj licenční klíč.
+- **Log in** — you will be redirected to your browser. Log in to your AdGuard account or sign up there. If the account has a valid license with a free device slot, it is applied to the app automatically.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+  ![Log in through the browser *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_choice.png)
+
+  If the browser tab was closed or the app didn’t pick up the license, click *Reopen login page* or use *Refresh license status* in the same menu (⋮).
+
+- **Enter activation code** — enter the code from the purchase email or from a reseller. The code is also available in your [AdGuard account](https://adguardaccount.com/) and on the *License* screen of another device where AdGuard is already activated.
+
+    ![Licenses in account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/licenses_in_account.png)
+
+  Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+
+    *Log in* only works if the license is already in your AdGuard account. If you have an activation code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account, click *Bind license*, enter the key, and click *Bind*.
+
+    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license_to_account.png)
+
+:::
 
 ### Aktivace AdGuardu pro Mac
 
@@ -37,76 +51,76 @@ Případně můžete k aktivaci použít [licenční klíč](../what-is#license-
 
     ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Případně klikněte na ikonu ozubeného kola v nabídce AdGuardu a poté klikněte na položku *Licence*.
+    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
 
     ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. V otevřeném okně klikněte na *Aktivovat*.
+1. In the opened window, click *Activate*.
 
     ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Aktivujte licenci preferovaným způsobem. Pokud je licence spojena s vaší e-mailovou adresou, klikněte na *AdGuard účet* nebo vyberte sociální síť spojenou s touto e-mailovou adresou. Případně vložte svůj licenční klíč.
+1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
 
     ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### Aktivace AdGuardu pro Android
 
-1. Klepněte na *Nastavení* a poté vyberte *Licence*.
+1. Tap *Settings*, then select *License*.
 
     ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. Klepněte na *Aktivovat licenci*.
+1. Tap *Activate license*.
 
     ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Aktivujte licenci preferovaným způsobem. Pokud je licence spojena s vaší e-mailovou adresou, klepněte na *Pokračovat pomocí e-mailu* nebo vyberte sociální síť spojenou s touto e-mailovou adresou. Případně vložte svůj licenční klíč.
+1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
 
     ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### Aktivace AdGuardu pro iOS
 
-1. Klepněte na *Nastavení* a poté vyberte *Licence*.
+1. Tap *Settings*, then select *License*.
 
     ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Klepněte na položku **Přihlásit se** v pravém horním rohu obrazovky
+1. Tap **Log in** in the upper right corner of the screen
 
     ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. K aktivaci licence použijte svou e-mailovou adresu nebo účet sociálních sítích.
+1. Use your email address or social media account to activate your license.
 
     ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
 ### Aktivace AdGuardu Mini pro Mac
 
-1. Klikněte na ikonu AdGuard Mini v liště nabídky.
+1. Click AdGuard Mini icon in the menu bar.
 
     ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Klikněte na ikonu nastavení.
+2. Click the settings icon.
 
     ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Přejděte na *licenci*.
+3. Go to *License*.
 
     ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Otevřete nabídku (⋮) v pravém horním rohu a klikněte na *Již zakoupeno?*.
+4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
 
     ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. Zobrazí se dostupné možnosti aktivace:
+5. You will see the available activation options:
 
     ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Přihlásit se**
+    - **Log in**
 
-      Přihlaste se ke svému účtu AdGuard, který obsahuje platnou licenci.
+      Log in to your AdGuard account that has a valid license in it.
 
-    - **Obnovit z App Store**
+    - **Restore from App Store**
 
-      Použijte licenci, kterou jste si dříve zakoupili prostřednictvím App Store.
+      Use a license that you have previously bought through the App Store.
 
-    - **Zadat aktivační kód**
+    - **Enter activation code**
 
-      Zadejte svůj aktivační kód.
+      Enter your activation code.

@@ -1,6 +1,6 @@
 ---
 title: Inghippi di bloccaggio delle inserzioni nei siti web di ricerca in Opera
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Se l'estensione del browser AdGuard non riesce a bloccare le inserzioni nei siti di ricerca in Opera, né automaticamente né manualmente, significa che l'estensione non ha l'autorizzazione ad accedere ai risultati delle pagine di ricerca.

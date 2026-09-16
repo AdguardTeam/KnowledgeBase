@@ -1,5 +1,5 @@
 ---
-title: Network
+title: Netværk
 sidebar_position: 10
 ---
 
@@ -23,7 +23,7 @@ To manage filtered apps, click _Applications_.
 
 This setting allows AdGuard to filter the secure HTTPS protocol, which is currently used by most websites and apps. By default, websites with potentially sensitive information, such as banking services, are not filtered. To manage HTTPS exclusions, click _Exclusions_.
 
-By default, AdGuard doesn’t filter websites with Extended Validation (EV) certificates. If needed, you can enable the _Filter websites with EV certificates_ option.
+By default, AdGuard doesn’t filter websites with Extended Validation (EV) certificates. Indstillingen _Filtrér websteder med EV-certifikater_ kan om ønsket slås til.
 
 ## Udgående proxy
 

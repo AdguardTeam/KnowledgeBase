@@ -3,37 +3,49 @@ title: AdGuard Browser Extension til Chrome MV3
 sidebar_position: 5
 ---
 
-Da MV2-udvidelser er under udfasning i Chrome Webshop, skal Chrome-brugere muligvis skifte til MV3-udvidelser, som er kompatible med Chromes nye API Manifest V3. Vores tanker om dette emne er udførligt drøftet på [vores blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), so Chrome users need an MV3 extension, compatible with Chrome’s new API Manifest V3. Vores tanker om dette emne er udførligt drøftet på [vores blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Vores MV3-udvidelse blokerer effektivt annoncer og trackere, mens den ubemærket håndterer sociale widgets, bannere og videoreklamer. De fleste brugere vil ikke bemærke nogen operationelle forskelle, men der er visse begrænsninger og ændringer at være opmærksom på.
 
 ## Her findes vores udvidelser
 
-**MV3-versionen** har erstattet vores ældre udvidelse i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** is our primary Chrome extension and is available in the
+[Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip`.
 
-**Betaversionen af MV3** vil stadig være tilgængelig i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-Den ældre betaudvidelse omdøbes til [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) og vil være understøttet, indtil den udfases af Google.
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store together with all
+other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Vigtigste ændringer i funktioner og indstillinger
 
-- **Ingen automatiske og manuelle filteropdateringer.** Indstillingerne _Auto-opdatér filtre_ og _Tjek filteropdatering_ er ikke længere tilgængelige via fanen _Filtre_. Da nogle af reglerne nu anvendes i DNR-form, kan filtre ikke opdateres pr. anmodning, men kun gennem hele processen med at opdatere udvidelsen sammen med gennemgangen i butikkerne.
+- **Filter updates.** The options _Auto-update filters_ and _Check filters update_ are not available
+  in the _Filters_ tab: rules that ship as part of the extension can be updated only together with a
+  new extension version, after store review. Keep automatic extension updates enabled in your
+  browser.
 
-- **Filtreringslog**
+  Custom filters you add by URL update on their own, independently of extension updates.
 
-  ![Filtreringslog \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
+- **AdGuard Quick Fixes filter.** Because built-in rules can’t be updated on request, the extension
+  ships the _AdGuard Quick Fixes_ filter. It uses dynamic rules to react to newly introduced ads and
+  broken websites between releases, so keep it enabled.
 
-  Grundet DNR-restriktioner kan den præcise regel, der virkede, ikke vises, men vi vil angive en "omtrentlig regel, der blev udløst" baseret på vores motor. For præcise oplysninger vil den "udpakkede" version af udvidelsen skulle installeres i webbrowser. Detaljeret vejledning til, hvordan dette gøres, kan findes i en [separat artikel](/adguard-browser-extension/solving-problems/debug-rules/).
+- **Filtering log**
 
-- _Sporingsbeskyttelse_ (tidligere kendt som _Stealth mode_)
+  ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  ![Sporingsbeskyttelse \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
-  Der er intet _Cookies_-afsnit sammen med _Selvdestruktion af førstepartscookies_ og _Selvdestruktion af tredjepartscookies_, da TTL for cookies ikke kan indstilles med deklarative regler.
+- _Tracking protection_ (formerly known as _Stealth mode_)
 
-- _Phishing- og malwarebeskyttelse_ er ikke længere tilgængelig i de generelle indstillinger. For beskyttelse mod ondsindede websteder og svindel, aktivér de relevante _Sikkerhedsfiltre_ via fanen _Filtre_.
+  ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-  ![Sikkerhed \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
+  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
+
+- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+
+  ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
 ## Begrænsninger
 
@@ -63,7 +75,7 @@ Overskrides denne kvote, vil kun **5.000 konverterede regler** blive anvendt i f
 >
 > Fra denne liste over konverterede regler vil kun 5.000 regler blive anvendt. De øvrige vises i editoren, men de anvendes ikke.
 
-Sådan konverteres en regel med en basismodifikator til en deklarativ regel:
+Here’s how a rule with a basic modifier is converted to a declarative rule:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com

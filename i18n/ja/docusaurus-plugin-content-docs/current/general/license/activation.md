@@ -3,7 +3,7 @@ title: 有効化する方法
 sidebar_position: 3
 ---
 
-ライセンスを有効にするには、お使いのAdGuard製品の「*ライセンス*」セクションに移動し、「*ログイン*」または「*認証する*」ボタンを見つけてください。 AdGuardアカウントのメールアドレスとパスワードを使用してログインします。 AdGuardアカウントをまだお持ちでない場合は、その場でアカウントを新規登録できます（メールアドレスのみが必要）。
+ライセンスを有効にするには、お使いのAdGuard製品の「*ライセンス*」セクションに移動し、「*ログイン*」または「*認証する*」ボタンを見つけてください。 AdGuardアカウントのメールアドレスとパスワードを使用してログインします。 If you don’t have an account yet, you will be offered to create one.
 
 :::note
 
@@ -11,71 +11,85 @@ sidebar_position: 3
 
 :::
 
-または、アカウントログインでなく、[ライセンスキー](../what-is#license-key)を直接入力することでAdGuardライセンスを有効化することも可能です。
+Alternatively, you can use a [license key (activation code)](../what-is#license-key) to activate the license.
 
 **以下では、各プラットフォームでの有効化方法を詳しく確認できます。**
 
 ### AdGuard for Windows を有効にする方法
 
-1. ライセンス/試用期間の有効期限切れに関する通知画面で、「*認証する*」をクリックします。
+To activate a license you already have, open the menu (⋮) in the upper right corner of the *License* screen and click *Already purchased?*.
 
-    ![期限切れライセンス画面 *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+![License screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_license.png)
 
-    または、メイン画面の右上にある「*ライセンス*」を選択し、「*ライセンスを認証する*」をクリックします。
+You can also click *Already purchased?* on the trial-expiration screen the app shows when the trial ends.
 
-    ![メイン画面 *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+![Trial expired screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/trial_expired.png)
 
-    ![ライセンス画面 *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+Then choose one of the two options:
 
-1. ご希望の方法（アカウントもしくはライセンスキー）を使ってライセンスを認証します。 ライセンスがメール アドレスにバインド（紐付け）されている場合は、 「*AdGuard アカウント*」をクリックするか、そのメールアドレスに関連付けられているソーシャルアカウントを選択します。 または、ライセンスキーを入力して認証することもできます。
+- **Log in** — you will be redirected to your browser. Log in to your AdGuard account or sign up there. If the account has a valid license with a free device slot, it is applied to the app automatically.
 
-    ![ライセンスの有効化 *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+  ![Log in through the browser *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_choice.png)
+
+  If the browser tab was closed or the app didn’t pick up the license, click *Reopen login page* or use *Refresh license status* in the same menu (⋮).
+
+- **Enter activation code** — enter the code from the purchase email or from a reseller. The code is also available in your [AdGuard account](https://adguardaccount.com/) and on the *License* screen of another device where AdGuard is already activated.
+
+    ![Licenses in account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/licenses_in_account.png)
+
+  :::note
+
+    *Log in* only works if the license is already in your AdGuard account. If you have an activation code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account, click *Bind license*, enter the key, and click *Bind*.
+
+    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license_to_account.png)
+
+:::
 
 ### AdGuard for Mac を有効にする方法
 
 1. ライセンス/試用期間の有効期限切れに関する通知画面で、「*認証する*」をクリックします。
 
-    ![期限切れライセンス画面 *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    または、AdGuard を開いて歯車⚙アイコンをクリックし、「*ライセンス*」をクリックします。
+    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
 
-    ![設定 *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. 開いたウィンドウで、「*ライセンスを認証する*」をクリックします。
+1. In the opened window, click *Activate*.
 
-    ![ライセンス画面 *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. ご希望の方法（アカウントもしくはライセンスキー）を使ってライセンスを認証します。 ライセンスがメール アドレスにバインド（紐付け）されている場合は、 「*AdGuard アカウント*」をクリックするか、そのメールアドレスに関連付けられているソーシャルアカウントを選択します。 または、ライセンスキーを入力して認証することもできます。
+1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
 
-    ![ライセンスの有効化 *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### AdGuard for Android を有効にする方法
 
-1. *右下の歯車⚙アイコン*（設定）をタップし、 「*ライセンス*」を選択します。
+1. Tap *Settings*, then select *License*.
 
-    ![設定画面 *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. 「*ライセンスを認証する*」をタップします。
+1. Tap *Activate license*.
 
-    ![ライセンス画面 *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. ご希望の方法（アカウントもしくはライセンスキー）を使ってライセンスを認証します。 ライセンスがメール アドレスにバインド（紐付け）されている場合は、 「*メールアドレスで続ける*」をタップするか、そのメールアドレスに関連付けられているソーシャルアカウントを選択します。 または、ライセンスキーを入力して認証することもできます。
+1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
 
-    ![ライセンスの有効化 *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### AdGuard for iOS を有効にする方法
 
-1. *右下の歯車⚙アイコン*（設定）をタップし、 「*ライセンス*」を選択します。
+1. Tap *Settings*, then select *License*.
 
-    ![設定画面 *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. 画面右上の「**ログイン**」をタップします。
+1. Tap **Log in** in the upper right corner of the screen
 
-    ![購入画面 *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. メールアドレスまたはソーシャルアカウントを使ってログインすることで、ライセンスを認証します。
+1. Use your email address or social media account to activate your license.
 
-    ![ログイン画面 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
 ### Activating AdGuard Mini for Mac
 

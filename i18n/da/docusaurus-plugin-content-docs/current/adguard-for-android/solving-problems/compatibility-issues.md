@@ -1,65 +1,65 @@
 ---
-title: Known compatibility issues with Android apps
+title: Kendte kompatibilitetsproblemer med Android-apps
 sidebar_position: 14
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## VPN apps
+## VPN-apps
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Anvendes AdGuard i filtreringstilstanden *Lokalt VPN*, kan der ikke afvikles andre VPN-apps samtidigt. For at løse dette problem foreslås flg.:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
+- Brug [AdGuard VPN](https://adguard-vpn.com/welcome.html) — dens *Integreret tilstand* muliggør, at to apps kan afvikles samtidigt
+- Opsæt VPN-appen som en [udgående proxy](../solving-problems/outbound-proxy.md) og opsæt en lokal udgående proxy med parametrene fra tredjeparts-appen
+- Skift til tilstanden *Automatisk proxy*. Når dette gøres, vil AdGuard ikke længere bruge lokalt VPN, men ændrer i stedet iptables-opsætningen
+- Skift til tilstanden *Manuel proxy*. For at gøre dette, gå til *Indstillinger* → *Filtrering* → *Netværk* → *Rutingstilstand*
 
-:::note Compatibility
+:::note Kompatibilitet
 
-The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
+Tilstanden *Automatisk proxy* er kun tilgængelig på rootede enheder. Brug af *Manuel proxy* kræver rooting på enheder med Android 10 eller senere.
 
 :::
 
 ## Private DNS
 
-The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
+Private DNS-funktionen blev introduceret i Android Pie. Før version Q ødelagde Private DNS ikke AdGuard DNS-filtreringslogikken, og rutning af DNS igennem AdGuard fungerede normalt. Fra og med version Q tvinger tilstedeværelsen af Private DNS apps til at omdirigere trafik igennem systemopløseren i stedet for AdGuard. Se Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for flere detaljer.
 
-- To solve the problem with Private DNS, use the `$network` rule
+- Brug `$network`-reglen for at løse problemet med Private DNS
 
-Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
+Nogle enhedsproducenter holder Private DNS-indstillinger skjult og opsætter 'Automatisk' tilstand som standard. Private DNS kan derfor ikke deaktiveres, men vi kan få systemet til at tro, at upstream'en er ugyldig ved at blokere den med en `$network`-regel. Bruger systemet f.eks. Google DNS som standard, kan reglerne `|8.8.4.4^$network` og `|8.8.8.8^$network` tilføjes for at blokere Google DNS.
 
-## Unsupported browsers
+## Uunderstøttede webbrowsere
 
-### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
+### UC Browsere: UC Browser, UC Browser til x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
+For at kunne filtrere HTTPS-trafik kræver AdGuard, at brugeren tilføjer et certifikat til enhedens betroede brugercertifikater. Desværre har UC-webbrowsere ikke tillid til brugercertifikater, så AdGuard kan ikke HTTPS-filtrere dem.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
+- For at løse dette problem, flyt [-certifikatet til systemcertifikatlageret](../solving-problems/https-certificate-for-rooted.md/)
 
-:::note Compatibility
+:::note Kompatibilitet
 
-Requires root access.
+Kræver root-adgang.
 
 :::
 
 ### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
+AdGuard kan ikke filtrere dens trafik, når den opererer i tilstanden *Manuel proxy*, da denne webbrowsere ignorerer systemproxyindstillinger.
 
-- Use the *Local VPN* filtering mode to solve this problem
+- Brug filtreringstilstanden *Lokalt VPN* for at løse dette problem
 
-### Opera mini: Opera mini, Opera mini with Yandex
+### Opera mini: Opera mini, Opera mini med Yandex
 
-Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Opera mini ruter som standard trafik gennem en komprimerings-proxy, og AdGuard kan ikke både dekomprimere og filtrere den på samme tid.
 
-- There is no solution at this moment
+- P.t. findes ingen tilgængelig løsning
 
 ### Puffin Browser: Puffin Browser, Puffin Browser Pro
 
-Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Puffin Browser ruter trafik igennem en komprimerings-proxy som standard, og AdGuard kan ikke både dekomprimere og filtrere den på samme tid.
 
-- There is no solution at this moment
+- P.t. findes ingen tilgængelig løsning
