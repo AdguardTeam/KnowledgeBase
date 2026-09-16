@@ -65,6 +65,8 @@ jobs:
     needs: build
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.fork == false
     runs-on: ubuntu-latest
+    container:
+      image: node:24
     steps:
       - uses: actions/checkout@v4
 
