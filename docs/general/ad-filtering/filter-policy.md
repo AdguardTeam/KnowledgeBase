@@ -50,7 +50,7 @@ AdGuard ad-blocking filters include:
 
 - AdGuard Base filter
 - AdGuard Mobile Ads filter
-- Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Polish, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### The purpose of these filters
 
