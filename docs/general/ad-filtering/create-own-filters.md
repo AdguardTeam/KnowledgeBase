@@ -1209,7 +1209,7 @@ Forbids adding of JavaScript code to the page. You can read about scriptlets and
 
 ##### `$jsinject` modifier limitations {#jsinject-modifier-limitations}
 
-:::info Limitations
+:::caution Limitations
 
 Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chrome MV3][ext-mv3].
 We only use them in the [TSUrlFilter] engine to disable some cosmetic rules.
@@ -4614,13 +4614,14 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 ##### Syntax
 
 ```text
-:contains(text)
+:contains(value)
 ```
 
-- `text` — the raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
-- An argument in the `/regexp/flags` form is treated as a regular expression.
+where `value` is:
+- raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
+- argument in the `/regexp/flags` form is treated as a regular expression.
 
-:::note Compatibility
+:::note Note
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
