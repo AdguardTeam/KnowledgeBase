@@ -19,7 +19,13 @@ Since this issue can affect any Chromium-based browser, this section covers how 
 
 ### Step 1: Grant access via Files & Folders
 
-1. Open *System settings* → *Privacy & Security* → *Files & Folders*
+1. Open *Files & Folders*
+    - via AdGuard settings: click the gear icon on the app's main window → *Preferences…* → the *Assistant* tab → *Open Files & Folders*
+    ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings.png)
+    - via AdGuard Setup assistant: on the Browser Assistant installation screen, click *Open Files & Folders* — this button appears if AdGuard doesn't have access to the browser's folder
+    ![AdGuard Setup assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant.png)
+    - via *System Settings* → *Privacy & Security*
+    ![System Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/system-settings.png)
 1. Find *AdGuard* in the list and click it to expand the dropdown
 1. Locate the browser (for example, Chrome or Brave) and turn on the toggle next to it
 
@@ -39,7 +45,8 @@ Some browsers rely on the Native Messaging folder that belongs to Google Chrome 
 1. Once Chrome is installed, the required Native Messaging folder becomes available on the system
 1. Repeat the process from Step 1 — the toggle for the affected browser (for example, Opera) should now appear under *Files & Folders*
 
-**Option B: Grant Full disk access**
+**Option B: Grant Full Disk Access**
 
-1. Open *System settings* → *Privacy & Security* → *Full disk access*
+1. Open *System Settings* → *Privacy & Security* → *Full Disk Access*
 1. Find *AdGuard* in the list and turn on the toggle
+![Full Disk Access](https://cdn.adtidy.org/content/kb/ad_blocker/mac/full-disk-access.png)
