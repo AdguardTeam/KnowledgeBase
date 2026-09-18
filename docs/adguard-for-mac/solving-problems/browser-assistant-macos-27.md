@@ -29,7 +29,7 @@ Since this issue can affect any Chromium-based browser, this section covers how 
 
 :::note
 
-A toggle for a specific browser only appears in this list if that browser is already installed. If the browser is not listed, proceed to Step 2.
+A toggle for a specific browser will only appear in this list if the browser is already installed. If your browser is not listed, proceed to Step 2.
 
 :::
 
