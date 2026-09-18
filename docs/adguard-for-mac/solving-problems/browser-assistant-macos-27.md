@@ -1,5 +1,5 @@
 ---
-title: How AdGuard Browser Assistant works on macOS Golden Gate and above
+title: How AdGuard Browser Assistant works on macOS 27+
 sidebar_position: 12
 ---
 
