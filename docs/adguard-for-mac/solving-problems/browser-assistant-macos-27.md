@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-Due to updated macOS policies in version 27 and later, AdGuard may be unable to communicate with Browser Assistant, causing extension-based filtering features to stop working. To establish this connection, AdGuard needs to place a Native Messaging host manifest inside the browser's application data folder. Previously, AdGuard did this automatically in the background. However, macOS 27 restricts cross-app folder access by default and requires explicit permission. As a result, AdGuard can no longer place the manifest file automatically, disrupting communication between the app and the extension.
+Due to policy updates in macOS 27, AdGuard may be unable to communicate with its Browser Assistant, which could cause extension-based filtering features to stop working. To establish this connection, AdGuard must place a Native Messaging host manifest within the browser's application data folder. Previously, AdGuard did this automatically in the background. However, macOS 27 restricts cross-app folder access by default and requires explicit permission. As a result, AdGuard can no longer place the manifest file automatically, which disrupts communication between the app and the extension.
 
 ## Recommended solutions
 
