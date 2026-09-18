@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-Due to policy updates in macOS 27, AdGuard may be unable to communicate with its Browser Assistant, which could cause extension-based filtering features to stop working. To establish this connection, AdGuard must place a Native Messaging host manifest within the browser's application data folder. Previously, AdGuard did this automatically in the background. However, macOS 27 restricts cross-app folder access by default and requires explicit permission. As a result, AdGuard can no longer place the manifest file automatically, which disrupts communication between the app and the extension.
+Due to policy updates in macOS 27, AdGuard may be unable to communicate with its Browser Assistant, which could cause extension-based filtering features to stop working. To establish this connection, AdGuard must place a Native Messaging host manifest within the browser’s application data folder. Previously, AdGuard did this automatically in the background. However, macOS 27 restricts cross-app folder access by default and requires explicit permission. As a result, AdGuard can no longer place the manifest file automatically, which disrupts communication between the app and the extension.
 
 ## Recommended solutions
 
@@ -18,9 +18,9 @@ Since this issue can affect any Chromium-based browser, this section covers how 
 ### Step 1: Grant access via Files & Folders
 
 1. Open *Files & Folders*
-    - via AdGuard settings: click the gear icon on the app's main window → *Preferences…* → the *Assistant* tab → *Open Files & Folders*
+    - via AdGuard settings: click the gear icon on the app’s main window → *Preferences…* → the *Assistant* tab → *Open Files & Folders*
     ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings.png)
-    - via AdGuard Setup assistant: on the Browser Assistant installation screen, click *Open Files & Folders* — this button appears if AdGuard doesn't have access to the browser's folder
+    - via AdGuard Setup assistant: on the Browser Assistant installation screen, click *Open Files & Folders* — this button appears if AdGuard doesn’t have access to the browser’s folder
     ![AdGuard Setup assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant.png)
     - via *System Settings* → *Privacy & Security*
     ![System Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/system-settings-new.png)
