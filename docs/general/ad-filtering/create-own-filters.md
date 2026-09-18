@@ -4626,6 +4626,12 @@ or
 - `text` — the raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
 - An argument in the `/regexp/flags` form is treated as a regular expression.
 
+:::info Compatibility
+
+Arguments with unbalanced parentheses are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs] v1.13 or later, and by AdGuard Browser Extension for Firefox starting from v5.6.
+
+:::
+
 :::note Compatibility
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
