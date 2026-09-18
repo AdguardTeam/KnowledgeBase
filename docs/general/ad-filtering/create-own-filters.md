@@ -4494,12 +4494,19 @@ The recommended way to filter elements by their content is using the `:contains(
 
 **Examples:**
 
-```example.com$$script:contains(Adverts)
-example.com$$div:contains("Sponsored by")
+```adblock
+example.com$$script:contains(Adverts)
+example.com$$div:contains(Sponsored by)
 example.com$$script:contains(/ad_system_\d+/)
 ```
 
 The first rule removes any `<script>` tag containing the word `Adverts`. The second targets any `<div>` containing the phrase `Sponsored by`. The third rule utilizes a regular expression to match dynamic script patterns.
+
+:::note
+
+The argument of `:contains()` is the raw text between the parentheses, taken as-is: quotes (of any kind), if present, are literal characters of the text to match, not delimiters. For example, `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The argument may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)`.
+
+:::
 
 :::caution Deprecation notice
 
@@ -4607,7 +4614,7 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 ##### Syntax
 
 ```text
-:contains(unquoted text)
+:contains(text)
 ```
 
 or
@@ -4615,6 +4622,9 @@ or
 ```text
 :contains(/reg(ular )?ex(pression)?/)
 ```
+
+- `text` — the raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
+- An argument in the `/regexp/flags` form is treated as a regular expression.
 
 :::note Compatibility
 
