@@ -29,19 +29,20 @@ Since this issue can affect any Chromium-based browser, this section covers how 
 
 :::note
 
-A toggle for a specific browser will only appear in this list if the browser is already installed. If your browser is not listed, proceed to Step 2.
+A toggle for a specific browser will only appear in this list if the browser is already installed. If your browser or Google Chrome is not listed, proceed to Step 2.
 
 :::
 
 ### Step 2: If the browser isn't listed
 
-Some browsers rely on the Native Messaging folder that belongs to Google Chrome instead of using a folder of their own. If Chrome is not installed, AdGuard has no way to create this folder. There are two ways to resolve this — either one works.
-
 **Option A: Install Google Chrome**
 
-1. Install Google Chrome, even if it will not be used as the primary browser
-1. Once Chrome is installed, the required Native Messaging folder becomes available on the system
-1. Repeat the process from Step 1 — the toggle for the affected browser (for example, Opera) should now appear under *Files & Folders*
+Some browsers, like Opera, rely on the Native Messaging folder that belongs to Google Chrome instead of using a folder of their own. On earlier macOS versions, AdGuard could simply create this folder itself. Starting with macOS 27, however, macOS does not allow AdGuard to request access to Chrome's folder unless Chrome is actually installed. Installing Chrome allows AdGuard to request the required permission.
+
+1. Install Google Chrome and open it at least once — the required Native Messaging folder will become available on the system
+1. Open *Files & Folders* (via AdGuard settings, AdGuard Setup assistant or System Settings as described in Step 1)
+1. Find *AdGuard* in the list and click it to expand the dropdown
+1. Locate Google Chrome and turn on the toggle next to it. As a result, Browser Assistant will start working in the browser that relies on Chrome's folder (such as Opera).
 
 **Option B: Grant Full Disk Access**
 
