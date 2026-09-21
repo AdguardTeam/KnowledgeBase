@@ -22,7 +22,7 @@ Since this issue can affect any Chromium-based browser, this section covers how 
     ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings.png)
     - via AdGuard Setup assistant: on the Browser Assistant installation screen, click *Open Files & Folders* — this button appears if AdGuard doesn’t have access to the browser’s folder
     ![AdGuard Setup assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant.png)
-    - via *System Settings* → *Privacy & Security*
+    - via *System Settings* → *Privacy & Security* → *Files & Folders*
     ![System Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/system-settings-new.png)
 1. Find *AdGuard* in the list and click it to expand the dropdown
 1. Locate the browser (for example, Chrome or Brave) and turn on the toggle next to it
