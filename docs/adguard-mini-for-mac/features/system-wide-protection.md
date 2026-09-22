@@ -8,7 +8,7 @@ The feature is available for users with an AdGuard license. You can [purchase th
 
 ## How it works
 
-*System-wide protection* is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a new system filtering API introduced in macOS 26. Here’s how it works.
+*System-wide protection* is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a system filtering API used for system-wide traffic filtering. Here’s how it works.
 
 First, macOS checks an URL against a bloom filter — a prefilter stored on your Mac that updates in the background. Most addresses are cleared locally, with no network request for the check itself.
 
@@ -28,7 +28,7 @@ When you first enable *System-wide protection*, you’ll get a request to instal
 
 After you download the URL filter, *System-wide protection* will remain on by default. If you want it off, toggle off the *System-wide protection* switch in *Advanced protection*.
 
-You can also disable the URL filter in your Mac’s *System Settings* → *Network* → *VPN & Filters* → *Filters & Proxies*. Change *Enabled* to *Disabled* in the *Status menu*.  AdGuard Mini will then switch off *System-wide protection* automatically.
+You can also disable the URL filter in your Mac’s *System Settings* → *Network* → *VPN & Filters* → *Filters & Proxies*. Change *Enabled* to *Disabled* in the *Status menu*. AdGuard Mini will then switch off *System-wide protection* automatically.
 
 ## Protection levels
 
