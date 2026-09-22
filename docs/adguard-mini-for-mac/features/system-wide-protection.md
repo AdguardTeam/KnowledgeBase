@@ -2,7 +2,7 @@
 title: System-wide protection
 sidebar_position: 9
 ---
-Starting with version 3.0, AdGuard Mini for Mac introduces *System-wide protection*, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac. 
+Starting with version 3.0, AdGuard Mini for Mac introduces *System-wide protection*, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
 
 The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/en/license.html) or click *Try for free* in *Advanced protection* to start a 14-day free trial.
 
@@ -18,7 +18,7 @@ You can read [a detailed analysis of Apple’s approach to system-wide filtering
 
 ## How to turn on System-wide protection
 
-You’ll find *System-wide protection* under *Advanced protection* in the AdGuard Mini app. To enable it, toggle the switch on. 
+You’ll find *System-wide protection* under *Advanced protection* in the AdGuard Mini app. To enable it, toggle the switch on.
 
 ![System-wide protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/system-wide-protection.png)
 
@@ -64,24 +64,27 @@ This isn’t a typical macOS operation: freeing up a UID means deleting an accou
 
 :::
 
-1. **Check your current UID.** Open Terminal, type id -u, and press Return. If the result is 501, your account already has the right UID. You don’t need to do anything else.
+1. **Check your current UID.** Open Terminal, type `id -u`, and press Return. If the result is 501, your account already has the right UID. You don’t need to do anything else.
 
 2. **Find out who has UID 501.** If your UID is not 501, run this command:
-```
-dscacheutil -q user -a uid 501 | grep -E '^(name|uid|gecos):'
-```
-This shows the username, UID, and full name of that account. Make sure you don’t need any files from it, or back them up before continuing.
+
+    ```bash
+    dscacheutil -q user -a uid 501 | grep -E '^(name|uid|gecos):'
+    ```
+
+    This shows the username, UID, and full name of that account. Make sure you don’t need any files from it, or back them up before continuing.
 
 3. **Delete the account with UID 501.** While logged in to your own admin account, open *System Settings* → *Users & Groups*, select the account from step 2, and delete it. When macOS asks what to do with its home folder, choose *Save the home folder in a disk image* — this keeps the account’s files in case you need them later.
-
 4. **Create a new account with UID 501.** Run the following command, replacing `username` and `Name Surname` with the details you want:
-```
-sudo sysadminctl -addUser username
--fullName "Name Surname" 
--password - 
--admin 
--UID 501
-```
-`-password -` makes Terminal prompt you for the password interactively; `-admin` gives the new account administrator rights. 
 
-5. **Verify the change.** Log in to the new account, then check the UID again: open Terminal, type `id -u`, and press Return. The result should now be 501. 
+    ```bash
+    sudo sysadminctl -addUser username \
+      -fullName "Name Surname" \
+      -password - \
+      -admin \
+      -UID 501
+    ```
+
+    `-password -` makes Terminal prompt you for the password interactively; `-admin` gives the new account administrator rights.
+
+5. **Verify the change.** Log in to the new account, then check the UID again: open Terminal, type `id -u`, and press Return. The result should now be 501.
