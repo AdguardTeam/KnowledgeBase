@@ -42,16 +42,16 @@ There are three levels of protection you can choose from. *Essential* is selecte
 
 ## Troubleshooting
 
-### System-wide protection doesn’t work with every app or browser. Why?
+### System-wide protection doesn’t work with every app or browser
 
 Coverage depends on how each app handles network requests, so some apps may not be filtered. This is a limitation on Apple’s side.
 
 Chromium-based browsers, such as Chrome, Edge, Opera, and Brave, use their own networking code instead of Apple’s frameworks, so the URL filter can’t check their requests.
 
-### System-wide protection won’t turn on. Why?
+### System-wide protection doesn’t turn on
 
 - **Your Mac runs an older version of macOS.** Apple’s URL filter needs macOS 26 Tahoe or later. On earlier versions, the setting is disabled and the app asks you to *Update to macOS Tahoe 26 or later*.
-- **Your account isn’t supported.** *System-wide protection* only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows *Not supported on this Mac account*. See *Can I change my Mac account’s user ID?* below.
+- **Your account isn’t supported.** *System-wide protection* only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows *Not supported on this Mac account*. See [Can I change my Mac account’s user ID?](/adguard-mini-for-mac/features/system-wide-protection) below.
 - **You’re on the free version.** To use *System-wide protection*, [purchase an AdGuard license](https://adguard.com/en/license.html) or click *Try for free* in *Advanced protection* to start a 14-day free trial.
 
 ### Can I change my Mac account’s user ID?
