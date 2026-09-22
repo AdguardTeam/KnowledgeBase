@@ -1,6 +1,6 @@
 ---
 title: How to export logs from the background page
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exporting logs from the background page in the extension
