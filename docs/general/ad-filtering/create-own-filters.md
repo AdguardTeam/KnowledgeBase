@@ -734,7 +734,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 :::caution Limitations
 
 1. The `$popup` modifier works best in AdGuard Browser Extension for Chromium-based browsers and Firefox.
-1. In [AdGuard for Chromium MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work,
+1. In [AdGuard for Chromium MV3][ext-mv3], rules with the [`$popup`][popup-in-mv3] modifier would not work,
   so we disable converting them to declarative rules.
   We will try to use them only in our [TSUrlFilter] engine and close new tabs programmatically.
 1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
@@ -1501,7 +1501,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 :::caution Limitations
 
-In [AdGuard for Chromium MV3][ext-mv3] a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
+In [AdGuard for Chromium MV3][ext-mv3], a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -1567,7 +1567,7 @@ Here's how it works:
 
 :::caution Limitations
 
-In [AdGuard for Chromium MV3][ext-mv3] we delete cookies in 2 ways: from `content-script` side (to which we have access)
+In [AdGuard for Chromium MV3][ext-mv3], we delete cookies in 2 ways: from `content-script` side (to which we have access)
 and from `onBeforeSendHeaders` listener. Since `onBeforeSendHeaders` and other listeners are no longer blocking,
 we are not able to delete them in all cases.
 You can check if a rule works with [this test](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
@@ -2389,7 +2389,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 
 :::caution Limitations
 
-In [AdGuard for Chromium MV3][ext-mv3] allowlist rules with `$redirect` are not supported.
+In [AdGuard for Chromium MV3][ext-mv3], allowlist rules with `$redirect` are not supported.
 
 :::
 
