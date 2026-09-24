@@ -1,28 +1,28 @@
 ---
-title: Contribute to AdGuard filters
+title: Bidrag til AdGuard-filtre
 sidebar_position: 4
 ---
 
-### Filtering rules {#filtering-rules}
+### Filtreringsregler {#filtering-rules}
 
-As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](/general/ad-filtering/how-ad-blocking-works).
+Som det sikkert er kendt, bruger AdGuard filtreringsregler til at adblocking, og disse regler er kombineret som tematiske [blokeringsfiltre](/general/ad-filtering/adguard-filters), såsom AdGuard Base-filter, Mobilannoncefilter mv. [Læs mere om, hvordan adblocking fungerer](/general/ad-filtering/how-ad-blocking-works).
 
-Websites constantly change the way they embed ads, and we add new rules to our filters to keep them effective. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
+Websteder ændrer konstant den måde, de indlejrer annoncer på, og vi føjer nye regler til vores filtre for at holde dem effektive. Filteringeniører arbejder på at skabe nye regler, men vi glæder os altid over hjælp og støtte fra frivillige.
 
 :::note
 
-All contributors must follow the **AdGuard filter policy** when creating rules. By participating, you agree to comply with the Policy and ensure your rules adhere to its requirements. Also contributors must not create rules intended to deliberately block websites or services that do not meet the criteria for blocking or that fall under exceptions described in the Policy.
+Alle bidragsydere skal følge **AdGuard-filterpolitikken**, nå regler oprettes. Ved at deltage accepterer du at overholde politikken og sikre, at de aktuelle regler overholder dens krav. Bidragsydere må endvidere ikke oprette regler, som har til hensigt bevidst at blokere websteder eller tjenester, som ikke opfylder kriterierne for blokering, eller som falder ind under de i politikken beskrevne undtagelser.
 
 :::
 
-### How to start {#how-to-start}
+### Sådan kommer man i gang {#how-to-start}
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. Before you start contributing, we recommend reviewing the [guidelines](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
+At arbejde med blokeringsfiltre kræver dog særlige færdigheder. Har man dem, og ved hvordan regler oprettes, gå da direkte til vores [AdGuard Filters-repo](https://github.com/AdguardTeam/AdguardFilters) på GitHub. Før man begynder at bidrage, anbefaler vi en gennemgang af [retningslinjerne](https://github.com/AdguardTeam/AdguardFilters/blob/master/CONTRIBUTING.md).
 
-In the repository, you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
+I repo'et findes mange åbne problematikker, hvor hver især refererer til en webstedsproblematik — en oversprunget annonce, en falsk positiv mv. Vælg en hvilken som helst og foreslå egne regler i kommentarerne. AdGuard-filterteknikere vil gennemgå disse forslag, og finder de dem passende, føjes de til AdGuard-filtre.
 
-If you are not yet familiar with our filtering rule syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge Base](/general/ad-filtering/create-own-filters).
+Er man endnu ikke er bekendt med vores filtreringsregelsyntaks eller har måske behov for en genopfriskning, findes syntaksbasisinformationen [i vores Vidensbase](/general/ad-filtering/create-own-filters).
 
-### Rewards {#rewards}
+### Belønninger {#rewards}
 
-If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.
+Har man foreslået flere filtreringsregler, hvoraf nogle er blevet godkendt, så er det tid til at modtage en belønning. Send os en e-mail via [st@adguard.com](mailto:st@adguard.com) med GitHub-kontonavnet, og vi kvitterer med en gratis AdGuard-licensnøgle. Der er ingen faste regler for det nøjagtige antal regler, som skal godkendes for at være berettiget. Denne opgave er ikke let, så alt over for 5 burde være nok.

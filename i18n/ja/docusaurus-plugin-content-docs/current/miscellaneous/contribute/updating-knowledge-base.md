@@ -11,7 +11,7 @@ The goal of AdGuard Ad Blocker Knowledge Base is to provide everyone with the mo
 
 You can suggest changes to current articles and add new ones to our Knowledge Base using the functionality of GitHub mentioned above. GitHubプラットフォームでの作業方法をあまりわからない場合は、[こちらのGitHubの使い方に関するドキュメント](https://docs.github.com/ja)を確認することから始めてください。
 
-準備ができましたら、[KnowledgeBaseリポジトリ](https://github.com/AdguardTeam/KnowledgeBase)で作業してください。 All texts in our Knowledge Base are written in `Markdown` markup language. 記事の編集や執筆の際には、このことを念頭に置いてください。 [こちら](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)で、Markdownの構文について詳しく知ることができます。
+準備ができましたら、[KnowledgeBaseリポジトリ](https://github.com/AdguardTeam/KnowledgeBase)で作業してください。 All texts in our Knowledge Base are written in `Markdown` markup language. 記事の編集や執筆の際には、このことを念頭に置いてください。[こちら](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)で、Markdownの構文について詳しく知ることができます。
 
 The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. 変更または追加を提案する場合、すべてのテキストがのDocusaurus 2に準拠している必要があります。 Docusaurus 2の原則は、 [このリンク先のDocusaurusガイド](https://docusaurus.io/docs/category/guides)で確認することができます。
 

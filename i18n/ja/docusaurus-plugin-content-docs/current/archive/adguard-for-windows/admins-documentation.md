@@ -15,7 +15,7 @@ Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
 
-The only supported policy is `LicenseKey`. このポリシーが設定されている場合、AdGuardは、ユーザーがインターフェイスに入力できる内容よりも、このポリシーを優先します。 このライセンスキーは、ライセンスステータスの確認に使用されます。
+The only supported policy is `LicenseKey`. このポリシーが設定されている場合、AdGuardは、ユーザーがインターフェイスに入力できる内容よりも、このポリシーを優先します。このライセンスキーは、ライセンスステータスの確認に使用されます。
 
 ## 3. Make sure that AdGuard servers are available {#servers-available}
 
@@ -41,7 +41,7 @@ AdGuard を Windows 7 搭載コンピュータにインストールする場合�
 
 :::note
 
-AdGuard for Windows を MSI ファイルからインストールした場合、AdGuard は自動的に更新されません。 手動アップデートを許可するには：
+AdGuard for Windows を MSI ファイルからインストールした場合、AdGuard は自動的に更新されません。手動アップデートを許可するには：
 
 - In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
@@ -53,4 +53,4 @@ AdGuard for Windows を MSI ファイルからインストールした場合、A
 
 ## 5. Test your installation {#installation-test}
 
-ターゲットマシンでAdGuardを起動します。 指定したライセンスが使用されていることを確認するために、ライセンス画面を開いてください。 AdGuardにライセンスキーを検証させるには、「ステータスを更新」をクリックする必要があるかもしれません。
+ターゲットマシンでAdGuardを起動します。指定したライセンスが使用されていることを確認するために、ライセンス画面を開いてください。 AdGuardにライセンスキーを検証させるには、「ステータスを更新」をクリックする必要があるかもしれません。

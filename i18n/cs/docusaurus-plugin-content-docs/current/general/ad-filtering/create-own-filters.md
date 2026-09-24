@@ -386,7 +386,7 @@ Následující modifikátory jsou nejjednodušší a nejčastěji používané. 
 
 <!-- Please keep them sorted -->
 
-| Modifikátor \ Produkty                             |     [Aplikace CoreLibs][cl-apps]      |    [AdGuard pro Chromium][ext-chr]     |   [AdGuard pro Chrome MV3][ext-mv3]    |     [AdGuard pro Firefox][ext-ff]      |       [AdGuard pro iOS][ios-app]       |    [AdGuard Mini pro Mac][ext-saf]     | [Blokátor obsahu AdGuard][and-cb] |
+| Modifikátor \ Produkty                             |     [Aplikace CoreLibs][cl-apps]      |    [AdGuard pro Chromium][ext-chr]     |  [AdGuard for Chromium MV3][ext-mv3]   |     [AdGuard pro Firefox][ext-ff]      |       [AdGuard pro iOS][ios-app]       |    [AdGuard Mini pro Mac][ext-saf]     | [Blokátor obsahu AdGuard][and-cb] |
 | --------------------------------------------------- |:-------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:---------------------------------:|
 | [$app](#app-modifier)                               |                   ✅                   |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                   ❌                    |                 ❌                 |
 | [$denyallow](#denyallow-modifier)                   |                   ✅                   |                   ✅                    |                   ✅                    |                   ✅                    |                   ❌                    |                   ✅                    |                 ❌                 |
@@ -579,7 +579,7 @@ V následujících příkladech se předpokládá, že požadavky jsou odesílá
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] nejsou podporovány domény s `regexp` a `any_tld_domain` a modifikátory `$removeparam`.
+In [AdGuard for Chromium MV3][ext-mv3], `regexp` and `any_tld_domain` entries and the `$removeparam` modifier are not supported.
 
 AdGuard pro iOS a AdGuard pro Safari podporují modifikátor `$domain`, ale má některá omezení. Pro více informací navštivte [sekci SafariConverterLib](#safari-converter--basic--supported-with-limitations).
 
@@ -716,7 +716,7 @@ AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpo
 :::caution Omezení
 
 1. Modifikátor `$popup` funguje nejlépe v rozšíření prohlížeče AdGuard pro prohlížeče založené na Chromiu a Firefox.
-1. In [AdGuard for Chrome MV3][ext-mv3] rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. Pokusíme se je použít pouze v našem enginu [TSUrlFilter][] a zavírat nové karty programově.
+1. In [AdGuard for Chromium MV3][ext-mv3], rules with the [`$popup`][popup-in-mv3] modifier would not work, so we disable converting them to declarative rules. Pokusíme se je použít pouze v našem enginu [TSUrlFilter][] a zavírat nové karty programově.
 1. V AdGuardu pro Safari a AdGuardu pro iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
 1. V AdGuardu pro Windows, Mac, Android a Linux nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze jej kombinovat s dalšími modifikátory typu požadavku, například `$third-party`, `$strict-third-party`, `$strict-first-party` a `$important`.
 
@@ -851,22 +851,22 @@ V tom, jak AdGuard určuje typ obsahu na různých platformách, existuje velký
 
 <!-- Please keep them sorted -->
 
-| Modifikátor \ Produkty                                       |        [Aplikace CoreLibs][cl-apps]         | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Chrome MV3][ext-mv3] | [AdGuard pro Firefox][ext-ff] |        [AdGuard pro iOS][ios-app]         |       [AdGuard pro Safari][ext-saf]       | [Blokátor obsahu AdGuard][and-cb] |
-| ------------------------------------------------------------- |:-------------------------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:-----------------------------------------:|:-----------------------------------------:|:---------------------------------:|
-| [$document](#document-modifier)                               |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
-| [$font](#font-modifier)                                       |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$image](#image-modifier)                                     |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$media](#media-modifier)                                     |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$object](#object-modifier)                                   |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
-| [$other](#other-modifier)                                     |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
-| [$ping](#ping-modifier)                                       |    ✅ [*[1]](#ping-modifier-limitations)     |                ✅                |                 ✅                 |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
-| [$script](#script-modifier)                                   |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$stylesheet](#stylesheet-modifier)                           |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$subdocument](#subdocument-modifier)                         | ✅ [*[2]](#subdocument-modifier-limitations) |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
-| [$websocket](#websocket-modifier)                             |                      ✅                      |                ✅                |                 ✅                 |               ✅               | ✅ [*[3]](#websocket-modifier-limitations) | ✅ [*[3]](#websocket-modifier-limitations) |                 ❌                 |
-| [$xmlhttprequest](#xmlhttprequest-modifier)                   |                      ✅                      |                ✅                |                 ✅                 |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
-| [$webrtc 🚫](#webrtc-modifier "removed")                       |                      ❌                      |                ❌                |                 ❌                 |               ❌               |                     ❌                     |                     ❌                     |                 ❌                 |
-| [$object-subrequest 🚫](#object-subrequest-modifier "removed") |                      ❌                      |                ❌                |                 ❌                 |               ❌               |                     ❌                     |                     ❌                     |                 ❌                 |
+| Modifikátor \ Produkty                                       |        [Aplikace CoreLibs][cl-apps]         | [AdGuard pro Chromium][ext-chr] | [AdGuard for Chromium MV3][ext-mv3] | [AdGuard pro Firefox][ext-ff] |        [AdGuard pro iOS][ios-app]         |       [AdGuard pro Safari][ext-saf]       | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------------------------------- |:-------------------------------------------:|:-------------------------------:|:-----------------------------------:|:-----------------------------:|:-----------------------------------------:|:-----------------------------------------:|:---------------------------------:|
+| [$document](#document-modifier)                               |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
+| [$font](#font-modifier)                                       |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$image](#image-modifier)                                     |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$media](#media-modifier)                                     |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$object](#object-modifier)                                   |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
+| [$other](#other-modifier)                                     |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
+| [$ping](#ping-modifier)                                       |    ✅ [*[1]](#ping-modifier-limitations)     |                ✅                |                  ✅                  |               ✅               |                     ❌                     |                     ❌                     |                 ✅                 |
+| [$script](#script-modifier)                                   |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$stylesheet](#stylesheet-modifier)                           |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$subdocument](#subdocument-modifier)                         | ✅ [*[2]](#subdocument-modifier-limitations) |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ❌                 |
+| [$websocket](#websocket-modifier)                             |                      ✅                      |                ✅                |                  ✅                  |               ✅               | ✅ [*[3]](#websocket-modifier-limitations) | ✅ [*[3]](#websocket-modifier-limitations) |                 ❌                 |
+| [$xmlhttprequest](#xmlhttprequest-modifier)                   |                      ✅                      |                ✅                |                  ✅                  |               ✅               |                     ✅                     |                     ✅                     |                 ✅                 |
+| [$webrtc 🚫](#webrtc-modifier "removed")                       |                      ❌                      |                ❌                |                  ❌                  |               ❌               |                     ❌                     |                     ❌                     |                 ❌                 |
+| [$object-subrequest 🚫](#object-subrequest-modifier "removed") |                      ❌                      |                ❌                |                  ❌                  |               ❌               |                     ❌                     |                     ❌                     |                 ❌                 |
 
 :::note
 
@@ -1056,7 +1056,7 @@ Doporučujeme také seznámit se s [přehledem filtrů Adblock Plus](https://adb
 
 <!-- Please keep them sorted -->
 
-| Modifikátor \ Produkty                 | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] |    [AdGuard pro Chrome MV3][ext-mv3]     | [AdGuard pro Firefox][ext-ff] |          [AdGuard pro iOS][ios-app]          |        [AdGuard pro Safari][ext-saf]         | [Blokátor obsahu AdGuard][and-cb] |
+| Modifikátor \ Produkty                 | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] |   [AdGuard for Chromium MV3][ext-mv3]    | [AdGuard pro Firefox][ext-ff] |          [AdGuard pro iOS][ios-app]          |        [AdGuard pro Safari][ext-saf]         | [Blokátor obsahu AdGuard][and-cb] |
 | --------------------------------------- |:----------------------------:|:-------------------------------:|:----------------------------------------:|:-----------------------------:|:--------------------------------------------:|:--------------------------------------------:|:---------------------------------:|
 | [$content](#content-modifier)           |              ✅               |                ❌                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
 | [$elemhide](#elemhide-modifier)         |              ✅               |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
@@ -1174,13 +1174,13 @@ Zakazuje přidávání JavaScript kódu na stránku. O pravidlech skripletů a j
 
 :::info Omezení
 
-Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chrome MV3][ext-mv3]. Používáme je pouze v enginu [TSUrlFilter][], abychom zakázali některá kosmetická pravidla.
+Rules with the [`$jsinject`][jsinject-in-mv3] modifier cannot be converted to DNR in [AdGuard for Chromium MV3][ext-mv3]. Používáme je pouze v enginu [TSUrlFilter][], abychom zakázali některá kosmetická pravidla.
 
 :::
 
 :::info Kompatibilita
 
-The `$jsinject` modifier is not supported by AdGuard for Chrome MV3 ([yet][jsinject-in-mv3]) and AdGuard Content Blocker.
+The `$jsinject` modifier is not supported by AdGuard for Chromium MV3 ([yet][jsinject-in-mv3]) and AdGuard Content Blocker.
 
 :::
 
@@ -1237,7 +1237,7 @@ Blokování cookies a odstranění sledovacích parametrů se provádí pomocí 
 
 :::info Kompatibilita
 
-- Ochrana před sledováním (dříve Režim utajení) je k dispozici v AdGuardu pro Windows, AdGuardu pro macOS, AdGuardu pro Android a Rozšíření prohlížeče AdGuard pro Firefox a prohlížeče založené na Chromium, kromě AdGuardu pro Chrome Manifest MV3. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
+- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chromium MV3. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
 - Pravidla s modifikátorem `$stealth` jsou podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.10 nebo novějším a Rozšířením prohlížeče AdGuard s [TSUrlFilter][] v3.0.0 nebo novějším.
 - V rozšíření prohlížeče AdGuard se příkaz *Block WebRTC* používá globálně a nelze jej ovládat pro jednotlivé stránky. Pravidla výjimek jako `$stealth=webrtc` nemají žádný účinek.
 
@@ -1261,7 +1261,7 @@ V AdGuardu pro iOS a AdGuardu pro Safari fungují pravidla `$urlblock` jako [$do
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$urlblock` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro Chrome MV3.
+Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker, and AdGuard for Chromium MV3.
 
 :::
 
@@ -1306,7 +1306,7 @@ V AdGuardu pro iOS a AdGuardu pro Safari fungují pravidla `$genericblock` jako 
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$genericblock` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro Chrome MV3.
+Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker, and AdGuard for Chromium MV3.
 
 :::
 
@@ -1356,7 +1356,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 
 <!-- Please keep them sorted -->
 
-| Modifikátor \ Produkty                     |        [Aplikace CoreLibs][cl-apps]         |       [AdGuard pro Chromium][ext-chr]        |      [AdGuard pro Chrome MV3][ext-mv3]       |        [AdGuard pro Firefox][ext-ff]         | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| Modifikátor \ Produkty                     |        [Aplikace CoreLibs][cl-apps]         |       [AdGuard pro Chromium][ext-chr]        |     [AdGuard for Chromium MV3][ext-mv3]      |        [AdGuard pro Firefox][ext-ff]         | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
 | ------------------------------------------- |:-------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [$all](#all-modifier)                       |                      ✅                      |                      ✅                       |     ✅ [*[1]](#all-modifier-limitations)      |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
 | [$badfilter](#badfilter-modifier)           |                      ✅                      |                      ✅                       |  ✅ [*[2]](#badfilter-modifier-limitations)   |                      ✅                       |             ✅              |               ✅               |                 ❌                 |
@@ -1408,7 +1408,7 @@ Tento modifikátor nelze použít jako výjimku se znakem `@@`.
 
 :::caution Omezení
 
-Vzhledem k tomu, že modifikátor `$popup` je součástí `$all`, modifikátor `$all` není podporován AdGuardem pro Chrome MV3 kcůli [`$popup` omezením modifikátoru](#popup-modifier-limitations).
+Since `$popup` is a part if `$all`, the `$all` modifier is not supported by AdGuard for Chromium MV3 because of [`$popup` modifier limitations](#popup-modifier-limitations).
 
 :::
 
@@ -1449,7 +1449,7 @@ V takovém případě pravidlo `$badfilter` zakáže odpovídající pravidlo pr
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] se pravidlo s modifikátorem `$badfilter` použije v DNR pouze v případě, že úplně zruší zdrojové pravidlo. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Examples][badfilter-in-mv3].
+In [AdGuard for Chromium MV3][ext-mv3], a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Examples][badfilter-in-mv3].
 
 :::
 
@@ -1512,7 +1512,7 @@ Existují dva způsoby, jak deaktivovat pravidla `$cookie`: primární metoda za
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] odstraňujeme soubory cookies 2 způsoby: ze strany `content-script` (ke které máme přístup) a z `onBeforeSendHeaders` posluchače. Vzhledem k tomu, že `onBeforeSendHeaders` a další posluchači již nejsou blokováni, je nemůžeme ve všech případech smazat. Pomocí [tohoto testu](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules) můžete zkontrolovat, zda pravidlo funguje.
+In [AdGuard for Chromium MV3][ext-mv3], we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Vzhledem k tomu, že `onBeforeSendHeaders` a další posluchači již nejsou blokováni, je nemůžeme ve všech případech smazat. Pomocí [tohoto testu](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules) můžete zkontrolovat, zda pravidlo funguje.
 
 :::
 
@@ -2321,7 +2321,7 @@ Další podrobnosti najdete v [prioritách pravidel](#rule-priorities).
 
 :::caution Omezení
 
-V [AdGuardu pro Chrome MV3][ext-mv3] nejsou podporována pravidla `$redirect`.
+In [AdGuard for Chromium MV3][ext-mv3], allowlist rules with `$redirect` are not supported.
 
 :::
 
@@ -2351,7 +2351,7 @@ V tomto případě budou pouze požadavky na `example.org/script.js` "přesměro
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$redirect-rule` nejsou podporována [Blokátorem obsahu AdGuard][and-cb], [AdGuardem pro iOS][ios-app], [AdGuardem pro Safari][ext-saf] a [AdGuardem pro Chrome MV3][ext-mv3]. [Diskuse o přidání podpory pro pravidla `$redirect-rule` v rozšířeních Chrome MV3](https://github.com/w3c/webextensions/issues/493) je aktuálně otevřená.
+Rules with `$redirect-rule` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], [AdGuard for Safari][ext-saf], and [AdGuard for Chromium MV3][ext-mv3]. [The discussion about adding support for `$redirect-rule` rules in MV3 extensions](https://github.com/w3c/webextensions/issues/493) is currently open.
 
 :::
 
@@ -2423,7 +2423,7 @@ V případě, že jednomu požadavku odpovídá více pravidel `$removeheader`, 
 
 :::caution Omezení
 
-[AdGuard pro Chrome MV3][ext-mv3] má některá omezení:
+[AdGuard for Chromium MV3][ext-mv3] has some limitations:
 
 - Pravidla negace a seznamu povolených nejsou podporována.
 - Skupina podobných `$removeheader` pravidel bude sloučena do jednoho dekorativního pravidla. Např:
@@ -2668,7 +2668,7 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 
 :::caution Omezení
 
-[AdGuard pro Chrome MV3][ext-mv3] má některá omezení:
+[AdGuard for Chromium MV3][ext-mv3] has some limitations:
 
 - Regulární výrazy, negace a pravidla seznamu povolených nejsou podporovány.
 - Každé pravidlo `$removeparam` s pojmenovaným parametrem má své vlastní deklarativní pravidlo s parametrem `urlFilter` (například `^utm_source=`). Chrome DNR provede přesměrování pouze jednou za relaci, takže bez této funkce by se uplatnilo pouze pravidlo s nejvyšší prioritou a ostatní by byla přeskočena. Param-aware `urlFilter` způsobí, že se každé pravidlo spustí pouze v případě, že je přítomen jeho cílový parametr a vytvoří řetězec přesměrování — na každý skok je odstraněn jeden parametr — dokud nejsou všechny odstraněny. Chrome umožňuje až 20 přesměrování na jednu navigaci, což je dost pro reálné sledovací URL. Tyto skoky nejsou pro uživatele viditelné. Příklad:
@@ -3013,7 +3013,7 @@ Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Ad
 
 `$urltransform` rules with [content-type modifiers](#content-type-modifiers) are supported starting from [CoreLibs][] v1.19 or later. In earlier versions, content-type modifiers were not allowed with `$urltransform`.
 
-Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chrome MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
+Rules with the `$urltransform` modifier and [content-type modifiers](#content-type-modifiers) are also supported by [AdGuard Browser Extension][ext-chr] v5.5 or later, and by [AdGuard for Chromium MV3][ext-mv3] v5.5 or later with [limitations](#urltransform-modifier-limitations).
 
 :::
 
@@ -3021,7 +3021,7 @@ Rules with the `$urltransform` modifier and [content-type modifiers](#content-ty
 
 :::caution Omezení
 
-In [AdGuard for Chrome MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
+In [AdGuard for Chromium MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
 
 1. **No decode stages** — pipeline transforms containing `b64` (Base64 decode) or `pct` (percent-decode) stages are not supported and will be discarded.
 2. **No global replacement** — only the **first match** is replaced. The `/g` (global) flag is ignored. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
@@ -3322,14 +3322,14 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 However, basic rules may not be enough to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
-| Kategorie \ Produkty                    | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Chrome MV3][ext-mv3] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
-| ---------------------------------------- |:----------------------------:|:-------------------------------:|:---------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [Skrytí prvků](#cosmetic-elemhide-rules) |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [Pravidla CSS](#cosmetic-css-rules)      |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Rozšířené CSS](#extended-css-selectors) |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [HTML filtrování](#html-filtering-rules) |              ✅               |                ❌                |                 ❌                 |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [JavaScript](#javascript-rules)          |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Scriptlety](#scriptlets)                |              ✅               |                ✅                |                 ✅                 |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| Kategorie \ Produkty                    | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard for Chromium MV3][ext-mv3] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ---------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [Skrytí prvků](#cosmetic-elemhide-rules) |              ✅               |                ✅                |                  ✅                  |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [Pravidla CSS](#cosmetic-css-rules)      |              ✅               |                ✅                |                  ✅                  |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Rozšířené CSS](#extended-css-selectors) |              ✅               |                ✅                |                  ✅                  |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [HTML filtrování](#html-filtering-rules) |              ✅               |                ❌                |                  ❌                  |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [JavaScript](#javascript-rules)          |              ✅               |                ✅                |                  ✅                  |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Scriptlety](#scriptlets)                |              ✅               |                ✅                |                  ✅                  |               ✅               |             ✅              |               ✅               |                 ❌                 |
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
@@ -4712,7 +4712,7 @@ For example, `[$domain=example.com,app=test_app]##selector`.
 
 In the modifiers values, the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
 
-| Modifikátor \ Produkty               | [Aplikace CoreLibs][cl-apps] |        [AdGuard pro Chromium][ext-chr]         |        [AdGuard pro Chrome MV3][ext-mv3]         |         [AdGuard pro Firefox][ext-ff]          | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| Modifikátor \ Produkty               | [Aplikace CoreLibs][cl-apps] |        [AdGuard pro Chromium][ext-chr]         |       [AdGuard for Chromium MV3][ext-mv3]        |         [AdGuard pro Firefox][ext-ff]          | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
 | ------------------------------------- |:----------------------------:|:----------------------------------------------:|:------------------------------------------------:|:----------------------------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [$app](#non-basic-app-modifier)       |              ✅               |                       ❌                        |                        ❌                         |                       ❌                        |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |              ✅               |                       ✅                        | ✅ [*[1]](#non-basic-domain-modifier-limitations) |                       ✅                        |             ✅              |               ✅               |                 ❌                 |
@@ -4771,7 +4771,7 @@ Since the non-basic `$domain` works the same as the basic one, it has the same [
 
 :::info Kompatibilita
 
-Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard Browser Extension for Chrome, Chrome MV3, Firefox, and Edge.
+Such rules with `$domain` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard Browser Extension for Chrome, Chromium MV3, Firefox, and Edge.
 
 :::
 
@@ -4978,10 +4978,12 @@ kde:
         - `adguard_app_ios` — AdGuard for iOS
         - `adguard_ext_safari` — AdGuard for Safari
         - `adguard_ext_chromium` — AdGuard Browser Extension for Chrome (and chromium-based browsers, e.g. new Microsoft Edge)
-        - `adguard_ext_chromium_mv3` — [AdGuard for Chrome MV3][ext-mv3]
+        - `adguard_ext_chromium_mv3` — [AdGuard for Chromium MV3][ext-mv3]
         - `adguard_ext_firefox` — AdGuard Browser Extension for Firefox
         - `adguard_ext_edge` — AdGuard Browser Extension for Edge Legacy
+        - `adguard_ext_edge_mv3` — AdGuard Browser Extension for Edge MV3
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
+        - `adguard_ext_opera_mv3` — AdGuard Browser Extension for Opera MV3
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
         - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
@@ -5165,7 +5167,11 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_edge` — AdGuard Browser Extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
+- `ext_edge_mv3` — AdGuard Browser Extension for Edge MV3 — [https://filters.adtidy.org/extension/edge-mv3/filters/2.txt](https://filters.adtidy.org/extension/edge-mv3/filters/2.txt)
+
 - `ext_opera` — AdGuard Browser Extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+
+- `ext_opera_mv3` — AdGuard Browser Extension for Opera MV3 — [https://filters.adtidy.org/extension/opera-mv3/filters/2.txt](https://filters.adtidy.org/extension/opera-mv3/filters/2.txt)
 
 - `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 
@@ -5317,7 +5323,7 @@ The following scriptlets also may be used for debug purposes:
 
 1. `CoreLibs apps` — [AdGuard for Windows](/adguard-for-windows/), [AdGuard for Mac](/adguard-for-mac/features/main), [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking), and [AdGuard for Linux](/adguard-for-linux)
 1. `AdGuard for Chromium` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Chrome and other Chromium-based browsers such as Microsoft Edge and Opera
-1. `AdGuard for Chrome MV3` — [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version)
+1. `AdGuard for Chromium MV3` — MV3 versions of [AdGuard Browser Extension](/adguard-browser-extension/mv3-version) for Chrome, Microsoft Edge, and Opera
 1. `AdGuard for Firefox` — [AdGuard Browser Extension](/adguard-browser-extension/availability) for Firefox
 1. `AdGuard for iOS` — [AdGuard for iOS](/adguard-for-ios/features/safari-protection) and AdGuard Pro for iOS (for mobile Safari browser)
 1. `AdGuard for Safari` — [AdGuard for desktop Safari browser](/archive/adguard-for-safari/features/general)
@@ -5353,17 +5359,16 @@ Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s 
 [cl-apps]: #what-product "AdGuard pro Windows, Mac, Linux a Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
-[ext-mv3]: #what-product "Rozšíření prohlížeče AdGuard pro Chrome MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
-[ext-mv3]: #what-product "AdGuard Browser Extension for Chrome MV3"
+[ext-mv3]: #what-product "MV3 versions of AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
+[ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ext-saf]: #what-product "AdGuard pro Safari"
 [ext-saf]: #what-product "AdGuard pro Safari"
 [ext-saf]: #what-product "AdGuard for Safari"
+[ext-saf]: #what-product "AdGuard for Safari"
+[and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 

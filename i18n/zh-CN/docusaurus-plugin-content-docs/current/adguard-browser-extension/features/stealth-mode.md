@@ -5,11 +5,11 @@ sidebar_position: 3
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-「跟踪防护」的目的是保护您的敏感个人数据免受在线跟踪器和欺诈者的侵害。 基于 Chromium（支持 MV3）和非 Chromium（支持 MV2）的浏览器在跟踪防护功能上存在细微差异。
+「跟踪防护」的目的是保护您的敏感个人数据免受在线跟踪器和欺诈者的侵害。基于 Chromium（支持 MV3）和非 Chromium（支持 MV2）的浏览器在跟踪防护功能上存在细微差异。
 
 _Tracking protection_ in Chromium-based browsers
 ![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)

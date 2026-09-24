@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## サブスクリプションを解約・停止する方法
 
-サブスクリプションは、AdGuardアカウントでキャンセルすることができます。 その方法以下の通りです:
+サブスクリプションは、AdGuardアカウントでキャンセルすることができます。その方法以下の通りです:
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. メニューで「*ライセンス*」を押します。
@@ -21,7 +21,7 @@ sidebar_position: 5
 
 ## 返金を受ける方法
 
-当社の[販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。 返金をご希望の場合は、AdGuardサポートチーム（ *support@adguard.com* （日本語対応））まで、ご購入の際にご利用になられたお支払い方法を明記の上、返金ご希望であることをご連絡ください。
+当社の[販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。返金をご希望の場合は、AdGuardサポートチーム（ *support@adguard.com* （日本語対応））まで、ご購入の際にご利用になられたお支払い方法を明記の上、返金ご希望であることをご連絡ください。
 
 以下のような場合、返金をお断りすることがありますのでご了承ください:
 

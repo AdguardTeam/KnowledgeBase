@@ -111,7 +111,7 @@ AdGuard for Linuxをご利用いただくには[AdGuardライセンス](https://
 
    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-   構成ファイルへのパスも表示されます。これは直接編集可能で編集すべきです。 すべての追加オプションの説明が含まれています。
+   構成ファイルへのパスも表示されます。これは直接編集可能で編集すべきです。すべての追加オプションの説明が含まれています。
 
    代替として、以下のコマンドを使用できます：
 

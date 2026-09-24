@@ -1,6 +1,6 @@
 ---
 title: Comment exporter les journaux depuis la page d'arrière-plan
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exportation des journaux depuis la page d'arrière-plan dans l'extension

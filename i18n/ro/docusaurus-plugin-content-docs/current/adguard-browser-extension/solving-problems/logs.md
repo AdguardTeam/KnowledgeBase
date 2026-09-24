@@ -1,6 +1,6 @@
 ---
 title: Cum se exportă jurnalele din pagina de fundal
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exportul jurnalelor din pagina de fundal în extensie

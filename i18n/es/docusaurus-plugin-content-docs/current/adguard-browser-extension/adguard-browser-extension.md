@@ -25,9 +25,9 @@ Este artículo trata sobre la extensión de navegador AdGuard, que protege solo 
 
   Compatibilidad de la extensión de navegador AdGuard con las aplicaciones de escritorio de AdGuard
 
-- [Extensión de navegador de AdGuard para Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  Una Extensión de Navegador AdGuard independiente compatible con la API Manifest V3
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [Páginas protegidas por el navegador](/adguard-browser-extension/protected-pages)
 

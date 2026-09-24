@@ -21,7 +21,7 @@ By clicking the _Support_ tab you will open a dialog box through which you can r
 
 ![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
-此标签包含关于许可证的信息。 用户可以查看以下信息：
+此标签包含关于许可证的信息。用户可以查看以下信息：
 
 - 了解许可证类型（Nightly 夜间版，Beta 测试版或发布版），可同时连接到 AdGuard 的设备数量限制，许可证期满日期。
 - 点击相应的按钮以转到许可证购买页，激活许可证，重置或恢复许可证。
@@ -40,7 +40,7 @@ In addition to information about the current version of the program, this tab pr
 
 ### 托盘菜单
 
-为节省用户浏览 AdGuard 菜单的时间，托盘菜单提供许多常用选项和设置。 要调用此菜单，请右击托盘内的 AdGuard 图标。 其提供以下选项：
+为节省用户浏览 AdGuard 菜单的时间，托盘菜单提供许多常用选项和设置。要调用此菜单，请右击托盘内的 AdGuard 图标。其提供以下选项：
 
 - 开启保护
 - 禁用保护：始终或 30 秒

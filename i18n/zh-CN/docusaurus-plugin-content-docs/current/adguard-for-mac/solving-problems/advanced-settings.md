@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -13,7 +13,7 @@ sidebar_position: 9
 
 :::caution
 
-更改「*高级设置*」会引起 AdGuard 出现性能问题，中断因特网连接或危及用户的安全和隐私等问题。 这就是我们建议用户仅在自己知道在做什么或我们的支持团队要求的情况下才打开此设置的原因。
+更改「*高级设置*」会引起 AdGuard 出现性能问题，中断因特网连接或危及用户的安全和隐私等问题。这就是我们建议用户仅在自己知道在做什么或我们的支持团队要求的情况下才打开此设置的原因。
 
 :::
 
@@ -25,19 +25,19 @@ sidebar_position: 9
 
 #### `network.extension.exclude.domains`
 
-在「*网络扩展*」模式下，列出的域名将被排除在过滤之外。 使用逗号或换行符分隔数值。
+在「*网络扩展*」模式下，列出的域名将被排除在过滤之外。使用逗号或换行符分隔数值。
 
 #### `network.extension.exclude.ports`
 
-在「*网络扩展*」模式下，列出的端口将被排除在过滤之外。 使用逗号或换行符分隔数值。
+在「*网络扩展*」模式下，列出的端口将被排除在过滤之外。使用逗号或换行符分隔数值。
 
 #### `network.extension.route.exclude`
 
-在「*网络扩展*」模式下，列出的路由将被排除在过滤之外。 使用 IP 地址或目标 CIDR 设置路由。 用逗号或换行符分隔数值。
+在「*网络扩展*」模式下，列出的路由将被排除在过滤之外。使用 IP 地址或目标 CIDR 设置路由。用逗号或换行符分隔数值。
 
 #### `network.extension.http.downgrade.bundleids`
 
-用户可以指定在「*网络扩展*」过滤模式下 HTTP/2 协议将降级为 HTTP/1.1 的应用程序列表。 捆绑包 ID 应该用逗号或换行符分隔。
+用户可以指定在「*网络扩展*」过滤模式下 HTTP/2 协议将降级为 HTTP/1.1 的应用程序列表。捆绑包 ID 应该用逗号或换行符分隔。
 
 #### `network.extension.monterey.force.split.tunnel`
 
@@ -47,7 +47,7 @@ sidebar_position: 9
 
 #### `network.extension.dns.redirect.exclude.bundleids`
 
-用户可以在此指定不通过系统 DNS 解析器进行 DNS 查询的应用程序列表（例如，VPN 客户端或 DNS 过滤应用程序）。 在「*网络扩展*」模式下，应用程序的 DNS 过滤将被禁用。 捆绑包 ID 应该用逗号或换行符分隔。
+用户可以在此指定不通过系统 DNS 解析器进行 DNS 查询的应用程序列表（例如，VPN 客户端或 DNS 过滤应用程序）。在「*网络扩展*」模式下，应用程序的 DNS 过滤将被禁用。捆绑包 ID 应该用逗号或换行符分隔。
 
 #### `network.dns.filter.secure.request`
 
@@ -67,15 +67,15 @@ Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering 
 
 #### `network.tcp.keepalive.interval.seconds`
 
-发送存活探测前的空闲时间（秒）。 如果指定为 0，系统将使用默认值。
+发送存活探测前的空闲时间（秒）。如果指定为 0，系统将使用默认值。
 
 #### `network.tcp.keepalive.timeout.seconds`
 
-向无响应的对等设备发送另一个存活探测之前的时间（秒）。 如果指定 0，使用系统选择的数值。
+向无响应的对等设备发送另一个存活探测之前的时间（秒）。如果指定 0，使用系统选择的数值。
 
 #### `network.https.ech.enabled`
 
-使用本地 DNS 代理在 ECH 配置列表中查找配置。 如果找到，加密 Client Hellos。
+使用本地 DNS 代理在 ECH 配置列表中查找配置。如果找到，加密 Client Hellos。
 
 #### `network.https.enforce.certificate.transparency`
 
@@ -155,7 +155,7 @@ Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering 
 
 #### `dns.proxy.parallel.upstream.queries.enabled`
 
-同时查询所有上游。 返回第一个响应。
+同时查询所有上游。返回第一个响应。
 
 #### `dns.proxy.servfail.on.upstreams.failure.enabled`
 
@@ -173,7 +173,7 @@ Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering 
 
 如果用户启用防火墙，将阻止 macOS 私有代理域名，这将禁用「*私有代理*」功能。
 
-启用此设置在一些情况下很有用，比如，当 macOS 私有代理被启动时，过滤无法正常工作，必须禁用。 在 macOS 14 及以前的版本中，当启用保护时，AdGuard 将自动禁用私有代理。 但从 macOS 15 开始，如果用户启用防火墙，就不能再这样做了。 启用此设置，即使防火墙已启用，用户也可以禁用私有代理，从而克服先前的限制。
+启用此设置在一些情况下很有用，比如，当 macOS 私有代理被启动时，过滤无法正常工作，必须禁用。在 macOS 14 及以前的版本中，当启用保护时，AdGuard 将自动禁用私有代理。但从 macOS 15 开始，如果用户启用防火墙，就不能再这样做了。启用此设置，即使防火墙已启用，用户也可以禁用私有代理，从而克服先前的限制。
 
 #### `dns.proxy.postquantum.cryptography.enabled`
 
