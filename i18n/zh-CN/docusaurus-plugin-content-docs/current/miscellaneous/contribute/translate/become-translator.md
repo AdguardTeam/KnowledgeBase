@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 
-成功登录后，请前往[我们的网页](https://crowdin.com/profile/adguard/)。 您将会看到几个 AdGuard 项目，每一个都包括不同产品字串的文件。
+成功登录后，请前往[我们的网页](https://crowdin.com/profile/adguard/)。您将会看到几个 AdGuard 项目，每一个都包括不同产品字串的文件。
 
 ![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 

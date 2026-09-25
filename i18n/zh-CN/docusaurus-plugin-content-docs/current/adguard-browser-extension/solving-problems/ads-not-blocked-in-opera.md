@@ -1,6 +1,6 @@
 ---
 title: 在 Opera 浏览器中搜索网站上的广告拦截问题
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 如果 AdGuard 浏览器扩展程序无法在 Opera 浏览器中自动或手动阻止搜索网站上的广告，则表示该扩展程序没有访问搜索页面结果的权限。

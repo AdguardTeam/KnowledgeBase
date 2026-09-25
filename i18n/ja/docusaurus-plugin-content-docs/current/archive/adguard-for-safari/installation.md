@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
@@ -15,7 +15,7 @@ macOS 10.15 (Catalina) が必要です。 Safari のバージョンは 13 以降
 
 ## How to install AdGuard for Safari {#install}
 
-「AdGuard for Safari」はApp Storeにある無料アプリです。 お使いのデバイスにインストールする方法以下の通りです。
+「AdGuard for Safari」はApp Storeにある無料アプリです。お使いのデバイスにインストールする方法以下の通りです。
 
 1. Mac App Store を開き、AdGuard for Safari を検索します。
 
@@ -41,7 +41,7 @@ macOS 10.15 (Catalina) が必要です。 Safari のバージョンは 13 以降
 
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-これらのステップを完了すると、AdGuard for Safari が機能し始めます。 さらなる設定を行うことができるようになります。
+これらのステップを完了すると、AdGuard for Safari が機能し始めます。さらなる設定を行うことができるようになります。
 
 ## How to uninstall AdGuard for Safari {#uninstall}
 
@@ -51,7 +51,7 @@ AdGuard for Safari をアンインストールする手順は以下の通りで�
 
 2. Safari の環境設定を開く（Safari→右上の「Safari」メニューを開く→「環境設定…」）
 
-3. 「拡張機能」タブを選択します。 拡張機能のリストが表示され、AdGuardには8つの拡張機能があります。
+3. 「拡張機能」タブを選択します。拡張機能のリストが表示され、AdGuardには8つの拡張機能があります。
 
 4. AdGuard拡張機能すべてのチェックボックスのチェックを外し、それぞれの「アンインストール」ボタンを押します。
 

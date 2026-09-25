@@ -15,7 +15,7 @@ Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
 
 On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
 
-The only supported policy is `LicenseKey`. 如果设置策略，AdGuard 将优先考虑用户在界面中输入的内容。 许可证密钥将用于检查许可证状态。
+The only supported policy is `LicenseKey`. 如果设置策略，AdGuard 将优先考虑用户在界面中输入的内容。许可证密钥将用于检查许可证状态。
 
 ## 3. Make sure that AdGuard servers are available {#servers-available}
 
@@ -41,7 +41,7 @@ If you need to roll out an update, use this command:
 
 :::note
 
-从 MSI 文件安装的 Windows 版 AdGuard 将无法自动更新。 要允许手动更新，请执行以下操作：
+从 MSI 文件安装的 Windows 版 AdGuard 将无法自动更新。要允许手动更新，请执行以下操作：
 
 - In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
@@ -53,4 +53,4 @@ If you need to roll out an update, use this command:
 
 ## 5. Test your installation {#installation-test}
 
-在目标机器上，启动 AdGuard。 打开许可证屏幕来检查它是否使用指定的许可证。 您可能需要点击「刷新状态」，以便 AdGuard 验证许可证密钥。
+在目标机器上，启动 AdGuard。打开许可证屏幕来检查它是否使用指定的许可证。您可能需要点击「刷新状态」，以便 AdGuard 验证许可证密钥。

@@ -5,11 +5,11 @@ sidebar_position: 3
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-许多人选择 Android，是因为他们喜欢自定义设置并希望全面控制他们的设备。 如有些 AdGuard 用户对其默认行为不满意，也是完全正常的。 比方说，您要在某个应用启动时停止保护，然后在此应用关闭时再次重新启动它。 这是 Tasker 应用的工作。
+许多人选择 Android，是因为他们喜欢自定义设置并希望全面控制他们的设备。如有些 AdGuard 用户对其默认行为不满意，也是完全正常的。比方说，您要在某个应用启动时停止保护，然后在此应用关闭时再次重新启动它。这是 Tasker 应用的工作。
 
 ## AdGuard 界面
 
@@ -21,7 +21,7 @@ sidebar_position: 3
 
 ### 安全问题
 
-让一些随机应用程序管理 AdGuard 的工作是否危险？ 是的，这就是密码会跟 intent 消息一起发送的原因。 此密码将由 AdGuard 自动生成，但用户当然可以随时更改它。
+让一些随机应用程序管理 AdGuard 的工作是否危险？是的，这就是密码会跟 intent 消息一起发送的原因。此密码将由 AdGuard 自动生成，但用户当然可以随时更改它。
 
 ### 可用操作
 
@@ -31,17 +31,17 @@ sidebar_position: 3
 
 `stop` 禁用保护，不需要额外的数据；
 
-`pause` 暂停保护。 这与 `stop` 的区别在于，当用户点击暂停保护时，会出现重新启动保护的通知。 无需额外数据；
+`pause` 暂停保护。这与 `stop` 的区别在于，当用户点击暂停保护时，会出现重新启动保护的通知。无需额外数据；
 
 `update` 检查可用的过滤器和应用程序更新，不需要额外的数据；
 
 -----
 
-`dns_filtering` 打开或关闭 DNS 过滤。 需要额外的标志：
+`dns_filtering` 打开或关闭 DNS 过滤。需要额外的标志：
 
 `enable:true` 或 `enable:false` 相应地启用或禁用 DNS 过滤。
 
-`fake_dns` 允许在指定的代理服务器上解析 DNS 请求。 这个设置需要额外的标志：
+`fake_dns` 允许在指定的代理服务器上解析 DNS 请求。这个设置需要额外的标志：
 
 `enable:true` 或 `enable:false` 可以分别启用或禁用「*使用 FakeDNS*」设置。
 
@@ -65,15 +65,15 @@ sidebar_position: 3
 
  `server:custom` 切换到之前添加的名为 `custom` 的服务器；
 
- `server:tls://dns.adguard.com` 如果之前添加的服务器和提供商不包含具有相同地址的服务器，则创建一个新服务器并切换到该服务器。 否则，它会切换到相应的服务器。 用户可以将服务器地址添加为 IP（普通 DNS）、`sdns://…`（DNSCrypt 或 DNS-over-HTTPS）、`https://…`（DNS-over-HTTPS）或 `tls:`//...(DNS-over-TLS）；
+ `server:tls://dns.adguard.com` 如果之前添加的服务器和提供商不包含具有相同地址的服务器，则创建一个新服务器并切换到该服务器。否则，它会切换到相应的服务器。用户可以将服务器地址添加为 IP（普通 DNS）、`sdns://…`（DNSCrypt 或 DNS-over-HTTPS）、`https://…`（DNS-over-HTTPS）或 `tls:`//...(DNS-over-TLS）；
 
- `server:1.1.1.1, tls://1.1.1.1` 创建一个用逗号分隔地址的服务器并切换到它。 通过`server:1.1.1.1, tls://1`.1.1 添加服务器时，先前添加的服务器将被移除。
+ `server:1.1.1.1, tls://1.1.1.1` 创建一个用逗号分隔地址的服务器并切换到它。通过`server:1.1.1.1, tls://1`.1.1 添加服务器时，先前添加的服务器将被移除。
 
  `server:system` 将 DNS 设置重置为默认的系统 DNS 服务器。
 
  -----
 
-`proxy_state` 启用/禁用出站代理。 需要额外的标志：
+`proxy_state` 启用/禁用出站代理。需要额外的标志：
 
 `enable:true` 或 `enable:false` 相应地激活或停用出站代理。
 
@@ -112,11 +112,11 @@ sidebar_position: 3
 
 - **可选参数**：
 
- `[login and password]` 仅在代理需要的情况下被使用。 设置 **SOCKS4** 时，该数据将被忽略；
+ `[login and password]` 仅在代理需要的情况下被使用。设置 **SOCKS4** 时，该数据将被忽略；
 
- `[udp]` 仅适用于 **SOCKS5** 服务器类型并包含选项**通过 SOCKS5 的 UDP**。 有必要设置 **true 或 false** 值；
+ `[udp]` 仅适用于 **SOCKS5** 服务器类型并包含选项**通过 SOCKS5 的 UDP**。有必要设置 **true 或 false** 值；
 
- `[trust]` 仅适用于 **HTTPS_CONNECT** 服务器类型，包括选项 **Trust any certificates**。 有必要设置 **true 或 false** 值。
+ `[trust]` 仅适用于 **HTTPS_CONNECT** 服务器类型，包括选项 **Trust any certificates**。有必要设置 **true 或 false** 值。
 
 :::note 示例
 
@@ -126,7 +126,7 @@ sidebar_position: 3
 
 :::
 
-**请别忘记包含密码、包名称和类别。 您需要为每个 intent 消息都这样做。**
+**请别忘记包含密码、包名称和类别。您需要为每个 intent 消息都这样做。**
 
 Extra: `password:*******`
 
@@ -136,7 +136,7 @@ Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-在 v4.0 之前，该类被称为 `com.adguard.android.receivers.AutomationReceiver` 但是后来我们将其名称更改为 `com.adguard.android.receiver.AutomationReceiver`。 如果用户使用该功能，请记得更新名称。
+在 v4.0 之前，该类被称为 `com.adguard.android.receivers.AutomationReceiver` 但是后来我们将其名称更改为 `com.adguard.android.receiver.AutomationReceiver`。如果用户使用该功能，请记得更新名称。
 
 :::
 

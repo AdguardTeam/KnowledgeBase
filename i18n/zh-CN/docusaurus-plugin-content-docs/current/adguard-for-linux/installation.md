@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## 安装 AdGuard Linux 版
 
-在电脑上打开命令行窗口。 在 Linux 上，使用键盘快捷键 _Ctrl+Alt+T_。 在 Mac 上，在搜索字段中输入 _Terminal_。
+在电脑上打开命令行窗口。在 Linux 上，使用键盘快捷键 _Ctrl+Alt+T_。在 Mac 上，在搜索字段中输入 _Terminal_。
 
 要安装 AdGuard，请选择适合您的版本（稳定版、Beta 测试版或 Nightly 版），并输入相应的命令。
 
@@ -33,13 +33,13 @@ curl -fsSL https://raw.githubusercontent.com/AdguardTeam/AdGuardCLI/nightly/inst
 
 :::note
 
-您可以使用 `gpg` 工具验证签名，以证明这是 AdGuard 的官方版本。 [在 GitHub 上了解详情](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
+您可以使用 `gpg` 工具验证签名，以证明这是 AdGuard 的官方版本。[在 GitHub 上了解详情](https://github.com/AdguardTeam/AdGuardCLI?tab=readme-ov-file#verify-releases)
 
 :::
 
 ## 初始设置
 
-Linux 版 AdGuard 需要 [AdGuard 许可证](https://adguard.com/license.html)。 如果您还没有许可证，可以登录或创建账号以获取免费的 14 天试用期。 如果您已有许可证，请登录激活。 要做到这一点，请遵循以下逐步指南：
+Linux 版 AdGuard 需要 [AdGuard 许可证](https://adguard.com/license.html)。如果您还没有许可证，可以登录或创建账号以获取免费的 14 天试用期。如果您已有许可证，请登录激活。要做到这一点，请遵循以下逐步指南：
 
 1. 安装后，请输入以下命令：
 
@@ -71,7 +71,7 @@ Linux 版 AdGuard 需要 [AdGuard 许可证](https://adguard.com/license.html)�
    adguard-cli license
    ```
 
-6. 现在需要设置 AdGuard CLI。 要运行配置向导，请输入以下命令：
+6. 现在需要设置 AdGuard CLI。要运行配置向导，请输入以下命令：
 
    ```sh
    adguard-cli configure
@@ -111,7 +111,7 @@ Linux 版 AdGuard 需要 [AdGuard 许可证](https://adguard.com/license.html)�
 
    ![Current setup \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/linux/7config_show.png)
 
-   配置文件的路径也将被显示，您应该编辑它。 它包含所有附加选项的描述。
+   配置文件的路径也将被显示，您应该编辑它。它包含所有附加选项的描述。
 
    或者，您可以使用以下命令：
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)。
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。要全面保护设备，请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)。
 
 :::
 
@@ -25,9 +25,9 @@ sidebar_position: 1
 
   AdGuard 浏览器扩展与 AdGuard 桌面应用程序的兼容性
 
-- [用于 Chrome Manifest 的 AdGuard 浏览器扩展](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  与 Manifest V3 API 兼容的独立 AdGuard 浏览器扩展程序
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [浏览器保护的网页](/adguard-browser-extension/protected-pages)
 

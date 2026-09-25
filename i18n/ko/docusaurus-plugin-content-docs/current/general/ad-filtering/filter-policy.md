@@ -50,7 +50,7 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 
 - AdGuard 베이스 필터
 - AdGuard 모바일 광고 필터
-- 언어 원칙에 따라 구분된 지역 필터: 중국어, 네덜란드어, 프랑스어, 독일어, 일본어, 러시아어, 스페인어/포르투갈어, 터키어, 우크라이나어
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### 이러한 필터의 목적
 

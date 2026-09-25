@@ -4,19 +4,19 @@ sidebar_position: 4
 ---
 
 
-众所周知，世界上的语言之间存在很多差异。 其中一个是使用复数形式，翻译成不同语言可能会造成很大困难。
+众所周知，世界上的语言之间存在很多差异。其中一个是使用复数形式，翻译成不同语言可能会造成很大困难。
 
 因此，我们强烈建议您好好阅读本文，以详细了解复数形式以及翻译 AdGuard 时如何使用它们。
 
 ## 复数形式是什么意思？ {#plurals}
 
-不同语言的名词可以有几种复数形式。 它们的用法取决于单词前面的特定数字，以指示该单词表示的数目。
+不同语言的名词可以有几种复数形式。它们的用法取决于单词前面的特定数字，以指示该单词表示的数目。
 
-For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. 无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾 's' 都将保持不变。 但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
+For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. 无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾 's' 都将保持不变。但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
 
-与英语相比，波兰语里的名词具有三种复数形式。 在说单数形式时使用一种形式，复数形式时以 2-4 数字为结尾的名词（不包括 12-14）使用另一种形式；但还有第三种形式，前面带有其他数字的单词。
+与英语相比，波兰语里的名词具有三种复数形式。在说单数形式时使用一种形式，复数形式时以 2-4 数字为结尾的名词（不包括 12-14）使用另一种形式；但还有第三种形式，前面带有其他数字的单词。
 
-让我们来看看这张图片。 在这里，可以看到一组数字。按这些数字要选择数字后面的单词形式。
+让我们来看看这张图片。在这里，可以看到一组数字。按这些数字要选择数字后面的单词形式。
 
 ![波兰语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -30,7 +30,7 @@ For instance, English words have two word forms when speaking about something in
 
 现在很明显的是，波兰语 *'godzinę'*（小时）具有三种不同的形式，而英语单词仅更改两次单词形式。
 
-除波兰语之外，世界上还有许多其他具有三种复数形式的语言，包括俄语，塞尔维亚语，斯洛伐克语，捷克语等语言。 但并非所有语言都遵循相同语法规则。 这就是了解您的语言包含多少种复数形式以及如何正确应用它们如此重要的原因。
+除波兰语之外，世界上还有许多其他具有三种复数形式的语言，包括俄语，塞尔维亚语，斯洛伐克语，捷克语等语言。但并非所有语言都遵循相同语法规则。这就是了解您的语言包含多少种复数形式以及如何正确应用它们如此重要的原因。
 
 ## 在哪里可以了解复数形式的变体数量？ {#where-to-learn}
 
@@ -60,7 +60,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 - `extensions；`
 - `hours`
 
-请注意字符串键，在 "Context" 字段中您会看到一些关于复数形式的重要注解。 字符串键可能包含 `Singular`、 `Dual`、 `Plural` 单词（例如`FormatDayDeclensionDual`）。 在这种情况下，您应该保留键中指定的适当复数形式。
+请注意字符串键，在 "Context" 字段中您会看到一些关于复数形式的重要注解。字符串键可能包含 `Singular`、 `Dual`、 `Plural` 单词（例如`FormatDayDeclensionDual`）。在这种情况下，您应该保留键中指定的适当复数形式。
 
 ### 2. 单数和复数名词字符串以逗号分隔 {#2type}
 
@@ -74,7 +74,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 `hour, hours — godzinę, godziny, godzin`
 
-如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。 但是，如果您把同一个形式重写两次也不会出错。
+如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。但是，如果您把同一个形式重写两次也不会出错。
 
 ### 3. 使用 Crowdin 发展模式的字符串 {#3type}
 
@@ -82,13 +82,13 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功能。
 
-如果您的语言仅有一种复数形式，则您只会看到一个要翻译的短语。 如果语言具有三种形式，Crowdin 将为您提供被分出另外两到三部分的字符串进行翻译。
+如果您的语言仅有一种复数形式，则您只会看到一个要翻译的短语。如果语言具有三种形式，Crowdin 将为您提供被分出另外两到三部分的字符串进行翻译。
 
 例如：
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-在翻译和批准这些字符串时，请注意一下， 如果您不知道 “Other” 字段的含义，则只需粘贴与 “ Many” 字段中相同的表单即可。 “Many” 和 “Other” 字段的内容可以相同。
+在翻译和批准这些字符串时，请注意一下，如果您不知道 “Other” 字段的含义，则只需粘贴与 “ Many” 字段中相同的表单即可。 “Many” 和 “Other” 字段的内容可以相同。
 
 ### 4. 带有用竖线分隔模板的字符串 {#4type}
 
@@ -112,7 +112,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 和**模板（template）2** – *％count％* 台计算机（computers）的标准许可
 
-您应注意的另一重要事项是 **％count％** 占位符，通常在其定义的单词前出现。 根据选择的模板，此处将显示不同的数字，而不是 **％count％** 。
+您应注意的另一重要事项是 **％count％** 占位符，通常在其定义的单词前出现。根据选择的模板，此处将显示不同的数字，而不是 **％count％** 。
 
 在另一种语言具有三种复数形式的情况下，应该有三个模板，即两个竖线符号。
 
@@ -127,7 +127,7 @@ For example, when we translate the above mentioned phrase into Slovak, that acco
 *如果我们忽略其中一种形式，而只为斯洛伐克语使用两个，而不是三个模板，则系统将无法为某些数字采用适当的模板*。结果是，句子中将出现语法错误，例如英语：*Standard license for 5 computer（正确应是：Standard license for 5 computers）*。
 > **始终使用您所在语言中尽可能多的形式，即使单词本身的词形较少。**
 
-例如，塞尔维亚单词 *'računar'*（计算机（computer））只有两种形式。 但是塞尔维亚语有 3 种复数形式。
+例如，塞尔维亚单词 *'računar'*（计算机（computer））只有两种形式。但是塞尔维亚语有 3 种复数形式。
 
 ![塞尔维亚语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
@@ -147,7 +147,7 @@ For example, when we translate the above mentioned phrase into Slovak, that acco
 
 - 指翻译成一种语言的复数规则；
 
-模板的数量应该与您的语言包含的复数形式的数量一致，即使某些单词本身的形式相对较少。 两种复数形式对应翻译中的两个模板；五个复数形式对应五个模板等。
+模板的数量应该与您的语言包含的复数形式的数量一致，即使某些单词本身的形式相对较少。两种复数形式对应翻译中的两个模板；五个复数形式对应五个模板等。
 
 - 不要忘记在模板之间使用竖线符号；
 

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 4
 
 :::
 
-如您在安装 AdGuard 期间发生问题，可以发送技术请求给我们的支持团队，但他们会要求您收集并发送 AdGuard 安装日志。 在这种情况下，您需要执行以下操作：
+如您在安装 AdGuard 期间发生问题，可以发送技术请求给我们的支持团队，但他们会要求您收集并发送 AdGuard 安装日志。在这种情况下，您需要执行以下操作：
 
 1. 从开始菜单选择「*运行*」命令或按按键组合「*Win + R*」。
 

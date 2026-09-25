@@ -28,5 +28,5 @@ AdGuard is committed to protecting your privacy. We strictly follow our [Privacy
 ### How to attach your log to a bug report on GitHub
 
 1. Go to the [AdGuard Mini for Mac GitHub repo](https://github.com/AdguardTeam/AdGuardMiniForMac/issues) and click _New issue_.
-2. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title).
+2. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Medtag tidspunktet for fejlen, og vedhæft et link til problematikken eller dens nummer (angivet som #number ved siden af titlen).
    Alternatively, you can upload the log file to Google Drive and send it to [devteam@adguard.com](mailto:devteam@adguard.com). Add the file link to your GitHub issue.

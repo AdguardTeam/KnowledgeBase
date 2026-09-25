@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::note
 
-AdGuard 并非反病毒程序。 当用户要访问一个恶意软件或钓鱼网站时，AdGuard 可以警告您，但 **，它不能从用户的设备上清除病毒。**
+AdGuard 并非反病毒程序。当用户要访问一个恶意软件或钓鱼网站时，AdGuard 可以警告您，但 **，它不能从用户的设备上清除病毒。**
 
 :::
 
@@ -13,13 +13,13 @@ AdGuard 并非反病毒程序。 当用户要访问一个恶意软件或钓鱼�
 
 ## 免费的防病毒软件 {#free-antivirus}
 
-实用程序不可枚举，您可以使用任何自己喜欢的。 如果防病毒实用程序的检查没有发现任何问题，但计算机仍然运行可疑。请您尝试对设备进行广告软件检测，查看计算机上是否有恶意广告软件。
+实用程序不可枚举，您可以使用任何自己喜欢的。如果防病毒实用程序的检查没有发现任何问题，但计算机仍然运行可疑。请您尝试对设备进行广告软件检测，查看计算机上是否有恶意广告软件。
 
 ## 如何清除在系统上的恶意广告软件 {#adware}
 
-在互联网上可以找到许多用于解决此问题的应用程序。 您可以使用任何自己喜欢的实用程序。 但我们强烈建议使用 **Malwarebytes** 的 **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)**、**Avast** 的 **[Avast One](https://www.avast.com/c-adware-removal-tool)**，或 **[Adaware](https://www.adaware.com)**。 这些广告软件扫描器非常易于使用，自行处理也一般不会遇到任何问题。
+在互联网上可以找到许多用于解决此问题的应用程序。您可以使用任何自己喜欢的实用程序。但我们强烈建议使用 **Malwarebytes** 的 **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)**、**Avast** 的 **[Avast One](https://www.avast.com/c-adware-removal-tool)**，或 **[Adaware](https://www.adaware.com)**。这些广告软件扫描器非常易于使用，自行处理也一般不会遇到任何问题。
 
-让我们以 AdwareCleaner 为例。 结束下载应用程序并成功安装后，请执行以下步骤：
+让我们以 AdwareCleaner 为例。结束下载应用程序并成功安装后，请执行以下步骤：
 
 1. 启动此程序并点击「**立即扫描**」。
 
@@ -35,7 +35,7 @@ AdGuard 并非反病毒程序。 当用户要访问一个恶意软件或钓鱼�
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. 重启系统后，清理随之完成。 如有必要，用户可以随时阅读有关已完成工作的**报告**。
+1. 重启系统后，清理随之完成。如有必要，用户可以随时阅读有关已完成工作的**报告**。
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 

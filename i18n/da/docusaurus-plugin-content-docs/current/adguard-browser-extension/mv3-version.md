@@ -1,29 +1,41 @@
 ---
-title: AdGuard Browser Extension til Chrome MV3
+title: AdGuard Browser Extension MV3
 sidebar_position: 5
 ---
 
-Da MV2-udvidelser er under udfasning i Chrome Webshop, skal Chrome-brugere muligvis skifte til MV3-udvidelser, som er kompatible med Chromes nye API Manifest V3. Vores tanker om dette emne er udførligt drøftet på [vores blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), and other Chromium-based browsers, Opera and Microsoft Edge among them, are moving to MV3 as well. Users of these browsers need an MV3 extension, compatible with the new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Vores MV3-udvidelse blokerer effektivt annoncer og trackere, mens den ubemærket håndterer sociale widgets, bannere og videoreklamer. De fleste brugere vil ikke bemærke nogen operationelle forskelle, men der er visse begrænsninger og ændringer at være opmærksom på.
 
 ## Her findes vores udvidelser
 
-**MV3-versionen** har erstattet vores ældre udvidelse i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+**MV3-versionen** er vores primære Chrome-udvidelse og er tilgængelig i
+[Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip` for Chrome and `opera-mv3.zip` for Opera.
 
-**Betaversionen af MV3** vil stadig være tilgængelig i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+**MV3-beta** er tilgængelig i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-Den ældre betaudvidelse omdøbes til [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) og vil være understøttet, indtil den udfases af Google.
+**AdGuard Ad Blocker MV2** er fjernet fra Chrome Webshop sammen med alle
+øvrige MV2-udvidelser. MV2 fortsætter med at fungere i Firefox og i Chromium-baserede webbrowsere, som har bibeholdt
+understøttelsen af den — se [Sådan fortsættes med at bruge AdGuard, efter Chrome har fjernet MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Vigtigste ændringer i funktioner og indstillinger
 
-- **Ingen automatiske og manuelle filteropdateringer.** Indstillingerne _Auto-opdatér filtre_ og _Tjek filteropdatering_ er ikke længere tilgængelige via fanen _Filtre_. Da nogle af reglerne nu anvendes i DNR-form, kan filtre ikke opdateres pr. anmodning, men kun gennem hele processen med at opdatere udvidelsen sammen med gennemgangen i butikkerne.
+- **Filteropdatinger.** Indstillingerne _Autoopdatér filtre_ og _Tjek filteropdateringer_ er ikke tilgængelige
+  fra fanen _Filtre_: regler, som er indbygget i udvidelsen, kan kun opdateres sammen med en
+  ny udvidelsesversion efter gennemgang af shoppen. Hold automatiske udvidelsesopdateinger aktiveret i
+  webbrowseren.
+
+  Tilpasserede filtr tilføjet efter URL opdateres uafhængigt af udvidelsesopdateringer.
+
+- **AdGuard Quick Fixes-filter.** Da indbyggede regler ikke kan opdateres pr. anmodning, har udvidelsen
+  filteret _AdGuard Quick Fixes_ indbygget. Den bruger dynamiske regler til at reagere på nyligt introducerede annoncer og
+  defekte websteder mellem udgivelser, så hold den aktiveret.
 
 - **Filtreringslog**
 
   ![Filtreringslog \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  Grundet DNR-restriktioner kan den præcise regel, der virkede, ikke vises, men vi vil angive en "omtrentlig regel, der blev udløst" baseret på vores motor. For præcise oplysninger vil den "udpakkede" version af udvidelsen skulle installeres i webbrowser. Detaljeret vejledning til, hvordan dette gøres, kan findes i en [separat artikel](/adguard-browser-extension/solving-problems/debug-rules/).
+  Grundet DNR-restriktioner kan den præcise regel, der virkede, ikke vises, men vi vil angive en "omtrentlig regel, der blev udløst" baseret på vores motor. For præcise oplysninger vil den "udpakkede" form af udvidelsen skulle installeres i webbrowseren. Detaljeret vejledning til, hvordan dette gøres, kan findes i en [separat artikel](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Sporingsbeskyttelse_ (tidligere kendt som _Stealth mode_)
 

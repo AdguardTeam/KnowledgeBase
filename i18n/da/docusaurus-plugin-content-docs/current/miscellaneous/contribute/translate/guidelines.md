@@ -1,64 +1,64 @@
 ---
-title: Guidelines and recommendations
+title: Retningslinjer og anbefalinger
 sidebar_position: 3
 ---
 
-There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of phrases being translated.
+Der er flere ting, vi gerne vil oplyse om, før man begynder at oversætte. Det vil ikke alene spare tid og kræfter, men også sikre konsensus mht. betydningen af de sætninger, som oversættes.
 
-Once you open [our page on Crowdin](https://crowdin.com/profile/adguard/), choose any project you need and select your language.
+Når man [åbner vores Crowdin-side](https://crowdin.com/profile/adguard/), så vælg det ønskede projekt samt sprog.
 
-![Language *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+![Sprog *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
-You'll also be able to switch between languages even after opening certain product folders.
+Der kan også skiftes mellem sprog, selv efter bestemte produktmapper er åbnet.
 
-![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
+![Sprog1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
 
-Choose any of available product folders and select a file — now you can start translating.
+Vælg en tilgængelig produktmappe samt fil og begynd at oversætte.
 
-![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+![Filer *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 
 :::note
 
-You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+Crowdins brugerfladesprog kan også ændres ved at klikke på ikonet *Indstillinger* øverste til højre på siden. Rul i det åbnede vindue ned til fanen *UI-sprog*. Åbn det, vælg et sprog, og klik på **Skift**.
 
 :::
 
-![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
+![Sprog1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
-**The following guidelines will help you through the process.**
+**Flg. retningslinjer vil assistere med processen.**
 
-1. You can filter translations by clicking this button and selecting any offered option.
+1. Oversættelser kan filtreres ved at klikke på denne knap og vælge en ønsket mulighed.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-1. Easily move between the files of the project.
+1. Flyt nemt mellem filerne i projektet.
 
     ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
+1. Vær opmærksom på ordlisteudtryk fremhævet med en stiplet linje i en kildesætning. Disse er normalt særlige ord (såsom mærkenavne), som ikke bør oversættes.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
-    You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
+    Egne oversættelse af oversættelige termer kan foreslås i [AdGuard Glossary](https://crowdin.com/project/adguard-glossary)-projektet.
 
-1. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
+1. I Crowdin kan strenge have notater, som gør det lettere at forstå og oversætte sætninger korrekt. Disse findes i i kildestrengens afsnit, "Kontekst".
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-1. Note that source strings may also have screenshots in the Context section. They help to understand the context and convey the exact meaning.
+1. Bemærk, at kildestrenge også kan have skærmfotos i Kontekst-afsnittet. De kan fremme sammenhængsforståelse og formidle præcis betydning.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
     :::tip
 
-    You can request context by clicking the "REQUEST" button.
+    Der kan anmodes om kontekst ved at klikke på knappen "FORESPØRGSEL".
 
 
 :::
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-1. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the source text or existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
+1. Ud over at foreslå nye oversættelser, kan der også skrives kommentarer til strenge. Brug kommentarer til at oplyse om fejl i kildestrenge eller de eksisterende oversættelser, oprette notater eller stille spørgsmål. Ser man en kommentar til sin oversættelse, så forsøg gerne at besvare den.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 

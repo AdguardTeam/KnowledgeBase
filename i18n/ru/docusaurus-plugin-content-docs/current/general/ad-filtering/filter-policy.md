@@ -50,7 +50,7 @@ sidebar_position: 6
 
 - Базовый фильтр AdGuard
 - Фильтр мобильной рекламы AdGuard
-- Региональные фильтры, разделённые по языковому принципу — китайский, голландский, французский, немецкий, японский, русский, испанский/португальский, турецкий и украинский
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Назначение этих фильтров
 
