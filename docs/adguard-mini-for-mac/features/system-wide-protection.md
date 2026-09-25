@@ -4,7 +4,7 @@ sidebar_position: 9
 ---
 Starting with version 3.0, AdGuard Mini for Mac introduces *System-wide protection*, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
 
-The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/en/license.html) or click *Try for free* in *Advanced protection* to start a 14-day free trial.
+The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/license.html) or click *Try for free* in *Advanced protection* to start a 14-day free trial.
 
 ## How it works
 
@@ -28,7 +28,7 @@ When you first enable *System-wide protection*, you’ll get a request to instal
 
 After you install the URL filter, *System-wide protection* will remain on by default. If you want it off, toggle off the *System-wide protection* switch in *Advanced protection*.
 
-You can also click on the context menu in the top right corner (⋮) and select *Remove URL Filter*. If you want to reset the filter without deleting it to troubleshoot connection issues, choose *Reset Cache*.
+You can also click the context menu in the top right corner (⋮) and select *Remove URL Filter*. If you want to reset the filter without deleting it to troubleshoot connection issues, choose *Reset Cache*.
 
 It’s also possible to disable the URL filter in your Mac’s *System Settings* → *Network* → *VPN & Filters* → *Filters & Proxies*. Change *Enabled* to *Disabled* in the *Status menu*. AdGuard Mini will then switch off *System-wide protection* automatically.
 
@@ -54,7 +54,7 @@ Chromium-based browsers, such as Chrome, Edge, Opera, and Brave, use their own n
 
 - **Your Mac runs an older version of macOS.** Apple’s URL filter needs macOS 26 Tahoe or later. On earlier versions, the setting is disabled and the app asks you to *Update to macOS Tahoe 26 or later*.
 - **Your account isn’t supported.** *System-wide protection* only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows *Not supported on this Mac account*. See [Can I change my Mac account’s user ID?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) below.
-- **You’re on the free version.** To use *System-wide protection*, [purchase an AdGuard license](https://adguard.com/en/license.html) or click *Try for free* in *Advanced protection* to start a 14-day free trial.
+- **You’re on the free version.** To use *System-wide protection*, [purchase an AdGuard license](https://adguard.com/license.html) or click *Try for free* in *Advanced protection* to start a 14-day free trial.
 
 ### Can I change my Mac account’s user ID?
 
