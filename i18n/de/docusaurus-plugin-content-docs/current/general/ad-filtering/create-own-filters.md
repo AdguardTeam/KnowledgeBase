@@ -127,7 +127,8 @@ Einige Regeln können nur in vertrauenswürdigen Filtern verwendet werden. Diese
 
 - Filterlisten, [die vom AdGuard-Team erstellt wurden](../adguard-filters),
 - benutzerdefinierte Filterlisten, die als `vertrauenswürdig` installiert wurden,
-- Benutzerregeln.
+- user rules,
+- pre-approved third-party filter lists available in the *Filters* tab.
 
 ### AdGuard-Inhaltsblocker
 
