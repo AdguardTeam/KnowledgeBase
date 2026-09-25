@@ -127,7 +127,8 @@ AdGuard [расширяет возможности CSS](#extended-css-selectors)
 
 - Списки фильтров, [созданные командой AdGuard](../adguard-filters)
 - Пользовательские списки фильтров, помеченные как `trusted` (доверенные)
-- Пользовательские правила
+- user rules,
+- pre-approved third-party filter lists available in the *Filters* tab.
 
 ### AdGuard Content Blocker
 

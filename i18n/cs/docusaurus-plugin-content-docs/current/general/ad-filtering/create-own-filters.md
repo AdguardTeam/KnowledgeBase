@@ -127,7 +127,8 @@ Některá pravidla lze použít pouze v důvěryhodných filtrech. Tato kategori
 
 - seznamy filtrů [vytvořené týmem AdGuard](../adguard-filters),
 - seznamy vlastních filtrů nainstalované jako `trusted`,
-- uživatelská pravidla.
+- user rules,
+- pre-approved third-party filter lists available in the *Filters* tab.
 
 ### Blokátor obsahu AdGuard
 
