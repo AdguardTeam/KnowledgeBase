@@ -5,170 +5,170 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _Settings_ tab can be accessed by tapping the right-most icon at the bottom of the screen. This section contains various settings, information about your app, license & subscription, and various support resources.
+Fanen _Indstillinger_ kan tilgås ved at trykke på ikonet længst til højre nederst på skærmen. Dette afsnit indeholder forskellige indstillinger, oplysninger om appen, licens og abonnement samt forskellige supportressourcer.
 
 ## Generelt
 
-This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable _Auto-report crashes_ and _Send technical and interaction data_.
+I dette afsnit kan appens udseende og adfærd håndteres: Her kan angives farvetema og sprog, håndteres notifikationer mv. Ønsker det at hjælpe AdGuard-teamet med at detektere app-nedbrud og undersøge anvendelighed, kan hhv. _Autoanmeld nedbrud_ og _Indsend tekniske data og interaktionsdata_ aktiveres.
 
-![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![Generelt \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-Under _App and filter updates_, you can configure automatic filter updates and select an app update channel. Choose _Release_ for more stability and _Beta_ or _Nightly_ for early access to new features.
+Under _App- og filteropdateringer_ kan automatiske filteropdateringer opsættes og en app-opdateringskanal vælges. Vælg _Udgivelse_ for større stabilitet og _Beta_ eller _Nightly_ for tidlig adgang til nye funktioner.
 
-![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Opdateringer \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 ### Avancerede indstillinger
 
-_Automation_ allows you to manage AdGuard via tasker apps.
+_Automatisering_ muliggør håndtering af AdGuard via tasker-apps.
 
-_Watchdog_ helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
+_Watchdog_ bidrager til at beskytte AdGuard mod at blive deaktiveret af systemet ([læs mere om Androids strømsparetilstand](/adguard-for-android/solving-problems/background-work/)). Værdien, der angives, vil være intervallet i sekunder mellem hvert Watchdog-tjek.
 
-_Logging level_ defines what data about the app's operation should be logged. By default, the app collects the data about its events. The _Debug_ level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
+_Logningsniveau_ definerer, hvilke data om appens drift, som skal logføres. Som standard indsamler appen data om sine begivenheder. _Fejlretningsniveau_ logger flere hændelser — slå det til, hvis AdGuard-teamet anmoder om det for bedre forståelse af problematikken. [Læs mere om indsamling og indsendelse af logfiler](/adguard-for-android/solving-problems/log/)
 
-![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Avanceret \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The _Low-level settings_ section is for expert users. [Read more about low-level settings](/adguard-for-android/features/low-level-settings/)
+Afsnittet _Lavniveauindstillinger_ er til ekspertbrugere. [Læs mere om lavniveauindstillinger](/adguard-for-android/features/low-level-settings/)
 
-![Low-level settings \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Lavniveauindstillinger \*mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ## Filtrering
 
-This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
+Dette afsnit muliggør håndtering af filtre, udvidelser, netværksindstillinger, tilføjelse af websteder på hvidlisten samt oprettelse af regler.
 
-[Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+[Find ud af, hvordan egne brugerregler oprettes](/general/ad-filtering/create-own-filters)
 
-![Filtering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
+![Filtrering \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering.png)
 
 ### Filtre
 
-AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
+AdGuard blokerer annoncer, trackere og irritationer ved at anvende regler fra sine filtre. De fleste funktioner i afsnittet _Beskyttelse_ drives af [AdGuard-filtre](/general/ad-filtering/adguard-filters/#adguard-filters). Aktiveres _Basisbeskyttelse_, slår denne automatisk AdGuard Base- og AdGuard Mobile Ads-filtrene til. Og omvendt: Slås begge filtre fra, deaktiveres _Basisbeskyttelse_ ligeledes.
 
-![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filtre \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
+Filtre, som er slået til som standard, er tilstrækkelig til normal AdGuard-drift. Ønskes en tilpasset adblocking, kan andre AdGuard- eller tredjepartsfiltre anvendes. Til dette formål vælges en kategori, og de ønskede filtre slås til. For at tilføje et tilpasset filter, tryk på _Tilpassede filtre_ → _Tilføj tilpasset filter_, og angiv dets URL eller filsti.
 
 :::note
 
-If you activate too many filters, some websites may work incorrectly.
+Slås for mange filtre til, kan visse websteder fejlfungere.
 
 :::
 
-[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
+[Læs mere om filtre](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Udvidelser
 
-Extensions allow you to add userscripts and userstyles.
+Udvidelser muliggør tilføjelse af userscripts og brugerstile.
 
-![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
+![Udvidelser \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
-Userscripts are miniprograms written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Userscripts er miniprogrammer skrevet i JavaScript, som udvider webstedsfunktionaliteten. Installation af et userscript kræver en særlig userscript-håndtering. AdGuard har en sådan funktionalitet, hvilket muliggør tilføjelse af userscripts fra en URL eller fil.
 
-Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
+Brugerstile er som userscripts, de muliggør at ændre, hvordan websider ser ud i webbrowseren uden at ændre deres indhold. De fungerer ved at tilføje CSS-stile til webstedets eksisterende stilarter. Ønskes f.eks. et mørkt tema på et websted, der ikke tilbyder ét, kan der bruge en brugerstil til at opnå dette.
 
-To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+For at tilføje en brugerstil, gå til _Indstillinger_ → _Filtrering_ → _Udvidelser_→ _Tilføj udvidelse_ → _Importere fra fil eller URL_. Færdiglavede brugerstile kan findes [online](https://userstyles.world/).
 
-To create your own style, tap _Add extension_ → _Create userstyle_.
+For at oprette en egen stil, tryk på _Tilføj udvidelse_ → _Opret brugerstil_.
 
-#### AdGuard Ekstra
+#### AdGuard Extra
 
-AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
+AdGuard Extra er et tilpasset brugerscript, der blokerer komplekse annoncer og mekanismer, som genindsætter annoncer på websteder.
 
 #### Disable AMP
 
-Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
+Disable AMP er et userscript, der deaktiverer [Accelererede mobilsider](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) på Googles søgeresultatside.
 
-### Network
+### Netværk
 
 #### HTTPS-filtrering
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
+For at blokere annoncer og trackere på de fleste websteder og i de fleste apps skal AdGuard filtrere deres HTTPS-trafik. [Læs mere om HTTPS-filtrering](/general/https-filtering/what-is-https-filtring)
 
-##### Security certificates
+##### Sikkerhedscertifikater
 
-To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
+For at håndtere krypteret trafik installerer AdGuard sit CA-certifikat på enheden. Det er sikkert: Trafikken filtreres lokalt, og AdGuard bekræfter forbindelsens sikkerhed.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+I ældre Android-versioner installeres certifikatet automatisk. Fra og med Android 11 kræves manuel installation. [Installationsvejledning](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+CA-certifikatet i brugerlageret er tilstrækkeligt til at filtrere HTTPS-trafik i webbrowsere og visse apps. Der er dog apps, som kun har tillid til certifikater fra systemlageret. For at filtrere HTTPS-trafik i så tilfælde, skal AdGuards CA-certifikat installeres i systemlageret. [Vejledning](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### HTTPS-filtered apps
+##### HTTPS-filtrerede apps
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+Dette afsnit indeholder en liste over apps, for hvilke AdGuard filtrerer HTTPS-trafik. Bemærk, at indstillingen kun kan anvendes for alle apps, såfremt CA-certifikatet er installeret i både bruger- og systemlageret.
 
-##### HTTPS-filtered websites
+##### HTTPS-filtrerede websteder
 
-This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
+Denne indstilling muliggør at håndtere websteder, for hvilke AdGuard skal filtrere HTTPS-trafik.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS-filtrering lader AdGuard filtrere indholdet af forespørgsler og svar, uden at disse data indsamles eller opbevares. For at øge sikkerheden, [er websteder indeholdende potentielt sensitive oplysninger dog undtaget fra HTTPS-filtrering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal- data).
 
-You can also add websites that you consider necessary to exclusions by selecting one of the modes:
+Der kan også efter ønske føjes websteder til undtagelser ved at vælge en af tilstandene:
 
-- Exclude specific websites from HTTPS filtering
-- Filter HTTPS traffic only on the websites added to exclusions
+- Undtag bestemte websteder fra HTTPS-filtrering
+- Filtrér kun HTTPS-trafik på websteder føjet til undtagelser
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the _Filter websites with EV certificates_ option.
+Som standard filtreres heller ikke websteder med Extended Validation-certifikater (EV), såsom finansielle websteder. Indstillingen _Filtrér websteder med EV-certifikater_ kan om ønsket slås til.
 
 #### Proxy
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+AdGuard kan opsættes til at rute al enhedens trafik igennem en egen proxyserver. [Sådan opsættes en udgående proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
-In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
+I dette afsnit kan også et tredjeparts-VPN opsættes til at fungere med AdGuard, hvis tilladt af VPN-udbyderen.
 
-Under _Apps operating through proxy_, you can select apps that will route their traffic through your specified proxy. If you have _Integration with AdGuard VPN_ enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
+Under _Apps, som kører via proxy_ kan de apps vælges, hvis trafik skal rutes igennem den angivne proxy. Er _Integration med AdGuard VPN_ slået til, har denne indstilling rollen som AdGuard VPNs app-undtagelser: Den muliggør at angive de apps, som skal rutes igennem AdGuard VPN-tunnelen.
 
-#### Routing mode
+#### Rutningstilstand
 
-This section allows you to select the traffic filtering method.
+Dette afsnit muliggør valg af trafikfiltreringsmetode.
 
-- _Local VPN_ filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
-
-:::note
-
-The _Local VPN_ mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [_Integrated mode_](/adguard-for-android/features/integration-with-vpn).
-
-:::
-
-- _Automatic proxy_ is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+- _Lokal VPN_ filtrerer trafik igennem et lokalt oprettet VPN. Denne tilstand er den mest pålidelige. Grundet Android-restriktioner er det også den eneste tilgængelige trafikfiltreringsmetode på systemniveau på en ikke-rooted enhed.
 
 :::note
 
-Please note that DNS filtering will still be active in _Automatic proxy_ routing mode, and your device may not be able to filter DNS requests from specific apps. In _VPN_ routing mode, apps are excluded from the local VPN by system means. Therefore, the system resolver sees which apps are included in the VPN and which are not. It either allows them into the local VPN or lets them bypass it. However, DNS requests come from the system resolver, not the application. In _Automatic proxy_ mode, it is only possible to exclude traffic from applications, not their DNS queries, because AdGuard sees them as system queries.
+Tilstanden _Lokalt VPN_ tillader ikke brug af AdGuard samtidigt med andre VPN-tjenester. For brug af et andet VPN med AdGuard, skal dette opsættes til at fungere i proxytilstand samt en udgående proxy opsættes i AdGuard. For AdGuard VPN sker dette automatisk vha. [_Integreret tilstand_](/adguard-for-android/features/integration-with-vpn).
 
 :::
 
-- _Manual proxy_ involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
+- _Automatisk proxy_ er en alternativ trafikrutningsmetode uden behov for et VPN. En markant fordel er, at den kan køres parallelt med et VPN. Denne tilstand kræver dog root-adgang.
+
+:::note
+
+Bemærk, at DNS-filtrering stadig vil være aktiv i rutningstilstanden _Automatisk proxy_, og enheden kan muligvis ikke filtrere DNS-forespørgsler fra bestemte apps. I rutningstilstanden _VPN_ undtages apps fra det lokale VPN via systemmetoder. Systemopløseren kan derfor ikke se, hvilke apps, som er inkluderet i VPN'et, og hvilke, som ikke er. Den tillader dem enten adgang til det lokale VPN, eller lader dem omgå det. DNS-forespørgsler kommer dog fra systemopløseren, ikke fra applikationen. Det er i tilstanden _Automatisk proxy_ kun muligt at undtage trafik fra applikationer, ikke deres DNS-forespørgsler, idet AdGuard ser disse som systemforespørgsler.
+
+:::
+
+- _Manuel proxy_ involverer opsætning af en proxyserver på en bestemt port, der dernæst kan opsættes i Wi-Fi-indstillingerne. Fra Android 10 kræver denne tilstand root-adgang.
 
 ## Licens
 
-In this section, you can find information about your license and manage it:
+I dette afsnit findes oplysninger om licensen samt mulighed for at håndtere den:
 
-- Buy an AdGuard license to activate [the full version's features](/adguard-for-android/features/free-vs-full)
-- Log in to your AdGuard account or enter the activation code to activate your license
-- Sign up to activate your 14-day trial period. The activation code can be used on different devices and platforms
-- Refresh the license status from the three-dots menu (⋮)
-- Open the AdGuard account to manage your license there
-- Reset your license — for example, if you've reached device limit for this license and want to apply another one
+- Køb en AdGuard-licens for at aktivere [den fulde versions funktioner](/adguard-for-android/features/free-vs-full)
+- Log ind på AdGuard-kontoen eller angiv licensnøglen for at aktivere licensen
+- Foretag tilmelding for at aktivere den 14-dages prøveperiode. Aktiveringskoden kan bruges på forskellige enheder og platforme
+- Opfrisk licensstatus via trepriksmenuen (⋮)
+- Åbn AdGuard-kontoen for at håndtere licensen dér
+- Nulstil licensen – f.eks. hvis en enhedskvote er opbrugt for denne licens, og en anden ønskes anvendt
 
-![License screen \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
+![Licensskærm \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/android/settings/licensetab.png)
 
 ## Support
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting _[FAQ](https://adguard.com/support/adguard_for_android.html)_ or this knowledge base before contacting support.
+Brug dette afsnit ved evt. spørgsmål eller forslag til AdGuard til Android. Det anbefales at konsultere _[FAQ](https://adguard.com/support/adguard_for_android.html)_ eller denne vidensbase, inden supporten kontaktes.
 
 ![Support \*mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-If you notice a missed ad, please report it via _Report incorrect blocking_.
+Bemærkes en overset annonce, bedes denne anmeldt via _Anmeld forkert blokering_.
 
-For unexpected app behavior, select _Report a bug_. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+Ved usædvanlig app-adfærd, vælg _Anmeld en fejl_. Hvis det er muligt, beskriv problematikken detaljet og tilføj app-logfiler. [Sådan beskrives en problematik](/guides/report-bugs/#how-to-describe-a-problem)
 
-For your suggestions, use _Request a feature_.
+For evt. forslag, brug _Anmod om en funktion_.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub er en alternativ måde at anmelde fejl og foreslå nye funktioner på. [Vejledninger og repo-links](/guides/report-bugs/#adguard-for-android)
 
 :::

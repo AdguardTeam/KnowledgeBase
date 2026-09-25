@@ -81,7 +81,7 @@ Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
 
 Enable this option to make the main AdGuard window open after the system is loaded. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
 
-### Enable filtering at system start-up
+### Aktivér filtrering ved systemstart
 
 Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
 
@@ -91,7 +91,7 @@ Before v7.12, the AdGuard service started in filtering mode by default (even if 
 
 :::
 
-### Filter localhost
+### Filtrér localhost
 
 If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
 

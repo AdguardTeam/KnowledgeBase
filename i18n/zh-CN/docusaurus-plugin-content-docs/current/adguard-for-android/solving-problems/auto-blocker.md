@@ -5,13 +5,13 @@ sidebar_position: 18
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-从 One UI 6.1.1 (Android 14) 开始，Samsung 引入了一项名为 **Auto Blocker**（中文：自动拦截程序）的安全增强功能，该功能在最新的 Galaxy 智能手机上默认启用。 此功能将自动拦截来自未验证来源的侧载应用程序，除非用户手动更改设置。
+从 One UI 6.1.1 (Android 14) 开始，Samsung 引入了一项名为 **Auto Blocker**（中文：自动拦截程序）的安全增强功能，该功能在最新的 Galaxy 智能手机上默认启用。此功能将自动拦截来自未验证来源的侧载应用程序，除非用户手动更改设置。
 
-由于 Android 版 AdGuard [无法在 Google Play 上发布](https://adguard.com/en/blog/adguard-google-play-removal.html)，用户必须手动安装 APP。 然而，当新的 _Auto Blocker_ 功能启用时，有些用户在安装 AdGuard APK 文件时会遇到问题。 为了解决这个问题，我们在下文中提供了如何禁用 _Auto Blocker_ 功能的指南。
+由于 Android 版 AdGuard [无法在 Google Play 上发布](https://adguard.com/en/blog/adguard-google-play-removal.html)，用户必须手动安装 APP。然而，当新的 _Auto Blocker_ 功能启用时，有些用户在安装 AdGuard APK 文件时会遇到问题。为了解决这个问题，我们在下文中提供了如何禁用 _Auto Blocker_ 功能的指南。
 
 ## 如何禁用 Auto Blocker
 

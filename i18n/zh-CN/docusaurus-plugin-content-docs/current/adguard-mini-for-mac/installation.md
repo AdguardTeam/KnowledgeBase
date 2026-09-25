@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## 如何安装 AdGuard Mini Mac版
 
-AdGuard Mini Mac版是 App Store 中的一款免费应用程序。 要在 Mac 上安装它，请执行以下操作：
+AdGuard Mini Mac版是 App Store 中的一款免费应用程序。要在 Mac 上安装它，请执行以下操作：
 
 1. 打开 App Store，找到「_AdGuard Mini_」应用程序。
 
@@ -23,13 +23,13 @@ AdGuard Mini Mac版是 App Store 中的一款免费应用程序。 要在 Mac �
 
 2. 按下「_获取_」→「_安装_」→「_打开_」。
 
-3. 在打开的 AdGuard Mini 窗口中，请接受使用许可协议和隐私政策。 您还可以选择通过发送匿名使用数据来帮助我们改进扩展程序。 然后点击「_继续_」。
+3. 在打开的 AdGuard Mini 窗口中，请接受使用许可协议和隐私政策。您还可以选择通过发送匿名使用数据来帮助我们改进扩展程序。然后点击「_继续_」。
 
    ![开始使用](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/first-open.png)
 
    :::note
 
-   如果您选择与 AdGuard 共享应用使用数据，扩展程序将收集匿名化信息，例如界面交互行为与会话标识符。 此同意为自愿选项，您可随时撤回授权。 所有收集的数据均已完全匿名，仅限内部使用，绝不会与第三方共享。
+   如果您选择与 AdGuard 共享应用使用数据，扩展程序将收集匿名化信息，例如界面交互行为与会话标识符。此同意为自愿选项，您可随时撤回授权。所有收集的数据均已完全匿名，仅限内部使用，绝不会与第三方共享。
 
    :::
 
@@ -59,7 +59,7 @@ AdGuard Mini Mac版是 App Store 中的一款免费应用程序。 要在 Mac �
 
 2. 点击左上角菜单中的「_Safari_」。
 
-3. 单击「_设置…_」→「_扩展_」。 您将看到一个扩展列表，AdGuard Mini 有七个扩展。
+3. 单击「_设置…_」→「_扩展_」。您将看到一个扩展列表，AdGuard Mini 有七个扩展。
 
 4. 取消选中所有复选框，然后按「_卸载_」。
 

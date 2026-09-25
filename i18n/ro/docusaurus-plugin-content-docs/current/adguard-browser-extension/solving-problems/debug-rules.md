@@ -1,9 +1,9 @@
 ---
-title: Cum să depanăm regulile în AdGuard pentru Chrome MV3
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
-În [AdGuard pentru Chrome MV3](/adguard-browser-extension/mv3-version), jurnalul de filtrare arată doar regulile aproximative care au fost aplicate, pe care le numim „reguli asumate”. Acest lucru se datorează faptului că browserul nu oferă detalii despre care reguli declarative specifice au fost utilizate, cu excepția cazului în care extensia este într-un format „nepachetat”. Pentru a obține informații precise, va trebui să instalați versiunea nepachetata a extensiei în browserul dumneavoastră.
+In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. Acest lucru se datorează faptului că browserul nu oferă detalii despre care reguli declarative specifice au fost utilizate, cu excepția cazului în care extensia este într-un format „nepachetat”. Pentru a obține informații precise, va trebui să instalați versiunea nepachetata a extensiei în browserul dumneavoastră.
 
 Aceste instrucțiuni sunt, de asemenea, destinate cazurilor problematice în care doriți să modificați regulile care sunt incluse static în extensie. În cele mai multe cazuri, utilizarea _Reguli utilizator_ în extensie ar trebui să fie suficientă.
 
@@ -55,7 +55,10 @@ Aceste instrucțiuni sunt, de asemenea, destinate cazurilor problematice în car
    yarn dev chrome-mv3
    ```
 
-3. Extensia construită va fi localizată în directorul:
+3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
+   be located in the `./build/dev/opera-mv3` directory.
+
+4. The built extension will be located in the directory:
 
    ```bash
    ./build/dev/chrome-mv3

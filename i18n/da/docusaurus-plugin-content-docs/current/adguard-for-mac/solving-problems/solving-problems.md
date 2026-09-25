@@ -22,3 +22,4 @@ Here are some problems you may encounter and workarounds, guides, and instructio
 - [Advanced Settings guide](/adguard-for-mac/solving-problems/advanced-settings.md)
 - [Setting up filtering in Tor Browser](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [Incompatibility with Screen Time](/adguard-for-mac/solving-problems/screen-time-issues.md)
+- [Sådan fungerer AdGuard Browser Assistent på macOS Golden Gate og senere](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)

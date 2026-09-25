@@ -15,7 +15,7 @@ macOS 12以降が必要です。
 
 ## AdGuard Mini for Mac のインストール方法
 
-「AdGuard Mini」はMac用App Storeにある無料アプリです。 お使いのMacにインストールする方法以下の通りです。
+「AdGuard Mini」はMac用App Storeにある無料アプリです。お使いのMacにインストールする方法以下の通りです。
 
 1. Open the App Store and find _AdGuard Mini_ app there.
 
@@ -59,7 +59,7 @@ To uninstall AdGuard Mini for Mac, do the following:
 
 2. 左上のメニューで「_Safari_」をクリックします。
 
-3. 「_環境設定…_」→「_拡張機能_」をクリックします。 拡張機能の一覧が表示され、AdGuardには7つの拡張機能があります。
+3. 「_環境設定…_」→「_拡張機能_」をクリックします。拡張機能の一覧が表示され、AdGuardには7つの拡張機能があります。
 
 4. AdGuard拡張機能すべてのチェックボックスのチェックを外し、それぞれの「アンインストール」ボタンを押します。
 

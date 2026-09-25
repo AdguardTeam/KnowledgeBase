@@ -1,6 +1,6 @@
 ---
 title: Problemas com o bloqueio de anúncios em sites de busca no Opera
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Se a extensão AdGuard para navegadores não conseguir bloquear anúncios em sites de busca no Opera, seja automaticamente ou manualmente, significa que a extensão não tem permissão para acessar os resultados da página de busca.

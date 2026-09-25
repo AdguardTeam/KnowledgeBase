@@ -50,7 +50,7 @@ Les filtres de blocage publicitaire d'AdGuard sont les suivants :
 
 - Filtre de base AdGuard
 - Filtre de publicités mobiles AdGuard
-- Filtres régionaux divisés par principe linguistique : chinois, néerlandais, français, allemand, japonais, russe, espagnol/portugais, turc et ukrainien
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### L'objectif de ces filtres
 

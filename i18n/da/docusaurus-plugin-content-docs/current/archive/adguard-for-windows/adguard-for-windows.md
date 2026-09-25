@@ -1,5 +1,5 @@
 ---
-title: AdGuard for Windows v7
+title: AdGuard til Windows v7
 sidebar_position: 1
 ---
 

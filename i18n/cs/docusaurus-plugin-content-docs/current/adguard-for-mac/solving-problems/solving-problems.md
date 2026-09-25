@@ -22,3 +22,4 @@ Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení,
 - [Průvodce pokročilým nastavením](/adguard-for-mac/solving-problems/advanced-settings.md)
 - [Nastavení filtrování v prohlížeči Tor](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [Nekompatibilita s časem u obrazovky](/adguard-for-mac/solving-problems/screen-time-issues.md)
+- [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)

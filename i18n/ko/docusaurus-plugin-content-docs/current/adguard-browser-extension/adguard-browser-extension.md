@@ -25,9 +25,9 @@ sidebar_position: 1
 
   Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-- [Chrome MV3용 AdGuard 브라우저 확장 프로그램](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  Manifest V3 API와 호환되는 별도의 AdGuard 브라우저 확장 프로그램
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [브라우저 보호 페이지](/adguard-browser-extension/protected-pages)
 

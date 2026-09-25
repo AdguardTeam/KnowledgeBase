@@ -50,7 +50,7 @@ Mezi AdGuard filtry blokující reklamy patří:
 
 - Základní filtr AdGuardu
 - Filtr mobilních reklam AdGuard
-- Regionální filtry rozdělené podle jazyků — čínština, holandština, francouzština, němčina, japonština, ruština, španělština/portugalština, turečtina a ukrajinština
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Účel těchto filtrů
 

@@ -5,11 +5,11 @@ sidebar_position: 12
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-AdGuard for Windows v8.0 の変更は大きなものとなっており、この新バージョンを気に入っていただけることを願っています。 しかし、期待通りに進まないことがある可能性も考えられます。 バージョン8.0は前バージョンに比べて大きく異なります。なにしろ、これが最初のNightlyビルドであるからです。 v8.0のインターフェイスが使いにくく感じたり、機能性や安定性の問題が多発した場合は、以前のバージョンおよびその設定を復元できます。
+AdGuard for Windows v8.0 の変更は大きなものとなっており、この新バージョンを気に入っていただけることを願っています。しかし、期待通りに進まないことがある可能性も考えられます。バージョン8.0は前バージョンに比べて大きく異なります。なにしろ、これが最初のNightlyビルドであるからです。 v8.0のインターフェイスが使いにくく感じたり、機能性や安定性の問題が多発した場合は、以前のバージョンおよびその設定を復元できます。
 
 To ensure your settings are preserved during the whole process, it’s recommended to export them before upgrading to v8.0. If needed, you can then reinstall the version 7 and import back your saved settings.
 

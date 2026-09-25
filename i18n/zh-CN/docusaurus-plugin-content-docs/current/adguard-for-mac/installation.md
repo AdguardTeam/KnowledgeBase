@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -29,11 +29,11 @@ sidebar_position: 2
 
 ![双击打开文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
-AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序，然后在打开的窗口中双击 AdGuard 图标。
+AdGuard 图标将出现在您的桌面上。单击它打开安装应用程序，然后在打开的窗口中双击 AdGuard 图标。
 
 ![双击 AdGuard 图标](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
-当您第一次启用 AdGuard 时，您的操作系统将会提示您：该应用程序是从互联网下载的 App。 点击**打开**。
+当您第一次启用 AdGuard 时，您的操作系统将会提示您：该应用程序是从互联网下载的 App。点击**打开**。
 
 ![点击打开](https://cdn.adtidy.org/content/kb/ad_blocker/mac/4.jpg)
 
@@ -45,11 +45,11 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 ![等到下载必要的文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-以使用应用程序，需要输入 macOS 账号的用户名和密码。 在弹出的对话框上输入用户名和密码后，点击**好**。
+以使用应用程序，需要输入 macOS 账号的用户名和密码。在弹出的对话框上输入用户名和密码后，点击**好**。
 
 ![输入密码](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
-现在，您将看到一个快速安装向导，您可以在其中根据需要配置保护。 您可以马上开始设置（来试试吧！） 或暂时无设置需求（先保持这样）。
+现在，您将看到一个快速安装向导，您可以在其中根据需要配置保护。您可以马上开始设置（来试试吧！）或暂时无设置需求（先保持这样）。
 
 ![配置保护](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
@@ -69,13 +69,13 @@ However, you still can [download an older, compatible version](https://agrd.io/a
 
 ![打开 Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
 
-前往应用程序。 在列表中找到 AdGuard，右键它并选择**移到废纸篓**。
+前往应用程序。在列表中找到 AdGuard，右键它并选择**移到废纸篓**。
 
 ![将 AdGuard 移至回收站 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
 
 ### 进阶卸载方式
 
-**除非您知道如何操作或有我们技术支持专门为您推荐使用进阶方式卸载应用程序，我们不推荐您使用该方式。 另外，先执行「标准卸载」的所有步骤。**
+**除非您知道如何操作或有我们技术支持专门为您推荐使用进阶方式卸载应用程序，我们不推荐您使用该方式。另外，先执行「标准卸载」的所有步骤。**
 
 1. 之后，删除以下 AdGuard 文件：
     - ~/Library/Group\Containers/TC3Q7MAJXF.com.adguard.mac（文件夹）
@@ -100,7 +100,7 @@ However, you still can [download an older, compatible version](https://agrd.io/a
 
     ![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
+1. 退出在用户态下运行的进程（不是在 root 权限运行的）。为了退出，请点击进程，然后在左上角点击 X。在对话窗确认要退出。
 
     ![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

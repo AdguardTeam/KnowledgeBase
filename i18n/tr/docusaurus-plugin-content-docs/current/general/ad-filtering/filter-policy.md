@@ -50,7 +50,7 @@ AdGuard reklam engelleme filtreleri şunları içerir:
 
 - AdGuard Temel filtresi
 - AdGuard Mobil Reklam filtresi
-- Dil ilkesine göre ayrılmış bölgesel filtreler — Çince, Felemenkçe, Fransızca, Almanca, Japonca, Rusça, İspanyolca/Portekizce, Türkçe ve Ukraynaca
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Bu filtrelerin amacı
 

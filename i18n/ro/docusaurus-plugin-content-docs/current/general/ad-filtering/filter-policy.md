@@ -50,7 +50,7 @@ Filtrele de blocare a reclamelor AdGuard includ:
 
 - Filtru de bază AdGuard
 - AdGuard Mobile Ads filter
-- Filtre regionale împărțite pe principiu de limbă — chineză, olandeză, franceză, germană, japoneză, rusă, spaniolă/portugheză, turcă și ucraineană
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Scopul acestor filtre
 

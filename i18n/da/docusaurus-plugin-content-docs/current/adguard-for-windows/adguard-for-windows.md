@@ -14,7 +14,7 @@ AdGuard til Windows er et brugervenligt værktøj, der blokerer irriterende bann
 
 ---
 
-![Home screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+![Startskærm \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
 
 På startskærmen findes en til/fra knap til at aktivere/deaktivere AdGuard-beskyttelse samt ikoner til _Adblocking_, _Sporingsbeskyttelse_, _DNS-beskyttelse_ og _Irritationsblokering_. Hovedindstillinger kan tilgås via menuen til venstre.
 
@@ -36,4 +36,4 @@ Muligheder for at vælge sprog og tema, se juridiske dokumenter, tjekke licensop
 
 Klik på _Tjek for opdateringer_ for at se, om app-versionen, filtrene og udvidelserne er opdaterede.
 
-![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)
+![Tjek for opdateringer \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

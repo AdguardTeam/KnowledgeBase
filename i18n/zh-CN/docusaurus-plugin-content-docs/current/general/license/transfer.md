@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## 将许可证转移到另一台设备{#transfer}
 
-许可证密钥可以在[有限数量的设备上激活](../what-is)。 如果许可证密钥已经在最大数量的设备上被使用，用户需要通过账号解除设备绑定。
+许可证密钥可以在[有限数量的设备上激活](../what-is)。如果许可证密钥已经在最大数量的设备上被使用，用户需要通过账号解除设备绑定。
 
 ### 如何解绑设备绑定
 
@@ -31,7 +31,7 @@ sidebar_position: 4
 
     ![单击删除 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2_cn.png)
 
-在解绑所需要的设备数量后，用户可以在新设备上登录。 该许可证将绑定至新设备。
+在解绑所需要的设备数量后，用户可以在新设备上登录。该许可证将绑定至新设备。
 
 ## 如何将许可证转移到另一个 AdGuard 账号{#transferaccount}
 

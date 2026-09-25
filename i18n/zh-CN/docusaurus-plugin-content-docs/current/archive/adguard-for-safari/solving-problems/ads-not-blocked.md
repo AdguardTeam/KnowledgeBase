@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-在某些情况下，过滤功能无法正常工作，即使用户已启用适用于 Safari 的 AdGuard 和适当的过滤器，广告仍然会弹出。 这种情况通常发生在 Safari 浏览器的 Bug 错误导致过滤器更新出错时。
+在某些情况下，过滤功能无法正常工作，即使用户已启用适用于 Safari 的 AdGuard 和适当的过滤器，广告仍然会弹出。这种情况通常发生在 Safari 浏览器的 Bug 错误导致过滤器更新出错时。
 
 ### 解决方案
 

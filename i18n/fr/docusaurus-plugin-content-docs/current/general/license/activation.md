@@ -3,7 +3,7 @@ title: Comment activer
 sidebar_position: 3
 ---
 
-Pour activer votre licence, accédez à la section *Licence* de votre produit AdGuard et recherchez le champ *Connexion* ou le bouton *Activer*. Utilisez l'e-mail et le mot de passe de votre compte AdGuard pour vous connecter. Si vous n'avez pas encore de compte, il vous sera proposé d'en créer un.
+Pour activer votre licence, accédez à la section *Licence* de votre produit AdGuard et recherchez le champ *Connexion* ou le bouton *Activer*. Utilisez l'e-mail et le mot de passe de votre compte AdGuard pour vous connecter. If you don’t have an account yet, you will be offered to create one.
 
 :::note
 
@@ -11,102 +11,116 @@ Pour activer une licence via le compte AdGuard, une licence valide avec au moins
 
 :::
 
-Alternativement, vous pouvez utiliser une [clef de licence](../what-is#license-key) pour activer la licence.
+Alternatively, you can use a [license key (activation code)](../what-is#license-key) to activate the license.
 
 **Ci-dessous, vous pouvez consulter les instructions d'activation étape par étape pour chaque plate-forme.**
 
 ### Activez AdGuard pour Windows
 
-1. Sur l'écran de licence expirée, cliquez sur *Activer*.
+To activate a license you already have, open the menu (⋮) in the upper right corner of the *License* screen and click *Already purchased?*.
 
-    ![Écran de licence expirée *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+![License screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_license.png)
 
-    Vous pouvez également sélectionner *Licence* dans le coin supérieur droit de l'écran principal et cliquer sur *Activer*.
+You can also click *Already purchased?* on the trial-expiration screen the app shows when the trial ends.
 
-    ![Écran principal *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+![Trial expired screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/trial_expired.png)
 
-    ![Écran de licence *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+Then choose one of the two options:
 
-1. Activez votre licence en utilisant la méthode de votre choix. Si la licence est liée à votre adresse e-mail, cliquez sur *Compte AdGuard* ou sélectionnez un réseau social associé à cette adresse e-mail. Ou bien vous pouvez saisir votre clef de licence.
+- **Log in** — you will be redirected to your browser. Log in to your AdGuard account or sign up there. If the account has a valid license with a free device slot, it is applied to the app automatically.
 
-    ![Activation d'une licence *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+  ![Log in through the browser *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_choice.png)
+
+  If the browser tab was closed or the app didn’t pick up the license, click *Reopen login page* or use *Refresh license status* in the same menu (⋮).
+
+- **Enter activation code** — enter the code from the purchase email or from a reseller. The code is also available in your [AdGuard account](https://adguardaccount.com/) and on the *License* screen of another device where AdGuard is already activated.
+
+    ![Licenses in account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/licenses_in_account.png)
+
+  :::note
+
+    *Log in* only works if the license is already in your AdGuard account. If you have an activation code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account, click *Bind license*, enter the key, and click *Bind*.
+
+    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license_to_account.png)
+
+:::
 
 ### L'activation de AdGuard pour Mac
 
 1. Sur l'écran de licence expirée, cliquez sur *Activer*.
 
-    ![Écran de licence expirée *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Soit, vous pouvez cliquer sur l'icône de l'engrenage dans le menu AdGuard, puis sur *Licence*.
+    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
 
-    ![Préférences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. Dans la fenêtre qui s’ouvre, cliquez sur *Activer*.
+1. In the opened window, click *Activate*.
 
-    ![Écran de licence *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Activez votre licence en utilisant la méthode de votre choix. Si la licence est liée à votre adresse e-mail, cliquez sur *Compte AdGuard* ou sélectionnez un réseau social associé à cette adresse e-mail. Ou bien vous pouvez saisir votre clef de licence.
+1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
 
-    ![Activation d'une licence *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### L'activation de AdGuard pour Android
 
-1. Tapez *Paramètres*, puis sélectionnez *Licence*.
+1. Tap *Settings*, then select *License*.
 
-    ![Écran des paramètres *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. Tapez sur *Activer la licence*.
+1. Tap *Activate license*.
 
-    ![Écran de licence *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Activez votre licence en utilisant la méthode de votre choix. Si la licence est liée à votre adresse e-mail, appuyez sur *Continuer avec l'e-mail* ou sélectionnez un réseau social associé à cette adresse e-mail. Ou bien vous pouvez saisir votre clef de licence.
+1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
 
-    ![Activation d'une licence *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### L'activation de AdGuard pour iOS
 
-1. Tapez *Paramètres*, puis sélectionnez *Licence*.
+1. Tap *Settings*, then select *License*.
 
-    ![Écran des paramètres *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Tapez **Connexion** dans le coin supérieur droit de l'écran
+1. Tap **Log in** in the upper right corner of the screen
 
-    ![Écran d'achat *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Utilisez votre adresse e-mail ou votre compte de réseau social pour activer votre licence.
+1. Use your email address or social media account to activate your license.
 
-    ![Écran de connexion *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
 ### L’activation de AdGuard Mini pour Mac
 
-1. Cliquez sur l’icône AdGuard Mini dans la barre de menu.
+1. Click AdGuard Mini icon in the menu bar.
 
-    ![AdGuard Mini dans la barre de menu](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
+    ![AdGuard Mini in the menu bar](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/mini-tray-icon.png)
 
-2. Cliquez sur l’icône des paramètres.
+2. Click the settings icon.
 
-    ![Icône paramètres *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
+    ![Settings icon *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings-in-tray-menu.png)
 
-3. Allez sur *Licence*.
+3. Go to *License*.
 
-    ![Allez sur Licence](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
+    ![Go to License](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/click-license.png)
 
-4. Ouvrez le menu (⋮) dans le coin supérieur droit et cliquez sur *Déjà acheté ?*.
+4. Open the menu (⋮) in the upper right corner and click *Already purchased?*.
 
-    ![Cliquez sur « Déjà acheté »](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
+    ![Click already purchased](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/kebab-menu.png)
 
-5. Vous verrez les options d’activation disponibles :
+5. You will see the available activation options:
 
-    ![Options d’activation](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
+    ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Connexion**
+    - **Log in**
 
-      Connectez-vous à votre compte AdGuard disposant d’une licence valide.
+      Log in to your AdGuard account that has a valid license in it.
 
-    - **Restaurer depuis l’App Store**
+    - **Restore from App Store**
 
-      Utilisez une licence que vous avez préalablement achetée via l’App Store.
+      Use a license that you have previously bought through the App Store.
 
-    - **Saisissez le code d’activation**
+    - **Enter activation code**
 
-      Saisissez votre code d’activation.
+      Enter your activation code.

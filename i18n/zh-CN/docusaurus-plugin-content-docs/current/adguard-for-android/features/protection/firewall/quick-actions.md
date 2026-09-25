@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -15,4 +15,4 @@ sidebar_position: 2
 
 ![Quick actions \*mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-如果您发现有某个应用程序根本不应该连接互联网，或者您最近没有使用过某个应用程序，可以立即阻止其访问权限。 启用「防火墙」模块后，才能设置连接权限。
+如果您发现有某个应用程序根本不应该连接互联网，或者您最近没有使用过某个应用程序，可以立即阻止其访问权限。启用「防火墙」模块后，才能设置连接权限。

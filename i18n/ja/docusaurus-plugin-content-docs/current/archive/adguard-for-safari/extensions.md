@@ -5,13 +5,13 @@ sidebar_position: 3
 
 :::info
 
-この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
 ## Safari拡張機能とは
 
-Safari拡張機能は、Safariウェブブラウザで機能を追加する小さなソフトウェアプログラムです。 ブラウザに内蔵されていない機能を追加することで、ユーザーはブラウジング体験をカスタマイズして改善させることができます。 AdGuard for Safari は、主にSafariで開かれたウェブサイトにフィルタリングルールを適用するために拡張機能を使用します。
+Safari拡張機能は、Safariウェブブラウザで機能を追加する小さなソフトウェアプログラムです。ブラウザに内蔵されていない機能を追加することで、ユーザーはブラウジング体験をカスタマイズして改善させることができます。 AdGuard for Safari は、主にSafariで開かれたウェブサイトにフィルタリングルールを適用するために拡張機能を使用します。
 
 ## 仕組み
 
@@ -24,7 +24,7 @@ Safari拡張機能は、Safariウェブブラウザで機能を追加する小�
 - AdGuard カスタム
 - AdGuard その他
 
-各コンテンツブロッカー拡張機能において、最大150,000の有効フィルタリングルールが許可されています。 ほとんどのフィルタグループのルール数は150,000を超えません。 ただし、言語特化フィルタやカスタムフィルタを有効にしすぎると、制限を超える可能性があります。 このような場合、制限を超えたルールの中から、ランダムには一部のルールが自動的に無効化されるため、誤った広告ブロックの可能性が出てきます。 **We strongly recommend activating only the filters you need**.
+各コンテンツブロッカー拡張機能において、最大150,000の有効フィルタリングルールが許可されています。ほとんどのフィルタグループのルール数は150,000を超えません。ただし、言語特化フィルタやカスタムフィルタを有効にしすぎると、制限を超える可能性があります。このような場合、制限を超えたルールの中から、ランダムには一部のルールが自動的に無効化されるため、誤った広告ブロックの可能性が出てきます。 **We strongly recommend activating only the filters you need**.
 
 There is also one more extension responsible for other features: _AdGuard for Safari_, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
 
@@ -50,7 +50,7 @@ _AdGuard Custom_ applies rules from filters that you add on your own to _Custom 
 
 ## AdGuard for Safari
 
-_AdGuard for Safari_ activates the AdGuard icon next to the search bar. 特定のウェブサイトに対して広告ブロックを素早くオン・オフにしたい場合や、手動で広告をブロックしたい場合に便利です。 また、Safariがサポートするフォーマットに変換できない高度なルールもこの拡張機能に含まれています。 These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+_AdGuard for Safari_ activates the AdGuard icon next to the search bar. 特定のウェブサイトに対して広告ブロックを素早くオン・オフにしたい場合や、手動で広告をブロックしたい場合に便利です。また、Safariがサポートするフォーマットに変換できない高度なルールもこの拡張機能に含まれています。 These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
 
 ## Safariの拡張機能を管理する方法
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## 如何购买许可证{#purchase}
 
-用户可以在 [adguard.com](https://adguard.com/license.html) 上购买 AdGuard 许可证。 平台支持 Visa、Mastercard、Apple Pay、Google Pay、PayPal、支付宝和银联支付。 我们还接受以下加密货币：Bitcoin、Ethereum、Litecoin 和 Tether。
+用户可以在 [adguard.com](https://adguard.com/license.html) 上购买 AdGuard 许可证。平台支持 Visa、Mastercard、Apple Pay、Google Pay、PayPal、支付宝和银联支付。我们还接受以下加密货币：Bitcoin、Ethereum、Litecoin 和 Tether。
 
 iOS 版 的 AdGuard Pro 可以在 App Store 上购买。
 

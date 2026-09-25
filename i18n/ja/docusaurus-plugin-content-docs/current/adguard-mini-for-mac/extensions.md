@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ## Safari拡張機能とは
 
-Safari拡張機能は、Safariウェブブラウザで機能を追加する小さなソフトウェアプログラムです。 ブラウザに内蔵されていない機能を追加することで、ユーザーはブラウジング体験をカスタマイズして改善させることができます。 AdGuard Mini for Mac uses extensions primarily to apply filtering rules on websites opened in Safari.
+Safari拡張機能は、Safariウェブブラウザで機能を追加する小さなソフトウェアプログラムです。ブラウザに内蔵されていない機能を追加することで、ユーザーはブラウジング体験をカスタマイズして改善させることができます。 AdGuard Mini for Mac uses extensions primarily to apply filtering rules on websites opened in Safari.
 
 ## 仕組み
 
@@ -24,7 +24,7 @@ Safari拡張機能は、Safariウェブブラウザで機能を追加する小�
 - AdGuard カスタム
 - AdGuard その他
 
-各コンテンツブロッカー拡張機能において、最大150,000の有効フィルタリングルールが許可されています。 ほとんどのフィルタグループのルール数は150,000を超えません。 ただし、言語特化フィルタやカスタムフィルタを有効にしすぎると、制限を超える可能性があります。 このような場合、制限を超えたルールの中から、ランダムには一部のルールが自動的に無効化されるため、誤った広告ブロックの可能性が出てきます。 **We strongly recommend activating only the filters you need**.
+各コンテンツブロッカー拡張機能において、最大150,000の有効フィルタリングルールが許可されています。ほとんどのフィルタグループのルール数は150,000を超えません。ただし、言語特化フィルタやカスタムフィルタを有効にしすぎると、制限を超える可能性があります。このような場合、制限を超えたルールの中から、ランダムには一部のルールが自動的に無効化されるため、誤った広告ブロックの可能性が出てきます。 **We strongly recommend activating only the filters you need**.
 
 There is also one more extension responsible for other features: _AdGuard for Safari_, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
 
