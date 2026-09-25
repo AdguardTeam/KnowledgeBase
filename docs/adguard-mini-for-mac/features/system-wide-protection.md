@@ -62,7 +62,7 @@ Yes. *System-wide protection* only works with the first user account created on 
 
 :::warning
 
-This isn’t a typical macOS operation: freeing up a UID means deleting an account and creating a new one from Terminal. Back up the data on your Mac before proceeding.
+This is an advanced, risky operation. Only do this if you have no other option. Freeing up UID 501 means deleting an existing account and creating a new one from Terminal. If something goes wrong, this can cause permanent data loss. Back up all the data on your Mac before proceeding.
 
 :::
 
