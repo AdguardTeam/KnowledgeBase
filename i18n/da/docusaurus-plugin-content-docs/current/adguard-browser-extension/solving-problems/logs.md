@@ -1,6 +1,6 @@
 ---
 title: Sådan eksporteres logfiler fra baggrundssiden
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Eksport af logfiler fra baggrundssiden i udvidelsen

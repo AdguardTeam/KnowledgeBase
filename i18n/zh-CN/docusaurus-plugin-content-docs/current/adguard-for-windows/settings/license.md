@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/licenses.png)
 
-「许可证」选项卡提供当前许可证的详细信息。 用户可以查看以下信息：
+「许可证」选项卡提供当前许可证的详细信息。用户可以查看以下信息：
 
 - 查看许可证类型、可同时连接 AdGuard 的设备数量以及激活码；
 - 将许可证绑定到 AdGuard 账号；

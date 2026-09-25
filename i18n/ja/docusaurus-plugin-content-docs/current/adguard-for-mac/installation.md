@@ -3,7 +3,7 @@ title: 'インストール/アンインストール'
 sidebar_position: 2
 ---
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
@@ -31,7 +31,7 @@ AdGuard for Mac をインストールするには、ブラウザで _adguard.com
 
 ![AdGuardアイコンをダブルクリックします](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-3.png)
 
-AdGuard初インストールの際に、OSからの警告が表示されます。 「**開く**」を押してください。
+AdGuard初インストールの際に、OSからの警告が表示されます。「**開く**」を押してください。
 
 ![「開く」をクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-4.png)
 
@@ -43,11 +43,11 @@ AdGuard初インストールの際に、OSからの警告が表示されます�
 
 ![必要なファイルがダウンロードされるまで待ちます](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-6.png)
 
-AdGuardアプリを使用するにはmacOS管理者アカウントのパスワードが必要になります。 パスワードを入力して「**OK**」を押してください。
+AdGuardアプリを使用するにはmacOS管理者アカウントのパスワードが必要になります。パスワードを入力して「**OK**」を押してください。
 
 ![パスワードを入力します。](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-7.png)
 
-次に、自分に合わせて設定を簡単にカスタマイズできるチュートリアル画面表示されます。 「はじめる」を押して微調整を開始するか、 「スキップ」を押して今はスキップすることができます。
+次に、自分に合わせて設定を簡単にカスタマイズできるチュートリアル画面表示されます。「はじめる」を押して微調整を開始するか、「スキップ」を押して今はスキップすることができます。
 
 ![保護を設定する](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-8.jpg)
 
@@ -73,7 +73,7 @@ However, you still can [download an older, compatible version](https://agrd.io/a
 
 ### アドバンスド
 
-**※この手順は、技術的なことが分かる場合、またはAdGuardサポートに「アドバンスドアンインストール」を案内された場合にのみ使用してください。 また、最初に「通常のアンインストール」手順のステップをすべて行ってください。**
+**※この手順は、技術的なことが分かる場合、またはAdGuardサポートに「アドバンスドアンインストール」を案内された場合にのみ使用してください。また、最初に「通常のアンインストール」手順のステップをすべて行ってください。**
 
 1. 次に、以下のAdGuardファイルを削除してください:
     - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (フォルダ)
@@ -98,7 +98,7 @@ However, you still can [download an older, compatible version](https://agrd.io/a
 
     ![アクティビティモニタを実行する](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。 そうするにはプロセスをクリックして、左上の「X」をクリックしてください。 表示されたダイアログで確認してください。
+1. ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。そうするにはプロセスをクリックして、左上の「X」をクリックしてください。表示されたダイアログで確認してください。
 
     ![確認](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

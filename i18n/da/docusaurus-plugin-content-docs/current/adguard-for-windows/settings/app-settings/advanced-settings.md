@@ -27,21 +27,21 @@ Når slået til, detekterer AdGuard automatisk filterabonnementslink (såsom `ab
 
 Er denne indstilling slået til, omdirigeret AdGuard al trafik og ruter den til den lokale proxyserver for filtrering.
 
-If it’s turned off, AdGuard filters traffic directly — without redirecting it. In this mode, Windows sees AdGuard as the only app connecting to the Internet, since all other apps go through it. This can slightly improve performance but may reduce the effectiveness of the system firewall.
+Er den slået fra, filtrerer AdGuard trafikken direkte — uden at omdirigere den. I denne tilstand ser Windows AdGuard som den eneste app, der opretter forbindelse til internet, da alle andre apps går igennem den. Dette kan forbedre ydeevnen en smule, men kan reducere effektiviteten af systemets firewall.
 
-## Open AdGuard at system start-up
+## Åbn AdGuard ved systemopstart
 
-Enable this option to launch the AdGuard window automatically when your PC starts.
+Aktivér denne indstilling for automatisk at åbne AdGuard-vinduet, når PC'en starter.
 
-## Enable filtering at system start-up
+## Aktivér filtrering ved systemstart
 
-Since version 7.12, AdGuard doesn’t start filtering traffic automatically after you boot your PC — unless the _Launch AdGuard at system start-up_ option is enabled. Instead, it runs in a passive “idle” mode.
+Siden version 7.12 starter AdGuard ikke automatisk trafikfiltrering efter opstart af PC'en — medmindre indstillingen _Start AdGuard ved systemstart_ er aktiveret. I stedet kører den i en passiv "tomgangstilstand".
 
-Turning this on allows AdGuard to filter traffic immediately, even if the app hasn’t been opened yet.
+Slås denne til, tillader det AdGuard at filtrere trafik med det samme, selvom appen endnu ikke er blevet åbnet.
 
-## Filter localhost
+## Filtrér localhost
 
-Enable this to allow AdGuard to filter loopback (localhost) traffic, which some apps use to communicate within the system. If AdGuard VPN is installed, this setting is always on because the VPN requires it to work properly.
+Aktivér denne for at tillade AdGuard at filtrere loopback (localhost) trafik, som nogle apps bruger til kommunikation inden for systemet. Hvis AdGuard VPN er installeret, er denne indstilling altid slået til, da VPN'et kræver den for at fungere korrekt.
 
 ## Optag HAR
 

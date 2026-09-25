@@ -9,7 +9,7 @@ sidebar_position: 4
 
 :::
 
-To analyze and diagnose various problems that may occur with AdGuard Mini for Mac, the AdGuard support service may need its log files. このようなログファイルには、エラーやその他のソフトウェア・イベントの記録が含まれます。 以下は、ログを収集し、必要に応じてAdGuardサポートに送信する方法についての簡単な説明です。
+To analyze and diagnose various problems that may occur with AdGuard Mini for Mac, the AdGuard support service may need its log files. このようなログファイルには、エラーやその他のソフトウェア・イベントの記録が含まれます。以下は、ログを収集し、必要に応じてAdGuardサポートに送信する方法についての簡単な説明です。
 
 ### ログを収集する方法
 
@@ -21,7 +21,7 @@ Now you can send this file to [support@adguard.com](mailto:support@adguard.com) 
 
 :::note
 
-AdGuard は、お客様のプライバシーを保護することに強くコミットしています。 We strictly follow our [Privacy Policy](https://adguard.com/privacy.html) and do not collect any private information about users. サポートチームにログを送信する前に、機密情報や共有したくない情報が含まれていないかどうか、ログファイルを確認してください。 そのような個人情報が含まれている場合は、削除してからログを送信することをお勧めします。
+AdGuard は、お客様のプライバシーを保護することに強くコミットしています。 We strictly follow our [Privacy Policy](https://adguard.com/privacy.html) and do not collect any private information about users. サポートチームにログを送信する前に、機密情報や共有したくない情報が含まれていないかどうか、ログファイルを確認してください。そのような個人情報が含まれている場合は、削除してからログを送信することをお勧めします。
 
 :::
 

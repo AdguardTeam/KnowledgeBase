@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 Mac 版的 AdGuard Mini，用于 Safari 浏览器的保护。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-在某些情况下，过滤可能不起作用，即使 AdGuard Mini Mac 版和适当的过滤器已启用，广告仍可能被显示。 这种情况通常发生在 Safari 浏览器的 Bug 错误导致过滤器更新出错时。
+在某些情况下，过滤可能不起作用，即使 AdGuard Mini Mac 版和适当的过滤器已启用，广告仍可能被显示。这种情况通常发生在 Safari 浏览器的 Bug 错误导致过滤器更新出错时。
 
 ### 解决方案
 

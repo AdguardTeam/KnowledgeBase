@@ -1,9 +1,9 @@
 ---
-title: How to prioritize the translations of Crowdin files
+title: Sådan prioriteres oversættelser af Crowdin-filer
 sidebar_position: 5
 ---
 
-There are seven AdGuard projects on Crowdin:
+Der findes syv AdGuard-projekter på Crowdin:
 
 - [AdGuard Applications](https://crowdin.com/project/adguard-applications)
 - [AdGuard Websites](https://crowdin.com/project/adguard-websites)
@@ -11,42 +11,42 @@ There are seven AdGuard projects on Crowdin:
 - [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base)
 - [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases)
 - AdGuard Mail Knowledge Base
-- AdGuard Glossary
+- AdGuard Ordliste
 
-The first five are actively translated. *AdGuard Mail Knowledge Base* is not available for translation yet. *AdGuard Glossary* is used solely for storing and managing terminology. If you want to add or edit terms, you can do it directly in the editor workspace.
+De første fem oversættes aktivt. *AdGuard Mail Knowledge Base* er endnu ikke tilgængelig for oversættelse. *AdGuard Ordliste* bruges kun til at gemme og håndtere terminologi. Ønskes udtryk tilføjet eller redigeret, kan dette gøres direkte i editorens arbejdsområde.
 
-![Adding terms *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adding_terms.png)
+![Tilføjelse af udtryk *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adding_terms.png)
 
-## Starting with the Applications Project
+## Projektet Applications
 
-There are no strict guidelines on where to begin within the *AdGuard Applications* project. Just choose any product you like.
+Der er ingen strikse retningslinjer for, hvor der skal begyndes i projektet *AdGuard Applications*. Vælg blot et hvilket som helst ønsket produkt.
 
-There are just a couple of things we want to mention:
+Der er blot et par ting, vi gerne vil nævne:
 
-- An app becomes available in a language only after **all** its strings have been translated on Crowdin.
-- Translate app store descriptions after the app itself. A description without a translated product is not useful.
-- Some files and folders may be outdated — for example, `adguard-vpn-for-desktop` and `adguard-vpn-for-ios-ARCHIVED`. These should not be translated.
+- En app bliver først tilgængelig på et sprog, efter **alle** dens strenge er oversat på Crowdin.
+- Oversæt app-butiksbeskrivelser efter selve appen. En beskrivelse uden et oversat produkt er ikke nyttig.
+- Nogle filer og mapper kan være forældede — f.eks. `adguard-vpn-for-desktop` og `adguard-vpn-for-ios-ARCHIVED`. Disse bør ikke oversættes.
 
-## Starting with the Websites Project
+## Projektet Websites
 
-The situation is different in the *AdGuard Websites* project. Languages can be added to the website even if a full set of translations is not available. However, this depends on which files have already been translated. That’s why we recommend that you start with the most important files — they are listed below:
+Det er dog anderledes i projektet *AdGuard Websites*. Sprog kan føjes til webstedet, selv hvis et komplet sæt oversættelser ikke er tilgængeligt. Dette afhænger dog af, hvilke filer, som allerede er oversat. Vi anbefaler derfor at starte med de vigtigste filer, som fremgår nedenfor:
 
-[AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
+[AdGuard Ad Blocker-websted](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
 - `critical.resx`
 - `auth.resx`
 - `welcome.resx`
 
-[AdGuard VPN website](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
+[AdGuard VPN-websted](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
 - `critical.resx`
 - `auth.resx`
 
-[AdGuard DNS website](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
+[AdGuard DNS-websted](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
 - `critical.resx`
 - `auth.resx`
 
-Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
+Tilføjelse af nye strenge samt opdatering af eksisterende i disse filer kræver særlig opmærksomhed fra projektoversættere og -korrekturlæsere.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the *AdGuard Websites* project. Newly added strings in this file also have a high translation priority.
+Ud over webstederne, er der en fil til oversættelse af [transaktionsmails](https://crowdin.com/project/adguard-websites/en#/emails) i *AdGuard Websites*-projektet. Nyligt tilføjede strenge i denne fil har også en høj oversættelsesprioritet.

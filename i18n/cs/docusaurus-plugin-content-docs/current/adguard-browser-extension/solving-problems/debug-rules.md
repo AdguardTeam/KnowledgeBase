@@ -1,9 +1,9 @@
 ---
-title: Jak ladit pravidla v AdGuardu pro Chrome MV3
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
-V [AdGuardu pro Chrome MV3](/adguard-browser-extension/mv3-version) se v protokolu filtrování zobrazují pouze přibližná pravidla, která byla použita a která nazýváme "předpokládaná pravidla". Je to proto, že prohlížeč neposkytuje podrobnosti o tom, která konkrétní deklarativní pravidla byla použita, pokud není rozšíření v "rozbaleném" formátu. Chcete-li získat přesné informace, musíte si sami nainstalovat rozbalenou verzi rozšíření do prohlížeče.
+In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. Je to proto, že prohlížeč neposkytuje podrobnosti o tom, která konkrétní deklarativní pravidla byla použita, pokud není rozšíření v "rozbaleném" formátu. Chcete-li získat přesné informace, musíte si sami nainstalovat rozbalenou verzi rozšíření do prohlížeče.
 
 Tyto pokyny jsou určeny i pro problematické případy, kdy chcete upravit pravidla, která jsou s rozšířením staticky svázána. Ve většině případů by mělo stačit použití _Uživatelských pravidel_ v rozšíření.
 
@@ -55,7 +55,10 @@ Tyto pokyny jsou určeny i pro problematické případy, kdy chcete upravit prav
    yarn dev chrome-mv3
    ```
 
-3. Sestavené rozšíření bude umístěno v adresáři:
+3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
+   be located in the `./build/dev/opera-mv3` directory.
+
+4. The built extension will be located in the directory:
 
    ```bash
    ./build/dev/chrome-mv3

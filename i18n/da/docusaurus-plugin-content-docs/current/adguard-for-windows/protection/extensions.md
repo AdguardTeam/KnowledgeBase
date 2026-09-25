@@ -5,7 +5,7 @@ sidebar_position: 7
 
 AdGuard kan udvide webstedsfunktionaliteten ved at fungere som en [userscript-håndtering](/general/extensions.md). Dette muliggør at tilføje egne scripts samt håndtere eksisterende.
 
-![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
+![Udvidelser \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/extensions.png)
 
 ## Detektér automatisk userscripts
 

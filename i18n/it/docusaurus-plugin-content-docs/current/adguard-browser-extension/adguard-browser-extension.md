@@ -25,9 +25,9 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
   Compatibilità dell'estensione AdGuard per browser con le app AdGuard per sistemi fissi
 
-- [Estensione di browser AdGuard per Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  Un'estensione AdGuard autonoma per browser compatibile con l'API Manifest V3
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [Pagine protette dal browser](/adguard-browser-extension/protected-pages)
 

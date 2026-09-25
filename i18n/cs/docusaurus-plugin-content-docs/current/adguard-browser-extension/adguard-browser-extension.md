@@ -25,9 +25,9 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
   Kompatibilita Rozšíření prohlížeče AdGuard s desktopovými aplikacemi AdGuard
 
-- [Rozšíření prohlížeče AdGuard pro Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  Samostatné Rozšíření prohlížeče AdGuard kompatibilní s rozhraním API Manifest V3
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [Stránky chráněné prohlížečem](/adguard-browser-extension/protected-pages)
 

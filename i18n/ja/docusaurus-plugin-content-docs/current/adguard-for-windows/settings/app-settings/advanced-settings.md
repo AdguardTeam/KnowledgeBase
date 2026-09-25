@@ -17,7 +17,7 @@ If you want AdGuard to skip filtering a specific app, enter its full file path h
 
 ## AdGuardのポップアップ通知を有効にする
 
-この機能を有効にすると、AdGuardのポップアップ通知が表示されるようになります。 あまり頻繁には表示されず、重要な情報のみが含まれます。 You can also reopen the latest notification from the tray menu.
+この機能を有効にすると、AdGuardのポップアップ通知が表示されるようになります。あまり頻繁には表示されず、重要な情報のみが含まれます。 You can also reopen the latest notification from the tray menu.
 
 ## フィルタ・サブスクリプションURLを自動的に傍受する
 

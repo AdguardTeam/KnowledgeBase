@@ -1,6 +1,6 @@
 ---
 title: Adblockingproblemer på søgewebsteder i Opera
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Kan AdGuard Browser Extension ikke blokere annoncer på søgewebsteder i Opera, enten automatisk eller manuelt, betyder det, at udvidelsen ikke har tilladelse til at tilgå søgeresultater på siden.

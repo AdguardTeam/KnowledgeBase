@@ -129,7 +129,7 @@ sidebar_position: 2
 
 ## 特别感谢 {#testers}
 
-热烈感谢所有 beta 测试人员和其他参与的用户，TA 们在查找/解决所有错误、翻译 AdGuard 和管理我们的社区方面的帮助是无价的。 特别感谢：
+热烈感谢所有 beta 测试人员和其他参与的用户，TA 们在查找/解决所有错误、翻译 AdGuard 和管理我们的社区方面的帮助是无价的。特别感谢：
 
 - ag_bug_finder — Windows版 AdGuard 的测试者
 - Aikatsui — AdGuard Home 的积极贡献者
@@ -179,6 +179,6 @@ sidebar_position: 2
 
 ---
 
-除此之外，我们想感谢 [xda-developers 的用户](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)。 非常感谢您向我们发送反馈意见！
+除此之外，我们想感谢 [xda-developers 的用户](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)。非常感谢您向我们发送反馈意见！
 
-我们总是很感谢收到用户的反馈意见，特别是建设性的。 大家能随时随地与我们联系，请求改善 AdGuard、新增功能，以及提交错误报告。 加入 [AdGuard Subreddit](https://reddit.com/r/adguard)、 [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) 或访问我们在 [GitHub](https://github.com/AdguardTeam)上的页面。
+我们总是很感谢收到用户的反馈意见，特别是建设性的。大家能随时随地与我们联系，请求改善 AdGuard、新增功能，以及提交错误报告。加入 [AdGuard Subreddit](https://reddit.com/r/adguard)、 [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) 或访问我们在 [GitHub](https://github.com/AdguardTeam)上的页面。

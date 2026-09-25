@@ -5,11 +5,11 @@ sidebar_position: 12
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-The changes in AdGuard for Windows v8.0 are significant, and we hope you love the new version. 不过，某些功能可能不如预期。 v8.0 版本差异较大，毕竟这是首个 Nightly 夜间构建版。 如果您觉得 v8.0 界面不适应或遇到过多功能/稳定性问题，可以恢复旧版本及原有设置。
+The changes in AdGuard for Windows v8.0 are significant, and we hope you love the new version. 不过，某些功能可能不如预期。 v8.0 版本差异较大，毕竟这是首个 Nightly 夜间构建版。如果您觉得 v8.0 界面不适应或遇到过多功能/稳定性问题，可以恢复旧版本及原有设置。
 
 To ensure your settings are preserved during the whole process, it’s recommended to export them before upgrading to v8.0. If needed, you can then reinstall the version 7 and import back your saved settings.
 

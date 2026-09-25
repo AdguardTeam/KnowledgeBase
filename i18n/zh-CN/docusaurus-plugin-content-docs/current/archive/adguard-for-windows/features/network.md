@@ -5,17 +5,17 @@ sidebar_position: 4
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-「_网络_」模块专用于网络过滤，用户可以找到其他与网络相关的选项。 其中两项默认启动：「开启流量过滤」和「过滤 HTTPS」。 这都是重要的额外预防措施，可以更好地过滤网络空间。 当前大部分网站使用 HTTPS，广告亦是如此。 在许多网站上，例如 youtube.com、facebook.com 和 x.com，如果没有 HTTPS 过滤就无法删除广告。 因此除非用户有充分的理由不开启它，否则请保持开启「过滤 HTTPS」功能。
+「_网络_」模块专用于网络过滤，用户可以找到其他与网络相关的选项。其中两项默认启动：「开启流量过滤」和「过滤 HTTPS」。这都是重要的额外预防措施，可以更好地过滤网络空间。当前大部分网站使用 HTTPS，广告亦是如此。在许多网站上，例如 youtube.com、facebook.com 和 x.com，如果没有 HTTPS 过滤就无法删除广告。因此除非用户有充分的理由不开启它，否则请保持开启「过滤 HTTPS」功能。
 
 ![Network Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/network/network_settings_2.png)
 
-用户也可选中此模块内的复选框「AdGuard 用作 HTTP 代理」以将 AdGuard 用作常规的 HTTP 代理过滤经由它的所有流量。 用户还可以开启「用 EV 证书过滤网站」功能。 扩展验证（EV）SSL 证书提供更强大的安全保障；此类网站的所有者必须通过 EV 指南定义的彻底的全球标准化身份验证过程。 这就是一些用户信任具有此类证书的网站并且不愿过滤它们的原因。
+用户也可选中此模块内的复选框「AdGuard 用作 HTTP 代理」以将 AdGuard 用作常规的 HTTP 代理过滤经由它的所有流量。用户还可以开启「用 EV 证书过滤网站」功能。扩展验证（EV）SSL 证书提供更强大的安全保障；此类网站的所有者必须通过 EV 指南定义的彻底的全球标准化身份验证过程。这就是一些用户信任具有此类证书的网站并且不愿过滤它们的原因。
 
-最后是代理设置部分。 用户可以在此处指定 AdGuard 更新过滤器，获取新版本等所用的代理服务器。
+最后是代理设置部分。用户可以在此处指定 AdGuard 更新过滤器，获取新版本等所用的代理服务器。
 
 ### Enable traffic filtering
 

@@ -1,6 +1,6 @@
 ---
 title: Cómo exportar registros desde la página en segundo plano
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exportación de registros desde la página en segundo plano de la extensión

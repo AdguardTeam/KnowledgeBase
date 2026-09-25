@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-AdGuard for Safari と適切なフィルタが有効になっていても、フィルタリングが機能せず、広告がブロックされていない場合があります。 これは通常、Safariのバグが原因でフィルタの更新がうまくいかないときに発生します。
+AdGuard for Safari と適切なフィルタが有効になっていても、フィルタリングが機能せず、広告がブロックされていない場合があります。これは通常、Safariのバグが原因でフィルタの更新がうまくいかないときに発生します。
 
 ### 対処法
 
