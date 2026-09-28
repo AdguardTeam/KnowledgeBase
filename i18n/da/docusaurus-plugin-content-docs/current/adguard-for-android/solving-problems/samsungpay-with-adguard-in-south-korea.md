@@ -1,38 +1,38 @@
 ---
-title: How to use Samsung Pay with AdGuard in South Korea
+title: Sådan benyttes Samsung Pay med AdGuard i Sydkorea
 sidebar_position: 16
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-A number of users have encountered an issue where Samsung Pay does not work while AdGuard is running. This issue occurs almost exclusively on devices registered in South Korea.
+En række brugere har oplevet det problem, at Samsung Pay ikke fungerer, mens AdGuard kører. Problemet opstår næsten udelukkende på enheder registreret i Sydkorea.
 
-What is causing this issue? Sometimes Samsung Pay does not work on devices with VPN services running, and AdGuard is one of these apps. By default, AdGuard uses a local VPN to filter traffic, which can cause problems when using Samsung Pay.
+Hvad forårsager dette problem? Nogle gange fungerer Samsung Pay ikke på enheder med kørende VPN-tjenester, og AdGuard er en sådan app. Som standard anvender AdGuard et lokalt VPN til trafikfiltrering, hvilket kan forårsage problemer under brug af Samsung Pay.
 
-As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can be avoided with the *Detect Samsung Pay* feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed.
+Som en konsekvens måtte brugerne deaktivere AdGuard, inden de foretog betalinger med Samsung Pay. Dette kan nu undgås med funktionen *Detektér Samsung Pay*. Når denne indstilling er slået til, pauseres AdGuard-appen, hver gang brugeren åbner Samsung Pay-appen og genoptages, når appen lukkes.
 
 :::note
 
-This feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. If another mode is being used, Samsung Pay will function without any interruptions.
+Denne funktion fungerer kun, såfremt tilstanden Lokal VPN-filtrering er valgt i AdGuard-indstillingerne. Bruges en anden tilstand, fungerer Samsung Pay uden nogen afbrydelser.
 
 :::
 
-To enable *Detect Samsung Pay*, follow these steps:
+Følg disse trin for at slå *Detektér Samsung Pay* til:
 
-1. Go to *Settings* → *General* → *Advanced*→ *Low-level settings*.
+1. Gå til *Indstillinger* → *Generelt* → *Avanceret* → *Lavniveauindstillinger*.
 
-1. Scroll to *Detect Samsung Pay* and move the slider to the right.
+1. Rul til *Detektér Samsung Pay*, og flyt skyderen til højre.
 
-1. Tap *Allow permissions* and give AdGuard access to information about the use of other apps.
+1. Tryk på *Tildel tilladelser* og giv AdGuard adgang til oplysninger om brugen af andre apps.
 
-We need it to collect statistics about the operation of Samsung Pay in order for the *Detect Samsung Pay* feature to work.
+Den kræves for indsamling af statistik om driften af Samsung Pay, således at funktionen *Detektér Samsung Pay* kan fungere.
 
-After enabling this feature, when you switch from Samsung Pay to AdGuard, the following message will appear as shown in the screenshot.
+Når der efter aktivering af funktionen skiftes fra Samsung Pay til AdGuard, vises meddelelsen som vist på skærmfotoet.
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/samsung_pay.png)
 
-Alternatively, you can disable filtering for Samsung Pay in *App management*. Simply go to the *App management* screen (third tab from the bottom), find Samsung Pay in the list, and turn off the switch at *Route traffic through AdGuard*.
+Alternativt kan filtrering for Samsung Pay deaktiveres via *App-håndtering*. Gå blot til skærmen *App-håndtering* (tredje fane fra bunden), find Samsung Pay på listen og slå kontakten fra for *Rut trafik igennem AdGuard*.

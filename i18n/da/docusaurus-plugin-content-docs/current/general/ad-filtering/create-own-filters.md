@@ -127,7 +127,8 @@ Some rules can be used only in trusted filters. This category includes:
 
 - filter lists [created by the AdGuard team](../adguard-filters),
 - custom filter lists installed as `trusted`,
-- user rules.
+- user rules,
+- pre-approved third-party filter lists available in the *Filters* tab.
 
 ### AdGuard Content Blocker
 
@@ -4981,9 +4982,9 @@ where:
         - `adguard_ext_chromium_mv3` — [AdGuard for Chromium MV3][ext-mv3]
         - `adguard_ext_firefox` — AdGuard Browser Extension for Firefox
         - `adguard_ext_edge` — AdGuard Browser Extension for Edge Legacy
-        - `adguard_ext_edge_mv3` — AdGuard Browser Extension for Edge MV3
+        - `adguard_ext_edge_mv3` — AdGuard Browser Extension til Edge MV3
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
-        - `adguard_ext_opera_mv3` — AdGuard Browser Extension for Opera MV3
+        - `adguard_ext_opera_mv3` — AdGuard Browser Extension til Opera MV3
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
         - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
@@ -5167,11 +5168,11 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_edge` — AdGuard Browser Extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-- `ext_edge_mv3` — AdGuard Browser Extension for Edge MV3 — [https://filters.adtidy.org/extension/edge-mv3/filters/2.txt](https://filters.adtidy.org/extension/edge-mv3/filters/2.txt)
+- `ext_edge_mv3` — AdGuard Browser Extension til Edge MV3 — [https://filters.adtidy.org/extension/edge-mv3/filters/2.txt](https://filters.adtidy.org/extension/edge-mv3/filters/2.txt)
 
 - `ext_opera` — AdGuard Browser Extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_opera_mv3` — AdGuard Browser Extension for Opera MV3 — [https://filters.adtidy.org/extension/opera-mv3/filters/2.txt](https://filters.adtidy.org/extension/opera-mv3/filters/2.txt)
+- `ext_opera_mv3` — AdGuard Browser Extension til Opera MV3 — [https://filters.adtidy.org/extension/opera-mv3/filters/2.txt](https://filters.adtidy.org/extension/opera-mv3/filters/2.txt)
 
 - `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 

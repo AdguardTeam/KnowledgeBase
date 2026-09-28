@@ -1,6 +1,6 @@
 ---
 title: 完整版
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 AdGuard Mini Mac 版的完整版解锁高级功能，可提供更快的过滤速度和更强大的过滤能力。

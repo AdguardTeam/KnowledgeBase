@@ -27,7 +27,7 @@ Denne artikel omhandler AdGuard Browser Extension, der kun beskytter webbrowsere
 
 - [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
+  MV3-versioner af AdGuard Browser Extension til Chrome, Microsoft Edge og Opera
 
 - [Browserbeskyttede sider](/adguard-browser-extension/protected-pages)
 

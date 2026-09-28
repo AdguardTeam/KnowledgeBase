@@ -34,7 +34,7 @@ automatisk, da de to versioner har forskellige udvidelses-ID'er. Sådan skiftes 
 4. Genindlæs åbne faner.
 
 MV3 anvender de fleste blokeringsregler via webbrowserens deklarative motor, hvilket begrænser antallet
-af regler og ændrer, hvordan filtre opdateres. Before switching, see the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/) article.
+af regler og ændrer, hvordan filtre opdateres. Før der skiftes, tjek artiklen [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/).
 
 ## Fortsat brug af MV2 i andre webbrowsere
 
@@ -97,8 +97,8 @@ og indlæs buildet igen.
 
 :::
 
-For the full _Developer mode_ → _Load unpacked_ flow, see the _How to install unpacked in the
-browser_ section in [How to debug rules in the MV3 extension](/adguard-browser-extension/solving-problems/debug-rules/).
+For den fulde _Udviklertilstand_ → _Indlæs udpakket_ flowet, se afsnittet _Sådan installeres udpakket i
+webbrowseren_ i [Sådan fejlfindes i regler i MV3-udvidelse](/adguard-browser-extension/solving-problems/debug-rules/).
 
 ### Microsoft Edge
 

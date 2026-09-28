@@ -3,14 +3,14 @@ title: AdGuard Browser Extension MV3
 sidebar_position: 5
 ---
 
-[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), and other Chromium-based browsers, Opera and Microsoft Edge among them, are moving to MV3 as well. Users of these browsers need an MV3 extension, compatible with the new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+[Chrome har fjernet alle resterende Manifest V2-udvidelser (MV2) fra Chrome Webshop](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), og andre Chromium-baserede webbrowseren, bl.a. Microsoft Edge og Opera, overgår ligeledes til MV3. Brugere af disse webbrowsere behøver en MV3-udvidelse kompatibel med det nye API Manifest V3. Vores tanker om dette emne drøftes udførligt på [vores blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Vores MV3-udvidelse blokerer effektivt annoncer og trackere, mens den ubemærket håndterer sociale widgets, bannere og videoreklamer. De fleste brugere vil ikke bemærke nogen operationelle forskelle, men der er visse begrænsninger og ændringer at være opmærksom på.
 
 ## Her findes vores udvidelser
 
 **MV3-versionen** er vores primære Chrome-udvidelse og er tilgængelig i
-[Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip` for Chrome and `opera-mv3.zip` for Opera.
+[Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3-builds udgives også på [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) som `chrome-mv3.zip`.
 
 **MV3-beta** er tilgængelig i [Chrome Webshop](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
