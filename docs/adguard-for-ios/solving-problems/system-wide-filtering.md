@@ -11,7 +11,7 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 ## About system-wide filtering
 
-System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS device. iOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. The only way to block ads and trackers system-wide is through [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
+System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS or iPadOS device. iOS & iPadOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. One way to block ads and trackers system-wide is through [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
 
 ![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
