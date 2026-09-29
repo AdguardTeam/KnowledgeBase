@@ -61,7 +61,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - zod: [github.com/colinhacks/zod](https://github.com/colinhacks/zod)
 - swc: [github.com/swc-project/swc](https://github.com/swc-project/swc)
 
-## AdGuard for Safari {#safari}
+## AdGuard Mini for Mac {#safari}
 
 - ace: [github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 - adm-zip: [github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
@@ -179,6 +179,6 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 
 ---
 
-We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
+We also want to thank the [users on XDA Forums](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [XDA Forums](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
