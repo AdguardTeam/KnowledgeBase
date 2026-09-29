@@ -19,12 +19,6 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 
-### **Widgets**
-
-![Widgets *mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
-
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
-
 ### **Auto-update over Wi-Fi only**
 
 If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
