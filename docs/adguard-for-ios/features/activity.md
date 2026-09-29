@@ -9,7 +9,7 @@ This article is about AdGuard for iOS, a multifunctional ad blocker that protect
 
 :::
 
-*Activity* screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. N.b. this screen is only seen when DNS protection is enabled.
+*Activity* screen is the 'information hub' of AdGuard's DNS protection suite. You can quickly switch to it by tapping the third icon in the bottom bar. Note, this screen is only seen when DNS protection is enabled.
 
 ![Activity screen *mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
