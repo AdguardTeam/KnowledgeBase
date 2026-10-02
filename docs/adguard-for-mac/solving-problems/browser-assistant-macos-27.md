@@ -13,15 +13,15 @@ Due to policy updates in macOS 27, AdGuard may be unable to communicate with its
 
 ## Recommended solutions
 
-Since this issue can affect any Chromium-based browser, this section covers how to grant AdGuard the required permissions regardless of which browser is used.
+Since this issue can affect any Chromium- or Gecko-based browser, this section covers how to grant AdGuard the required permissions regardless of which browser is used.
 
 ### Step 1: Grant access via Files & Folders
 
 1. Open *Files & Folders*
-    - via AdGuard settings: click the gear icon on the app’s main window → *Preferences…* → the *Assistant* tab → *Open Files & Folders*
-    ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings.png)
-    - via AdGuard Setup Assistant: on the Browser Assistant installation screen, click *Open Files & Folders* — this button appears if AdGuard doesn’t have access to the browser’s folder
-    ![AdGuard Setup Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant.png)
+    - via AdGuard Setup Assistant upon first launch: on the Browser Assistant installation screen, click *Allow Access...* — this button appears if AdGuard doesn’t have access to the browser’s folder. You’ll be taken directly to the *Files & Folders* section
+    ![AdGuard Setup Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant-new.png)
+    - via AdGuard main window: click *Allow access to your browser folder for the Assistant* at the bottom → on the *Assistant tab*, click *Allow Access...*; or click the gear icon in the top-right corner → *Preferences…* → the *Assistant tab* → *Allow Access...*
+    ![AdGuard popup](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-popup.png) ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings-new.png)
     - via *System Settings* → *Privacy & Security* → *Files & Folders*
     ![System Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/system-settings-new.png)
 1. Find *AdGuard* in the list and click it to expand the dropdown
@@ -45,6 +45,12 @@ Some browsers, like Opera, rely on the Native Messaging folder that belongs to G
 1. Locate Google Chrome and turn on the toggle next to it. As a result, Browser Assistant will start working in the browser that relies on Chrome's folder (such as Opera).
 
 **Option B: Grant Full Disk Access**
+
+:::note
+
+Granting *Full Disk Access* is a last-resort measure: we strongly recommend trying the options above first. You should only enable it if you fully understand what you are doing. Full Disk Access is not required for AdGuard to work properly.
+
+:::
 
 1. Open *System Settings* → *Privacy & Security* → *Full Disk Access*
 1. Find *AdGuard* in the list and turn on the toggle
