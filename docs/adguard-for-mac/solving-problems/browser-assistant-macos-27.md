@@ -21,7 +21,7 @@ Since this issue can affect any Chromium- or Gecko-based browser, this section c
     - via AdGuard Setup Assistant upon first launch: on the Browser Assistant installation screen, click *Allow Access...* — this button appears if AdGuard doesn’t have access to the browser’s folder. You’ll be taken directly to the *Files & Folders* section
     ![AdGuard Setup Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant-new.png)
     - via AdGuard main window: click *Allow access to your browser folder for the Assistant* at the bottom → on the *Assistant tab*, click *Allow Access...*; or click the gear icon in the top-right corner → *Preferences…* → the *Assistant tab* → *Allow Access...*
-    ![AdGuard popup](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-popup.png) ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings-new.png)
+    ![AdGuard popup *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-popup.png) ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings-new.png)
     - via *System Settings* → *Privacy & Security* → *Files & Folders*
     ![System Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/system-settings-new.png)
 1. Find *AdGuard* in the list and click it to expand the dropdown
