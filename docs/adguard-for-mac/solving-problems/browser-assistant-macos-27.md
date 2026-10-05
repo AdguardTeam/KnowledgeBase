@@ -50,7 +50,7 @@ Some browsers, like Opera, rely on the Native Messaging folder that belongs to G
 
 **Option B: Grant Full Disk Access**
 
-:::note
+:::caution
 
 Granting *Full Disk Access* is a last-resort measure: we strongly recommend trying the options above first. You should only enable it if you fully understand what you are doing. Full Disk Access is not required for AdGuard to work properly.
 
