@@ -13,20 +13,26 @@ Due to policy updates in macOS 27, AdGuard may be unable to communicate with its
 
 ## Recommended solutions
 
-Since this issue can affect any Chromium- or Gecko-based browser, this section covers how to grant AdGuard the required permissions regardless of which browser is used.
+This section covers how to grant AdGuard the required permissions across Chromium- and Gecko-based browsers.
 
 ### Step 1: Grant access via Files & Folders
 
+:::note
+
+AdGuard checks folder access **only for your system default browser**. Consequently, the in-app prompts and the *Allow Access…* button will not appear if the browser is not set as default. In this case, you will need to grant permission manually via macOS *System Settings*.
+
+:::
+
 1. Open *Files & Folders*
-    - via AdGuard Setup Assistant upon first launch: on the Browser Assistant installation screen, click *Allow Access...* — this button appears if AdGuard doesn’t have access to the browser’s folder. You’ll be taken directly to the *Files & Folders* section
+    - via AdGuard Setup Assistant upon first launch: on the Browser Assistant installation screen, click *Allow Access…*. You’ll be taken directly to the *Files & Folders* section
     ![AdGuard Setup Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/setup-assistant-new.png)
     - via the AdGuard main window:
-        - click *Allow access to your browser folder for the Assistant* at the bottom → *Assistant* → *Allow Access...*
-        - or click the gear icon in the top-right corner → *Preferences…* → *Assistant* → *Allow Access...*
+        - click *Allow access to your browser folder for the Assistant* at the bottom → *Assistant* → *Allow Access…*. This prompt only appears if the Assistant was installed at least once and access is currently denied for your default browser. It permanently disappears after the first click. If you don’t see it, use the Preferences option below.
+        - or click the gear icon in the top-right corner → *Preferences…* → *Assistant* → *Allow Access…*
 
     | | |
     | :-: | :-: |
-    | ![AdGuard popup *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-popup.png) | ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings-new.png) |
+    | ![AdGuard popup](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-popup.png) | ![AdGuard settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/adguard-settings-new.png) |
 
     - via *System Settings* → *Privacy & Security* → *Files & Folders*
     ![System Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/system-settings-new.png)
@@ -35,26 +41,26 @@ Since this issue can affect any Chromium- or Gecko-based browser, this section c
 
 :::note
 
-A toggle for a specific browser will only appear in this list if the browser is already installed. If your browser or Google Chrome is not listed, proceed to Step 2.
+A toggle for a specific browser will only appear in this list if the browser is already installed. If your browser, Google Chrome, or Mozilla Firefox is not listed, proceed to Step 2.
 
 :::
 
-### Step 2: If the browser isn't listed
+### Step 2: If the browser isn’t listed
 
-**Option A: Install Google Chrome**
+**Option A: Install Google Chrome or Mozilla Firefox**
 
-Some browsers, like Opera, rely on the Native Messaging folder that belongs to Google Chrome instead of using a folder of their own. On earlier macOS versions, AdGuard could simply create this folder itself. Starting with macOS 27, however, macOS does not allow AdGuard to request access to Chrome's folder unless Chrome is actually installed. Installing Chrome allows AdGuard to request the required permission.
+Some browsers built on Chromium or Gecko do not create their own dedicated Native Messaging directory. Instead, they share the directory used by Chrome or Firefox. On earlier macOS versions, AdGuard could simply create these folders itself. Starting with macOS 27, macOS does not allow AdGuard to request access to these folders unless the corresponding browser — Google Chrome or Mozilla Firefox — is actually installed on the system.
 
-1. Install Google Chrome and open it at least once — the required Native Messaging folder will become available on the system
+1. Install Google Chrome or Mozilla Firefox (depending on whether your browser is Chromium- or Gecko-based) and open it at least once — the required Native Messaging folder will become available on the system
 1. Open *Files & Folders* (via the AdGuard main window, AdGuard Setup Assistant, or Mac System Settings, as described in Step 1)
 1. Find *AdGuard* in the list and click it to expand the dropdown
-1. Locate Google Chrome and turn on the toggle next to it. As a result, Browser Assistant will start working in the browser that relies on Chrome's folder (such as Opera).
+1. Locate Google Chrome or Mozilla Firefox and turn on the toggle next to it. As a result, Browser Assistant will start working in the browser that relies on Chrome’s or Mozilla Firefox’s folder (such as Opera or Zen).
 
 **Option B: Grant Full Disk Access**
 
 :::caution
 
-Granting *Full Disk Access* is a last-resort measure: we strongly recommend trying the options above first. You should only enable it only if you fully understand what you are doing. *Full Disk Access* is not required for AdGuard to work properly.
+Granting *Full Disk Access* is a last-resort measure: we strongly recommend trying the options above first. *Full Disk Access* is not required for AdGuard in general. Use it only as a workaround for Browser Assistant if the options above did not work and you fully understand what you are doing.
 
 :::
 
