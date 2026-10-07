@@ -161,7 +161,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. WG Tunnel'ı açın ve **Ayarlar** (alttaki dişli çark) → **Uygulama Modu** → **Proxy (deneysel)** öğesine gidin. Bu, WG Tunnel'ı proxy moduna ayarlar.
 
-1. Adguard'ı açın ve **Uygulama yönetimi** öğesine gidin. **WG Tunnel** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
+1. AdGuard'ı açın ve **Uygulama yönetimi** öğesine gidin. **WG Tunnel** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
 
 1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
