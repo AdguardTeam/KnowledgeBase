@@ -9,7 +9,7 @@ sidebar_position: 10
 
 :::
 
-要让 Adguard 在 Firefox 浏览器中成功过滤 HTTPS 流量，浏览器需要信任 AdGuard 证书。根据 Firefox 浏览器的版本，您要执行以下操作。
+要让 AdGuard 在 Firefox 浏览器中成功过滤 HTTPS 流量，浏览器需要信任 AdGuard 证书。根据 Firefox 浏览器的版本，您要执行以下操作。
 
 ### 方法 1
 
