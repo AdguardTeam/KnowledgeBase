@@ -48,7 +48,7 @@ sidebar_position: 2
 
     ![Setting up protection *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setup.png)
 
-## 如何卸载 Windows 版 AdGuard  {#uninstall}
+## 如何卸载 Windows 版 AdGuard {#uninstall}
 
 ### 常规方式
 
