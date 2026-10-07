@@ -13,7 +13,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 AdGuard for Windows v8.0 introduces significant changes. If you find the new interface uncomfortable or encounter issues, you can switch back to version 7.
 
->It’s recommended to export settings before changing versions, if you wish to preserve them. You can import your saved settings back after updating your app. The steps needed to do that are listed below
+:::note
+
+If you wish to preserve your settings, it’s recommended that you export them before changing versions. You can then import your saved settings after updating the app. The steps needed to do so are listed below.
+
+:::
 
 1. After upgrading to v8, open the folder `C:\ProgramData\Adguard\Backups` and find a ZIP file with a name similar to `adguard_settings_7.22.5008.0-08-04-2025-13_42_15.276.zip`.
 
