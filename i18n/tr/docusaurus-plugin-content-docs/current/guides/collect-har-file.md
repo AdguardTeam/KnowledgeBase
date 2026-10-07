@@ -153,7 +153,7 @@ Safari'de bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 HAR dosyaları oluşturmak için şu adımları izleyin:
 
-1. Adguard'ı açın ve **Ayarlar** öğesine gidin.
+1. AdGuard'ı açın ve **Ayarlar** öğesine gidin.
 
 1. Menüden **Gelişmiş** öğesini seçin.
 
