@@ -20,21 +20,21 @@ If you purchase AdGuard VPN for Mac on our website, your license will be linked 
 
 After completing the purchase, we recommend binding the license to your email address. Once bound, you can activate AdGuard VPN on any supported platform using your email address and access your license at any time via your [AdGuard account](https://adguardaccount.com/account/licenses). To do it, go to the *License* tab and click *Bind license*.
 
-All devices activated by your license, regardless of which version you use, will appear in your AdGuard account as usual.
+Alle enheder aktiveret af licensen, uanset anvendt version, vil som normalt fremgå i AdGuard-kontoen.
 
-## Apple’s policies 
+## Apples politikker 
 
-Because of Apple’s App Store restrictions, some traffic attribution features work differently in the Mac App Store version. As a result, *Statistics* and app exclusions are not available in the current MAS version. We are working to get these features back in the future versions of the app.
+Grundet Apples App Store-restriktioner fungerer visse trafiktilskrivningsfunktioner anderledes i Mac App Store-versionen. Som en konsekvens er *Statistik* og app-undtagelser ikke tilgængelige i den aktuelle MAS-version. Vi arbejder på at få disse funktioner tilbage i fremtidige app-versioner.
 
-## Different ways of operating
+## Forskellige operationsmåder
 
-Another difference between the two app versions is the processes they use to do their work, and again the difference is due to Apple limitations.
+En anden forskel de to app-versioner imellem er de processer, de bruger til at udføre deres arbejde, og igen skyldes forskellen Apple-begrænsninger.
 
-The MAS version of AdGuard VPN for Mac uses Apple’s NetworkExtension framework. It allows developers to customize and extend key network functions of the operating system — for example, VPN management, Wi‑Fi configuration, and interaction with access points through Hotspot Helper — making networks more flexible and adaptable to specific app needs.
-More broadly, the term “network extension” can also refer to any hardware or software means of expanding a network to improve its coverage, performance, or functionality.
+MAS-versionen af AdGuard VPN til Mac bruger Apples NetworkExtension-framework. Det lader udviklere at tilpasse og udvide centrale netværksfunktioner i operativsystemet — såsom VPN-håndtering, Wi‑Fi-opsætning og interaktion med adgangspunkter via Hotspot Helper —, hvilket gør netværk mere fleksible og tilpasningsdygtige til bestemte app-behov.
+Mere generelt kan begrebet "netværksudvidelse" også henvise til enhver hardware- eller softwaremetode til udvidelse af et netværk for at forbedre dets dækning, ydeevne eller funktionalitet.
 
-The standalone version operates under the *utun* interface. Utun (short for user tunnel) is a virtual network interface in macOS that apps use to create a secure tunnel for your internet traffic. In practice, this means the app can route your data through an encrypted connection without changing your regular network settings.
+Den selvstændige version kører under *utun*-grænsefladen. Utun (forkortelse for 'user tunnel') er en virtuel netværksgrænseflade i macOS brugt af apps til oprettelse af en sikker tunnel til internettrafik. I praksis betyder det, at appen kan sende data igennem en krypteret forbindelse uden at ændre de normale netværksindstillinger.
 
-## Summary
+## Sammenfatning
 
-Both versions of AdGuard VPN for Mac protect your privacy, though they use slightly different means to achieve this. The main differences lie in the available subscription options and the way the apps work, based on Apple’s technical policies.
+Begge versioner af AdGuard VPN til Mac beskytter fortroligheden, selvom de bruger lidt forskellige metoder til at gøre dette. De vigtigste forskelle ligger i de tilgængelige abonnementsmuligheder og den måde, appsene fungerer på, baseret på Apples tekniske politikker.

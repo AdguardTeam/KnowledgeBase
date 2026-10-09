@@ -249,7 +249,7 @@ Er denne indstilling aktiveret, viser AdGuard kun DNS-ikonet på appens startsk�
 
 #### Detektér Samsung Pay
 
-Er denne indstilling slået til, pauseres AdGuard-beskyttelsen, når Samsung Pay-appen åbnes. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Er denne indstilling slået til, pauseres AdGuard-beskyttelsen, når Samsung Pay-appen åbnes. Denne funktion kræves til koreanske brugere, da de oplever [problemer med Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea), når AdGuard er slået til.
 
 #### Vis klonede apps
 

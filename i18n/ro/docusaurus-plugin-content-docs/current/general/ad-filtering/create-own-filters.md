@@ -127,7 +127,8 @@ Some rules can be used only in trusted filters. This category includes:
 
 - filter lists [created by the AdGuard team](../adguard-filters),
 - custom filter lists installed as `trusted`,
-- user rules.
+- user rules,
+- pre-approved third-party filter lists available in the *Filters* tab.
 
 ### AdGuard Content Blocker
 

@@ -5,26 +5,26 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Her er nogle problemer, som kan opleves, og løsninger samt guider og vejledninger, der muligvis bliver brug for.
 
-- [Battery and traffic consumption issues](/adguard-for-android/solving-problems/battery.md)
-- [How to collect debug logs](/adguard-for-android/solving-problems/log.md)
-- [How to automate AdGuard for Android](/adguard-for-android/solving-problems/tasker.md)
-- [How to get system logs](/adguard-for-android/solving-problems/logcat.md)
-- [How to generate HAR files](/adguard-for-android/solving-problems/har.md)
-- [How to block ads in the YouTube app](adguard-for-android/solving-problems/youtube-ads.md)
-- [How to set up outbound proxy](/adguard-for-android/solving-problems/outbound-proxy.md)
-- [How to protect AdGuard from being disabled by the system](/adguard-for-android/solving-problems/background-work.md)
-- [Problems caused by multiple user profiles](/adguard-for-android/solving-problems/multiple-user-profiles.md)
-- [Manual installation of the security certificate into the Firefox browser](/adguard-for-android/solving-problems/firefox-certificates.md)
-- [Certificate installation on devices with Android 11+](/adguard-for-android/solving-problems/manual-certificate.md)
-- [Certificate installation in a Secure folder](/adguard-for-android/solving-problems/secure-folder.md)
-- [Moving the CA certificate to the system store on rooted devices](/adguard-for-android/solving-problems/https-certificate-for-rooted.md)
-- [Known compatibility issues with Android apps](/adguard-for-android/solving-problems/compatibility-issues.md)
-- [How to install AdGuard for Android TV](/adguard-for-android/solving-problems/adguard-for-android-tv.md)
-- [How to use Samsung Pay with AdGuard in South Korea](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea.md)
-- [Problems caused by extending restricted settings](/adguard-for-android/solving-problems/extending-restricted-settings.md)
+- [Batteri- og trafikforbrugsproblemer](/adguard-for-android/solving-problems/battery.md)
+- [Sådan indsamles fejlretningslogger](/adguard-for-android/solving-problems/log.md)
+- [Sådan automatiseres AdGuard til Android](/adguard-for-android/solving-problems/tasker.md)
+- [Sådan hentes systemlogger](/adguard-for-android/solving-problems/logcat.md)
+- [Sådan genereres HAR-filer](/adguard-for-android/solving-problems/har.md)
+- [Sådan blokeres reklamer i YouTube-appen](adguard-for-android/solving-problems/youtube-ads.md)
+- [Sådan opsættes udgående proxy](/adguard-for-android/solving-problems/outbound-proxy.md)
+- [Sådan beskyttes AdGuard mod at blive deaktiveret af systemet](/adguard-for-android/solving-problems/background-work.md)
+- [Problemer forårsaget af flere brugerprofiler](/adguard-for-android/solving-problems/multiple-user-profiles.md)
+- [Manuel installation af sikkerhedscertifikatet i Firefox-webbrowseren](/adguard-for-android/solving-problems/firefox-certificates.md)
+- [Certifikatinstallation på enheder med Android 11+](/adguard-for-android/solving-problems/manual-certificate.md)
+- [Certifikatinstallation i en Sikker mappe](/adguard-for-android/solving-problems/secure-folder.md)
+- [Flytning af CA-certifikat til systemlageret på rootede enheder](/adguard-for-android/solving-problems/https-certificate-for-rooted.md)
+- [Kendte kompatibilitetsproblemer med Android-apps](/adguard-for-android/solving-problems/compatibility-issues.md)
+- [Sådan installeres AdGuard til Android TV](/adguard-for-android/solving-problems/adguard-for-android-tv.md)
+- [Sådan benyttes Samsung Pay med AdGuard i Sydkorea](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea.md)
+- [Problemer forårsaget af udvidelse af begrænsningsindstillinger](/adguard-for-android/solving-problems/extending-restricted-settings.md)

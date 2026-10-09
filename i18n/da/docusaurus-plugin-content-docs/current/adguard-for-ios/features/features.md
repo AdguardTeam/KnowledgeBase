@@ -5,42 +5,42 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-- [Safari protection](/adguard-for-ios/features/safari-protection.md)
+- [Safari-beskyttelse](/adguard-for-ios/features/safari-protection.md)
 
-  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  Tilgængelige funktioner og indstillinger via fanen _Safari-beskyttelse_: _Filtre_, _Brugerregler_ og _Hvidliste_
 
-- [DNS protection](/adguard-for-ios/features/dns-protection/)
+- [DNS-beskyttelse](/adguard-for-ios/features/dns-protection/)
 
-  DNS-servere og DNS-filtre, som muliggør blokering af annoncer, trackere og farlige websteder
+  DNS-servere og DNS-filtre, som muliggør at blokere annoncer, trackere og farlige websteder
 
-- [Advanced protection](/adguard-for-ios/features/advanced-protection.md)
+- [Avanceret beskyttelse](/adguard-for-ios/features/advanced-protection.md)
 
-  A feature that allows AdGuard to apply advanced filtering rules and scriptlets to handle complex ads
+  En funktion, der giver AdGuard mulighed for at anvende avancerede filtreringsregler og scriptlets til at håndtere komplekse annoncer
 
-- [Activity and statistics](/adguard-for-ios/features/activity.md)
+- [Aktivitet og statistik](/adguard-for-ios/features/activity.md)
 
-  Statistics with detailed activity reports that allow you to monitor blocked ads, trackers, and DNS queries
+  Statistik med detaljerede aktivitetsrapporter, som muliggør at monitorere blokerede annoncer, trackere og DNS-forespørgsler
 
-- [Assistant](/adguard-for-ios/features/assistant.md)
+- [Assistent](/adguard-for-ios/features/assistant.md)
 
-  A tool that lets you quickly manage filtering in Safari right from the browser without opening the AdGuard interface
+  Et værktøj, der muliggør hurtig filtreringshåndtering i Safari direkte fra webbrowseren uden at åbne appen
 
-- [Low-level settings](/adguard-for-ios/features/low-level-settings.md)
+- [Lavniveauindstillinger](/adguard-for-ios/features/low-level-settings.md)
 
-  Settings that allow advanced users to fine-tune app performance and adjust DNS protection
+  Lavniveauindstillinger giver avancerede brugere mulighed for at finjustere app-ydeevne og justere DNS-beskyttelse
 
-- [Other features](/adguard-for-ios/features/other-features.md)
+- [Andre funktioner](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  Generelle indstillinger: Tema, indstillinger og statistiknulstilling, auto--opdatering, hvidlisteinvertering og avanceret tilstand.
 
-- [Compatibility with AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
+- [Kompatibilitet med AdGuard VPN](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 
   Integreret tilstand, der tillader AdGuard Ad Blocker og AdGuard VPN at køre sideløbende trods systembegrænsninger
 
-- [Free vs. full version](/adguard-for-ios/features/free-vs-full.md)
+- [Gratis kontra fuld version](/adguard-for-ios/features/free-vs-full.md)
 
-  Sammenligning af funktioner mellem den gratis og den betalte version
+  Sammenligning af funktioner mellem den gratis og den betalte version.

@@ -15,7 +15,7 @@ When routing and filtering are enabled for an app, the icons below each app will
 
 You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
 
-![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App-statistikker \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Sådan fungerer app-filtrering og rutning i AdGuard til Windows v8.0
 
