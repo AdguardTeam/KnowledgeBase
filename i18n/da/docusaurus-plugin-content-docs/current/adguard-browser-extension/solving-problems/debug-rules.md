@@ -1,9 +1,9 @@
 ---
-title: How to debug rules in the MV3 extension
+title: Sådan fejlrettes regler i MV3-udvidelsen
 sidebar_position: 2
 ---
 
-In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. Dette skyldes, at webbrowseren ikke giver detaljer om, hvilke specifikke deklarative regler, som blev brugt, medmindre udvidelsen er i et "udpakket" format. For at få præcise oplysninger, skal brugeren selv installere den udpakkede version af udvidelsen i sin webbrowser.
+I [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version) viser filtreringsloggen kun de omtrentlige anvendte regler, hvilke vi kalder "antagne regler". Dette skyldes, at webbrowseren ikke giver detaljer om, hvilke specifikke deklarative regler, som blev brugt, medmindre udvidelsen er i et "udpakket" format. For at få præcise oplysninger, skal brugeren selv installere den udpakkede version af udvidelsen i sin webbrowser.
 
 Disse vejledninger er også beregnet til problematiske tilfælde, hvor reglerne, som følger med udvidelsen, ønskes ændret statisk. I de fleste tilfælde bør brug af _Brugerregler_ i udvidelsen være tilstrækkeligt.
 
@@ -55,10 +55,10 @@ Disse vejledninger er også beregnet til problematiske tilfælde, hvor reglerne,
    yarn dev chrome-mv3
    ```
 
-3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
-   be located in the `./build/dev/opera-mv3` directory.
+3. I Opera, kør i stedet `yarn dev opera-mv3` — den indbyggede udvidelse vil
+   være placeret i mappen `./build/dev/opera-mv3`.
 
-4. The built extension will be located in the directory:
+4. Den byggede udvidelse vil være placeret i mappen:
 
    ```bash
    ./build/dev/chrome-mv3

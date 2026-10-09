@@ -171,7 +171,7 @@ These features are only available in AdGuard for Windows.
 
 This feature disables sending technical data about your system and app usage.
 
-### Disable Windows Recall {#windowsrecall}
+### Deaktivering af Windows Recall {#windowsrecall}
 
 This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
 

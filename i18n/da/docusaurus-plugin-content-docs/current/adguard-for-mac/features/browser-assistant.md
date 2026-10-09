@@ -13,7 +13,7 @@ AdGuard Browser Assistant allows you to manage AdGuard protection directly from 
 
 ![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
-## How it works
+## Sådan fungerer den
 
 AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
 

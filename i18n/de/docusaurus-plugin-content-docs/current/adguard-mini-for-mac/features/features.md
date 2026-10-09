@@ -31,6 +31,10 @@ sidebar_position: 1
 
   Ein praktisches menü in der Safari-Symbolleiste
 
+- [System-wide protection](/adguard-mini-for-mac/features/system-wide-protection.md)
+
+  A feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
+
 - [Vollversion](/adguard-mini-for-mac/features/full-version.md)
 
   Fortschrittliche Funktionen, die die Filtergeschwindigkeit und -leistung verbessern

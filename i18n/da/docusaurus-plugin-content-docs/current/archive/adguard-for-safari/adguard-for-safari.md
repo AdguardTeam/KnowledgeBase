@@ -9,7 +9,7 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 :::
 
-- [Features](/archive/adguard-for-safari/features/features.md)
+- [Funktioner](/archive/adguard-for-safari/features/features.md)
 
   Main features and settings available in AdGuard for Safari
 
@@ -17,10 +17,10 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
   Installation, removal, and system requirements for AdGuard for Safari
 
-- [Safari extensions](/archive/adguard-for-safari/extensions.md)
+- [Safari-udvidelser](/archive/adguard-for-safari/extensions.md)
 
   Extensions that add functionality to the Safari web browser
 
-- [Solving problems](/archive/adguard-for-safari/solving-problems/solving-problems.md)
+- [Problemløsning](/archive/adguard-for-safari/solving-problems/solving-problems.md)
 
   Known issues and possible solutions

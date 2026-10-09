@@ -5,28 +5,28 @@ sidebar_position: 9
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Both AdGuard for iOS with enabled Premium and AdGuard Pro block ads on Apple smartphones and tablets. They used to differ in functionality due to certain changes made to App Store review policies in the past, but now AdGuard with a purchased subscription and AdGuard Pro are identical in their functionality.
+Både AdGuard til iOS med aktiveret Premium og AdGuard Pro blokerer annoncer på Apple-smartphones og -tablets. De plejede at adskille sig i funktionalitet grundet visse ændringer foretaget i App Stores anmeldelsespolitikker tidligere, men nu har AdGuard med betalt abonnement og AdGuard Pro identisk funktionalitet.
 
 :::
 
-Premium AdGuard for iOS features several differences from the free version, including custom DNS settings. With these settings, you can block ads not only in Safari but in other apps too, protect your kids from adult content online, and keep your personal information safe from theft. There are other differences, too. Let’s explore them all in more detail.
+Premium AdGuard til iOS har flere forskelle ift. den gratis version, herunder tilpassede DNS-indstillinger. Med disse indstillinger kan annoncer blokeres ikke kun i Safari, men også i andre apps, beskytte børn mod voksenindhold online og beskytte personlige oplysninger mod tyveri. Der er også andre forskelle. Lad os se på dem alle mere detaljeret.
 
-1. The **DNS protection** module encrypts your DNS traffic to enhance privacy. It works across all apps and browsers, not just Safari, offering broad protection against ads and trackers.
+1. Modulet **DNS-beskyttelse** krypterer DNS-trafikken for at forbedre fortroligheden. Den fungerer på tværs af alle apps og webbrowsere, ikke kun Safari, og tilbyder bred beskyttelse mod annoncer og trackere.
 
-   - **Custom DNS servers:** Choose from one of the popular DNS servers from our list or add your own custom server.
+   - **Tilpassede DNS-servere:** Vælg mellem en af de populære DNS-servere fra vores liste, eller tilføj en egen tilpassede server.
 
-   - **Family Protection:** The Internet isn’t always kid-friendly. With AdGuard Premium, you can switch to DNS providers that block adult content and other inappropriate material to keep your children safe online.
+   - **Family-beskyttelse:** Internet er ikke altid børnevenligt. Med AdGuard Premium kan der skiftes til DNS-udbydere, som blokerer voksenindhold og andet upassende materiale for at holde børn beskyttet online.
 
-   - **Monitoring and flexible configuration:** Recent activity log allows you to view all DNS requests sent by your device and easily manage your traffic by adding websites to blocklist or allowlist with just a tap.
+   - **Monitorering og fleksibel opsætning:** Loggen Seneste aktivitet muliggør at se alle DNS-forespørgsler sendt af enheden samt nem trafikhåndtering ved at tilføje websteder til sortlisten eller hvidlisten med blot ét tryk.
 
-2. **Advanced protection** lets you use advanced filtering rules to block more complex ads that would be left unblocked otherwise.
+2. **Avanceret beskyttelse** giver mulighed for at bruge avancerede filtreringsregler til at blokere mere komplekse annoncer, som ellers ville være ublokeret.
 
-3. **More filter options:** When purchasing AdGuard Premium, you get access to custom and security filters.
+3. **Flere filtermuligheder:** Ved køb af AdGuard Premium opnås adgang til tilpassede filtre og sikkerhedsfiltre.
 
-Access these features by [purchasing a license](https://adguard.com/license.html).
+Tilgå disse funktioner ved at [købe en licens](https://adguard.com/license.html).

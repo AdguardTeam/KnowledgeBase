@@ -5,13 +5,13 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
 :::note
 
-Data and files provided in logs are processed in accordance with the [AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Data og filer tilgængelige i logfiler behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 

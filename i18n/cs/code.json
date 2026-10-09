@@ -1,10 +1,10 @@
 {
   "siteConfig.title": {
-    "message": "AdGuard Knowledge Base",
+    "message": "Databáze znalostí AdGuard",
     "description": "The site title used in the browser tab and metadata"
   },
   "siteConfig.tagline": {
-    "message": "Knowledge Base for AdGuard products",
+    "message": "Databáze znalostí pro produkty AdGuard",
     "description": "The site tagline used in meta description"
   },
   "theme.ErrorPageContent.title": {

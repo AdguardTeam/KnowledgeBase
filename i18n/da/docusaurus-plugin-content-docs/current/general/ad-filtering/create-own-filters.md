@@ -1,5 +1,5 @@
 ---
-title: How to create your own ad filters
+title: Sådan oprettes egne adblockingfiltre
 sidebar_position: 5
 toc_min_heading_level: 2
 toc_max_heading_level: 4
@@ -7,168 +7,169 @@ toc_max_heading_level: 4
 
 :::info
 
-In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
+I denne artikel forklarer vi, hvordan der skrives tilpassede filtreringsregler til brug i AdGuard-produkter. For at teste reglerne, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-A filter is a set of filtering rules applied to specific content, such as banners or popups. AdGuard has a list of standard filters created by our team. We constantly improve and update them, striving to meet the needs of most of our users.
+Et filter er et sæt filtreringsregler anvendt på specifikt indhold, såsom bannere eller pop op-vinduer. AdGuard har en liste over standardfiltre oprettet af teamet. Vi forbedrer og opdaterer dem konstant og stræber efter at opfylde behovene hos de fleste af vores brugere.
 
-At the same time, AdGuard allows you to create your own custom filters using the same types of rules that we have in our filters.
+AdGuard muliggør at oprette egne tilpassede filtre ved brug samme type regler som i vores egne filtre.
 
-To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax Specifications](https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
+Til at beskrive syntaksen for vores filtreringsregler bruges [Augmented BNF for Syntax Specifications](https://tools.ietf.org/html/rfc5234), men vi følger ikke altid denne specifikation slavisk.
 
 :::info
 
-Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [the Adblock Plus guide on how to write filters](https://adblockplus.org/en/filters).
+Oprindeligt var AdGuards syntaks baseret på Adblock Plus-regelsyntaksen. Senere blev den udvidet med nye regeltyper for bedre annoncefiltrering. Visse dele af denne artikel om reglerne, som er fælles for både AdGuard og ABP, stammer fra [Adblock Plus-vejledningen til, hvordan der skrives filtre](https://adblockplus.org/en/filters).
 
 :::
 
-## Comments
+## Kommentarer
 
-Any line that starts with an exclamation mark is a comment. In the list of rules it is displayed in gray color. AdGuard will ignore this line, so you can write anything you want. Comments are usually placed above the rules and used to describe what a rule does.
+Enhver linje startende med et udråbstegn udgør en kommentar. På listen over regler vises den med grå. AdGuard ignorerer denne linje, så der kan skrives, hvad der ønskes. En kommentarer beskriver, hvad en regel gør, og den placeres normalt over reglen.
 
 F.eks.:
 
 ```adblock
-! This is the comment. Below this line, there is an actual filtering rule.
+! Dette er en kommentar. Under denne linje er der en egentlig filtreringsregel.
 ||example.org^
 ```
 
 ## Eksempler
 
-### Blocking by domain name
+### Blokering efter domænenavn
 
-![Blocking by domain name](https://cdn.adtidy.org/content/kb/ad_blocker/general/0_blocking_domain.svg)
+![Blokering efter domænenavn](https://cdn.adtidy.org/content/kb/ad_blocker/general/0_blocking_domain.svg)
 
-**This rule blocks:**
+**Denne regel blokerer:**
 
 - `https://example.org/ad1.gif`
 - `https://subdomain.example.org/ad1.gif`
 - `https://ads.example.org:8000/`
 
-**This rule does not block:**
+**Denne regel blokerer ikke:**
 
 - `https://ads.example.org.us/ad1.gif`
 - `https://example.com/redirect/https://ads.example.org/`
 
-By default, such rules do not work for document requests. This means that the `||example.org^` rule will block a request made to `example.org` when you try to navigate to this domain from another website, but if you type `example.org` into the address bar and try to navigate to it, the website will open. To block the document request, you will need to use a rule with the [`$document` modifier](#document-modifier): `||example.org^$document`.
+Som standard virker sådanne regler ikke for dokumentforespørgsler. Det betyder, at reglen `||example.org^` blokerer en forespørgsel til `example.org`, når domænet forsøges tilgået fra et andet websted, men skrives `example.org` på adresselbjælken, og det forsøges tilgået, åbnes webstedet. For at blokere dokumentforespørgslen skal der bruges en regel med modifikatoren [`$document`](#document-modifier): `||example.org^$document`.
 
-### Blocking exact address
+### Blokering af præcis adresse
 
-![Blocking exact address](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
+![Blokering af præcis adresse](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
 
-**This rule blocks:**
+**Denne regel blokerer:**
 
 - `https://example.org/`
 
-**This rule does not block:**
+**Denne regel blokerer ikke:**
 
 - `https://example.org/banner/img`
 
-### Basic rule modifiers {#basic-rule-modifiers-examples}
+### Basisregelmodifikatorer {#basic-rule-modifiers-examples}
 
-Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
+Filtreringsregler understøtter adskillige modifikatorer, som muliggør at finjustere regeladfærden. Eksempel på en regel med nogle simple modifikatorer.
 
-![Basic rule modifiers](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
+![Basisregelmodifikatorer](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
 
-**This rule blocks:**
+**Denne regel blokerer:**
 
-- `https://example.org/script.js` if this script is loaded from `example.com`.
+- `https://example.org/script.js`, hvis dette script indlæses fra `example.com`.
 
-**This rule does not block:**
+**Denne regel blokerer ikke:**
 
-- `https://example.org/script.js` if this script is loaded from `example.org`.
-- `https://example.org/banner.png` because it is not a script.
+- `https://example.org/script.js`, hvis dette script indlæses fra `example.org`.
+- `https://eksempel.org/banner.png`, da det ikke er et script.
 
-### Unblocking an address
+### Afblokering af en adresse
 
-![Unblocking an address](https://cdn.adtidy.org/content/kb/ad_blocker/general/3_basic_exception.svg)
+![Afblokering af en adresse](https://cdn.adtidy.org/content/kb/ad_blocker/general/3_basic_exception.svg)
 
-**This rule unblocks:**
+**Denne regel afblokerer:**
 
-- `https://example.org/banner.png` even if there is a blocking rule for this address.
+- `http://eksempel.org/banner.png`, selv hvis der findes en blokeringsregel for adressen.
 
-Blocking rules with [`$important`](#important-modifier) modifier can override exceptions.
+Blokeringsregler med modifikatoren [`$important`](#important-modifier) kan tilsidesætte undtagelser.
 
-### Unblocking an entire website
+### Afblokering af et helt websted
 
-![Unblocking an entire website](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
+![Afblokering af et helt websted](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
-**This rule unblocks**
+**Denne regel afblokerer**
 
-- It disables all cosmetic rules on `example.com`.
-- It unblocks all requests sent from this website even if there is are blocking rules matching these requests.
+- Den deaktiverer alle kosmetiske regler på `example.com`.
+- Den afblokerer alle forespørgsler sendt fra webstedet, selv hvis der findes blokeringsregler matchende disse forespørgsler.
 
-### Cosmetic rule
+### Kosmetisk regel
 
-![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
+![Kosmetisk regel](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
-Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can [learn more about CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) in general.
+Kosmetiske regler er baseret på et særligt sprog kaldet CSS, hvilket enhver webbrowser forstår. Grundlæggende føjer den en ny CSS-typografi til webstedet beregnet på at skjule bestemte elementer. Der kan læses mere om CSS generelt [hér](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
-AdGuard [extends CSS](#extended-css-selectors) and lets filters developers handle much more complicated cases. However, to use these extended rules, you need to be fluent in regular CSS.
+AdGuard [udvider CSS](#extended-css-selectors), hvilket lader filterudviklere håndtere meget mere komplekse tilfælde. Brug af disse udvidede regler kræver dog, at almindelig CSS mestres.
 
-**Popular CSS selectors**
+**Populære CSS-vælgere**
 
-| Name                         | CSS selector                      | Description                                                                                                                                                                                                           |
-| ---------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID selector                  | `#banners`                        | Matches all elements with `id` attribute equal to `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
-| Class selector               | `.banners`                        | Matches all elements with `class` attribute containing `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                        |
-| Attribute selector           | `div[class="banners"]`            | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                        |
-| Attribute substring selector | `div[class^="advert1"]`           | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
-| Attribute substring selector | `div[class$="banners_ads"]`       | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Attribute substring selector | `a[href^="https://example.com/"]` | Matches all links that are loaded from `https://example.com/` domain.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                          |
-| Attribute selector           | `a[href="https://example.com/"]`  | Matches all links to **exactly** the `https://example.com/` address.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                     |
+| Navn                       | CSS-vælger                        | Beskrivelse                                                                                                                                                                                                            |
+| -------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID-vælger                  | `#banners`                        | Matcher alle elementer med `id`-attributten svarende til `bannere`.<br/>![ID-vælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                               |
+| Class-vælger               | `.banners`                        | Matcher alle elementer med `class`-attributten indeholdende `banners`.<br/>![Class-vælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                      |
+| Attributvælger             | `div[class="banners"]`            | Matcher alle `div`-elementer med `class`-attributten **nøjagtigt lig med** `banners`.<br/>![Attributvælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                         |
+| Attributunderstrengsvælger | `div[class^="advert1"]`           | Matcher alle `div`-elementer med attributten `class` **startende med** strengen `advert1`.<br/>![Attributunderstrengsvælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)  |
+| Attributunderstrengsvælger | `div[class$="banners_ads"]`       | Matcher alle `div`-elementer med attributten `class` **sluttende med** strengen `banner_ads`.<br/>![Attributunderstrengsvælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attributunderstrengsvælger | `a[href^="https://example.com/"]` | Matcher alle links indlæst fra domænet `http://example.com/`.<br/>![Attributunderstrengsvælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                                     |
+| Attributvælger             | `a[href="https://example.com/"]`  | Matcher alle links til **den eksakte** `http://example.com/`-adresse.<br/>![Attributvælger](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                         |
 
-## Restrictions and limitations
+## Restriktioner og begrænsninger
 
-### Trusted filters {#trusted-filters}
+### Betroede filtre {#trusted-filters}
 
-Some rules can be used only in trusted filters. This category includes:
+Visse regler kan kun bruges i betroede filtre. Denne kategori omfatter:
 
-- filter lists [created by the AdGuard team](../adguard-filters),
-- custom filter lists installed as `trusted`,
-- user rules.
+- filterlister [oprettet af AdGuard-teamet](../adguard-filters),
+- tilpassede filterlister installeret som `betroede`,
+- brugerregler.
+- prægodkendte tredjepartsfilterlister tilgængelige via fanen *Filtre*.
 
 ### AdGuard Content Blocker
 
-AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can be installed from Google Play. It is not to be confused with the fully functional AdGuard for Android that can only be downloaded from [our website](https://adguard.com/adguard-android/overview.html). Unfortunately, AdGuard Content Blocker capabilities are limited by what the browsers allow and they only support an old Adblock Plus filters syntax:
+AdGuard Content Blocker er en udvidelse til Samsung- og Yandex-webbrowsere, der kan installeres fra Google Play. Den skal ikke forveksles med den fuldt funktionelle AdGuard til Android, der kun kan downloades fra [vores websted](https://adguard.com/adguard-android/overview.html). Desværre er mulighederne i AdGuard Content Blocker begrænset af, hvad webbrowserne tillader, og de understøtter kun en gammel Adblock Plus-filtersyntaks:
 
-- Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content-type modifiers](#content-type-modifiers).
-- Basic exception rules with the following modifiers: `$document`, `$elemhide`.
-- Basic [element hiding rules](#cosmetic-elemhide-rules) with no extended CSS support.
+- Basisblokeringsregler med flg. modifikatorer: `$domain`, `$third-party`, [indholdstypemodifikatorer](#content-type-modifiers).
+- Basisundtagelsesregler med flg. modifikatorer: `$document`, `$elemhide`.
+- Basis [elementskjulningsregler](#cosmetic-elemhide-rules) uden udvidet CSS-understøttelse.
 
-Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
+Grundet ovennævnte begrænsninger nævnes AdGuard Content Blocker ikke i kompatibilitetsnotaterne.
 
 ### SafariConverterLib {#safari-converter-lib}
 
-Safari Converter aims to support AdGuard filtering rules syntax as much as possible, but still there are limitations and shortcomings that are hard to overcome.
+Målet med Safari Converter er at understøtte AdGuard-filtreringsregelsyntaks så meget som muligt, men der er stadig begrænsninger og mangler, som er svære at overvinde.
 
-#### Basic (network) rules
+#### Basisregler (netværk)
 
-Safari Converter supports a substantial subset of [basic rules](#basic-rules) and certainly supports the most important types of those rules.
+Safari Converter understøtter et betydeligt udvalg af [basisregler](#basic-rules) og understøtter bestemt de vigtigste typer af disse regler.
 
-##### Supported with limitations {#safari-converter--basic--supported-with-limitations}
+##### Understøttet med begrænsninger {#safari-converter--basic--supported-with-limitations}
 
-- [Regular expression rules](#regexp-support) are limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+- [Regulære udtryk-regler](#regexp-support) er begrænset til udvalget af regex [understøttet af Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
 
-- `$domain` - [domain modifier](#domain-modifier) is supported with several limitations:
+- `$domain` - [domæne-modifikator](#domain-modifier) understøttes med flere begrænsninger.
 
-    - It's impossible to mix allowed and disallowed domains (like `$domain=example.org|~sub.example.org`). Please upvote the [feature request](https://bugs.webkit.org/show_bug.cgi?id=226076) to WebKit to lift this limitation.
-    - "Any TLD" (i.e. `domain.*`) is not fully supported. In the current implementation the converter just replaces `.*` with top 100 popular TLDs. This implementation will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
-    - Using regular expressions in `$domain` is not supported, but it also will be improved [in the future](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - Det er umuligt at blande tilladte og ikke-tilladte domæner (såsom `$domain=example.org|~sub.example.org`). Stem venligst for [funktionsanmodningen](https://bugs.webkit.org/show_bug.cgi?id=226076) til WebKit for at ophæve denne begrænsning.
+    - "Ethvert TLD" (dvs. `domæne.*`) understøttes ikke fuldt ud. I den nuværende implementering erstatter konverteren blot `.*` med de 100 mest populære TLD'er. Denne implementering forbedres [i fremtiden](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
+    - Brug af regulære udtryk i `$domain` understøttes ikke, men det forbedres også [i fremtiden](https://github.com/AdguardTeam/SafariConverterLib/issues/20#issuecomment-2532818732).
 
-- `$denyallow` - this modifier is supported via converting `$denyallow` rule to a set of rules (one blocking rule + several unblocking rules).
+- `$denyallow` - denne modifikator understøttes via konvertering af `$denyallow`-reglen til et sæt af regler (én blokeringsregel + flere afblokeringsregler).
 
-  Due to that limitation `$denyallow` is only allowed when the rule also has `$domain` modifier.
+  Grundet denne begrænsning er `$denyallow` kun tilladt, når reglen også har `$domain`-modifikatoren.
 
-    - Generic rule `*$denyallow=x.com,image,domain=a.com` will be converted to:
+    - Den generiske regel `*$denyallow=x.com,image,domain=a.com` konverteres til:
 
     ```adblock
     *$image,domain=a.com
     @@||x.com$image,domain=a.com
     ```
 
-    - Rule `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` will be converted to:
+    - Reglen `/banner.png$image,denyallow=test1.com|test2.com,domain=example.org` konverteres til:
 
     ```adblock
     /banner.png$image,domain=example.org
@@ -178,44 +179,44 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
     @@||test2.com/*/banner.png$image,domain=example.org
     ```
 
-    - Rule without `$domain` is **not supported**: `$denyallow=a.com|b.com`.
+    - Regler uden `$domain` er **uunderstøttet**: `$denyallow=a.com|b.com`.
 
-- `$popup` - popup rules are supported, but they're basically the same as `$document`-blocking rules and will not attempt to close the tab.
+- `$popup` - pop op-regler understøttes, men de er grundlæggende de samme som `$document`-blokeringsregler og vil ikke forsøge at lukke fanen.
 
-- Exception rules (`@@`) disable cosmetic filtering on matching domains.
+- Undtagelsesregler (`@@`) deaktiverer kosmetisk filtrering på matchende domæner.
 
-  Exception rules in Safari rely on the rule type `ignore-previous-rules` so to make it work we have to order the rules in a specific order. Exception rules without modifiers are placed at the end of the list and therefore they disable not just URL blocking, but cosmetic rules as well.
+  Undtagelsesregler i Safari er afhængige af regeltypen `ignore-previous-rules`, så for at få det til at fungere, skal reglerne arrangeres i en bestemt rækkefølge. Undtagelsesregler uden modifikatorer placeres i slutningen af listen, og derfor deaktiverer de ikke kun URL-blokering, men også kosmetiske regler.
 
-  This limitation may be lifted if [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) is implemented.
+  Denne begrænsning kan ophæves, hvis [#70](https://github.com/AdguardTeam/SafariConverterLib/issues/70) implementeres.
 
-- `$urlblock`, `$genericblock` is basically the same as `$document`, i.e. it disables all kinds of filtering on websites.
+- `$urlblock`, `$genericblock` er grundlæggende det samme som `$document`, dvs. den deaktiverer alle former for filtrering på websteder.
 
-  These limitations may be lifted when [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) and [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) are implemented.
+  Disse begrænsninger kan ophæves, når [#69](https://github.com/AdguardTeam/SafariConverterLib/issues/69) og [#71](https://github.com/AdguardTeam/SafariConverterLib/issues/71) implementeres.
 
-- `$content` makes no sense in the case of Safari since HTML filtering rules are not supported so it's there for compatibility purposes only. Rules with `$content` modifier are limited to `document` resource type.
+- `$content` giver ingen mening ift. Safari, da HTML-filtreringsregler ikke understøttes, så den medtages kun af kompatibilitetshensyn. Regler med modifikatoren `$content` er begrænset til ressourcetypen `dokument`.
 
-- `$specifichide` is implemented by scanning existing element hiding rules and removing the target domain from their `if-domain` array.
+- `$specifichide` implementeres ved at skanne eksisterende elementskjulningsregler og fjerne måldomænet fra deres `if-domain`-struktur.
 
-    - `$specifichide` rules MUST target a domain, i.e. be like this: `||example.org^$specifichide`. Rules with more specific patterns will be discarded, i.e. `||example.org/path$specifichide` will not be supported.
-    - `$specifichide` rules only cover rules that target the same domain as the rule itself, subdomains are ignored. I.e. the rule `@@||example.org^$specifichide` will disable `example.org##.banner`, but will ignore `sub.example.org##.banner`. This limitation may be lifted if [#72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) is implemented.
+    - `$specifichide`-regler SKAL være målrettet et domæne, dvs. ligne dette: `||example.org^$specifichide`. Regler med mere specifikke mønstre kasseres, dvs. `||example.org/path$specifichide` er uunderstøttet.
+    - `$specifichide`-regler dækker kun regler, som er målrettet det samme domæne som reglen selv, underdomæner ignoreres. Dvs. reglen `@@||example.org^$specifichide` deaktiverer `example.org##.banner`, men ignorerer `sub.example.org##.banner`. Denne begrænsning kan ophæves, hvis [#72](https://github.com/AdguardTeam/SafariConverterLib/issues/72) implementeres.
 
-- `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide`, and `jsinject` modifiers can be used only as a single modifier in a rule. This limitation may be lifted in the future: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
+- Modifikatorerne `urlblock`, `genericblock`, `generichide`, `elemhide`, `specifichide` og `jsinject` kan kun bruges som én enkelt modifikator i en regel. Denne begrænsning kan blive ophævet i fremtiden: [#73](https://github.com/AdguardTeam/SafariConverterLib/issues/73).
 
-- `$websocket` (fully supported starting with Safari 15).
+- `$websocket` (fuldt understøttet fra Safari 15).
 
-- `$ping` (fully supported starting with Safari 14).
+- `$ping` (fuldt understøttet fra Safari 14).
 
-##### Not supported
+##### Uunderstøttet
 
 - `$app`
 - `$header`
 - `$method`
-- `$strict-first-party` (to be supported in the future: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
-- `$strict-third-party` (to be supported in the future: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
-- `$to` (to be supported in the future: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
+- `$strict-first-party` (vil blive understøttet i fremtiden: [#64](https://github.com/AdguardTeam/SafariConverterLib/issues/64))
+- `$strict-third-party` (vil blive understøttet i fremtiden: [#65](https://github.com/AdguardTeam/SafariConverterLib/issues/65))
+- `$to` (vil blive understøttet i fremtiden: [#60](https://github.com/AdguardTeam/SafariConverterLib/issues/60))
 - `$extension`
 - `$stealth`
-- `$cookie` (partial support in the future: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
+- `$cookie` (delvis understøttelse i fremtiden: [#54](https://github.com/AdguardTeam/SafariConverterLib/issues/54))
 - `$csp`
 - `$hls`
 - `$inline-script`
@@ -232,71 +233,71 @@ Safari Converter supports a substantial subset of [basic rules](#basic-rules) an
 - `$replace`
 - `$urltransform`
 
-#### Cosmetic rules {#cosmetic-rules-safari-limitations}
+#### Kosmetiske regler {#cosmetic-rules-safari-limitations}
 
-Safari Converter supports most of the [cosmetic rules](#cosmetic-rules) although only element hiding rules with basic CSS selectors are supported natively via Safari Content Blocking, everything else needs to be interpreted by an additional extension.
+Safari Converter understøtter de fleste af de [kosmetiske regler](#cosmetic-rules), selvom kun regler til elementskjulning med basis CSS-vælgere understøttes indbygget via Safari Content Blocking; alt andet kræver fortolkning af en ekstra udvidelse.
 
-##### Limitations of cosmetic rules
+##### Begrænsninger af kosmetiske regler
 
-- Specifying domains is subject to the same limitations as the `$domain` modifier of basic rules.
+- Specifikation af domæner er underlagt de samme begrænsninger som for modifikatoren `$domain` for basisregler.
 
-- [Non-basic rules modifiers](#non-basic-rules-modifiers) are supported with some limitations:
+- [Ikke-basisregelmodifikatorer](#non-basic-rules-modifiers) understøttes med visse begrænsninger:
 
-    - `$domain` - the same limitations as everywhere else.
-    - `$path` - supported, but if you use regular expressions, they will be limited to the subset of regex that is [supported by Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
-    - `$url` - to be supported in the future: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
+    - `$domain` - de samme begrænsninger som alle andre steder.
+    - `$path` - understøttet, men bruges regulære udtryk, vil disse være begrænset til udvalget af regulære udtryk, som [understøttes af Safari](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker#Capture-URLs-by-pattern).
+    - `$url` - bliver understøttet i fremtiden: [#68](https://github.com/AdguardTeam/SafariConverterLib/issues/68)
 
-#### Script/scriptlet rules
+#### Script-/scriptlet-regler
 
-Safari Converter fully supports both [script rules](#javascript-rules) and [scriptlet rules](#scriptlets). However, these rules can only be interpreted by a separate extension.
+Safari Converter understøtter fuldt ud både [script-regler](#javascript-rules) og [scriptlet-regler](#scriptlets). Imidlertid kan disse regler kun fortolkes af en separat udvidelse.
 
 :::warning
 
-For scriptlet rules, it is **very important** that they are run as early as possible when the page loads. The reason for that is that it's important to run them before the page scripts. Unfortunately, with Safari there will always be a slight delay that can decrease the quality of blocking.
+For scriptlet-regler er det **meget vigtigt**, at de afvikles så tidligt som muligt, når siden indlæses. Årsagen er, at det er vigtigt, at de afvikles tidligere end selve side-scriptene. Med Safari vil der desværre altid være en lille forsinkelse, der kan reducere blokeringskvaliteten.
 
 :::
 
-#### HTML filtering rules {#html-filtering-rules-safari-limitations}
+#### HTML-filtreringsregler {#html-filtering-rules-safari-limitations}
 
-[HTML filtering rules](#html-filtering-rules) are **not supported** and will not be supported in the future. Unfortunately, Safari does not provide necessary technical capabilities to implement them.
+[HTML-filtreringsregler](#html-filtering-rules) er **uunderstøttet**, hvilket ikke ændres fremadrettet. Desværre tilbyder Safari ikke de nødvendige tekniske funktioner til implementering heraf.
 
-## Basic rules
+## Basisregler
 
-The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
+De mest simple regler er såkaldte *Basisregler*. De bruges til at blokere forespørgsler til bestemte URL'er. Eller til afblokering, hvis reglen starter med den særlige markør "@@". Basisprincippet for denne regeltype er ret simpelt: Angiv adressen samt yderligere parametre, som begrænser eller udvider reglens omfang.
 
-:::note Sub-requests
+:::note Underforespørgsel
 
-Basic rules for blocking requests are applied only to **sub-requests**. That means they will not block the loading of the page unless it is explicitly specified with a `$document` modifier.
-
-:::
-
-:::note Response status
-
-Browser detects a blocked request as completed with an error.
+Basisregler til forespørgselsblokering anvendes kun på **underforespørgsler**. Det betyder, at de ikke vil blokere indlæsningen af siden, medmindre det udtrykkeligt er angivet med en `$document`-modifikator.
 
 :::
 
-:::note Rule length
+:::note Svarstatus
 
-Rules shorter than 4 characters are considered incorrect and will be ignored.
+Webbrowseren registrerer en blokeret forespørgsel som udført med en fejl.
 
 :::
 
-### Basic rule syntax {#basic-rules-syntax}
+:::note Regellængde
+
+Regler kortere end 4 tegn betragtes som ukorrekte og ignoreres.
+
+:::
+
+### Basisregelsyntaks {#basic-rules-syntax}
 
 ```text
-      rule = ["@@"] pattern [ "$" modifiers ]
-modifiers = [modifier0, modifier1[, ...[, modifierN]]]
+      regel = ["@@"] mønster [ "$" modifikatorer ]
+modifikatorer = [modifikator0, modifikator1[, ...[, modifikatorN]]]
 ```
 
-- **`pattern`** — an address mask. Every request URL is collated to this mask. In the template, you can also use the special characters described [below](#basic-rules-special-characters). Note that AdGuard truncates URLs to a length of 4096 characters in order to speed up matching and avoid issues with ridiculously long URLs.
-- **`@@`** — a marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
-- **`modifiers`** — parameters that "clarify" the basic rule. Some of them limit the rule scope and some can completely change they way it works.
+- **`mønster`** — en adressemaske. Hver forespørgsels-URL kombineres til denne maske. I skabelonen kan der også bruges specialtegnene beskrevet [nedenfor](#basic-rules-special-characters). Bemærk, at AdGuard afkorter URL'er til en længde på 4.096 tegn for at accelerere matchning og undgå problemer med ekstremt lange URL'er.
+- **`@@`** — en markør brugt i undtagelsesregler. For at deaktivere filtrering af en forespørgsel, skal reglen starte med denne markør.
+- **`modifikatorer`** — parametre, som tydeliggør basisreglen. Nogle af dem begrænser regelomfanget, andre kan fuldstændig ændre dens måde at fungere på.
 
-### Special characters {#basic-rules-special-characters}
+### Specialtegn {#basic-rules-special-characters}
 
-- **`*`** — a wildcard character. It is used to represent any set of characters. This can also be an empty string or a string of any length.
-- **`||`** — an indication to apply the rule to the specified domain and its subdomains. With this character, you do not have to specify a particular protocol and subdomain in address mask. It means that `||` stands for `https://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+- **`*`** — et jokertegn. Det bruges til at repræsentere et hvilket som helst tegn. Dette kan også være en tom streng eller en streng af enhver længde.
+- **`||`** — en indikation om at anvende reglen på det angivne domæne, inkl. underdomæner. Med dette tegn kræves ingen bestemt protokol og underdomæne angivet i adressemasken. Det betyder, at `||` står for både `http://*.`, `https://*.`, `ws://*.` og `wss://*.`.
 - **`^`** — a separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
 - **`|`** — a pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `https://example.com/annoyingflash.swf` , but not to `https://example.com/swf/index.html`. `|https://example.org` corresponds to `https://example.org`, but not to `https://domain.com?url=https://example.org`.
 
@@ -360,7 +361,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
 - `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
 
-### Basic rule modifiers
+### Basisregelmodifikatorer
 
 - [Basic modifiers](#basic-rules-basic-modifiers)
 - [Content-type modifiers](#content-type-modifiers)
@@ -2968,7 +2969,7 @@ Below is an example of how to obtain the clean destination link to bypass tracki
 In our first example, the destination URL is percent-encoded:
 
  1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F&ref=ref-123`
- 1. The website you want to visit: `https://www.somestore.com/`
+ 1. Webstedet, der skal besøges: `https://www.somestore.com/`
 
 For at rense URL'en, udtræk den kodede destination fra parameteren `url` og afkod den med transformationen `pct`:
 
@@ -3024,8 +3025,8 @@ Rules with the `$urltransform` modifier and [content-type modifiers](#content-ty
 In [AdGuard for Chromium MV3][ext-mv3], the `$urltransform` modifier has the following limitations:
 
 1. **Ingen afkodningstrin** — pipeline-transformationer indeholdende trinnene `b64` (Base64-afkodning) eller `pct` (procentafkodning) understøttes ikke og kasseres derfor.
-2. **Ingen global erstatning** — kun det **første match** erstattes. Flaget `/g` (globalt) ignoreres. This is usually not an issue for full-URL transforms anchored with `^`, but path-only patterns that rely on replacing all occurrences will only replace the first one.
-3. **Single redirect per request** — when multiple `$urltransform` rules match the same request, only the highest-priority one takes effect. In CoreLibs, all matching rules are applied sequentially.
+2. **Ingen global erstatning** — kun det **første match** erstattes. Flaget `/g` (globalt) ignoreres. Dette er normalt ikke et problem for fuld-URL-transformationer forankret med `^`, men sti-kun-mønstre, som er afhængige af at erstatte alle forekomster, vil kun erstatte den første.
+3. **Enkelt omdirigering pr. forespørgsel** — når flere `$urltransform`-regler matcher den samme forespørgsel, træder kun den højestprioriterede i kraft. I CoreLibs anvendes alle matchende regler sekventielt.
 :::
 
 #### **`$reason`** {#reason-modifier}
@@ -3338,7 +3339,7 @@ However, basic rules may not be enough to block ads. Sometimes you need to hide 
 
 :::
 
-## Cosmetic rules {#cosmetic-rules}
+## Kosmetiske regler {#cosmetic-rules}
 
 :::info
 
@@ -4255,7 +4256,7 @@ The way **element hiding** and **CSS rules** are applied is platform-specific.
 
 **Extended CSS selectors** use JavaScript to work and basically add an inline style themselves, therefore they can override any style.
 
-## HTML filtering rules {#html-filtering-rules}
+## HTML-filtreringsregler {#html-filtering-rules}
 
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
@@ -4981,9 +4982,9 @@ where:
         - `adguard_ext_chromium_mv3` — [AdGuard for Chromium MV3][ext-mv3]
         - `adguard_ext_firefox` — AdGuard Browser Extension for Firefox
         - `adguard_ext_edge` — AdGuard Browser Extension for Edge Legacy
-        - `adguard_ext_edge_mv3` — AdGuard Browser Extension for Edge MV3
+        - `adguard_ext_edge_mv3` — AdGuard Browser Extension til Edge MV3
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
-        - `adguard_ext_opera_mv3` — AdGuard Browser Extension for Opera MV3
+        - `adguard_ext_opera_mv3` — AdGuard Browser Extension til Opera MV3
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
         - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
@@ -5167,11 +5168,11 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_edge` — AdGuard Browser Extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-- `ext_edge_mv3` — AdGuard Browser Extension for Edge MV3 — [https://filters.adtidy.org/extension/edge-mv3/filters/2.txt](https://filters.adtidy.org/extension/edge-mv3/filters/2.txt)
+- `ext_edge_mv3` — AdGuard Browser Extension til Edge MV3 — [https://filters.adtidy.org/extension/edge-mv3/filters/2.txt](https://filters.adtidy.org/extension/edge-mv3/filters/2.txt)
 
 - `ext_opera` — AdGuard Browser Extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-- `ext_opera_mv3` — AdGuard Browser Extension for Opera MV3 — [https://filters.adtidy.org/extension/opera-mv3/filters/2.txt](https://filters.adtidy.org/extension/opera-mv3/filters/2.txt)
+- `ext_opera_mv3` — AdGuard Browser Extension til Opera MV3 — [https://filters.adtidy.org/extension/opera-mv3/filters/2.txt](https://filters.adtidy.org/extension/opera-mv3/filters/2.txt)
 
 - `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2_optimized.txt](https://filters.adtidy.org/extension/safari/filters/2_optimized.txt)
 

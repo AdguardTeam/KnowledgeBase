@@ -5,70 +5,70 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-[DNS protection module](https://adguard-dns.io/kb/general/dns-filtering/) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by tapping the shield icon at the top of the screen, or by going to the _Protection_ → _DNS protection_ tab.
+[DNS-beskyttelsesmodulet](https://adguard-dns.io/kb/general/dns-filtering/) forbedrer brugerfortroligheden ved at kryptere DNS-trafikken. Modsat Safaris indholdsblokering, fungerer DNS-beskyttelse på systemniveau, dvs. også i apps og andre webbrowsere end Safari. Dette modul skal aktiveres, før det kan anvendes. Dette kan gøres ved at trykke på skjoldikonet øverst på skærmen eller ved at gå til fanen _Beskyttelse_ → _DNS-beskyttelse_.
 
 :::note
 
-To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm access permission.
+For at kunne håndtere DNS-indstillinger kræver AdGuard-apps oprettelse af et lokalt VPN. Den vil ikke rute trafikken igennem nogen fjernservere. Systemet vil dog stadig kræve, at tilladelsesadgangen bekræftes.
 
 :::
 
-### DNS implementation {#dns-implementation}
+### DNS-implementering {#dns-implementation}
 
-![DNS implementation screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![Skærmen DNS-implementering \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
-This section has two options: AdGuard and Native implementation. Basically, these are two methods of setting up DNS.
+Dette afsnit har to muligheder: AdGuard- og Native-implementering. Disse er grundlæggende to metoder til opsætning af DNS.
 
-In Native implementation, the DNS is handled by the system and not the app. This means that AdGuard doesn't have to create a local VPN. Sadly, this will not help you circumvent system restrictions and use AdGuard alongside other VPN-based applications — if any VPN is enabled, native DNS is ignored. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
+I Native-implementeringen håndteres DNS af systemet og ikke appen. Det betyder, at AdGuard ikke behøver oprette et lokalt VPN. Desværre vil dette ikke hjælpe med at omgå systemrestriktioner og anvende AdGuard sammen med andre VPN-baserede apps — er et andet VPN aktivt, ignoreres den indbyggede DNS. Følgelig vil trafikfiltrering lokalt eller brug af vores helt nye [DNS-over-QUIC-protokol (DoQ)](https://adguard.com/en/blog/dns-over-quic.html) ikke være mulig.
 
-### DNS servers {#dns-servers}
+### DNS-servere: {#dns-servers}
 
-The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
+Det næste afsnit vist på skærmen DNS-beskyttelse er DNS-server. Den viser den aktuelt valgte DNS-server og krypteringstype. For at skifte den, tryk på knappen for at åbne skærmen DNS-server.
 
-![DNS servers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS-servere \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
-Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
+Servere adskiller sig efter deres hastighed, anvendte protokol, troværdighed, logningspolitik mv. Som standard vil AdGuard foreslå flere DNS-servere blandt de mest populære (inkl. AdGuard DNS). Tryk på en hvilken som helst for at skifte krypteringstypen (såfremt muligheden tilbydes af serverejeren) eller for at se serverens hjemmeside. Etiketter, såsom `Ingen logningspolitik`, `Adblocking` og `Sikkerhed`, er tilføjet for nemmere valg.
 
-In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC servers.
+I bunden af skærmen er der også mulighed for at tilføje en tilpasset DNS-server. Den understøtter almindelige DNSCrypt-, DNS-over-HTTPS-, DNS-over-TLS- og DNS-over-QUIC-servere.
 
-#### HTTP basic authentication for DNS-over-HTTPS
+#### HTTP-basisgodkendelse for DNS-over-HTTPS
 
-This feature brings the authentication capabilities of the HTTP protocol to DNS, which does not have built-in authentication. Authentication in DNS is useful if you want to restrict access to your custom DNS server to specific users.
+Denne funktion bringer godkendelsesmulighederne for HTTP-protokollen til DNS, der ikke har indbygget godkendelse. Godkendelse i DNS er nyttig, hvis adgangen til en tilpassede DNS-server ønskes begrænset til bestemte brugere.
 
-To enable this feature:
+Sådan aktiveres denne funktion:
 
-1. In AdGuard DNS, go to _Server settings_ → _Devices_ → _Settings_ and change the DNS server to the one with authentication. Clicking _Deny other protocols_ will remove other protocol usage options, leaving only DNS-over-HTTPS authentication enabled and preventing its use by third parties. Copy the generated address.
+1. I AdGuard DNS, gå til _Serverindstillinger_ → _Enheder_ → _Indstillinger_ og skift DNS-serveren til den med godkendelse. Klikkes på _Afvis andre protokoller_, fjernes andre protokolbrugsindstillinger, så kun DNS-over-HTTPS-godkendelse er aktiveret og tredjeparter forhindres i at bruge den. Kopiér den genererede adresse.
 
-![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+![DNS-over-HTTPS med godkendelse](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
-1. In AdGuard for iOS, go to the _Protection tab_ → _DNS protection_ → _DNS server_ and paste the generated address into the _Add a custom DNS server_ field. Save and select the new configuration.
+1. I AdGuard til iOS, gå til fanen _Beskyttelse_ → _DNS-beskyttelse_ → _DNS-server_ og indsæt den genererede adresse i feltet _Tilføj en tilpasset DNS-server_. Gem og vælg den nye opsætning.
 
-To check if everything is set up correctly, visit our [diagnostics page](https://adguard.com/en/test.html).
+Besøg vores [diagnostikside](https://adguard.com/en/test.html) for at tjekke, om alt er korrekt opsat.
 
-### Network settings {#network-settings}
+### Netværksindstillinger {#network-settings}
 
-![Network settings screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Skærmen Netværksindstillinger \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Users can also handle their DNS security on the Network settings screen. _Filter mobile data_ and _Filter Wi-Fi_ enable or disable DNS protection for the respective network types. Further down, at _Wi-Fi exceptions_, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
+På skærmen Netværksindstillinger kan brugere også håndtere DNS-sikkerhed. _Filtrér mobildata_ og _Filtér Wi-Fi_ slår DNS-beskyttelse til/fra for de respektive netværkstyper. Længere nede kan der via _Wi-Fi undtagelser_ undtages bestemte Wi-Fi netværk fra DNS-beskyttelsen (f.eks. hjemmenetværket, hvis der gøres brug af [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
-### DNS filtering {#dns-filtering}
+### DNS-filtrering {#dns-filtering}
 
-DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
+DNS-filtrering muliggør at tilpasse DNS-trafikken ved at aktivere AdGuard DNS-filter, tilføje tilpassede DNS-filtre og benytte DNS-sortlisten/hvidlisten.
 
-How to access:
+Sådan opnås adgang:
 
-_Protection_ (the shield icon in the bottom menu bar) → _DNS protection_ → _DNS filtering_
+_Beskyttelse_ (skjoldikonet på nederste menubjælke) → _DNS-beskyttelse_ → _DNS-filtrering_
 
-![DNS filtering screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![Skærmen DNS-filtrering \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
-#### DNS filters {#dns-filters}
+#### DNS-filtre {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
+I lighed med filtre, som fungerer i Safari, er DNS-filtre sæt af regler skrevet i en særlig [syntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard vil overvåge DNS-trafikken og blokere forespørgsler matchende en eller flere regler. Der kan bruges filtre såsom [AdGuard DNS-filter](https://github.com/AdguardTeam/AdguardSDNSFilter) eller tilføjes værtsfiler som filtre. Flere filtre kan tilføjes samtidigt. For at vide, hvordan dette gøres, konsultér [denne udtømmende manual](adguard-for-ios/solving-problems/system-wide-filtring).
 
-#### Allowlist and Blocklist {#allowlist-blocklist}
+#### Hvidliste og Sortliste {#allowlist-blocklist}
 
-On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
+Ud over DNS-filtre, kan DNS-filtrering målrettet påvirkes ved at føje enkelte domæner til sort- eller hvidlisten. Sortlisten understøtter endda den samme DNS-syntaks, og begge kan importeres og eksporteres, ligesom hvidlisten i Safari-indholdsblokering.
