@@ -113,7 +113,7 @@ AdGuard 可以通过代理服务器路由设备流量。要访问代理设置，
 
 1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
-### 如何同时使用 Adguard 和 Shadowsocks
+### 如何同时使用 AdGuard 和 Shadowsocks
 
 *假设您已是 Shadowsocks 的客户，且已将它安装在设备上。*
 
