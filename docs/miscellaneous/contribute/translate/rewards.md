@@ -13,6 +13,8 @@ Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker licens
 
 Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
 
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices. 
+
 ### For AdGuard VPN licenses
 
 - The first one-year VPN subscription requires translating **3,000 words**.
