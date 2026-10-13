@@ -9,7 +9,7 @@ As any honest and well-performed effort should be rewarded, active translators o
 
 ### For AdGuard licenses
 
-Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device on your existing license**. You don’t get both.
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
 
 Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
 
