@@ -48,4 +48,3 @@ If AdGuard does not handle a connection to `injections.adguard.org`, it normally
 Most often, another app that filters traffic takes over the connection before AdGuard does: an antivirus with web protection, a VPN or proxy tool, or a second ad blocker. AdGuard then can’t inject its content script, so the page loads slowly and some cosmetic rules are not applied.
 
 Try disabling such apps one by one to find the source of the problem. If the problem continues, please contact support at support@adguard.com. Include your AdGuard version, the browser where you see the delay, and the output of `nslookup injections.adguard.org`. This command shows whether the domain resolves, but not whether a connection to it times out.
-
