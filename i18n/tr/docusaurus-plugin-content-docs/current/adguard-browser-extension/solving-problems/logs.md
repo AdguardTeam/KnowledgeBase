@@ -1,6 +1,6 @@
 ---
 title: Günlükler arka plan sayfasından nasıl dışa aktarılır
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Uzantının arka plan sayfasından günlükleri dışa aktarma

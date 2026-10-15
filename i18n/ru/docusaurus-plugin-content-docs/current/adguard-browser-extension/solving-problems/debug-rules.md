@@ -1,9 +1,9 @@
 ---
-title: Отладка правил в AdGuard для Chrome MV3
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
-В Журнале фильтрации [MV3-расширениия AdGuard](/adguard-browser-extension/mv3-version) отображаются только приблизительные применённые правила, которые мы называем «предполагаемыми правилами». Это связано с тем, что браузер не предоставляет подробную информацию о том, какие именно декларативные правила были использованы, если расширение не «распаковано». Для получения точной информации можно самостоятельно установить «распакованное» расширение в браузере.
+In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. Это связано с тем, что браузер не предоставляет подробную информацию о том, какие именно декларативные правила были использованы, если расширение не «распаковано». Для получения точной информации можно самостоятельно установить «распакованное» расширение в браузере.
 
 Эта инструкция также пригодится для проблемных случаев, когда вы хотите изменить правила, которые статически включены в расширение. В большинстве случаев достаточно использовать _Пользовательские правила_ в расширении.
 
@@ -55,7 +55,10 @@ sidebar_position: 2
    yarn dev chrome-mv3
    ```
 
-3. Собранное расширение будет находиться в каталоге:
+3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
+   be located in the `./build/dev/opera-mv3` directory.
+
+4. The built extension will be located in the directory:
 
    ```bash
    ./build/dev/chrome-mv3

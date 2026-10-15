@@ -1,6 +1,6 @@
 ---
 title: Probleme mit der Werbeblockierung auf Suchmaschinen in Opera
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Wenn die AdGuard Browsererweiterung in Opera weder automatisch noch manuell Werbung auf Suchwebseiten blockieren kann, bedeutet dies, dass die Erweiterung keine Berechtigung hat, auf die Suchergebnisse zuzugreifen.

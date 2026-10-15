@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
@@ -27,15 +27,15 @@ To go to _Advanced settings_, in the main windows click _Settings → General Se
 
 ### TCP Fast Openをブロックする
 
-有効にすると、AdGuardはEdgeブラウザのTCP Fast Openをブロックします。 この設定の変更を適用するには、ブラウザを再起動する必要があります。
+有効にすると、AdGuardはEdgeブラウザのTCP Fast Openをブロックします。この設定の変更を適用するには、ブラウザを再起動する必要があります。
 
 ### Encrypted Client Hello を使用する
 
-暗号化されたインターネット接続には、暗号化されていない部分があります。 その部分とは、接続先のサーバー名を含む最初の通信パケットです。 Encrypted Client Hello 技術は、この問題を解決し、この暗号化されていない部分を暗号化してくれます。 To benefit from it, enable the _Use Encrypted Client Hello_ option. このオプションは、ローカル DNS プロキシを使用して、ドメインの ECH 構成を検索します。 見つかった場合、ClientHello パケットは暗号化されます。
+暗号化されたインターネット接続には、暗号化されていない部分があります。その部分とは、接続先のサーバー名を含む最初の通信パケットです。 Encrypted Client Hello 技術は、この問題を解決し、この暗号化されていない部分を暗号化してくれます。 To benefit from it, enable the _Use Encrypted Client Hello_ option. このオプションは、ローカル DNS プロキシを使用して、ドメインの ECH 構成を検索します。見つかった場合、ClientHello パケットは暗号化されます。
 
 ### Webサイトの証明書の透明性を確認する
 
-Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基づき、ドメインのすべての証明書の信頼性を検証します。 証明書が Chrome Certificate Transparency Policy（Chrome 証明書の透明性に関するポリシー）に準拠していない場合、AdGuard は Web サイトをフィルタリングしません。 そして Chrome はそれをブロックします。
+Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基づき、ドメインのすべての証明書の信頼性を検証します。証明書が Chrome Certificate Transparency Policy（Chrome 証明書の透明性に関するポリシー）に準拠していない場合、AdGuard は Web サイトをフィルタリングしません。そして Chrome はそれをブロックします。
 
 ### SSL/TLS証明書の失効チェックを有効にする
 
@@ -43,7 +43,7 @@ Chrome Certificate Transparency Policy（証明書透過性ポリシー）に基
 
 OCSP チェックが最小タイムアウト内に完了すると、AdGuard は結果を直ちに適用します（証明書が取り消されている場合は接続をブロックし、証明書が有効な場合は接続を確立します）。
 
-検証に時間がかかりすぎる場合、AdGuardは接続を確立し、バックグラウンドでチェックを続けます。 証明書が失効している場合は、そのドメインへの現在の接続および今後の接続はブロックされるようになります。
+検証に時間がかかりすぎる場合、AdGuardは接続を確立し、バックグラウンドでチェックを続けます。証明書が失効している場合は、そのドメインへの現在の接続および今後の接続はブロックされるようになります。
 
 ### 設定で「AdGuard VPN」項目を表示する
 
@@ -51,11 +51,11 @@ OCSP チェックが最小タイムアウト内に完了すると、AdGuard は�
 
 ### フルパスを入力してアプリをフィルタリングから除外する
 
-AdGuardが特定のアプリをフィルタリングしないようにしたい場合は、そのアプリへのフルパスを指定すると、そのアプリはフィルタリングから除外されます。 異なるパスはセミコロンで区切ります。
+AdGuardが特定のアプリをフィルタリングしないようにしたい場合は、そのアプリへのフルパスを指定すると、そのアプリはフィルタリングから除外されます。異なるパスはセミコロンで区切ります。
 
 ### AdGuardのポップアップ通知を有効にする
 
-この機能を有効にすると、AdGuardのポップアップ通知が表示されるようになります。 あまり頻繁には表示されず、重要な情報のみが含まれます。 トレイ メニューを使用して、最後のポップアップ通知を呼び出すこともできます。
+この機能を有効にすると、AdGuardのポップアップ通知が表示されるようになります。あまり頻繁には表示されず、重要な情報のみが含まれます。トレイ メニューを使用して、最後のポップアップ通知を呼び出すこともできます。
 
 ### フィルタ・サブスクリプションURLを自動的に傍受する
 
@@ -75,7 +75,7 @@ Enable this feature if you want AdGuard to automatically intercept filter subscr
 
 このオプションを有効にすると、AdGuard はすべてのトラフィックを傍受し、さらにフィルタリングするためにローカルプロキシサーバーにリダイレクトします。
 
-それ以外の場合、AdGuard はリダイレクトせずにすべてのトラフィックを即座にフィルタリングします。 この場合、システムは AdGuard をインターネットに接続する唯一のアプリと見なします (他のアプリケーションは AdGuard を経由してルーティングされます)。 欠点として、システムのファイアウォールの効果が低下することがあります。 利点は、このアプローチの方が少し速く動作することです。
+それ以外の場合、AdGuard はリダイレクトせずにすべてのトラフィックを即座にフィルタリングします。この場合、システムは AdGuard をインターネットに接続する唯一のアプリと見なします (他のアプリケーションは AdGuard を経由してルーティングされます)。欠点として、システムのファイアウォールの効果が低下することがあります。利点は、このアプローチの方が少し速く動作することです。
 
 ### システム起動時にメインウィンドウを開く
 
@@ -83,7 +83,7 @@ Enable this feature if you want AdGuard to automatically intercept filter subscr
 
 ### システム起動時にフィルタリングを有効にする
 
-v7.12以降、デフォルトでは、[システム起動時にAdGuardを起動]オプションが無効になっている場合、AdGuardのサービスはOS起動後にトラフィックをフィルタリングしません。 つまり、AdGuard のサービスは「アイドル」モードで開始されます。 このオプションを有効にすると、アプリが起動されていない場合でも AdGuard がトラフィックをフィルタリングします。
+v7.12以降、デフォルトでは、[システム起動時にAdGuardを起動]オプションが無効になっている場合、AdGuardのサービスはOS起動後にトラフィックをフィルタリングしません。つまり、AdGuard のサービスは「アイドル」モードで開始されます。このオプションを有効にすると、アプリが起動されていない場合でも AdGuard がトラフィックをフィルタリングします。
 
 :::note
 
@@ -101,11 +101,11 @@ If you don't want AdGuard to filter particular subnets, enable this feature and 
 
 ### HAR writing を有効にする
 
-This option should be enabled **only for debugging purposes**. チェックボックスをオンにすると、AdGuard は、フィルタされたすべての HTTP リクエストに関する情報を含む HAR 1.2 形式のファイルを作成します。 このファイルは Fiddler アプリで分析できます。 ※このオプションがオンの時は、ウェブブラウジングの速度が著しく低下する可能性がありますのでご注意ください。
+This option should be enabled **only for debugging purposes**. チェックボックスをオンにすると、AdGuard は、フィルタされたすべての HTTP リクエストに関する情報を含む HAR 1.2 形式のファイルを作成します。このファイルは Fiddler アプリで分析できます。 ※このオプションがオンの時は、ウェブブラウジングの速度が著しく低下する可能性がありますのでご注意ください。
 
 ### プレーンHTTPリクエストに余分なスペースを追加する
 
-HTTPメソッドとURLの間に余分なスペースを追加し、「Host: 」欄の後のスペースを削除します。そうすることでdeep packet inspection（DPI）を回避します。 例えば、以下のリクエスト
+HTTPメソッドとURLの間に余分なスペースを追加し、「Host: 」欄の後のスペースを削除します。そうすることでdeep packet inspection（DPI）を回避します。例えば、以下のリクエスト
 
 ```text
 GET /foo/bar/ HTTP/1.1
@@ -141,7 +141,7 @@ Allows displaying the QUIC protocol records in the filtering log. For blocked re
 
 ### TCP keepalive を有効にする
 
-有効な値は 1～1500 です。 無効なサイズを指定すると、システムによって選択された値が使用されます。
+有効な値は 1～1500 です。無効なサイズを指定すると、システムによって選択された値が使用されます。
 
 ### TCP keepalive interval
 

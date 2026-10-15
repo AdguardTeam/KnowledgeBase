@@ -1,46 +1,46 @@
 ---
-title: AdGuard beta/nightly testing
+title: AdGuard-beta/nightly testning
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta and nightly testing and, more importantly, without our testers. Want to become one of them? Here’s how you can do it.
+Der findes en AdGuard-app til stort set alle større platforme, og vi udgiver regelmæssigt opdateringer til dem alle. Dette ville ikke være muligt uden betatestning og, endnu vigtigere, betatestere. Ønsker at blive én af dem? Dette er fremgangsmåden.
 
-### Beta or nightly: what is the difference?
+### Beta eller nightly: Hvad er forskellen?
 
-Both beta and nightly testing are important to make AdGuard constantly better. However, they are different, and you can choose the one that suits you more.
+Både beta- og nightly-test er vigtige for konstant at kunne forbedre AdGuard. De er dog forskellige, og der kan vælges den type, der passer bedst.
 
-The development process follows a progression from nightly to beta and then from beta to the final, stable version — release. It means that you are more likely to find bugs in nightly builds, but you get access to new features faster, almost on a daily basis. Betas are more stable, but you will get updates less often.
+Udviklingsprocessen følger en progression fra natlig til beta og dernæst fra beta til den endelige, stabile version — udgivelse. Det betyder, at der vil kunne findes fejl i natlige builds, men der opnås hurtigere adgang til nye funktionaliteter, næsten dagligt. Betaversioner er mere stabile, men opdatering sker sjældnere.
 
-## How to become a beta or nightly tester {#intro}
+## Sådan bliver man beta-/nightly-tester {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta/nightly version when it becomes available, and report any bugs you notice. You will need a [GitHub](https://github.com/) account to become our tester, so you may want to get that out of the way first.
+Vores krav er nemme: Brug AdGuard, opgradér til beta-/nightly-versionen, når den bliver tilgængelig, og anmeld fejl, som bemærkes. Der kræves dog en [GitHub](https://github.com/)-konto for at blive vores tester, så det kan være en god idé at få det klaret først.
 
-You will also need the device on which you will install the app and [the link to the the beta testing page](https://adguard.com/beta.html). There you will find more information on how to join our program and test AdGuard for Windows, Mac, Android, and iOS.
+Det kræves også den enhed, hvor appen installeres på, samt [linket til betatestsiden](https://adguard.com/beta.html). Der finder man flere oplysninger om, hvordan man deltager i vores program og tester AdGuard til Windows, Mac, Android og iOS.
 
-If you would like to become a tester, please [fill out the form](https://surveys.adguard.com/beta_testing_program/form.html) to submit your application. If it is approved, you will receive a response via email within a few days.
+Ønsker man at blive tester, bedes [formularen udfyldt](https://surveys.adguard.com/beta_testing_program/form.html) for at indsende en ansøgning. Godkendes den, fremsendes et svar via e-mail inden for et par dage.
 
 :::note
 
-To get the AdGuard for iOS beta or nightly build, first you have to install [TestFlight](https://apps.apple.com/app/testflight/id899247664) on your iOS device.
+For at få AdGuard til iOS beta- eller nightly-build, installér først [Testflight](https://apps.apple.com/app/testflight/id899247664) på iOS-enheden.
 
 :::
 
-## How to report a bug {#report-a-bug}
+## Sådan anmeldes en fejl {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
+Er en fejl opdaget eller ønskes blot et forslag delt, lad os det vide: Gå til [GitHub](https://github.com/AdguardTeam/), find et passende repo, opret en ny problematik dér, og beskriv detaljeret fejlen/funktionsforslaget.
 
-The above method is the most preferred, but you can use others if necessary:
+Ovenstående metoder er de mest foretrukne, men andre kan om nødvendigt bruges:
 
-- Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+- Find os på diverse sociale medieplatforme, såsom [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) mv. Dette er dog ikke den mest praktiske måde at debattere tekniske spørgsmål på.
 
-- Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+- Send en e-mail til vores supportteam via fanen Support i appen eller skriv direkte til [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate a beta/nightly key in the iOS app {#ios}
+## Sådan aktiveres beta-nøglen i iOS-appen {#ios}
 
-If you have already received a beta or nightly key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Er en beta-nøgle allerede modtaget, og er den opført i `adguard.com`-kontoen, gå da til appen og åbn licensafsnittet (Køb Premium). I dette afsnit angives legitimationsoplysningerne fra AdGuard-kontoen. Derefter gøres Premium-funktionerne automatisk tilgængelige.
 
-### What else?
+### Hvad ellers?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort.
+Der er ikke meget mere at tilføje. Man behøver ikke at bestræbe sig på at finde fejl. Fortsæt blot med at benytte AdGuard som normalt. Opleves imidlertid en fejl, bedes den anmeldt. Vi sætter naturligvis pris på enhver ekstra indsats.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta/nightly (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Vi udsender lejlighedsvis nyhedsbreve, som orienterer om de seneste ændringer i betaen og andre vigtige nyheder. Afmelding kan ske til enhver tid.

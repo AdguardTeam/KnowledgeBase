@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -22,3 +22,4 @@ sidebar_position: 1
 - [高级设置指南](/adguard-for-mac/solving-problems/advanced-settings.md)
 - [在 Tor 浏览器中设置过滤](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [与屏幕使用时间不兼容](/adguard-for-mac/solving-problems/screen-time-issues.md)
+- [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)

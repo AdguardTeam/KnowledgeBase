@@ -22,3 +22,4 @@ sidebar_position: 1
 - [고급 설정 가이드](/adguard-for-mac/solving-problems/advanced-settings.md)
 - [Tor 브라우저에서 필터링 설정](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [스크린 타임과의 비호환성](/adguard-for-mac/solving-problems/screen-time-issues.md)
+- [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)

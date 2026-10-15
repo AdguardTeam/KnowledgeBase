@@ -1,47 +1,47 @@
 ---
-title: How to generate HAR files
+title: Sådan genereres HAR-filer
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+HAR-filer behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 
-## What are HAR files?
+## Hvad er HAR-filer?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
+HAR-formatet (HTTP ARchive) er en JSON-formateret arkivfil til logning af en webbrowsers interaktion med et websted. Specifikationerne for HAR-format definerer arkivdata for HTTP-transaktioner, som af en webbrowser bruges til at eksportere detaljerede oplysninger om de websider, den indlæser. En mere detaljeret beskrivelse af HAR-filformatet, inkl. specifikation, findes på webstedet [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to generate HAR files
+## Sådan genereres HAR-filer
 
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files, follow these steps:
+For at kunne blokere en bestemt annonce, der af en eller anden grund er svær at genskabe, er vi nogle gange nødt til at analysere den. Følg disse trin for at oprette HAR-filer:
 
-1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
-2. Tap **General** →**Advanced** → **Low-level settings**.
-3. Scroll down and activate **Capture HAR** in the Filtering section.
-4. Open the app and perform the necessary actions to reproduce the problem.
-5. Turn **Capture HAR** off.
-6. Go back to **Advanced**.
-7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
+1. Åbn AdGuard og gå til **Indstillinger** (⚙-ikonet nederste til højre).
+2. Tryk på **Generelt** →**Avanceret** → **Lavniveauindstillinger**.
+3. Rul ned og aktivér **Optag HAR** i afsnittet Filtrering.
+4. Åbn appen og udfør de nødvendige handlinger for at genskabe problematikken.
+5. Deaktivér **Capture HAR**.
+6. Vend tilbage til **Avanceret**.
+7. Tryk på **Eksportere logfiler og systemoplysninger** → **Tillad** (hvis nødvendigt) → **Gem**.
 
-**Send the generated file with the logs to the AdGuard support service.**
+**Indsend den genererede fil med logfilerne til AdGuard-supporttjenesten.**
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+Supportteamet behandler sagen meget hurtigere, såfremt HelpDesk-sagsnummeret eller GitHub-problematiknummeret angives i henvendelsen.
 
 :::
 
-## How to analyze HAR files
+## Sådan analyseres HAR-filer
 
-Here are some sources that we can recommend to analyze HAR files:
+Her er nogle kilder, som kan anbefales til analyse af HAR-filer:
 
-- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-- [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) er et HAR-analysatorværktøj, der visualiserer HTTP Archive (HAR)-logfiler oprettet af HTTP-sporingsværktøjer.
+- [Fiddler](https://www.telerik.com/fiddler) er en webfejlretningsproxy, der muliggør at opfange, inspicere og overvåge al HTTP(S)-trafik mellem computeren og internet, simulere forespørgsler samt diagnosticere netværksproblemer.

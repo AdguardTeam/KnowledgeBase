@@ -1,37 +1,49 @@
 ---
-title: Extensão de navegador AdGuard para Chrome MV3
+title: AdGuard Browser Extension MV3
 sidebar_position: 5
 ---
 
-Como as extensões MV2 estão sendo eliminadas gradualmente na Chrome Web Store, os usuários do Chrome talvez precisem mudar para extensões MV3 compatíveis com a nova API do Manifest V3 do Chrome. Nossos pensamentos sobre esse tópico são amplamente discutidos em [nosso blog](https://adguard.com/pt_br/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), and other Chromium-based browsers, Opera and Microsoft Edge among them, are moving to MV3 as well. Users of these browsers need an MV3 extension, compatible with the new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Nossa extensão MV3 bloqueia anúncios e rastreadores de forma eficaz, além de gerenciar perfeitamente widgets sociais, banners e anúncios em vídeo. A maioria dos usuários não notará nenhuma diferença operacional, mas há algumas limitações e mudanças que você precisa conhecer.
 
 ## Onde encontrar nossas extensões
 
-A **versão MV3** substituiu nossa antiga extensão na [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** is our primary Chrome extension and is available in the
+[Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip` for Chrome and `opera-mv3.zip` for Opera.
 
-A **versão beta do MV3** ainda estará disponível na [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-A antiga extensão beta será renomeada para [**Bloqueador de anúncios AdGuard MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) e terá suporte até que o Google a desative.
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store together with all
+other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Principais alterações nos recursos e configurações
 
-- **Nenhuma atualização automática ou manual de filtros.** As opções _Atualizar filtros automaticamente_ e _Verificar atualização de filtros_ não estão mais disponíveis na aba _Filtros_. Como algumas das regras agora são aplicadas na forma de DNR, não podemos atualizar os filtros por solicitação, somente por meio do processo completo de atualização da extensão junto com a revisão nas lojas.
+- **Filter updates.** The options _Auto-update filters_ and _Check filters update_ are not available
+  in the _Filters_ tab: rules that ship as part of the extension can be updated only together with a
+  new extension version, after store review. Keep automatic extension updates enabled in your
+  browser.
 
-- **Registro de filtragem**
+  Custom filters you add by URL update on their own, independently of extension updates.
+
+- **AdGuard Quick Fixes filter.** Because built-in rules can’t be updated on request, the extension
+  ships the _AdGuard Quick Fixes_ filter. It uses dynamic rules to react to newly introduced ads and
+  broken websites between releases, so keep it enabled.
+
+- **Filtering log**
 
   ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  Devido às restrições do DNR, não podemos mostrar exatamente qual regra funcionou, mas forneceremos uma “regra presumida que foi acionada” com base em nosso mecanismo. Para obter informações precisas, você precisará instalar o formato “descompactado” da extensão no seu navegador. Você encontrará instruções detalhadas sobre como fazer isso em um [artigo separado](/adguard-browser-extension/solving-problems/debug-rules/).
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Proteção de rastreamento_ (anteriormente conhecido como _Modo furtivo_)
+- _Tracking protection_ (formerly known as _Stealth mode_)
 
   ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-  Não há nenhuma seção _Cookies_, juntamente com _Autodestruição de cookies primários_ e _Autodestruição de cookies de terceiros_, pois não podemos definir o TTL dos cookies usando regras declarativas.
+  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
-- _Proteção contra phishing e malware_ não está mais disponível nas configurações gerais. Para se proteger de sites maliciosos e golpes, ative os filtros de _Segurança_ apropriados na aba _Filtros_.
+- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
   ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
@@ -64,7 +76,7 @@ Se esse limite for excedido, apenas **5.000 regras convertidas** serão aplicada
 >
 > Dessa lista de regras convertidas, usaremos apenas 5.000 regras. Os demais serão exibidos no editor, mas não serão aplicados.
 
-Veja como uma regra com um modificador básico é convertida em uma regra declarativa:
+Here’s how a rule with a basic modifier is converted to a declarative rule:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com

@@ -99,6 +99,6 @@ To use this option, check the *Add diagnostic report* checkbox before sending yo
 
 :::note
 
-AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐私政策](https://adguard.com/privacy/windows.html) ，不收集任何有关用户的私人信息。 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。 如果其中包含此类个人信息，我们建议您先将其删除。
+AdGuard 致力于保护用户的个人隐私。我们严格遵守我们的[隐私政策](https://adguard.com/privacy/windows.html) ，不收集任何有关用户的私人信息。请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。如果其中包含此类个人信息，我们建议您先将其删除。
 
 :::

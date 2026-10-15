@@ -5,11 +5,11 @@ sidebar_position: 1
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-「保护」标签包含以下功能或设置。 您可以在本知识库中找到详细文章。
+「保护」标签包含以下功能或设置。您可以在本知识库中找到详细文章。
 
 - [广告拦截](/adguard-for-android/features/protection/ad-blocking.md)
 

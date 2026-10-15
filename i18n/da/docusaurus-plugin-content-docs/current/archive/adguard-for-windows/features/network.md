@@ -1,5 +1,5 @@
 ---
-title: Network
+title: Netværk
 sidebar_position: 4
 ---
 

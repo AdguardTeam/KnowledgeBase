@@ -1,6 +1,6 @@
 ---
 title: Problémy s blokováním reklam na vyhledávacích webech v prohlížeči Opera
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Pokud rozšíření prohlížeče AdGuard neblokuje reklamy na vyhledávacích webwch v Opeře, ať už automaticky nebo ručně, znamená to, že rozšíření nemá oprávnění k přístupu k výsledkům vyhledávání.

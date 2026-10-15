@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,15 +27,15 @@ To go to _Advanced settings_, in the main windows click _Settings → General Se
 
 ### 拦截 TCP 快速打开
 
-如果启用，AdGuard 将阻止 Edge 浏览器中的 TCP 快速打开。 要应用设置，请重新启动浏览器。
+如果启用，AdGuard 将阻止 Edge 浏览器中的 TCP 快速打开。要应用设置，请重新启动浏览器。
 
 ### 使用 Encrypted ClientHello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 To benefit from it, enable the _Use Encrypted Client Hello_ option. 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 Client Hello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分，就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 To benefit from it, enable the _Use Encrypted Client Hello_ option. 本功能使用本地 DNS 代理查找域名的 ECH 配置。如果找到，将对 Client Hello 数据包进行加密。
 
 ### 检查网站的证书透明度
 
-基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。 如果证书不符合 Chrome 证实透明化政策，AdGuard 将不过滤该网站。 而 Chrome 则会屏蔽它。
+基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。如果证书不符合 Chrome 证实透明化政策，AdGuard 将不过滤该网站。而 Chrome 则会屏蔽它。
 
 ### 启用 SSL/TLS 证书撤销检查
 
@@ -43,7 +43,7 @@ To go to _Advanced settings_, in the main windows click _Settings → General Se
 
 如果在最短超时时间内完成 OCSP 检查，AdGuard 会立即应用检查结果；如果证书被撤销，则阻断连接，如果证书有效，则重新建立连接。
 
-如果验证时间过长，AdGuard 将建立连接并在后台继续检查。 如果证书被撤销，当前和将来该域名的连接将被阻止。
+如果验证时间过长，AdGuard 将建立连接并在后台继续检查。如果证书被撤销，当前和将来该域名的连接将被阻止。
 
 ### 在设置中显示 AdGuard VPN
 
@@ -51,11 +51,11 @@ To go to _Advanced settings_, in the main windows click _Settings → General Se
 
 ### 过滤时按完整路径排除应用
 
-如果用户不想 AdGuard 过滤某款特定的应用程序流量，请指定应用程序的完整路径。这些应用程序将被排除在过滤之外。 请用分号分隔不同的路径。
+如果用户不想 AdGuard 过滤某款特定的应用程序流量，请指定应用程序的完整路径。这些应用程序将被排除在过滤之外。请用分号分隔不同的路径。
 
 ### 启用 AdGuard 弹窗通知
 
-启用此功能查看 AdGuard 弹出式通知。 通知不经常出现，只包含重要的信息。 用户还可以使用托盘菜单来召回最后的弹出通知。
+启用此功能查看 AdGuard 弹出式通知。通知不经常出现，只包含重要的信息。用户还可以使用托盘菜单来召回最后的弹出通知。
 
 ### 自动截取过滤器订阅 URL
 
@@ -75,7 +75,7 @@ Enable this feature if you want AdGuard to automatically intercept filter subscr
 
 如果启用该选项，AdGuard 将拦截所有流量，并将其重定向到本地代理服务器进行进一步过滤。
 
-否则，AdGuard 将对所有流量进行实时过滤，而不进行重定向。 在这种情况下，系统将认为 AdGuard 是连接到互联网的唯一一款应用程序（其他应用程序的流量通过 AdGuard 路由）。 缺点是本功能会降低系统防火墙的有效性。 好处是这种方法工作起来快了一点。
+否则，AdGuard 将对所有流量进行实时过滤，而不进行重定向。在这种情况下，系统将认为 AdGuard 是连接到互联网的唯一一款应用程序（其他应用程序的流量通过 AdGuard 路由）。缺点是本功能会降低系统防火墙的有效性。好处是这种方法工作起来快了一点。
 
 ### 随系统启动时显示主窗口
 
@@ -83,7 +83,7 @@ Enable this feature if you want AdGuard to automatically intercept filter subscr
 
 ### 在系统启动时启用过滤
 
-从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。 这意味着，AdGuard 服务是以“待机”模式启动的。 启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
+从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。这意味着，AdGuard 服务是以“待机”模式启动的。启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
 
 :::note
 
@@ -93,7 +93,7 @@ Before v7.12, the AdGuard service started in filtering mode by default (even if 
 
 ### 过滤 localhost 连接
 
-如果用户希望 AdGuard 过滤环回（Loopback）连接，请选中复选框。 如果用户已安装 AdGuard VPN，此选项将始终处于开启状态，否则 AdGuard VPN 将无法工作。
+如果用户希望 AdGuard 过滤环回（Loopback）连接，请选中复选框。如果用户已安装 AdGuard VPN，此选项将始终处于开启状态，否则 AdGuard VPN 将无法工作。
 
 ### 从过滤中排除特定 IP 范围
 
@@ -101,11 +101,11 @@ If you don't want AdGuard to filter particular subnets, enable this feature and 
 
 ### 启用 HAR 写入
 
-This option should be enabled **only for debugging purposes**. 勾选复选框将使 AdGuard 创建一个以 HAR 1.2 格式包含有关所有经过过滤的 HTTP 请求信息的文件。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
+This option should be enabled **only for debugging purposes**. 勾选复选框将使 AdGuard 创建一个以 HAR 1.2 格式包含有关所有经过过滤的 HTTP 请求信息的文件。这个文件可以用 Fiddler 应用程序分析。注意，这可能会显著降低网页加载速度。
 
 ### 在普通的 HTTP 请求中添加额外的空间
 
-在 HTTP 方法和 URL 之间添加额外的空格，并在“主机”（Host）字段后删除空格以避免深度包检测。 例如，请求
+在 HTTP 方法和 URL 之间添加额外的空格，并在“主机”（Host）字段后删除空格以避免深度包检测。例如，请求
 
 ```text
 GET /foo/bar/ HTTP/1.1

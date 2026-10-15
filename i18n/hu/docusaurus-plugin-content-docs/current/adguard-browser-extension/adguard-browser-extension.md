@@ -25,9 +25,9 @@ Ez a cikk az AdGuard böngészőbővítményről szól, amely csak a böngésző
 
   Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-- [AdGuard Browser Extension for Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  A separate AdGuard Browser Extension compatible with the Manifest V3 API
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [Browser-protected pages](/adguard-browser-extension/protected-pages)
 

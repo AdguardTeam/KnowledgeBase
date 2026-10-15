@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ![设置标签](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/settings.png)
 
-在「设置」中，您可以配置过滤器、过滤器更新、开机自启动等基本选项。 您还可以选择是否在菜单栏中显示 AdGuard 图标。
+在「设置」中，您可以配置过滤器、过滤器更新、开机自启动等基本选项。您还可以选择是否在菜单栏中显示 AdGuard 图标。
 
 主要包含两个部分：
 

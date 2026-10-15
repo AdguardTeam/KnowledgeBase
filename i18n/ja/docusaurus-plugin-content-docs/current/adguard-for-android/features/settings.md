@@ -5,11 +5,11 @@ sidebar_position: 4
 
 :::info
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」についてです。 デバイス全体を保護するこのアプリは、[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
+この記事は、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」についてです。デバイス全体を保護するこのアプリは、[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-「設定」画面は、画面下部の右端の⚙アイコンをタップすることとアクセスできます。 このセクションには、各種設定、アプリ・ライセンス・サブスクリプション に関する情報、各種サポート資料が含まれています。
+「設定」画面は、画面下部の右端の⚙アイコンをタップすることとアクセスできます。このセクションには、各種設定、アプリ・ライセンス・サブスクリプション に関する情報、各種サポート資料が含まれています。
 
 ## 一般設定
 
@@ -17,7 +17,7 @@ sidebar_position: 4
 
 ![General \*mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-「アプリとフィルタのアップデート」では、フィルタの自動更新を設定し、アプリのアップデートチャネルを選択できます。 一般使用向けの安定したバージョンのアップデートを受け取るには「安定版」チャネル、新機能への早期アクセスしたい場合には 「ベータ版」または「Nightly」チャネルを選択してください。
+「アプリとフィルタのアップデート」では、フィルタの自動更新を設定し、アプリのアップデートチャネルを選択できます。一般使用向けの安定したバージョンのアップデートを受け取るには「安定版」チャネル、新機能への早期アクセスしたい場合には 「ベータ版」または「Nightly」チャネルを選択してください。
 
 ![Updates \*mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
@@ -25,9 +25,9 @@ sidebar_position: 4
 
 「自動化」オプションを使用すると、Tasker アプリを介して AdGuard を管理できます。
 
-「ウォッチドッグ（Watchdog）」は、AdGuard がシステムによって無効化されるのを防ぎます ([Android のバッテリー節約モードについてもお読みください](/adguard-for-android/solving-problems/background-work/))。 入力した値は、ウォッチドッグチェック間の間隔 (秒単位) になります。
+「ウォッチドッグ（Watchdog）」は、AdGuard がシステムによって無効化されるのを防ぎます ([Android のバッテリー節約モードについてもお読みください](/adguard-for-android/solving-problems/background-work/))。入力した値は、ウォッチドッグチェック間の間隔 (秒単位) になります。
 
-「ログ・レベル」は、アプリの操作に関するどのデータをログに記録するかを定義します。 「デフォルト」レベルでは、アプリはイベントに関するデータを収集します。 「デバッグ」レベルでは、より多くのイベントがログに記録されます。AdGuard チームから問題をより深く理解するために有効にするよう依頼されましたら、これを有効にしてください。 [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
+「ログ・レベル」は、アプリの操作に関するどのデータをログに記録するかを定義します。「デフォルト」レベルでは、アプリはイベントに関するデータを収集します。「デバッグ」レベルでは、より多くのイベントがログに記録されます。AdGuard チームから問題をより深く理解するために有効にするよう依頼されましたら、これを有効にしてください。 [Read more about collecting and sending logs](/adguard-for-android/solving-problems/log/)
 
 ![Advanced \*mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 

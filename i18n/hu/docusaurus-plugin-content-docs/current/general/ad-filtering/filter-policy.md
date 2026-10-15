@@ -50,7 +50,7 @@ Az AdGuard hirdetésblokkoló szűrői a következők:
 
 - AdGuard Alap szűrő
 - AdGuard Mobile App Banners szűrő
-- Regionális szűrők nyelvi elvek szerint - kínai, holland, francia, német, japán, orosz, spanyol/portugál, török, német, ukrán és orosz
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Ezeknek a szűrőknek a célja
 

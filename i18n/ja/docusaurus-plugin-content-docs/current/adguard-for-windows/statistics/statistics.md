@@ -17,7 +17,7 @@ _Open Filtering log_ shows the last 10,000 requests processed by AdGuard
 
 ## アプリ
 
-このセクションには、デバイスにインストールされているすべてのアプリの統計が表示されます。 ブロックされた広告やトラッカーの数、または送信されたリクエストの数でアプリを並べ替えることができます。
+このセクションには、デバイスにインストールされているすべてのアプリの統計が表示されます。ブロックされた広告やトラッカーの数、または送信されたリクエストの数でアプリを並べ替えることができます。
 
 If you click an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
 
@@ -27,9 +27,9 @@ This section shows data about the requests handled by DNS protection. You can se
 
 ## 企業に関する統計
 
-このセクションには、デバイスがリクエスト送信する企業が表示されます。 これは一体どういうことなのか？
+このセクションには、デバイスがリクエスト送信する企業が表示されます。これは一体どういうことなのか？
 
-AdGuard は、デバイスがリクエストをどのドメインに送信するのかを検出し、それらがどの企業に属しているかを検出します。 企業のデータベースは[GitHub](https://github.com/AdguardTeam/companiesdb)にあります。
+AdGuard は、デバイスがリクエストをどのドメインに送信するのかを検出し、それらがどの企業に属しているかを検出します。企業のデータベースは[GitHub](https://github.com/AdguardTeam/companiesdb)にあります。
 
 ## データ使用量
 

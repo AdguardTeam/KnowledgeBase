@@ -5,11 +5,11 @@ sidebar_position: 6
 
 :::info
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際にどのように動作するか確認するには、[AdGuard アプリをダウンロードしてください](https://agrd.io/download-kb-adblock)。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。実際にどのように動作するか確認するには、[AdGuard アプリをダウンロードしてください](https://agrd.io/download-kb-adblock)。
 
 :::
 
-時折、macOSでAdGuardのNetwork拡張モジュールが破損し、AdGuardアプリが使用できなくなる場合があります。 この場合、お使いのOSのバージョンに応じて、以下のいずれかの方法で対処してください。
+時折、macOSでAdGuardのNetwork拡張モジュールが破損し、AdGuardアプリが使用できなくなる場合があります。この場合、お使いのOSのバージョンに応じて、以下のいずれかの方法で対処してください。
 
 ## macOS 11以降でのAdGuard起動問題
 

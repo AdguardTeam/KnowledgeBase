@@ -117,7 +117,7 @@ For at lade appen køre i baggrunden, opsæt dens indstillinger således:
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi2en.png)
 
-- Then open **App battery saver** settings → **AdGuard** → **No restrictions**
+- Åbn dernæst indstillingerne for **App-batterisparer** → **AdGuard** → **Ingen restriktioner**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
 
@@ -261,7 +261,7 @@ På ældre Samsung-enheder er der ikke noget stort behov for at opsætte baggrun
 
  ![Samsung-indstillinger *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Tap the lock icon:
+- Tryk på låseikonet:
 
  ![Samsung-indstillinger *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
@@ -360,7 +360,7 @@ Stoppes AdGuard stadig, prøv også at eksekvere:
 
     ![Huawei seneste apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- Tap the lock icon:
+- Tryk på låseikonet:
 
     ![Huawei-lås *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
@@ -473,7 +473,7 @@ Enheder udstyret med OxygenOS er de mest problematiske med dets OS-specifikke ca
 
 #### Låsning af appen
 
-- Go to **Settings**
+- Gå til **Indstillinger**
 
 - **Batteri** → **Batterioptimering**
 
@@ -627,7 +627,7 @@ På Motorola-enheder er der fire nøgleopsætninger til at sikre, at AdGuard fun
 
 1. Fjern rrstriktioner for baggrundsaktivitet:
 
-   - Go to **Settings**
+   - Gå til **Indstillinger**
    - Rul ned, og tryk på **Apps og notifikationer**
    - Find **AdGuard** og åbn **Avanceret → Batteri**
    - Tryk på **Baggrundsrestriktion** eller **Baggrundsgrænser**

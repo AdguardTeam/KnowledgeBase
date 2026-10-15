@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## 取消订阅的方式
 
-用户可以在 AdGuard 账号中取消订阅。 使用以下方式取消订阅：
+用户可以在 AdGuard 账号中取消订阅。使用以下方式取消订阅：
 
  1. Go to your [AdGuard account](https://adguardaccount.com).
  1. 选择「*许可证*」
@@ -21,7 +21,7 @@ sidebar_position: 5
 
 ## 如何退款
 
-依据我们的[销售条款](https://adguard.com/terms-of-sale.html)，用户在 https://adguard.com 官网上购买的 AdGuard 许可证密钥后可 100% 退款。 要申请退款，请联系我们的支持团队 *support@adguard.com* 并说明您购买时所用的付款方式。
+依据我们的[销售条款](https://adguard.com/terms-of-sale.html)，用户在 https://adguard.com 官网上购买的 AdGuard 许可证密钥后可 100% 退款。要申请退款，请联系我们的支持团队 *support@adguard.com* 并说明您购买时所用的付款方式。
 
 在以下情况下，退款可能会受到拒绝：
 

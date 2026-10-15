@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -17,7 +17,7 @@ sidebar_position: 7
 
 :::
 
-AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置，请打开「**设置**」，然后转到「**过滤**」→「**网络**」→「**代理**」。
+AdGuard 可以通过代理服务器路由设备流量。要访问代理设置，请打开「**设置**」，然后转到「**过滤**」→「**网络**」→「**代理**」。
 
 ## 代理配置示例
 
@@ -25,7 +25,7 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 ### 如何同时使用 AdGuard 和 Tor
 
-1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」。 通过 [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) 下载「Orbot: Proxy with Tor」，或点击「**配置 Tor® 整合**」，然后单击「**安装**」。
+1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」。通过 [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) 下载「Orbot: Proxy with Tor」，或点击「**配置 Tor® 整合**」，然后单击「**安装**」。
 
 1. 打开 Orbot 并在应用程序的首页点击**「开启」**按钮。
 
@@ -45,7 +45,7 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
-    现在 AdGuard 会将所有流量通过 Orbot 代理发送。 如您禁用 Orbot 代理，那么您在 AdGuard 设置中禁用出战代理设置前，互联网连接将不可用。
+    现在 AdGuard 会将所有流量通过 Orbot 代理发送。如您禁用 Orbot 代理，那么您在 AdGuard 设置中禁用出战代理设置前，互联网连接将不可用。
 
 ### 如何同时使用 AdGuard 和 PIA（Private Internet Access）
 
@@ -61,7 +61,7 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
     | 代理主机 | *proxy-nl.privateinternetaccess.com* |
     | 代理端口 | *1080*                               |
 
-1. 您还需要填写「**用户名/密码**」字符串。 为此，请登录 PIA 网站的[客户控制面板](https://www.privateinternetaccess.com/pages/client-sign-in)。 在「**生成 PPTP/L2TP/SOCKS 密码**」部分下面点击「**生成密码**」按钮。 您将会看到一串开始于「x」的用户名和随机密码。 将它们输入到 AdGuard「**用户名**」和「**密码**」。
+1. 您还需要填写「**用户名/密码**」字符串。为此，请登录 PIA 网站的[客户控制面板](https://www.privateinternetaccess.com/pages/client-sign-in)。在「**生成 PPTP/L2TP/SOCKS 密码**」部分下面点击「**生成密码**」按钮。您将会看到一串开始于「x」的用户名和随机密码。将它们输入到 AdGuard「**用户名**」和「**密码**」。
 
 1. 点击「**选择并保存**」。
 
@@ -93,7 +93,7 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 1. 转到「**服务**」→「**NordVPN**」→「**手动设置**」，手动设置您的服务信息。
 
-1. 用户将通过 NordVPN 使用的电子邮件地址收到验证码。 按照要求请在您的 NordVPN 账号上输入代码，然后点击「*应用*」和「*确定*」保存更改。
+1. 用户将通过 NordVPN 使用的电子邮件地址收到验证码。按照要求请在您的 NordVPN 账号上输入代码，然后点击「*应用*」和「*确定*」保存更改。
 
 ![手动设置](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
 
@@ -141,9 +141,9 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 *假设您已是 Clash 的用户，且已将它安装在设备上。*
 
-1. 打开 Clash 并转到「**设置**」→「**网络**」→「**路由系统流量**」并切换开关。 这将把 Clash 设置为代理模式。
+1. 打开 Clash 并转到「**设置**」→「**网络**」→「**路由系统流量**」并切换开关。这将把 Clash 设置为代理模式。
 
-1. 打开 AdGuard 并转到「**应用管理**」。 选择「**Clash For Android**」并禁用「**通过 AdGuard 路由流量**」。 这将消除流量循环。
+1. 打开 AdGuard 并转到「**应用管理**」。选择「**Clash For Android**」并禁用「**通过 AdGuard 路由流量**」。这将消除流量循环。
 
 1. 然后转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
@@ -157,11 +157,11 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 ### 如何同时使用 AdGuard 和 WG Tunnel
 
-*4.0 版本增加了代理模式。 我们假定您已经在设备上安装了 WG Tunnel 并添加了 WireGuard 配置。*
+*4.0 版本增加了代理模式。我们假定您已经在设备上安装了 WG Tunnel 并添加了 WireGuard 配置。*
 
-1. 打开 WG Tunnel，进入 「**设置**」（底部的齿轮）→「**应用程序模式**」→「**代理（试验性）**」。 这将把 WG Tunnel 设置为代理模式。
+1. 打开 WG Tunnel，进入 「**设置**」（底部的齿轮）→「**应用程序模式**」→「**代理（试验性）**」。这将把 WG Tunnel 设置为代理模式。
 
-1. 打开 AdGuard 并转到「**应用管理**」。 选择「**WG Tunnel**」并关闭「**通过 AdGuard 路由流量**」。 这将消除流量循环。
+1. 打开 AdGuard 并转到「**应用管理**」。选择「**WG Tunnel**」并关闭「**通过 AdGuard 路由流量**」。这将消除流量循环。
 
 1. 然后转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
@@ -179,4 +179,4 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 ## 限制
 
-即使用户配置 AdGuard 代理设置，也有一个原因会阻止流量通过出站代理路由。 这个原因是，应用程序本身未配置通过 AdGuard 发送其流量。 要解决这个问题，请进一步设置「**应用管理**」，选择应用程序，并打开「**通过 AdGuard 路由流量**」。
+即使用户配置 AdGuard 代理设置，也有一个原因会阻止流量通过出站代理路由。这个原因是，应用程序本身未配置通过 AdGuard 发送其流量。要解决这个问题，请进一步设置「**应用管理**」，选择应用程序，并打开「**通过 AdGuard 路由流量**」。

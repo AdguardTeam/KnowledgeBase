@@ -1,11 +1,11 @@
 ---
-title: 在 Chrome MV3 的 AdGuard 中调试规则
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
-在 [用于 Chrome MV3 的 AdGuard](/adguard-browser-extension/mv3-version) 中，过滤日志仅显示所应用的近似规则，我们称之为“假设的规则”。 原因是，除非扩展名为“解压”格式，否则浏览器无法提供关于特定声明式规则的详细信息。 如需获取准确信息，需要自行在浏览器中安装扩展程序的“解压”版本。
+In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. 原因是，除非扩展名为“解压”格式，否则浏览器无法提供关于特定声明式规则的详细信息。如需获取准确信息，需要自行在浏览器中安装扩展程序的“解压”版本。
 
-此说明对于有问题的情况也很有用，比如，在用户要更改扩展中静态包含的规则的情况下。 在大多数情况下，使用扩展中的「用户规则」就足够了。
+此说明对于有问题的情况也很有用，比如，在用户要更改扩展中静态包含的规则的情况下。在大多数情况下，使用扩展中的「用户规则」就足够了。
 
 ## 先决条件
 
@@ -55,7 +55,10 @@ sidebar_position: 2
    yarn dev chrome-mv3
    ```
 
-3. 构建的扩展将放置在以下目录中：
+3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
+   be located in the `./build/dev/opera-mv3` directory.
+
+4. The built extension will be located in the directory:
 
    ```bash
    ./build/dev/chrome-mv3

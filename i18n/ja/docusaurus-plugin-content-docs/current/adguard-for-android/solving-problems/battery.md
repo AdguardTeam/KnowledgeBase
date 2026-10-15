@@ -9,9 +9,9 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
-Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. そういった表示の原因、AdGuardがさまざまなアプリからのトラフィックをすべてカウントしていたためです。 その結果、総データ使用量とバッテリー使用量において、AdGuardの分は過大に表示され、他のアプリは過小に表示されていました。
+Due to built-in statistics processes, high data and/or battery consumption was often attributed to AdGuard by Android 6 and earlier. そういった表示の原因、AdGuardがさまざまなアプリからのトラフィックをすべてカウントしていたためです。その結果、総データ使用量とバッテリー使用量において、AdGuardの分は過大に表示され、他のアプリは過小に表示されていました。
 
-しかし、Android 7では、この状況は改善しました。 現在、Android内蔵のデータ使用量統計に反映されるデータは、バッテリー使用量データに若干の不一致があるものの、現実に非常に近いものになっています。
+しかし、Android 7では、この状況は改善しました。現在、Android内蔵のデータ使用量統計に反映されるデータは、バッテリー使用量データに若干の不一致があるものの、現実に非常に近いものになっています。
 
 さらに、AdGuardアプリ内にて、「*バッテリーの使用状況*」画面で、いつでも正確な状況を確認することができます。
 
@@ -21,7 +21,7 @@ AdGuard for Android アプリ →「*統計*」（画面下左から3番目の�
 
 ![バッテリー統計 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-この画面では、過去24時間以内のAdGuardによるバッテリー消費量を示すグラフが表示されています。また、グラフをタップすることで、より詳細な1時間ごとのデータも確認できます。 そのほか、関連データの数値的な内訳と短い技術的な説明もあります。
+この画面では、過去24時間以内のAdGuardによるバッテリー消費量を示すグラフが表示されています。また、グラフをタップすることで、より詳細な1時間ごとのデータも確認できます。そのほか、関連データの数値的な内訳と短い技術的な説明もあります。
 
 There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
 
@@ -63,4 +63,4 @@ And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffi
 
 ### 結論
 
-AdGuard の実際のバッテリー消費量は、Androidのシステム統計で表示されているよりも、**数倍少ない**です。 220mAhなどではなく、31～40mAhといったところです。 一方、ブラウザーの消費量は66mAhではなく、〜200mAhであるべきです。
+AdGuard の実際のバッテリー消費量は、Androidのシステム統計で表示されているよりも、**数倍少ない**です。 220mAhなどではなく、31～40mAhといったところです。一方、ブラウザーの消費量は66mAhではなく、〜200mAhであるべきです。

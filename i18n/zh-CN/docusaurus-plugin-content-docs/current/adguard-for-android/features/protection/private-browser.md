@@ -5,11 +5,11 @@ sidebar_position: 7
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-在 v4.7 中，Android 版 AdGuard 引入了应用内私密浏览器。 用户可以点击「_私密浏览器_」或通过「_保护_」标签中访问私密浏览器的设置（可以设置自定义选项）。
+在 v4.7 中，Android 版 AdGuard 引入了应用内私密浏览器。用户可以点击「_私密浏览器_」或通过「_保护_」标签中访问私密浏览器的设置（可以设置自定义选项）。
 
 ![私密浏览器 \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/android/v4.7/agpb_en.png)
 
@@ -21,6 +21,6 @@ sidebar_position: 7
 
 :::note
 
-私密浏览器仍处于早期开发阶段，因此，存在一些限制。 目前，我们建议将私密浏览器作为浏览器隐身模式的补充使用，而不是默认使用的浏览器。
+私密浏览器仍处于早期开发阶段，因此，存在一些限制。目前，我们建议将私密浏览器作为浏览器隐身模式的补充使用，而不是默认使用的浏览器。
 
 :::

@@ -1,38 +1,38 @@
 ---
-title: How to collect debug logs
+title: Sådan indsamles fejlretningslogger
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Data og/eller filer tilgængelige i logfiler behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+Denne artikel beskriver processen med at indsamle fejlretningslogger, et vigtigt fejlfindingstrin til løsning af komplekse problemer, som potentielt kan opstå. Fejlretningslogfiler giver detaljeret indsigt i AdGuard til Androids indre funktioner. Anmoder AdGuard-supportteamet om levering af fejlretningslogfiler, så følg blot denne vejleding.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger nøje vores [Fortrolighedspolitik](https://adguard.com/privacy/android.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logger til supportteamet bedes filen gennemgået, da den kan indeholde yderligere oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
 
 :::
 
-### Recording debug log
+### Optagelse af fejlretningslog
 
-To collect **debug** log and send it to us, you need to perform following steps:
+Udfør flg. trin for at samle en **fejlretningslog** og indsende den til os:
 
-1. Go to *Settings* → *General* → *Advanced*.
-1. Tap *Logging level* and set it to *Debug*.
-1. Reproduce the problem and try to remember the exact time it occurred.
-1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Gå til *Indstillinger* → *Generelt* → *Avanceret*.
+1. Tryk på *Logningsniveau* og sæt dette til *Fejlretning*.
+1. Genskab problemet, og prøv at huske det nøjagtige tidspunkt, hvor det opstod.
+1. Afvent lidt, og returnér derefter til *Indstillinger* og vælg fanen *Support*. Tryk på *Anmeld en fejl* og udfyld de obligatoriske felter. Husk at markere afkrydsningsfeltet *Indsend app-logfiler og systemoplysninger*. Tryk til sidst på *Indsend*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Er man interesseret i at følge løsningen af problematikken og gå i dialog med udviklerne, anbefales det at gennemføre flg. trin efter at have gennemført de første tre:
 
-1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and send it to [devteam@adguard.com](mailto:devteam@adguard.com). Add the file link to your GitHub issue
+1. Afvent lidt, og returnér dernæst til skærmbilledet *Avanceret* og eksportér logfilerne via *Eksportere logfiler og systemoplysninger*. Anmeld dernæst en fejl på GitHub ved at følge denne [vejledning](/guides/report-bugs.md).
+1. Når problematikken er oprettet på GitHub, indsend logfilen til [devteam@adguard.com](mailto:devteam@adguard.com). Medtag tidspunktet for fejlen, og vedhæft et link til problematikken eller dens nummer (angivet som #number ved siden af titlen). Alternativt kan logfilen uploades til Google Drev og indsendes til [devteam@adguard.com](mailto:devteam@adguard.com). Føj fillinket til GitHub-problematikken

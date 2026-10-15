@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
 
 :::
 
@@ -25,9 +25,9 @@ sidebar_position: 1
 
   Compatibility of AdGuard Browser Extension with the AdGuard desktop apps
 
-- [Chrome用 AdGuard ブラウザ拡張機能 MV3対応版](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  Manifest V3 APIに対応したChrome用AdGuardブラウザ拡張機能と、Manifest V2に基づくブラウザ拡張機能との違いについて説明しております:
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [ブラウザで保護されているページ](/adguard-browser-extension/protected-pages)
 

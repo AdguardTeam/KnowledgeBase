@@ -5,11 +5,11 @@ sidebar_position: 12
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
-[HTTPSフィルタリング](/general/https-filtering/what-is-https-filtering)が有効な AdGuard for Windows の一部のユーザーは、google.comやyoutube.comなどの特定のウェブサイトにアクセスできないことがあります。 ウェブサイトを開く代わりに、厳格な証明書ピンニングを持つブラウザは `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` エラーを表示します。
+[HTTPSフィルタリング](/general/https-filtering/what-is-https-filtering)が有効な AdGuard for Windows の一部のユーザーは、google.comやyoutube.comなどの特定のウェブサイトにアクセスできないことがあります。ウェブサイトを開く代わりに、厳格な証明書ピンニングを持つブラウザは `MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE` エラーを表示します。
 
 影響を受けたブラウザのリストはこちらです：
 

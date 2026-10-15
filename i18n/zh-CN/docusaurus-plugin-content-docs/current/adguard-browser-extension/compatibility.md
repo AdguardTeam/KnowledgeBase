@@ -5,13 +5,13 @@ sidebar_position: 4
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
 虽然 AdGuard 浏览器扩展可以拦截浏览器中的广告，但 [AdGuard 独立应用](/adguard-browser-extension/comparison-standalone)能过滤设备上的所有流量，包括浏览器和应用程序的流量。
 
-在电脑上同时安装扩展程序和独立应用程序，可能会引起一些兼容性问题。 问题是，在某些情况下，应用程序和扩展会相互干扰。 因此，有些网站将不再受桌面程序的保护，而只能受扩展程序的保护，但是扩展程序的拦截效果没有桌面程序强。 结果，某些网站的过滤功能可能无法正常工作。 Therefore, we don’t recommend using the extension together with the application.
+在电脑上同时安装扩展程序和独立应用程序，可能会引起一些兼容性问题。问题是，在某些情况下，应用程序和扩展会相互干扰。因此，有些网站将不再受桌面程序的保护，而只能受扩展程序的保护，但是扩展程序的拦截效果没有桌面程序强。结果，某些网站的过滤功能可能无法正常工作。 Therefore, we don’t recommend using the extension together with the application.
 
 如果电脑上已安装桌面版 AdGuard，最好使用 AdGuard 浏览器助手而不是浏览器扩展。
 

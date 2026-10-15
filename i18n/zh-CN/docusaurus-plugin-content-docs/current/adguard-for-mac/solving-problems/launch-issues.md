@@ -5,11 +5,11 @@ sidebar_position: 6
 
 :::info
 
-本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-在 macOS 上，AdGuard 网络扩展偶尔会损坏，导致 AdGuard 应用程序无法使用。 在这种情况下，用户应根据操作系统版本，遵循以下其中一条指令。
+在 macOS 上，AdGuard 网络扩展偶尔会损坏，导致 AdGuard 应用程序无法使用。在这种情况下，用户应根据操作系统版本，遵循以下其中一条指令。
 
 ## macOS 11 及更高版本上的启动问题
 

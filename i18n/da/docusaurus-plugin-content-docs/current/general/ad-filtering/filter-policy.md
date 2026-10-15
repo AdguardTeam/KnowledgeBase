@@ -50,7 +50,7 @@ AdGuard-adblockingfiltre omfatter:
 
 - AdGuard Basisfilter
 - AdGuard Mobilannoncefilter
-- Regionale filtre opdelt efter sprogprincip — fransk, hollandsk, japansk, kinesisk, russisk, spansk/portugisisk, tysk, tyrkisk og ukrainsk
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Formålet med disse filtre
 

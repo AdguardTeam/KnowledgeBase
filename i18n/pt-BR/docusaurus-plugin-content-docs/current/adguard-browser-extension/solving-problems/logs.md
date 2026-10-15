@@ -1,6 +1,6 @@
 ---
 title: Como exportar os logs da página em segundo plano
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exportando registros da página em segundo plano na extensão

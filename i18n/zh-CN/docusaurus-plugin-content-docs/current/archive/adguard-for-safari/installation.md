@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## How to install AdGuard for Safari {#install}
 
-AdGuard Safari 版是 App Store 中的一款免费应用程序。 要在设备上安装它，请执行以下操作。
+AdGuard Safari 版是 App Store 中的一款免费应用程序。要在设备上安装它，请执行以下操作。
 
 1. 打开 App Store，找到所需的扩展程序。
 
@@ -41,7 +41,7 @@ AdGuard Safari 版是 App Store 中的一款免费应用程序。 要在设备�
 
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-完成上述步骤后，适用于 Safari 的 AdGuard 将开始正常运行。 现在可以开始配置扩展程序。
+完成上述步骤后，适用于 Safari 的 AdGuard 将开始正常运行。现在可以开始配置扩展程序。
 
 ## How to uninstall AdGuard for Safari {#uninstall}
 
@@ -51,7 +51,7 @@ AdGuard Safari 版是 App Store 中的一款免费应用程序。 要在设备�
 
 2. 打开 Safari 首选项。
 
-3. 选择「扩展」选项卡。 你会看到一个扩展名列表，AdGuard 有八个扩展名。
+3. 选择「扩展」选项卡。你会看到一个扩展名列表，AdGuard 有八个扩展名。
 
 4. 取消选中所有复选框，然后按「_卸载_」。
 

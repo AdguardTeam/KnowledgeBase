@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
@@ -23,13 +23,13 @@ sidebar_position: 4
 
 - DNSサーバーに加えて、AdGuard は専用のDNSフィルタというものを使用して、DNSリクエストを独自にフィルタリングできます。 DNSフィルタには広告やトラッキング（追跡）ドメインの大規模なリストが含まれており、それらへのリクエストはブラックホールサーバーにリルートされることで遮断されます。
 
-- また、DNSユーザールールを作成することで、ドメインをブロックしたり、ブロック解除したりすることもできる。 [こちらのDNSフィルタリングルールの構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を参照してください。
+- また、DNSユーザールールを作成することで、ドメインをブロックしたり、ブロック解除したりすることもできる。[こちらのDNSフィルタリングルールの構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を参照してください。
 
 ![DNS 通信を保護 \*mobile_border](https://cdn.adtidy.org/blog/new/9htftScreenshot_20230621-163736_AdGuard.jpg?mw=1360)
 
 #### DNSサーバー
 
-このセクションでは、DNSリクエストを解決し、広告やトラッカーをDNSレベルでブロックし、DNS通信を暗号化するためにDNSサーバーを選択することができます。 サーバーをタップして詳細な説明を読むことができ、プロトコルを選択します。 使いたいDNSサーバーが見つからなかった場合は、手動でDNSサーバーを追加することができます:
+このセクションでは、DNSリクエストを解決し、広告やトラッカーをDNSレベルでブロックし、DNS通信を暗号化するためにDNSサーバーを選択することができます。サーバーをタップして詳細な説明を読むことができ、プロトコルを選択します。使いたいDNSサーバーが見つからなかった場合は、手動でDNSサーバーを追加することができます:
 
 - 「DNSサーバーを追加する」をタップし、DNSサーバーのアドレスを入力します。
 
@@ -37,7 +37,7 @@ sidebar_position: 4
 
 - プライベート AdGuard DNSサーバー をご利用の場合は、[そのダッシュボード](https://adguard-dns.io/dashboard/)から AdGuard for Android アプリにサーバーを追加できます。
 
-デフォルトでは、「自動DNS」が選択されています。 この場合、AdGuard とデバイスの設定に基づき、DNSサーバーを自動で選択します。 [AdGuard VPNとの併用モード](/adguard-for-android/features/integration-with-vpn)または他のSOCKS5プロキシを有効にしている場合、「AdGuard DNS フィルタリングなし」または指定した他のサーバーに接続します。 それ以外の場合は、デバイスの設定で選択したDNSサーバーに接続します。
+デフォルトでは、「自動DNS」が選択されています。この場合、AdGuard とデバイスの設定に基づき、DNSサーバーを自動で選択します。 [AdGuard VPNとの併用モード](/adguard-for-android/features/integration-with-vpn)または他のSOCKS5プロキシを有効にしている場合、「AdGuard DNS フィルタリングなし」または指定した他のサーバーに接続します。それ以外の場合は、デバイスの設定で選択したDNSサーバーに接続します。
 
 #### DNSフィルタ
 

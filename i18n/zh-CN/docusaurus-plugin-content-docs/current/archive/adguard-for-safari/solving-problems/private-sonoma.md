@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。 要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。要全面保护设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 

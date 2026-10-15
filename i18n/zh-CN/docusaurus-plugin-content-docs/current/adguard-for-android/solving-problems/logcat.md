@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -15,11 +15,11 @@ sidebar_position: 4
 
 :::
 
-有时候常规日志可能无法识别问题的根源。 在这种情况下，就需要系统日志。 以下是收集日志的说明：通过开发人员选项和 Logcat。
+有时候常规日志可能无法识别问题的根源。在这种情况下，就需要系统日志。以下是收集日志的说明：通过开发人员选项和 Logcat。
 
 :::note
 
-AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐私政策](https://adguard.com/privacy/android.html) ，不收集任何有关用户的私人信息。 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。 如果其中包含此类个人信息，我们建议您先将其删除。
+AdGuard 致力于保护用户的个人隐私。我们严格遵守我们的[隐私政策](https://adguard.com/privacy/android.html) ，不收集任何有关用户的私人信息。请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。如果其中包含此类个人信息，我们建议您先将其删除。
 
 :::
 
@@ -59,13 +59,13 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 ## 通过 Logcat 捕获错误报告
 
-在 Android 7 及更低版本的设备上，错误报告无法自动发送。 然后，用户可以通过 Logcat 进行手动捕获，Logcat 是一个标准 Android 命令行工具，可转储系统消息日志。
+在 Android 7 及更低版本的设备上，错误报告无法自动发送。然后，用户可以通过 Logcat 进行手动捕获，Logcat 是一个标准 Android 命令行工具，可转储系统消息日志。
 
 请按此说明操作：
 
 ### 第一部分：准备设备
 
-1. 将设备切换到开发者模式。 打开手机「**设置**」→「**关于**」→ 点击 7 次**版本号**。
+1. 将设备切换到开发者模式。打开手机「**设置**」→「**关于**」→ 点击 7 次**版本号**。
 
 1. 打开「**开发者选项**」。
 
@@ -87,7 +87,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 1. 用 USB 数据线将设备连接到电脑。
 
-1. 下载 [Android SDK 平台工具](https://developer.android.com/studio/releases/platform-tools#downloads)。 从「下载」部分选择适合您的操作系统的下载链接。 点击链接后，将下载一个 ZIP 文件。 您可以从 ZIP 文件中提取 ADB（Android 调试桥接器）文件，并将其存储到任何您想存的地方。
+1. 下载 [Android SDK 平台工具](https://developer.android.com/studio/releases/platform-tools#downloads)。从「下载」部分选择适合您的操作系统的下载链接。点击链接后，将下载一个 ZIP 文件。您可以从 ZIP 文件中提取 ADB（Android 调试桥接器）文件，并将其存储到任何您想存的地方。
 
 1. 测试 ADB 是否正常工作：使用 USB 数据线将 Android 设备连接到电脑，打开命令提示符、PowerShell 或者终端并运行以下命令：
 
@@ -107,7 +107,7 @@ AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐�
 
 1. 下载并运行 [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog)。
 
-1. 在菜单中选择「**记录**」。 选择日志文件的名称或直接点「**OK**」。 现在您可以点击**首页** 键，CatLog 将继续在后台记录日志。
+1. 在菜单中选择「**记录**」。选择日志文件的名称或直接点「**OK**」。现在您可以点击**首页** 键，CatLog 将继续在后台记录日志。
 
 1. 复现问题。
 

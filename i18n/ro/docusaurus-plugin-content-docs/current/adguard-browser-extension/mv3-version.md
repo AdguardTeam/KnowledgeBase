@@ -1,29 +1,41 @@
 ---
-title: Extensie de browser AdGuard pentru Chrome MV3
+title: AdGuard Browser Extension MV3
 sidebar_position: 5
 ---
 
-Pe măsură ce extensiile MV2 sunt eliminate treptat din Chrome Web Store, utilizatorii Chrome ar putea fi nevoiți să treacă la extensii MV3 care sunt compatibile cu noul API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), and other Chromium-based browsers, Opera and Microsoft Edge among them, are moving to MV3 as well. Users of these browsers need an MV3 extension, compatible with the new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Extensia noastră MV3 blochează eficient reclamele și trackerele în timp ce gestionează fără probleme widgeturile sociale, bannerele și reclamele video. Cei mai mulți utilizatori nu vor observa nicio diferență operațională, dar există unele limitări și schimbări de care trebuie să fiți conștienți.
 
 ## Unde să găsești extensiile noastre
 
-Versiunea **MV3** a înlocuit vechea noastră extensie din [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** is our primary Chrome extension and is available in the
+[Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip` for Chrome and `opera-mv3.zip` for Opera.
 
-Versiunea **beta a MV3** va fi în continuare disponibilă în [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-Vechea extensie beta va fi redenumită în [**AdGuard Ad Blocker MV2**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) și va fi suportată până când Google o va elimina.
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store together with all
+other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Principalele schimbări în caracteristici și setări
 
-- **No auto and manual filter updates.** The options _Auto-update filters_ and _Check filters update_ are no longer available in the _Filters_ tab. Deoarece unele dintre reguli sunt acum aplicate în formă DNR, nu putem actualiza filtrele la cerere, ci doar prin procesul complet de actualizare a extensiei împreună cu revizuirea în magazine.
+- **Filter updates.** The options _Auto-update filters_ and _Check filters update_ are not available
+  in the _Filters_ tab: rules that ship as part of the extension can be updated only together with a
+  new extension version, after store review. Keep automatic extension updates enabled in your
+  browser.
 
-- **Jurnal de filtrare**
+  Custom filters you add by URL update on their own, independently of extension updates.
+
+- **AdGuard Quick Fixes filter.** Because built-in rules can’t be updated on request, the extension
+  ships the _AdGuard Quick Fixes_ filter. It uses dynamic rules to react to newly introduced ads and
+  broken websites between releases, so keep it enabled.
+
+- **Filtering log**
 
   ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  Din cauza restricțiilor DNR, nu putem arăta exact care regulă a funcționat, dar vom oferi o “regulă presupusă care a fost declanșată” pe baza motorului nostru. Pentru informații precise, va trebui să instalați singur forma “dezgolită” a extensiei în browserul dumneavoastră. Veți găsi instrucțiuni detaliate despre cum să faceți acest lucru într-un [articol separat](/adguard-browser-extension/solving-problems/debug-rules/).
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
 - _Tracking protection_ (formerly known as _Stealth mode_)
 
@@ -31,7 +43,7 @@ Vechea extensie beta va fi redenumită în [**AdGuard Ad Blocker MV2**](https://
 
   There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
-- _Protecția împotriva phishingului și malware-ului_ nu mai este disponibilă în setările generale. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
+- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
   ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
@@ -64,7 +76,7 @@ If this limit is exceeded, only **5,000 converted rules** will be applied in the
 >
 > Din această listă de reguli convertite, vom folosi doar 5.000 de reguli. The rest of them will be displayed in the editor, but not applied.
 
-Iată cum o regulă cu un modificateur de bază este convertită într-o regulă declarativă:
+Here’s how a rule with a basic modifier is converted to a declarative rule:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com

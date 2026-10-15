@@ -43,7 +43,7 @@ Besides, there is an opportunity to open translations in a Voting mode if you ju
 
 You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
 
-### How to become a proofreader {#proofreaders}
+### Sådan bliver man korrekturlæser (proofreader) {#proofreaders}
 
 We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
 

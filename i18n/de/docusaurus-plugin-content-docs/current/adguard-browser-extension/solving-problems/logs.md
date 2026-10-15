@@ -1,6 +1,6 @@
 ---
 title: So exportieren Sie Protokolle von der Hintergrundseite
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exportieren von Protokollen von der Hintergrundseite in der Erweiterung

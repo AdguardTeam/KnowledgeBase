@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
@@ -21,17 +21,17 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
 1. **スタンダード**
 
-   ① _トラッカー（個人情報追跡）をブロックする_ この機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
+   ① _トラッカー（個人情報追跡）をブロックす&#x308B;_&#x3053;の機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
 
    ② _Ask websites not to track me_. この機能は、[Global Privacy Control](https://globalprivacycontrol.org/)および[Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track)シグナルをあなたが訪問するウェブサイトに送信し、あなたの行動の追跡を無効にするようウェブアプリに要求します。
 
-   ③ _X-Client-Dataヘッダーを削除する_ この機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
+   ③ _X-Client-Dataヘッダーを削除す&#x308B;_&#x3053;の機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
 
 2. **高め**
 
-   ① _トラッカー（個人情報追跡）をブロックする_ この機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
+   ① _トラッカー（個人情報追跡）をブロックす&#x308B;_&#x3053;の機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
 
-   ② _URLからトラッキングパラメータを削除する_ この機能は、「AdGuard URL追跡フィルタ」を使用して、ページURLから `utm_*` や `fb_ref` などといったトラッキングパラメータを削除します。
+   ② _URLからトラッキングパラメータを削除す&#x308B;_&#x3053;の機能は、「AdGuard URL追跡フィルタ」を使用して、ページURLから `utm_*` や `fb_ref` などといったトラッキングパラメータを削除します。
 
    ③ _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
@@ -41,17 +41,17 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    :::caution
 
-   この機能は、強制的にサードパーティのクッキー（Cookie）有効期限を切らせた後、それらすべてを削除します。 これには、SNSやその他の第三者サービスのログイン用クッキーも含まれますので、 一部のウェブサイトでは定期的に再ログインが必要になったり、その他のクッキー（Cookie）関連問題が発生する場合があります。 トラッキング（追跡）用Cookieのみをブロックするには、「_スタンダード_」保護レベルを使用してください。
+   この機能は、強制的にサードパーティのクッキー（Cookie）有効期限を切らせた後、それらすべてを削除します。これには、SNSやその他の第三者サービスのログイン用クッキーも含まれますので、一部のウェブサイトでは定期的に再ログインが必要になったり、その他のクッキー（Cookie）関連問題が発生する場合があります。トラッキング（追跡）用Cookieのみをブロックするには、「_スタンダード_」保護レベルを使用してください。
 
    :::
 
-   ⑤ _X-Client-Dataヘッダーを削除する_ この機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
+   ⑤ _X-Client-Dataヘッダーを削除す&#x308B;_&#x3053;の機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
 
 3. **厳格**
 
-   ① _トラッカー（個人情報追跡）をブロックする_ この機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
+   ① _トラッカー（個人情報追跡）をブロックす&#x308B;_&#x3053;の機能は、「AdGuard 追跡防止フィルタ」を使用して、オンラインカウンターやウェブ解析ツールからあなたを保護します。
 
-   ② _URLからトラッキングパラメータを削除する_ この機能は、「AdGuard URL追跡フィルタ」を使用して、ページURLから `utm_*` や `fb_ref` などといったトラッキングパラメータを削除します。
+   ② _URLからトラッキングパラメータを削除す&#x308B;_&#x3053;の機能は、「AdGuard URL追跡フィルタ」を使用して、ページURLから `utm_*` や `fb_ref` などといったトラッキングパラメータを削除します。
 
    ③ _Hide search queries_. This feature hides your searches from websites visited through search engine results
 
@@ -61,7 +61,7 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    :::caution
 
-   この機能は、強制的にサードパーティのクッキー（Cookie）有効期限を切らせた後、それらすべてを削除します。 これには、SNSやその他の第三者サービスのログイン用クッキーも含まれますので、 一部のウェブサイトでは定期的に再ログインが必要になったり、その他のクッキー（Cookie）関連問題が発生する場合があります。 トラッキング（追跡）用Cookieのみをブロックするには、「_スタンダード_」保護レベルを使用してください。
+   この機能は、強制的にサードパーティのクッキー（Cookie）有効期限を切らせた後、それらすべてを削除します。これには、SNSやその他の第三者サービスのログイン用クッキーも含まれますので、一部のウェブサイトでは定期的に再ログインが必要になったり、その他のクッキー（Cookie）関連問題が発生する場合があります。トラッキング（追跡）用Cookieのみをブロックするには、「_スタンダード_」保護レベルを使用してください。
 
    :::
 
@@ -69,12 +69,12 @@ _Tracking protection_ has three pre-configured privacy protection levels (_Stand
 
    ⑥ _プッシュAPIをブロックする_ This feature blocks push notifications from websites
 
-   ⑦ _位置情報APIをブロックする_ この機能は、ブラウザがあなたのGPSデータにアクセスしてあなたの位置を特定することを防ぎます。
+   ⑦ _位置情報APIをブロックす&#x308B;_&#x3053;の機能は、ブラウザがあなたのGPSデータにアクセスしてあなたの位置を特定することを防ぎます。
 
-   ⑧ _サードパーティからリファラを隠す_ どのウェブサイトを訪問したりしているのかをサードパーティに知られないようにします。 本来のページのURLを含むHTTPヘッダーを非表示にし、デフォルトヘッダーまたはカスタムヘッダーに置き換えます。（カスタムヘッダーは自分で設定できます）
+   ⑧ _サードパーティからリファラを隠&#x3059;_&#x3069;のウェブサイトを訪問したりしているのかをサードパーティに知られないようにします。本来のページのURLを含むHTTPヘッダーを非表示にし、デフォルトヘッダーまたはカスタムヘッダーに置き換えます。（カスタムヘッダーは自分で設定できます）
 
    ⑨ _Hide User-Agent_. この機能は、から識別情報を削除します。User-Agentヘッダーには通常、ブラウザの名前やバージョン、オペレーティングシステム、言語設定などという情報が含まれています。
 
-   ⑩ _X-Client-Dataヘッダーを削除する_ この機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
+   ⑩ _X-Client-Dataヘッダーを削除す&#x308B;_&#x3053;の機能により、Google Chromeのバージョンや変更に関する情報がGoogleドメイン（DoubleClickやGoogle Analyticsを含む）に送信されるのを防ぎます。
 
 You can tweak individual settings in _Tracking protection_ to create a custom configuration. Each setting has a description to help you understand its purpose. [Read more about various _Tracking protection_ settings](/general/stealth-mode) and use them cautiously, as some may interfere with the functionality of websites and browser extensions.

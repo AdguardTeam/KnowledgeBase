@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -17,11 +17,11 @@ HAR 文件将根据 [AdGuard 隐私政策](https://adguard.com/en/privacy.html)�
 
 ## 什么是 HAR 文件？
 
-HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。 您可以在 [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/)  网站上找到有关 HAR 文件格式及其使用规范的更详细说明。
+HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。您可以在 [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/)  网站上找到有关 HAR 文件格式及其使用规范的更详细说明。
 
 ## 如何生成 HAR 文件
 
-有时我们需要对文件进行分析以拦截由于某种原因难以再现的特定广告。 要获取 HAR 文件，请执行以下步骤：
+有时我们需要对文件进行分析以拦截由于某种原因难以再现的特定广告。要获取 HAR 文件，请执行以下步骤：
 
 1. 打开 AdGuard 并转到「**设置**」（右下角的「⚙」图标）。
 2. 点击「**通用**」→「**高级**」→「**低级设置**」。

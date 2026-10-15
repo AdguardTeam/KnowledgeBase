@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。実際にどのように動作するかを確認するには、[AdGuard アプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
@@ -25,4 +25,4 @@ AdGuardが「Full-Tunnel（VPNアイコンなし）」モードになってい�
 2. 「*高度な設定モード*」のスイッチをオンにして、その下に現れる「*詳細設定*」をタップ
 3. *Tunnelモード* → *Split-Tunnel* を選択してください。
 
-完了です！ これで、FaceTimeの互換性に問題はないはずです。
+完了です！これで、FaceTimeの互換性に問題はないはずです。

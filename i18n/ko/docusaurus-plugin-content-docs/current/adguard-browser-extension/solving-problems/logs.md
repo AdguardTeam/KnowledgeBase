@@ -1,6 +1,6 @@
 ---
 title: 백그라운드 페이지에서 로그를 내보내는 방법
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## 확장 프로그램의 백그라운드 페이지에서 로그를 내보내기

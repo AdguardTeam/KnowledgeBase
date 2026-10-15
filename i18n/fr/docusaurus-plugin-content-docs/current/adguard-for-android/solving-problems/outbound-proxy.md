@@ -83,7 +83,7 @@ Dans cet article, nous donnons des exemples de la façon de configurer certains 
 
 1. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
 
-1. Tap **Save and select**.
+1. Appuyez sur **Enregistrer et sélectionner**.
 
 1. Activez le commutateur Proxy principal et la protection AdGuard pour acheminer le trafic de votre appareil via le proxy.
 
@@ -109,7 +109,7 @@ Dans cet article, nous donnons des exemples de la façon de configurer certains 
 
 1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
-1. Tap **Save and select**.
+1. Appuyez sur **Enregistrer et sélectionner**.
 
 1. Activez le commutateur Proxy principal et la protection AdGuard pour acheminer le trafic de votre appareil via le proxy.
 
@@ -125,7 +125,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Ouvrez AdGuard et accédez à **Paramètres** → **Filtrage** → **Réseau** → **Proxy** → **Serveur proxy**.
 
-1. Tap the **Add proxy server** and fill in the fields:
+1. Appuyez sur **Ajouter un serveur proxy** et remplissez les champs :
 
     | Champ         | Valeur      |
     | ------------- | ----------- |
@@ -133,21 +133,21 @@ You should remove Shadowsocks app from filtering before setting up the process (
     | Host du proxy | *127.0.0.1* |
     | Port du proxy | *1080*      |
 
-1. Tap **Save and select**.
+1. Appuyez sur **Enregistrer et sélectionner**.
 
 1. Activez le commutateur Proxy principal et la protection AdGuard pour acheminer le trafic de votre appareil via le proxy.
 
-### How to use AdGuard with Clash
+### Comment utiliser AdGuard avec Clash
 
-*Here we presume that you are already a Clash client and have it installed on your device.*
+*Ici, nous présumons que vous êtes déjà un client Clash et que vous l'avez installé sur votre appareil.*
 
-1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch on. This will set Clash to proxy mode.
+1. Ouvrez Clash et accédez à **Paramètres** → **Réseau** → **Acheminer le trafic système**, puis activez l’interrupteur. Ceci configurera Clash en mode proxy.
 
-1. Ouvrez AdGuard et accédez à **Gestion des applications**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+1. Ouvrez AdGuard et accédez à **Gestion des applications**. Choisissez **Clash pour Android** et désactivez **Acheminer le trafic via AdGuard**. Cela éliminera les boucles de trafic.
 
-1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Accédez ensuite à **Paramètres** → **Filtrage** → **Réseau** → **Proxy** → **Serveur proxy**.
 
-1. Tap **Add proxy server** and fill in the fields:
+1. Appuyez sur **Ajouter un serveur proxy** et remplissez les champs :
 
     | Champ         | Valeur      |
     | ------------- | ----------- |
@@ -155,17 +155,17 @@ You should remove Shadowsocks app from filtering before setting up the process (
     | Host du proxy | *127.0.0.1* |
     | Port du proxy | *7891*      |
 
-### How to use AdGuard with WG Tunnel
+### Comment utiliser AdGuard avec WG Tunnel
 
-*The proxy mode was added in version 4.0. We presume that you already have WG Tunnel installed on your device and have added the WireGuard configuration.*
+*Le mode proxy a été ajouté dans la version 4.0. Nous supposons que vous avez déjà un tunnel WG installé sur votre appareil et avez ajouté la configuration WireGuard.*
 
-1. Open WG Tunnel and go to **Settings** (the cog wheel at the bottom) → **App Mode** → **Proxy (experimental)**. This will set WG Tunnel to proxy mode.
+1. Ouvrez le tunnel WG et accédez à **Paramètres** (la roue dentée en bas) → **Mode de l’application** → **Proxy (expérimental)**. Ceci configurera WG tunnel en mode proxy.
 
-1. Ouvrez AdGuard et accédez à **Gestion des applications**. Choose **WG Tunnel** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+1. Ouvrez AdGuard et accédez à **Gestion des applications**. Choisissez **WG Tunnel** et désactivez **Acheminer le trafic via AdGuard**. Cela éliminera les boucles de trafic.
 
-1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Accédez ensuite à **Paramètres** → **Filtrage** → **Réseau** → **Proxy** → **Serveur proxy**.
 
-1. Tap **Add proxy server** and fill in the fields:
+1. Appuyez sur **Ajouter un serveur proxy** et remplissez les champs :
 
     | Champ         | Valeur      |
     | ------------- | ----------- |
@@ -173,10 +173,10 @@ You should remove Shadowsocks app from filtering before setting up the process (
     | Host du proxy | *127.0.0.1* |
     | Port du proxy | *25344*     |
 
-1. Tap **Save and select**.
+1. Appuyez sur **Enregistrer et sélectionner**.
 
-1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
+1. Activez le commutateur proxy principal et la protection AdGuard pour acheminer le trafic de votre appareil via le proxy.
 
 ## Limitations
 
-However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.
+Cependant, au moins un facteur peut empêcher certains flux de trafic d'être acheminés via le proxy sortant, même après avoir configuré les paramètres du proxy AdGuard. Ce serait le cas si l'application elle-même n'était pas configurée pour acheminer son trafic via AdGuard. Pour ce faire, rendez-vous dans la section **Gestion des applications**, sélectionnez l'application souhaitée, puis activez l'option **Acheminer le trafic via AdGuard**.

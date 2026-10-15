@@ -77,4 +77,4 @@ Her er de aktive funktioner på de præopsatte niveauer:
 
    k. _Fjern X-Client-Data-header_. Denne funktion forhindrer Google Chrome i at sende sine versions- og ændringsinfo til Google-domæner (herunder DoubleClick og Google Analytics)
 
-You can tweak individual settings in _Tracking protection_ to create a custom configuration. Hver indstilling har en beskrivelse, der oplyser mere om dens formål. [Læs mere om forskellige _Sporingsbeskyttelse_-indstillinger](/general/stealth-mode), og anvend dem med forsigtighed, da nogle kan forstyrre funktionaliteten af websteder og webbrowserudvidelser.
+Individuelle indstillinger kan tilpases ved at skifte til _Tilpasset_-tilstanden. Hver indstilling har en beskrivelse, der oplyser mere om dens formål. [Læs mere om forskellige _Sporingsbeskyttelse_-indstillinger](/general/stealth-mode), og anvend dem med forsigtighed, da nogle kan forstyrre funktionaliteten af websteder og webbrowserudvidelser.

@@ -3,7 +3,7 @@ title: ガイドラインと推奨事項
 sidebar_position: 3
 ---
 
-翻訳を始める前に、ぜひ知っておいていただきたいことがいくつかあります。 あなたの手間を省くだけでなく、翻訳するフレーズの意味の理解が一致していることを確認するためのものです。
+翻訳を始める前に、ぜひ知っておいていただきたいことがいくつかあります。あなたの手間を省くだけでなく、翻訳するフレーズの意味の理解が一致していることを確認するためのものです。
 
 [AdGuardのCrowdinページ](https://crowdin.com/profile/adguard/)を開きましたら、必要なプロジェクトを選び、言語を選択してください。
 
@@ -19,7 +19,7 @@ sidebar_position: 3
 
 :::note
 
-You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. 開いたウィンドウで、 *UI language*タブにスクロールダウンしてください。 それを開き、言語を選択し、**Change**をクリックしてください。
+You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. 開いたウィンドウで、 *UI language*タブにスクロールダウンしてください。それを開き、言語を選択し、**Change**をクリックしてください。
 
 :::
 

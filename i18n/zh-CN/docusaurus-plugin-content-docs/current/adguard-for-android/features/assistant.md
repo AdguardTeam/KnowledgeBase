@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -24,7 +24,7 @@ sidebar_position: 6
 
 ### 如何使用助手
 
-打开助手后，用户会看到两个标签：「应用程序」和「网站」。 它们分别包含最近使用的应用程序和网站列表。
+打开助手后，用户会看到两个标签：「应用程序」和「网站」。它们分别包含最近使用的应用程序和网站列表。
 
 ![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 

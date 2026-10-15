@@ -5,11 +5,11 @@ sidebar_position: 10
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。要了解工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-要让 Adguard 在 Firefox 浏览器中成功过滤 HTTPS 流量，浏览器需要信任 AdGuard 证书。 根据 Firefox 浏览器的版本，您要执行以下操作。
+要让 Adguard 在 Firefox 浏览器中成功过滤 HTTPS 流量，浏览器需要信任 AdGuard 证书。根据 Firefox 浏览器的版本，您要执行以下操作。
 
 ### 方法 1
 
@@ -48,8 +48,8 @@ sidebar_position: 10
 1. 启用「**开发者模式**」并开启「**USB 调试**」：
 
     - 打开手机的「**设置**」；
-    - 前往「**系统**」部分（设置中最后一项）。 在此部分中找到子项「**关于手机**」；
-    - 点击「**版本号**」7次。 之后，您会收到通知称**您已处于开发者模式**（可能会要求您输入设备的解锁密码）；
+    - 前往「**系统**」部分（设置中最后一项）。在此部分中找到子项「**关于手机**」；
+    - 点击「**版本号**」7次。之后，您会收到通知称**您已处于开发者模式**（可能会要求您输入设备的解锁密码）；
     - 打开「**系统设置**」→「**开发者选项**」→ 下滑并启用「**USB 调试**」→ 在仔细阅读警告内容后在「**允许 USB 调试**」窗口中确认启用。
 
 1. 安装 [Firefox](https://www.mozilla.org/en-US/firefox/releases/) 浏览器（发布版）；
@@ -73,7 +73,7 @@ sidebar_position: 10
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-    如果您收到系统通知**权限被拒绝**，您需要先将指定文件移至无权限目录。 然后再将它们移动至 Firefox 浏览器特定的文件夹里。
+    如果您收到系统通知**权限被拒绝**，您需要先将指定文件移至无权限目录。然后再将它们移动至 Firefox 浏览器特定的文件夹里。
 
     完整命令的样式大致如下：
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際にどのように動作するか確認するには、[AdGuard アプリをダウンロードしてください](https://agrd.io/download-kb-adblock)。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。実際にどのように動作するか確認するには、[AdGuard アプリをダウンロードしてください](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -17,6 +17,6 @@ sidebar_position: 2
 
 3. コンピュータを再起動します。
 
-4. ターミナルを再度開き、 `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` というコマンドを入力して実行します。 「`そのようなファイルまたはディレクトリがありません`」のようなメッセージが表示されるはずです。
+4. ターミナルを再度開き、 `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` というコマンドを入力して実行します。「`そのようなファイルまたはディレクトリがありません`」のようなメッセージが表示されるはずです。
 
 5. AdGuard を起動し、プロンプトが表示されたらログイン情報を入力します。

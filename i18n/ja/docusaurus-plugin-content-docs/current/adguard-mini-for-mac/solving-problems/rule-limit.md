@@ -24,7 +24,7 @@ AdGuard Mini for Mac has 6 content blockers:
 
 これで合計90万ものフィルタリングルールをできることになります。
 
-However, **one extension can contain only up to 150,000 rules**. この制限を超えると、ルールの一部が適用されなくなってしまい、 広告ブロックの不具合・不十分さにつながる可能性があります。
+However, **one extension can contain only up to 150,000 rules**. この制限を超えると、ルールの一部が適用されなくなってしまい、広告ブロックの不具合・不十分さにつながる可能性があります。
 
 ## ルールの上限を超えているかどうかを確認する方法
 
@@ -33,4 +33,4 @@ However, **one extension can contain only up to 150,000 rules**. この制限を
 3. Below each extension, you can see the enabled filters and the number of active rules.
    ![拡張機能タブ](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-いずれかのコンテンツブロッカーで150,000以上のルールが有効になっている場合、一部のフィルタまたはユーザールールを無効にする必要があります。 「_フィルタ_」タブに移動し、問題のあるフィルタカテゴリーを選択し、不要なフィルターやユーザールールを無効にしてください。
+いずれかのコンテンツブロッカーで150,000以上のルールが有効になっている場合、一部のフィルタまたはユーザールールを無効にする必要があります。「_フィルタ_」タブに移動し、問題のあるフィルタカテゴリーを選択し、不要なフィルターやユーザールールを無効にしてください。

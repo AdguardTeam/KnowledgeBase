@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ## 将 AdGuard 用作 HTTP 代理
 
-启用此选项可使 AdGuard 作为 HTTP 代理工作。 通过它的所有流量都将被过滤，不仅在您电脑上，还包括家庭网络中的其他设备。
+启用此选项可使 AdGuard 作为 HTTP 代理工作。通过它的所有流量都将被过滤，不仅在您电脑上，还包括家庭网络中的其他设备。
 
 要过滤其他设备的流量，需要在那些设备上安装 AdGuard 根证书并手动设置代理。
 
@@ -17,7 +17,7 @@ sidebar_position: 3
 
 ## HTTPS 过滤
 
-如今大多数网站使用 HTTPS 加密。 没有 HTTPS 过滤，AdGuard 无法拦截 YouTube、Facebook 或 X（Twitter）等网站上的广告。
+如今大多数网站使用 HTTPS 加密。没有 HTTPS 过滤，AdGuard 无法拦截 YouTube、Facebook 或 X（Twitter）等网站上的广告。
 
 除非有特殊原因需要关闭，否则我们建议保持「过滤 HTTPS」选项开启。
 
@@ -37,9 +37,9 @@ sidebar_position: 3
 
 ## 使用 SockFilter 驱动
 
-启用此选项可使用 SockFilter 驱动程序，该驱动程序有助于阻止 Windows 8 及更高版本应用程序中的广告和跟踪器。 如果禁用此选项，AdGuard 将切换到较旧的 WFP 驱动。
+启用此选项可使用 SockFilter 驱动程序，该驱动程序有助于阻止 Windows 8 及更高版本应用程序中的广告和跟踪器。如果禁用此选项，AdGuard 将切换到较旧的 WFP 驱动。
 
-SockFilter 首次引入于 v8.0 RC 版本。 它是一个**实验性**的轻量级内核态网络驱动，工作在套接字层面（TCP/UDP）。 Instead of inspecting or modifying packets as they travel through the full Windows networking stack, a sock filter intercepts socket calls (e.g., connect, send, receive, bind) at a higher, more stable abstraction level. This makes it ideal for applications that need to monitor or control network activity without deep packet processing.
+SockFilter 首次引入于 v8.0 RC 版本。它是一个**实验性**的轻量级内核态网络驱动，工作在套接字层面（TCP/UDP）。 Instead of inspecting or modifying packets as they travel through the full Windows networking stack, a sock filter intercepts socket calls (e.g., connect, send, receive, bind) at a higher, more stable abstraction level. This makes it ideal for applications that need to monitor or control network activity without deep packet processing.
 
 经过充分测试和实现后，SockFilter 相比其他驱动具有以下优势：
 

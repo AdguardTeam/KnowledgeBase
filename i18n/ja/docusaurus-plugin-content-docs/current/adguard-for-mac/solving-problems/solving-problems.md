@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事は、システムレベルでお使いのデバイスを保護する多機能な広告ブロッカー、「AdGuard for Mac」についてです。実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
@@ -22,3 +22,4 @@ sidebar_position: 1
 - [詳細設定ガイド](/adguard-for-mac/solving-problems/advanced-settings.md)
 - [Torブラウザでフィルタリングを設定する方法](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [スクリーンタイムとの互換性問題](/adguard-for-mac/solving-problems/screen-time-issues.md)
+- [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)

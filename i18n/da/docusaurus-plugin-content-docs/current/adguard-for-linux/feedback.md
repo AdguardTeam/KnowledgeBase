@@ -22,7 +22,7 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 
    `adguard-cli config set log_level debug`
 
-2. Reproduce the problem and try to remember the exact time it occurred.
+2. Genskab problemet, og prøv at huske det nøjagtige tidspunkt, hvor det opstod.
 
 3. Wait a while, then export the logs:
 

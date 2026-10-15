@@ -1,6 +1,6 @@
 ---
 title: Jak exportovat protokoly ze stránky na pozadí
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Exportování protokolů ze stránky na pozadí v rozšíření

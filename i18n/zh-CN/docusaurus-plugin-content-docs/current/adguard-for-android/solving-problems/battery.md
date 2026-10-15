@@ -5,13 +5,13 @@ sidebar_position: 1
 
 :::info
 
-本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 若要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。若要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-由于内置统计过程，Android 6 及更早版本经常将高数据和/或电量消耗归因于 AdGuard。 这是因为 AdGuard 计算从各应用过滤的所有流量。 从而高估 AdGuard 总数据和电池使用率所占份额，而低估其它应用所占份额。
+由于内置统计过程，Android 6 及更早版本经常将高数据和/或电量消耗归因于 AdGuard。这是因为 AdGuard 计算从各应用过滤的所有流量。从而高估 AdGuard 总数据和电池使用率所占份额，而低估其它应用所占份额。
 
-在 Android 7 此种情况得到改善。 现在 Android 内置的数据使用统计中反映的数据非常接近现实，尽管电池使用数据存在细微差异。
+在 Android 7 此种情况得到改善。现在 Android 内置的数据使用统计中反映的数据非常接近现实，尽管电池使用数据存在细微差异。
 
 然而，AdGuard 用户始终可在「*电池使用情况*」屏幕上了解真实情况。
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 ![电池统计数据 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-以上图表显示有最近24小时内 AdGuard 电池的使用量。点击图标上的绿线可以按每一个小时查看关于流量使用的更详细信息。 除此之外，还有相关数据的信息以及简短技术说明。
+以上图表显示有最近24小时内 AdGuard 电池的使用量。点击图标上的绿线可以按每一个小时查看关于流量使用的更详细信息。除此之外，还有相关数据的信息以及简短技术说明。
 
 在图表下方还有几个其他参数：*CPU 前景*，*CPU 背景*，*移动数据用法*，和 *Wi-Fi 数据用法*。
 
@@ -63,4 +63,4 @@ sidebar_position: 1
 
 ### 结论
 
-实际消耗量比 Android 统计的消耗量**小很多倍**。 消耗量应为 31-40mAh，而非 220mAh。 另一方面，浏览器的消耗不应该是 66mAh，而是大约 200mAh。
+实际消耗量比 Android 统计的消耗量**小很多倍**。消耗量应为 31-40mAh，而非 220mAh。另一方面，浏览器的消耗不应该是 66mAh，而是大约 200mAh。

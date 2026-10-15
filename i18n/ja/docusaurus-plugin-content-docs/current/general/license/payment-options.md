@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## ライセンスを購入する方法{#purchase}
 
-AdGuardライセンスは [adguard.com にてご購入](https://adguard.com/license.html)いただけます。 （Visa、Mastercard、Apple Pay、Google Pay、PayPal、Alipay、銀聯など、さまざまなお支払い方法をご利用いただけます。） 次の仮想通貨もご利用いただけます：Bitcoin, Ethereum, Litecoin, Tether
+AdGuardライセンスは [adguard.com にてご購入](https://adguard.com/license.html)いただけます。 （Visa、Mastercard、Apple Pay、Google Pay、PayPal、Alipay、銀聯など、さまざまなお支払い方法をご利用いただけます。）次の仮想通貨もご利用いただけます：Bitcoin, Ethereum, Litecoin, Tether
 
 iOS用「AdGuard Pro」は、App Storeで購入することができます。
 

@@ -1,9 +1,9 @@
 ---
-title: Comment déboguer les règles dans AdGuard pour Chrome MV3
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
-Dans [AdGuard pour Chrome MV3](/adguard-browser-extension/mv3-version), le journal de filtrage ne montre que les règles approximatives qui ont été appliquées, que nous appelons "règles supposées". Cela est dû au fait que le navigateur ne fournit pas de détails sur les règles déclaratives spécifiques utilisées, à moins que l'extension ne soit dans un format "décompressé". Pour obtenir des informations précises, vous devrez installer vous-même la version décompressée de l'extension dans votre navigateur.
+In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. Cela est dû au fait que le navigateur ne fournit pas de détails sur les règles déclaratives spécifiques utilisées, à moins que l'extension ne soit dans un format "décompressé". Pour obtenir des informations précises, vous devrez installer vous-même la version décompressée de l'extension dans votre navigateur.
 
 Ces instructions sont également destinées aux cas problématiques où vous souhaitez modifier de manière statique les règles fournies avec l'extension. Dans la plupart des cas, l’utilisation de _règles utilisateur_ dans l’extension devrait être suffisante.
 
@@ -55,7 +55,10 @@ Ces instructions sont également destinées aux cas problématiques où vous sou
    yarn dev chrome-mv3
    ```
 
-3. L'extension construite sera située dans le répertoire :
+3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
+   be located in the `./build/dev/opera-mv3` directory.
+
+4. The built extension will be located in the directory:
 
    ```bash
    ./build/dev/chrome-mv3

@@ -1,11 +1,11 @@
 ---
-title: AdGuard for Chrome MV3対応版でルールをデバッグする方法
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
-[AdGuard for Chrome MV3対応版](/adguard-browser-extension/mv3-version) では、フィルタリングログに適用されたであろうというルールのみが表示されます。これを「想定ルール」と呼びます。 これは、拡張機能が「解凍」された形式でない限り、ブラウザが具体的にどの宣言的ルールが使われたかについての詳細を提供しないからです。 正確な情報を確認するには、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。
+In the [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version), the Filtering log only shows the approximate rules that were applied, which we call “assumed rules”. これは、拡張機能が「解凍」された形式でない限り、ブラウザが具体的にどの宣言的ルールが使われたかについての詳細を提供しないからです。正確な情報を確認するには、ご自身でブラウザにAdGuardブラウザ拡張機能の「解凍」版をインストールする必要があります。
 
-以下の手順は、拡張機能にバンドルされているルールを静的に変更したいという、問題がある場合のためにも使えます。 ほとんどの場合、拡張機能の「_ユーザールール_」を使用すれば十分です。
+以下の手順は、拡張機能にバンドルされているルールを静的に変更したいという、問題がある場合のためにも使えます。ほとんどの場合、拡張機能の「_ユーザールール_」を使用すれば十分です。
 
 ## 前提条件
 
@@ -55,7 +55,10 @@ sidebar_position: 2
    yarn dev chrome-mv3
    ```
 
-3. ビルドされた拡張機能は次のディレクトリに配置されます:
+3. For Opera, run `yarn dev opera-mv3` instead — the built extension will
+   be located in the `./build/dev/opera-mv3` directory.
+
+4. The built extension will be located in the directory:
 
    ```bash
    ./build/dev/chrome-mv3

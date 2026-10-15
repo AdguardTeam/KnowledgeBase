@@ -25,9 +25,9 @@ sidebar_position: 1
 
   Совместимость Браузерного расширения AdGuard с десктопными приложениями AdGuard
 
-- [Браузерное расширение AdGuard для Chrome MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
 
-  Отдельное Браузерное расширение AdGuard, совместимое с API Manifest V3
+  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
 
 - [Защищённые страницы](/adguard-browser-extension/protected-pages)
 

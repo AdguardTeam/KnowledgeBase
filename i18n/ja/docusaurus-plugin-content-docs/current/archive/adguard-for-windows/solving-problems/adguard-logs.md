@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。実際どのように機能するのかを確認するには、 [AdGuard アプリ](https://agrd.io/download-kb-adblock)をダウンロードしてください。
 
 :::
 
@@ -15,11 +15,11 @@ Data and/or files provided in logs are processed in accordance with [the AdGuard
 
 :::
 
-AdGuard for Windows で発生した問題を分析および診断するために、AdGuardのお客様サポートチームはログファイルを必要とする場合があります。 これらのファイルには、ソフトウェアで発生したエラーやその他のイベントに関する記録が含まれています。 以下は、ログファイルを取得し、必要に応じてAdGuardサポートに送信する方法についての簡単な説明です。
+AdGuard for Windows で発生した問題を分析および診断するために、AdGuardのお客様サポートチームはログファイルを必要とする場合があります。これらのファイルには、ソフトウェアで発生したエラーやその他のイベントに関する記録が含まれています。以下は、ログファイルを取得し、必要に応じてAdGuardサポートに送信する方法についての簡単な説明です。
 
 :::note
 
-AdGuard は、お客様のプライバシーを保護することに強くコミットしています。 We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. サポートチームにログを送信する前に、機密情報や共有したくない情報が含まれていないかどうか、ログファイルを確認してください。 そのような個人情報が含まれている場合は、削除してからログを送信することをお勧めします。
+AdGuard は、お客様のプライバシーを保護することに強くコミットしています。 We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. サポートチームにログを送信する前に、機密情報や共有したくない情報が含まれていないかどうか、ログファイルを確認してください。そのような個人情報が含まれている場合は、削除してからログを送信することをお勧めします。
 
 :::
 
@@ -69,4 +69,4 @@ Windows 用 AdGuard のより古いバージョンをお持ちの場合は、64 
 
    ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-   ログファイルが大きくても心配しないでください。 問題を解決するためには、できるだけ詳しい情報ほど、より早く解決策を見つけることができます。
+   ログファイルが大きくても心配しないでください。問題を解決するためには、できるだけ詳しい情報ほど、より早く解決策を見つけることができます。

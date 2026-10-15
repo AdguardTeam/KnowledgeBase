@@ -3,7 +3,7 @@ title: Nasıl etkinleştirilir
 sidebar_position: 3
 ---
 
-Lisansınızı etkinleştirmek için AdGuard ürününüzün *Lisans* bölümüne gidin ve *Giriş yap* alanını veya *Etkinleştir* düğmesini bulun. Giriş yapmak için AdGuard hesabınızın e-posta adresini ve parolasını kullanın. Henüz bir hesabınız yoksa, bir tane oluşturmanız teklif edilecektir.
+Lisansınızı etkinleştirmek için AdGuard ürününüzün *Lisans* bölümüne gidin ve *Giriş yap* alanını veya *Etkinleştir* düğmesini bulun. Giriş yapmak için AdGuard hesabınızın e-posta adresini ve parolasını kullanın. If you don’t have an account yet, you will be offered to create one.
 
 :::note
 
@@ -11,71 +11,85 @@ AdGuard hesabı aracılığıyla bir lisansı etkinleştirmek için en az bir bo
 
 :::
 
-Alternatif olarak lisansı etkinleştirmek için [lisans anahtarı](../what-is#license-key) kullanabilirsiniz.
+Alternatively, you can use a [license key (activation code)](../what-is#license-key) to activate the license.
 
 **Aşağıda her platform için adım adım etkinleştirme talimatlarını kontrol edebilirsiniz.**
 
 ### Windows için AdGuard'ı etkinleştirme
 
-1. Süresi sona eren lisans ekranında *Etkinleştir* öğesine tıklayın.
+To activate a license you already have, open the menu (⋮) in the upper right corner of the *License* screen and click *Already purchased?*.
 
-    ![Süresi sona ermiş lisans ekranı *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+![License screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_license.png)
 
-    Alternatif olarak, ana ekranın sağ üst köşesindeki *Lisans* öğesin seçin ve *Etkinleştir* öğesine tıklayın.
+You can also click *Already purchased?* on the trial-expiration screen the app shows when the trial ends.
 
-    ![Ana ekran *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+![Trial expired screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/trial_expired.png)
 
-    ![Lisans ekranı *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+Then choose one of the two options:
 
-1. Tercih ettiğiniz yöntemi kullanarak lisansınızı etkinleştirin. Lisans e-posta adresinize bağlıysa *AdGuard Hesabı* öğesine tıklayın veya bu e-posta adresiyle ilişkili bir sosyal ağ seçin. Alternatif olarak lisans anahtarınızı girin.
+- **Log in** — you will be redirected to your browser. Log in to your AdGuard account or sign up there. If the account has a valid license with a free device slot, it is applied to the app automatically.
 
-    ![Lisansı etkinleştirme *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+  ![Log in through the browser *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/already_purchased_choice.png)
+
+  If the browser tab was closed or the app didn’t pick up the license, click *Reopen login page* or use *Refresh license status* in the same menu (⋮).
+
+- **Enter activation code** — enter the code from the purchase email or from a reseller. The code is also available in your [AdGuard account](https://adguardaccount.com/) and on the *License* screen of another device where AdGuard is already activated.
+
+    ![Licenses in account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/licenses_in_account.png)
+
+  :::note
+
+    *Log in* only works if the license is already in your AdGuard account. If you have an activation code that isn’t bound to your account yet, bind it first: open the *Licenses* tab of your account, click *Bind license*, enter the key, and click *Bind*.
+
+    ![Bind license in the AdGuard account *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/bind_license_to_account.png)
+
+:::
 
 ### Mac için AdGuard'ı etkinleştirme
 
 1. Süresi sona eren lisans ekranında *Etkinleştir* öğesine tıklayın.
 
-    ![Süresi sona ermiş lisans ekranı *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Alternatif olarak, AdGuard menüsündeki dişli çark simgesini ve ardından *Lisans* öğesine tıklayın.
+    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
 
-    ![Tercihler *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. Açılan pencerede *Etkinleştir* öğesine tıklayın.
+1. In the opened window, click *Activate*.
 
-    ![Lisans ekranı *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Tercih ettiğiniz yöntemi kullanarak lisansınızı etkinleştirin. Lisans e-posta adresinize bağlıysa *AdGuard Hesabı* öğesine tıklayın veya bu e-posta adresiyle ilişkili bir sosyal ağ seçin. Alternatif olarak lisans anahtarınızı girin.
+1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
 
-    ![Lisansı etkinleştirme *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### Android için AdGuard'ı etkinleştirme
 
-1. *Ayarlar* öğesine dokunun, ardından *Lisans* öğesini seçin.
+1. Tap *Settings*, then select *License*.
 
-    ![Ayarlar ekranı *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. *Lisansı etkinleştir* öğesine dokunun.
+1. Tap *Activate license*.
 
-    ![Lisans ekranı *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Tercih ettiğiniz yöntemi kullanarak lisansınızı etkinleştirin. Lisans e-posta adresinize bağlıysa *E-postayla devam et* öğesine dokunun veya bu e-posta adresiyle ilişkili bir sosyal ağ seçin. Alternatif olarak lisans anahtarınızı girin.
+1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
 
-    ![Lisansı etkinleştirme *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### iOS için AdGuard'ı etkinleştirme
 
-1. *Ayarlar* öğesine dokunun, ardından *Lisans* öğesini seçin.
+1. Tap *Settings*, then select *License*.
 
-    ![Ayarlar ekranı *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Ekranın sağ üst köşesindeki **Giriş yap** öğesine dokunun
+1. Tap **Log in** in the upper right corner of the screen
 
-    ![Satın alma ekranı *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Lisansınızı etkinleştirmek için e-posta adresinizi veya sosyal medya hesabınızı kullanın.
+1. Use your email address or social media account to activate your license.
 
-    ![Giriş ekranı *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
 
 ### Activating AdGuard Mini for Mac
 

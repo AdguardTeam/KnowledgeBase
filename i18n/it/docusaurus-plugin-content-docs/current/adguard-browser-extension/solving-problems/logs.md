@@ -1,6 +1,6 @@
 ---
 title: Come esportare i registri dalla pagina in background
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Esportare i registri dalla pagina in background nell'estensione

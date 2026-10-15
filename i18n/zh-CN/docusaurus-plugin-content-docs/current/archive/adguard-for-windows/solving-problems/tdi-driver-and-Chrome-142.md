@@ -39,7 +39,7 @@ From v7.22.4, we’ve added experimental support for the SockFilter driver. 它�
 
 使用方法：前往「设置」→「网络」→「流量过滤」，开启流量过滤，并从可用选项列表中选择「SockFilter（实验性）」。
 
-由于该功能仍处于实验阶段，可能存在错误。 如果您发现任何异常、意外或明显故障，**可以在同一位置随时切换回 TDI 或 WFP**。
+由于该功能仍处于实验阶段，可能存在错误。如果您发现任何异常、意外或明显故障，**可以在同一位置随时切换回 TDI 或 WFP**。
 
 ## Temporary solution
 

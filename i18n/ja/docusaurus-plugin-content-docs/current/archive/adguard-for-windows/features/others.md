@@ -21,7 +21,7 @@ By clicking the _Support_ tab you will open a dialog box through which you can r
 
 ![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
-このタブには、ライセンスに関する情報が表示されています。 ここでできること:
+このタブには、ライセンスに関する情報が表示されています。ここでできること:
 
 - ライセンスの種類（Nightly版、ベータ版、リリース版）、AdGuard に同時接続可能なデバイスの数、ライセンスの有効期限を確認できる
 - ボタンをクリックすると、ライセンス購入ページに移動し、ライセンスのアクティベーション、リセット、復元などができる
@@ -40,7 +40,7 @@ In addition to information about the current version of the program, this tab pr
 
 ### トレイメニュー
 
-AdGuard メニューを操作する時間を節約するため、頻繁に使用するオプションや設定の多くはトレイメニューから利用できて便利です。 メニューを呼び出すには、トレイの AdGuard アイコンを右クリックします。 以下のようなオプションが表示されます:
+AdGuard メニューを操作する時間を節約するため、頻繁に使用するオプションや設定の多くはトレイメニューから利用できて便利です。メニューを呼び出すには、トレイの AdGuard アイコンを右クリックします。以下のようなオプションが表示されます:
 
 - 保護機能を有効にする
 - 30秒間保護を無効にする・保護機能を完全にオフにする

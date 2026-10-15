@@ -19,6 +19,6 @@ sidebar_position: 7
 
 :::note 请注意
 
-Mac 版 AdGuard Mini 可从 [App Store](https://agrd.io/mini_mac) 免费下载。 详细的设置指示说明可在[此知识库文章](/adguard-mini-for-mac/installation/)中查看。
+Mac 版 AdGuard Mini 可从 [App Store](https://agrd.io/mini_mac) 免费下载。详细的设置指示说明可在[此知识库文章](/adguard-mini-for-mac/installation/)中查看。
 
 :::

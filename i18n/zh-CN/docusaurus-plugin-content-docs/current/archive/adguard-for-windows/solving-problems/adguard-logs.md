@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,11 +15,11 @@ Data and/or files provided in logs are processed in accordance with [the AdGuard
 
 :::
 
-要分析和诊断可能潜在的问题，AdGuard 技术人员可能需要 AdGuard 日志记录文件。 这些文件包含本软件发生的错误记录和其它事件。 下面是简短的说明，描述获取日志文件的方法，并在必要时将其发送给支持服务。
+要分析和诊断可能潜在的问题，AdGuard 技术人员可能需要 AdGuard 日志记录文件。这些文件包含本软件发生的错误记录和其它事件。下面是简短的说明，描述获取日志文件的方法，并在必要时将其发送给支持服务。
 
 :::note
 
-AdGuard 致力于保护用户的个人隐私。 We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。 如果其中包含此类个人信息，我们建议您先将其删除。
+AdGuard 致力于保护用户的个人隐私。 We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。如果其中包含此类个人信息，我们建议您先将其删除。
 
 :::
 
@@ -69,4 +69,4 @@ Sometimes support team members may ask you to send _trace_ logs. 要发送跟踪
 
    ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-   用户无需担心日志文件大小。 我们需要了解尽可能多的细节来解决您的问题。
+   用户无需担心日志文件大小。我们需要了解尽可能多的细节来解决您的问题。

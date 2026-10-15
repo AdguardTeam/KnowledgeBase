@@ -8,11 +8,11 @@ sidebar_position: 4
 如果您在 Linux 版 AdGuard 中发现错误或想建议新功能，请按照以下步骤进行操作：
 
 - 填写[反馈表](https://surveys.adguard.com/en/adguard_linux/form.html)。
-- [创建 GitHub 问题](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose)。 创建问题前，请检查[存储库](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue)以了解类似问题。
+- [创建 GitHub 问题](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose)。创建问题前，请检查[存储库](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue)以了解类似问题。
 
 :::note
 
-如您想添加新功能或尽快修复某一个错误，用户可以在 GitHub 上投票。 要留下您的反馈，发送某一个表情即可。
+如您想添加新功能或尽快修复某一个错误，用户可以在 GitHub 上投票。要留下您的反馈，发送某一个表情即可。
 
 :::
 

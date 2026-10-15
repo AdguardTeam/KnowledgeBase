@@ -1,37 +1,49 @@
 ---
-title: Браузерное расширение AdGuard MV3 для Chrome
+title: AdGuard Browser Extension MV3
 sidebar_position: 5
 ---
 
-Поскольку интернет-магазин Chrome скоро совсем перестанет поддерживать MV2-расширения, пользователям рекомендуется перейти на MV3-расширения, совместимые с новым API Chrome Manifest V3. Что мы думаем о новом API Chrome, мы не раз рассказывали [в блоге](https://adguard.com/ru/blog/tag/manifest-v3.html).
+[Chrome has removed all remaining Manifest V2 (MV2) extensions from the Chrome Web Store](https://adguard.com/en/blog/adguard-adblocker-manifestv2-removal.html), and other Chromium-based browsers, Opera and Microsoft Edge among them, are moving to MV3 as well. Users of these browsers need an MV3 extension, compatible with the new API Manifest V3. Our thoughts on this topic are extensively discussed on [our blog](https://adguard.com/en/blog/tag/manifest-v3.html).
 
 Наше MV3-расширение эффективно блокирует рекламу и трекеры, а также убирает виджеты социальных сетей, баннеры и видеорекламу. Большинство пользователей не заметят переход на MV3, но о некоторых ограничениях и изменениях следует рассказать.
 
 ## Где найти наши расширения
 
-**MV3-расширение** заменило наше старое расширение [в интернет-магазине Chrome](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+The **MV3 version** is our primary Chrome extension and is available in the
+[Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg). MV3 builds are also published on [GitHub Releases](https://github.com/AdguardTeam/AdguardBrowserExtension/releases/latest) as `chrome-mv3.zip` for Chrome and `opera-mv3.zip` for Opera.
 
-**Бета-версия MV3** по-прежнему доступна [в интернет-магазине Chrome](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
+The **MV3 beta** is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/adguard-adblocker-mv3-exp/apjcbfpjihpedihablmalmbbhjpklbdf).
 
-Бета-версия старого расширения будет переименована в [**AdGuard Антибаннер**](https://chromewebstore.google.com/detail/adguard-adblocker-beta/gfggjaccafhcbfogfkogggoepomehbjl) и будет поддерживаться до тех пор, пока Google это позволяет.
+**AdGuard Ad Blocker MV2** was removed from the Chrome Web Store together with all
+other MV2 extensions. MV2 keeps working in Firefox and in Chromium-based browsers that retained
+support for it — see [How to keep using AdGuard after Chrome removed MV2](/adguard-browser-extension/solving-problems/mv2-removal-in-chrome/).
 
 ## Основные изменения в функциях и настройках
 
-- **Нет автоматического и ручного обновления фильтров.** Во вкладке _Фильтры_ больше нет опций _Автообновление фильтров_ и _Проверить обновления фильтров_. Поскольку некоторые правила теперь применяются с помощью DNR, мы не можем обновлять фильтры по запросу, только через полное обновление расширения в сторах.
+- **Filter updates.** The options _Auto-update filters_ and _Check filters update_ are not available
+  in the _Filters_ tab: rules that ship as part of the extension can be updated only together with a
+  new extension version, after store review. Keep automatic extension updates enabled in your
+  browser.
 
-- **Журнал фильтрации**
+  Custom filters you add by URL update on their own, independently of extension updates.
+
+- **AdGuard Quick Fixes filter.** Because built-in rules can’t be updated on request, the extension
+  ships the _AdGuard Quick Fixes_ filter. It uses dynamic rules to react to newly introduced ads and
+  broken websites between releases, so keep it enabled.
+
+- **Filtering log**
 
   ![Filtering log \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/filtering_log.png)
 
-  Из-за ограничений declarativenetRequest мы не можем точно показать, какое правило сработало, но покажем «предполагаемое правило» на основе данных нашего движка. Для получения точной информации можно самостоятельно установить «распакованное» расширение в браузере. Как это сделать, вы узнаете [в другой статье](/adguard-browser-extension/solving-problems/debug-rules/).
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “assumed rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a [separate article](/adguard-browser-extension/solving-problems/debug-rules/).
 
-- _Защита от трекинга_
+- _Tracking protection_ (formerly known as _Stealth mode_)
 
   ![Tracking protection \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
 
-  Здесь больше нет раздела _Файлы cookie_, а также _Самоуничтожение куки сайта_ и _Самоуничтожение сторонних куки_ отсутствуют, поскольку мы не можем устанавливать время жизни файлов cookie с помощью декларативных правил.
+  There are no _Cookies_ section, along with _Self-destruction of first-party cookies_ and _Self-destruction of third-party cookies_ since we cannot set the TTL of cookies using declarative rules.
 
-- В основных настройках больше нет вкладки _Защита от фишинговых и вредоносных сайтов_. Чтобы защитить себя от таких сайтов, включите соответствующие фильтры _Безопасности_ на вкладке _Фильтры_.
+- _Phishing & malware protection_ is no longer available in the general settings. To protect yourself from malicious websites and scams, enable the appropriate _Security_ filters in the _Filters_ tab.
 
   ![Security \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/security_filters.png)
 
@@ -63,7 +75,7 @@ Manifest V3 делит правила на статические (встрое�
 >
 > Из этого списка преобразованных правил будут использоваться только 5000 правил. Остальные будут отображены в редакторе, но применяться не будут.
 
-Вот пример того, как правило с базовым модификатором преобразуется в декларативное правило:
+Here’s how a rule with a basic modifier is converted to a declarative rule:
 
 ```adblock
 ||example.org^$script,third-party,domain=example.com

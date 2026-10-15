@@ -50,7 +50,7 @@ I filtri di blocco degli annunci di AdGuard includono:
 
 - Filtro di base di AdGuard
 - Filtro Inserzioni Mobili di AdGuard
-- Filtri regionali divisi per principio linguistico: cinese, olandese, francese, tedesco, giapponese, russo, spagnolo/portoghese, turco e ucraino
+- Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### Lo scopo di questi filtri
 

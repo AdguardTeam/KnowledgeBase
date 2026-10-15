@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文介绍 Mac 版 AdGuard。这是一款多功能广告拦截程序，可在系统级别保护设备。要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -18,7 +18,7 @@ sidebar_position: 5
 请按以下指示说明解决问题：
 
 1. 重启 Mac 电脑。
-2. Mac 重新启动后，听到启动提示音后请立即按住 *Command(⌘) + R* 键。 按住这些键，直至出现 Apple 徽标以使计算机就会进入恢复模式。
+2. Mac 重新启动后，听到启动提示音后请立即按住 *Command(⌘) + R* 键。按住这些键，直至出现 Apple 徽标以使计算机就会进入恢复模式。
 3. 从顶部栏中选择「*实用程序*」→「*终端*」并执行此命令：`csrutil disable`
 4. 重启 macOS 并登录到管理员配置。
 5. 打开 Finder 窗口，从顶部栏选择「*转到*」→「*转到文件夹*」并输入 `~/private/`

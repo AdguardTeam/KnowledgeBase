@@ -4,13 +4,13 @@ sidebar_position: 4
 ---
 
 
-世界の言語には、さまざまなところで違いがあります。 そのひとつが複数形で、複数形はローカライズの際に大きな困難を招くことがあります。
+世界の言語には、さまざまなところで違いがあります。そのひとつが複数形で、複数形はローカライズの際に大きな困難を招くことがあります。
 
 複数形のある言語に翻訳いただく場合は、複数形そのものについて、またはAdGuardの翻訳でどのように複数形が使われているのかについて、この記事をしっかり読んでいただくことを強くお勧めします。
 
 ## 複数形とは？ {#plurals}
 
-名詞がいくつかの複数形の語形を持つ言語があります。 その使い方は、示される物の数によって異なります。
+名詞がいくつかの複数形の語形を持つ言語があります。その使い方は、示される物の数によって異なります。
 
 For instance, English words have two word forms when speaking about something in the singular, like *one star*, and in the plural — *two stars*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. しかし、言語によっては、複数形が1つだけだったり、逆に2つ以上あったりもします。
 
@@ -30,7 +30,7 @@ Let’s take a look at this picture. ここでは、前に立つと語形が決�
 
 さて、ポーランド語の *'godzinę'* (「時間」) には3種類の形があるのに対し、英語では単語が形を変えるのは2回だけであることがわかります。
 
-ポーランド語を除けば、ロシア語、セルビア語、スロバキア語、チェコ語など、3つの複数形を持つ言語やそれ以上の複数形を持つ言語がたくさんあります。 しかも、複数形に対する規則も様々です。 That's why it's so important to know how many plurals your language has, and how to use them correctly.
+ポーランド語を除けば、ロシア語、セルビア語、スロバキア語、チェコ語など、3つの複数形を持つ言語やそれ以上の複数形を持つ言語がたくさんあります。しかも、複数形に対する規則も様々です。 That's why it's so important to know how many plurals your language has, and how to use them correctly.
 
 ## 複数形がいくつあるのかは、どこで確認できますか？ {#where-to-learn}
 
@@ -60,7 +60,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 - `extensions;`
 - `hours`
 
-このようなフレーズのstring keyと、複数形に関する重要な注意事項が記載されていたりする「Context」欄にご注目ください。 string keyには、 `Singular`, `Dual`, `Plural` という単語が含まれる場合があります（例:`FormatDayDeclensionDual`）。 この場合、keyで指定されているとおりに適切な複数形にしておく必要があります。
+このようなフレーズのstring keyと、複数形に関する重要な注意事項が記載されていたりする「Context」欄にご注目ください。 string keyには、 `Singular`, `Dual`, `Plural` という単語が含まれる場合があります（例:`FormatDayDeclensionDual`）。この場合、keyで指定されているとおりに適切な複数形にしておく必要があります。
 
 ### 2. 単数・複数の名詞をカンマで区切った文字列 {#2type}
 
@@ -74,7 +74,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 `hour, hours — godzinę, godziny, godzin`
 
-名詞に2つの形しかない場合、同じ形を2回書く必要はありません（*※このような複数形文字列の場合のみ*）。 ただし、形を2回書いても間違いにはなりません。
+名詞に2つの形しかない場合、同じ形を2回書く必要はありません（*※このような複数形文字列の場合のみ*）。ただし、形を2回書いても間違いにはなりません。
 
 ### 3. Crowdin開発のパターンを使用する文字列 {#3type}
 
@@ -112,7 +112,7 @@ where **template 1** is Standard license for *%count%* computer,
 
 and **template 2** is Standard license for *%count%* computers
 
-もう一つ注意しなければならないのは、通常、定義する単語の前に位置する「**%count%**」というプレースホルダーです。 ユーザーに見える文章では、 **%count%** の代わりに、選択されているテンプレートに応じて異なる数字が表示されます。
+もう一つ注意しなければならないのは、通常、定義する単語の前に位置する「**%count%**」というプレースホルダーです。ユーザーに見える文章では、 **%count%** の代わりに、選択されているテンプレートに応じて異なる数字が表示されます。
 
 他の言語（例えば3つの複数形がある言語）の場合、テンプレートは3つで、その間に2つの縦棒記号があるはずです。
 
@@ -127,7 +127,7 @@ For example, when we translate the above mentioned phrase into Slovak, that acco
 *形式を1個無視して、スロバキア語のテンプレートを3つではなく2つだけ使用すると、システムは特定の数字に対して適切なテンプレートを取ることができなくなります。*その結果、英語の *Standard license for 5 computer* のように、文中に文法ミスが発生してしまいます。
 > **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
-例えば、セルビア語の *'računar'* （コンピュータ）には、2つの形しかありません。 しかし、セルビア語には3つの複数形があります。
+例えば、セルビア語の *'računar'* （コンピュータ）には、2つの形しかありません。しかし、セルビア語には3つの複数形があります。
 
 ![セルビア語](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 

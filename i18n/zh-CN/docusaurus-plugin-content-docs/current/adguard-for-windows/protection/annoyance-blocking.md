@@ -3,9 +3,9 @@ title: 烦人元素拦截
 sidebar_position: 3
 ---
 
-烦扰过滤器旨在通过屏蔽那些分散注意力或干扰网站交互及内容消费的非广告元素，来提升网站的可用性。 这些元素包括模态窗口、交互式表单、Cookie 同意通知与请求、移动应用横幅以及各种小组件。
+烦扰过滤器旨在通过屏蔽那些分散注意力或干扰网站交互及内容消费的非广告元素，来提升网站的可用性。这些元素包括模态窗口、交互式表单、Cookie 同意通知与请求、移动应用横幅以及各种小组件。
 
-这些过滤器可能包含不适合所有用户的规则， 有时建议将其禁用。 The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+这些过滤器可能包含不适合所有用户的规则，有时建议将其禁用。 The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
 ![Annoyance filters \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
