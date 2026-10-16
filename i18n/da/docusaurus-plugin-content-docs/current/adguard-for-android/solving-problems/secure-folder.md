@@ -1,24 +1,24 @@
 ---
-title: Certificate installation in a Secure folder
+title: Certifikatinstallation i en Sikker-mappe
 sidebar_position: 12
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-If you install AdGuard [in the *Secure folder*](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) on your Android device (this mainly applies to Samsung devices), you may have difficulty installing the HTTPS certificate. The *Secure folder* has its own storage space for certificates. However, if you follow the [regular certificate installation instructions](/adguard-for-android/features/settings#https-filtering), the certificate will be installed in the main memory and will not affect your ad blocker in the *Secure folder*. To install the certificate for AdGuard for Android in the *Secure folder’s* storage, follow these instructions instead:
+Installeres AdGuard i [*Sikker-mappen* i Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (dette gælder hovedsageligt Samsung-enheder), kan der opleves problemer under installationen af HTTPS-certifikatet. *Sikker-mappen* harnnemlig sin egen lagerplads til certifikater. Følges imidlertid den [almindelige vejledning til certifikatinstallation](/adguard-for-android/features/settings#https-filtering), installeres certifikatet på hovedlagerpladsen og får ingen indflydelse på adblockeren i *Sikker-mappen*. Følg i stedet denne vejledning for at installere certifikatet for AdGuard til Android på den *Sikker-mappe*-lagerplads:
 
-1. After installing the app and connecting the local VPN, tap *HTTPS filtering is off* on the main screen.
-1. Tap **Continue** → **Next** → **Save certificate**.
-1. Save the certificate (at this stage, you can rename it to make it easier to locate it later, which you will need to do).
-1. After the *Installation instructions* popup appears, **DO NOT** tap **Open Settings**.
-1. Minimize the app and go to the *Secure folder*.
-1. Tap the three-dot menu and go to **Settings** → **Other security settings**.
-1. Tap **Install from device storage** → **CA certificate** → **Install anyway**.
-1. Confirm installation with your graphic key/password/fingerprint.
-1. Find and select the previously saved certificate, then tap **Done**.
-1. Return to the AdGuard app and navigate back to the main screen.
-1. Udført! The certificate has been installed.
+1. Efter installation af appen og tilslutning til lokalt VPN, tryk på *HTTPS-filtrering er fra* på hovedskærmen.
+1. Tryk på **Fortsæt** → **Næste** → **Gem certifikat**.
+1. Gem certifikatet (på dette stadium kan det omdøbes for at gøre det lettere at finde senere, hvilket vil være nødvendigt).
+1. Efter pop op'en til *Installationsvejledningen* vises, **TRYK IKKE ** på **Åbn Indstillinger**.
+1. Minimer appen og gå til *Sikker-mappen*.
+1. Tryk på trepriksmenuen og gå til **Indstillinger** → **Andre sikkerhedsindstillinger**.
+1. Tryk på **Installér fra enhedslager** → **CA-certifikat** → **Installér alligevel**.
+1. Bekræft installationen med den grafiske nøgle/adgangskode/fingeraftryk.
+1. Find og vælg det tidligere gemte certifikat, og tryk dernæst på **Færdig**.
+1. Returnér til AdGuard-appen og gå tilbage til hovedskærmen.
+1. Færdig! Certifikatet er hermed installeret.

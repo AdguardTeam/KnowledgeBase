@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Andre funktioner
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Selvom Safari-indholdsblocking og DNS-beskyttelse ubestrideligt er to hovedmoduler i AdGuard/AdGuard Pro, er der nogle andre mindre og ikke direkte relaterede funktioner, som dog kan være nyttige og værd at kende til.
 
-### **Dark theme**
+### **Mørkt tema**
 
-![Light theme \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Lyst tema \*mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Mørkt tema \*mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Denne indstilling, øverst på skærmen **Indstillinger** → **Generelt**, muliggør at skifte mellem mørke og lyse temaer.
 
 ### **Widgets**
 
 ![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard understøtter widgets, som giver hurtig adgang til Safari-indholdsblocker- og DNS-beskyttelseskontakter, samt også viser globale forespørgselsstatistikker.
 
-### **Auto-update over Wi-Fi only**
+### **Auto-opdatér kun via Wi-Fi**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Er denne indstilling slået til, bruger AdGuard kun Wi-Fi til baggrundsfilteropdatering.
 
-### **Invert the Allowlist**
+### **Invertér Hvidlisten**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+En alternativ tilstand til Safari-filtrering, der afblokerer annoncer overalt undtagen for websteder angivet på listen. Slået fra som standard.
 
-### **Advanced mode**
+### **Avanceret tilstand**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**Avanceret tilstand** oplåser **Avancerede indstillinger**. Det anbefales ikke at eksperimentere med dem, medmindre man ved, hvad man foretager sig eller har rådført sig med teknisk support først.
 
-### **Reset statistics**
+### **Nulstil statistikker**
 
-Clears all statistical data, such as number of requests, etc.
+Rydder alle statistikdata, såsom forespørgselsantal mv.
 
-### **Reset settings**
+### **Nulstil indstillinger**
 
-This option will reset all your settings.
+Denne valgmulighed nulstiller samtlige indstillinger.
 
 ### **Support**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Brug denne mulighed til at kontakte supporten, anmelde en overset annonce (selvom brug af Assistent eller AdGuards Safari Web-udvidelse anbefales af bekvemmelighedshensyn), eksportere logfiler eller til funktionsanmodninger.
 
-### **About**
+### **Om**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Indeholder appens aktuelle versionnummer og et udvalg af sjældent nødvendige indstillinger og links.

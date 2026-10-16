@@ -9,9 +9,11 @@ As any honest and well-performed effort should be rewarded, active translators o
 
 ### AdGuard lisansları için
 
-- İlk bir yıllık Reklam Engelleyici lisansınız için **1.000 kelime** çevirmeniz gerekir.
-- İkinci lisansınız için **ek 1.500 kelimeye** (toplam 2.500 kelime) ihtiyacınız olur.
-- Sonraki tüm lisanslar lisans başına **ek 2.500** kelime gerektirir.
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
+
+Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
+
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices.
 
 ### AdGuard VPN lisansları için
 

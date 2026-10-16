@@ -1,26 +1,26 @@
 ---
-title: Advanced protection
+title: Avanceret beskyttelse
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-In iOS 15, Apple added support for Safari Web Extensions and we added a new _Advanced protection_ module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets) to deal with even the complex ads, such as YouTube ads.
+I iOS 15 har Apple tilføjet understøttelse af Safari Web Extensions, og vi føjede til gengæld et nyt modul, _Avanceret beskyttelse_, til AdGuard til iOS. Det tillader AdGuard at anvende avancerede filtreringsregler, såsom [CSS-regler](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [Udvidede CSS-vælgere](/general/ad-filtering/create-own-filters#extended-css-selectors) og [scriptlets](/general/ad-filtering/create-own-filters#scriptlets) til at håndtere selv de komplekse annoncer, såsom YouTube-ditto.
 
-![Advanced protection screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Skærmen Avanceret beskyttelse \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
-### How to enable
+### Sådan sker aktivering
 
-To enable _Advanced protection_, open the _Protection_ tab by tapping the second left icon at the bottom of the screen, select the _Advanced protection_ module, activate the feature by toggling the switch slider, and follow the on-screen instructions.
+For at aktivere _Avanceret beskyttelse_, åbn fanen _Beskyttelse_ ved at trykke på 2. ikon til venstre nederst på skærmen, vælg modulet _Avanceret beskyttelse_, slå funktionen til ved at flytte skyderen og følge vejledningen på skærmen.
 
 :::note
 
-The _Advanced protection_ only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the _YouTube ad blocking_ module in the app instead of the _Advanced protection_.
+Funktionen _Avanceret beskyttelse_ kræver minimum iOS 15. Anvendes en tidligere versioner af iOS, vil modulet _YouTube-adblocking_ ses i appen i stedet for _Avanceret beskyttelse_.
 
 :::
 
-![Protection screen on iOS 14 and earlier \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Skærmen Beskyttelse i iOS 14 og ældre \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)

@@ -9,9 +9,11 @@ sidebar_position: 6
 
 ### AdGuard 许可证
 
-- 翻译 **1000 个单词**可以获取您的第一个一年广告拦截程序许可证。
-- **额外翻译 1500 个单词**（总共 2500 个单词）可以获得第二个许可证。
-- 在此之后，每年许可证需要**额外 2500 个单词**的翻译。
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
+
+Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
+
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices.
 
 ### AdGuard VPN 许可证
 

@@ -1,6 +1,6 @@
 ---
 title: Versione completa
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 La versione completa di AdGuard Mini per Mac sblocca funzionalità avanzate che forniscono una maggiore velocità e potenza di filtraggio.

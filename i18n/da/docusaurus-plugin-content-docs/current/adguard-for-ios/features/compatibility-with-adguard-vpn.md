@@ -1,32 +1,32 @@
 ---
-title: Compatibility with AdGuard VPN
+title: Kompatibilitet med AdGuard VPN
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-In most cases, an ad blocker app and a VPN app cannot work together, due to certain system limitations.
+I de fleste tilfælde kan en adblocker og VPN-app ikke fungere sammen grundet visse systemrestriktioner.
 
-Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker.
+Det er dog lykkedes os at finde en løsning på konflikten mellem [AdGuard VPN](https://adguard-vpn.com/) og AdGuard Ad Blocker.
 
-On the _Protection_ section, you can easily switch between two apps.
+I afsnittet _Beskyttelse_ kan der nemt skiftes mellem to apps.
 
-### How to enable compatibility mode
+### Sådan aktiveres kompatibilitetstilstanden
 
-**If you already have AdGuard Ad Blocker when installing AdGuard VPN, integrated (compatibility) mode will turn on automatically, allowing you to use our apps at the same time.**
+**Er AdGuard Ad Blocker allerede installeret, når AdGuard VPN installeres, aktiveres integreret (kompatibilitets-) tilstand automatisk, så apperne kan bruges samtidigt.**
 
-If you have installed AdGuard VPN first and only then decided to try AdGuard Ad Blocker, follow these steps to use the two apps together:
+Er AdGuard VPN allerede installeret, og det så besluttes at afprøve AdGuard Ad Blocker, følg da disse trin for brug af to apps sammen:
 
-1. Open AdGuard VPN for iOS app and select ⚙ _Settings_ in the lower right corner of the screen.
-2. Go to _App settings_ and select _Operating mode_.
-3. Switch the mode from VPN to Integrated.
+1. Åbn AdGuard VPN til iOS og vælg ⚙ _Indstillinger_ nederste til højre på skærmen.
+2. Gå til _App-indstillinger_ og vælg _Driftstilstand_.
+3. Skift tilstanden fra VPN til Integreret.
 
 :::note
 
-In _Integrated mode_, AdGuard VPN's _Exclusions_ and _DNS server_ features are not available.
+I _Integreret tilstand_ er AdGuard VPN-funktionerne _Undtagelser_ og _DNS-server_ utilgængelige.
 
 :::
