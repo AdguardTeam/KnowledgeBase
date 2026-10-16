@@ -31,6 +31,10 @@ sidebar_position: 1
 
   Praktické menu v nástrojové liště Safari
 
+- [System-wide protection](/adguard-mini-for-mac/features/system-wide-protection.md)
+
+  A feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
+
 - [Plná verze](/adguard-mini-for-mac/features/full-version.md)
 
   Pokročilé funkce, které zvyšují rychlost a výkon filtrování

@@ -5,21 +5,21 @@ sidebar_position: 9
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
+I denne artikel findes metoder til at løse problemer med AdGuard under oprettelse af *flere konti* eller *Begrænsede profiler* på Android-enheder.
 
 ## Problemer forårsaget af flere brugerprofiler
 
-Er AdGuard installeret på Android 9 og senere for mere end én brugerprofil på enheden, kan der opstå problemer ved afinstallation af appen. Når AdGuard afinstalleres i én brugerprofil, vises appen stadig på app-listen, men den vil hverken kunne afinstallere eller geninstalleres. This happens because AdGuard is installed for a different user profile on the device.
+Er AdGuard installeret på Android 9 og senere til mere end én brugerprofil på enheden, kan der opstå problemer ved afinstallation af appen. Når AdGuard afinstalleres i én brugerprofil, vises appen stadig på app-listen, men den vil hverken kunne afinstallere eller geninstalleres. Dette sker, fordi AdGuard er installeret i en anden brugerprofil på enheden.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
+Forsøges AdGuard geninstalleret efter et mislykket afinstallationsforsøg, vises fejlmeddelelsen "Appen kan ikke installeres på denne enhed”.
 
-For at løse dette problem skal appen afinstalleres for alle brugere: Gå til Indstillinger → Alle apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+For at løse dette problem skal appen afinstalleres for alle brugere: Gå til Indstillinger → Alle apps → AdGuard. Tryk på de tre prikker øverste til højre og vælg *Afinstallér for alle brugere*.
 
-![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
+![Afinstallation *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
 ## Problemer forårsaget af brug af en Begrænset tilstandsprofil
 
@@ -51,7 +51,7 @@ Denne tilgang er tilgængelig fra **AdGuard v3.5 nightly 6**. Benyttes en ældre
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Installér og opsæt](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; På Windows-platformen skal **Samsung**-brugere muligvis også installere [dette værktøj](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Tilslut via et **USB-kabel** enheden til den computer/bærbare, på hvilken **ADB** er installeret;
 
@@ -68,7 +68,7 @@ Information om håndtering af brugerkonti på en Android-enhed kan findes [hér]
 
 :::note
 
-Begrænsede brugerkonti oprettes i visse tilfælde obligatorisk og ikke kan fjernes. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. Nedenfor beskrives, hvordan problemet løses i sådanne tilfælde.
+Begrænsede brugerkonti oprettes i visse tilfælde obligatorisk og ikke kan fjernes. Eksempelvis, når Dual Messenger- eller Dual App-funktioner bruges på enheder fra **Samsung** eller **LG**. Nedenfor beskrives, hvordan problemet løses i sådanne tilfælde.
 
 :::
 
@@ -84,8 +84,8 @@ Ejere af mobiler fra **Samsung** eller **LG** kan også støde på et lignende p
 
 - Åbn **Indstillinger**;
 - Tryk på **Avanceret**;
-- Scroll down and press **Dual Messenger**;
-- Disable the **Dual Messenger** for all apps;
+- Rul ned og tryk på **Dual Messenger**;
+- Deaktivér **Dual Messenger** for alle apps;
 - Lås enheden i 5 minutter;
 - Oplås skærmen, og prøv at oprette VPN-profilen igen.
 
@@ -93,6 +93,6 @@ Ejere af mobiler fra **Samsung** eller **LG** kan også støde på et lignende p
 
 - Åbn **Indstillinger**;
 - Vælg fanen **Generelt**;
-- Scroll down and press **Dual App**;
-- Remove all apps from the list;
+- Rul ned og tryk på **Dual App**;
+- Fjern alle apps fra listen;
 - Genstart enheden.

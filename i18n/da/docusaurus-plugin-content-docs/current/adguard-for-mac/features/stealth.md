@@ -9,7 +9,7 @@ Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytt
 
 :::
 
-## Tracking protection
+## Sporingsbeskyttelse
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 

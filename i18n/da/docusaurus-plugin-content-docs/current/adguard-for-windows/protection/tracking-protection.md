@@ -1,5 +1,5 @@
 ---
-title: Tracking protection
+title: Sporingsbeskyttelse
 sidebar_position: 2
 ---
 
@@ -25,7 +25,7 @@ For maximum flexibility, select _Custom_ and adjust everything manually. The set
 
 - [Miscellaneous](#miscellaneous)
 
-## General settings
+## Generelle indstillinger
 
 ![General settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
 
