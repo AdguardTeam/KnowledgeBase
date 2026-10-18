@@ -9,7 +9,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 :::
 
-Apart from the main settings of AdGuard Browser Extension, there are several more specific features that can be configured in the [_General_](#general) and [_Additional settings_](#misc) tabs.
+Kromě velkých klíčových modulů rozšíření prohlížeče AdGuard existuje několik dalších specifických funkcí, které lze konfigurovat na kartách [_Obecné_](#general) a [_Další nastavení_](#misc).
 
 ## Obecné {#general}
 
@@ -17,7 +17,7 @@ Karta _Obecné_ obsahuje hlavní nastavení rozšíření a umožňuje ovládat 
 
 ![General settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/general_settings.png)
 
-Můžete také uložit aktuální nastavení a rychle je použít v jiném prohlížeči nebo na jiném zařízení. To do this, click _Share settings_: the extension will generate a special link and a QR code that contain your current settings. Můžete buď zkopírovat odkaz a otevřít jej v prohlížeči, nebo naskenovat QR kód na zařízení s aplikací AdGuard a otevřít odkaz přímo v aplikaci. Zobrazí se výzva k použití sdílené konfigurace, abyste mohli stejné nastavení obnovit po přeinstalování prohlížeče nebo na novém zařízení.
+Můžete také uložit aktuální nastavení a rychle je použít v jiném prohlížeči nebo na jiném zařízení. Chcete-li to provést, klikněte na _Sdílet nastavení_: rozšíření vygeneruje speciální odkaz a QR kód, které obsahují vaše aktuální nastavení. Můžete buď zkopírovat odkaz a otevřít jej v prohlížeči, nebo naskenovat QR kód na zařízení s aplikací AdGuard a otevřít odkaz přímo v aplikaci. Zobrazí se výzva k použití sdílené konfigurace, abyste mohli stejné nastavení obnovit po přeinstalování prohlížeče nebo na novém zařízení.
 
 V případě potřeby můžete tento odkaz sdílet s dalšími lidmi nebo jej připojit k žádosti o podporu, aby náš tým mohl vidět vaši přesnou konfiguraci.
 
@@ -25,7 +25,7 @@ Kromě toho můžete svá nastavení i nadále exportovat do souboru ve formátu
 
 ## Další nastavení {#misc}
 
-The _Additional settings_ section contains various settings that are related to the ad-blocking process and usability.
+Sekce _Další nastavení_ obsahuje řadu různých nastavení, která souvisejí s procesem blokování reklam a použitelností aplikace.
 
 ![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/additional_settings.png)
 
@@ -47,8 +47,8 @@ The _Send anonymized usage data_ option can also be enabled on the post-installa
 
 :::
 
-## About {#about}
+## Informace {#about}
 
-In the _About_ section, you can find information about the current version, links to the Privacy policy, and a link to the repository of the Browser Extension on GitHub.
+V sekci _Informace_ najdete informace o aktuální verzi, odkazy na Zásady ochrany osobních údajů a odkaz na repozitář rozšíření prohlížeče na GitHubu.
 
 ![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/about.png)

@@ -1,6 +1,6 @@
 ---
 title: Plná verze
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 Plná verze aplikace AdGuard Mini pro Mac odemyká pokročilé funkce, které poskytují zvýšenou rychlost a sílu filtrování.

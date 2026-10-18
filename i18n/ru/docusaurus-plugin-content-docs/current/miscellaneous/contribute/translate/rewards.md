@@ -9,9 +9,11 @@ sidebar_position: 6
 
 ### Для лицензий AdGuard
 
-- Чтобы получить первую годовую лицензию Блокировщика рекламы, вам необходимо перевести **1 000 слов**.
-- Чтобы получить вторую — **ещё 1 500 слов** (всего 2 500 слов).
-- Все последующие лицензии требуют дополнительных **2 500** слов на каждую.
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
+
+Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
+
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices.
 
 ### Для лицензий AdGuard VPN
 

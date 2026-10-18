@@ -62,7 +62,7 @@ AdGuard til Windows v8.0 introducerer væsentlige ændringer. Findes den nye bru
 
    :::
 
-4. Installer den foregående version. You can find the download link in the _Assets_ section of the latest stable v7 release on [GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.22.9).
+4. Installer den foregående version. Downloadlinket til den seneste stabile v7-udgivelse findes i afsnittet _Assets_ [på GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.22.9).
 
 5. Afslut version 7 fra systembakken for at stoppe filtrering.
 
