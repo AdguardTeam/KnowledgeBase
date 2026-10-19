@@ -4249,7 +4249,7 @@ Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-styl
 
 #### Pseudo-class `:remove-attr()` {#extended-css-remove-attr}
 
-The `:remove-attr()` pseudo-class removes attributes from matching elements instead of hiding them. It is compatible with the [`:remove-attr()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin, so the same rule can be used in both blockers.
+The `:remove-attr()` pseudo-class removes attributes from matching elements instead of hiding them. It is compatible with the [`:remove-attr()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
 
 **The pseudo-class can be placed only at the end of a selector.**
 
@@ -4260,7 +4260,7 @@ target:remove-attr(attr)
 ```
 
 - `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
-- `attr` — required, an attribute name for exact match, or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+- `attr` — required, an attribute name for exact match (optionally quoted, e.g. `"onclick"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
 
 :::info Compatibility
 
@@ -4281,7 +4281,7 @@ div:remove-attr(/^data-(foo|bar)$/i)
 
 ##### `:remove-attr()` limitations {#extended-css-remove-attr-limitations}
 
-The `:remove-attr()` pseudo-class works only at the end of a selector. All style properties are ignored except for the `debug` pseudo-property. Unlike the [`remove-attr` scriptlet](#scriptlets), the pseudo-class does not require a trusted filter.
+The `:remove-attr()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-attr` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
 
 #### Pseudo-class `:remove-class()` {#extended-css-remove-class}
 
@@ -4296,7 +4296,7 @@ target:remove-class(class)
 ```
 
 - `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
-- `class` — required, a class name for exact match, or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+- `class` — required, a class name for exact match (optionally quoted, e.g. `"ads"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
 
 :::info Compatibility
 
@@ -4316,7 +4316,7 @@ div:remove-class(/^ad-/)
 
 ##### `:remove-class()` limitations {#extended-css-remove-class-limitations}
 
-The `:remove-class()` pseudo-class works only at the end of a selector. All style properties are ignored except for the `debug` pseudo-property. Unlike the [`remove-class` scriptlet](#scriptlets), the pseudo-class does not require a trusted filter.
+The `:remove-class()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-class` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
 
 #### Pseudo-class `:is()` {#extended-css-is}
 
