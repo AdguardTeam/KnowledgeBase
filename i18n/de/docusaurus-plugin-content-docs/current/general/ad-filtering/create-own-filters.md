@@ -4432,10 +4432,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
-**Default value**
-
-If this parameter is not specified, the `max-length` is considered to be 8192.
-
 Zum Beispiel:
 
 ```adblock
@@ -4487,7 +4483,7 @@ where `value` is:
 - Raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
 - Argument in the `/regexp/flags` form is treated as a regular expression.
 
-:::note Note
+:::note
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 

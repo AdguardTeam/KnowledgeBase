@@ -21,7 +21,7 @@ By clicking the _Support_ tab you will open a dialog box through which you can r
 
 ![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
-This tab contains information about your license. Her kan man:
+This tab contains information about your license. Here you can:
 
 - find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 - click the button to go to the license purchase page, and activate, reset or recover a license.
