@@ -32,17 +32,17 @@ La fonctionnalité DNS privé a été introduite dans Android Pie. Avant la vers
 
 Certains fabricants d'appareils gardent les paramètres DNS privés masqués et définissent le mode 'Automatique' comme mode par défaut. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
 
-## Unsupported browsers
+## Navigateurs non pris en charge
 
-### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
+### Navigateurs UC : UC Browser, UC Browser for x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
+Pour pouvoir filtrer le trafic HTTPS, AdGuard exige que l'utilisateur ajoute un certificat à la liste des certificats de confiance de l'appareil. Malheureusement, les navigateurs UC ne font pas confiance aux certificats utilisateur, AdGuard ne peut donc pas y effectuer de filtrage HTTPS.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md)
+- Pour résoudre ce problème, déplacez le [certificat vers le dépôt de certificats système](../solving-problems/https-certificate-for-rooted.md)
 
 :::note Compatibilité
 
-Requires root access.
+Nécessite un accès root.
 
 :::
 

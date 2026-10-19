@@ -15,11 +15,11 @@ sidebar_position: 3
 
    ![Developer mode \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_extensions.png)
 
-4. Find AdGuard Browser Extension and click `service worker`.
+4. Vyhledejte rozšíření prohlížeče AdGuard a klikněte na `service worker`.
 
    ![Background \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_developer_mode.png)
 
-5. Open the tab _Console_, right-click anywhere inside the console area, and select _Save as…_.
+5. Otevřete kartu _Konzola_, klikněte pravým tlačítkem kamkoli do oblasti konzole a vyberte _Uložit jako…_.
 
    ![Save as \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/chrome_console_save.png)
 
@@ -29,7 +29,7 @@ sidebar_position: 3
 
 2. Přejděte na `about:addons`.
 
-3. Click the gear icon and select _Debug Add-ons_.
+3. Klikněte na ikonu ozubeného kola a vyberte _Doplňky ladění_.
 
    ![Debug Add-ons \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_debug_addons.png)
 
@@ -37,7 +37,7 @@ sidebar_position: 3
 
    ![Inspect \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_inspect.png)
 
-5. In the tab _Console_ tab, right-click anywhere inside the console area and select _Save all Messages to File_.
+5. Na kartě _Konzola_ klikněte pravým tlačítkem kamkoli do oblasti konzole a vyberte možnost _Uložit všechny zprávy do souboru_.
 
    ![Console \*border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/firefox_console_save.png)
 

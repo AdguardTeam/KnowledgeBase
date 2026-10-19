@@ -1,5 +1,5 @@
 ---
-title: Safari protection
+title: Safari-beskyttelse
 sidebar_position: 2
 ---
 
@@ -9,7 +9,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 :::
 
-## Safari protection
+## Safari-beskyttelse
 
 ![General tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
 

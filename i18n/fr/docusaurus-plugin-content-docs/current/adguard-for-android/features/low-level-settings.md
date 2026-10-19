@@ -166,11 +166,11 @@ If this setting is enabled, the app will display debugging information in the br
 
 #### Excluded apps
 
-This setting allows you to list the packages and UIDs to exclude from AdGuard protection. Enter package names or UIDs, one per line. You can use `//` for comments.
+This setting allows you to list the packages and UIDs to exclude from AdGuard protection. Enter package names or UIDs, one per line. Vous pouvez utiliser `//` pour les commentaires.
 
 #### QUIC bypass packages
 
-Here you can specify package names for which AdGuard should bypass QUIC traffic. Enter package names, one per line. You can use `//` for comments.
+Here you can specify package names for which AdGuard should bypass QUIC traffic. Enter package names, one per line. Vous pouvez utiliser `//` pour les commentaires.
 
 #### Reconfigure Automatic proxy when network changes
 
@@ -182,36 +182,36 @@ If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network
 
 #### IPv4 ranges excluded from filtering
 
-Here you can list the IPv4 ranges to exclude from filtering. Enter one IP range per line. You can use `//` for comments.
+Here you can list the IPv4 ranges to exclude from filtering. Saisissez une plage d'adresses IP par ligne. Vous pouvez utiliser `//` pour les commentaires.
 
 #### IPv6 ranges excluded from filtering
 
-Here you can list the IPv6 ranges to exclude from filtering. Enter one IP range per line. You can use `//` for comments.
+Here you can list the IPv6 ranges to exclude from filtering. Saisissez une plage d'adresses IP par ligne. Vous pouvez utiliser `//` pour les commentaires.
 
 #### TCP keepalive for outgoing sockets
 
 If this setting is enabled, AdGuard will send a keepalive probe after the specified time interval to ensure that the TCP connection is still alive. After a system-defined number of unsuccessful attempts to get a response from the server, the system will automatically close the TCP connection.
 
-This setting allows you to specify:
+Ce paramètre vous permet de spécifier :
 
-- **Idle time**, in seconds, before sending TCP keepalive probes to outgoing sockets. The default value is 0. If you are having problems with NAT, set this to 20.
-- **Time between keepalive probes** for an unresponsive peer. The default value is 0 seconds.
+- **Temps d'inactivité**, en secondes, avant l'envoi de sondes de maintien de connexion TCP vers les sockets sortantes. La valeur par défaut est 0. Si vous rencontrez des problèmes liés au NAT, réglez ce paramètre sur 20.
+- **Intervalle entre les sondes de maintien de connexion** pour un pair qui ne répond pas. La valeur par défaut est de 0 secondes.
 
-### Local VPN settings
+### Paramètres VPN locaux
 
-#### Recovery delay for revoked VPN
+#### Délai de rétablissement pour un VPN révoqué
 
-Here you can set the delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Ici, vous pouvez définir le délai en millisecondes avant qu'AdGuard ne tente de rétablir la protection VPN après que celle-ci a été désactivée par une application VPN tierce ou suite à la suppression du profil VPN. La valeur par défaut est de 5000 ms.
 
-#### Reschedule delay for revoked VPN recovery
+#### Report du délai de rétablissement du VPN après révocation
 
-Here you can set the delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Ici, vous pouvez définir le délai en millisecondes avant qu'AdGuard ne reprogramme le rétablissement de la protection VPN après que celle-ci a été désactivée par une application VPN tierce ou suite à la suppression du profil VPN. La valeur par défaut est de 5000 ms.
 
 #### MTU
 
-Here you can set the maximum transmission unit (MTU) of the VPN interface. This is the maximum size of the data packet used in your local VPN. The recommended range is 1500-1900 bytes.
+Ici, vous pouvez définir l’unité de transmission maximale (MTU) de l’interface VPN. Il s'agit de la taille maximale du paquet de données utilisé par votre VPN local. La plage recommandée est de 1500 à 1900 octets.
 
-#### Packet capture (PCAP)
+#### Capture de paquets (PCAP)
 
 Ce paramètre active la journalisation des interfaces TUN. Lorsqu'il est activé, AdGuard crée un fichier `timestamp.pcap`, par exemple 1682599851461.pcap, dans le répertoire du cache de l'application. Ce fichier répertorie tous les paquets réseau transmis via le VPN et peut être analysé à l'aide de l'outil Wireshark.
 

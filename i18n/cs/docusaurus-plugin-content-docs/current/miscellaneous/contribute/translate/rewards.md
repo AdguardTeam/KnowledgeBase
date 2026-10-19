@@ -9,9 +9,11 @@ Protože každá poctivá a dobře odvedená práce by měla být odměněna, mo
 
 ### Pro AdGuard licence
 
-- Pro první roční licenci Blokátoru reklam musíte přeložit **1000 slov**.
-- Pro druhou licenci budete potřebovat **dalších 1500 slov** (celkem 2500 slov).
-- Všechny další licence vyžadují **dalších 2500** slov na licenci.
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
+
+Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
+
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices.
 
 ### Pro AdGuard VPN licence
 

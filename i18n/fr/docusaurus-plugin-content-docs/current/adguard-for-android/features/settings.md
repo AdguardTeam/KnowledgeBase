@@ -37,7 +37,7 @@ La section _Paramètres de bas niveau_ est destinée aux utilisateurs experts. [
 
 ## Filtrage
 
-This section lets you manage filters, extensions, network settings, add websites to the allowlist, and create user rules.
+Cette section vous permet de gérer les filtres, les extensions, les paramètres réseau, d'ajouter des sites Web à la liste blanche et de créer des règles utilisateur.
 
 [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
 
@@ -45,23 +45,23 @@ This section lets you manage filters, extensions, network settings, add websites
 
 ### Filtres
 
-AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
+AdGuard bloque les publicités, les traqueurs et les nuisances en appliquant des règles issues de ses filtres. La plupart des fonctionnalités de la section _Protection_ sont alimentées par les [filtres AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Si vous activez la _Protection de base_, le filtre de base AdGuard et le filtre des publicités mobiles AdGuard seront activés automatiquement. Inversement, si vous désactivez les deux filtres, la _Protection de base_ sera également désactivée.
 
-![Filters \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Filtres \*mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
+Les filtres activés par défaut sont suffisants pour le bon fonctionnement d'AdGuard. Cependant, si vous souhaitez personnaliser le blocage des publicités, vous pouvez utiliser d'autres filtres AdGuard ou de tiers. Pour ce faire, sélectionnez une catégorie et activez les filtres souhaités. Pour ajouter un filtre personnalisé, appuyez sur _Filtres personnalisés_ → _Ajouter un filtre personnalisé_ et saisissez son URL ou son chemin de fichier.
 
 :::note
 
-If you activate too many filters, some websites may work incorrectly.
+Si vous activez trop de filtres, certains sites web peuvent ne pas fonctionner correctement.
 
 :::
 
-[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
+[En savoir plus sur les filtres](https://adguard.com/en/blog/what-are-filters.html)
 
 ### Extensions
 
-Extensions allow you to add userscripts and userstyles.
+Les extensions vous permettent d'ajouter des scripts utilisateur et des styles utilisateur.
 
 ![Extensions \*mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.jpg)
 
@@ -69,7 +69,7 @@ Userscripts are miniprograms written in JavaScript that extend the functionality
 
 Userstyles are like userscripts that allow you to change how web pages look in the browser without modifying their content. They work by adding CSS styles to the website’s existing styles. For example, if you want a dark theme on a website that doesn’t offer one, you can use a userstyle to do it.
 
-To add a userstyle, go to _Settings_ → _Filtering_ → _Extensions_→ _Add extension_ → _Import from file or URL_. You can find ready-made user styles [online](https://userstyles.world/).
+Pour ajouter un style utilisateur, allez dans _Paramètres_ → _Filtrage_ → _Extensions_ → _Ajouter une extension_ → _Importer depuis un fichier ou une URL_. You can find ready-made user styles [online](https://userstyles.world/).
 
 To create your own style, tap _Add extension_ → _Create userstyle_.
 
