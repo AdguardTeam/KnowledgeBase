@@ -9,25 +9,25 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-AdGuard can significantly extend website functionality by working as a [userscript manager](/general/extensions.md). AdGuard users can add their own scripts as well as manage existing ones.
+AdGuard kan udvide webstedsfunktionaliteten markant ved at fungere som en [userscript-håndtering](/general/extensions.md). AdGuard-brugere kan tilføje egne scripts samt håndtere allerede eksisterende.
 
-![Extensions \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions.png)
+![Udvidelser \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions.png)
 
-**Automatically detect userscripts**
+**Detektér userscripts automatisk**
 
-With this option enabled, AdGuard will automatically define browser queries to userscripts and suggest their installation. Otherwise, extensions can be downloaded and installed manually.
+Med denne indstilling aktiveret detekterer AdGuard automatisk webbrowserforespørgsler til userscripts og foreslår installation heraf. Ellers kan udvidelser downloades og installeres manuelt.
 
-The following extensions are installed with AdGuard:
+Flg. udvidelser installeres sammen med AdGuard:
 
-![Preinstalled userscripts \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions_enabled.png)
+![Præinstallerede userscripts \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/extensions/extensions_enabled.png)
 
-**AdGuard Assistant**
+**AdGuard Assistent**
 
-AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/archive/adguard-for-windows/browser-assistant.md) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+AdGuard Assistent er en Legacy Assistent, der kan bruges, hvis [den nye Assistent](/archive/adguard-for-windows/browser-assistant.md) ikke findes til den aktuelle webbrowser. Navnet på denne udvidelse er ret bevidst: Den assisterer faktisk brugeren med at ændre grundlæggende AdGuard-indstillinger direkte fra webbrowseren uden at skulle åbne selve appen. AdGuard Assistent fungerer med alle Microsoft Windows-kompatible webbrowsere. Derudover vil AdGuard Assistent-ikonet ikke blive vist på websteder opført som undtagelser af brugeren samt på visse websider, hvor der er risiko for forkert indholdsvisning.
 
 **AdGuard Extra**
 
-This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
+Dette er en tilpasset udvidelse designet til at bekæmpe teknikken med at genindsætte blokerede annoncer — den såkaldte adblockeromgåelse/annoncegeninjektion. Begge er avancerede antiadblockermetoder, hvis popularitet er stigende blandt annoncører.
 
 AdGuard Extra is essentially a miniprogram that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 

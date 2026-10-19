@@ -7,7 +7,7 @@ Afsnittet _Adblocking_ har ansvaret for at fjerne annoncer fra de besøgte webst
 
 ![Adblocking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
-Her kan man:
+Here you can:
 
 - slå basisbeskyttelse til,
 - blokere [søgeannoncer og selvpromovering](/general/ad-filtering/search-ads),

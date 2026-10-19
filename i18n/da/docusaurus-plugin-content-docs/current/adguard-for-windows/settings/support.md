@@ -5,11 +5,11 @@ sidebar_position: 3
 
 ![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support_main_screen.png)
 
-Use this section if you have any questions or suggestions about AdGuard for Windows. We recommend checking the [FAQ](https://adguard.com/support/faq.html) and this Knowledge base before contacting support.
+Brug dette afsnit ved evt. spørgsmål eller forslag vedr. AdGuard til Windows. Det anbefales at tjekke [FAQ'en](https://adguard.com/support/faq.html) og denne Vidensbase, inden supporten kontaktes.
 
-If you notice a missed ad, please let us know using _Report incorrect blocking_.
+Opdages en overset annonce, bedes denne anmeldt via _Anmeld forkert blokering_.
 
-You can also join our social channels to discuss AdGuard with other users, or reach out to us on GitHub to suggest new features or report bugs.
+Det er også muligt at deltage på vores sociale kanaler for at debattere AdGuard med andre brugere eller kontakte os på GitHub for at foreslå nye funktioner eller anmelde fejl.
 
 Er supporten blevet kontaktet, og vores team anmoder om logfiler eller tekniske data fra appen, kan de eksporteres herfra. For trinvis vejledning, se [Sådan indsamles AdGuard-logfiler](/adguard-for-windows/solving-problems/adguard-logs).
 
