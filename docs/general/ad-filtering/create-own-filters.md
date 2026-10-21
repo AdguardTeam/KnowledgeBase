@@ -1100,9 +1100,9 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 | [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ [*[1]](#jsinject-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
-| [$stealth](#stealth-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[2]](#urlblock-modifier-limitations) | ✅ [*[2]](#urlblock-modifier-limitations) | ❌ |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) | ❌ |
+| [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ [*[2]](#stealth-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
+| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[3]](#urlblock-modifier-limitations) | ✅ [*[3]](#urlblock-modifier-limitations) | ❌ |
+| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[4]](#genericblock-modifier-limitations) | ✅ [*[4]](#genericblock-modifier-limitations) | ❌ |
 | [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -1242,6 +1242,7 @@ In the latter case the modifier disables all the Tracking protection features.
 
 The list of the available modifier options:
 
+- `fingerprinting` disables [**Block fingerprinting**](../../stealth-mode#fingerprinting) option
 - `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
 - `donottrack` disables [**Ask websites not to track you**](../../stealth-mode#donottrack) option
 - `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
@@ -1264,10 +1265,27 @@ The list of the available modifier options:
 - `@@||example.com^$stealth` disables Tracking protection for `example.com` (and subdomains) requests, except for blocking cookies and hiding tracking parameters (see below).
 - `@@||domain.com^$script,stealth,domain=example.com` disables Tracking protection only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
 - `@@||example.com^$stealth=3p-cookie|dpi` disables blocking third-party cookies and DPI fooling measures for `example.com`.
+- `@@||example.com^$stealth=fingerprinting` disables fingerprinting protection for `example.com` (and subdomains). Other Tracking protection features keep working.
 
 :::note
 
-Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, add three separate exception rules:
+
+- `@@||example.org^$stealth`
+- `@@||example.org^$removeparam`
+- `@@||example.org^$cookie`
+
+These modifiers cannot be combined in one rule: `@@||example.org^$stealth,removeparam,cookie` will not work.
+
+:::
+
+##### `$stealth` modifier limitations {#stealth-modifier-limitations}
+
+:::caution Limitations
+
+- In [AdGuard for Chromium MV3][ext-mv3], `$stealth` rules affect only *Block fingerprinting*: `@@||example.com^$stealth` and `@@||example.com^$stealth=fingerprinting` disable it, and other options have no effect.
+- In AdGuard Browser Extension, *Block fingerprinting* is disabled by the allowlist and by rules of the form `@@||example.com^` with `$stealth`, `$stealth=fingerprinting`, or `$document`. The `fingerprinting` option may be combined with other options, and the rule may include `$important`. Rules with paths, wildcards, regular expressions, or other modifiers, such as `$domain` or `$third-party`, do not disable it.
+- For *Block fingerprinting*, a `$stealth` rule is checked against the address of each page and frame. `@@||example.com^$stealth=fingerprinting` disables *Block fingerprinting* on `example.com` and its subdomains, including `example.com` frames on other websites. Frames from other websites on `example.com` stay protected. The `@@||example.com^$document` rule and the allowlist disable *Block fingerprinting* on `example.com` pages, including frames from other websites, but not in `example.com` frames on other websites. In Firefox, some frames from other websites may stay protected, see [Tracking protection in AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting).
 
 :::
 
@@ -1275,16 +1293,18 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
 - Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
-- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` and `3p-cookie` options.
+- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie`, `3p-cookie`, and `fingerprinting` options. AdGuard for Chromium MV3 supports only `fingerprinting`.
 
 :::
 
 :::info Compatibility
 
 - Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac,
-  AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chromium MV3.
+  AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers.
+  AdGuard for Chromium MV3 v5.6 or later supports `$stealth` rules with [limitations](#stealth-modifier-limitations).
   All other products will ignore the rules with `$stealth` modifier.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+- The `fingerprinting` option is supported by AdGuard Browser Extension v5.6 or later. AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and earlier versions of AdGuard Browser Extension consider rules with this option invalid and ignore the whole rule, including its other options. In filter lists for several products, put `fingerprinting` in a separate rule: use `@@||example.com^$stealth=3p-cookie` and `@@||example.com^$stealth=fingerprinting` instead of `@@||example.com^$stealth=3p-cookie|fingerprinting`.
 - In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
