@@ -1100,9 +1100,9 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 | [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ [*[1]](#jsinject-modifier-limitations) | ✅ | ✅ | ✅ | ❌ |
-| [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ [*[4]](#stealth-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[2]](#urlblock-modifier-limitations) | ✅ [*[2]](#urlblock-modifier-limitations) | ❌ |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) | ❌ |
+| [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ [*[2]](#stealth-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
+| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ❌ | ✅ | ✅ [*[3]](#urlblock-modifier-limitations) | ✅ [*[3]](#urlblock-modifier-limitations) | ❌ |
+| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ [*[4]](#genericblock-modifier-limitations) | ✅ [*[4]](#genericblock-modifier-limitations) | ❌ |
 | [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
