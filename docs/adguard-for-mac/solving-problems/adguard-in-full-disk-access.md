@@ -63,9 +63,9 @@ If you granted Full Disk Access to AdGuard for Mac for [Browser Assistant](https
 
 To reset the record from Terminal, run the command from [Apple’s guide to resetting access to protected resources](https://developer.apple.com/documentation/xcode/resetting-access-to-protected-resources-in-macos):
 
-- **AdGuard for Mac:**  
+- **AdGuard for Mac:**
   `tccutil reset SystemPolicyAllFiles com.adguard.mac.adguard`
-- **AdGuard Mini for Mac:**  
+- **AdGuard Mini for Mac:**
   `tccutil reset SystemPolicyAllFiles com.adguard.safari.AdGuard`
 
 If `tccutil reset` didn’t work, try to restart the app.
