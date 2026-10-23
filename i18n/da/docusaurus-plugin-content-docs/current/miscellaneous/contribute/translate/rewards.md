@@ -9,9 +9,11 @@ Da enhver ærlig og veludført indsats bør belønnes, kan aktive oversættere p
 
 ### AdGuard-licenser
 
-- Til den første et-årige Ad Blocker-licens skal man oversætte **1.000 ord**.
-- For den anden licens skal man oversættes **yderligere 1.500 ord** (i alt 2.500 ord).
-- Alle efterfølgende licenser kræver yderligere **2.500** ord pr. licens.
+Oversæt **1.000 ord** og vælg én: En **etårig AdGuard Ad Blocker-licens til én enhed** eller **én enhed mere føjet til din eksisterende licens**. Du kan gøre krav på én belønning for hvert basismål.
+
+Oversæt **1.500 ord mere** (2.500 i alt) for at vælge igen. Derefter kan du træffe det samme valg for hver **2.500 ekstra ord**.
+
+Hvis du for eksempel har oversat i alt 5.000 ord, kan du enten bede om en treårig AdGuard Ad Blocker-licens til én enhed, en toårig licens til to enheder eller en etårig licens til tre enheder.
 
 ### AdGuard VPN-licenser
 

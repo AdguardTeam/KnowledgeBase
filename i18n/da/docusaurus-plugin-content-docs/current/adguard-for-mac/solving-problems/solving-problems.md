@@ -9,7 +9,7 @@ Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytt
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Her er nogle problemer, som kan opleves, og løsninger samt guider og vejledninger, der muligvis bliver brug for.
 
 - [Manual certificate installation](/adguard-for-mac/solving-problems/manual-certificate-installation.md)
 - [Protection cannot be enabled](/adguard-for-mac/solving-problems/protection-cannot-be-enabled.md)

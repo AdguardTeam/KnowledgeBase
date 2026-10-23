@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Der er flere ting, vi gerne vil oplyse om, før man begynder at oversætte. Det vil ikke alene spare tid og kræfter, men også sikre konsensus mht. betydningen af de sætninger, som oversættes.
 
-Når man [åbner vores Crowdin-side](https://crowdin.com/profile/adguard/), så vælg det ønskede projekt samt sprog.
+Når [vores Crowdin-side åbnes](https://crowdin.com/profile/adguard/), vælg det ønskede projekt samt sprog.
 
 ![Sprog *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
@@ -19,7 +19,7 @@ Vælg en tilgængelig produktmappe samt fil og begynd at oversætte.
 
 :::note
 
-Crowdins brugerfladesprog kan også ændres ved at klikke på ikonet *Indstillinger* øverste til højre på siden. Rul i det åbnede vindue ned til fanen *UI-sprog*. Åbn det, vælg et sprog, og klik på **Skift**.
+Crowdins brugerfladesprog kan også ændres ved at klikke på ikonet *Indstillinger* øverste til højre på siden. Rul i det åbnede vindue ned til fanen *UI-sprog*. Åbn den, vælg et sprog og klik på **Skift**.
 
 :::
 
@@ -41,47 +41,47 @@ Crowdins brugerfladesprog kan også ændres ved at klikke på ikonet *Indstillin
 
     Egne oversættelse af oversættelige termer kan foreslås i [AdGuard Glossary](https://crowdin.com/project/adguard-glossary)-projektet.
 
-1. I Crowdin kan strenge have notater, som gør det lettere at forstå og oversætte sætninger korrekt. Disse findes i i kildestrengens afsnit, "Kontekst".
+1. I Crowdin kan strenge have kontekstopkysninget, som gør det lettere at forstå og oversætte sætninger korrekt. Disse findes i i kildestrengens afsnit, "Kontekst".
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-1. Bemærk, at kildestrenge også kan have skærmfotos i Kontekst-afsnittet. De kan fremme sammenhængsforståelse og formidle præcis betydning.
+1. Kildestrenges Kontekst-afsnit kan også indeholde skærmfotos. De kan fremme kontekstforståelse og formidle præcis betydning.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
     :::tip
 
-    Der kan anmodes om kontekst ved at klikke på knappen "FORESPØRGSEL".
+    Der kan anmodes om kontekst ved at klikke på knappen "UDBED".
 
 
 :::
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-1. Ud over at foreslå nye oversættelser, kan der også skrives kommentarer til strenge. Brug kommentarer til at oplyse om fejl i kildestrenge eller de eksisterende oversættelser, oprette notater eller stille spørgsmål. Ser man en kommentar til sin oversættelse, så forsøg gerne at besvare den.
+1. Ud over at foreslå nye oversættelser, kan der også føjes kommentarer til strenge. Brug kommentarer til at oplyse om fejl i kildeteksterne eller i de eksisterende oversættelser, oprette notater eller stille spørgsmål. Ser man en kommentar til sin oversættelse, så reager gerne på den.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
-    There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
+    Der er også fanen **Diskussioner** på projektets hovedside, der muliggør at se alle kommentarer for det pågældende projektsprog.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
-1. Crowdin provides a very useful and convenient tool called *Translation Memory*. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
+1. Crowdin leverer et meget nyttigt og praktisk værktøj kaldet *Oversættelseshukommelse (Translation Memory)*. Via dette kan tidligere udførte oversættelser af de samme ord og sætninger findes og genbruges i nye oversættelser.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
-1. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. *Please pay attention to them: they usually have a higher priority.*
+1. Ved tilmelding til et projekt via klik på knappen "Deltag" kan fanen **Opgaver** ses på projektsiden, hvor opgaverne til bestemte projektfiler oprettes. *Vær opmærksom på dem, da de normalt har højere prioritet.*
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-1. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](../plural-forms).
+1. Nogle gange kan der stødes på sætninger med flertalsformer. Vær særlig opmærksom, når sådanne sætninger oversættes. Der kan læses om, hvordan flertalsformer oversættes [her](../plural-forms).
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
-    Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
+    Det er ekstremt vigtigt at bruge korrekte flertalsformer: Spørg venligst i kommentarfeltet, hvis noget er uklart.
 
-1. **Please do not write directly to the project managers and proofreaders listed in the Project info.**
+1. **Skriv venligst ikke direkte til projektlederne og korrekturlæserne angivet i Projektinfo.**
 
-    If you have questions about translations, you can always ask our proofreaders or admins through comments.
+    Er der spørgsmål om oversættelser, kan korrekturlæserne eller admins altid spørges via kommentarer.
 
-    Also, you can send an email to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy). The Admins will answer you as soon as possible.
+    Der kan også e-mailes til [translate@adguard.com](mailto:translate@adguard.com) eller stilles spørgsmål via [Telegram-chatten](https://t.me/joinchat/UVYTLcHbr8JmOGIy). Admins vil svare hurtigst muligt.

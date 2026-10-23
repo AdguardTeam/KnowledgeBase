@@ -9,9 +9,11 @@ sidebar_position: 6
 
 ### AdGuard 라이선스의 경우
 
-- 첫 1년의 광고 차단기 라이선스를 받기 위해서는, **1,000단어**를 번역해야 합니다.
-- 두 번째 라이선스를 받으려면 추가로 **1,500단어**를 번역해야 합니다. (합계 2,500단어)
-- 이후에는 라이선스 하나당 **2,500**단어 번역이 요구됩니다.
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
+
+Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
+
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices.
 
 ### AdGuard VPN 라이센스의 경우
 

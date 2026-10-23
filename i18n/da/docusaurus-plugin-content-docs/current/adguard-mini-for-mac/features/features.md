@@ -31,6 +31,10 @@ sidebar_position: 1
 
   A handy menu in the Safari toolbar
 
+- [Systemniveaubeskyttelse](/adguard-mini-for-mac/features/system-wide-protection.md)
+
+  En funktion, der blokerer annoncer og trackere, ikke kun i Safari, men i alle øvrige apps på Mac'en.
+
 - [Full version](/adguard-mini-for-mac/features/full-version.md)
 
   Advanced features that enhance filtering speed and power

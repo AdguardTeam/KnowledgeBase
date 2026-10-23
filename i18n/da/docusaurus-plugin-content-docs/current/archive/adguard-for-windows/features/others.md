@@ -1,11 +1,11 @@
 ---
-title: Other features
+title: Andre funktioner
 sidebar_position: 5
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,7 +21,7 @@ By clicking the _Support_ tab you will open a dialog box through which you can r
 
 ![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
-This tab contains information about your license. Here you can:
+This tab contains information about your license. Her kan man:
 
 - find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 - click the button to go to the license purchase page, and activate, reset or recover a license.

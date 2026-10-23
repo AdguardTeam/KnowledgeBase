@@ -13,12 +13,12 @@ Hlavní stránka rozšíření je přístupná po kliknutí na ikonu rozšířen
 
 ![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-From the main page, you can manage your protection and access key features:
+Na hlavní stránce můžete spravovat svou ochranu a přistupovat k klíčovým funkcím:
 
-- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
-- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
-- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
-- Check a website’s security report
-- See statistics on all blocked elements
+- Ručně skrýt libovolný prvek na stránce (vlastní pravidlo bude automaticky přidáno do vašich _Uživatelských pravidel_)
+- Otevřít _Log filtrování_, abyste si mohli prohlédnout podrobné informace o provozu ve vašem prohlížeči a za běhu blokovat požadavky
+- Nahlásit problém s nezablokovanýma reklamami nebo nefunkčními prvky stránky, aby jej naši inženýři zabývající se filtry mohli prověřit a vyřešit
+- Zkontrolovat bezpečnostní zprávu o webové stránce
+- Zobrazit statistiky všech zablokovaných prvků
 
 Kliknutím na ikony v pravém horním rohu hlavní nabídky rozšíření můžete otevřít nastavení rozšíření nebo pozastavit ochranu.

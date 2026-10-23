@@ -14,11 +14,11 @@ If you install AdGuard [in the *Secure folder*](https://www.samsung.com/uk/suppo
 1. After installing the app and connecting the local VPN, tap *HTTPS filtering is off* on the main screen.
 1. Tap **Continue** → **Next** → **Save certificate**.
 1. Save the certificate (at this stage, you can rename it to make it easier to locate it later, which you will need to do).
-1. After the *Installation instructions* popup appears, **DO NOT** tap **Open Settings**.
-1. Minimize the app and go to the *Secure folder*.
-1. Tap the three-dot menu and go to **Settings** → **Other security settings**.
-1. Tap **Install from device storage** → **CA certificate** → **Install anyway**.
-1. Confirm installation with your graphic key/password/fingerprint.
-1. Find and select the previously saved certificate, then tap **Done**.
-1. Return to the AdGuard app and navigate back to the main screen.
-1. C'est fait ! The certificate has been installed.
+1. Lorsque la fenêtre contextuelle *Instructions d'installation* apparaît, **N'APPUYEZ PAS** sur **Ouvrir les paramètres**.
+1. Réduisez l'application et accédez au *Dossier sécurisé*.
+1. Appuyez sur le menu à trois points et accédez à **Paramètres** → **Autres paramètres de sécurité**.
+1. Appuyez sur **Installer depuis le stockage de l’appareil** → **Certificat d’AC** → **Installer quand même**.
+1. Confirmez l'installation avec votre clé graphique / mot de passe / empreinte digitale.
+1. Trouvez et sélectionnez le certificat enregistré précédemment, puis appuyez sur **Terminé**.
+1. Retournez dans l'application AdGuard et revenez à l'écran principal.
+1. C'est fait ! Le certificat a été installé.
