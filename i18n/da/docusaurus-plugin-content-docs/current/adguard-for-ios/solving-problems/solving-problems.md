@@ -9,7 +9,7 @@ Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytt
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Her er nogle problemer, som kan opleves, og løsninger samt guider og vejledninger, der muligvis bliver brug for.
 
 - [How to activate premium features](/adguard-for-ios/solving-problems/premium-activation.md)
 - [How to enable system-wide filtering in AdGuard for iOS](/adguard-for-ios/solving-problems/system-wide-filtering.md)

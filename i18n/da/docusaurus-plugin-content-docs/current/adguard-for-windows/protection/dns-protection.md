@@ -7,7 +7,7 @@ DNS protection gives you more control over how your device connects to the Inter
 
 ## 1. Protect your privacy from your ISP
 
-Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which means they can track the websites you visit. If you switch to another DNS server, such as AdGuard DNS, your ISP no longer sees your online activity.
+Inden et websted kan tilgås, f.eks. `google.com`, sender webbrowseren en forespørgsel til en DNS-server for at få webstedets IP-adresse oplyst. Usually, the DNS server belongs to your ISP, which means they can track the websites you visit. If you switch to another DNS server, such as AdGuard DNS, your ISP no longer sees your online activity.
 
 ## 2. Encrypt your DNS traffic
 

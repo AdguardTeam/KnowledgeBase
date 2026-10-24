@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,13 +13,13 @@ Previously known as low-level settings, Advanced Settings mostly contain options
 
 :::caution
 
-Mindlessly changing _Advanced Settings_ can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+Tankeløs ændring af _Lavniveauindstillinger_ kan forårsage problemer med AdGuards ydeevne, ødelægge internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
 :::
 
 ## How to reach Advanced Settings
 
-To go to _Advanced settings_, in the main windows click _Settings → General Settings_ and scroll down to _Advanced Settings_. Alternatively, select _Advanced → Advanced settings..._ in the tray menu.
+For at gå til _Avancerede indstillinger_, klik i hovedvinduerne på _Indstillinger → Generelle indstillinger_ og rul ned til _Avancerede indstillinger_. Alternativt, vælg _Avanceret → Avancerede indstillinger..._ i bakkemenuen.
 
 ## Advanced Settings
 
@@ -31,7 +31,7 @@ If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply setti
 
 ### Use Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the _Use Encrypted Client Hello_ option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, Client Hello packet will be encrypted.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. Aktivér muligheden _Brug Encrypted Client Hello_ for at drage fordel af den. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, Client Hello packet will be encrypted.
 
 ### Check websites' certificate transparency
 
@@ -59,7 +59,7 @@ Aktivér denne funktion for at se AdGuard pop op-notifikationer. De vises ikke f
 
 ### Opsnap automatisk filterabonnements-URL'er
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
+Aktivér denne funktion, hvis AdGuard automatisk skal opsnappe filterabonnements-URL'er (dvs. `abp:subscribe` o.lign.) og åbne en dialogboks til installation af tilpassede filter.
 
 ### Filterér HTTP/3
 
@@ -71,7 +71,7 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 - Firefox-baserede webbrowsere opfører sig som standard tilsvarende, men `network.http.http3.disable_when_third_party_roots_found`-indstillingen kan i `about:config` sættes til `false` for at tillade brugercertifikater til HTTP/3.
 - Safari understøtter HTTP/3-filtrering uden yderligere opsætning.
 
-### Use redirect driver mode
+### Brug omdirigeringsdrivertilstand
 
 If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
 
@@ -79,7 +79,7 @@ Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
 
 ### Open main window at system start-up
 
-Enable this option to make the main AdGuard window open after the system is loaded. This setting, which doesn't affect whether the actual filtering service is launched or not, is located in _Settings → General Settings_.
+Enable this option to make the main AdGuard window open after the system is loaded. Denne indstilling, der ingen indflydelse har på, hvorvidt filtreringstjenesten faktisk startes eller ej, er placeret i _Indstillinger → Generelle indstillinger_.
 
 ### Aktivér filtrering ved systemstart
 
@@ -87,7 +87,7 @@ Starting from v7.12, by default, AdGuard's service does not filter traffic after
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the _Launch AdGuard at system start-up_ was disabled). If you were satisfied with the old behavior, enable this option.
+Før v7.12 startede AdGuard-tjenesten som standard i filtreringstilstand (selv hvis _Start AdGuard ved systemopstart_ var slået fra). If you were satisfied with the old behavior, enable this option.
 
 :::
 
@@ -97,11 +97,11 @@ If you want AdGuard to filter loopback connections, check the box. This option w
 
 ### Exclude specified IP ranges from filtering
 
-If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
+Aktivér denne funktion, hvis AdGuard ikke skal filtrere bestemte undernet, og angiv IP-intervallerne i CIDR-notationen (f.eks. 98.51.100.14/24) i afsnittet **IP-intervaller undtaget fra filtrering** nedenfor.
 
 ### Enable HAR writing
 
-This option should be enabled **only for debugging purposes**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+Denne indstilling bør kun være aktiveret **til fejlfindingsformål**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
 
 ### Add an extra space to the plain HTTP request
 
@@ -119,7 +119,7 @@ GET  /foo/bar/ HTTP/1.1
 Host:example.org
 ```
 
-This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
+Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
 
 ### Adjust size of fragmentation of initial TLS packet
 
@@ -127,13 +127,13 @@ Specifies the size of the TCP packet fragmentation, avoiding deep packet inspect
 
 If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
+Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
 
 ### Plain HTTP request fragment size
 
 Justerer størrelsen af HTTP-forespørgselsfragmenteringen. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the _Protect from DPI_ Stealth mode option is enabled.
+Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
 
 ### Show QUIC
 
@@ -149,7 +149,7 @@ Here you can specify an idle time period, in seconds, before sending a keepalive
 
 :::note
 
-This setting only works when the _Enable TCP keepalive_ option is enabled.
+Denne indstilling fungerer kun, når indstillingen _Aktivér TCP keepalive_ er slået til.
 
 :::
 
@@ -159,13 +159,13 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 :::note
 
-This setting only works when the _Enable TCP keepalive_ option is enabled.
+Denne indstilling fungerer kun, når indstillingen _Aktivér TCP keepalive_ er slået til.
 
 :::
 
 ### Block Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use _Block Java_ option, JavaScript will still be enabled.
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Selvom det besluttes at bruge muligheden _Blokér Java_, vil JavaScript stadig være aktiveret.
 
 ### DNS server timeout period
 

@@ -1,54 +1,54 @@
 ---
-title: Safari protection
+title: Safari-beskyttelse
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-### Content blockers {#content-blockers}
+### Indholdsblockere {#content-blockers}
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
+Indholdsblockere fungerer som 'beholdere' til filtreringsregler, som udfører det reelle arbejde med at blokere annoncer og sporing. AdGuard til iOS indeholder seks indholdsblockere: Generelt, Fortrolighed, Socialt, Sikkerhed, Tilpasset og Andet. Tidligere tillod Apple kun hver indholdsblocker at indeholde maksimalt 50K filtreringsregler, men med iOS 15-udgivelsen er den øvre grænse hævet til 150K regler.
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in _Advanced settings_ (tap the gear icon at the bottom right → _General_ → _Advanced settings_ → _Content blockers_).
+Alle indholdsblockere, deres status, hvilke tematiske filtre de pt. inkluderer og det samlede antal brugte filtreringsregler kan findes på den respektive skærm i _Avancerede indstillinger_ (tryk på tandhjulsikonet nederst til højre → _Generelt_ → _Avancerede indstillinger_ → _Indholdsblockere_).
 
-![Content blockers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Indholdsblockere \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
-Keep all content blockers enabled for the best filtering quality.
+Hold alle indholdsblockere aktiveret for bedst mulig filtreringskvalitet.
 
 :::
 
-### Filters {#filters}
+### Filtre {#filters}
 
-Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
+Indholdsblockeres funktion er baseret på filtre, nogle gange også omtalt som filterlister. Hvert filter er en liste over filtreringsregler. Er en adblocker aktiv, når der surfes, tjekker den konstant de besøgte sider og deres elementer mod disse filtreringsregler og blokerer alt, der matcher. Regler er udviklet til at blokere annoncer, trackere og mere.
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the _Protection_ section by tapping the shield icon, then go to _Safari protection_ → _Filters_.
+Alle filtre er grupperet i tematiske kategorier. For en komplet liste over disse kategorier (ikke at forveksle med indholdsblockere), åbn afsnittet _Beskyttelse_ ved at trykke på skjoldikonet og dernæst gå til _Safari-beskyttelse_ → _Filtre_\*.
 
-![Filter groups \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Filtergrupper \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
-There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
+Der er otte af disse, hver kategori samler flere filtre, som tjener og deler et fælles formål, f.eks. blokering af annoncer, widgets til sociale medier, meddelelser om cookies, og beskytter brugeren mod online-svindel. For at afgøre, hvilke filtre som opfylder de aktuelle behov, læs deres beskrivelser og navigér efter etiketterne (`annoncer`, `fortrolighed`, `anbefalet` mv.).
 
 :::note
 
-More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
+Flere aktiverede filtre garanterer ikke automatisk færre annoncer. Et stort antal forskellige filtre, som er aktiveret samtidigt, reducerer kvaliteten af adblocking.
 
 :::
 
-Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
+Tilpasset filtre-kategorien er som standard tom, så brugere kan tilføje deres filtre efter URL. Man kan finde filtre på nettet eller endda prøve at [oprette et selv](/general/ad-filtering/create-own-filters).
 
-### User rules {#user-rules}
+### Brugerregler {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
+Her kan nye regler tilføjes — enten ved at angive dem manuelt eller ved brug af [AdGuards manuelle blockingværktøj i Safari](#assistant). Brug dette værktøj til at tilpasse Safari-filtrering uden at tilføje en hel filterliste.
 
-Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+Læs om, [hvordan egne filtre oprettes](/general/ad-filtring/create-own-filters). Bemærk dog, at mange af dem ikke fungerer i Safari på iOS.
 
-![User rules screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Brugerreglerskærm \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Hvidliste {#allowlist}
 
-The third section of the _Safari protection_ screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+Det tredje afsnit på skærmen _Safari-beskyttelse_. Ønskes adblocking deaktiveret på et bestemt websted, vil Hvidliste være til hjælp. Den muliggør at føje domæner og underdomæner til undtagelser. AdGuard til iOS har en funktion til import/eksport, så hvidlisten fra én enhed nemt kan overføres til en anden.

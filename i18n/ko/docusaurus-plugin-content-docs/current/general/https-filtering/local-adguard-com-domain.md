@@ -1,27 +1,50 @@
 ---
-title: Local.adguard.org 도메인
+title: Local.adguard.org and injections.adguard.org domains
 sidebar_position: 3
 ---
 
-Windows, Mac 및 Android용 AdGuard 사용자들은 모든 웹 페이지에 `local.adguard.org` 도메인에서 로드되는 작은 스크립트가 추가되는 것을 볼 수 있습니다.
+Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page. It is loaded from either `local.adguard.org` or `injections.adguard.org` and helps AdGuard apply cosmetic filtering. When AdGuard is running, it processes requests for the script locally in both cases.
 
-우선, 이 도메인은 실제 도메인이 아니며 해당 이름의 서버가 존재하지 않으니 걱정하지 마세요. 이 도메인은 웹페이지에 코스메틱 필터링을 적용하는 데 사용되지만 모든 작업이 서버에 연결하지 않고 기기에서 로컬로 이루어집니다.
+## The `local.adguard.org` domain
+
+This isn’t a real domain, and there’s no server behind that name. AdGuard uses it to apply cosmetic filtering to web pages: everything happens locally on your device, without connecting to any server.
 
 ### 기술 설명
 
-그렇다면 그것은 무엇이며 왜 필요한가요? 아래 기술 설명을 읽어보세요.
+AdGuard is a network-level content blocker, so it cannot simply add custom JavaScript and CSS to web pages the way browser extensions do. However, this is crucial for quality content blocking.
 
-1. AdGuard는 네트워크 수준의 콘텐츠 차단기이므로 브라우저 확장 프로그램처럼 웹페이지에 사용자 정의 JavaScript 및 CSS를 추가할 수 없습니다. 하지만 양질의 콘텐츠를 차단하는 데는 매우 중요합니다.
-2. 이를 위해 AdGuard는 다음과 같은 '콘텐츠 스크립트'를 삽입합니다: `<script src="https://local.adguard.org/.../content-script.js">`. 이 '콘텐츠 스크립트'는 외형적 필터링을 처리하고 웹페이지에서 광고 콘텐츠를 숨기거나 제거합니다.
-3. `local.adguard.org` 도메인의 IP 주소에 대한 연결은 네트워크 수준에서 AdGuard가 가로채서 **로컬에서 처리합니다**. 그렇기 때문에 해당 도메인은 수년간 변경되지 않는 '고정' IP 주소를 갖게 됩니다.
+To do this, AdGuard injects a content script that looks like this:
 
-**실제 IP 주소를 사용해야 하는 이유는 무엇인가요?**
+`<script src="https://local.adguard.org/.../content-script.js">`
 
-- `127.0.0.1`은 브라우저에서 허용하지 않으므로 사용할 수 없습니다.
-- 사설 서브넷의 일부 IP 주소를 사용할 수 있지만 이 솔루션에는 두 가지 단점이 있습니다.
-    - 첫째, 기존 인트라넷 서비스와 교차하여 액세스가 중단될 가능성이 약간 있습니다.
-    - 둘째, 일부 DNS 서버는 이를 DNS 리바인딩 공격으로 간주하여 `local.adguard.org`에 대한 응답을 거부할 수 있습니다.
+The content script hides or removes ad content from web pages. Connections to the IP address of `local.adguard.org` are intercepted by AdGuard at the network level and **processed locally**. This is why the domain has a “static” IP address that does not change.
+
+**Why do we need to use a real IP address?**
+
+- We cannot use `127.0.0.1` as the browsers won't accept it.
+- Using some IP address from the private subnets is possible, but this solution has two downsides.
+    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
+    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
 
 ### 인증
 
-이는 쉽게 확인할 수 있습니다. AdGuard를 비활성화하면 해당 주소의 서버가 없기 때문에 `local.adguard.org`에 연결할 수 없다는 것을 알 수 있습니다. AdGuard가 비활성화되어 있을 때 브라우저에서 열어보세요.
+If you disable AdGuard and try opening `local.adguard.org` in your browser, the connection cannot be established: AdGuard is no longer there to intercept it, and there is no server at that address.
+
+## The `injections.adguard.org` domain
+
+When your traffic goes through an explicit proxy (a proxy set in your system or browser, not in AdGuard), AdGuard uses `injections.adguard.org` instead of `local.adguard.org` to apply cosmetic rules. Most users never see this domain.
+
+## How the `injections.adguard.org` and `local.adguard.org` domains differ
+
+- **`local.adguard.org`:** AdGuard intercepts the connection completely and responds on your device. The request never leaves the device.
+- **`injections.adguard.org`:** AdGuard uses this domain when it detects that traffic is going through an explicit proxy. Unlike with `local.adguard.org`, a connection to this domain must be possible through the proxy. AdGuard processes the request for the script locally, within that established connection.
+
+So although `injections.adguard.org` is reachable over the network, AdGuard does not fetch the script from its server. If AdGuard is not running, the domain remains reachable, but its server does not process or log user requests.
+
+### If a page hangs on “Waiting for local.adguard.org” or “Waiting for injections.adguard.org”
+
+If AdGuard does not handle a connection to `injections.adguard.org`, it normally fails quickly . If the connection times out instead, your browser may show “Waiting for injections.adguard.org” and the page may take longer to load.
+
+Most often, another app that filters traffic takes over the connection before AdGuard does: an antivirus with web protection, a VPN or proxy tool, or a second ad blocker. AdGuard then can’t inject its content script, so the page loads slowly and some cosmetic rules are not applied.
+
+Try disabling such apps one by one to find the source of the problem. If the problem continues, please contact support at support@adguard.com. Include your AdGuard version, the browser where you see the delay, and the output of `nslookup injections.adguard.org`. This command shows whether the domain resolves, but not whether a connection to it times out.
