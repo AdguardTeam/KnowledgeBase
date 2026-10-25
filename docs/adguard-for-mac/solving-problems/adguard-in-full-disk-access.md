@@ -68,7 +68,7 @@ To reset the record from Terminal, run the command from [Apple’s guide to rese
 - **AdGuard Mini for Mac:**
   `tccutil reset SystemPolicyAllFiles com.adguard.safari.AdGuard`
 
-If `tccutil reset` didn’t work, try to restart the app.
+If `tccutil reset` didn’t work, try to restart your Mac.
 
 Without `sudo`, the command resets the record for your user account. With `sudo`, for all accounts on the Mac.
 
