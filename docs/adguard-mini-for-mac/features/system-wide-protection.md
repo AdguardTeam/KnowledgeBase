@@ -16,6 +16,8 @@ The feature currently does not work correctly on **macOS 27.2 beta**. If you’r
 
 In the release version, *System-wide protection* is hidden by default. To show it, go to *Settings* → *Miscellaneous* and turn on *Show System-wide protection (Experimental)*. The beta version always shows it.
 
+![Experimental toggle](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/swp-experimental-toggle.png)
+
 ## How it works
 
 *System-wide protection* is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a system filtering API used for system-wide traffic filtering. Here’s how it works.
