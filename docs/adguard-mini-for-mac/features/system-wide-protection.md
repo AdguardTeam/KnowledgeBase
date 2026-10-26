@@ -8,11 +8,11 @@ The feature is available for users with an AdGuard license. You can [purchase th
 
 :::caution
 
-*System-wide protection* is an experimental feature. It may not work for everyone due to [an unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Once the feature is stable for everyone, we’ll make it a core part of AdGuard Mini.
+*System-wide protection* is an experimental feature. It may not work for everyone due to an [unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Once the feature is stable for everyone, we’ll make it a core part of AdGuard Mini.
 
 :::
 
-The feature currently does not work correctly on **macOS 27.2 beta**. If you're on **macOS 26.0 and 27.0**, you can try *System-wide protection* as usual. Note that if *System-wide protection* works fine for you on macOS 27.0, it will most likely break after you update to macOS 27.2. Keep this in mind before you update your system.
+The feature currently does not work correctly on **macOS 27.2 beta**. If you’re on **macOS 26.0 and 27.0**, you can try *System-wide protection* as usual. Note that if *System-wide protection* works fine for you on macOS 27.0, it will most likely break after you update to macOS 27.2. Keep this in mind before you update your system.
 
 In the release version, *System-wide protection* is hidden by default. To show it, go to *Settings* → *Miscellaneous* and turn on *Show System-wide protection (Experimental)*. The beta version always shows it.
 
@@ -56,7 +56,7 @@ There are three levels of protection you can choose from. *Essential* is selecte
 
 ### System-wide protection doesn’t work on macOS 27.2
 
-This is caused by [an unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Because of it, *System-wide protection* is currently an experimental feature. It works on macOS 26 and 27.0, but may not work correctly on macOS 27.2 beta. If you’re on an earlier macOS version, we recommend staying on it until Apple fixes the bug.
+This is caused by an [unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Because of it, *System-wide protection* is currently an experimental feature. It works on macOS 26 and 27.0, but may not work correctly on macOS 27.2 beta. If you’re on an earlier macOS version, we recommend staying on it until Apple fixes the bug.
 
 ### System-wide protection doesn’t work with every app or browser
 
