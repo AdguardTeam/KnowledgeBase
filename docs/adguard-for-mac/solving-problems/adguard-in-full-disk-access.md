@@ -5,11 +5,11 @@ sidebar_position: 13
 
 :::info
 
-This article is about AdGuard for Mac and AdGuard Mini for Mac. To see how they work, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac. To see how they work, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Mac and AdGuard Mini for Mac may appear in *System Settings* → *Privacy & Security* → *Full Disk Access*. An entry there doesn’t mean AdGuard asked for Full Disk Access or received it: macOS adds entries itself, and the switch stays off. No dialog appears when it does.
+AdGuard for Mac may appear in *System Settings* → *Privacy & Security* → *Full Disk Access*. An entry there doesn’t mean AdGuard asked for Full Disk Access or received it: macOS adds entries itself, and the switch stays off. No dialog appears when it does.
 
 ## Why the entry appears
 
@@ -33,16 +33,6 @@ If Browser Assistant can’t connect to AdGuard, start with the narrower option:
 
 :::
 
-## AdGuard Mini for Mac
-
-AdGuard Mini for Mac doesn’t add itself to the list. The entry comes from AdGuard for Safari — [the previous name of the same app](https://adguard.com/support/adguard-mini-mac/about/what_is.html).
-
-macOS added AdGuard for Safari to the list on macOS 13 and later; on macOS 12 it didn’t. When the app updates to AdGuard Mini for Mac, macOS doesn’t create a new entry but renames the existing one to AdGuard Mini. That’s why the entry can be there even if you installed the app years ago or have since deleted it.
-
-## System Wide Protection is not related to Full Disk Access
-
-*System Wide Protection*, the URL filter in AdGuard Mini for Mac, is a Network Extension. It works with network traffic and doesn’t read files on your disk. It appears in *System Settings* → *General* → *Login Items & Extensions*, separately from *Full Disk Access*.
-
 ## How to remove the entry
 
 The entry itself gives AdGuard no access to your files. Ad blocking works with the switch off, so you can leave the entry in place.
@@ -63,10 +53,7 @@ If you granted Full Disk Access to AdGuard for Mac for [Browser Assistant](https
 
 To reset the record from Terminal, run the command from [Apple’s guide to resetting access to protected resources](https://developer.apple.com/documentation/xcode/resetting-access-to-protected-resources-in-macos):
 
-- **AdGuard for Mac:**
-  `tccutil reset SystemPolicyAllFiles com.adguard.mac.adguard`
-- **AdGuard Mini for Mac:**
-  `tccutil reset SystemPolicyAllFiles com.adguard.safari.AdGuard`
+`tccutil reset SystemPolicyAllFiles com.adguard.mac.adguard`
 
 If `tccutil reset` didn’t work, try to restart your Mac.
 
@@ -80,4 +67,4 @@ A *Full Disk Access* record sometimes stays after `tccutil reset`. Removing the 
 
 ### The entry may appear again
 
-macOS adds the entry back the next time the app accesses a protected folder, for example when AdGuard for Mac writes the browser manifest again. In both cases macOS adds it on its own, it doesn’t mean the app requested access.
+macOS adds the entry back the next time the app accesses a protected folder, for example when AdGuard for Mac writes the browser manifest again. macOS adds the entry on its own, it doesn’t mean the app requested access.
