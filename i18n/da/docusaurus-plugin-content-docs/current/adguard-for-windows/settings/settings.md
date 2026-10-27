@@ -3,22 +3,22 @@ title: Indstillinger
 sidebar_position: 1
 ---
 
-There are other useful AdGuard options that shouldn’t go unnoticed in this article, since they add much to user experience.
+Der er andre nyttige AdGuard-indstillinger i denne artikel, som ikke bør gå ubemærket hen, da de føjer meget til brugeroplevelsen.
 
-![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
+![Indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/setting.png)
 
-## [App settings](/adguard-for-windows/settings/app-settings)
+## [App-indstillinger](/adguard-for-windows/settings/app-settings)
 
-Language and theme, update channel and interval, advanced options for experienced users, and a filter editor to quickly create custom rules.
+Sprog og tema, opdateringskanal og -interval, avancerede indstillinger til erfarne brugere og en filtereditor til hurtigt at oprette tilpassede regler.
 
-## [License](/adguard-for-windows/settings/license)
+## [Licens](/adguard-for-windows/settings/license)
 
-Information about license type, number of available devices, and activation code, with options to refresh or reset license and bind it to your AdGuard account.
+Information om licenstype, antal tilgængelige enheder og aktiveringskode, med muligheder for at opfriske eller nulstille licensen samt knytte den til en relevant AdGuard-konto.
 
 ## [Support](/adguard-for-windows/settings/support)
 
-FAQ and support form, tools to report missed ads and request new features, possibility to rate the app, share feedback, and access AdGuard social networks.
+FAQ og supportformular, værktøjer til at anmelde oversete annoncer og foreslå nye funktioner, mulighed for at bedømme appen, dele feedback og tilgå AdGuards socialt netværk.
 
-## [About](/adguard-for-windows/settings/about)
+## [Om](/adguard-for-windows/settings/about)
 
-Details about app version and libraries, as well as links to legal documents.
+Detaljer om app-version og biblioteker samt links til juridiske dokumenter.

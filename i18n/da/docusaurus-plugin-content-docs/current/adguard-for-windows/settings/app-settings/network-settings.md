@@ -3,48 +3,48 @@ title: Netværksindstillinger
 sidebar_position: 3
 ---
 
-This section lets you manage how AdGuard filters your Internet traffic and provides additional tools to control network-related features.
+Dette afsnit muliggør at håndtere, hvordan AdGuard filtrerer internett­rafikken og tilbyder yderligere værktøjer til styring af netværksrelaterede funktioner.
 
 ![Netværksindstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/network_settings.png)
 
-## Use AdGuard as an HTTP proxy
+## Anvend AdGuard som en HTTP-proxy
 
-Enable this option to make AdGuard work as an HTTP proxy. All traffic passing through it will be filtered — not only on your computer but also on other devices in your home network.
+Slå denne indstilling til for at få AdGuard til at fungere som en HTTP-proxy. Al trafik, der passerer igennem den, filtreres — ikke kun på computeren, men også på andre enheder i hjemmenetværket.
 
-To filter traffic on other devices, install AdGuard’s root certificate on them and set up the proxy manually.
+For at filtrere trafik på andre enheder, installér AdGuards root-certifikat på dem og opsæt proxyen manuelt.
 
-Other settings are enabled by default.
+Andre indstillinger er som standard slået til.
 
 ## HTTPS-filtrering
 
-Most websites use HTTPS encryption today. Without HTTPS filtering, AdGuard cannot block ads on websites like YouTube, Facebook, or X (Twitter).
+De fleste websteder bruger i dag HTTPS-kryptering. Uden HTTPS-filtrering kan AdGuard ikke blokere annoncer på websteder såsom YouTube, Facebook eller X (Twitter).
 
-We recommend keeping the _Filter HTTPS_ option turned on unless you have a specific reason to turn it off.
+Vi anbefaler at beholde indstillingen _Filtrér HTTPS_ slået til, medmindre der er en specifik grund til at slå den fra.
 
-With this option, you can:
+Med denne indstilling er det muligt at:
 
-- Reinstall or download the AdGuard certificate
+- Geninstallere eller downloade AdGuard-certifikatet
 
-- Add websites to a list that won’t be filtered
+- Føje websteder til en liste, der ikke filtreres
 
-- Choose whether to filter websites with EV (Extended Validation) certificates
+- Vælge, om der skal filtreres websteder med EV (Udvidet Validering) certifikater
 
-## Proxy for app and filter updates
+## Proxy til app- og filteropdateringer
 
-Here you can choose which proxy AdGuard should use to download filter updates or new app versions — the system proxy, a custom proxy, or no proxy at all.
+Her kan vælges, hvilken proxy AdGuard skal bruge til download af filteropdateringer eller nye app-versioner – systemproxyen, en tilpasset proxy eller slet ingen proxy.
 
 ![Proxyindstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/proxy_apps.png)
 
-## Use SockFilter driver
+## Anvend SockFilter-driver
 
-Enable this option to use the SockFilter driver, which helps block ads and trackers in apps on Windows 8 and later. If this option is disabled, AdGuard will switch to the older WFP driver instead.
+Slå denne indstilling til for at anvende SockFilter-driveren, der assisterer med at blokere annoncer og trackere i apps i Windows 8 og senere. Er denne indstilling slået fra, skifter AdGuard i stedet til den ældre WFP-driver.
 
-SockFilter was first introduced in v8.0 RC. It is an _experimental_, lightweight kernel-mode network driver that works at the socket level (TCP/UDP). Instead of inspecting or modifying packets as they travel through the full Windows networking stack, a sock filter intercepts socket calls (e.g., connect, send, receive, bind) at a higher, more stable abstraction level. This makes it ideal for applications that need to monitor or control network activity without deep packet processing.
+SockFilter blev først introduceret i v8.0 RC. Det er en _eksperimentel_, letvægts-netværksdriver i kernel-tilstand, der fungerer på socket-niveau (TCP/UDP). I stedet for at inspicere eller ændre pakker, når de bevæger sig gennem hele Windows-netværksstakken, opfanger et sock-filter socket-kald (f.eks. tilslut, send, modtag, tilknyt) på et højere og mere stabilt abstraktionsniveau. Dette gør det ideelt til applikationer med behov for at overvåge eller styre netværksaktivitet uden dyb pakkebehandling.
 
-When fully tested and implemented, SockFilter has the potential to bring several advantages over other drivers:
+Når SockFilter er fuldt testet og implementeret, har det potentiale til at give flere fordele ift. andre drivere:
 
-- **It operates at a higher, socket-level layer**: SockFilter works with socket operations rather than raw packets, making it less complex and more stable than WFP’s low-level packet filtering.
-- **No interference with other network drivers**: Because it sits above VPN, firewall, and antivirus WFP filters, it avoids filter-ordering problems and compatibility conflicts common in the WFP stack.
-- **Greatly reduced risk of NETIO-related BSODs**: SockFilter doesn’t run inside the NETIO packet pipeline, so it avoids the typical crash scenarios caused by WFP callouts mishandling buffers, classification results, or packet memory.
+- **Den opererer på et højere socket-niveaulag**: SockFilter arbejder med socket-operationer i stedet for rå pakker, hvilket gør den mindre kompleks og mere stabil end WFPs lavniveaupakkefiltrering.
+- **Ingen interferens med andre netværksdrivere**: Da det er placeret over VPN, Firewall og antivirus, undgår WFP-filtre problemer med filterrækkefølge og kompatibilitetskonflikter, som er almindelige i WFP-stakken.
+- **Markant reduceret risiko for NETIO-relaterede BSOD'er**: SockFilter kører ikke inde i NETIO-pakkepipelinen, så den undgår de typiske nedbrudsscenarier, som skyldes, at WFP-callouts håndterer buffere, klassifikationsresultater eller pakkehukommelse forkert.
 
-When it comes to disadvantages, SockFilter driver sees only socket-level operations and does not capture traffic generated by other kernel drivers or components that bypass the standard Winsock API. From a low-level networking perspective, this can be viewed as a limitation, since the driver cannot access raw packets or inspect non-socket traffic. However, for an ad-blocking application, this behavior is not just acceptable but optimal. All relevant traffic from browsers and user-mode applications goes through standard sockets, and that’s exactly what we need to control. At the same time, ignoring low-level driver traffic removes unnecessary complexity, avoids compatibility issues, and keeps the system stable.
+Når det gælder ulemper, så ser SockFilter-driveren kun socket-niveauoperationer og opsnapper ikke trafik genereret af andre kernel-drivere eller komponenter, som omgår standard Winsock API'en. Fra et lavniveau-netværksperspektiv kan dette ses som en begrænsning, da driveren ikke kan tilgå rå pakker eller inspicere ikke-socket-trafik. Men for en adblocking-applikation er denne adfærd ikke blot acceptabel, men optimal. Al relevant trafik fra webbrowsere og applikationer i brugertilstand går igennem standard sockets, og det er præcis det, vi har brug for at have kontrol over. Samtidig fjerner ignorering af lavniveaudriver-traffik unødvendig kompleksitet, undgår kompatibilitetsproblemer og holder systemet stabilt.

@@ -3,18 +3,18 @@ title: Irritationsblokering
 sidebar_position: 3
 ---
 
-Annoyance filters are designed to improve website usability by blocking non-advertisement elements that distract from or interfere with site interaction or content consumption. These elements include modal windows, interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+Irritationsfiltre er designet til at forbedre brugervenligheden på websteder ved at blokere ikke-reklameelementer, som distraherer fra eller forstyrrer webstedets interaktion eller indholdsforbrug. Disse elementer omfatter interaktionsvinduer og -formularer, cookiesamtykkenotifikationer og forespørgsler, mobil-app-bannere og diverse widgets.
 
-These filters may contain rules that are not suitable for all users. Sometimes it is recommended to disable them. Beslutninger om at føje regler til dette filter træffes af filterudviklere på en regel-for-regel basis.
+Disse filtre kan indeholde regler, som ikke er egnede til alle brugere. Nogle gange anbefales det at deaktivere dem. Beslutninger om at føje regler til dette filter træffes af filterudviklere på en regel-for-regel basis.
 
-![Annoyance filters \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Irritationsfiltre \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
-**Block cookie notices** removes cookie consent banners on webpages.
+**Blokér cookie-meddelelser** fjerner cookie-samtykkebannere på websider.
 
-**Block mobile app banners** removes banners that promote mobile apps on websites.
+**Blokér mobil-app-bannere** fjerner bannere, som promoverer mobil-apps på websteder.
 
-**Block other annoyances** removes elements that do not fall under the popular categories of annoyances.
+**Blokér andre irritationer** fjerner elementer, som ikke falder ind under de populære irritationskategorier.
 
-**Block popups** removes all kinds of popups that are not necessary for websites’ operation.
+**Blokér pop op-vinduer** fjerner alle slags pop op'er, som ikke kræves for websteders drift.
 
-**Block widgets** removes online assistants, live support chats, and similar tools.
+**Blokér widgets** fjerner online-assistenter, live support chats o.lign. værktøjer.

@@ -5,59 +5,59 @@ sidebar_position: 8
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+AdGuard Browser Assistent muliggør håndtering af AdGuard-beskyttelse direkte fra webbrowseren.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![Assistent-vinduet \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## Sådan fungerer den
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+AdGuard Browser Assistent er en webbrowserudvidelse. Den muliggør hurtigt håndtering af AdGuard-appen:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Aktivere eller deaktivere beskyttelse for et bestemt websted (en kontakt under webstedsnavnet)
+- Pausere beskyttelsen i 30 sekunder
+- Deaktivere beskyttelse (pauseikonet øverste til højre)
+- Blokere en annonce manuelt
+- Åbne filtreringsloggen
+- Anmelde fejlagtig blokering
+- Åbne AdGuard-indstillingerne
+- Se webstedscertifikat og håndtere HTTPS-filtrering (låseikonet ved siden af webstedsnavnet)
 
-## How to install
+## Sådan installeres den
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+Når AdGuard til Mac installeres, foreslås også installation af Browser Assistent til standardwebbrowseren. Overspringes dette trin, kan den installeres senere.
 
-**From settings**:
+**Fra indstillinger**:
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. Åbn AdGuard-menuen.
+2. Klik på tandhjulsikonet og vælg _Præferencer_.
+3. Skift til fanen _Assistent_.
+4. Klik på _Hent udvidelsen_ ved siden af standardwebbrowseren.
+5. Installér Assistent fra webbrowserens udvidelsesbutik.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![Fanen Assistent](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**Fra webstedet**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Åbn [Assistent-siden](https://adguard.com/adguard-assistant/overview.html).
+2. Vælg _Installér_ under webbrowsernavnet.
+3. Installér Assistent fra webbrowserens udvidelsesbutik.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+I sjældne tilfælde kan en webbrowser være inkompatibel med Assistent. For at håndtere AdGuard fra webbrowseren kan den ældre Assistent installeres i stedet.
 
 :::
 
-## Legacy Assistant
+## Bagudkompatibel (Legacy) Assistent
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+Den ældre Assistent er den tidligere version af AdGuard Browser Assistent. Det er et brugerscript, der ikke kræver yderligere installation. Selvom den ældre assistent gør sit arbejde godt, har den flere ulemper:
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- Den har færre funktioner end udvidelsesversionen.
+- Der skal ventes på, at brugerscriptet indsættes på en webside — nogle gange indlæses det ikke med det samme.
+- Assistent-ikonet kan ikke skjules på siden.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Vi anbefale kun brug af den ældre Assistent, såfremt den nye Assistent er utilgængelig.

@@ -7,7 +7,7 @@ Belästigungsfilter wurden entwickelt, um die Benutzerfreundlichkeit von Website
 
 Diese Filter können Regeln enthalten, die nicht für alle geeignet sind. Manchmal ist es empfehlenswert, sie zu deaktivieren. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Entwicklern des Filters auf der Grundlage der einzelnen Regeln getroffen.
 
-![Annoyance filters \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
+![Filter gegen Belästigungen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
 **Cookies-Hinweise blockieren** entfernt Cookie-Einwilligungsbanner von Websites.
 

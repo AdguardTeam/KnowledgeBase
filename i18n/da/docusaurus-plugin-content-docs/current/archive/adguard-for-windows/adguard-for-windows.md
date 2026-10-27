@@ -19,7 +19,7 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 - [Browser Assistant](/archive/adguard-for-windows/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  En udvidelse, der supplerer computer-appen og muliggør håndtering af filtrering fra webbrowseren
 
 - [Solving problems](/archive/adguard-for-windows/solving-problems/solving-problems.md)
 

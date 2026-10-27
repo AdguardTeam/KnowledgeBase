@@ -5,7 +5,7 @@ sidebar_position: 6
 
 Es gibt mehrere Websites, auf die Kinder keinen Zugriff haben sollten. Die _Kindersicherung_ hilft Ihnen, dieses Problem zu lösen.
 
-![Parental control \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
+![Kindersicherung \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
 Wenn die _Kindersicherung_ aktiviert ist, scannt AdGuard den Inhalt von Webseiten und sperrt diejenigen, die für Kinder schädlich oder ungeeignet sein könnten. Dazu gehören Bilder und Texte für Erwachsene, vulgäre Sprache, Gewalt und drogenbezogene Inhalte.
 

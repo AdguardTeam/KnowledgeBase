@@ -7,9 +7,9 @@ sidebar_position: 5
 
 Das Abonnement kann in Ihrem AdGuard-Konto gekündigt werden. Um Ihr Abonnement zu kündigen:
 
- 1. Go to your [AdGuard account](https://adguardaccount.com).
+ 1. Öffnen Sie Ihr [AdGuard-Konto](https://adguardaccount.com).
  1. Wählen Sie *Lizenzen*.
- 1. Click *Cancel auto-renewal* below the subscription you no longer need. ![Abbrechen](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
+ 1. Klicken Sie unter dem Abonnement, das Sie nicht mehr benötigen, auf *Automatische Verlängerung kündigen*. ![Abbrechen](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub-upd.png)
 
  Das gekündigte Abonnement bleibt bis zu seinem Ablaufdatum gültig.
 

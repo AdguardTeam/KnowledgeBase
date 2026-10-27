@@ -16,3 +16,4 @@ Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení,
 - [Filtrování se neukončí, když je AdGuard Mini vypnutý](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
 - [Jak sbírat logy v AdGuard Mini pro Mac](/adguard-mini-for-mac/solving-problems/logs.md)
 - [AdGuard Mini nefunguje v soukromých kartách na macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)
+- [Why AdGuard Mini appears in Full Disk Access on macOS](/adguard-mini-for-mac/solving-problems/adguard-mini-in-full-disk-access.md)
