@@ -11,7 +11,7 @@ _Support_ section has helpful options in case you have a question or encounter a
 
   Answers to a lot of questions and problems can be found here
 
-- Report incorrect blocking
+- Anmelde fejlagtig blokering
 
   Takes you to the page where you can report a bug or a problem in details
 

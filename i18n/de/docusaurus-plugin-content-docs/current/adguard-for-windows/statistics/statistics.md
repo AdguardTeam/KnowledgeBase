@@ -5,7 +5,7 @@ sidebar_position: 1
 
 In _Statistiken_ erhalten Sie einen umfassenden Überblick über den Datenverkehr auf Ihrem Computer: Wie viele Anfragen werden an welche Unternehmen gesendet, wie viele Daten werden hoch- und heruntergeladen und welche Anfragen werden blockiert. Sie können die Statistiken für verschiedene Zeiträume einsehen: insgesamt, die letzten 14 Tage, die letzten 7 Tage, die letzten 24 Stunden und aufgeschlüsselt nach Werbung, Trackern oder Anfragen.
 
-![Customize stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
+![Statistiken anpassen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/statistics/stats.png)
 
 :::note
 

@@ -59,7 +59,7 @@ Indem Sie `true` festlegen, aktivieren Sie die Sperrprüfung von HTTPS-Zertifika
 
 #### `network.http.compress.body`
 
-Enables HTTP body compression after processing. CoreLibs, AdGuard’s filtering engine, will compress the HTTP response body before sending it with the original response algorithm (if supported) or with the default fallback algorithm (GZip). Responses from BrowserApi will also be encoded if this option is enabled.
+Aktiviert die HTTP-Body-Komprimierung nach der Verarbeitung. CoreLibs, die Filter-Engine von AdGuard, komprimiert den HTTP-Antworttext vor dem Versand entweder mit dem ursprünglichen Antwortalgorithmus (sofern unterstützt) oder mit dem Standard-Fallback-Algorithmus (GZip). Antworten von BrowserApi werden ebenfalls kodiert, wenn diese Option aktiviert ist.
 
 #### `network.tcp.keepalive.enabled`
 

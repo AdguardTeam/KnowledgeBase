@@ -5,36 +5,36 @@ sidebar_position: 3
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to open app settings
+## Sådan åbnes app-indstillinger
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+For at opsætte AdGuard til Mac, klik på tandhjulsikonet øverste til højre i hovedvinduet og vælg "Præferencer\*.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Hovedvindue \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
 ## Generelt
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![Generalt](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### Blokér ikke søgeannoncer og selvpromoverende annoncer på websteder
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+Denne funktion forhindrer AdGuard i at blokere [søgeannoncer og selvpromoveringer på websteder](/general/ad-filtering/search-ads). Dette kan f.eks. være nyttigt, når man handler online og ønsker at se rabatter fra nogle websteder. I stedet for at føje disse websteder til hvidlisten, kan selvpromoveringer og søgeannoncer undtages fra filtrering.
 
-### Activate language-specific filters automatically
+### Aktivér automatisk sprogspecifikke filtre
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Denne funktion detekterer sproget på det besøgte websted og aktiverer automatisk passende filtre for mere nøjagtig adblocking. Dette er især nyttigt, hvis der ofte skiftes sprog.
 
-### Launch AdGuard at login
+### Start AdGuard ved indlogning
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+Denne funktion starter automatisk AdGuard efter en computergenstart. Dette hjælper med at holde AdGuard-beskyttelse aktiv uden manuelt at skulle åbne appen.
 
-### Hide menu bar icon
+### Skjul menubjælkeikon
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+Denne funktion skjuler AdGuards ikon fra menubjælken, men holder AdGuard kørende i baggrunden. Ønskes AdGuard deaktiveret helt, klik på _Afslut AdGuard_ i hovedvinduemenuen.
 
-### Allowlist
+### Hvidliste
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Websteder tilføjet denne liste filtreres ikke. Hvidlistede websteder kan også tilgås via _Brugerregler_.

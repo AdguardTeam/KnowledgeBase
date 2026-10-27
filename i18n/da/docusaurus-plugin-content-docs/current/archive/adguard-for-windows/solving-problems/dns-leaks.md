@@ -1,5 +1,5 @@
 ---
-title: Possible DNS leaks
+title: Mulige DNS-lækager
 sidebar_position: 10
 ---
 
@@ -9,41 +9,41 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+AdGuard til Windows lader brugeren angive en anden DNS-serveradresse end system-DNS-serveren leveret af internetudbyderen, såfremt denne ikke tilsidesættes i systemindstillingerne. Brug af en ikke-standard DNS-server kan beskytte DNS-trafikken mod opsnapning fra internetudbyderen. Desuden opnås der ved valg af en krypteret og/eller filtrerende DNS-server endnu et lag af beskyttelse mod dårlige aktører og irriterende annoncer.
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by the default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Mange AdGuard til Windows-brugere sætter pris på DNS-beskyttelsesfunktionen. Nogle af dem støder dog på flg. problem: Et tjek på et websted såsom https://ipleak.net/ viser, at forespørgsler håndteres af standard DNS-serveren i stedet for den valgte. Denne artikel fortæller, hvorfor dette sker, og hvordan det undgås.
 
-## Bootstrap DNS address
+## Bootstrap DNS-adresse
 
-The DNS server addresses could be written as IPs or as domain names.
-In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+DNS-serveradresserne kan skrives som enten IP'er eller domænenavne.
+I tilfælde af IP-adresser er der ingen problemer, da AdGuard videresender DNS-forespørgslen direkte til den i DNS-beskyttelsesmodulet angivne server. Krypterede DNS-serveradresser, såsom DoT eller DoH, angives dog oftest som domænenavne. I så tilfælde, for først at opløse den krypterede DNS-serveradresse, sender AdGuard en DNS-forespørgsel til bootstrap-adressen, hvilket som standard er en system-DNS-server. Denne forbindelse er, hvad kontroltjenester opfatter som en lækage.
 
-**To eliminate this leak:**
+**For at fjerne denne lækage:**
 
-- go to the _Advanced settings_
-- scroll down to the _List of custom bootstrap addresses_ section
-- enter the custom bootstrap address in the IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-- click _Save_
+- gå til _Avancerede indstillinger_
+- rul ned til afsnittet _Liste over tilpassede bootstrap-adresser_
+- angiv den tilpassede bootstrap-adresse i IP-adresseformatet ([listen over kendte DNS-udbydere](https://adguard-dns.io/kb/general/dns-providers/) kan bruges)
+- klik på _Gem_
 
-## Fallback DNS server
+## Reserve-DNS-server
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+Grundet forskellige faktorer kan det ske, at AdGuard ikke vil kunne nå den angivne server. I så tilfælde opretter AdGuard forbindelse til reserveserveren, der som standard er en system-DNS-server. Denne forbindelse vil også af kontroltjenesten blive betragtet som en lækage.
 
-**To eliminate this leak:**
+**For at fjerne denne lækage:**
 
-- go to the _Advanced settings_
-- scroll down to the _Fallback servers_ section
-- check the _Use custom servers_ option
-- then find the _List of custom fallback servers_ section and enter the custom fallback servers one per line
+- gå til _Avancerede indstillinger_
+- rul ned til afsnittet _Reserveservere_
+- markér indstillingen _Brug tilpassede servere_
+- find dernæst afsnittet _Liste over tilpassede reserveservere_ og angiv de tilpassede reserveservere, én pr. linje
 
-or
+eller
 
-- go to the _Advanced settings_
-- scroll down to the _Fallback servers_ section
-- check the _Don’t use fallback servers_ option
+- gå til _Avancerede indstillinger_
+- rul ned til afsnittet _Reserveservere_
+- markér indstillingen _Brug ikke reserveservere_
 
-or
+eller
 
-- go to the _Advanced settings_
-- scroll down to the _DNS server timeout period_ section
-- enter an arbitrary large number
+- gå til _Avancerede indstillinger_
+- rul ned til afsnittet _DNS-server timeoutinterval_
+- angiv et vilkårligt stort tal

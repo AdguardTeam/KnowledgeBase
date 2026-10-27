@@ -3,40 +3,40 @@ title: DNS-beskyttelse
 sidebar_position: 4
 ---
 
-DNS protection gives you more control over how your device connects to the Internet. There are three main reasons why it can be useful:
+DNS-beskyttelse giver mere kontrol over, hvordan enheden opretter forbindelse til internet. Der er tre hovedårsager til, at det kan være nyttigt:
 
-## 1. Protect your privacy from your ISP
+## 1. Beskyttelse af fortroligheden overfor ISP'en
 
-Inden et websted kan tilgås, f.eks. `google.com`, sender webbrowseren en forespørgsel til en DNS-server for at få webstedets IP-adresse oplyst. Usually, the DNS server belongs to your ISP, which means they can track the websites you visit. If you switch to another DNS server, such as AdGuard DNS, your ISP no longer sees your online activity.
+Inden et websted kan tilgås, f.eks. `google.com`, sender webbrowseren en forespørgsel til en DNS-server for at få webstedets IP-adresse oplyst. Normalt tilhører DNS-serveren ISP'en, hvilket betyder, at denne kan spore de websteder, som besøges. Skifter til en anden DNS-server, såsom AdGuard DNS, kan ISP'en ikke længere se brugerens onlineaktivitet.
 
-## 2. Encrypt your DNS traffic
+## 2. Kryptering af DNS-trafik
 
-Modern protocols like DNS-over-TLS and DNS-over-HTTPS ensure that your DNS requests are encrypted. This protects them from being intercepted, modified, or spied on by attackers.
+Moderne protokoller, såsom DNS-over-TLS og DNS-over-HTTPS sikrer, at DNS-forespørgslerne krypteres. Dette beskytter dem mod at blive opsnappet, ændret eller overvåget af angribere.
 
-## 3. Block unwanted content at the DNS level
+## 3. Blokering af uønsket indhold på DNS-niveau
 
-DNS protection can filter out ads, trackers, phishing websites, and other harmful or annoying content before it even loads in your browser or apps. [Learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/)
+DNS-beskyttelse kan bortfiltrere annoncer, trackere, phishing-websteder og andet skadeligt eller irriterende indhold, før det overhovedet indlæses i webbrowseren eller i apps. [Læs mere om DNS-filtrering](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![DNS-beskyttelse \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
-Here’s what you can configure in DNS protection:
+Her er, hvad der kan opsættes i DNS-beskyttelse:
 
-## Choose a DNS server
+## Valg af DNS-server
 
-![DNS servers \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![DNS-servere \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
-You can select from multiple trusted DNS providers. AdGuard itself offers several options for different needs:
+Der kan vælges mellem flere betroede DNS-udbydere. AdGuard selv tilbyder flere valgmuligheder til forskellige behov:
 
-- AdGuard DNS — blocks ads and trackers.
+- AdGuard DNS — blokerer annoncer og trackere.
 
-- AdGuard DNS Family Protection — blocks ads, trackers, and adult content.
+- AdGuard DNS Family Protection — blokerer annoncer, trackere og voksenindhold.
 
-- AdGuard DNS Non-filtering — provides a secure and reliable connection without any filtering.
+- AdGuard DNS Non-filtering — leverer en sikker og pålidelig forbindelse uden nogen filtrering.
 
-You can use one of our public servers, add your own custom DNS server, or pick another trusted option from our [list of trusted DNS providers](https://adguard-dns.io/kb/general/dns-providers/).
+Der kan anvendes en af vores offentlige servere, tilføjes en egen tilpasset DNS-server eller vælges en anden pålidelig mulighed fra vores [liste over pålidelige DNS-udbydere](https://adguard-dns.io/kb/general/dns-providers/).
 
-## Add DNS filters and rules
+## Tilføjelse af DNS-filtre og -regler
 
-To fine-tune protection, you can create your own DNS filters using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) or import ready-made [DNS filters](https://filterlists.com).
+For at finjustere beskyttelsen kan der oprettes egne DNS-filtre ved brug af [DNS-regelsyntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/) eller impores færdiglavede [DNS-filtre](https://filterlists.com).
 
-In addition, you can create custom DNS rules to block, unblock, or redirect domains as needed. Use our built-in rule constructor.
+Derudover kan der oprettes tilpassede DNS-regler til at blokere, afblokere eller omdirigere domæner efter behov. Brug vores indbyggede regelkonstruktør.

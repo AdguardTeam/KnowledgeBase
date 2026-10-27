@@ -3,7 +3,7 @@ title: Filter-Editor
 sidebar_position: 2
 ---
 
-![Filter editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![Filter-Editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
 Mit dem Filter-Editor lassen sich Filter auf Regel-Ebene verwalten. Die Filter sind in thematische Kategorien unterteilt: _Werbeblockierung_, _Datenschutz_, _Sprachspezifische_, _Benutzerdefinierte_ und _Sonstiges_.
 

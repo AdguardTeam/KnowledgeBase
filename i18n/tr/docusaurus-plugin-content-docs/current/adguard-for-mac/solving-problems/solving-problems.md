@@ -23,3 +23,4 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 - [Setting up filtering in Tor Browser](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [Incompatibility with Screen Time](/adguard-for-mac/solving-problems/screen-time-issues.md)
 - [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)
+- [Why AdGuard appears in Full Disk Access on macOS](/adguard-for-mac/solving-problems/adguard-in-full-disk-access.md)

@@ -3,7 +3,7 @@ title: 라이선스를 활성화하는 방법
 sidebar_position: 3
 ---
 
-라이선스를 활성화하려면 AdGuard 제품의 *라이선스* 섹션으로 이동하여 *로그인* 필드 또는 *활성화* 버튼을 찾으세요. AdGuard 계정의 이메일과 비밀번호를 사용하여 로그인할 수 있습니다. If you don’t have an account yet, you will be offered to create one.
+라이선스를 활성화하려면 AdGuard 제품의 *라이선스* 섹션으로 이동하여 *로그인* 필드 또는 *활성화* 버튼을 찾으세요. AdGuard 계정의 이메일과 비밀번호를 사용하여 로그인할 수 있습니다. 아직 계정이 없는 경우, 계정을 만들라는 메시지가 표시됩니다.
 
 :::note
 
@@ -11,7 +11,7 @@ AdGuard 계정을 통해 라이선스를 활성화하기 위해서는 최소 하
 
 :::
 
-Alternatively, you can use a [license key (activation code)](../what-is#license-key) to activate the license.
+또는 [라이선스 키(활성화 코드)](../what-is#license-key)를 사용하여 라이선스를 활성화할 수 있습니다.
 
 **아래에서 각 플랫폼별 활성화 방법을 확인하실 수 있습니다.**
 

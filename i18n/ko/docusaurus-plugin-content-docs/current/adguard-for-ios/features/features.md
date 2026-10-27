@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [Safari 보호](/adguard-for-ios/features/safari-protection.md)
 
-  Available features and settings in the _Safari protection_ tab: _Filters_, _User rules_, and _Allowlist_
+  **Safari 보호** 탭에서 **필터**, **사용자 규칙**, **허용 목록**과 같은 기능 및 설정을 사용할 수 있습니다.
 
 - [DNS 보호](/adguard-for-ios/features/dns-protection/)
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 - [다른 기능](/adguard-for-ios/features/other-features.md)
 
-  General settings: theme, settings and statistics reset, auto-update, inverting the allowlist, and advanced mode.
+  일반 설정: 테마, 설정 및 통계 초기화, 자동 업데이트, 허용 목록 반전, 고급 모드.
 
 - [AdGuard VPN과의 호환성](/adguard-for-ios/features/compatibility-with-adguard-vpn.md)
 

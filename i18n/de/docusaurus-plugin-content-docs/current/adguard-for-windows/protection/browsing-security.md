@@ -11,7 +11,7 @@ Es wird nicht verhindert, dass ein bereits heruntergeladener Virus ausgeführt w
 
 Weitere Informationen zur Funktionsweise dieses Schutzes finden Sie in unserem Artikel [Schutz vor Phishing und Malware](/general/browsing-security).
 
-![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
+![Sicherheit beim Surfen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
 Im Abschnitt _Internetsicherheit_ können Sie:
 

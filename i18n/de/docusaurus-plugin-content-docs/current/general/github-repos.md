@@ -1,238 +1,238 @@
 ---
-title: AdGuard’s GitHub repositories
+title: GitHub-Repositorys von AdGuard
 sidebar_position: 9
 ---
 
-At AdGuard, our goal is to make the Internet safer, more comfortable, and more transparent. This commitment is reflected not only in our product features and strict privacy policies, but also in the fact that we keep our work as open as possible. That includes actively interacting with our community.
+AdGuard verfolgt das Ziel, das Internet sicherer, komfortabler und transparenter zu gestalten. Dieses Engagement zeigt sich nicht nur in unseren Produktfunktionen und strengen Datenschutzrichtlinien, sondern auch darin, dass wir unsere Arbeit so transparent wie möglich gestalten. Dazu gehört auch, aktiv mit unserer Community zu interagieren.
 
-This is why [all of our products have public repositories](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse) — online spaces where anybody can see what we are working on, report issues directly to AdGuard developers, and even contribute to our open-source projects. The repositories cover our ad-blocking apps, filters, browser extensions, DNS solutions, VPN tools, developer utilities, and more. There are different platforms that offer such functionality, but the most popular one by far is GitHub, and all AdGuard projects are stored there.
+Aus diesem Grund verfügen [alle unsere Produkte über öffentliche Repositorys](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse) – Online-Plattformen, auf denen jeder sehen kann, woran wir gerade arbeiten, Probleme direkt an die AdGuard-Entwickler melden und sogar zu unseren Open-Source-Projekten beitragen kann. Die Repositorys umfassen unsere Werbeblocker-Apps, Filter, Browser-Erweiterungen, DNS-Lösungen, VPN-Tools, Entwickler-Dienstprogramme und vieles mehr. Es gibt verschiedene Plattformen, die solche Funktionen bieten, doch die mit Abstand beliebteste ist GitHub, und alle AdGuard-Projekte werden dort bereitgestellt.
 
-This article lists the most important repositories by category, summarizes the purpose of each one, and gives a simple breakdown of what users can do there.
+Dieser Artikel listet die wichtigsten Repositories nach Kategorien auf, fasst den Zweck jedes einzelnen zusammen und gibt einen kurzen Überblick darüber, was Nutzer dort tun können.
 
 :::tip
 
-Pro tip: Creating an issue on GitHub is the most effective way to bring the attention of AdGuard developers to a problem. Just make sure to check that a similar issue doesn’t already exist and describe the problem in a comprehensive but concise way. If it does exist, you can upvote it.
+Profi-Tipp: Ein Issue (Fehlerbericht) auf GitHub zu erstellen ist der effektivste Weg, um die AdGuard-Entwickler auf ein Problem aufmerksam zu machen. Vergewissern Sie sich zunächst, dass nicht bereits ein ähnlicher Issue existiert, und beschreiben Sie das Problem ausführlich, aber prägnant. Falls bereits ein ähnlicher Issue existiert, können Sie dafür stimmen.
 
 :::
 
-## What is Github and its repositories
+## Was ist GitHub und was sind Repositorys
 
-Very simply put, you can think of GitHub as sort of Google Docs for code, where multiple people can work on the same project, track changes, and see who made which updates. It provides a central, cloud-based place to store your code so it’s accessible from anywhere. It also has teamwork tools for reviewing changes, fixing issues, and merging everyone’s work smoothly.
+Vereinfacht gesagt können Sie sich GitHub wie Google Docs für Code vorstellen: Mehrere Personen können am selben Projekt arbeiten, Änderungen nachverfolgen und sehen, wer welche Anpassungen vorgenommen hat. Es bietet einen zentralen, cloudbasierten Ort zur Speicherung Ihres Codes, sodass dieser von überall aus zugänglich ist. Außerdem bietet es Werkzeuge für die Teamarbeit, mit denen Änderungen überprüft, Probleme behoben und die Beiträge aller Beteiligten reibungslos zusammengeführt werden können.
 
-GitHub is widely used for open-source projects, letting anyone view the code, suggest improvements, and contribute.
+GitHub wird häufig für Open-Source-Projekte genutzt und ermöglicht es jedem, den Code einzusehen, Verbesserungsvorschläge einzureichen und mitzuwirken.
 
-A repository (often called “repo” for short) is the most basic element of GitHub. It’s a place where you can store your code, your files, and each file’s revision history. Repositories can have multiple collaborators and can be either public or private.
+Ein Repository (oft kurz „Repo“ genannt) ist das grundlegendste Element von GitHub. Hier können Sie Ihren Code, Ihre Dateien und den Versionsverlauf jeder Datei speichern. Repositorys können mehrere Mitwirkende umfassen und entweder öffentlich oder privat zugänglich sein.
 
-## What can you do in AdGuard’s repositories
+## Was können Sie in den Repositorys von AdGuard tun
 
-You can find links to key repositories below in this article or visit the [general AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all) for a full list. In most repos, you can:
+Weiter unten in diesem Artikel finden Sie Links zu den wichtigsten Repositorys. Eine vollständige Liste ist auf der [allgemeinen GitHub-Seite des AdGuard-Teams](https://github.com/orgs/AdguardTeam/repositories?type=all) verfügbar. In den meisten Repositories können Sie:
 
-- **View README file** on the main page: it gives you an introduction to the product and its repo
-  ![README file \*border](https://cdn.adtidy.org/content/blog/github-repos/see-readme.png)
+- **README-Datei anzeigen** auf der Hauptseite: Dort finden Sie eine Einführung in das Produkt und sein Repository
+  ![README-Datei \*border](https://cdn.adtidy.org/content/blog/github-repos/see-readme.png)
 
-- **Check existing bug reports or feature requests**, comment and upvote
-  ![Check issues \*border](https://cdn.adtidy.org/content/blog/github-repos/check-issues.png)
+- **Überprüfen Sie vorhandene Fehlerberichte oder Funktionsanfragen**, kommentieren Sie diese und stimmen Sie dafür
+  ![Issues überprüfen \*border](https://cdn.adtidy.org/content/blog/github-repos/check-issues.png)
 
-- **Create issues** to report bugs or request features
-  ![Create issues \*border](https://cdn.adtidy.org/content/blog/github-repos/create-issue.png)
+- **Erstellen Sie Issues**, um Fehler zu melden oder neue Funktionen vorzuschlagen
+  ![Issues erstellen \*border](https://cdn.adtidy.org/content/blog/github-repos/create-issue.png)
 
-- **Check releases** for different versions and their changelogs (and install an older version if needed)
-  ![Check releases \*border](https://cdn.adtidy.org/content/blog/github-repos/check-releases.png)
+- **Überprüfen Sie Veröffentlichungen** für verschiedene Versionen und deren Änderungsprotokolle (und installieren Sie bei Bedarf eine ältere Version)
+  ![Veröffentlichungen überprüfen \*border](https://cdn.adtidy.org/content/blog/github-repos/check-releases.png)
 
-- **Install any older or beta version** if needed
-  ![Download builds \*border](https://cdn.adtidy.org/content/blog/github-repos/download-releases.png)
+- **Installieren Sie bei Bedarf eine ältere oder Beta-Version**
+  ![Builds herunterladen \*border](https://cdn.adtidy.org/content/blog/github-repos/download-releases.png)
 
 :::note
 
-If you are new to GitHub, you’ll need to create a GitHub account in order to create new issues and comment on the existing ones.
+Wenn Sie GitHub noch nicht kennen, müssen Sie ein GitHub-Konto erstellen, um neue Tickets zu erstellen und bestehende zu kommentieren.
 
 :::
 
-In open-source repos advanced users can also:
+In Open-Source-Repositorys können erfahrenere Benutzer außerdem:
 
-- **Browse code** to understand product logic, what technologies are used and how they are implemented
-- **Fork and contribute** via pull requests
+- **Den Code durchsuchen**, um die Produktlogik zu verstehen, welche Technologien zum Einsatz kommen und wie diese implementiert sind
+- **Erstellen Sie Forks und beteiligen Sie sich** mit Pull Requests
 
-Whether you’re a casual user, technical expert, or a developer, AdGuard welcomes all community participation across its GitHub repos.
+Ganz gleich, ob Sie Gelegenheitsnutzer, technischer Experte oder Entwickler sind – AdGuard freut sich über jede Art von Beteiligung an seinen GitHub-Repos.
 
-## Legal documents
+## Rechtliche Dokumente
 
 ### [LegalDocs](https://github.com/AdguardTeam/LegalDocs)
 
-As part of our commitment to transparency, we host all legal documents — such as End-User License Agreements, Privacy Policies, and Terms and Conditions — on GitHub. Our _LegalDocs_ repo lets anyone check the full history of changes to these documents.
+Im Rahmen unseres Bekenntnisses zur Transparenz veröffentlichen wir alle rechtlichen Dokumente – wie Endbenutzer-Lizenzvereinbarungen, Datenschutzerklärungen und Allgemeine Geschäftsbedingungen – auf GitHub. In unserem _LegalDocs_-Repository kann jeder den vollständigen Änderungsverlauf dieser Dokumente einsehen.
 
-## AdGuard Ad Blocker products
+## AdGuard-Werbeblocker-Produkte
 
-In these repositories, users can:
+In diesen Repositorys können Benutzer:
 
-- View and report bugs or feature requests via GitHub issues
-- Check changelogs, track release history, monitor updates
-- Download latest, previous, and beta builds (except for iOS)
+- Anzeigen und Melden von Fehlern oder Funktionsanfragen über GitHub-Issues
+- Änderungsprotokolle prüfen, Versionshistorie verfolgen, Updates überwachen
+- Herunterladen der neuesten, vorherigen und Beta-Versionen (außer für iOS)
 
 ### [AdguardForAndroid](https://github.com/AdguardTeam/AdguardForAndroid)
 
-Repository of AdGuard for Android — an app that provides system-wide ad blocking.
+Repository von AdGuard für Android – eine App, die systemweite Werbeblockierung bietet.
 
 ### [AdguardForiOS](https://github.com/AdguardTeam/AdguardForiOS)
 
-Repository of AdGuard for iOS — Safari content blocker with DNS and custom filters. Users can also check open-source code.
+Repository von AdGuard für iOS – Safari-Inhaltsblocker mit DNS- und benutzerdefinierten Filtern. Benutzer können zudem den Open-Source-Code einsehen.
 
 ### [AdguardForWindows](https://github.com/AdguardTeam/AdguardForWindows)
 
-Repository of AdGuard for Windows. Non-open-source; GitHub used as an open bug tracker.
+Repository von AdGuard für Windows. Nicht quelloffen; GitHub wird als offener Bug-Tracker genutzt.
 
 ### [AdguardForMac](https://github.com/AdguardTeam/AdguardForMac)
 
-Repository of AdGuard for Mac — macOS standalone content blocker. Bug tracker only.
+Repository von AdGuard für Mac – eigenständiger Inhaltsblocker für macOS. Nur Bug-Tracker.
 
 ### [AdguardBrowserExtension](https://github.com/AdguardTeam/AdguardBrowserExtension)
 
-Repository of AdGuard Browser Extension — extension that provides ad blocking with enhanced privacy for Chrome, Firefox, Opera, Edge.
+Repository der AdGuard-Browsererweiterung – eine Erweiterung, die Werbeblocker-Funktionen mit verbessertem Datenschutz für Chrome, Firefox, Opera und Edge bietet.
 
 ### [AdguardForSafari](https://github.com/AdguardTeam/AdGuardForSafari)
 
-Repository of AdGuard for Safari — Safari ad blocking extension for Mac. Users can also check open-sourced code.
+Repository von AdGuard für Safari – Erweiterung zur Werbeblockierung für Safari auf dem Mac. Benutzer können zudem den Open-Source-Code einsehen.
 
 ### [AdGuardCLI](https://github.com/AdguardTeam/AdGuardCLI)
 
-Repository of AdGuard for Linux — a command‑line interface for managing ad blocking.
+Repository von AdGuard für Linux – eine Befehlszeilenschnittstelle zur Verwaltung der Werbeblockierung.
 
-## AdGuard VPN products
+## AdGuard VPN-Produkte
 
-In these repositories, users can:
+In diesen Repositorys können Benutzer:
 
-- View and report bugs or feature requests via GitHub issues
-- Check changelogs, track release history, monitor updates
-- Download latest, previous, and beta builds (except for iOS)
+- Anzeigen und Melden von Fehlern oder Funktionsanfragen über GitHub-Issues
+- Änderungsprotokolle prüfen, Versionshistorie verfolgen, Updates überwachen
+- Herunterladen der neuesten, vorherigen und Beta-Versionen (außer für iOS)
 
 ### [AdGuardVPNForiOS](https://github.com/AdguardTeam/AdGuardVPNForiOS)
 
-Repository of AdGuard VPN for iOS. Serves as an open bug tracker.
+Repository von AdGuard VPN für iOS. Dient als offener Bug-Tracker.
 
 ### [AdGuardVPNForAndroid](https://github.com/AdguardTeam/AdGuardVPNForAndroid)
 
-Repository of AdGuard VPN for Android. Serves as an open bug tracker.
+Repository von AdGuard VPN für Android. Dient als offener Bug-Tracker.
 
 ### [AdGuardVPNForWindows](https://github.com/AdguardTeam/AdGuardVPNForWindows)
 
-Repository of AdGuard VPN for Windows. Serves as an open bug tracker.
+Repository von AdGuard VPN für Windows. Dient als offener Bug-Tracker.
 
 ### [AdGuardVPNForMac](https://github.com/AdguardTeam/AdGuardVPNForMac)
 
-Repository of AdGuard VPN for Mac — app designed for macOS.
+Repository von AdGuard VPN für Mac – eine für macOS entwickelte App.
 
 ### [AdGuardVPNExtension](https://github.com/AdguardTeam/AdGuardVPNExtension)
 
-Repository of AdGuard VPN Browser Extension.
+Repository der AdGuard VPN-Browsererweiterung.
 
 ### [AdGuardVPNCLI](https://github.com/AdguardTeam/AdGuardVPNCLI)
 
-Repository of AdGuard VPN for Linux — a command‑line interface for managing VPN connection. The repo acts as a bug tracker.
+Repository von AdGuard VPN für Linux – eine Befehlszeilenschnittstelle zur Verwaltung von VPN-Verbindungen. Dieses Repo dient als Bug-Tracker.
 
-## DNS-based products
+## DNS-basierte Produkte
 
 ### [AdGuardDNS](https://github.com/AdguardTeam/AdGuardDNS)
 
-Open-source repository that is also used for tracking bugs and issues related to AdGuard DNS service. Users can:
+Ein Open-Source-Repository, das auch zur Erfassung von Fehlern und Problemen im Zusammenhang mit dem AdGuard DNS-Dienst genutzt wird. Nutzer können:
 
-- View and report DNS issues
-- Suggest improvements
+- DNS-Probleme anzeigen und melden
+- Verbesserungen vorschlagen
 
 ### [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)
 
-Repository of AdGuard Home — free network-wide software for blocking ads and trackers via DNS. Users can:
+Repository von AdGuard Home – kostenlose, netzwerkweite Software zum Sperren von Werbung und Trackern über DNS. Nutzer können:
 
-- Check and file bug reports or feature requests
-- Review or contribute to code
-- Download and install releases
+- Fehlerberichte oder Funktionswünsche prüfen und einreichen
+- Code prüfen oder an seiner Entwicklung mitwirken
+- Versionen herunterladen und installieren
 
-## Documentation and Knowledge bases
+## Dokumentation und Wissensdatenbanken
 
-Knowledge bases are aimed to help users better understand and use AdGuard. They describe each AdGuard product in detail: from feature overviews and problem-solving guides to advanced setting manuals and API documentations. In the repositories users can:
+Wissensdatenbanken sollen den Benutzern helfen, AdGuard besser zu verstehen und zu nutzen. Sie beschreiben jedes AdGuard-Produkt ausführlich: von Funktionsübersichten und Anleitungen zur Problemlösung bis hin zu Handbüchern für erweiterte Einstellungen und API-Dokumentationen. In den Repositories können Benutzer:
 
-- Suggest corrections or edits to knowledge base articles
-- Propose new articles
-- Test or run the local version
+- Korrekturen oder Änderungen an Artikeln in der Wissensdatenbank vorschlagen
+- Neue Artikel vorschlagen
+- Lokale Version testen oder ausführen
 
 ### [KnowledgeBase](https://github.com/AdguardTeam/KnowledgeBase)
 
-Central documentation for AdGuard Ad Blocker and the technologies related to it.
+Zentrale Dokumentation für den AdGuard Werbeblocker und die damit verbundenen Technologien.
 
 ### [KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS)
 
-Detailed feature overview, troubleshooting guides and documentation for AdGuard DNS (both Public and Private), AdGuard Home, and everything related to them.
+Ausführliche Funktionsübersicht, Anleitungen zur Fehlerbehebung und Dokumentation zu AdGuard DNS (öffentlich und privat), AdGuard Home und allen damit verbundenen Themen.
 
 ### [KnowledgeBaseVPN](https://github.com/AdguardTeam/KnowledgeBaseVPN)
 
-Detailed feature overview and troubleshooting guides for AdGuard VPN.
+Ausführliche Funktionsübersicht und Anleitungen zur Fehlerbehebung für AdGuard VPN.
 
 ### [KnowledgeBaseMail](https://github.com/AdguardTeam/KnowledgeBaseMail)
 
-Detailed feature overview and troubleshooting guides of AdGuard Mail.
+Ausführliche Funktionsübersicht und Anleitungen zur Fehlerbehebung für AdGuard Mail.
 
-## Core libraries
+## Core-Bibliotheken
 
 ### [CoreLibs](https://github.com/AdguardTeam/CoreLibs)
 
-AdGuard’s cross-platform core filtering engine. Used in Android, Windows, and Mac products. Users can:
+Die plattformübergreifende Core-Filter-Engine von AdGuard. Wird in Android-, Windows- und Mac-Produkten verwendet. Nutzer können:
 
-- Explore filtering logic and DNS handling
-- Report bugs and suggest features via Issues
+- Filterlogik und DNS-Verarbeitung erkunden
+- Über Issues Fehler melden und neue Funktionen vorschlagen
 
 ### [DNSLibs](https://github.com/AdguardTeam/DNSLibs)
 
-A DNS library used by CoreLibs and AdGuardHome. Users can:
+Eine DNS-Bibliothek, die von CoreLibs und AdGuard Home verwendet wird. Nutzer können:
 
-- Review and contribute to low-level DNS implementation
-- Suggest optimizations
+- Die Implementierung der DNS-Funktionen auf niedriger Ebene prüfen und an ihrer Entwicklung mitwirken
+- Optimierungen vorschlagen
 
 ### [VPNLibs](https://github.com/AdguardTeam/VPNLibs)
 
-Shared codebase used in AdGuard VPN products across platforms for AdGuard VPN protocol implementation. Users can:
+Gemeinsame Codebasis, die in AdGuard-VPN-Produkten plattformübergreifend für die Implementierung des AdGuard-VPN-Protokolls verwendet wird. Nutzer können:
 
-- Contribute to VPN stack behavior
-- Report or view performance issues and bugs
+- Zum Verhalten des VPN-Stacks beitragen
+- Leistungsprobleme und Fehler melden oder anzeigen
 
-## Core ad blocking and filtering technologies
+## Kerntechnologien für Werbeblocker und Filter
 
 ### [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters)
 
-Contains AdGuard’s core filter lists. Users can:
+Enthält die Kernfilterlisten von AdGuard. Nutzer können:
 
-- View and download filter lists
-- Create issues to report false positives or suggest new rules
-- Monitor updates to filter logic
+- Filterlisten anzeigen und herunterladen
+- Tickets erstellen, um Fehlalarme zu melden oder neue Filterregeln vorzuschlagen
+- Änderungen an der Filterlogik überwachen
 
 ### [AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 
-Repository of AdGuard DNS filter — the main DNS-level blocking list used in AdGuard DNS and DNS filtering features. Users can:
+Repository des AdGuard DNS-Filters — die wichtigste Sperrliste auf DNS-Ebene, die in AdGuard DNS und den DNS-Filterfunktionen verwendet wird. Nutzer können:
 
-- Inspect the current rule set
-- Propose changes or additions
+- Den aktuellen Regelsatz untersuchen
+- Änderungen oder Ergänzungen vorschlagen
 
 ### [AGLint](https://github.com/AdguardTeam/AGLint)
 
-A linter for adblock filter list syntax. Users can:
+Ein Linter für die Syntax von Adblock-Filterlisten. Nutzer können:
 
-- Install AGLint to check their projects for rule issues
-- Contribute to lint rules
+- AGLint installieren, um Projekte auf Probleme mit Filterregeln zu prüfen
+- Zu den Regeln für die Syntaxprüfung beitragen
 
 ### [Scriptlets](https://github.com/AdguardTeam/Scriptlets)
 
-JavaScript helpers used in filtering rules. Users can:
+In Filterregeln verwendete JavaScript-Hilfsfunktionen. Nutzer können:
 
-- Explore available scriptlets
-- Submit pull requests for new scriptlets
+- Verfügbare Scriptlets erkunden
+- Pull Requests für neue Scriptlets einreichen
 
 ### [tsurlfilter](https://github.com/AdguardTeam/tsurlfilter)
 
-TypeScript content blocker library for browser extensions. Users can:
+TypeScript-Bibliothek zur Inhaltsblockierung in Browsererweiterungen. Nutzer können:
 
-- Explore how filtering logic is implemented
-- Contribute fixes and features
+- Erkunden, wie die Filterlogik umgesetzt wird
+- Korrekturen und Funktionen einbringen
 
-## There’s more
+## Das ist noch nicht alles
 
-Above, we listed 27 main public AdGuard repositories out of 96 total. If you want to go down the rabbit hole, you can [find the rest on the AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
+Oben haben wir 27 der insgesamt 96 öffentlichen AdGuard-Repositorys aufgelistet. Wenn Sie tiefer einsteigen möchten, [finden Sie die übrigen Repositorys auf der GitHub-Seite des AdGuard-Teams](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
 
-We’ll be waiting for your feedback there! Stay safe online and offline.
+Wir freuen uns dort auf Ihr Feedback! Achten Sie auf Ihre Sicherheit – online und offline.
