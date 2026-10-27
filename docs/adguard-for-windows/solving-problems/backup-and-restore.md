@@ -1,6 +1,6 @@
 ---
 title: How to back up and restore AdGuard settings
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
