@@ -1,20 +1,20 @@
 ---
-title: How to install AdGuard on macOS High Sierra and above
+title: Sådan installeres AdGuard på macOS High Sierra og senere
 sidebar_position: 3
 ---
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-During the installation of AdGuard on macOS High Sierra (or later), you may receive the message "System Extension Blocked". This is a new security mechanism introduced in High Sierra that requires you to explicitly allow the installation of a third-party system extension.
+Under installationen af AdGuard på macOS High Sierra (eller senere) ses muligvis meddelelsen: "Systemudvidelse blokeret". Dette er en ny sikkerhedsmekanisme — introduceret i High Sierra —, der kræver udtrykkelig tilladelse ved installationen af en tredjeparts systemudvidelse.
 
-To complete the installation of AdGuard you have to manually allow loading the extension by clicking the "Allow" button in *System Preferences* → *Security & Privacy* → *General*.
+For at fuldføre installationen af AdGuard skal indlæsning af udvidelsen tillades manuelt ved at klikke på knappen "Tillad" i *Systempræferencer* → *Sikkerhed og Fortrolighed* → *Generelt*.
 
-On macOS Sequoia, you can do it in *System Preferences* → *Security & Privacy* → *General* → *Login Items & Extensions*. Once there, click the "i" icon next to *Network Extensions* and toggle the AdGuard option.
+På macOS Sequoia kan dette gøres via *Systempræferencer* → *Sikkerhed og Fortrolighed* → *Generel* → *Login-emner og Udvidelser*. Klik herfra på ikonet "i" ved siden af *Netværksudvidelser* og skift AdGuard-indstillingsvalgmuligheden.
 
-![Allow extension installation in settings](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
+![Tillad udvidelsesinstallation i Indstillinger](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/highsierra.png)
 
-After that you will be able to proceed with the installation as usual.
+Herefter vil installationen kunne fortsættes som normalt.

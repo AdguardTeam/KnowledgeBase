@@ -20,7 +20,7 @@ In some cases, filtering may not work and ads may still be displayed even though
    ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Restart Safari.
 6. Return to _Settings..._ → _Extensions_ and re-enable the content-blocking extensions.
-7. Open AdGuard for Safari app.
+7. Åbn AdGuard til Safari-appen.
 8. Go to _Filters_.
 9. Click _Check for updates_.
 10. Do not close the AdGuard for Safari window until the filters are updated.

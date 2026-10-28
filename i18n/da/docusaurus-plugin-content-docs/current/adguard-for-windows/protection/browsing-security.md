@@ -3,18 +3,18 @@ title: Browsingsikkerhed
 sidebar_position: 5
 ---
 
-_Browsing security_ offers strong protection against harmful websites and phishing attempts.
+_Browsingsikkerhed_ giver stærk beskyttelse mod skadelige websteder og phishing-forsøg.
 
-While AdGuard for Windows is not an antivirus, it does provide essential security by warning you before visiting untrusted sites or downloading potentially dangerous files.
+Selvom AdGuard til Windows ikke er et antivirusprogram, giver det essentiel sikkerhed ved at advare brugeren, inden upålidelige websteder besøges eller potentielt farlige filer downloades.
 
-It won’t stop a virus that is already being downloaded, and it won’t remove existing malware. But it will block access to websites that are marked as unsafe, helping you avoid threats in the first place.
+Den stopper ikke en virus, der allerede downloades, og den fjerner ikke eksisterende malware. Den vil dog blokere adgangen til websteder, som er mærket som usikre, hvilket indledningsvis bidrager til at undgå trusler.
 
-For more details about how this protection works, see our article [Phishing and malware protection](/general/browsing-security).
+For flere oplysninger om, hvordan denne beskyttelse fungerer, se vores artikel [Phishing- og malware-beskyttelse](/general/browsing-security).
 
-![Browsing security \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
+![Browsingsikkerhed \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/browsing.png)
 
-In the _Browsing security_ section, you can:
+I afsnittet _Browsingsikkerhed_ er det muligt at:
 
-- turn on notifications about blocked malicious and phishing websites;
-- enable sound alerts;
-- allow anonymous security security-related data to be sent to AdGuard, which helps us keep our database of harmful websites up to date.
+- slå notifikationer til om blokerede, skadelige og phishing-websteder;
+- slå lydalarmer til;
+- tillade, at anonyme sikkerhedsrelaterede data indsendes til AdGuard, hvilket hjælper os med at holde vores database over skadelige websteder opdateret.

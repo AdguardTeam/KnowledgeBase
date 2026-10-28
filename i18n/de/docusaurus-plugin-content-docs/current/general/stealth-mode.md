@@ -131,7 +131,7 @@ Das Aktivieren dieser Option kann die Funktion bestimmter Browseranwendungen bee
 
 :::note
 
-In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+In der AdGuard-Browsererweiterung gilt *WebRTC sperren* für alle Websites und lässt sich nicht für einzelne Websites steuern. Ausnahmeregeln wie `@@||example.com^$stealth=webrtc` werden nicht unterstützt. Für die WebRTC-Steuerung auf einzelnen Websites nutzen Sie bitte die vollwertige AdGuard-App für Windows, Mac oder Android.
 
 :::
 

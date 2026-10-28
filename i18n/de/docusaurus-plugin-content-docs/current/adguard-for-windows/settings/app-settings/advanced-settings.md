@@ -89,7 +89,7 @@ Geben Sie an, wie lange (in Millisekunden) AdGuard auf eine DNS-Antwort warten s
 
 ## Benutzerdefinierte Bootstrap-Adressen
 
-Ein Bootstrap ist ein zwischengeschalteter DNS-Server, der dazu dient, die IP-Adresse des sicheren DNS-Servers zu ermitteln, den Sie zuvor im DNS-Schutz ausgewählt haben. Ein solcher „Mittelweg“ ist erforderlich, wenn Protokolle verwendet werden, die die Serveradresse durch Buchstaben bezeichnen (wie beispielsweise DNS-over-TLS). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+Ein Bootstrap ist ein zwischengeschalteter DNS-Server, der dazu dient, die IP-Adresse des sicheren DNS-Servers zu ermitteln, den Sie zuvor im DNS-Schutz ausgewählt haben. Ein solcher „Mittelweg“ ist erforderlich, wenn Protokolle verwendet werden, die die Serveradresse durch Buchstaben bezeichnen (wie beispielsweise DNS-over-TLS). In diesem Fall fungiert der Bootstrap als Übersetzer, der die Buchstaben in Zahlen umwandelt, die Ihr System verstehen kann.
 
 Bei Bedarf können Sie hier jedoch verschiedene IP-Adressen angeben — diese werden dann in der Reihenfolge von oben nach unten durchprobiert. Wenn keine davon funktioniert oder nichts eingegeben wird, greift AdGuard auf die Systemstandardwerte zurück.
 

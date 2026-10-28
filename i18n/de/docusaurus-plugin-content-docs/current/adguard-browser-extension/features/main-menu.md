@@ -5,20 +5,20 @@ sidebar_position: 1
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard-Browsererweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-The extension’s main page can be accessed by clicking its icon on your browser’s toolbar.
+Sie können die Hauptseite der Erweiterung aufrufen, indem Sie auf das Erweiterungssymbol in der Symbolleiste Ihres Browsers klicken.
 
-![Main menu \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
+![Hauptmenü \*mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/main_popup_mv2.png)
 
-From the main page, you can manage your protection and access key features:
+Auf der Startseite können Sie Ihren Schutz verwalten und auf wichtige Funktionen zugreifen:
 
-- Manually hide any element on a webpage (a custom rule will be automatically added to your _User rules_)
-- Open _Filtering log_ to view detailed information about your browser’s traffic and block requests on the fly
-- Submit a complaint about missed ads or broken page elements so our filter engineers can review and fix the issue
-- Check a website’s security report
-- See statistics on all blocked elements
+- Beliebige Elemente auf einer Webseite manuell ausblenden (eine benutzerdefinierte Regel wird automatisch zu Ihren _Benutzerregeln_ hinzugefügt)
+- _Filterungsprotokoll_ öffnen, um detaillierte Informationen zum Datenverkehr Ihres Browsers anzuzeigen und Anfragen sofort zu blockieren
+- Nicht blockierte Werbung oder fehlerhafte Seitenelemente melden, damit unsere Filterentwickler das Problem prüfen und beheben können
+- Prüfen des Sicherheitsberichts einer Website
+- Anzeigen von Statistiken aller blockierten Elemente
 
-By clicking the icons in the top-right corner of the extension’s main menu, you can manually update filters, pause protection, or open the extension settings.
+Über die Symbole oben rechts im Hauptmenü der Erweiterung können Sie die Filter manuell aktualisieren, den Schutz anhalten oder die Einstellungen der Erweiterung öffnen.

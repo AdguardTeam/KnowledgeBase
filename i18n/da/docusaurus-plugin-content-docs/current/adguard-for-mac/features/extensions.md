@@ -5,29 +5,29 @@ sidebar_position: 9
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+AdGuard muliggør installation af udvidelser eller userscripts for at udvide webbrowserfunktionaliteten. AdGuard kan fungere som userscript-håndtering på tværs af webbrowsere: Det er ikke nødvendigt at installere det samme userscript i hver webbrowser.
 
-Some userscripts are pre-installed, others can be installed manually.
+Visse userscripts er præinstallerede, andre kan installeres manuelt.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
+![Udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## AdGuard Assistent (ældre version)
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+Dette userscript muliggør håndtering af AdGuard-beskyttelse direkte fra webbrowseren. Den [nye assistent](/adguard-for-mac/features/browser-assistant) er en webbrowserudvidelse, der kan installeres fra webbrowserens butik, mens den ældre assistent et userscript, der ikke kræver yderligere installation. Visse funktioner er fælles for begge assistenter:
 
-- Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- Aktivere eller deaktivere beskyttelse for et bestemt websted
+- Pausere beskyttelsen i 30 sekunder
+- Blokere en annonce manuelt
+- Anmelde fejlagtig blokering
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Den nye Assistent er dog mere avanceret. Den muliggør også håndtering af AdGuard-beskyttelse for alle websteder, tjek af webstedscertifikat, håndtering af HTTPS-filtrering og åbning af filtreringsloggen eller app-indstillingerne. Vi anbefale kun brug af den ældre Assistent, såfremt den nye Assistent er utilgængelig.
 
 ## AdGuard Ekstra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+Dette userscript løser de mest komplekse adblockingproblemer, når almindelige regler ikke er nok. Det forhindrer også websteder i at omgå adblockere og genindsætte blokerede annoncer. Vi anbefaler altid at holder det aktiveret.
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+Klik på `+` for at installere et userscript. Userscripts kan findes på [greasyfork.org](https://greasyfork.org/).

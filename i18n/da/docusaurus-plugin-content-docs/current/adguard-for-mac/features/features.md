@@ -5,42 +5,42 @@ sidebar_position: 1
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-- [Main window](/adguard-for-mac/features/main.md)
+- [Hovedvindue](/adguard-for-mac/features/main.md)
 
-  Main screen with statistics on blocked ads and trackers and access to main settings
+  Hovedskærm med statistik over blokerede annoncer og trackere samt adgang til hovedindstillinger
 
-- [General](/adguard-for-mac/features/general.md)
+- [Generelt](/adguard-for-mac/features/general.md)
 
-  Basic settings to block search ads and website self-promotional ads, enable language-specific filters, and manage _Allowlist_
+  Grundindstillinger til at blokere søgeannoncer og websteds-selvpromovering, aktivere sprogspecifikke filtre og håndtere _Hvidiste_
 
-- [Filters](/adguard-for-mac/features/filters.md)
+- [Filtre](/adguard-for-mac/features/filters.md)
 
-  Filters and user rules to fine-tune ad blocking
+  Filtre og brugerregler til finjustering af adblocking
 
 - [DNS](/adguard-for-mac/features/dns.md)
 
-  DNS-servere og DNS-filtre, som muliggør blokering af annoncer, trackere og farlige websteder
+  DNS-servere og DNS-filtre, som muliggør at blokere annoncer, trackere og farlige websteder
 
 - [Stealth Mode](/adguard-for-mac/features/stealth.md)
 
   Indstillinger til blokering af cookies, UTM-tags og onlineanalyseværktøjer, som indsamler brugeroplysninger
 
-- [Security](/adguard-for-mac/features/security.md)
+- [Sikkerhed](/adguard-for-mac/features/security.md)
 
-  A setting that blocks access to malicious and phishing websites and protects you from online threats
+  En indstilling, der blokerer adgangen til ondsindede og phishing-websteder, samt beskytter mod onlinetrusler
 
-- [Browser Assistant](/adguard-for-mac/features/browser-assistant.md)
+- [Browser Assistent](/adguard-for-mac/features/browser-assistant.md)
 
-  An extension that complements the desktop app and allows you to manage filtering from your browser
+  En udvidelse, der supplerer computer-appen og muliggør håndtering af filtrering fra webbrowseren
 
-- [Extensions](/adguard-for-mac/features/extensions.md)
+- [Udvidelser](/adguard-for-mac/features/extensions.md)
 
-  A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+  En funktion, der muliggør at udvide funktionaliteten af websteder ved at tilføje userscripts og brugerstile
 
-- [Network](/adguard-for-mac/features/network.md)
+- [Netværk](/adguard-for-mac/features/network.md)
 
-  Additional network-related options and proxy settings
+  Yderligere netværksrelaterede indstillinger og proxyindstillinger

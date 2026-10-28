@@ -55,7 +55,7 @@ If you configured minidump settings after the crash occurred, you'll need to rep
 
 Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 
-1. Enable AdGuard protection.
+1. Aktivér AdGuard-beskyttelsen.
 
 2. Click _Start_ and type `cmd` to open _Command Prompt_.
 

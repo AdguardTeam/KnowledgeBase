@@ -17,19 +17,19 @@ Some features are only available for certain products because of limitations fro
 
 ## Generelt {#general}
 
-### Block trackers {#blocktrackers}
+### Blokér trackere {#blocktrackers}
 
 This feature blocks trackers and web analytics using the AdGuard Tracking Protection filter.
 
-### Remove tracking parameters from URLs {#removetracking}
+### Fjern sporingsparametre fra URL'er {#removetracking}
 
 If you enable this feature, AdGuard will use its AdGuard URL Tracking filter to remove tracking parameters like `utm_*` and `fb_ref` from page URLs.
 
-### Hide search queries {#searchqueries}
+### Skjul søgeforespørgsler {#searchqueries}
 
 This feature hides your search queries from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
 
-### Ask websites not to track me {#donottrack}
+### Bed websteder undlade sporing {#donottrack}
 
 Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
@@ -43,9 +43,9 @@ Available in AdGuard for Android and AdGuard for Windows.
 
 :::
 
-## Tracking methods {#tracking-methods}
+## Sporingsmetoder {#tracking-methods}
 
-### Delete third-party cookies {#3p-cookie}
+### Slet tredjepartscookies {#3p-cookie}
 
 This feature prevents advertisers from tracking your behavior across multiple pages by limiting the lifetime of third-party cookies.
 
@@ -67,7 +67,7 @@ Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGu
 
 :::
 
-### Delete first-party cookies (not recommended) {#1p-cookie}
+### Slet førstepartscookies (ikke anbefalet) {#1p-cookie}
 
 This feature prevents websites from remembering your details, such as your login credentials and language preferences, by limiting the lifetime of first-party cookies.
 
@@ -75,7 +75,7 @@ Set a time period (in minutes) after which all cookies will be deleted. To block
 
 :::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain websites. If you block these cookies, some websites may break or stop working.
+Denne indstilling anbefalers ikke aktiveret, da den markant kan forstyrre visse websteders funktionalitet. If you block these cookies, some websites may break or stop working.
 
 :::
 
@@ -97,9 +97,9 @@ Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
-### Block third-party Authorization header {#3p-auth}
+### Blokér tredjeparts Godkendelses-header {#3p-auth}
 
-This feature disables cached authorization data that can be used for tracking. May interfere with the functionality of some browser extensions and websites.
+This feature disables cached authorization data that can be used for tracking. Kan forstyrre funktionaliteten af visse webbrowserudvidelser og websteder.
 
 The “Authorization” header value is cached by the browser and sent alongside every request to that domain. This means it can be used for tracking purposes, just like cookies.
 
@@ -109,7 +109,7 @@ Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
-## Browser API {#browser-api}
+## Browser-API {#browser-api}
 
 :::note
 
@@ -117,7 +117,7 @@ Only the **Block WebRTC** feature is available for AdGuard Browser Extension. Yo
 
 :::
 
-### Block WebRTC {#webrtc}
+### Blokér WebRTC {#webrtc}
 
 Denne funktion blokerer WebRTC, der kan lække den reelle IP-adresse selv ved brug af proxy eller VPN.
 
@@ -135,19 +135,19 @@ In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be c
 
 :::
 
-### Block Push API {#push}
+### Blokér Push-API {#push}
 
 This feature blocks push notifications from websites.
 
 The Push API enables servers to send messages to web applications regardless of the activity status of your browser. This means that you can see notifications from various websites even when your browser is minimized or closed. Enable this option to block the browser’s Push API completely.
 
-### Block Location API {#location}
+### Blokér Lokations-API {#location}
 
 This feature prevents websites from detecting your location.
 
 Enabling this option prevents your browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
 
-### Block Flash {#flash}
+### Blokér Flash {#flash}
 
 This feature increases protection and speeds up website loading by blocking Flash Player support in browsers.
 
@@ -159,7 +159,7 @@ This feature disables Java plugins on websites and web services because the API 
 
 Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the “Block Java” option, JavaScript will still be enabled.
 
-## Windows tracking {#windowstracking}
+## Windows-sporing {#windowstracking}
 
 :::note
 
@@ -167,7 +167,7 @@ These features are only available in AdGuard for Windows.
 
 :::
 
-### Disable Windows telemetry {#windowstelemetry}
+### Deaktivér Windows-telemetri {#windowstelemetry}
 
 This feature disables sending technical data about your system and app usage.
 
@@ -175,27 +175,27 @@ This feature disables sending technical data about your system and app usage.
 
 This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
 
-### Turn off Advertising ID {#advertisingid}
+### Slå Reklame-ID fra {#advertisingid}
 
 This feature disables Advertising ID to block tracking of your app usage.
 
-### Disable automatic reporting by Microsoft Defender {#windowsautoreport}
+### Deaktivér automatisk anmeldelse fra Microsoft Defender {#windowsautoreport}
 
 This feature blocks automatic reporting and sampling of suspected malware.
 
-### Disable WAP Push message routing service {#wappushrouting}
+### Deaktivér WAP Push-besked rutningstjeneste {#wappushrouting}
 
 This feature disables data collection about Windows component problems.
 
 ## Diverse {#miscellaneous}
 
-### Hide Referer from third parties {#referer}
+### Skjul Referer fra tredjeparter {#referer}
 
 This feature prevents third parties from knowing what websites you visit.
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third parties* setting hides the current website from third-party websites by altering the HTTP header.
+Referer is an HTTP header used in browser-to-server requests. Den indeholder forespørgselskildens URL. Når der navigeres fra en side til en anden, gemmer Referer'en den oprindelige sides URL. Serveren, der hoster destinationswebsiden, har ofte software, der analyserer Referer og udtrækker diverse information herfra. Enabling the *Hide Referer from third parties* setting hides the current website from third-party websites by altering the HTTP header.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
+You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. Lad feltet stå tomt for brug af standard-Referer.
 
 Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
 
@@ -221,7 +221,7 @@ This feature tricks websites into believing you are a proxy with the IP address 
 
 Tracking protection cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. Lad feltet stå tomt for brug af standard IP-adressen.
 
 :::note
 
@@ -229,7 +229,7 @@ Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::
 
-### Remove X-Client-Data header {#xclientdata}
+### Fjern X-Client-Data header {#xclientdata}
 
 This feature blocks Google Chrome from sending its version and modifications information to Google domains (including Double Click and Google Analytics).
 
@@ -239,11 +239,11 @@ Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGu
 
 :::
 
-### Protect against DPI {#dpi}
+### Beskyt mod DPI {#dpi}
 
 This feature modifies your outgoing traffic so that your ISP’s Deep Packet Inspection systems can’t detect the websites you visit. Can’t guarantee complete protection against all DPI systems.
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+Deep Packet Inspection er et system til dybdegående analyse og filtrering af trafik baseret på pakkeindhold samt akkumulering af statistiske data. Via denne teknologi har internetudbydere mulighed for at tjekke trafik og begrænse deres kunders adgang til indhold.
 
 AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
 

@@ -607,7 +607,7 @@ $header "=" h_name [":" h_value]
 h_value = string / regexp
 ```
 
-where:
+hvor:
 
 - **`h_name`** — required, an HTTP header name. It is matched case-insensitively.
 - **`h_value`** — optional, an HTTP header value matching expression, it may be one of the following:
@@ -1474,7 +1474,7 @@ In case if multiple `$cookie` rules match a single request, we will apply each o
 $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 ```
 
-where:
+hvor:
 
 - **`name`** — optional, string or regular expression to match cookie name.
 - **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
@@ -4356,7 +4356,7 @@ The first rule removes any `<script>` tag containing the word `Adverts`. The sec
 
 :::note
 
-The argument of `:contains()` is the raw text between the parentheses, taken as-is: quotes (of any kind), if present, are literal characters of the text to match, not delimiters. For example, `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The argument may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)`.
+Argumentet til `:contains()` er den rå tekst mellem parenteserne, taget som den er: Anførselstegn (af alle slags), hvis de findes, er bogstavelige tegn i den tekst, der skal matches, ikke afgrænsere. Eksempelvis matches `:contains("Sponsored by")` tekst indeholdende tegnene `"Sponsored by"` (inkl. dobbelte anførselstegn). Argumentet kan også indeholde ubalancerede parenteser, f.eks. `:contains((function(g,b,a,c,e,d)`.
 
 :::
 
@@ -4366,9 +4366,9 @@ The attributes listed below are legacy features kept only for backward compatibi
 
 :::
 
-Each of these attributes has an equivalent `:contains()` form, and filter lists are converted to these forms where possible:
+Hver af disse attributter har en tilsvarende `:contains()`-form, og filterlister konverteres til disse former, hvor det er muligt:
 
-| Attribute form                                  | Equivalent `:contains()` form                          |
+| Attributform                                    | Ækvivalent `:contains()`-form                          |
 | ----------------------------------------------- | ------------------------------------------------------ |
 | `$$div[tag-content="banner"]`                   | `$$div:contains(banner)`                               |
 | `$$div[wildcard="*banner*"]`                    | `$$div:contains(/^.*banner.*$/s)`                      |
@@ -4376,7 +4376,7 @@ Each of these attributes has an equivalent `:contains()` form, and filter lists 
 | `$$div[min-length="400"][max-length="800"]`     | `$$div:contains(/^(?=.{400,800}$).*/s)`                |
 | `$$div[tag-content="banner"][max-length="400"]` | `$$div:contains(banner):contains(/^(?=.{0,400}$).*/s)` |
 
-There is no `:contains()` equivalent for `[min-length]` and `[max-length]` values above `65535`: the generated regular expression would exceed the [quantifier limit](#html-filtering-rules--contains). Rules with such values keep the attribute form:
+Der er ingen `:contains()`-ækvivalent for `[min-length]`- og `[max-length]`-værdier over `65535`: Det genererede regulære udtryk ville overstige [kvalifikatorgrænsen](#html-filtering-rules--contains). Regler med sådanne værdier beholder attributformen:
 
 ```adblock
 $$div[tag-content="banner"][max-length="300000"]
@@ -4432,10 +4432,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
-**Default value**
-
-If this parameter is not specified, the `max-length` is considered to be 8192.
-
 F.eks.:
 
 ```adblock
@@ -4482,12 +4478,12 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :contains(value)
 ```
 
-where `value` is:
+hvor `value` er:
 
-- Raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
-- Argument in the `/regexp/flags` form is treated as a regular expression.
+- Rå tekst mellem pseudoklassens parenteser, brugt som den er og matchet som en bogstavelig delstreng. Anførselstegn (af alle slags) inde i teksten er bogstavelige tegn i den matchede tekst, ikke afgrænsningstegn: `:contains("Sponsored by")` matcher tekst indeholdende tegnene `"Sponsored by"` (inkl. dobbelte anførselstegn). Teksten kan også indeholde ubalancerede parenteser, f.eks. `:contains((function(g,b,a,c,e,d)` — argumentet strækker sig fra åbningsparentes op til vælgerens sidste lukkende parentes.
+- Argument i formen `/regexp/flags` behandles som et regulært udtryk.
 
-:::note Note
+:::note
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -4497,7 +4493,7 @@ where `value` is:
 
 The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and AdGuard Browser Extension v5.3 or later.
 
-Arguments with unbalanced parentheses are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and by AdGuard Browser Extension for Firefox starting from v5.6.
+Argumenter med ubalancerede parenteser understøttes af AdGuard til Windows, AdGuard til Mac, AdGuard til Android, AdGuard til Linux med minimum [CoreLibs][] v1.13, og af AdGuard Browser Extension til Firefox fra v5.6.
 
 :::
 
@@ -4509,9 +4505,9 @@ A `:contains()` pseudo-class must not appear in a selector to the left of a `>` 
 
 This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
-A regular expression argument is compiled by the regular expression engine of the product. In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux the engine is PCRE2, which limits the number in a repetition (quantifier) — `{n}`, `{n,m}`, `{n,}` — to `65535`. A pattern with a larger number is invalid, and the rule is ignored by these products.
+Et argument med et regulært udtryk kompileres af produktets motor til regulære udtryk. I AdGuard til Windows, AdGuard til Mac, AdGuard til Android og AdGuard til Linux er motoren PCRE2, hvilket begrænser tallet i en gentagelse (kvantifikator) — `{n}`, `{n,m}`, `{n,}` — til `65535`. Et mønster med et større tal er ugyldigt, og reglen ignoreres af disse produkter.
 
-This is why a content length condition cannot use a value above `65535` in these products: the length is matched with a quantifier, so the pattern `/^(?=.{0,300000}$).*/s` is invalid. To match elements by a larger content length, use the [`max-length`](#max-length) or [`min-length`](#min-length) attribute.
+Dette er grunden til, at en betingelse for indholdslængde ikke kan bruge en værdi over `65535` i disse produkter: Længden matches med en kvalifikator, så mønsteret `/^(?=.{0,300000}$).*/s` er ugyldigt. For at matche elementer efter en større indholdslængde kræves attributten [`max-length`](#max-length) eller [`min-length`](#min-length).
 
 :::
 
@@ -4984,7 +4980,7 @@ rules_list
 !#endif
 ```
 
-or
+eller
 
 ```adblock
 !#if (conditions)
@@ -4994,7 +4990,7 @@ false_conditions_rules_list
 !#endif
 ```
 
-where:
+hvor:
 
 - `!#if (conditions)` — start of the block when conditions are true
 - `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Authors of ad blockers define on their own what exact constants they declare. Possible values:
@@ -5089,7 +5085,7 @@ rules_list
 !#safari_cb_affinity
 ```
 
-where:
+hvor:
 
 - `!#safari_cb_affinity(content_blockers)` — start of the block
 - `content_blockers` — comma-separated list of content blockers. Possible values:
@@ -5145,7 +5141,7 @@ Rules usage frequency comes from the collected [filter rules statistics](../trac
 "strict": true
 ```
 
-where:
+hvor:
 
 - **filter** — filter identifier
 - **percent** — expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`

@@ -17,13 +17,13 @@ Moderne Protokolle wie DNS-over-TLS und DNS-over-HTTPS stellen sicher, dass Ihre
 
 Der DNS-Schutz kann Werbung, Tracker, Phishing-Websites und andere schädliche oder störende Inhalte herausfiltern, bevor sie überhaupt in Ihrem Browser oder Ihren Apps geladen werden. [Mehr über DNS-Filterung](https://adguard-dns.io/kb/general/dns-filtering/)
 
-![DNS protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
+![DNS-Schutz \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns.png)
 
 Folgendes können Sie im DNS-Schutz konfigurieren:
 
 ## DNS-Server auswählen
 
-![DNS servers \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
+![DNS-Server \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/dns_server.png)
 
 Sie können aus mehreren vertrauenswürdigen DNS-Anbietern auswählen. AdGuard selbst bietet mehrere Optionen für unterschiedliche Anforderungen:
 

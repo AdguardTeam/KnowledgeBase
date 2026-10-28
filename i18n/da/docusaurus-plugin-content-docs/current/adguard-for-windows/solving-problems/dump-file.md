@@ -41,7 +41,7 @@ Since dump files can be large, please compress them into an archive before sendi
 
 Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
 
-1. Enable AdGuard protection.
+1. Aktivér AdGuard-beskyttelsen.
 
 1. Click *Start* and type `cmd` to open Command Prompt
 
