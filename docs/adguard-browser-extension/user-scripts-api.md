@@ -25,7 +25,7 @@ Learn more about the impacts of the MV3 policies in our [blog post](https://adgu
 
 ## How to enable the Developer mode
 
-To use custom filters and JavaScript rules in the *User Rules* tab, you must set up your browser first. This will give the extension a reliable and secure method of injecting scripts into webpages at the optimal time. Follow the instructions below depending on your Chrome version.
+To use custom filters, JavaScript rules in the *User Rules* tab, and the [*Block fingerprinting*](/adguard-browser-extension/features/stealth-mode#fingerprinting) option, you must set up your browser first. This will give the extension a reliable and secure method of injecting scripts into webpages at the optimal time. Follow the instructions below depending on your Chrome version.
 
 ### For Chrome versions prior to 138
 
