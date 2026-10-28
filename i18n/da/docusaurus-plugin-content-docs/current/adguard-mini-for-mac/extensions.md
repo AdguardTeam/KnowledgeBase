@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard Mini for Mac, which safeguards only your Safari browser. To protect your Mac entirely, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowseren. For at beskytte Mac'en helt, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,7 +13,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 Safari extensions are small software programs that add functionality to the Safari web browser. They allow users to customize and enhance their browsing experience by adding features that are not natively built into the browser. AdGuard Mini for Mac uses extensions primarily to apply filtering rules on websites opened in Safari.
 
-## How it works
+## Sådan fungerer den
 
 To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules. The rules from AdGuard’s and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
 

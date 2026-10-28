@@ -1,34 +1,34 @@
 ---
-title: Activity and statistics
+title: Aktivitet og statistik
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Android, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. N.b. this screen is only seen when DNS protection is enabled.
+Skærmen _Aktivitet_ er 'informationsknudepunktet' i AdGuards DNS-beskyttelsessuite. Der kan hurtig-skiftes til den med et tryk på 3. ikon på den nederst bjælke. NB denne skærm ses kun, når DNS-beskyttelsen er slået til.
 
-![Activity screen \*mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Skærmen Aktivitet \*mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
+Her viser AdGuard statistik om enhedens DNS-forespørgsler, såsom samlet antal, antal blokerede og data sparet ved at blokere dem. AdGuard kan vise statistik for dag, uge, måned eller i alt.
 
-Below is the _Recent activity_ feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+Nedenfor ses feedet _Seneste aktivitet_. AdGuard gemmer de seneste 1.500 DNS-forespørgsler fra enheden, og viser deres attributter, såsom protokoltype og destinationsdomæne.
 
 :::note
 
-AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
+AdGuard sender ikke disse oplysninger nogen steder hen. Informationen er 100% lokal og forlader ikke enheden.
 
 :::
 
-Tap any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
+Tryk på en forespørgsel for at se flere detaljer. Der er også knapper til at føje forespørgslen til Sortliste/Hvidliste med ét tryk.
 
-![Request details \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Forespørgselsdetaljer \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are _Most active_ and _Most blocked_ companies. Tap each to see data based on the last 1500 requests.
+Over aktivitetsfeedet ses _Mest aktive_ og _Hyppigst blokerede_ virksomheder. Tryk på de enkelte for at se data fra på de seneste 1.500 forespørgsler.
 
-### Statistics {#statistics}
+### Statistik {#statistics}
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+Udover skærmen _Aktivitet_ findes globale statistikker på startskærmen og på widgets.

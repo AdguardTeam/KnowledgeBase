@@ -48,7 +48,7 @@ Et **filter** (eller en **filterliste**) er et sæt filtreringsregler designet t
 
 AdGuard-adblockingfiltre omfatter:
 
-- AdGuard Basisfilter
+- AdGuard Base filter
 - AdGuard Mobilannoncefilter
 - Regional filters divided by language principle — Chinese, Dutch, French, German, Italian, Japanese, Polish, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 

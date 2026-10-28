@@ -1,72 +1,72 @@
 ---
-title: How to collect AdGuard logs
+title: Sådan indsamles AdGuard-logger
 sidebar_position: 3
 ---
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note
 
-Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Data og/eller filer indeholdt i logfiler behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occur with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+For at analysere og diagnosticere forskellige potentielle problematikker, kan AdGuard-supporttjenesten have brug for AdGuard-logfiler. Disse filer indeholder poster om fejl og andre hændelser, som opstår med softwaren. Nedenfor beskriver en kort vejledning måden, hvorpå logfilerne om nødvendigt hentes og indsendes til vores supporttjeneste.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi overholder strikst vores [Fortrolighedspolitik](https://adguard.com/privacy/windows.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logger til supportteamet, bedes filen gennemgået, da den også kan indeholde oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
 
 :::
 
-### Debug logs {#debug-logs}
+### Fejlfindingslogfiler {#debug-logs}
 
-1. Open the AdGuard settings. Go to the _General Settings_ section, scroll down to the bottom of the screen, and switch the _Logging Level_ to _Debug_.
+1. Åbn AdGuard-indstillingerne. Gå til afsnittet _Generelle indstillinger_, rul ned til bunden af skærmen og skift _Logningsniveau_ til _Fejlfinding_.
 
-   ![Debug logging level \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+   ![Fejlfindingslogningsniveau \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 2. Genskab problematikken.
 
-   We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+   Vi anbefaler kraftigt at notere det præcise tidspunkt for, hvornår problemet blev genskabt: Dette hjælper supportteam med at finde relevante logposter og løse problemet hurtigere.
 
-3. Export the collected logs using the _Export Logs_ button.
+3. Eksportér de indsamlede logfiler via knappen _Eksportér logfiler_.
 
-   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Eksport af logfiler \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-   Save the archive to any folder.
+   Gem arkivet i den ønskede mappe.
 
-4. **Important**: after exporting the logs, set the logging level back to _Default_. _Debug_ logging level will slow down the application.
+4. \*_Vigtigt: Efter eksport af logfilerne skal logningsniveauet skiftes tilbage til Standard_. _Fejlfindingslogningsniveau_ vil gøre applikationen langsommere.
 
-5. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
+5. Indsend arkivet til AdGuards supporttjeneste via **support@adguard.com** inkl. problembeskrivelse og tidspunktet for genskabtelsen af problemet.
 
-### Trace logs {#trace-logs}
+### Sporingslogfiler {#trace-logs}
 
-Sometimes support team members may ask you to send _trace_ logs. Then you will need to do the following:
+Supportteamet kan evt. anmode om indsendelse af _sporingslogfiler_. I så fald vil flg. skulle gøres:
 
-1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing _Exit AdGuard_:
+1. Stop AdGuard ved at højreklikke på dens ikon i bakkemenuen og vælge _Afslut AdGuard_:
 
-   ![Exit AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+   ![Afslut AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-   Please don't leave the service running:
+   Sørg også for, at tjenesten ikke kører:
 
-   ![Stop AdGuard Service \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+   ![Stop af AdGuard-tjeneste \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-2. Open the console (type `cmd` in the start panel).
+2. Åbn konsollen (skriv `cmd` i startpanelet).
 
-3. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard for Windows v7.16 or later.
+3. Eksekvér applikationen med kommandoen `C:\"Program Files"\Adguard\Adguard.exe /trace` uanset Windows-bitversion, hvis AdGuard v7.16 til Windows eller senere er installeret.
 
-If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
+Bruges en ældre version af AdGuard til Windows, eksekvér applikationen med kommandoen `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` på 64-bit Windows eller `C:\"Program Files"\Adguard\Adguard.exe /trace` på 32-bit Windows.
 
 1. Genskab problematikken.
 
-   We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+   Vi anbefaler kraftigt at notere det præcise tidspunkt for, hvornår problemet blev genskabt: Dette hjælper supportteam med at finde relevante logposter og løse problemet hurtigere.
 
-2. Export the collected logs using the _Export Logs_ button.
+2. Eksportér de indsamlede logfiler via knappen _Eksportér logfiler_.
 
-   ![Export logs \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+   ![Eksport af logfiler \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-   Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
+   Bare rolig, selv hvis logfilen er stor. Vi har brug for at kende så mange detaljer som muligt for at løse problematikken.

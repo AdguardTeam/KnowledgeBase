@@ -5,29 +5,29 @@ sidebar_position: 4
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Filtre
 
-![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
+![Filtre](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
-Filter lists are sets of rules written using a [special syntax](/general/ad-filtering/create-own-filters). AdGuard interprets and implements these rules to block ads, trackers, and annoyances. Some filters (for example, AdGuard Base filter, Tracking Protection filter, or EasyList) are pre-installed, others can be installed additionally.
+Filterlister er regelsæt skrevet i en [speciel syntaks](/general/ad-filtring/create-own-filters). AdGuard fortolker og implementerer disse regler for at blokere annoncer, trackere og irritationer. Nogle filtre (f.eks. AdGuard Base-filter, Tracking Protection-filter eller EasyList) er forudinstallerede, andre kan yderligere installeres.
 
-We recommend enabling the following filters:
+Vi anbefaler aktivering af flg. filtre:
 
-- AdGuard Basisfilter
-- AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
-- Filters for your language
+- AdGuard Base-filter
+- AdGuard Tracking Protection-filter og AdGuard URL Tracking-filter
+- AdGuard Annoyances-filter
+- Filtre til dit sprog
 
-These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
+Disse filtre er vigtige for blokering af de fleste annoncer, trackere og irriterende elementer. For mere avanceret adblocking kan der bruges tilpassede filtre og brugerregler.
 
-To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
+Klik på `+` nederste til venstre på listen for at tilføje et filter. Markér et filters afkrydsningsfelt for at aktivere det.
 
-## User rules
+## Brugerregler
 
-In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
+I AdGuard til Mac er brugerreglerne placeret under _Filtre_. Klik på `+` for at oprette en regel. Markér dets afkrydsningsfelt for at aktivere en regel. Åbn kontekstmenuen for at eksportere/importere regler.
 
-![User rules: context menu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)
+![Brugerregler: Kontekstmenu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)

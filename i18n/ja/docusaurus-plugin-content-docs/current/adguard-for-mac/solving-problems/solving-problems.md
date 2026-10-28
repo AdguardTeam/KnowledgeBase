@@ -23,3 +23,4 @@ sidebar_position: 1
 - [Torブラウザでフィルタリングを設定する方法](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [スクリーンタイムとの互換性問題](/adguard-for-mac/solving-problems/screen-time-issues.md)
 - [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)
+- [Why AdGuard appears in Full Disk Access on macOS](/adguard-for-mac/solving-problems/adguard-in-full-disk-access.md)

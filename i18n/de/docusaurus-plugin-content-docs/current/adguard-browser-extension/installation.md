@@ -5,63 +5,63 @@ sidebar_position: 3
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard-Browsererweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to install AdGuard Browser Extension in different browsers
+## So installieren Sie die AdGuard-Browsererweiterung in den unterschiedlichen Browsern
 
-- [Chrome-based browsers](#chrome-based)
+- [Chromium-basierte Browser](#chrome-based)
 - [Opera](#opera)
 - [Firefox](#firefox)
 - [Yandex Browser](#yandex)
 - [Microsoft Edge](#edge)
 - [Safari](#safari)
 
-### Chrome and Chromium-based browsers {#chrome-based}
+### Chrome und Chromium-basierte Browser {#chrome-based}
 
-Open the extension’s page in the [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+Öffnen Sie die Seite der Erweiterung im [Chrome Web Store](https://agrd.io/extension_chrome) und klicken Sie auf *Zu Chrome hinzufügen*.
 
-![AdGuard Browser Extension in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
+![AdGuard Browsererweiterung im Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/chrome_install.png)
 
-In the opened dialog, click *Add extension*.
+Klicken Sie in dem geöffneten Dialogfeld auf *Erweiterung hinzufügen*.
 
-![Dialog box in the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
+![Dialogfeld im Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_extension_chrome.png)
 
 ### Opera {#opera}
 
-Open the page [addons.opera.com](https://agrd.io/extension_opera) and click *Add to Opera*.
+Öffnen Sie die Seite [addons.opera.com](https://agrd.io/extension_opera) und klicken Sie auf *Zu Opera hinzufügen*.
 
 ![AdGuard Browsererweiterung in Opera Addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/opera_install.jpg)
 
 ### Firefox {#firefox}
 
-Open the page [addons.mozilla.org](https://agrd.io/extension_firefox) and click *Add to Firefox*.
+Öffnen Sie die Seite [addons.mozilla.org](https://agrd.io/extension_firefox) und klicken Sie auf *Zu Firefox hinzufügen*.
 
-![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/mozilla_install.png)
+![AdGuard Browsererweiterung in Firefox-Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/mozilla_install.png)
 
 ### Yandex Browser {#yandex}
 
-Click the browser settings button in the upper right corner of the browser, choose *Extensions* → *Online safety*, find AdGuard, and click *Install*.
+Klicken Sie oben rechts im Browser auf die Schaltfläche für die Einstellungen, wählen Sie *Erweiterungen* → *Online-Sicherheit*, suchen Sie AdGuard und klicken Sie auf *Installieren*.
 
-![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
+![AdGuard Browsererweiterung in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/yandex_install.png)
 
 ### Microsoft Edge {#edge}
 
-Go to the [Edge Add-ons store](https://agrd.io/extension_edge) page and click *Get*.
+Rufen Sie die Seite des [Edge-Add-ons-Stores](https://agrd.io/extension_edge) auf und klicken Sie auf *Abrufen*.
 
-![AdGuard Browser Extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_install.png)
+![AdGuard Browsererweiterung in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_install.png)
 
-In the opened dialog window, click *Add extension*.
+Klicken Sie im geöffneten Dialogfeld auf *Erweiterung hinzufügen*.
 
-![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_adguard_in_edge.png)
+![Edge Dialogfenster *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_adguard_in_edge.png)
 
-Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its webpage in your Edge browser and click *Get extension*.
+Alternativ können Sie die AdGuard Browsererweiterung für Edge aus dem [Chrome Web Store](https://agrd.io/extension_chrome) installieren. Öffnen Sie die zugehörige Webseite in Ihrem Edge-Browser und klicken Sie auf *Erweiterung abrufen*.
 
-![Chrome extensions in Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
+![Chrome-Erweiterungen in Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_chrome_store_in_edge.png)
 
-In the opened dialog, click *Add extension*.
+Klicken Sie in dem geöffneten Dialogfeld auf *Erweiterung hinzufügen*.
 
 ### Safari {#safari}
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) is not a traditional browser extension. It was specifically built to comply with Apple’s strict content blocking limitations. For more details, you can read the [dedicated article](/adguard-mini-for-mac/). Or you can [download AdGuard Mini for Mac](https://agrd.io/mini_mac) directly from this page.
+AdGuard Mini für Mac (früher AdGuard für Safari) ist keine herkömmliche Browser-Erweiterung. AdGuard Mini für Mac wurde speziell dafür entwickelt, Apples strenge Beschränkungen für die Inhaltsblockierung einzuhalten. Weitere Informationen finden Sie in dem [entsprechenden Artikel](/adguard-mini-for-mac/). Oder Sie können [AdGuard Mini für Mac](https://agrd.io/mini_mac) direkt von dieser Seite herunterladen.

@@ -5,12 +5,12 @@ sidebar_position: 6
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Tracking protection
+## Sporingsbeskyttelse
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tracking_protection.png)
 
-_Tracking protection_ (formerly Stealth Mode) safeguards your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It prevents websites from collecting your IP address, device and browser parameters, search queries, and personal information. [Learn more about Tracking protection settings](/general/stealth-mode)
+_Sporingsbeskyttelse_ (tidligere Stealth Mode) beskytter fortroligheden ved at slette cookies, UTM-tags, online-tællere og analysesystemer. Den tillader ikke websteder at indsamle brugerens IP-adresse, enheds- og webbrowserparametre, søgeforespørgsler og personlige oplysninger. [Læs mere om Sporingsbeskyttelsesindstillinger](/general/stealth-mode)

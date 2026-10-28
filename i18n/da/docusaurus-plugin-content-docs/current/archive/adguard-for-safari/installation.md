@@ -13,37 +13,37 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 Kræver macOS 10.15 (Catalina). Den understøttede version af Safari er minimum 13.
 
-## How to install AdGuard for Safari {#install}
+## Sådan installeres AdGuard til Safari {#install}
 
 AdGuard til Safari er en gratis app tilgængelig via App Store. Gør flg. for at installere den på enheden.
 
 1. Åbn App Store og find den relevante udvidelse.
 
-   ![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+   ![AdGuard til Safari i App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
 2. Press _Get_ → _Install_ → _Open_.
 
 3. For at opsætte AdGuard til Safari, aktivér AdGuard-udvidelserne i Safari-indstillingerne.
 
-   ![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+   ![Notifikation: Nogle udvidelser er slået fra](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
    :::note
 
-   Ikke alle udvidelser kræves for korrekt funktion af AdGuard til Safari. For instance, checking the _Icon_ extension enables the icon next to the search bar. Det anbefales dog at slå dem alle til.
+   Ikke alle udvidelser kræves for korrekt funktion af AdGuard til Safari. Markeres f.eks. _Ikon_-udvidelsen, aktiveres ikonet ved siden af søgebjælken. Det anbefales dog at slå dem alle til.
 
    :::
 
-   ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+   ![Udvidelser afkrydset](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-4. For AdGuard to work on websites, the _Extensions_ setting in Safari must be enabled. Open Safari → _Settings_ → _Websites_ → _Extensions_. If you want to enable AdGuard on every website, set _For other websites_ to _Allow_.
+4. For at AdGuard kan fungere på websteder, skal indstillingen _Udvidelser_ i Safari være aktiveret. Åbn Safari → _Indstillinger_ → _Websteder_ → _Udvidelser_. Ønskes AdGuard aktiveret på alle websteder, sæt _For andre websteder_ til _Tillad_.
 
-![Mac Safari Content Blocker Setting](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
+![Mac Safari Indholdsblockerindstilling](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/macos_extensions.png)
 
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
 Når disse trin er gennemført, begynder AdGuard til Safari at fungere. Dens indstillinger kan nu opsættes.
 
-## How to uninstall AdGuard for Safari {#uninstall}
+## Sådan afinstalleres AdGuard til Safari {#uninstall}
 
 Gør flg. for at afinstallere AdGuard til Safari:
 
@@ -55,12 +55,12 @@ Gør flg. for at afinstallere AdGuard til Safari:
 
 4. Uncheck all checkboxes and press _Uninstall_ below any of them.
 
-   ![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+   ![Udvidelser afkrydset](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
 
    På dette punkt vises en notifikation:
 
-   ![Notification: uninstall AdGuard for Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+   ![Notifikation: Afinstallér AdGuard til Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
 
-5. Press _Show in Finder_ and move the application to the bin.
+5. Tryk på _Vis i Finder_ og flyt applikationen til papirkurven.
 
    AdGuard til Safari fjernes fra enheden.

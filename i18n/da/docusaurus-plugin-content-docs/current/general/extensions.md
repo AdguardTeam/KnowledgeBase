@@ -177,7 +177,7 @@ All listed old Greasemonkey functions are deprecated but still supported.
 
 You can find more information about Greasemonkey API in [its manual](https://wiki.greasespot.net/Greasemonkey_Manual:API).
 
-#### Example
+#### Eksempel
 
 ```javascript
 // ==UserScript==
@@ -492,7 +492,7 @@ We don’t support userstyles that contain `@var` or `@advanced` in the metadata
 
 5. Once you’re finished, press _Save and Close_. Your new userstyle has been successfully added to AdGuard
 
-### Example
+### Eksempel
 
 ```css
 /* ==UserStyle==

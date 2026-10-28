@@ -5,11 +5,11 @@ sidebar_position: 1
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-Here are some problems you may encounter and workarounds, guides, and instructions you may need.
+Her er nogle problemer, som kan opleves, og løsninger samt guider og vejledninger, der muligvis bliver brug for.
 
 - [Manual certificate installation](/adguard-for-mac/solving-problems/manual-certificate-installation.md)
 - [Protection cannot be enabled](/adguard-for-mac/solving-problems/protection-cannot-be-enabled.md)
@@ -23,3 +23,4 @@ Here are some problems you may encounter and workarounds, guides, and instructio
 - [Setting up filtering in Tor Browser](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [Incompatibility with Screen Time](/adguard-for-mac/solving-problems/screen-time-issues.md)
 - [Sådan fungerer AdGuard Browser Assistent på macOS Golden Gate og senere](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)
+- [Why AdGuard appears in Full Disk Access on macOS](/adguard-for-mac/solving-problems/adguard-in-full-disk-access.md)

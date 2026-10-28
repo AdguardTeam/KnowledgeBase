@@ -9,9 +9,11 @@ As any honest and well-performed effort should be rewarded, active translators o
 
 ### For AdGuard licenses
 
-- For your first one-year Ad Blocker license, you need to translate **1,000 words**.
-- For your second license, you’ll need an **additional 1,500 words** (a total of 2,500 words).
-- All subsequent licenses require an **additional 2,500** words per license.
+Translate **1,000 words** and choose one: a **one-year AdGuard Ad Blocker license for one device** or **one more device added to your existing license**. You can claim one reward for each benchmark.
+
+Translate **1,500 more words** (2,500 in total) to choose again. After that, you can make the same choice for every **2,500 additional words**.
+
+For example, if you translated a total of 5,000 words, you can either request a three-year AdGuard Ad Blocker license for one device, a two-year license for two devices, or a one-year license for three devices.
 
 ### For AdGuard VPN licenses
 

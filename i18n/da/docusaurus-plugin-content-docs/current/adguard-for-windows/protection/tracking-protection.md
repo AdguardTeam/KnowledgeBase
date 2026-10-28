@@ -1,97 +1,97 @@
 ---
-title: Tracking protection
+title: Sporingsbeskyttelse
 sidebar_position: 2
 ---
 
-Many websites collect data about their visitors, including IP addresses, browser and OS information, screen resolution, and even the page you came from. Cookies can be used to identify your browser, remember your preferences, or recognize you when you return. Tracking protection prevents such systems from collecting your personal data. Learn more in our [article about Tracking protection in AdGuard](https://adguard.com/kb/general/stealth-mode/)
+Mange websteder indsamler data om besøgende, herunder IP-adresser, webbrowser- og OS-information, skærmopløsning og endda den side, den besøgende kom fra. Cookies kan bruges til at identificere webbrowseren, huske præferencer eller genkende en besøgende ved et senere besøg. Sporingsbeskyttelse forhindrer sådanne systemer i at indsamle personlige brugerdata. Læs mere i vores [artikel om Sporingsbeskyttelse i AdGuard](https://adguard.com/kb/general/stealth-mode/)
 
-![Tracking protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
+![Sporingsbeskyttelse \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/tracking_protection.png)
 
-If you don’t want to spend time adjusting filters manually, you can simply pick one of the ready-made protection levels:
+Ønskes der ikke brugt tid på manuel filterjustering, kan et af de færdiglavede beskyttelsesniveauer blot vælges:
 
-- _Standard_: enabled by default and provides reliable protection for everyday browsing.
-- _High_: removes tracking parameters from page URLs and blocks third-party cookies. You may have to re-log in to some websites or face other cookie-related issues.
-- _Extreme_: limits cookie lifetime of third-party cookies and blocks certain browser APIs. Some websites may not work correctly.
+- _Standard_: Slået til som standard; giver pålidelig beskyttelse ved dagligdags surfing.
+- _Høj_: Fjerner sporingsparametre fra side-URL'er og blokerer tredjepartscookies. Genindlogning på nogle websteder kan være nødvendig, eller andre cookie-relaterede problemer kan opleves.
+- _Ekstrem_: Begrænser cookielevetiden for tredjepartscookies og blokerer visse webbrowser-API'er. Nogle websteder vil muligvis ikke fungere korrekt.
 
-For maximum flexibility, select _Custom_ and adjust everything manually. The settings there are divided into five categories:
+For maksimal fleksibilitet, vælg _Tilpasset_ og justér alt manuelt. Indstillingerne dér er opdelt i fem kategorier:
 
-- [General settings](#general-settings)
+- [Generelle indstillinger](#general-settings)
 
-- [Tracking methods](#tracking-methods)
+- [Sporingsmetoder](#tracking-methods)
 
-- [Browser API](#browser-api)
+- [Webbrowser-API](#browser-api)
 
-- [Windows tracking](#windows-tracking)
+- [Windows-sporing](#windows-tracking)
 
-- [Miscellaneous](#miscellaneous)
+- [Diverse](#miscellaneous)
 
-## General settings
+## Generelle indstillinger
 
-![General settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
+![Generelle indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_general_settings.png)
 
-### Block trackers
+### Blokér trackere
 
-Blocks trackers and web analytics using _AdGuard Tracking Protection filter_.
+Blokerer trackere og Web-analyseværktøjer vha. _AdGuard Tracking Protection-filter_.
 
-### Remove tracking parameters from URLs
+### Fjern sporingsparametre fra URL'er
 
-Strips tracking parameters such as `utm_*` and `fb_ref` from pages’ URLs using _AdGuard URL Tracking filter_.
+Fjerner sporingsparametre, såsom `utm_*` og `fb_ref`, fra siders URL'er vha. _AdGuard URL Tracking-filter_.
 
-### Hide search queries
+### Skjul søgeforespørgsler
 
-Hides queries for websites visited from a search engine. When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Skjuler forespørgsler overfor websteder besøgt via en søgemaskine. Når der dirigeres til et websted fra Google, Yahoo eller enhver anden søgemaskine, skjuler denne indstilling den søgeforespørgsel, hvormed webstedet blev fundet.
 
-### Ask websites not to track me
+### Bed websteder undlade sporing
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Sender signalerne [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) samt [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) til det besøgte websted.
 
 ### Andre fortrolighedsfiltre
 
 Anvender en række yderligere filtre til beskyttelse af fortrolighed. Tallet ud for _Aktiverede i filtre_ angiver, hvor mange filtre, som p.t. er aktive.
 
-## Tracking methods
+## Sporingsmetoder
 
 ![Sporingsmetoder \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_tracking_methods.png)
 
-### Delete third-party cookies
+### Slet tredjepartscookies
 
-Websites use cookies to store your preferences — for example, the language you chose, your location, or the items in your shopping cart. When you return, the browser sends these cookies back so the site can recognize you.
+Websteder bruger cookies til at gemme besøgendes præferencer — f.eks. det valgte sprog, placeringen eller varerne i indkøbskurven. Når den besøgende returnerer, sender webbrowseren disse cookies tilbage, så webstedet genkender gæsten.
 
-Third-party cookies work the same way, but they are created by domains other than the one you’re visiting. For instance, cnn.com may include a Facebook _Like_ widget that sets a cookie later read by Facebook. Advertisers often use such cookies to track which other sites you visit.
+Tredjepartscookies fungerer på samme måde, men de oprettes af domæner andre end dét, der besøges. F.eks. kan cnn.com inkludere en Facebook _Like_-widget, der sætter en cookie, der senere læses af Facebook. Annoncører bruger ofte sådanne cookies til at spore, hvilke andre sider, som besøges.
 
-With this option, you can set a time limit (in minutes) after which all third-party cookies will be deleted. If you set the timer to 0, such cookies will be blocked completely.
+Med denne indstilling kan der sættes en tidsgrænse (i minutter), hvorefter alle tredjepartscookies slettes. Sættes timeren til 0, blokeres sådanne cookies fuldstændigt.
 
 ![Levetid (Time-to-live) \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/delete_third_party.png)
 
 :::caution
 
-Keep in mind that this setting removes all third-party cookies, including those used for logins via social networks or other external services. This means you may need to log in again from time to time or deal with other cookie-related issues. If you only want to block tracking cookies, use [_AdGuard Tracking Protection filter_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+Husk, at denne indstilling fjerner alle tredjepartscookies, inkl. dem, som bruges til logins via sociale netværk eller andre eksterne tjenester. Dette betyder, at der muligvis skal logges ind igen fra tid til anden eller håndteres andre cookierelaterede problemer. Ønskes kun tracking-cookies blokeret, benyt [_AdGuard Tracking Protection-filter_](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
 :::
 
-### Delete first-party cookies (not recommended)
+### Slet førstepartscookies (ikke anbefalet)
 
-This option deletes cookies set by the website you are currently visiting after a selected period of time (in minutes). When the timer runs out, all such cookies are removed. Set the timer to 0 to block them completely.
+Denne indstilling sletter cookies sat af det aktuelt besøgte websted efter en valgt tidsperiode (i minutter). Når timeren løber ud, fjernes alle sådanne cookies. Indstil timeren til 0 for helt at blokere dem.
 
 :::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain websites.
+Denne indstilling anbefalers ikke aktiveret, da den markant kan forstyrre visse websteders funktionalitet.
 
 :::
 
-### Block ETag and If-None-Match headers
+### Blokér ETag og If-None-Match-headere
 
-Removes the ETag and If-None-Match headers from requests and responses to prevent websites from using them for tracking.
+Fjerner ETag og If-None-Match-headere fra forespørgsler og svar for at forhindre websteder i at bruge dem til sporing.
 
-When a browser addresses a page, the server assigns it an ETag — a unique identifier used to cache the page’s contents. On subsequent visits, the browser sends the same ETag back to the server. This allows the server to recognize the visitor. As long as the cached files remain, the ETag is transmitted with every request. If the page also contains embedded elements from other servers, such as images or iframes, those servers can use ETags to track your activity without your knowledge.
+Når en webbrowser adresserer en side, tildeler serveren den et ETag — en unik identifikator brugt til at cache sidens indhold. Ved efterfølgende besøg sender webbrowseren det samme ETag retur til serveren. Dette tillader serveren at genkende den besøgende. Så længe de cachede filer eksisterer, overføres ETag'et med hver forespørgsel. Indeholder siden også indlejrede elementer fra andre servere, såsom billeder eller iframes, kan disse servere bruge ETags til aktivitetssporing uden brugerens viden.
 
-### Block third-party Authorization header
+### Blokér tredjeparts Godkendelses-header
 
-Disables cached authorization data that can be used for tracking purposes. May interfere with the functionality of some browser extensions and websites.
+Deaktiverer cachet godkendelsesdata, som kan bruges til sporingsformål. Kan forstyrre funktionaliteten af visse webbrowserudvidelser og websteder.
 
-The Authorization header value is cached by the browser and automatically sent with every request to the same domain. Since it accompanies each request, it can be used to identify and track you similarly to how cookies do.
+Godkendelsesheaderværdien caches af webbrowseren og sendes automatisk med hver forespørgsel til det samme domæne. Da den følger med hver forespørgsel, kan den bruges til at identificere og spore brugeren på samme måde, som cookies gør.
 
-## Browser API
+## Browser-API
 
 ![Browser API \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_browser_api.png)
 
@@ -99,73 +99,73 @@ The Authorization header value is cached by the browser and automatically sent w
 
 Får WebRTC til at anvende en striksere IP-adressepolitik for at forhindre afsløring af den reelle IP-adresse, selv ved brug af proxy eller VPN.
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct data streaming between browsers and apps. Som standard kan den afsløre den reelle IP-adresse, selv når en proxy eller VPN er aktiveret. Denne indstilling håndhæver en strengere IP-adressepolitik i stedet for helt at blokere WebRTC, så webbrowserapplikationer, såsom beskedtjenester, chats og spil, er mindre tilbøjelige til at blive påvirket.
+WebRTC (Web Real-Time Communication) er en teknologi, der tillader direkte datastreaming mellem webbrowsere og apps. Som standard kan den afsløre den reelle IP-adresse, selv når en proxy eller VPN er aktiveret. Denne indstilling håndhæver en strengere IP-adressepolitik i stedet for helt at blokere WebRTC, så webbrowserapplikationer, såsom beskedtjenester, chats og spil, er mindre tilbøjelige til at blive påvirket.
 
-### Block Push API
+### Blokér Push-API
 
-The Push API allows servers to send messages to web applications regardless of the activity status of your browser. This is why you may receive notifications from websites even if your browser is hidden in the tray or not launched. Enabling this option completely blocks the Push API.
+Push-API'en tillader servere at sende beskeder til webapplikationer uanset webbrowserens aktivitetstatus. Derfor kan der modtages notifikationer fra websteder, selvom webbrowseren er skjult i systembakken eller ikke er startet. Aktivering af denne indstilling blokerer helt Push-API'en.
 
-### Block Location API
+### Blokér Lokations-API
 
-When this option is enabled, the browser will no longer send GPS data to websites. This prevents them from determining your location, altering search results, or tailoring content based on where you are.
+Når denne indstilling er aktiveret, vil webbrowseren ikke længere sende GPS-data til websteder. Dette forhindrer dem i at bestemme brugerens placering, ændre søgeresultater eller skræddersy indhold baseret på den aktuelle placering.
 
-## Windows tracking
+## Windows-sporing
 
-![Windows tracking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_windows_tracking.png)
+![Windows-sporing \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_windows_tracking.png)
 
-### Disable Windows telemetry
+### Deaktivér Windows-telemetri
 
-Disables sending technical data about your system and app usage.
+Deaktiverer indsendelsen af tekniske data om brugerens system og app-brug.
 
 ### Deaktivere Windows Recall
 
 Deaktiverer funktionen Windows Recall, der periodisk tager øjebliksbilleder af skærme og gemmer dem lokalt. Dette forhindrer, at sensitive oplysninger, som er synlige på skærmen, affotograferes og gemmes.
 
-### Turn off Advertising ID
+### Slå Reklame-ID fra
 
-Disables Advertising ID to block tracking of your app usage.
+Deaktiverer Reklame-ID for at blokere sporing af app-brug.
 
-### Disable automatic reporting by Microsoft Defender
+### Deaktivér automatisk anmeldelse fra Microsoft Defender
 
-Blocks automatic reporting and sampling of suspected malware.
+Blokerer automatisk anmeldelse og prøvetagning af formodet malware.
 
-### Disable WAP Push message routing service
+### Deaktivér WAP Push-besked rutningstjeneste
 
-Disables data collection about Windows component problems.
+Deaktiverer dataindsamling om Windows-komponentproblemer.
 
 ## Diverse
 
 ![Diverse \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/custom_settings_miscellaneous.png)
 
-### Hide Referer from third parties
+### Skjul Referer fra tredjeparter
 
-Referer is an HTTP header included in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it.
+Referer er en HTTP-header inkluderet i webbrowser-til-server forespørgsler. Den indeholder forespørgselskildens URL. Når der navigeres fra en side til en anden, gemmer Referer'en den oprindelige sides URL. Serveren, der hoster destinationswebsiden, har ofte software, der analyserer Referer og udtrækker diverse information herfra.
 
 Aktivering af indstillingen _Skjul Referer fra tredjeparter_ forhindrer tredjepartswebsteder i at se denne information ved at ændre eller fjerne headeren.
 
-You can also enter a custom value in the _Custom Referer_ field. To use default Referer, leave the field blank.
+Der kan også angives en tilpasset værdi i feltet _Tilpasset Referer_. Lad feltet stå tomt for brug af standard-Referer.
 
-Note that to be able to filter traffic, AdGuard applications intercept browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely.
+Bemærk, at AdGuard-applikationer 'opsnapper' webbrowser-til-server-forespørgsler for at kunne filtrere trafik. Forespørgsler til reklame-, sporings- og phishing-servere kan ændres, før de sendes til serveren, eller blokeres fuldstændigt.
 
-Same goes for the _Hide Referer from third parties_ option: To filter traffic, AdGuard intercepts HTTP(S) requests and may alter or block them before they reach the server. The change happens only after the request leaves your browser. For this reason, if you check headers inside the browser (for example with Chrome Developer Tools), you will still see the original Referer. To confirm that it has been modified, you can use external tools such as Fiddler.
+Det samme gælder for indstillingen _Skjul Referer fra tredjeparter_: For at filtrere trafik opfanger AdGuard HTTP(S)-forespørgsler og kan ændre eller blokere dem, før de når serveren. Ændringen sker kun, efter at forespørgslen har forladt brugerens webbrowser. Af denne årsag, såfremt headers i webbrowseren (f.eks. med Chrome Developer Tools) tjekkes, vil den oprindelige Referer stadig kunne ses. For at bekræfte, at den er blevet ændret, kan eksterne værktøjer, såsom Fiddler, anvendes.
 
 ### Skjul Brugeragent (User-Agent)
 
-When you visit a website, your browser sends a header called User-Agent as part of the HTTP request. It looks like a text line that begins with “User-Agent:”. This line usually contains details such as the browser name and version, operating system, and language settings.
+Når et websted besøges, sender webbrowseren en header kaldet Brugeragent som en del af HTTP-forespørgslen. Den ligner en tekstlinje begyndende med "User-Agent:". Denne linje indeholder normalt oplysninger såsom webbrowsernavn og -version, operativsystem og sprogindstillinger.
 
-By enabling this option, AdGuard removes identifying information from the User-Agent so advertisers and trackers cannot use it to profile you. If you prefer, you can enter a custom value in the _Custom User-Agent_ field. To keep the default value, simply leave the field blank.
+Ved at slå denne indstilling til fjerner AdGuard identificerende oplysninger fra Brugeragenten, så annoncører og trackere ikke kan bruge dem til at profilering. Hvis det ønskes, kan en tilpasset værdi angives i feltet _Tilpasset Brugeragent_. For at beholde standardværdien, lad blot feltet stå tomt.
 
 ### Maskér IP-adresse
 
-AdGuard cannot completely hide your real IP address, but it can replace it with a different one so that websites interpret your connection as coming through a proxy. In some cases this helps to obscure your true IP.
+AdGuard kan ikke helt skjule den reelle IP-adresse, men kan erstatte den med en anden, så websteder opfatter forbindelsen som om, at den går igennem en proxy. I nogle tilfælde hjælper dette med at tilsløre den reelle IP-adresse.
 
-You can enter any IP address you want to use in the corresponding field. To use the default IP address, leave the field blank.
+En hvilken som helst IP-adresse, der ønskes brugt, kan angives i det korresponderende felt. Lad feltet stå tomt for brug af standard IP-adressen.
 
-### Remove X-Client-Data header
+### Fjern X-Client-Data header
 
-Prevents Google Chrome from sending information about its version and modifications in requests to Google domains, including services like DoubleClick and Google Analytics.
+Forhindrer Google Chrome i at indsende oplysninger om sin version og ændringer i forespørgsler til Google-domæner, herunder tjenester såsom DoubleClick og Google Analytics.
 
-### Protect against DPI
+### Beskyt mod DPI
 
 ![Beskyt mod DPI \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protect_against_dpi.png)
 
@@ -173,7 +173,7 @@ Deep Packet Inspection (DPI) er en teknologi brugt af visse ISP'er til at analys
 
 Ved klik på _Beskyt mod DPI_ åbnes en separat skærm med tre grupper af indstillinger:
 
-**ClientHello split** — modifies the TLS ClientHello message to make it harder for DPI systems to detect and block encrypted connections. The following strategies are available:
+**ClientHello-opdeling** — ændrer TLS ClientHello-meddelelsen for at gøre det sværere for DPI-systemer at registrere og blokere krypterede forbindelser. Følgende strategier er tilgængelige:
 
 - _Opdel TCP-pakke på fast position_ — opdeler ClientHello TCP-pakken på en bestemt byteposition.
 - _Opdel TLS-posten på en fast position_ — opdeler TLS-posten indeholdende ClientHello på en angivet byteposition.

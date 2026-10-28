@@ -5,26 +5,26 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-- [Home screen](/archive/adguard-for-windows/features/home-screen/)
+- [Startskærm](/archive/adguard-for-windows/features/home-screen/)
 
-  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  På hovedskærmen findes _Indstillinger_, _Support_, _Licens_ og _Om_, samt statistikker over blokerede annoncer og trackere
 
-- [Settings](/archive/adguard-for-windows/features/settings/)
+- [Indstillinger](/archive/adguard-for-windows/features/settings/)
 
-  Theme and language settings, ad blocking customization, DNS protection, parental controls, extension management, and advanced options for expert users
+  Tema- og sprogindstillinger, adblockingtilpasning, DNS-beskyttelse, forældrekontrol, udvidelseshåndtering og avancerede indstillinger for ekspertbrugere
 
-- [Extensions](/archive/adguard-for-windows/features/extensions/)
+- [Udvidelser](/archive/adguard-for-windows/features/extensions/)
 
-  A feature that allows you to extend the functionality of websites by adding userscripts and userstyles
+  En funktionalitet, der muliggør at udvide funktionaliteten af websteder ved at tilføje userscripts og brugerstile
 
-- [Network](/archive/adguard-for-windows/features/network/)
+- [Netværk](/archive/adguard-for-windows/features/network/)
 
-  Additional network-related options and proxy settings
+  Yderligere netværksrelaterede indstillinger og proxyindstillinger
 
-- [Other features](/archive/adguard-for-windows/features/others/)
+- [Andre funktioner](/archive/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  Support, licenshåndtering, bakkemenuindstillinger, app-version og opdateringer

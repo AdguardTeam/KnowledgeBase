@@ -1,18 +1,18 @@
 ---
-title: Filter editor
+title: Filtereditor
 sidebar_position: 2
 ---
 
-![Filter editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
+![Filter-editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
-The Filter editor is a tool that allows you to view and manage filters at the level of individual rules. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
+Filter-editoren er et værktøj, der muliggør at se og håndtere filtre på de individuelle reglelniveauer. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
 
-With the Filter editor, you can:
+Med denne filter-editor er det muligt at:
 
-- See all the filters that are currently enabled
+- Få vist alle de filtre, som p.t. er slået til
 
-- Edit existing filtering rules, add your own custom rules, or import ready-to-use ones
+- Redigere eksisterende filtreringsregler, tilføj egne tilpassede regler eller importere færdiglavede regler
 
-The Filter editor is especially useful for advanced users who want to fine-tune ad blocking by precisely controlling what is blocked or allowed. If you’re not familiar with creating your own rules, we have an article to help you learn how.
+Filter-editoren er særlig nyttig for avancerede brugere, som ønsker at finjustere adblocking ved nøje at styre, hvad der blokeres eller tillades. Mangles færdighed i at oprette egne regler, har vi en artikel, der kan hjælpe med at opnå den.
 
-[How to create own rules](/general/ad-filtering/create-own-filters/)
+[Sådan oprettes egne regler](general/ad-filtring/create-own-filters/)

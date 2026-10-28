@@ -28,7 +28,7 @@ However, **an extension can contain up to 150,000 rules**. If you exceed this li
 
 ## How to check if you are exceeding the rule limit
 
-1. Open AdGuard for Safari app.
+1. Åbn AdGuard til Safari-appen.
 2. Scroll down and click _Content blockers_.
 3. Below each content blocker, you can see the enabled filters and the number of active rules.
    ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
