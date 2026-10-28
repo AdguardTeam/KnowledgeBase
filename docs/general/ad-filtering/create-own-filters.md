@@ -3652,6 +3652,8 @@ example.org#@#body{remove:true;}
 - [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
 - [Pseudo-class `:upward()`](#extended-css-upward)
 - [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
+- [Pseudo-class `:remove-attr()`](#extended-css-remove-attr)
+- [Pseudo-class `:remove-class()`](#extended-css-remove-class)
 - [Pseudo-class `:is()`](#extended-css-is)
 - [Pseudo-class `:not()`](#extended-css-not)
 - [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
@@ -3706,7 +3708,7 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
 2. Specific pseudo-class may have its own limitations:
-[`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
+[`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), [`:remove()`](#extended-css-remove-limitations), [`:remove-attr()`](#extended-css-remove-attr-limitations), and [`:remove-class()`](#extended-css-remove-class-limitations).
 
 #### Pseudo-class `:has()` {#extended-css-has}
 
@@ -4264,6 +4266,77 @@ div[class]:has(> a > img) { remove: true; }
 Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-style rule syntax, `?` for ExtendedCss syntax.
 
 :::
+
+#### Pseudo-class `:remove-attr()` {#extended-css-remove-attr}
+
+The `:remove-attr()` pseudo-class removes attributes from matching elements instead of hiding them. It is compatible with the [`:remove-attr()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
+
+**The pseudo-class can be placed only at the end of a selector.**
+
+**Syntax**
+
+```text
+target:remove-attr(attr)
+```
+
+- `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
+- `attr` — required, an attribute name for exact match (optionally quoted, e.g. `"onclick"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+
+:::info Compatibility
+
+Added in ExtendedCSS v2.3.0.
+
+Rules with the `:remove-attr()` pseudo-class are supported by AdGuard Browser Extension v5.6 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Examples**
+
+```adblock
+a:remove-attr(href)
+*:remove-attr(onclick)
+div:remove-attr(/^on[a-z]+/)
+div:remove-attr(/^data-(foo|bar)$/i)
+```
+
+##### `:remove-attr()` limitations {#extended-css-remove-attr-limitations}
+
+The `:remove-attr()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-attr` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
+
+#### Pseudo-class `:remove-class()` {#extended-css-remove-class}
+
+The `:remove-class()` pseudo-class removes classes from matching elements instead of hiding them. It is compatible with the [`:remove-class()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
+
+**The pseudo-class can be placed only at the end of a selector.**
+
+**Syntax**
+
+```text
+target:remove-class(class)
+```
+
+- `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
+- `class` — required, a class name for exact match (optionally quoted, e.g. `"ads"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+
+:::info Compatibility
+
+Added in ExtendedCSS v2.3.0.
+
+Rules with the `:remove-class()` pseudo-class are supported by AdGuard Browser Extension v5.6 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Examples**
+
+```adblock
+div:remove-class(ads)
+*:remove-class(ads)
+div:remove-class(/^ad-/)
+```
+
+##### `:remove-class()` limitations {#extended-css-remove-class-limitations}
+
+The `:remove-class()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-class` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
 
 #### Pseudo-class `:is()` {#extended-css-is}
 
