@@ -11,7 +11,7 @@ sidebar_position: 1
 
 - [Home screen](/archive/adguard-for-windows/features/home-screen/)
 
-  On the main screen you’ll find _Settings_, _Support_, _License_, and _About_, as well as statistics on blocked ads and trackers
+  메인 화면에는 **설정**, **고객 지원**, **라이선스**, **정보**와 차단된 광고 및 추적기에 대한 통계가 있습니다.
 
 - [Settings](/archive/adguard-for-windows/features/settings/)
 
@@ -27,4 +27,4 @@ sidebar_position: 1
 
 - [Other features](/archive/adguard-for-windows/features/others/)
 
-  Support, license management, tray menu options, app version and updates
+  고객 지원, 라이선스 관리, 트레이 메뉴 옵션, 앱 버전 및 업데이트

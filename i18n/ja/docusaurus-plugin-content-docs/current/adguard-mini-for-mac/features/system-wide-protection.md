@@ -1,15 +1,15 @@
 ---
-title: System-wide protection
+title: システム全体の保護
 sidebar_position: 9
 ---
 
-Starting with version 3.0, AdGuard Mini for Mac introduces _System-wide protection_, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
+AdGuard Mini for Mac バージョン3.0で、「システム全体の保護」機能を導入しました。この機能は、Safariだけでなく、Mac上の全アプリで広告やトラッカーをブロックします。
 
-The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
+この機能は、AdGuardライセンスをお持ちのユーザーが利用できます。[ライセンスを購入する](https://adguard.com/license.html)か、「高度な保護機能」の「無料で試してみるをクリックして14日間の無料トライアルを開始できます。
 
 ## 仕組み
 
-_System-wide protection_ is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a system filtering API used for system-wide traffic filtering. Here’s how it works.
+「システム全体の保護」は、Appleの[**URLフィルタ**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url)に基づいて構築されています。これは、システム全体のトラフィックフィルタリングに使用されるシステムフィルタリングAPIです。その仕組みは以下のとおりです。
 
 First, macOS checks a URL against a bloom filter — a prefilter stored on your Mac that updates in the background. Most addresses are cleared locally, with no network request for the check itself.
 

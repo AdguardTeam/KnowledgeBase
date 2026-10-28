@@ -23,19 +23,19 @@ Sie können darauf zugreifen, indem Sie zu *Statistiken* → *Batterieverbrauch*
 
 Darin finden Sie ein Diagramm, das den Verbrauch der AdGuard-Batterieressourcen in den letzten 24 Stunden anzeigt, mit der Option, durch Antippen des Diagramms detailliertere Daten von Stunde zu Stunde zu erhalten. Darüber hinaus gibt es auch eine numerische Aufschlüsselung der relevanten Daten und eine kurze technische Erklärung.
 
-There are several other parameters below the chart: *CPU foreground*, *CPU background*, *Mobile data usage*, and *Wi-Fi data usage*.
+Unter dem Diagramm finden Sie weitere Angaben: *CPU im Vordergrund*, *CPU im Hintergrund*, *Mobile Datennutzung* und *WLAN-Datennutzung*.
 
-*CPU foreground* and *CPU background* show how much CPU time is used by AdGuard when the app is active or running in the background.
+*CPU im Vordergrund* und *CPU im Hintergrund* zeigen, wie viel CPU-Zeit AdGuard verwendet, wenn die App aktiv ist oder im Hintergrund läuft.
 
-And with *Mobile data usage* and *Wi-Fi data usage*, you can see how much traffic AdGuard consumed when your phone was using mobile Internet or connected to Wi-Fi.
+Anhand von *Mobiler Datenverbrauch* und *WLAN-Datenverbrauch* sehen Sie, wie viel Datenverkehr AdGuard verbraucht hat, während Ihr Smartphone mobile Daten oder WLAN genutzt hat.
 
 ### Wie viel Batteriekapazität verbraucht AdGuard wirklich?
 
 Lassen Sie uns zunächst ein paar theoretische Überlegungen anstellen und mit den erforderlichen Daten verknüpfen.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
+1. Android ermittelt den Datenverbrauch anhand des sogenannten Power Profile, das jeder Hersteller bereitstellt: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
-1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
+1. Hauptbestandteil des Energieprofils ist eine Reihe von Werten in mAh, die den Batterieverbrauch für jede Komponente des Geräts definieren: [https://source.android.com/devices/tech/power/values.html](https://source.android.com/devices/tech/power/values.html)
 
     Ein Beispiel aus der obigen Tabelle:
 

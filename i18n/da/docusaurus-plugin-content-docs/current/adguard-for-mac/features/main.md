@@ -1,14 +1,14 @@
 ---
-title: Main window
+title: Hovedvindue
 sidebar_position: 2
 ---
 
 :::info
 
-Denne artikel dækker AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-The main window of AdGuard for Mac allows you to enable or disable the AdGuard protection. It also gives you a quick overview of the app’s stats: ads, trackers, and threats blocked since you’ve installed AdGuard or since your last stats reset. By clicking the gear icon, you can access settings, check for app and filter updates, contact support, and manage your license.
+Hovedvinduet i AdGuard til Mac muliggør at aktivere eller deaktivere AdGuard-beskyttelsen. Det giver også et hurtigt overblik over appens statistik: Annoncer, trackere og trusler, som er blokeret, siden AdGuard blev installeret eller siden seneste statistiknulstilling. Et klik på tandhjulsikonet muliggør at tilgå indstillinger, tjekke for app- og filteropdateringer, kontakte supporten og håndtere licensen.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Hovedvindue \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)

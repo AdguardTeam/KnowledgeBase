@@ -3,16 +3,16 @@ title: App-indstillinger
 sidebar_position: 1
 ---
 
-![App settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/main_settings_1.png)
+![App-indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/main_settings_1.png)
 
-Here you can adjust the main app settings: choose between light and dark themes, set the app language, enable AdGuard to launch at system startup, and allow silent automatic updates. It’s also possible to select the update channel and specify how often AdGuard checks for filter updates.
+Her kan de primære app-indstillinger justeres: Vælg mellem lyse og mørke temaer, indstil app-sprog, muliggør, at AdGuard starter ved systemopstart samt tillad tavs, automatisk opdatering. Det er også muligt at vælge opdateringskanalen og angive, hvor ofte AdGuard tjekker for filteropdateringer.
 
-You can opt in to send us two types of data: anonymized app usage data to help us improve the product and crash reports if the app unexpectedly closes.
+Det kan vælges at indsende to typer data til os: Anonymiserede data om app-brug for at hjælpe os med at forbedre produktet samt nedbrudsrapporter, hvis appen lukker uventet.
 
-In [_Filter editor_](/adguard-for-windows/settings/app-settings/filter-editor.md), you can add your own filtering rules or import ready-to-use filters.
+I [_Filter-editor_](/adguard-for-windows/settings/app-settings/filter-editor.md) kan egne filtreringsregler tilføjes eller færdiglavede filtre importeres.
 
-[_Network_ settings](/adguard-for-windows/settings/app-settings/network-settings.md) include all options related to network filtering and how AdGuard interacts with your system’s network.
+Indstillingerne [_Netværk_](/adguard-for-windows/settings/app-settings/network-settings.md) omfatter alle indstillinger relateret til netværksfiltrering, samt hvordan AdGuard interagerer med systems netværk.
 
-[_Advanced_](/adguard-for-windows/settings/app-settings/advanced-settings.md) settings are intended for experienced users. They are rarely needed in everyday use and should only be changed if you know what you’re doing or if our support team asks you to.
+[_Avanceret_](/adguard-for-windows/settings/app-settings/advanced-settings.md) settings are intended for experienced users. De er sjældent nødvendige i daglig brug og bør kun ændres, såfremt man ved, hvad man foretager sig, eller hvis vores support beder herom.
 
 ![App-indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/main_settings_2.png)

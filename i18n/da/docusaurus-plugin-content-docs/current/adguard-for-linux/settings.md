@@ -55,7 +55,7 @@ adguard-cli restart
 
 ## Updates
 
-### Check for updates
+### Søg efter opdateringer
 
 To check for updates, enter:
 
@@ -305,22 +305,22 @@ The `-i` or `--input` flag is required and specifies the path to the settings ar
 
 ## AdGuard Browser Assistent
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+AdGuard Browser Assistent muliggør håndtering af AdGuard-beskyttelse direkte fra webbrowseren.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![Assistent-vinduet \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ### Sådan fungerer den
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage AdGuard for Linux:
+AdGuard Browser Assistent er en webbrowserudvidelse. It allows you to quickly manage AdGuard for Linux:
 
 - Enable or disable protection for a specific website (the toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Report incorrect blocking
+- Pausere beskyttelsen i 30 sekunder
+- Deaktivere beskyttelse (pauseikonet øverste til højre)
+- Blokere en annonce manuelt
+- Anmelde fejlagtig blokering
 - Manage HTTPS filtering (the lock icon next to the website name)
 
-### How to install
+### Sådan installeres den
 
 To install Native Messaging manifests for browser integration, use:
 
@@ -336,9 +336,9 @@ adguard-cli install-browser-integration --uninstall
 
 **Install AdGuard Browser Assistant extension**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Åbn [Assistent-siden](https://adguard.com/adguard-assistant/overview.html).
+2. Vælg _Installér_ under webbrowsernavnet.
+3. Installér Assistent fra webbrowserens udvidelsesbutik.
 
 :::info Compatibility
 

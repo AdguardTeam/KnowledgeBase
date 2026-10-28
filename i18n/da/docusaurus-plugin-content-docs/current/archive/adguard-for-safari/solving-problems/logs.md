@@ -1,5 +1,5 @@
 ---
-title: How to collect logs in AdGuard for Safari
+title: Sådan indsamles logfiler i AdGuard til Safari
 sidebar_position: 4
 ---
 
@@ -9,22 +9,22 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 :::
 
-To analyze and diagnose various problems that may occur with AdGuard for Safari, the AdGuard support service may need its log files. These files contain records of errors and other software events. Below are brief instructions on how to collect logs and send them to support if necessary.
+For at analysere og diagnosticere forskellige problemer, som kan opstå med AdGuard til Safari, kan AdGuard-supporttjenesten have behov for dens logfiler. Disse filer indeholder optegnelser over fejl og andre softwarehændelser. Nedenfor er en kort vejledning til, hvordan logfiler indsamles og indsendes til supporten om nødvendigt.
 
-### How to collect logs
+### Sådan indsamles logfiler
 
-1. Open AdGuard for Safari app.
-2. Scroll down and click _Export logs_.
-3. Choose a location to save the .zip file and click _Save_.
+1. Åbn AdGuard til Safari-appen.
+2. Rul ned og klik på _Eksportere logfiler_.
+3. Vælg en placering til .zip-filen, og klik på _Gem_.
 
-Now you can send this file to support@adguard.com or attach it to your bug report on GitHub.
+Nu kan denne fil indsendes til support@adguard.com eller vedhæftes en fejlanmeldelse på GitHub.
 
 :::note
 
-AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger strikst vores [Fortrolighedspolitik](https://adguard.com/privacy/safari.html) og indsamler ingen personlige oplysninger om brugere. Før indsendelse af logfiler til supportteamet, bedes filen gennemgået, da den også kan indeholde oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
 
 :::
 
 1. Åbn [GitHub-repo'et](https://github.com/AdguardTeam/AdguardMiniForMac/issues), og klik på _New issue_.
-2. Send the log file to devteam@adguard.com. Medtag tidspunktet for fejlen, og vedhæft et link til problematikken eller dens nummer (angivet som #number ved siden af titlen).
-   Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue.
+2. Indsend logfilen til devteam@adguard.com. Medtag tidspunktet for fejlen, og vedhæft et link til problematikken eller dens nummer (angivet som #number ved siden af titlen).
+   Alternativt kan logfilen uploades til Google Drev og indsendes til devteam@adguard.com. Føj fillinket til GitHub-problematikken.

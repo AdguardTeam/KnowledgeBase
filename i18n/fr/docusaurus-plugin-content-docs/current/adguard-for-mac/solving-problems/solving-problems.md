@@ -23,3 +23,4 @@ Voici quelques problèmes auxquels vous pourriez faire face ainsi que des soluti
 - [Configuration du filtrage dans le navigateur Tor](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [Problèmes de compatibilité avec Screen Time](/adguard-for-mac/solving-problems/screen-time-issues.md)
 - [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)
+- [Why AdGuard appears in Full Disk Access on macOS](/adguard-for-mac/solving-problems/adguard-in-full-disk-access.md)

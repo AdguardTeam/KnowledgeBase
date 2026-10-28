@@ -9,46 +9,46 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
+Der er andre nyttige AdGuard-muligheder i denne artikel, som ikke bør gå ubemærket hen, da de føjer meget til brugeroplevelsen.
 
 ### Support
 
 ![Support \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/support.png)
 
-By clicking the _Support_ tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Ved at klikke på fanen Support åbnes en dialogboks, hvorigennem man kan anmelde fejl, indsende funktionsanmodninger eller blot dele sin mening om produktet.
 
 ### Licens
 
-![License \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
+![Licens \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/license.png)
 
-This tab contains information about your license. Her kan man:
+Denne fane indeholder licensoplysninger. Her er det muligt at:
 
-- find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
-- click the button to go to the license purchase page, and activate, reset or recover a license.
+- se licenstypen (nightly build, beta eller udgivelse), antallet af tilgængelige enheder for samtidig forbindelse til AdGuard, licensudløbsdatoen;
+- klikke på knappen for at gå til licenskøbssiden og aktivere, nulstille eller gendanne en licens.
 
 ### Om
 
-![About \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
+![Om \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to License agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+Ud over oplysninger om aktuel programversion, giver denne fane nogle nyttige links til siderne indeholdende Licensaftale, Fortrolighedspolitik, Anerkendelser, Debatter samt Versionshistorik.
 
-### Check for updates
+### Søg efter opdateringer
 
-![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
+![Søg efter opdateringer \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/other_features/updates.png)
 
-To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
+Klik på ikonet med roterende pile øverste til højre på appens hovedskærm for at tjekke for filter- og userscript-opdateringer.
 
-### Tray menu
+### Bakkemenu
 
-To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
+For at spare tid på at navigere rundt i AdGuard-menuer er mange af de ofte brugte muligheder og indstillinger tilgængelige via bakkemenuen. For at få vist menuen, højreklik på AdGuard-bakkeikonet. Den vil tilbyde flg. muligheder:
 
-- enable protection
-- disable protection: completely or for 30 seconds
-- go to _Settings_
-- open the _Tools_ and _Advanced_ menus
-- check for filter updates
-- check for app updates
-- to recall the last pop-up message
-- reach the _Support_ and _About_ sections
-- close AdGuard, but continue filtering
-- exit AdGuard
+- slå beskyttelse til
+- slå beskyttelse fra: Helt eller i 30 sekunder
+- gå til _Indstillinger_
+- åbne menuerne _Værktøjer_ og _Avanceret_
+- søge efter filteropdateringer
+- søge efter app-opdateringer
+- se den sidste pop op-meddelelse igen
+- gå til afsnittene _Support_ og _Om_
+- lukke AdGuard, men fortsætte filtreringen
+- afslutte AdGuard

@@ -26,7 +26,7 @@ Try to provide as many details as possible — that'll make it easier for us to 
 - Whether it recurred and with what frequency
 - Whether you have a VPN or an antivirus software
 
-### How to collect logs
+### Sådan indsamles logfiler
 
 Read about collecting logs in dedicated articles for each platform.
 

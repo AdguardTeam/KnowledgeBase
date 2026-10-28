@@ -16,3 +16,4 @@ Here are some problems you may encounter and workarounds, as well as guides and 
 - [A filtragem não para quando o AdGuard Mini está desativado](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
 - [Como coletar registros no AdGuard Mini para Mac](/adguard-mini-for-mac/solving-problems/logs.md)
 - [O AdGuard Mini não funciona em abas privadas no macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)
+- [Why AdGuard Mini appears in Full Disk Access on macOS](/adguard-mini-for-mac/solving-problems/adguard-mini-in-full-disk-access.md)

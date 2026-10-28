@@ -1240,7 +1240,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chromium MV3. Alle anderen Produkte ignorieren die Regeln mit dem Modifikator `$stealth`.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
-- In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
+- In der AdGuard-Browsererweiterung gilt *WebRTC sperren* für alle Websites und lässt sich nicht für einzelne Websites steuern. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
 
@@ -4432,10 +4432,6 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
-**Default value**
-
-If this parameter is not specified, the `max-length` is considered to be 8192.
-
 Zum Beispiel:
 
 ```adblock
@@ -4487,7 +4483,7 @@ where `value` is:
 - Raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
 - Argument in the `/regexp/flags` form is treated as a regular expression.
 
-:::note Note
+:::note
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 

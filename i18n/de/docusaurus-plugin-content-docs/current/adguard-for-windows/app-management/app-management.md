@@ -15,7 +15,7 @@ Wenn Routing und Filterung für eine App aktiviert sind, werden die Symbole unte
 
 Sie können die Einstellungen unverändert lassen, sowohl das Filtern als auch das Routing deaktivieren oder sie für jede App manuell anpassen. Sie können zudem auf die Statistiken der App zugreifen.
 
-![App stats \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App-Statistiken \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Wie App-Filterung und Routing in AdGuard für Windows v8.0 funktionieren
 
