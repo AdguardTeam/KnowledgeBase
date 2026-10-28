@@ -13,7 +13,7 @@ AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups,
 
 - [Protection](/adguard-for-windows/protection/protection.md)
 
-    Settings to configure Ad blocking, Tracking protection, DNS protection, Annoyance blocking, Browsing security, Parental control, and Extensions
+    Settings to configure *Ad blocking*, *Tracking protection*, *DNS protection*, *Annoyance blocking*, *Browsing security*, *Parental control*, and *Extensions*
 
 - [Statistics](/adguard-for-windows/statistics/statistics.md)
 
