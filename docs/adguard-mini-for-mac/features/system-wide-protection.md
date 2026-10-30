@@ -12,7 +12,7 @@ The feature is available for users with an AdGuard license. You can [purchase th
 
 :::
 
-The feature currently does not work correctly on **macOS 27.2 beta**. If you’re on **macOS 26.0 and 27.0**, you can try *System-wide protection* as usual. Note that if *System-wide protection* works fine for you on macOS 27.0, it will most likely break after you update to macOS 27.2. Keep this in mind before you update your system.
+The feature does not work correctly on some macOS versions, including **26.7.2** and **27.2**. If you’re on **macOS 26.0 and 27.0**, you can try *System-wide protection* as usual. Note that if *System-wide protection* works fine for you on macOS 27.0, it will most likely break after you update to macOS 27.2. Keep this in mind before you update your system.
 
 In the release version, *System-wide protection* is hidden by default. To show it, go to *Settings* → *Miscellaneous* and turn on *Show System-wide protection (Experimental)*. The beta version always shows it.
 
