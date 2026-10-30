@@ -25,7 +25,7 @@ Erfahren Sie mehr über die Auswirkungen der MV3-Politik in unserem [Blogbeitrag
 
 ## So aktivieren Sie den Entwicklermodus
 
-Um benutzerdefinierte Filter und JavaScript-Regeln im Tab _Benutzerregeln_ verwenden zu können, müssen Sie zunächst Ihren Browser einrichten. Dadurch erhält die Erweiterung eine zuverlässige und sichere Methode, um Skripte zum optimalen Zeitpunkt in Webseiten einzuschleusen. Befolgen Sie die nachfolgenden Anweisungen je nach Ihrer Chrome-Version.
+To use custom filters, JavaScript rules in the _User Rules_ tab, and the [_Block fingerprinting_](/adguard-browser-extension/features/stealth-mode#fingerprinting) option, you must set up your browser first. Dadurch erhält die Erweiterung eine zuverlässige und sichere Methode, um Skripte zum optimalen Zeitpunkt in Webseiten einzuschleusen. Befolgen Sie die nachfolgenden Anweisungen je nach Ihrer Chrome-Version.
 
 ### Für Chrome-Versionen vor 138
 

@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Windows, un blocca-inserzioni multifunziona
 
 :::
 
-Ecco alcuni problemi che puoi riscontrare e le loro soluzioni, guide e istruzioni di cui potresti avere bisogno.
+Here are some problems you may encounter and workarounds, guides, and instructions you may need.
 
 - [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
 - [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)

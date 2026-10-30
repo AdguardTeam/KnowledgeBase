@@ -1,85 +1,85 @@
 ---
-title: System-wide protection
+title: Systemweiter Schutz
 sidebar_position: 9
 ---
 
-Starting with version 3.0, AdGuard Mini for Mac introduces _System-wide protection_, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
+Ab Version 3.0 bietet AdGuard Mini für Mac einen _systemweiten Schutz_, eine Funktion, die Werbung und Tracker nicht nur in Safari, sondern auch in anderen Apps auf Ihrem Mac blockiert.
 
-The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
+Die Funktion steht Nutzer:innen mit einer AdGuard-Lizenz zur Verfügung. Sie können [die Lizenz sofort kaufen](https://adguard.com/license.html) oder unter _Erweiterter Schutz_ auf _Kostenlos testen_ klicken, um eine 14-tägige kostenlose Testversion zu starten.
 
 ## So funktioniert es
 
-_System-wide protection_ is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a system filtering API used for system-wide traffic filtering. Here’s how it works.
+_Systemweiter Schutz_ basiert auf Apples [**URL-Filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), einer Filter-API, die für die systemweite Filterung des Datenverkehrs verwendet wird. So funktioniert es.
 
-First, macOS checks a URL against a bloom filter — a prefilter stored on your Mac that updates in the background. Most addresses are cleared locally, with no network request for the check itself.
+Zuerst prüft macOS eine URL anhand eines Bloom-Filters — eines auf Ihrem Mac gespeicherten Vorfilters, der im Hintergrund aktualisiert wird. Die meisten Adressen werden lokal freigegeben, ohne Netzwerkanfrage für die Überprüfung selbst.
 
-If the prefilter finds a possible match, macOS asks AdGuard’s server for a verdict using Private Information Retrieval (PIR). This method lets your Mac request data from the server without revealing which exact address it asked about. The request can’t be linked to your account or device. If the server doesn’t respond, the page loads normally.
+Wenn der Vorfilter eine mögliche Übereinstimmung findet, fragt macOS den Server von AdGuard mithilfe von Private Information Retrieval (PIR) nach einem Urteil. Diese Methode ermöglicht es Ihrem Mac, Daten vom Server anzufordern, ohne preiszugeben, nach welcher genauen Adresse er gefragt hat. Die Anfrage kann nicht mit Ihrem Konto oder Gerät verknüpft werden. Wenn der Server nicht antwortet, lädt die Seite normal.
 
-You can read [a detailed analysis of Apple’s approach to system-wide filtering](https://adguard.com/en/blog/apple-url-filter-system-wide-filtering-api.html) in our blog.
+Sie können [eine detaillierte Analyse von Apples Ansatz zur systemweiten Filterung](https://adguard.com/de/blog/apple-url-filter-system-wide-filtering-api.html) in unserem Blog lesen.
 
-## How to turn on System-wide protection
+## So aktivieren Sie den Systemweiten Schutz
 
-You’ll find _System-wide protection_ under _Advanced protection_ in the AdGuard Mini app. To enable it, toggle the switch on.
+Sie finden _Systemweiter Schutz_ unter _Erweiterter Schutz_ in der AdGuard Mini-App. Um die Funktion zu aktivieren, schalten Sie den Schalter ein.
 
-![System-wide protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/system-wide-protection.png)
+![Systemweiter Schutz](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/system-wide-protection-de.png)
 
-When you first enable _System-wide protection_, you’ll get a request to install the URL filter on your computer. Click _Install_, after which a system message will appear requesting to add filter configurations. This is standard macOS behavior. AdGuard does not see or store any of this data.
+Wenn Sie den _systemweiten Schutz_ zum ersten Mal aktivieren, erhalten Sie eine Anfrage, den URL-Filter auf Ihrem Computer zu installieren. Klicken Sie auf _Installieren_. Daraufhin erscheint eine Systemmeldung, in der Sie aufgefordert werden, Filterkonfigurationen hinzuzufügen. Dies ist das Standardverhalten von macOS. AdGuard sieht oder speichert keine dieser Daten.
 
-![System-wide protection requires a URL filter](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/install-screen.png)
+![Systemweiter Schutz erfordert einen URL-Filter](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/install-screen.png)
 
-After you install the URL filter, _System-wide protection_ will remain on by default. If you want it off, toggle off the _System-wide protection_ switch in _Advanced protection_.
+Nachdem Sie den URL-Filter installiert haben, bleibt der _Systemweite Schutz_ standardmäßig aktiviert. Wenn Sie ihn ausschalten möchten, schalten Sie den Schalter _Systemweiter Schutz_ unter _Erweiterter Schutz_ aus.
 
-You can also click the context menu in the top right corner (⋮) and select _Remove URL Filter_. If you want to reset the filter without deleting it to troubleshoot connection issues, choose _Reset Cache_.
+Sie können auch auf das Kontextmenü in der oberen rechten Ecke (⋮) klicken und _URL-Filter entfernen_ auswählen. Wenn Sie den Filter zurücksetzen möchten, ohne ihn zu löschen, um Verbindungsprobleme zu beheben, wählen Sie _Cache zurücksetzen_.
 
-It’s also possible to disable the URL filter in your Mac’s _System Settings_ → _Network_ → _VPN & Filters_ → _Filters & Proxies_. Change _Enabled_ to _Disabled_ in the _Status menu_. AdGuard Mini will then switch off _System-wide protection_ automatically.
+Es ist auch möglich, den URL-Filter in den _Systemeinstellungen_ Ihres Mac → _Netzwerk_ → _VPN & Filter_ → _Filter & Proxys_ zu deaktivieren. Ändern Sie im Menü _Status_ die Einstellung von _Aktiviert_ auf _Deaktiviert_. AdGuard Mini schaltet dann den _Systemweiten Schutz_ automatisch aus.
 
-## Protection levels
+## Schutzstufen
 
-There are three levels of protection you can choose from. _Essential_ is selected by default.
+Es stehen drei Schutzstufen zur Auswahl. _Basis_ ist standardmäßig aktiviert.
 
-- _Essential_ — blocks ads and trackers
-- _Safe_ — blocks ads, trackers, phishing, and malware
-- _Family_ — blocks ads, trackers, phishing, malware, and adult content
+- _Basis_: blockiert Werbung und Tracker
+- _Sicher_: blockiert Werbung, Tracker, Phishing und Malware
+- _Familie_: blockiert Werbung, Tracker, Phishing, Schadsoftware und Inhalte für Erwachsene
 
-![Three levels of protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/levels-of-protection.png)
+![Drei Schutzstufen](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/levels-of-protection-de.png)
 
-## Troubleshooting
+## Fehlersuche
 
-### System-wide protection doesn’t work with every app or browser
+### Systemweiter Schutz funktioniert nicht mit jeder App oder jedem Browser
 
-Coverage depends on how each app handles network requests, so some apps may not be filtered. This is a limitation on Apple’s side.
+Die Abdeckung hängt davon ab, wie jede App Netzwerkanfragen verarbeitet, sodass manche Apps möglicherweise nicht gefiltert werden. Dies ist eine Einschränkung seitens Apple.
 
-Chromium-based browsers, such as Chrome, Edge, Opera, and Brave, use their own networking code instead of Apple’s frameworks, so the URL filter can’t check their requests.
+Chromium-basierte Browser wie Chrome, Edge, Opera und Brave verwenden ihren eigenen Netzwerkcode anstelle der Frameworks von Apple, sodass der URL-Filter ihre Anfragen nicht überprüfen kann.
 
-### System-wide protection doesn’t turn on
+### Der Systemweite Schutz lässt sich nicht aktivieren
 
-- **Your Mac runs an older version of macOS.** Apple’s URL filter needs macOS 26 Tahoe or later. On earlier versions, the setting is disabled and the app asks you to _Update to macOS Tahoe 26 or later_.
-- **Your account isn’t supported.** _System-wide protection_ only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows _Not supported on this Mac account_. See [Can I change my Mac account’s user ID?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) below.
-- **You’re on the free version.** To use _System-wide protection_, [purchase an AdGuard license](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
+- **Auf Ihrem Mac läuft eine ältere Version von macOS.** Apples URL-Filter erfordert macOS 26 Tahoe oder neuer. In früheren Versionen ist die Einstellung deaktiviert und die App fordert Sie auf, _auf macOS Tahoe 26 oder neuer zu aktualisieren_.
+- **Ihr Konto wird nicht unterstützt.** _Systemweiter Schutz_ funktioniert nur mit dem ersten auf einem Mac erstellten Nutzerkonto. Wenn Ihr Konto erst später hinzugefügt wurde, ist die Einstellung deaktiviert und es wird _Auf diesem Mac-Konto nicht unterstützt_ angezeigt. Siehe [Kann ich die Nutzer-ID meines Mac-Kontos ändern?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) weiter unten.
+- **Sie nutzen die kostenlose Version.** Um den _Systemweiten Schutz_ zu nutzen, [kaufen Sie eine AdGuard-Lizenz](https://adguard.com/license.html) oder klicken Sie unter _Erweiterter Schutz_ auf _Kostenlos testen_, um eine 14-tägige kostenlose Testphase zu starten.
 
-### Can I change my Mac account’s user ID?
+### Kann ich die Nutzer-ID meines Mac-Kontos ändern?
 
-Yes. _System-wide protection_ only works with the first user account created on a Mac with the user ID (UID) of 501. If your Mac has more than one account, or if you migrated your account from an older Mac, your UID might be different. Follow the steps below to check your UID and, if needed, free up 501 and assign it to your account.
+Ja. _Systemweiter Schutz_ funktioniert nur mit dem ersten auf einem Mac erstellten Nutzerkonto mit der Nutzer-ID (UID) 501. Wenn Ihr Mac über mehr als ein Konto verfügt oder Sie Ihr Konto von einem älteren Mac migriert haben, kann Ihre UID abweichen. Folgen Sie den nachstehenden Schritten, um Ihre UID zu überprüfen und gegebenenfalls 501 freizugeben und Ihrem Konto zuzuweisen.
 
 :::warning
 
-This is an advanced, risky operation. Only do this if you have no other option. Freeing up UID 501 means deleting an existing account and creating a new one from Terminal. If something goes wrong, this can cause permanent data loss. Back up all the data on your Mac before proceeding.
+Dies ist ein fortgeschrittener, riskanter Vorgang. Tun Sie dies nur, wenn Sie keine andere Möglichkeit haben. Um UID 501 freizugeben, muss ein bestehendes Konto gelöscht und ein neues über das Terminal erstellt werden. Wenn etwas schiefgeht, kann dies zu permanentem Datenverlust führen. Sichern Sie alle Daten auf Ihrem Mac, bevor Sie fortfahren.
 
 :::
 
-1. **Check your current UID.** Open Terminal, type `id -u`, and press Return. If the result is 501, your account already has the right UID. You don’t need to do anything else.
+1. **Prüfen Sie Ihre aktuelle UID.** Öffnen Sie das Terminal, geben Sie `id -u` ein und drücken Sie die Eingabetaste. Wenn das Ergebnis 501 lautet, hat Ihr Konto bereits die richtige UID. Sie müssen nichts weiter tun.
 
-2. **Find out who has UID 501.** If your UID is not 501, run this command:
+2. **Finden Sie heraus, wer die UID 501 hat.** Wenn Ihre UID nicht 501 ist, führen Sie diesen Befehl aus:
 
     ```bash
     dscacheutil -q user -a uid 501 | grep -E '^(name|uid|gecos):'
     ```
 
-   This shows the username, UID, and full name of that account. Make sure you don’t need any files from it, or back them up before continuing.
+   Dies zeigt den Nutzernamen, die UID und den vollständigen Namen dieses Kontos. Stellen Sie sicher, dass Sie keine Dateien davon benötigen, oder sichern Sie diese, bevor Sie fortfahren.
 
-3. **Delete the account with UID 501.** While logged in to your own admin account, open _System Settings_ → _Users & Groups_, select the account from step 2, and delete it. When macOS asks what to do with its home folder, choose _Save the home folder in a disk image_ — this keeps the account’s files in case you need them later.
+3. **Löschen Sie das Konto mit UID 501.** Während Sie in Ihrem eigenen Admin-Konto angemeldet sind, öffnen Sie _Systemeinstellungen_ → _Nutzer & Gruppen_, wählen Sie das Konto aus Schritt 2 aus und löschen Sie es. Wenn macOS fragt, was mit dessen Benutzerordner geschehen soll, wählen Sie _Benutzerordner in einem Disk-Image speichern_ — dadurch bleiben die Dateien des Kontos erhalten, falls Sie sie später benötigen.
 
-4. **Create a new account with UID 501.** Run the following command, replacing `username` and `Name Surname` with the details you want:
+4. **Erstellen Sie ein neues Konto mit UID 501.** Führen Sie den folgenden Befehl aus und ersetzen Sie dabei `username` und `Name Surname` durch die gewünschten Angaben:
 
     ```bash
     sudo sysadminctl -addUser username \
@@ -89,6 +89,6 @@ This is an advanced, risky operation. Only do this if you have no other option. 
       -UID 501
     ```
 
-   `-password -` makes Terminal prompt you for the password interactively; `-admin` gives the new account administrator rights.
+   `-password -` sorgt dafür, dass Terminal Sie interaktiv zur Eingabe des Passworts auffordert; `-admin` verleiht dem neuen Konto Administratorrechte.
 
-5. **Verify the change.** Log in to the new account, then check the UID again: open Terminal, type `id -u`, and press Return. The result should now be 501.
+5. **Überprüfen Sie die Änderung.** Melden Sie sich im neuen Konto an und überprüfen Sie dann die UID erneut: Öffnen Sie das Terminal, geben Sie `id -u` ein und drücken Sie die Eingabetaste. Das Ergebnis sollte jetzt 501 sein.

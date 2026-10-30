@@ -3,37 +3,34 @@ title: AdGuard til Windows
 sidebar_position: 1
 ---
 
-AdGuard til Windows er et brugervenligt værktøj, der blokerer irriterende bannere, pop op'ere, videoreklamer og trackere. Det er dog ikke alt: Den bidrager også til at reducere trafik, indlæse websider hurtigere og beskytte computeren mod uønskede og potentielt skadelige websteder. AdGuard beskytter også mod phishing-websteder og beskytter børn mod upassende indhold.
+:::info
 
-## Systemkrav
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
-- **OS-version:** Minimum Microsoft Windows 10
-- **RAM:** Minumum 6 GB
-- **Processor:** Minimum 2-kerner, 2.0 GHz
-- **Ledig diskplads:** Minimum 4 GB.
+:::
 
----
+AdGuard til Windows er et brugervenligt værktøj, der blokerer irriterende bannere, pop op'ere, videoreklamer og trackere. Det er dog ikke alt: Den bidrager også til at reducere trafik, indlæse websider hurtigere og beskytte computeren mod potentielt skadelige websteder. AdGuard beskytter også mod phishing-websteder og beskytter børn mod upassende indhold.
 
-![Startskærm \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+- [Beskyttelse](/adguard-for-windows/protection/protection.md)
 
-På startskærmen findes en til/fra knap til at aktivere/deaktivere AdGuard-beskyttelse samt ikoner til _Adblocking_, _Sporingsbeskyttelse_, _DNS-beskyttelse_ og _Irritationsblokering_. Hovedindstillinger kan tilgås via menuen til venstre.
+  Indstillinger til opsætning af _Adblocking_, _Sporingsbeskyttelse_, _DNS-beskyttelse_, _Irritationsblokering_, _Browsingsikkerhed_, _Forældrekontrol_ og _Udvidelser_
 
-## [Beskyttelse](/adguard-for-windows/protection/)
+- [Statistik](/adguard-for-windows/statistics/statistics.md)
 
-Indstillinger til opsætning af _Adblocking_, _Sporingsbeskyttelse_, _DNS-beskyttelse_, _Irritationsblokering_, _Browsingsikkerhed_, _Forældrekontrol_ og _Udvidelser_.
+  Detaljerede oplysninger om blokerede annoncer, trackere og dataforbrug
 
-## [Statistik](/adguard-for-windows/statistics/)
+- [App-håndtering](/adguard-for-windows/app-management/app-management.md)
 
-Detaljerede oplysninger om blokerede annoncer, trackere og dataforbrug.
+  Indstillinger til tilpasning af trafikfiltrering og rutning for hver app og webbrowser
 
-## [App-håndtering](/adguard-for-windows/app-management/)
+- [Indstillinger](/adguard-for-windows/settings/settings.md)
 
-Indstillinger til tilpasning af trafikfiltrering og rutning for hver app og webbrowser.
+  Sprog og tema, licensoplysninger, support samt avancerede indstillinger og netværksindstillinger
 
-## [Indstillinger](/adguard-for-windows/settings/)
+- [Installation](/adguard-for-windows/installation.md)
 
-Muligheder for at vælge sprog og tema, se juridiske dokumenter, tjekke licensoplysninger og kontakte supporten. Avancerede indstillinger og netværksindstillinger er også placeret der.
+  Installation, afinstallation og systemkrav for AdGuard til Windows
 
-Klik på _Tjek for opdateringer_ for at se, om app-versionen, filtrene og udvidelserne er opdaterede.
+- [Løsning af problemer](/adguard-for-windows/solving-problems/solving-problems.md)
 
-![Tjek for opdateringer \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)
+  Kendte problemer, logfiler og mulige løsninger

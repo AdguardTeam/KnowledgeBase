@@ -30,3 +30,23 @@ Browser extensions are limited to a specific browser and are subject to its tech
 In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
 
 :::
+
+## Block fingerprinting {#fingerprinting}
+
+Starting with version 5.6, the _General_ section of _Tracking protection_ has the _Block fingerprinting_ option. It slightly changes the images that websites read from a canvas, so websites can’t use them to identify your browser and device. A [separate article](/general/stealth-mode#fingerprinting) describes how it works.
+
+Bu seçenek varsayılan olarak kapalıdır. It works only while AdGuard protection and _Tracking protection_ are on. Changes to the option, the allowlist, and user rules apply to pages you open or reload afterwards.
+
+_Block fingerprinting_ is available in all browsers that AdGuard Browser Extension supports, including Firefox for Android. How early the protection starts depends on the browser:
+
+- In the [MV3 version](/adguard-browser-extension/mv3-version) of the extension and in Firefox 128 or later, the protection starts before the website’s own scripts.
+- In the MV2 version for Chromium-based browsers, the protection may start too late on some pages, so a website can read the original image.
+- In Firefox versions earlier than 128, the protection starts before the website’s own scripts, except on websites with a strict Content Security Policy: there it may start too late or not at all.
+
+In the MV3 version, _Block fingerprinting_ needs the same browser setting as custom filters: _Allow user scripts_, or _Developer mode_ in Chrome versions prior to 138. While the option is on and the setting is off, AdGuard shows a reminder under the option. Learn [how to enable the setting](/adguard-browser-extension/user-scripts-api). Then return to the _Tracking protection_ page in AdGuard settings: you don’t need to turn the option off and on again.
+
+In private windows, the protection works only if you allow AdGuard to run there.
+
+The protection is off on websites in the [allowlist](/adguard-browser-extension/features/filters#allowlist). With _Invert allowlist_ on, it works only on websites from the list. To turn off only _Block fingerprinting_ for a website and keep other _Tracking protection_ features, add a user rule like `@@||example.com^$stealth=fingerprinting`. Learn more about the [`$stealth` modifier](/general/ad-filtering/create-own-filters#stealth-modifier) and its [limitations](/general/ad-filtering/create-own-filters#stealth-modifier-limitations).
+
+In Firefox, a frame from another website, such as an embedded widget, may not know which page it is on: always in versions earlier than 148, and in later versions when the page hides its address from the frame. Such a frame gets the same result on every website that embeds it, and the allowlist does not turn off the protection in it. To turn off the protection in such a frame, add a rule for the frame’s domain, for example `@@||widget.example.com^$stealth=fingerprinting`.

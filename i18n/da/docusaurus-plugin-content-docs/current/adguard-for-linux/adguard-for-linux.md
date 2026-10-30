@@ -3,28 +3,28 @@ title: AdGuard til Linux
 sidebar_position: 1
 ---
 
-AdGuard for Linux, also known as AdGuard CLI, is a command-line ad blocker. You can use it on Linux or macOS devices.
+AdGuard til Linux, også betegnet AdGuard CLI, er en kommandolinje-adblocker. Den kan anvendes på Linux- eller macOS-enheder.
 
-## Supported Linux distributions
+## Understøttede Linux-distributioner
 
-AdGuard CLI supports the following Linux distributions:
+AdGuard CLI understtter flg. Linux-distributioner:
 
-- Debian stable 10 or later
-- Ubuntu LTS 22.04, 24.04, or later
-- RHEL 8.0 or later
-- Fedora 35 or later
+- Debian 10 stabil eller senere
+- Ubuntu LTS 22.04, 24.04 eller senere
+- RHEL 8.0 eller senere
+- Fedora 35 eller senere
 
-On Linux distributions that are **not based on Debian or Red Hat**, the automatic certificate installation script may not work properly.
+På Linux-distributioner, som **ikke er baseret på Debian eller Red Hat**, fungerer det automatiske certifikatinstallationsscript muligvis ikke ordentligt.
 
-Below are commands you may need to log in, enable protection, and manage the AdGuard settings.
+Nedenfor er kommandoer til brug for at logge ind, aktivere beskyttelse og håndtere AdGuard-indstillingerne.
 
-- [Installation, setup, and removal](/adguard-for-linux/installation)
-- [Settings and protection management](/adguard-for-linux/settings)
-- [Sending feedback](/adguard-for-linux/feedback)
+- [Installation, opsætning og afinstallation](/adguard-for-linux/installation)
+- [Indstillings- og beskyttelseshåndtering](/adguard-for-linux/settings)
+- [Feedback-indsendelse](/adguard-for-linux/feedback)
 
-On Linux, press `Ctrl+Alt+T`. On your Mac, type `Terminal` in the search field.
+På Linux, tryk på `Ctrl+Alt+T`. På Mac, skriv `Terminal` i søgefeltet.
 
-To view all available commands, enter:
+For at få vist alle kommandoer, skriv:
 
 ```
 adguard-cli --help-all

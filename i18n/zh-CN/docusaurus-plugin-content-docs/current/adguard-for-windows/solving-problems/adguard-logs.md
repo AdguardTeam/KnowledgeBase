@@ -1,6 +1,6 @@
 ---
 title: 如何收集 AdGuard 日志记录
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info

@@ -124,7 +124,7 @@
     "description": "The label for category 'solving-problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-for-windows": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems-adguard-for-windows": {
@@ -144,7 +144,7 @@
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-for-mac": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems-adguard-for-mac": {
@@ -152,7 +152,7 @@
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-for-android": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.protection-adguard-for-android-features": {
@@ -164,7 +164,7 @@
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-for-ios": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems-adguard-for-ios": {
@@ -172,7 +172,7 @@
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-browser-extension": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems-adguard-browser-extension": {
@@ -180,7 +180,7 @@
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-for-safari": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.solving-problems-adguard-for-safari": {
@@ -188,7 +188,7 @@
     "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-mini-for-mac": {
-    "message": "Функции",
+    "message": "Features",
     "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.settings-adguard-mini-for-mac": {

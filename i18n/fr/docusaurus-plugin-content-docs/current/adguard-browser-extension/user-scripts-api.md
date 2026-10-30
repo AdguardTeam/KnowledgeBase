@@ -25,7 +25,7 @@ Apprenez plus sur les impacts des politiques MV3 dans notre [article de blog](ht
 
 ## Comment activer le mode développeur
 
-Pour utiliser les filtres personnalisés et les règles JavaScript dans l'onglet _Règles de l'utilisateur_, vous devez d'abord configurer votre navigateur. Cela offrira à l’extension une méthode fiable et sécurisée pour injecter des scripts dans les pages Web au moment optimal. Suivez les instructions ci-dessous en fonction de votre version de Chrome.
+To use custom filters, JavaScript rules in the _User Rules_ tab, and the [_Block fingerprinting_](/adguard-browser-extension/features/stealth-mode#fingerprinting) option, you must set up your browser first. Cela offrira à l’extension une méthode fiable et sécurisée pour injecter des scripts dans les pages Web au moment optimal. Suivez les instructions ci-dessous en fonction de votre version de Chrome.
 
 ### Pour les versions de Chrome antérieures à 138
 

@@ -1,6 +1,6 @@
 ---
 title: AdGuard for Windows の既知の問題
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 :::info

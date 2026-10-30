@@ -9,7 +9,7 @@ Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifunci
 
 :::
 
-Aqui estão alguns problemas que você pode encontrar e as suas respectivas soluções, além de guias e instruções úteis.
+Aqui estão alguns problemas que você pode encontrar e soluções, guias e instruções que pode precisar.
 
 - [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
 - [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)

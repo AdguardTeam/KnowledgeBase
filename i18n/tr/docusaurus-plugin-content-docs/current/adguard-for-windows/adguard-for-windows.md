@@ -3,37 +3,34 @@ title: Windows için AdGuard
 sidebar_position: 1
 ---
 
-Windows için AdGuard can sıkıcı afişleri, açılır pencereleri, video reklamları ve izleyicileri engelleyen, kullanımı kolay bir araçtır. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard ayrıca sizi kimlik avı sitelerinden korur ve çocuklarınızı uygunsuz içerikten uzak tutar.
+:::info
 
-## Sistem gereksinimleri
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
-- **OS version:** Microsoft Windows 10 or higher
-- **RAM:** en az 6 GB
-- **Processor:** 2-core, 2.0 GHz (or faster)
-- **Boş disk alanı:** en az 4 GB.
+:::
 
----
+Windows için AdGuard can sıkıcı afişleri, açılır pencereleri, video reklamları ve izleyicileri engelleyen, kullanımı kolay bir araçtır. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from potentially malicious websites. AdGuard ayrıca sizi kimlik avı sitelerinden korur ve çocuklarınızı uygunsuz içerikten uzak tutar.
 
-![Home screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+- [Protection](/adguard-for-windows/protection/protection.md)
 
-On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for _Ad blocking_, _Tracking protection_, _DNS protection_, and _Annoyance blocking_. Main settings can be accessed through the left-side menu.
+  Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyance blocking_, _Browsing security_, _Parental control_, and _Extensions_
 
-## [Protection](/adguard-for-windows/protection/)
+- [Statistics](/adguard-for-windows/statistics/statistics.md)
 
-Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyances blocking_, _Browsing security_, _Parental control_, and _Extensions_.
+  Detailed information about blocked ads, trackers, and data usage
 
-## [Statistics](/adguard-for-windows/statistics/)
+- [App management](/adguard-for-windows/app-management/app-management.md)
 
-Detailed information about blocked ads, trackers, and data usage.
+  Settings to customize traffic filtering and routing for each app and browser
 
-## [App management](/adguard-for-windows/app-management/)
+- [Settings](/adguard-for-windows/settings/settings.md)
 
-Settings to customize traffic filtering and routing for each app and browser.
+  Language and theme, license information, support, and advanced and network settings
 
-## [Settings](/adguard-for-windows/settings/)
+- [Installation](/adguard-for-windows/installation.md)
 
-Options to select language and theme, view legal documents, check license information, and contact support. Advanced settings and network settings also live there.
+  Installation, removal, and system requirements for AdGuard for Windows
 
-Click _Check for updates_ to see whether your app version, filters, and extensions are up to date.
+- [Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
 
-![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)
+  Known issues, logs, and possible solutions

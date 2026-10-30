@@ -5,24 +5,24 @@ sidebar_position: 1
 
 :::info
 
-This page is about AdGuard Mini for Mac, which safeguards only your Safari browser. For at beskytte Mac'en helt, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
+Denne side omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowseren. For at beskytte Mac'en helt, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Mini for Mac (formerly AdGuard for Safari) was designed to conform to Apple’s restrictions for ad blocking browser extensions. Although it can’t be compared to our desktop ad blocking apps, it’s free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard Mini til Mac (tidligere AdGuard til Safari) blev designet til at overholde Apples restriktioner for adblocking-webbrowserudvidelser. Selvom den ikke kan sammenlignes med vores computer adblocking-apps, er den gratis og kan beskytte mod annoncer, trackere, phishing og ondsindede websteder.
 
-- [Features](/adguard-mini-for-mac/features/features.md)
+- [Funktioner](/adguard-mini-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard Mini for Mac
+  Primære funktioner og indstillinger tilgængelige i AdGuard Mini til Mac
 
 - [Installation](/adguard-mini-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard Mini for Mac
+  Installation, afinstallation og systemkrav til AdGuard Mini til Mac
 
-- [Safari extensions](/adguard-mini-for-mac/extensions.md)
+- [Safari-udvidelser](/adguard-mini-for-mac/extensions.md)
 
-  Mechanisms that enable content blocking and add functionality to the Safari web browser
+  Mekanismer, som aktiverer indholdsblocking og føjer funktionalitet til Safari-webbrowseren
 
-- [Solving problems](/adguard-mini-for-mac/solving-problems/solving-problems.md)
+- [Løsning af problemer](/adguard-mini-for-mac/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  Kendte problemer og mulige løsninger

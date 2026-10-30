@@ -1,6 +1,6 @@
 ---
 title: Come raccogliere i registri di sistema di Windows
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

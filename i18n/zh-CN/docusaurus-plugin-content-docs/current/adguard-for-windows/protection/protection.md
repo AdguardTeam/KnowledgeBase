@@ -3,6 +3,10 @@ title: 防护
 sidebar_position: 1
 ---
 
+![Home screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+
+在主屏幕上，您会看到一个用于开启或关闭 AdGuard 防护的开关，以及「广告拦截」、「跟踪保护」、「DNS 保护」和「烦扰拦截」的图标。主要设置可通过左侧菜单访问。
+
 ![Protection tab \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
 「保护」标签包含所有关键的安全与过滤设置。在这里可配置广告拦截、跟踪保护、DNS 保护、烦扰拦截、浏览安全、家长控制和扩展程序。您还可以在这里管理 AdGuard 助手，该工具在不打开应用程序的情况下控制其功能。每个功能都在单独的文章中描述。

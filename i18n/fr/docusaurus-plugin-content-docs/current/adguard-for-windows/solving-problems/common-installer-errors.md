@@ -1,6 +1,6 @@
 ---
 title: Erreurs d’installation courantes
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 :::info

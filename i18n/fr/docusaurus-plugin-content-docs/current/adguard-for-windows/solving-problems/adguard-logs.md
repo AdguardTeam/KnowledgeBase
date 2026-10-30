@@ -1,6 +1,6 @@
 ---
 title: Comment collecter les journaux AdGuard
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info

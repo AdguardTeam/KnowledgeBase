@@ -1,6 +1,6 @@
 ---
 title: Filterprobleme in Chrome 142+ bei Verwendung des TDI-Treibers
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.

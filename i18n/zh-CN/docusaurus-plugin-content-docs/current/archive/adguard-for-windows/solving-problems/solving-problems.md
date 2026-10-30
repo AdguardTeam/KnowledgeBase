@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-以下是用户会遇到的一些问题以及可能需要的解决方法、指南和指示说明。
+以下是用户会遇到的一些问题以及可能需要的解决方法、指南和说明。
 
 - [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
 - [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)

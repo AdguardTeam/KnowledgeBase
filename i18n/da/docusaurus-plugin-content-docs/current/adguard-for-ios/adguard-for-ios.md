@@ -3,22 +3,22 @@ title: AdGuard til iOS
 sidebar_position: 1
 ---
 
-- [Features](/adguard-for-ios/features/features.md)
+- [Funktioner](/adguard-for-ios/features/features.md)
 
-  Main features and settings available in AdGuard for iOS
+  Primære funktioner og indstillinger tilgængelige i AdGuard til iOS
 
 - [Installation](/adguard-for-ios/installation.md)
 
-  Installation, removal, and system requirements for AdGuard for iOS
+  Installation, afinstallation og systemkrav til AdGuard til iOS
 
-- [Safari Web extension](/adguard-for-ios/web-extension.md)
+- [Safari Webudvidelse](/adguard-for-ios/web-extension.md)
 
-  A web extension that extends the functionality of AdGuard for iOS and allows you to manage AdGuard from your browser
+  En webudvidelse, der udvider funktionaliteten af AdGuard til iOS og muliggør at håndtere AdGuard fra webbrowseren
 
-- [Solving problems](/adguard-for-ios/solving-problems/solving-problems.md)
+- [Løsning af problemer](/adguard-for-ios/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  Kendte problemer og mulige løsninger
 
-- [AdGuard and AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
+- [AdGuard og AdGuard Pro](/adguard-for-ios/adguard-and-adguard-pro.md)
 
-  Why there are two AdGuard apps in the App Store and how they differ
+  Hvorfor der er to AdGuard-apps i App Store, og hvordan de adskiller sig

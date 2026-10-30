@@ -9,22 +9,22 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-- [Features](/archive/adguard-for-windows/features/features.md)
+- [Funktioner](/archive/adguard-for-windows/features/features.md)
 
-  Main features and settings available in AdGuard for Windows
+  Primære funktioner og indstillinger tilgængelige i AdGuard til Windows
 
 - [Installation](/archive/adguard-for-windows/installation.md)
 
-  Installation, removal, and system requirements for AdGuard for Windows
+  Installation, afinstallation og systemkrav for AdGuard til Windows
 
-- [Browser Assistant](/archive/adguard-for-windows/browser-assistant.md)
+- [Browser Assistent](/archive/adguard-for-windows/browser-assistant.md)
 
   En udvidelse, der supplerer computer-appen og muliggør håndtering af filtrering fra webbrowseren
 
-- [Solving problems](/archive/adguard-for-windows/solving-problems/solving-problems.md)
+- [Løsning af problemer](/archive/adguard-for-windows/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  Kendte problemer og mulige løsninger
 
-- [Documentation for admins](/archive/adguard-for-windows/admins-documentation.md)
+- [Dokumentation til admins](/archive/adguard-for-windows/admins-documentation.md)
 
-  Configuration guide for system administrators
+  Opsætningsvejledning til systemadministratorer

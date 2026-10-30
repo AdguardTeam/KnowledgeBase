@@ -1,57 +1,57 @@
 ---
-title: Filtering issues in Chrome 142+ when using the TDI driver
-sidebar_position: 1
+title: Filtreringsproblemer i Chrome 142+ ved brug af TDI-driveren
+sidebar_position: 2
 ---
 
-Some AdGuard for Windows users may notice that [the app stops filtering traffic in Chromium-based browsers](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
+Nogle AdGuard til Windows-brugere kan opleve, at [appen stopper filtrering af trafik i Chromium-baserede webbrowsere](https://github.com/AdguardTeam/AdguardForWindows/issues/5771). Starting from Google Chrome 142+, browser traffic simply does not appear at the TDI driver level, preventing AdGuard from inspecting or filtering it.
 
-This behavior is not a bug in AdGuard, but a result of recent architectural and security changes in modern browsers.
+Denne adfærd er ikke en fejl i AdGuard, men et resultat af nylige arkitektoniske og sikkerhedsmæssige ændringer i moderne webbrowsere.
 
-## Why this happens
+## Hvorfor dette sker
 
-Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, etc.) have been strengthening their security architecture. One significant change is moving sensitive internal processes into the [Windows AppContainer sandbox](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), including the Network Service, which handles all browser traffic.
+Chromium-baserede webbrowsere (Chrome, Edge, Brave, Vivaldi mv.) har styrket deres sikkerhedsarkitektur. Én vigtig ændring er flytningen af følsomme interne processer til [Windows AppContainer-sandkassen](https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation), herunder Network Service, der håndterer al webbrowsertrafik.
 
-### What changed in Chrome 142
+### Ændringer foretaget i Chrome 142
 
 Starting from Chrome 142, the Network Service process is now launched inside AppContainer by default.
 
-When this happens, applications running in an AppContainer do not use the legacy TDI networking interface; instead, their traffic is routed through the more modern WSK (Winsock Kernel) stack. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
+Når dette sker, bruger applikationer, som kører i en AppContainer, ikke legacy TDI-netværksgrænsefladen; i stedet rutes deres trafik igennem den mere moderne WSK (Winsock Kernel) stak. As a result, the TDI driver cannot see, intercept, or process connections that go through WSK, and all browser traffic becomes invisible to the TDI driver used by AdGuard.
 
-This behavior is controlled entirely by Chrome’s sandboxing policies and internal experiments (field trials), not by user settings.
+Denne adfærd styres fuldstændigt af Chromes sandkassepolitikker og interne eksperimenter (feltforsøg), ikke af brugerindstillinger.
 
-## Why this affects AdGuard
+## Hvorfor dette påvirker AdGuard
 
-The TDI driver is an outdated Windows technology that has been deprecated and unsupported by Microsoft for many years. It is not compatible with modern isolation and sandboxing models used by browsers.
+TDI-driveren er en forældet Windows-teknologi, der har været udfaset og uunderstøtter af Microsoft i mange år. Den er inkompatibelt med moderne isolations- og sandkassemodeller brugt af webbrowsere.
 
-Because of this, TDI-based traffic visibility becomes increasingly unstable. In some browsers, it has already disappeared completely, and it will eventually stop working altogether.
+Som følge heraf bliver TDI-baseret trafiksynlighed stadigt mere ustabil. I visse webbrowsere er den allerede forsvundet helt og vil til sidst helt ophøre med at fungere.
 
-AdGuard already treats the TDI driver as deprecated, and its complete removal is planned as the product evolves.
+AdGuard behandler allerede TDI-driveren som udfaset, og dens fuldstændige fjernelse er planlagt i takt med produktets udvikling.
 
-## Permanent solution
+## Permanent løsning
 
-Fra v8.0 RC har vi tilføjet eksperimentel understøttelse af SockFilter-driveren. It fixes the issue by solving conflicts in the WFP stack. [Flere oplysninger](/adguard-for-windows/settings/app-settings/network-settings/).
+Fra v8.0 RC har vi tilføjet eksperimentel understøttelse af SockFilter-driveren. Det retter problemet ved at løse konflikter i WFP-stakken. [Flere oplysninger](/adguard-for-windows/settings/app-settings/network-settings/).
 
-To use it, go to _Settings → Network → Traffic filtering_, enable traffic filtering, and select _SockFilter (Experimental)_ from the list of available options.
+For at bruge den, gå til _Indstillinger → Netværk → Trafikfiltrering_, slå trafikfiltrering til og vælg _SockFilter (eksperimentelt)_ fra listen over tilgængelige valgmuligheder.
 
-Since it’s experimental, there may be bugs. If you notice anything unusual, unexpected, or just plain broken, **you can switch back to TDI or WFP at any time** in the same section.
+Da det er eksperimentelt, kan fejl opleves. Bemærkes noget usædvanligt, uventet eller simpelthen helt defekt, **kan der når som helst skiftes tilbage til TDI eller WFP** i samme afsnit.
 
-## Temporary solution
+## Midlertidig løsning
 
-Certain Windows registry changes can force the browser to stop using AppContainer, causing its processes to run in a non-sandboxed mode again. Network Service stops using the WSK stack and falls back to a network path that the TDI driver can see. AdGuard then regains the ability to filter browser traffic.
+Visse Windows-registreringsdatabaseændringer kan tvinge webbrowseren til at stoppe brugen af AppContainer, hvilket får dens processer til igen at køre i en ikke-sandkassetilstand. Network Service stopper brugen af WSK-stakken og falder tilbage til en netværkssti, TDI-driveren kan se. AdGuard genvinder derefter evnen til at filtrere webbrowsertrafik.
 
-### How to modify the registry in Chromium-based browsers
+### Sådan ændres registreringsdatabasen i Chromium-baserede webbrowsere
 
 :::warning
 
-Administrator rights are required to edit the registry. Incorrect changes may affect system or browser stability and security. Always create a backup of the registry branch before modifying it.
+Administratorrettigheder kræves for at redigere registreringsdatabasen. Ukorrekte ændringer kan påvirke systemets eller webbrowserens stabilitet og sikkerhed. Opret altid en sikkerhedskopi af registreringsdatabasenøglen, før den ændres.
 
-Before proceeding, keep in mind that this solution reduces sandbox/AppContainer security, making the browser less isolated. It applies system-wide because it modifies `HKLM`, and should only be used for debugging, temporary workarounds, in controlled environments, or when TDI-based traffic interception is strictly necessary.
+Husk, før der fortsættes, at denne løsning reducerer sandbox/AppContainer-sikkerheden, hvilket gør webbrowseren mindre isoleret. It applies system-wide because it modifies `HKLM`, and should only be used for debugging, temporary workarounds, in controlled environments, or when TDI-based traffic interception is strictly necessary.
 
-It should **not** be applied broadly across end-user machines. **Proceed only if you understand the implications.**
+Det bør **ikke** anvendes bredt på tværs af slutbrugermaskiner. **Fortsæt kun, såfremt konsekvenserne er forstået.**
 
 :::
 
-You can apply the necessary registry changes automatically by using one of the pre-generated .reg files below. Each file disables AppContainer/Network Service sandboxing for a specific Chromium-based browser:
+De nødvendige registreringsdatabaseændringer kan udføres automatisk ved brug af en af de prægenererede .reg-filer nedenfor. Hver fil deaktiverer AppContainer/Network Service-sandkassefunktionen for en specifik Chromium-baseret webbrowser:
 
 - [Download Chrome.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chrome.reg)
 - [Download Chromium.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Chromium.reg)
@@ -60,32 +60,32 @@ You can apply the necessary registry changes automatically by using one of the p
 - [Download Vivaldi.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_Vivaldi.reg)
 - [Download YandexBrowser.reg](https://cdn.adtidy.org/distr/windows/reg/DisableAppContainer_YandexBrowser.reg)
 
-If your browser is not listed, follow the manual instructions below to create the necessary registry entries:
+Er en webbrowser ikke er opført, følg den manualle vejledningen nedenfor for at oprette de nødvendige registeringsdatabaseposter:
 
-1. Determine its policy branch by checking the vendor’s official documentation or by opening the internal policy page. In Chrome, navigate to `chrome://policy`. Other browsers use a similar path.
+1. Fastslå dens politikgren ved at tjekke leverandørens officielle dokumentation eller ved at åbne den interne politikside. I Chrome, gå til `chrome://policy`. Andre webbrowsere bruger en lignende sti.
 
-2. Identify the correct registry branch for your browser. Different Chromium-based browsers use different policy paths under `HKLM`. It should follow the model `HKLM\SOFTWARE\Policies\<Vendor>\<Product>`.
+2. Identificér den korrekte registreringsdatabasegren til webbrowseren. Forskellige Chromium-baserede webbrowsere benytter forskellige politikstier under `HKLM`. Den skal følge formen `HKLM\\SOFTWARE\\Policies\\<Vendor>\\<Product>`.
 
-3. Open the Registry Editor:
+3. Åbn Registreringseditoren:
 
-   - Press _Win + R_
-   - Type _regedit_ and press _Enter_
+   - Tryk på _Win + R_
+   - Skriv _regedit_ og tryk på _Retur_
    - Approve the UAC prompt by running it as administrator
 
-4. Back up the Policies branch:
+4. Sikkerhedskopiér Policies-grenen:
 
-   - In the left panel, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
+   - Gå i venstre panel til `HKEY_LOCAL_MACHINE\SOFTWARE\Policies`
    - Right-click _Policies_ → _Export_
-   - Save the file as _Policies_backup.reg_
+   - Gem filen som _Policies_backup.reg_
 
    If something goes wrong, you can restore the backup by double-clicking this file.
 
-5. Navigate to your browser’s policy key:
+5. Gå til webbrowserens politiknøgle:
 
    - Expand the path `HKEY_LOCAL_MACHINE` → _SOFTWARE_ → _Policies_.
    - Locate the folder corresponding to your browser.
 
-If the key does not exist, you can create it manually. Example for Chrome:
+Eksisterer nøglen ikke, kan den oprettes manuelt. Eksempel til Chrome:
 
 - Right-click _Policies_ → _New_ → _Key_ and name it `Google`
 - Inside `Google`, create another key named `Chrome`
@@ -124,4 +124,4 @@ You should see the following policies active:
 
 If available, click _Reload policies_.
 
-Udført!
+Færdig!
