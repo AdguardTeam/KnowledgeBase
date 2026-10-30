@@ -2,6 +2,9 @@
 title: Protection
 sidebar_position: 1
 ---
+![Home screen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+
+On the Home screen, you’ll find a toggle to enable or disable AdGuard protection, as well as icons for *Ad blocking*, *Tracking protection*, *DNS protection*, and *Annoyance blocking*. Main settings can be accessed through the left-side menu.
 
 ![Protection tab *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 

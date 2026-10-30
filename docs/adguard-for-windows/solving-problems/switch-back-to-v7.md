@@ -1,6 +1,6 @@
 ---
 title: How to switch back to v7 after updating to v8.0
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info
