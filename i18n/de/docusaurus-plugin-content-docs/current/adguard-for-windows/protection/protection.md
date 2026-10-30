@@ -3,6 +3,10 @@ title: Schutz
 sidebar_position: 1
 ---
 
+![Home screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+
+Auf dem Startbildschirm finden Sie einen Schalter zum Aktivieren oder Deaktivieren des AdGuard-Schutzes sowie Symbole für _Werbeblockierung_, _Tracking-Schutz_, _DNS-Schutz_ und _Belästigungsblockierung_. Die Haupteinstellungen können über das Menü auf der linken Seite aufgerufen werden.
+
 ![Protection tab \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
 Im Tab _Schutz_ finden Sie alle wichtigen Sicherheits- und Filtereinstellungen. Hier können Sie _Werbeblockierung_, _Tracking-Schutz_, _Blockieren von Belästigungen_, _DNS-Schutz_, _Internetsicherheit_, _Kindersicherung_ und _Erweiterungen_ steuern. Hier können Sie auch AdGuard-Assistent verwalten — ein Werkzeug, mit dem Sie dessen Funktionen steuern können, ohne die App zu öffnen. Jede dieser Funktionen wird in einem separaten Artikel beschrieben.

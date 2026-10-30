@@ -5,14 +5,14 @@ sidebar_position: 1
 
 :::info
 
-Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For selv at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
 Her er nogle problemer, som kan opleves, og løsninger samt guider og vejledninger, der muligvis bliver brug for.
 
-- [How to activate premium features](/adguard-for-ios/solving-problems/premium-activation.md)
-- [How to enable system-wide filtering in AdGuard for iOS](/adguard-for-ios/solving-problems/system-wide-filtering.md)
-- [How to avoid compatibility issues with FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
-- [How to block YouTube ads](/adguard-for-ios/solving-problems/block-youtube-ads.md)
-- [Low-level settings guide](/adguard-for-ios/solving-problems/low-level-settings.md)
+- [Sådan aktiveres Premium-funktioner](/adguard-for-ios/solving-problems/premium-activation.md)
+- [Sådan aktiveres systemniveaufiltrering i AdGuard til iOS](/adguard-for-ios/solving-problems/system-wide-filtering.md)
+- [Sådan undgås kompatibilitetsproblemer med FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
+- [Sådan blokeres YouTube-reklamer](/adguard-for-ios/solving-problems/block-youtube-ads.md)
+- [Guide til Lavniveauindstillinger](/adguard-for-mac/solving-problems/low-level-settings.md)

@@ -1,6 +1,6 @@
 ---
 title: Sådan skiftes tilbage til v7 efter opdatering til v8.0
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info
@@ -33,7 +33,7 @@ AdGuard til Windows v8.0 introducerer væsentlige ændringer. Findes den nye bru
 
    :::
 
-4. Installer den foregående version. Downloadlinket til den seneste stabile v7-udgivelse findes i afsnittet _Assets_ [på GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.22.9).
+4. [Install AdGuard for Windows v7.22.10](https://agrd.io/adguardforwindows7).
 
 5. Afslut version 7 fra systembakken for at stoppe filtrering.
 

@@ -1,6 +1,6 @@
 ---
 title: How to back up and restore AdGuard settings
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
@@ -62,7 +62,7 @@ AdGuard for Windows v8.0 introduces significant changes. If you find the new int
 
    :::
 
-4. Install the previous version. You can find the download link in the _Assets_ section of the latest stable v7 release on [GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.22.9).
+4. [Install AdGuard for Windows v7.22.10](https://agrd.io/adguardforwindows7).
 
 5. Exit version 7 from the system tray to stop filtering.
 

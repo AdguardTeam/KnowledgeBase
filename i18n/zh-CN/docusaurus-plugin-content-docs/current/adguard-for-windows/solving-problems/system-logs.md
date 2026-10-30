@@ -1,6 +1,6 @@
 ---
 title: 如何收集 Windows 系统日志
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

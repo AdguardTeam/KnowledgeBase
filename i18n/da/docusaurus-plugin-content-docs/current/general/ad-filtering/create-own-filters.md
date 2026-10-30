@@ -1063,9 +1063,9 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 | [$elemhide](#elemhide-modifier)         |            ✅             |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$extension](#extension-modifier)       |            ✅             |                ❌                |                    ❌                     |               ❌               |                      ❌                       |                      ❌                       |                 ❌                 |
 | [$jsinject](#jsinject-modifier)         |            ✅             |                ✅                | ✅ [*[1]](#jsinject-modifier-limitations) |               ✅               |                      ✅                       |                      ✅                       |                 ❌                 |
-| [$stealth](#stealth-modifier)           |            ✅             |                ✅                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
-| [$urlblock](#urlblock-modifier)         |            ✅             |                ✅                |                    ❌                     |               ✅               |   ✅ [*[2]](#urlblock-modifier-limitations)   |   ✅ [*[2]](#urlblock-modifier-limitations)   |                 ❌                 |
-| [$genericblock](#genericblock-modifier) |            ✅             |                ✅                |                    ✅                     |               ✅               | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) |                 ❌                 |
+| [$stealth](#stealth-modifier)           |            ✅             |                ✅                | ✅ [*[2]](#stealth-modifier-limitations)  |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
+| [$urlblock](#urlblock-modifier)         |            ✅             |                ✅                |                    ❌                     |               ✅               |   ✅ [*[3]](#urlblock-modifier-limitations)   |   ✅ [*[3]](#urlblock-modifier-limitations)   |                 ❌                 |
+| [$genericblock](#genericblock-modifier) |            ✅             |                ✅                |                    ✅                     |               ✅               | ✅ [*[4]](#genericblock-modifier-limitations) | ✅ [*[4]](#genericblock-modifier-limitations) |                 ❌                 |
 | [$generichide](#generichide-modifier)   |            ✅             |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$specifichide](#specifichide-modifier) |            ✅             |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
 
@@ -1199,6 +1199,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 The list of the available modifier options:
 
+- `fingerprinting` disables [**Block fingerprinting**](../../stealth-mode#fingerprinting) option
 - `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
 - `donottrack` disables [**Ask websites not to track you**](../../stealth-mode#donottrack) option
 - `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
@@ -1221,10 +1222,27 @@ The list of the available modifier options:
 - `@@||example.com^$stealth` disables Tracking protection for `example.com` (and subdomains) requests, except for blocking cookies and hiding tracking parameters (see below).
 - `@@||domain.com^$script,stealth,domain=example.com` disables Tracking protection only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
 - `@@||example.com^$stealth=3p-cookie|dpi` disables blocking third-party cookies and DPI fooling measures for `example.com`.
+- `@@||example.com^$stealth=fingerprinting` disables fingerprinting protection for `example.com` (and subdomains). Other Tracking protection features keep working.
 
 :::note
 
-Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier), and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, add three separate exception rules:
+
+- `@@||example.org^$stealth`
+- `@@||example.org^$removeparam`
+- `@@||example.org^$cookie`
+
+These modifiers cannot be combined in one rule: `@@||example.org^$stealth,removeparam,cookie` will not work.
+
+:::
+
+##### `$stealth` modifier limitations {#stealth-modifier-limitations}
+
+:::caution Begrænsninger
+
+- In [AdGuard for Chromium MV3][ext-mv3], `$stealth` rules affect only *Block fingerprinting*: `@@||example.com^$stealth` and `@@||example.com^$stealth=fingerprinting` disable it, and other options have no effect.
+- In AdGuard Browser Extension, *Block fingerprinting* is disabled by the allowlist and by rules of the form `@@||example.com^` with `$stealth`, `$stealth=fingerprinting`, or `$document`. The `fingerprinting` option may be combined with other options, and the rule may include `$important`. Rules with paths, wildcards, regular expressions, or other modifiers, such as `$domain` or `$third-party`, do not disable it.
+- For *Block fingerprinting*, a `$stealth` rule is checked against the address of each page and frame. `@@||example.com^$stealth=fingerprinting` disables *Block fingerprinting* on `example.com` and its subdomains, including `example.com` frames on other websites. Frames from other websites on `example.com` stay protected. The `@@||example.com^$document` rule and the allowlist disable *Block fingerprinting* on `example.com` pages, including frames from other websites, but not in `example.com` frames on other websites. In Firefox, some frames from other websites may stay protected, see [Tracking protection in AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting).
 
 :::
 
@@ -1232,14 +1250,15 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
 - Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
-- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` and `3p-cookie` options.
+- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie`, `3p-cookie`, and `fingerprinting` options. AdGuard for Chromium MV3 supports only `fingerprinting`.
 
 :::
 
 :::info Kompatibilitet
 
-- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chromium MV3. All other products will ignore the rules with `$stealth` modifier.
+- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers. AdGuard for Chromium MV3 v5.6 or later supports `$stealth` rules with [limitations](#stealth-modifier-limitations). All other products will ignore the rules with `$stealth` modifier.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- The `fingerprinting` option is supported by AdGuard Browser Extension v5.6 or later. AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and earlier versions of AdGuard Browser Extension consider rules with this option invalid and ignore the whole rule, including its other options. In filter lists for several products, put `fingerprinting` in a separate rule: use `@@||example.com^$stealth=3p-cookie` and `@@||example.com^$stealth=fingerprinting` instead of `@@||example.com^$stealth=3p-cookie|fingerprinting`.
 - In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
@@ -2880,7 +2899,7 @@ The `$urltransform` value can be empty for exception rules.
 
 **Multiple rules matching a single request**
 
-Hvis flere `$urltransform`-regler matcher en enkelt forespørgsel, anvendes de én ad gangen i leksikografisk rækkefølge, hver regel anvendt på resultatet af den foregående.
+If multiple `$urltransform` rules match a single request, they are applied one-by-one in lexicographical order, each rule being applied to the result of the previous one.
 
 **Syntaks**
 
@@ -2971,7 +2990,7 @@ In our first example, the destination URL is percent-encoded:
  1. The initial URL (with click tracking): `https://www.aff.example.com/visit?url=https%3A%2F%2Fwww.somestore.com%2F&ref=ref-123`
  1. Webstedet, der skal besøges: `https://www.somestore.com/`
 
-For at rense URL'en, udtræk den kodede destination fra parameteren `url` og afkod den med transformationen `pct`:
+To clean the URL, extract the encoded destination from the `url` parameter and decode it with the `pct` transformation:
 
 ```adblock
 /^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|pct
@@ -2988,11 +3007,11 @@ If the full target URL with a tracking parameter is Base64-encoded, the same app
 /^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=/$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?aff\.example\.com\/visit\?url=([^&]*).*/\$1/|b64|/[?&]ref=[^&]*//
 ```
 
-Den første transformation udtrækker `aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=` og `b64` afkoder den til `https://www.somestore.com/?ref=ref-123`. Den sidste udskiftning fjerner sporingsparameteren `ret`.
+The first transformation extracts `aHR0cHM6Ly93d3cuc29tZXN0b3JlLmNvbS8/cmVmPXJlZi0xMjM=`, and `b64` decodes it to `https://www.somestore.com/?ref=ref-123`. The final substitution removes the `ref` tracking parameter.
 
-:::caution Ændring af oprindelsen
+:::caution Changing the origin
 
-Bemærk, at værdien `$urltransform` i begge regler starter med `/^http`, så den fulde forespørgsels-URL transformeres. Uden dette præfiks kan kun URL-stien og -forespørgselsdelene transformeres.
+Note that in both rules, the `$urltransform` value starts with `/^http`, so the full request URL is transformed. Without this prefix, only the path and query parts of the URL can be transformed.
 
 :::
 
@@ -3002,7 +3021,7 @@ Tracking links will now be automatically cleaned up, allowing direct navigation 
 
 Rules with the `$urltransform` modifier can only be used [**in trusted filters**](#trusted-filters).
 
-`$urltransform` er kun kompatibel med `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow` og [indholdstypemodifikatorer](#content-type-modifiers). Regler, som bruger andre modifikatorer, er ugyldige og kasseres.
+`$urltransform` is only compatible with `$domain`, `$third-party`, `$important`, `$match-case`, `$badfilter`, `$to`, `$method`, `$popup`, `$denyallow`, and [content-type modifiers](#content-type-modifiers). Rules using any other modifiers are invalid and discarded.
 
 `$urltransform` rules without [content-type modifiers](#content-type-modifiers) will only match requests where the content type is `document`.
 
@@ -3018,7 +3037,7 @@ Rules with the `$urltransform` modifier and [content-type modifiers](#content-ty
 
 :::
 
-##### `$urltransform`-modifikatorbegrænsninger {#urltransform-modifier-limitations}
+##### `$urltransform` modifier limitations {#urltransform-modifier-limitations}
 
 :::caution Begrænsninger
 
@@ -3504,9 +3523,11 @@ example.org#@#body{remove:true;}
 - [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
 - [Pseudo-class `:upward()`](#extended-css-upward)
 - [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
+- [Pseudoklasse `:remove-attr()`](#extended-css-remove-attr)
+- [Pseudoklasse `:remove-class()`](#extended-css-remove-class)
 - [Pseudo-class `:is()`](#extended-css-is)
 - [Pseudo-class `:not()`](#extended-css-not)
-- [Pseudoklasse `:empty-trimmed`](#extended-css-empty-trimmed)
+- [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
 - [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
@@ -3557,7 +3578,7 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
-2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
+2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), [`:remove()`](#extended-css-remove-limitations), [`:remove-attr()`](#extended-css-remove-attr-limitations), and [`:remove-class()`](#extended-css-remove-class-limitations).
 
 #### Pseudo-class `:has()` {#extended-css-has}
 
@@ -3598,7 +3619,7 @@ Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 [target]:has(selector)
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `selector` — required, standard or extended CSS selector
 
 The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
@@ -3695,7 +3716,7 @@ Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibi
 [target]:contains(match)
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `match` — required, string or regular expression for matching element `textContent`. Regular expression flags are supported.
 
 **Eksempler**
@@ -3744,7 +3765,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 [target]:matches-css([pseudo-element, ] property: pattern)
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
 - `property` — required, a name of CSS property to check the element for
 - `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic URL filtering rules or a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
@@ -3811,7 +3832,7 @@ The `:matches-attr()` pseudo-class allows selecting an element by its attributes
 [target]:matches-attr("name"[="value"])
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `name` — required, simple string *or* string with wildcard *or* regular expression for attribute name matching
 - `value` — optional, simple string *or* string with wildcard *or* regular expression for attribute value matching
 
@@ -3867,7 +3888,7 @@ The `:matches-property()` pseudo-class allows selecting an element by matching i
 [target]:matches-property("name"[="value"])
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `name` — required, simple string *or* string with wildcard *or* regular expression for element property name matching
 - `value` — optional, simple string *or* string with wildcard *or* regular expression for element property value matching
 
@@ -3979,8 +4000,8 @@ The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative 
 subject:nth-ancestor(n)
 ```
 
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — obligatorisk, standard eller udvidet CSS-vælger
+- `n` — obligatorisk, nummer >= 1 og < 256, afstand til den nødvendige overordnede fra elementet valgt af `subject`
 
 **Syntaks**
 
@@ -3988,8 +4009,8 @@ subject:nth-ancestor(n)
 subject:nth-ancestor(n)
 ```
 
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — obligatorisk, standard eller udvidet CSS-vælger
+- `n` — obligatorisk, nummer >= 1 og < 256, afstand til den nødvendige overordnede fra elementet valgt af `subject`
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
@@ -4026,7 +4047,7 @@ The `:upward()` pseudo-class allows to lookup the ancestor relative to the previ
 subject:upward(ancestor)
 ```
 
-- `subject` — required, standard or extended CSS selector
+- `subject` — obligatorisk, standard eller udvidet CSS-vælger
 - `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
     - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
     - *standard CSS selector* for matching closest ancestor
@@ -4098,6 +4119,77 @@ Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-styl
 
 :::
 
+#### Pseudoklasse `:remove-attr()` {#extended-css-remove-attr}
+
+Pseudoklassen `:remove-attr()` fjerner attributter fra matchende elementer i stedet for at skjule dem. Den er kompatibelt med [`:remove-attr()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg)-handlingsoperatoren i uBlock Origin.
+
+**Pseudoklassen kan kun placeres i slutningen af en vælger.**
+
+**Syntaks**
+
+```text
+target:remove-attr(attr)
+```
+
+- `target` — obligatorisk, standard eller udvidet CSS-vælger; brug universalvælgeren `*` til at anvende handlingen på alle elementer
+- `attr` — obligatorisk, et attributnavn til nøjagtigt match (valgfrit i anførselstegn, f.eks. `"onclick"`) eller en regexp-literal `/.../` med valgfrie `i`-, `m`-, `u`-flag
+
+:::info Kompatibilitet
+
+Tilføjet i ExtendedCSS v2.3.0.
+
+Regler med pseudoklassen `:remove-attr()` understøttes af AdGuard Browser Extension v5.6 eller senere. Sådanne regler fungerer ikke i AdGuard Content Blocker.
+
+:::
+
+**Eksempler**
+
+```adblock
+a:remove-attr(href)
+*:remove-attr(onclick)
+div:remove-attr(/^on[a-z]+/)
+div:remove-attr(/^data-(foo|bar)$/i)
+```
+
+##### `:remove-attr()`-begrænsninger {#extended-css-remove-attr-limitations}
+
+Pseudoklassen `:remove-attr()` fungerer kun i slutningen af en vælger. Alle stilegenskaber deklareret i den samme regel ignoreres undtagen [`debug`-pseudoegenskaben](#selectors-debug-mode). I modsætning til [scriptlet’et`»remove-attr«`](#scriptlets) kræver pseudoklassen ikke et [betroet filter](#trusted-filters).
+
+#### Pseudoklasse `:remove-class()` {#extended-css-remove-class}
+
+Pseudoklassen `:remove-class()` fjerner klasser fra matchende elementer i stedet for at skjule dem. Den er kompatibelt med [`:remove-class()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg)-handlingsoperatoren i uBlock Origin.
+
+**Pseudoklassen kan kun placeres i slutningen af en vælger.**
+
+**Syntaks**
+
+```text
+target:remove-class(class)
+```
+
+- `target` — obligatorisk, standard eller udvidet CSS-vælger; brug universalvælgeren `*` til at anvende handlingen på alle elementer
+- `class` — obligatorisk, et klassenavn til nøjagtigt match (valgfrit i anførselstegn, f.eks. `"ads"`) eller en regexp-literal `/.../` med valgfrie `i`-, `m`-, `u`-flag
+
+:::info Kompatibilitet
+
+Tilføjet i ExtendedCSS v2.3.0.
+
+Regler med pseudoklassen `:remove-class()` understøttes af AdGuard Browser Extension v5.6 eller senere. Sådanne regler fungerer ikke i AdGuard Content Blocker.
+
+:::
+
+**Eksempler**
+
+```adblock
+div:remove-class(ads)
+*:remove-class(ads)
+div:remove-class(/^ad-/)
+```
+
+##### `:remove-class()` begrænsninger {#extended-css-remove-class-limitations}
+
+Pseudoklassen `:remove-class()` fungerer kun i slutningen af en vælger. Alle stilegenskaber deklareret i den samme regel ignoreres undtagen [`debug`-pseudoegenskaben](#selectors-debug-mode). I modsætning til [`remove-class`-scriptlet'en](#scriptlets) kræver pseudoklassen ikke et [betroet filter](#trusted-filters).
+
 #### Pseudo-class `:is()` {#extended-css-is}
 
 The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
@@ -4108,7 +4200,7 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 [target]:is(selectors)
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `selectors` — [*forgiving selector list*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) of standard or extended selectors. For extended selectors, only compound selectors are supported, not complex.
 
 ##### `:is()` limitations {#extended-css-is-limitations}
@@ -4154,7 +4246,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 [target]:not(selectors)
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `selectors` — list of standard or extended selectors
 
 ##### `:not()` limitations {#extended-css-not-limitations}
@@ -4180,7 +4272,7 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 </div>
 ```
 
-#### Pseudoklasse `:empty-trimmed` {#extended-css-empty-trimmed}
+#### Pseudo-class `:empty-trimmed` {#extended-css-empty-trimmed}
 
 The `:empty-trimmed` pseudo-class allows selecting elements without text content. Unlike the native CSS [`:empty`](https://developer.mozilla.org/en-US/docs/Web/CSS/:empty) pseudo-class, which matches elements that have no child nodes at all (no elements, no text nodes), `:empty-trimmed` checks `textContent` of the element **and its descendants**. It also matches elements whose text content consists only of whitespace, including non-breaking spaces such as `&nbsp;`.
 
@@ -4190,7 +4282,7 @@ The `:empty-trimmed` pseudo-class allows selecting elements without text content
 [target]:empty-trimmed
 ```
 
-- `target` — valgfri, standard eller udvidet CSS-vælger, kan udelades ved tjek af *ethvert* element
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 
 :::note
 
@@ -4202,7 +4294,7 @@ This pseudo-class has no arguments.
 
 Added in ExtendedCSS v2.0.0.
 
-Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension v5.5 or later. Such rules do not work in AdGuard Content Blocker.
+Rules with the `:empty-trimmed` pseudo-class are supported by AdGuard Browser Extension v5.5 or later. Sådanne regler fungerer ikke i AdGuard Content Blocker.
 
 :::
 
@@ -4356,7 +4448,7 @@ The first rule removes any `<script>` tag containing the word `Adverts`. The sec
 
 :::note
 
-Argumentet til `:contains()` er den rå tekst mellem parenteserne, taget som den er: Anførselstegn (af alle slags), hvis de findes, er bogstavelige tegn i den tekst, der skal matches, ikke afgrænsere. Eksempelvis matches `:contains("Sponsored by")` tekst indeholdende tegnene `"Sponsored by"` (inkl. dobbelte anførselstegn). Argumentet kan også indeholde ubalancerede parenteser, f.eks. `:contains((function(g,b,a,c,e,d)`.
+The argument of `:contains()` is the raw text between the parentheses, taken as-is: quotes (of any kind), if present, are literal characters of the text to match, not delimiters. For example, `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The argument may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)`.
 
 :::
 
@@ -4366,7 +4458,7 @@ The attributes listed below are legacy features kept only for backward compatibi
 
 :::
 
-Hver af disse attributter har en tilsvarende `:contains()`-form, og filterlister konverteres til disse former, hvor det er muligt:
+Each of these attributes has an equivalent `:contains()` form, and filter lists are converted to these forms where possible:
 
 | Attributform                                    | Ækvivalent `:contains()`-form                          |
 | ----------------------------------------------- | ------------------------------------------------------ |
@@ -4376,7 +4468,7 @@ Hver af disse attributter har en tilsvarende `:contains()`-form, og filterlister
 | `$$div[min-length="400"][max-length="800"]`     | `$$div:contains(/^(?=.{400,800}$).*/s)`                |
 | `$$div[tag-content="banner"][max-length="400"]` | `$$div:contains(banner):contains(/^(?=.{0,400}$).*/s)` |
 
-Der er ingen `:contains()`-ækvivalent for `[min-length]`- og `[max-length]`-værdier over `65535`: Det genererede regulære udtryk ville overstige [kvalifikatorgrænsen](#html-filtering-rules--contains). Regler med sådanne værdier beholder attributformen:
+There is no `:contains()` equivalent for `[min-length]` and `[max-length]` values above `65535`: the generated regular expression would exceed the [quantifier limit](#html-filtering-rules--contains). Rules with such values keep the attribute form:
 
 ```adblock
 $$div[tag-content="banner"][max-length="300000"]
@@ -4478,10 +4570,10 @@ This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 :contains(value)
 ```
 
-hvor `value` er:
+where `value` is:
 
-- Rå tekst mellem pseudoklassens parenteser, brugt som den er og matchet som en bogstavelig delstreng. Anførselstegn (af alle slags) inde i teksten er bogstavelige tegn i den matchede tekst, ikke afgrænsningstegn: `:contains("Sponsored by")` matcher tekst indeholdende tegnene `"Sponsored by"` (inkl. dobbelte anførselstegn). Teksten kan også indeholde ubalancerede parenteser, f.eks. `:contains((function(g,b,a,c,e,d)` — argumentet strækker sig fra åbningsparentes op til vælgerens sidste lukkende parentes.
-- Argument i formen `/regexp/flags` behandles som et regulært udtryk.
+- Raw text between the parentheses of the pseudo-class, taken as-is and matched as a literal substring. Quotes (of any kind) inside the text are literal characters of the matched text, not delimiters: `:contains("Sponsored by")` matches text containing the characters `"Sponsored by"` (double quotes included). The text may also contain unbalanced parentheses, e.g. `:contains((function(g,b,a,c,e,d)` — the argument runs from the opening parenthesis up to the last closing parenthesis of the selector.
+- Argument in the `/regexp/flags` form is treated as a regular expression.
 
 :::note
 
@@ -4493,7 +4585,7 @@ hvor `value` er:
 
 The `:contains()` pseudo-class is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and AdGuard Browser Extension v5.3 or later.
 
-Argumenter med ubalancerede parenteser understøttes af AdGuard til Windows, AdGuard til Mac, AdGuard til Android, AdGuard til Linux med minimum [CoreLibs][] v1.13, og af AdGuard Browser Extension til Firefox fra v5.6.
+Arguments with unbalanced parentheses are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux with [CoreLibs][] v1.13 or later, and by AdGuard Browser Extension for Firefox starting from v5.6.
 
 :::
 
@@ -4505,9 +4597,9 @@ A `:contains()` pseudo-class must not appear in a selector to the left of a `>` 
 
 This limitation does not apply to AdGuard Browser Extension v5.3 or later.
 
-Et argument med et regulært udtryk kompileres af produktets motor til regulære udtryk. I AdGuard til Windows, AdGuard til Mac, AdGuard til Android og AdGuard til Linux er motoren PCRE2, hvilket begrænser tallet i en gentagelse (kvantifikator) — `{n}`, `{n,m}`, `{n,}` — til `65535`. Et mønster med et større tal er ugyldigt, og reglen ignoreres af disse produkter.
+A regular expression argument is compiled by the regular expression engine of the product. In AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux the engine is PCRE2, which limits the number in a repetition (quantifier) — `{n}`, `{n,m}`, `{n,}` — to `65535`. A pattern with a larger number is invalid, and the rule is ignored by these products.
 
-Dette er grunden til, at en betingelse for indholdslængde ikke kan bruge en værdi over `65535` i disse produkter: Længden matches med en kvalifikator, så mønsteret `/^(?=.{0,300000}$).*/s` er ugyldigt. For at matche elementer efter en større indholdslængde kræves attributten [`max-length`](#max-length) eller [`min-length`](#min-length).
+This is why a content length condition cannot use a value above `65535` in these products: the length is matched with a quantifier, so the pattern `/^(?=.{0,300000}$).*/s` is invalid. To match elements by a larger content length, use the [`max-length`](#max-length) or [`min-length`](#min-length) attribute.
 
 :::
 

@@ -1,6 +1,6 @@
 ---
 title: How to collect Windows system logs
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

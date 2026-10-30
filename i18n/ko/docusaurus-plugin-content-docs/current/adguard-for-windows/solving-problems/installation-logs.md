@@ -1,6 +1,6 @@
 ---
 title: AdGuard 설치 로그를 수집하는 방법
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::정보

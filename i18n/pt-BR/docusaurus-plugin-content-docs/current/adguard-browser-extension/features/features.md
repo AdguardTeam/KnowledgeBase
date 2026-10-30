@@ -19,7 +19,7 @@ Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu 
 
 - [Proteção contra rastreamento (Modo invisível)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Configurações de bloqueio cookies, tags UTM e análises online que coletam informações do usuário
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Outros recursos e opções](/adguard-browser-extension/features/other-features.md)
 

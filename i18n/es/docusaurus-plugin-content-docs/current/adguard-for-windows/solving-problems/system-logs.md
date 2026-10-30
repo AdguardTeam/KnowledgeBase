@@ -1,6 +1,6 @@
 ---
 title: Cómo recopilar registros del sistema de Windows
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

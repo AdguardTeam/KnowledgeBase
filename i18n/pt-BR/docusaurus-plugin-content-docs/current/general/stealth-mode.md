@@ -25,6 +25,28 @@ Este recurso bloqueia rastreadores e análise da web usando o Filtro de proteç�
 
 Se você ativar este recurso, o AdGuard usará seu filtro contra rastreamento de URL para remover parâmetros de rastreamento como `utm_*` e `fb_ref` dos URLs das páginas.
 
+### Block fingerprinting {#fingerprinting}
+
+This feature prevents websites from identifying your browser and device by canvas fingerprinting.
+
+A canvas is a web page element for drawing images. A website can draw hidden text and shapes on a canvas and read the result back. The result depends on your device, graphics hardware, fonts, and browser, so it can identify you even without cookies.
+
+With this feature enabled, AdGuard slightly changes the images that websites read from a canvas. The changes are too small to see. Until you restart the browser or AdGuard is updated, each website gets the same changed result. Other websites get different results, so the result can’t be used to recognize you across websites.
+
+What you see on the page does not change. The feature does not cover WebGL and WebGPU fingerprinting or canvases drawn in web workers. Some websites may detect the protection or work around it.
+
+:::caution
+
+Web apps that export images from a canvas, such as online image editors, may get slightly changed images. If a website works incorrectly, add it to the allowlist or turn off the protection for it with a [rule](/general/ad-filtering/create-own-filters#stealth-modifier) like `@@||example.com^$stealth=fingerprinting`.
+
+:::
+
+:::note
+
+Available in [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) v5.6 or later.
+
+:::
+
 ### Ocultar consultas de pesquisa {#searchqueries}
 
 Esse recurso oculta suas consultas de pesquisa dos sites que você visita por meio dos resultados do mecanismo de pesquisa. Por exemplo, quando você abre um site por meio de um mecanismo de busca como o Google ou o Yahoo, este recurso oculta a inquirição de busca que você usou para encontrar esse site.
@@ -79,7 +101,7 @@ Não recomendamos ativar esta opção, pois pode interferir gravemente no funcio
 
 :::
 
-:::note
+Proíbe o Google Chrome de enviar sua versão e informações de modificação com solicitações para domínios do Google (incluindo Double Click e Google Analytics).
 
 Disponível no AdGuard para Android, AdGuard para Windows, AdGuard para macOS e Extensão do AdGuard para navegador (para navegadores baseados em MV2).
 
@@ -253,7 +275,7 @@ Disponível no AdGuard para Android, AdGuard para Windows e AdGuard para macOS.
 
 :::
 
-:::caution
+:::cuidado
 
 Se esse recurso estiver ativado no AdGuard para Windows, ele pode interferir com o antivírus ESET. A Anti-DPI impedirá que a ESET faça a filtragem de tráfego, deixando desbloqueados os sites da lista negra e maliciosos.
 

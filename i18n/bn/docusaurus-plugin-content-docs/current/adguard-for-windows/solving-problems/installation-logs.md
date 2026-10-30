@@ -1,6 +1,6 @@
 ---
 title: How to collect AdGuard installation logs
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

@@ -1,6 +1,6 @@
 ---
 title: Jak shromáždit výpis (dump) sítě pomocí Wireshark
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 :::info

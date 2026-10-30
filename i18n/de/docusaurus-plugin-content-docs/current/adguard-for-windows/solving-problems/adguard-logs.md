@@ -1,6 +1,6 @@
 ---
 title: So erfassen Sie die AdGuard-Protokolle
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info

@@ -1,44 +1,44 @@
 ---
-title: How to enable system-wide filtering in AdGuard for iOS
+title: Sådan aktiveres systemniveaufiltrering i AdGuard til iOS
 sidebar_position: 2
 ---
 
 :::info
 
-Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
-## About system-wide filtering
+## Om systemniveaufiltrering
 
-System-wide filtering lets you block ads and trackers not just in Safari, but across other apps and browsers on your iOS device. iOS is a fairly closed operating system, and Apple provides limited options for blocking ads outside Safari. The only way to block ads and trackers system-wide is through [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). This article explains how to enable it.
+Systemniveaufiltrering betyder blokering af annoncer og trackere ud over i Safari-webbrowseren, dvs. også i andre apps og webbrowsere på iOS-enheden. iOS er et forholdsvis lukket operativsystem, og Apple tilbyder begrænsede muligheder for at blokere annoncer uden for Safari. Den eneste måde at blokere annoncer og trackere på systemniveau er via [>DNS-filtrering](https://adguard-dns.io/kb/general/dns-filtering/). Denne artikel forklarer, hvordan det aktiveres.
 
-![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![Sådan fungerer DNS-filtrering](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-The first thing you need to do is enable DNS protection:
+Først skal DNS-beskyttelsen aktiveres:
 
-1. Open *AdGuard*.
-2. Tap the *Protection* icon (shield icon in the bottom menu bar).
-3. Turn on *DNS protection*.
+1. Åbn *AdGuard*.
+2. Tryk på ikonet *Beskyttelse* (skjoldikonet på nederste menubjælke).
+3. Slå *DNS-beskyttelse* til.
 
-![DNS protection screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/dns_protection.png)
+![DNS-beskyttelsesskærm *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/dns_protection.png)
 
-Once DNS protection is on, you have three options:
+Når DNS-beskyttelse er slået til, er der tre valgmuligheder:
 
-- **Use AdGuard DNS filter.** To enable it, go to *Protection* → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*. With this option, you’re not tied to a specific blocking server — the filter does all the blocking.
-- **Use a blocking DNS server.** Go to *Protection* → *DNS protection* → *DNS server* and select *AdGuard DNS* or another blocking server to your liking.
-- **Add a custom DNS filter or hosts file.** You can add multiple DNS filters and hosts files. Be aware that using too many may slow down AdGuard.
+- **Brug AdGuard DNS-filter.** For at aktivere det, gå til *Beskyttelse* → *DNS-beskyttelse* → *DNS-filtrering* → *DNS-filtre* → *AdGuard DNS-filter*. Denne indstilling kræver ikke brug af en bestemt blokeringsserver — filteret sørger for al blokeringen.
+- **Brug en blokerende DNS-server.** Gå til *Beskyttelse* → *DNS-beskyttelse* → *DNS-server*, og vælg *AdGuard DNS* eller en anden blokerende server efter eget valg.
+- **Tilføj et tilpasset DNS-filter eller hosts-fil.** Flere DNS-filtre og hosts-filer kan tilføjes. Vær opmærksom på, at brug af for mange kan gøre AdGuard langsommere.
 
-## How to add custom DNS filter and hosts file
+## Sådan tilføjes tilpasset DNS-filter/hosts-fil
 
-For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
+Lad os f.eks. tilføje [OISD Blocklist Big](https://oisd.nl/).
 
-1. Copy the OISD Blocklist Big link: `https://big.oisd.nl`
-2. Open *Protection*  → *DNS protection* → *DNS filtering* → *DNS filters*.
-3. Tap *Add a filter*.
-4. Paste the link into the filter URL field.
-5. Tap *Next* → *Add*.
+1. Kopiér linket til OISD Blocklist Big: `https://big.oisd.nl`
+2. Åbn *Beskyttelse*  → *DNS-beskyttelse* → *DNS-filtrering* → *DNS-filtre*.
+3. Tryk på *Tilføj et filter*.
+4. Indsæt linket i filterets URL-felt.
+5. Tryk på *Næste* → *Tilføj*.
 
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
+![Skærmen Tilføjelse af DNS-filter *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
 
-Add any number of DNS filters by repeating step 4 with a different URL. You can find various filter lists and their links at [filterlists.com](https://filterlists.com).
+Tilføj et vilkårligt antal DNS-filtre ved at gentage trin 4 med en anden URL. Forskellige filterlister inkl. links kan findes på [filterlists.com](https://filterlists.com).

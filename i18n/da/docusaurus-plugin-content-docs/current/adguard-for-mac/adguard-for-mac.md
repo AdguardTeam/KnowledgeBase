@@ -19,4 +19,4 @@ Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der besky
 
 - [Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  Kendte problemer og mulige løsninger

@@ -19,7 +19,7 @@ sidebar_position: 1
 
 - [Защита от трекинга](/adguard-browser-extension/features/stealth-mode.md)
 
-  Настройки блокировки файлов куки, UTM-меток и онлайн-аналитики, собирающей информацию о пользователях
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Другие функции и опции](/adguard-browser-extension/features/other-features.md)
 

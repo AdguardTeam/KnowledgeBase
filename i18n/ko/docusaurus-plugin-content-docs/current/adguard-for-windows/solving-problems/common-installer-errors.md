@@ -1,6 +1,6 @@
 ---
 title: 일반적인 설치 프로그램 오류
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 :::정보

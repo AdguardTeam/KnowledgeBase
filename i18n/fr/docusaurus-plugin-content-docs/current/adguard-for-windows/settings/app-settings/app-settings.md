@@ -16,3 +16,7 @@ In [_Filter editor_](/adguard-for-windows/settings/app-settings/filter-editor.md
 [_Advanced_](/adguard-for-windows/settings/app-settings/advanced-settings.md) settings are intended for experienced users. Ils sont rarement nécessaires dans le cadre d'une utilisation quotidienne et ne doivent être changés que si vous savez ce que vous faites ou si notre équipe d'assistance vous le demande.
 
 ![App settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/main_settings_2.png)
+
+Cliquez sur _Vérifier les mises à jour_ pour vérifier si la version de votre application, les filtres et les extensions sont à jour.
+
+![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)

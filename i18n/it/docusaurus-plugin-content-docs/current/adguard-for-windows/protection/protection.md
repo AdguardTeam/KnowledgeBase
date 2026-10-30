@@ -3,6 +3,10 @@ title: Protezione
 sidebar_position: 1
 ---
 
+![Home screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+
+Nella schermata Iniziale, troverai un commutatore per abilitare o disabilitare la protezione AdGuard, oltre a icone per _Bloccaggio inserzioni_, _Protezione dal tracciamento_, _protezione DNS_ e _Bloccaggio fastidi_. Le impostazioni principali possono essere richiamate tramite il menu' laterale sinistro.
+
 ![Protection tab \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/protection_section.png)
 
 La scheda _Protezione_ contiene tutte le impostazioni chiave per sicurezza e filtraggio. Here you can control _Ad blocking_, _Tracking protection_, _Annoyance blocking_, _DNS protection_, _Browsing security_, _Parental control_, and _Extensions_. Puoi anche gestire AdGuard Assistant — uno strumento che ti consente di controllare le sue funzionalità senza aprire l'app — qui. Ognuna di queste funzioni è descritta in un articolo separato.

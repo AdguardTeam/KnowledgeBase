@@ -11,75 +11,75 @@ AdGuard Mini for Mac バージョン3.0で、「システム全体の保護」�
 
 「システム全体の保護」は、Appleの[**URLフィルタ**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url)に基づいて構築されています。これは、システム全体のトラフィックフィルタリングに使用されるシステムフィルタリングAPIです。その仕組みは以下のとおりです。
 
-First, macOS checks a URL against a bloom filter — a prefilter stored on your Mac that updates in the background. Most addresses are cleared locally, with no network request for the check itself.
+まず、macOS は URL をbloomフィルタ（Mac に保存され、バックグラウンドで更新される事前フィルタ）と照合します。ほとんどのアドレスはローカルでクリアされ、チェック自体のためのネットワークリクエストは発生しません。
 
-If the prefilter finds a possible match, macOS asks AdGuard’s server for a verdict using Private Information Retrieval (PIR). This method lets your Mac request data from the server without revealing which exact address it asked about. The request can’t be linked to your account or device. If the server doesn’t respond, the page loads normally.
+プレフィルターで一致する可能性があるものが検出された場合、macOS は Private Information Retrieval（PIR）を使用して AdGuard のサーバーに判定を問い合わせます。この方法により、Macは問い合わせた正確なアドレスを明かすことなく、サーバーからデータをリクエストできます。リクエストはお使いのアカウントまたはデバイスに関連付けられません。サーバーが応答しない場合、ページは通常通り読み込まれます。
 
-You can read [a detailed analysis of Apple’s approach to system-wide filtering](https://adguard.com/en/blog/apple-url-filter-system-wide-filtering-api.html) in our blog.
+[AdGuardブログにて、システム全体フィルタリングへのAppleによるアプローチに関する詳細な分析](https://adguard.com/en/blog/apple-url-filter-system-wide-filtering-api.html)をお読みいただけます。
 
-## How to turn on System-wide protection
+## 「システム全体の保護」を有効にする方法
 
-You’ll find _System-wide protection_ under _Advanced protection_ in the AdGuard Mini app. To enable it, toggle the switch on.
+AdGuard Miniアプリの「高度な保護機能」の中に「システム全体の保護」があります。有効にするには、スイッチをオンにします。
 
 ![System-wide protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/system-wide-protection.png)
 
-When you first enable _System-wide protection_, you’ll get a request to install the URL filter on your computer. Click _Install_, after which a system message will appear requesting to add filter configurations. This is standard macOS behavior. AdGuard does not see or store any of this data.
+初めて「システム全体の保護」を有効にすると、お使いのコンピューターにURLフィルタをインストールするリクエストが表示されます。「インストール」をクリックすると、フィルタ構成の追加を求めるシステムメッセージが表示されます。これはmacOSの標準的な動作です。 AdGuard はこのデータを閲覧または保存することはできません。
 
 ![System-wide protection requires a URL filter](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/install-screen.png)
 
-After you install the URL filter, _System-wide protection_ will remain on by default. If you want it off, toggle off the _System-wide protection_ switch in _Advanced protection_.
+URLフィルターをインストールした後、「システム全体の保護」はデフォルトでオンのままになります。オフにしたい場合は、「高度な保護機能」にある「システム全体の保護」スイッチをオフにしてください。
 
-You can also click the context menu in the top right corner (⋮) and select _Remove URL Filter_. If you want to reset the filter without deleting it to troubleshoot connection issues, choose _Reset Cache_.
+また、右上隅のコンテキストメニュー (⋮) をクリックして、「URLフィルターを削除」を選択することもできます。接続の問題をトラブルシューティングのために、削除せずにURLフィルターをリセットしたい場合は、「キャッシュをリセット」を選択してください。
 
-It’s also possible to disable the URL filter in your Mac’s _System Settings_ → _Network_ → _VPN & Filters_ → _Filters & Proxies_. Change _Enabled_ to _Disabled_ in the _Status menu_. AdGuard Mini will then switch off _System-wide protection_ automatically.
+また、Macの「システム設定」 → 「ネットワーク」 → 「VPNとフィルタ」 → 「フィルタとプロキシ」でURLフィルタを無効にすることも可能です。「ステータスメニュー」で「有効」を「無効」に変更します。その後、AdGuard Mini は「システム全体の保護」を自動的にオフにします。
 
-## Protection levels
+## 保護レベル
 
-There are three levels of protection you can choose from. _Essential_ is selected by default.
+選択できる保護レベルは 3 つあります。「ベーシック」はデフォルトで選択されています。
 
-- _Essential_ — blocks ads and trackers
-- _Safe_ — blocks ads, trackers, phishing, and malware
-- _Family_ — blocks ads, trackers, phishing, malware, and adult content
+- 「ベーシック」 — 広告とトラッカーをブロックします。
+- 「安全」 — 広告、トラッカー、フィッシング、マルウェアをブロックします。
+- 「ファミリー」 — 広告、トラッカー、フィッシング、マルウェア、成人向けコンテンツをブロックします。
 
 ![Three levels of protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/levels-of-protection.png)
 
-## Troubleshooting
+## お困りの場合・トラブルシューティング
 
-### System-wide protection doesn’t work with every app or browser
+### 「システム全体の保護」が機能しないアプリやブラウザがある
 
-Coverage depends on how each app handles network requests, so some apps may not be filtered. This is a limitation on Apple’s side.
+対象範囲は各アプリがネットワークリクエストをどのように処理するかによって異なるため、一部のアプリはフィルタリングされない場合があります。これはApple仕様の制約です。
 
-Chromium-based browsers, such as Chrome, Edge, Opera, and Brave, use their own networking code instead of Apple’s frameworks, so the URL filter can’t check their requests.
+Chrome、Edge、Opera、BraveなどのChromiumベースのブラウザは、Appleのフレームワークの代わりに独自のネットワーキングコードを使用しているため、URLフィルタはそのリクエストをチェックできません。
 
-### System-wide protection doesn’t turn on
+### 「システム全体の保護」がオンにならない
 
-- **Your Mac runs an older version of macOS.** Apple’s URL filter needs macOS 26 Tahoe or later. On earlier versions, the setting is disabled and the app asks you to _Update to macOS Tahoe 26 or later_.
-- **Your account isn’t supported.** _System-wide protection_ only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows _Not supported on this Mac account_. See [Can I change my Mac account’s user ID?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) below.
-- **You’re on the free version.** To use _System-wide protection_, [purchase an AdGuard license](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
+- **お使いのMacのmacOSバージョンが古い。** Appleの「URLフィルター」にはmacOS 26 Tahoe以降が必要です。以前のバージョンでは、設定は無効になっており、アプリからmacOS Tahoe 26以降にアップデートするよう求められます。
+- **お使いのアカウントが対象外。**「システム全体の保護」は、Macで最初に作成されたユーザーアカウントでのみ機能します。アカウントが後から追加された場合、設定は無効になり、「このMacアカウントではサポートされていません」と表示されます。下記の「[MacアカウントのユーザーIDを変更できますか？](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id)」をご覧ください。
+- **無料版を利用中。** 「システム全体の保護」を使用するには、[AdGuardライセンスを購入する](https://adguard.com/license.html)か、「高度な保護機能」の「無料で試してみる」をクリックして14日間の無料トライアルを開始してください。
 
-### Can I change my Mac account’s user ID?
+### MacアカウントのユーザーIDを変更できますか？
 
-Yes. _System-wide protection_ only works with the first user account created on a Mac with the user ID (UID) of 501. If your Mac has more than one account, or if you migrated your account from an older Mac, your UID might be different. Follow the steps below to check your UID and, if needed, free up 501 and assign it to your account.
+はい。「システム全体の保護」は、ユーザーID（UID）が501である、Macで最初に作成されたユーザーアカウントでのみ機能します。お使いのMacに複数のアカウントがある場合、または古いMacからアカウントを移行した場合は、UIDが異なることがあります。以下の手順に従ってUIDを確認し、必要に応じて501を解放してアカウントに割り当ててください。
 
 :::warning
 
-This is an advanced, risky operation. Only do this if you have no other option. Freeing up UID 501 means deleting an existing account and creating a new one from Terminal. If something goes wrong, this can cause permanent data loss. Back up all the data on your Mac before proceeding.
+これはリスクの高い、高度な操作です。他に選択肢がない場合にのみ行ってください。 UID 501を解放することは、既存のアカウントを削除してターミナルから新しいアカウントを作成することを意味します。問題が発生したら、永久的なデータ損失を引き起こす可能性があります。続行する前に、Mac上のすべてのデータをバックアップしてください。
 
 :::
 
-1. **Check your current UID.** Open Terminal, type `id -u`, and press Return. If the result is 501, your account already has the right UID. You don’t need to do anything else.
+1. **現在のUIDを確認します。** ターミナルを開き、`id -u` と入力して Return を押します。結果が 501 の場合、お使いのアカウントにはすでに適切な UID が設定されています。他に何も行う必要はありません。
 
-2. **Find out who has UID 501.** If your UID is not 501, run this command:
+2. \*\*UID 501 を持つユーザーを確認します。\*\*あなたの UID が 501 でない場合は、次のコマンドを実行してください:
 
     ```bash
     dscacheutil -q user -a uid 501 | grep -E '^(name|uid|gecos):'
     ```
 
-   This shows the username, UID, and full name of that account. Make sure you don’t need any files from it, or back them up before continuing.
+   これは、そのアカウントのユーザ名、UID、フルネームを表示します。続行する前に、必要なファイルがないことを確認するか、バックアップを作成してください。
 
-3. **Delete the account with UID 501.** While logged in to your own admin account, open _System Settings_ → _Users & Groups_, select the account from step 2, and delete it. When macOS asks what to do with its home folder, choose _Save the home folder in a disk image_ — this keeps the account’s files in case you need them later.
+3. \*\*UID 501のアカウントを削除します。\*\*ご自身の管理者アカウントにログインした状態で、「システム設定」 → 「ユーザーとグループ」を開き、ステップ2のアカウントを選択して削除します。 macOSでホームフォルダの処理について尋ねられたら、「ホームフォルダをディスクイメージに保存」を選択してください。これにより、後で必要になった場合に備えてアカウントのファイルが保持されます。
 
-4. **Create a new account with UID 501.** Run the following command, replacing `username` and `Name Surname` with the details you want:
+4. **UID 501 で新しいアカウントを作成します。** `username` と `Name Surname` を任意の内容に置き換えて、次のコマンドを実行します:
 
     ```bash
     sudo sysadminctl -addUser username \
@@ -89,6 +89,6 @@ This is an advanced, risky operation. Only do this if you have no other option. 
       -UID 501
     ```
 
-   `-password -` makes Terminal prompt you for the password interactively; `-admin` gives the new account administrator rights.
+   `-password -` を指定すると、ターミナルで対話形式でパスワードの入力を求められます。`-admin` を指定すると、新しいアカウントに管理者権限が付与されます。
 
-5. **Verify the change.** Log in to the new account, then check the UID again: open Terminal, type `id -u`, and press Return. The result should now be 501.
+5. \*\*変更を確認します。\*\*新しいアカウントにログインし、UIDを再度確認します: ターミナルを開き、`id -u`と入力してReturnキーを押します。結果は 501 になるはずです。

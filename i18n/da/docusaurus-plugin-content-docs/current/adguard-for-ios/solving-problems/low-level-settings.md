@@ -1,5 +1,5 @@
 ---
-title: Low-level Settings guide
+title: Vejledning til Lavniveauindstillinger
 sidebar_position: 5
 ---
 
@@ -9,56 +9,56 @@ Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytt
 
 :::
 
-## How to reach the Low-level settings
+## Sådan tilgås Lavniveauindstillinger
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Ændring af *Lavniveauindstillinger* kan forårsage problemer med AdGuards ydeevne, afbryde internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. Dette afsnit bør kun åbnes af brugere, som ved, hvad de foretager sig, eller på anmodning af vores supportteam.
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+For at gå til *Lavniveauindstillinger*, tryk på tandhjulsikonet nederst til højre for at åbne *Indstillinger*. Vælg afsnittet *Generelt*, og slå kontakten *Avanceret tilstand* til, hvorefter afsnittet *Avancerede indstillinger* vises nedenfor. Tryk på *Avancerede indstillinger* for at komme til afsnittet *Lavniveauindstillinger*.
 
 ## Lavniveauindstillinger
 
-### Tunnel mode
+### Tunneltilstand
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+Der er to primære tunneltilstande: *Split* og *Full*. Tilstanden *Split-Tunnel* giver kompatibilitet mellem AdGuard og såkaldte "Personal VPN"-apps. I tilstanden *Full-Tunnel* kan intet andet VPN fungere samtidigt med AdGuard.
 
-There is a specific feature of the *Split-Tunnel* mode: In case of poor DNS proxy performance, for example, if the response from the AdGuard DNS server isn't returned in timely, iOS will instead reroute traffic through the DNS server specified in the iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Der er en specifik funktion i tilstanden *Split-Tunnel*: Ved dårlig DNS-proxyydelse, hvis f.eks. svaret fra AdGuard DNS-serveren ikke returneres rettidigt, vil iOS i stedet omrute trafik igennem DNS-serveren angivet i iOS-indstillingerne. Ingen annoncer blokeres på dette tidspunkt, og DNS-trafik krypteres ikke.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may negatively impact the performance of some programs (e.g., FaceTime) and cause app update issues.
+I tilstanden *Full-Tunnel* bruges kun den i AdGuard-indstillinger angivne DNS-server. Svarer den ikke, fungerer internet simpelthen ikke. Aktiveret *Full-Tunnel*-tilstand kan påvirke ydeevnen af nogle programmer negativt (f.eks. FaceTime) og forårsage problemer med app-opdateringer.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+Som standard bruger AdGuard tilstanden *Split-Tunnel* som den mest stabile mulighed.
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+Der er også en yderligere tilstand betegnet *Full-Tunnel (uden VPN-ikon)*. Denne er identisk med tilstanden *Full-Tunnel*, men blot opsat så VPN-ikonet ikke vises på systembjælken.
 
-### Blocking mode
+### Blokeringstilstand
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+I dette modul kan der vælges, hvordan AdGuard skal svare på DNS-forespørgsler, som skal blokeres:
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
-- REFUSED — respond with REFUSED code
-- NXDOMAIN — respond with NXDOMAIN code
-- Unspecified IP — respond with zero IP address
-- Custom IP — respond with a manually set IP address
+- Standard — svar med nul IP-adresse, når blokeret af adblock-lignende regler; svar med IP-adressen angivet i reglen, når blokeret af /etc/hosts-lignende regler
+- REFUSED — svar med REFUSED-kode
+- NXDOMAIN — svar med NXDOMAIN-kode
+- Uspecificeret IP — svar med nul IP-adresse
+- Tilpasset IP — svar med en manuelt angivet IP-adresse
 
-### Block IPv6
+### Blokér IPv6
 
-By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
+Flyttes kontakten til højre, aktiveres blokering af IPv6-forespørgsler (AAAA-forespørgsler). AAAA-type DNS-forespørgsler opløses ikke, hvorfor kun IPv4-forespørgsler kan behandles.
 
 ### Blokeret svar-TTL
 
-Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
+Her kan en enheds cachningsperiode for et DNS-forespørgselssvar angives. I den angivne levetid ((time-to-live) i sekunder) kan forespørgslen læses fra cachen, uden at DNS-serveren skal forespørges igen.
 
-### Bootstrap servers
+### Bootstrap-servere
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+For DNS-over-HTTPS, DNS-over-TLS og DNS-over-QUIC kræves en bootstrap-server for at få IP-adressen på den primære DNS-server. Hvis ikke angivet, bruges DNS-serveren fra iOS-indstillinger som bootstrap-server.
 
-### Fallback servers
+### Reserveservere (fallback)
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Her kan angives en alternativ server, som en forespørgsel omrutes til, såfremt den primære server ikke svarer. Hvis ikke angivet, bruges systemets DNS-server som reserve. Der kan også angives `none`, i hvilket tilfælde ingen reserveserver opsættes, og kun den primære DNS-server vil blive brugt.
 
-### Background app refresh time
+### Opdateringstid for baggrunds-app
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Her kan den frekvens vælges, hvormed applikationen vil søge efter filteropdateringer i baggrunden. Bemærk, at opdateringstjek ikke udføres hyppigere end den angivne frekvens, men de nøjagtige intervaller overholdes muligvis ikke.

@@ -3,37 +3,34 @@ title: AdGuard pro Windows
 sidebar_position: 1
 ---
 
-AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné bannery, vyskakovací okna, videoreklamy a slídiče. To ale není vše: pomáhá šetřit data, rychleji načítat webové stránky a chránit počítač před nežádoucím a potenciálně škodlivými weby. AdGuard vás také chrání před krádeží identity a chrání vaše děti před nevhodným obsahem.
+:::info
 
-## Požadavky na systém
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock).
 
-- **Verze OS:** Microsoft Windows 10 nebo vyšší
-- **RAM:** alespoň 6 GB
-- **Procesor:** 2jádrový, 2,0 GHz (nebo rychlejší)
-- **Volné místo na disku:** alespoň 4 GB.
+:::
 
----
+AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné bannery, vyskakovací okna, videoreklamy a slídiče. But that’s not all: it helps you save traffic, load web pages faster, and protect your computer from potentially malicious websites. AdGuard vás také chrání před krádeží identity a chrání vaše děti před nevhodným obsahem.
 
-![Home screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/main_screen.png)
+- [Protection](/adguard-for-windows/protection/protection.md)
 
-Na domovské obrazovce najdete přepínač pro zapnutí nebo vypnutí AdGuard ochrany, stejně jako ikony pro _Blokování reklam_, _Ochranu před sledováním_, _Ochranu DNS_ a _Blokování obtěžování_. Hlavní nastavení je přístupné přes menu na levé straně.
+  Settings to configure _Ad blocking_, _Tracking protection_, _DNS protection_, _Annoyance blocking_, _Browsing security_, _Parental control_, and _Extensions_
 
-## [Protection](/adguard-for-windows/protection/)
+- [Statistics](/adguard-for-windows/statistics/statistics.md)
 
-Nastavení pro konfiguraci _Blokování reklam_, _Ochrana před sledováním_, _Ochrana DNS_, _Blokování obtěžování_, _Bezpečné prohlížení_, _Rodičovská ochrana_ a _Rozšíření_.
+  Detailed information about blocked ads, trackers, and data usage
 
-## [Statistics](/adguard-for-windows/statistics/)
+- [App management](/adguard-for-windows/app-management/app-management.md)
 
-Podrobné informace o zablokovaných reklamách, slídičích a využití dat.
+  Settings to customize traffic filtering and routing for each app and browser
 
-## [App management](/adguard-for-windows/app-management/)
+- [Settings](/adguard-for-windows/settings/settings.md)
 
-Nastavení pro přizpůsobení filtrování a směrování provozu pro každou aplikaci a prohlížeč.
+  Language and theme, license information, support, and advanced and network settings
 
-## [Settings](/adguard-for-windows/settings/)
+- [Installation](/adguard-for-windows/installation.md)
 
-Možnosti výběru jazyka a motivu, zobrazení právních dokumentů, kontroly informací o licenci a kontaktování podpory. Pokročilá nastavení a nastavení sítě se také nacházejí zde.
+  Installation, removal, and system requirements for AdGuard for Windows
 
-Kliknutím na _Zkontrolovat aktualizace_ zjistíte, zda jsou verze aplikace, filtry a rozšíření aktuální.
+- [Solving problems](/adguard-for-windows/solving-problems/solving-problems.md)
 
-![Check for updates \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/checking_for_updates.png)
+  Known issues, logs, and possible solutions

@@ -19,7 +19,7 @@ Ez a cikk az AdGuard böngészőbővítményről szól, amely csak a böngésző
 
 - [Tracking protection (Stealth Mode)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Settings to block cookies, UTM tags, and online analytics that collect user information
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Other features and options](/adguard-browser-extension/features/other-features.md)
 

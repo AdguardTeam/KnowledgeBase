@@ -1063,9 +1063,9 @@ Doporučujeme také seznámit se s [přehledem filtrů Adblock Plus](https://adb
 | [$elemhide](#elemhide-modifier)         |              ✅               |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$extension](#extension-modifier)       |              ✅               |                ❌                |                    ❌                     |               ❌               |                      ❌                       |                      ❌                       |                 ❌                 |
 | [$jsinject](#jsinject-modifier)         |              ✅               |                ✅                | ✅ [*[1]](#jsinject-modifier-limitations) |               ✅               |                      ✅                       |                      ✅                       |                 ❌                 |
-| [$stealth](#stealth-modifier)           |              ✅               |                ✅                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
-| [$urlblock](#urlblock-modifier)         |              ✅               |                ✅                |                    ❌                     |               ✅               |   ✅ [*[2]](#urlblock-modifier-limitations)   |   ✅ [*[2]](#urlblock-modifier-limitations)   |                 ❌                 |
-| [$genericblock](#genericblock-modifier) |              ✅               |                ✅                |                    ✅                     |               ✅               | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) |                 ❌                 |
+| [$stealth](#stealth-modifier)           |              ✅               |                ✅                | ✅ [*[2]](#stealth-modifier-limitations)  |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
+| [$urlblock](#urlblock-modifier)         |              ✅               |                ✅                |                    ❌                     |               ✅               |   ✅ [*[3]](#urlblock-modifier-limitations)   |   ✅ [*[3]](#urlblock-modifier-limitations)   |                 ❌                 |
+| [$genericblock](#genericblock-modifier) |              ✅               |                ✅                |                    ✅                     |               ✅               | ✅ [*[4]](#genericblock-modifier-limitations) | ✅ [*[4]](#genericblock-modifier-limitations) |                 ❌                 |
 | [$generichide](#generichide-modifier)   |              ✅               |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$specifichide](#specifichide-modifier) |              ✅               |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
 
@@ -1199,64 +1199,83 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 Seznam dostupných možností modifikátoru:
 
-- `searchqueries` zakáže možnost [**Skrýt vyhledávací dotazy**](../../stealth-mode#searchqueries)
-- `donottrack` zakáže možnost [**Požádat webové stránky, aby vás nesledovaly**](../../stealth-mode#donottrack)
-- `3p-cookie` zakáže možnost [**Automatické odstranění cookies třetích stran**](../../stealth-mode#3p-cookie)
-- `1p-cookie` zakáže možnost [**Automatické odstranění cookies aktuální stránky**](../../stealth-mode#1p-cookie)
-- `3p-cache` zakáže možnost [**Zakázat mezipaměť pro požadavky třetích stran**](../../stealth-mode#3p-cache)
-- `3p-auth` zakáže možnost [**Blokovat autorizační hlavičku třetích stran**](../../stealth-mode#3p-auth)
-- `webrtc` zakáže možnost [**Blokovat WebRTC**](../../stealth-mode#webrtc)
-- `push` zakáže možnost [**Blokovat Push API**](../../stealth-mode#push)
-- `location` zakáže možnost [**Blokovat lokalizační API**](../../stealth-mode#location)
-- `flash` zakáže možnost [**Blokovat Flash**](../../stealth-mode#flash)
-- `java` zakáže možnost [**Blokovat Java**](../../stealth-mode#java)
-- `referrer` zakáže možnost [**Skrýt třetím stranám referenční ID**](../../stealth-mode#miscellaneous)
-- `useragent` zakáže možnost [**Skrýt agenta (identifikaci) Vašeho prohlížeče**](../../stealth-mode#useragent)
-- `ip` zakáže možnost [**Skrýt IP adresu**](../../stealth-mode#ip)
-- `xclientdata` zakáže možnost [**Odstranit X-Client-Data hlavičku z požadavků HTTP**](../../stealth-mode#xclientdata)
-- `dpi` zakáže možnost [**Ochrana před DPI**](../../stealth-mode#dpi)
+- `fingerprinting` disables [**Block fingerprinting**](../../stealth-mode#fingerprinting) option
+- `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
+- `donottrack` disables [**Ask websites not to track you**](../../stealth-mode#donottrack) option
+- `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
+- `1p-cookie` disables [**Self-destructing first-party cookies**](../../stealth-mode#1p-cookie) option
+- `3p-cache` disables [**Disable cache for third-party requests**](../../stealth-mode#3p-cache) option
+- `3p-auth` disables [**Block third-party Authorization header**](../../stealth-mode#3p-auth) option
+- `webrtc` disables [**Block WebRTC**](../../stealth-mode#webrtc) option
+- `push` disables [**Block Push API**](../../stealth-mode#push) option
+- `location` disables [**Block Location API**](../../stealth-mode#location) option
+- `flash` disables [**Block Flash**](../../stealth-mode#flash) option
+- `java` disables [**Block Java**](../../stealth-mode#java) option
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
+- `useragent` disables [**Hide your User-Agent**](../../stealth-mode#useragent) option
+- `ip` disables [**Hide your IP address**](../../stealth-mode#ip) option
+- `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../../stealth-mode#xclientdata) option
+- `dpi` disables [**Protect from DPI**](../../stealth-mode#dpi) option
 
 **Příklady**
 
 - `@@||example.com^$stealth` zakáže Ochranu před sledováním pro požadavky `example.com` (a subdomény) s výjimkou blokování cookies a skrytí sledovacích parametrů (viz níže).
 - `@@||domain.com^$script,stealth,domain=example.com` zakáže Ochranu před sledováním pouze pro požadavky skriptů na `domain.com` (a subdoménách) na `example.com` a subdoménách.
 - `@@||example.com^$stealth=3p-cookie|dpi` zakáže blokování cookies třetích stran a opatření pro oklamání DPI pro `example.com`.
+- `@@||example.com^$stealth=fingerprinting` disables fingerprinting protection for `example.com` (and subdomains). Other Tracking protection features keep working.
 
 :::note
 
-Blokování cookies a odstranění sledovacích parametrů se provádí pomocí pravidel s modifikátory [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) a [`$removeparam`](#removeparam-modifier). Pravidla výjimek, která obsahují pouze modifikátor `$stealth`, tyto věci neprovedou. Pokud chcete pro danou doménu zcela zakázat všechny funkce Ochrany před sledováním, musíte uvést všechny tři modifikátory: `@@||example.org^$stealth,removeparam,cookie`.
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier), and [`$removeparam`](#removeparam-modifier) modifiers. Pravidla výjimek, která obsahují pouze modifikátor `$stealth`, tyto věci neprovedou. If you want to completely disable all Tracking protection features for a given domain, add three separate exception rules:
+
+- `@@||example.org^$stealth`
+- `@@||example.org^$removeparam`
+- `@@||example.org^$cookie`
+
+These modifiers cannot be combined in one rule: `@@||example.org^$stealth,removeparam,cookie` will not work.
+
+:::
+
+##### `$stealth` modifier limitations {#stealth-modifier-limitations}
+
+:::caution Omezení
+
+- In [AdGuard for Chromium MV3][ext-mv3], `$stealth` rules affect only *Block fingerprinting*: `@@||example.com^$stealth` and `@@||example.com^$stealth=fingerprinting` disable it, and other options have no effect.
+- In AdGuard Browser Extension, *Block fingerprinting* is disabled by the allowlist and by rules of the form `@@||example.com^` with `$stealth`, `$stealth=fingerprinting`, or `$document`. The `fingerprinting` option may be combined with other options, and the rule may include `$important`. Rules with paths, wildcards, regular expressions, or other modifiers, such as `$domain` or `$third-party`, do not disable it.
+- For *Block fingerprinting*, a `$stealth` rule is checked against the address of each page and frame. `@@||example.com^$stealth=fingerprinting` disables *Block fingerprinting* on `example.com` and its subdomains, including `example.com` frames on other websites. Frames from other websites on `example.com` stay protected. The `@@||example.com^$document` rule and the allowlist disable *Block fingerprinting* on `example.com` pages, including frames from other websites, but not in `example.com` frames on other websites. In Firefox, some frames from other websites may stay protected, see [Tracking protection in AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting).
 
 :::
 
 :::caution Omezení
 
-- Možnosti modifikátoru musí být psány malými písmeny, tj. `$stealth=DPI` budou zamítnuty.
-- Možnosti modifikátoru nelze negovat, tj. `$stealth=~3p-cookie` bude zamítnuto.
-- Rozšíření prohlížeče AdGuard podporuje pouze možnosti `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` a `3p-cookie`.
+- Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
+- Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
+- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie`, `3p-cookie`, and `fingerprinting` options. AdGuard for Chromium MV3 supports only `fingerprinting`.
 
 :::
 
 :::info Kompatibilita
 
-- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chromium MV3. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
-- Pravidla s modifikátorem `$stealth` jsou podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.10 nebo novějším a Rozšířením prohlížeče AdGuard s [TSUrlFilter][] v3.0.0 nebo novějším.
-- V rozšíření prohlížeče AdGuard se příkaz *Block WebRTC* používá globálně a nelze jej ovládat pro jednotlivé stránky. Pravidla výjimek jako `$stealth=webrtc` nemají žádný účinek.
+- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers. AdGuard for Chromium MV3 v5.6 or later supports `$stealth` rules with [limitations](#stealth-modifier-limitations). All other products will ignore the rules with `$stealth` modifier.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- The `fingerprinting` option is supported by AdGuard Browser Extension v5.6 or later. AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and earlier versions of AdGuard Browser Extension consider rules with this option invalid and ignore the whole rule, including its other options. In filter lists for several products, put `fingerprinting` in a separate rule: use `@@||example.com^$stealth=3p-cookie` and `@@||example.com^$stealth=fingerprinting` instead of `@@||example.com^$stealth=3p-cookie|fingerprinting`.
+- V rozšíření prohlížeče AdGuard se příkaz *Block WebRTC* používá globálně a nelze jej ovládat pro jednotlivé stránky. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
 
 #### **`$urlblock`** {#urlblock-modifier}
 
-Zakáže blokování všech požadavků odeslaných ze stránek, které odpovídají pravidlu a zakáže všechna pravidla [`$cookie`](#cookie-modifier).
+Disables blocking of all requests sent from the pages matching the rule and disables all [`$cookie`](#cookie-modifier) rules.
 
 **Příklady**
 
-- `@@||example.com^$urlblock` — nebudou blokovány žádné požadavky odeslané z `example.com` a ze všech subdomén.
+- `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
 
-##### omezení modifikátoru `$urlblock` {#urlblock-modifier-limitations}
+##### `$urlblock` modifier limitations {#urlblock-modifier-limitations}
 
 :::caution Omezení
 
-V AdGuardu pro iOS a AdGuardu pro Safari fungují pravidla `$urlblock` jako [$document exclusion](#document-modifier) — odblokování všeho.
+In AdGuard for iOS and AdGuard for Safari, rules with `$urlblock` work as [$document exclusion](#document-modifier) — unblock everything.
 
 :::
 
@@ -1268,9 +1287,9 @@ Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker, an
 
 #### Generická pravidla {#exception-modifiers-generic-rules}
 
-Než budeme moci přistoupit k dalším modifikátorům, musíme provést definici *generických pravidel*. Pravidlo je generické, pokud není omezeno na konkrétní domény. Podporován je také zástupný znak `*`.
+Before we can proceed to the next modifiers, we have to make a definition of *generic rules*. The rule is generic if it is not limited to specific domains. Wildcard character `*` is supported as well.
 
-Například tato pravidla jsou generická:
+For example, these rules are generic:
 
 ```adblock
 ###banner
@@ -1282,7 +1301,7 @@ Například tato pravidla jsou generická:
 ||domain.com^$domain=~example.com
 ```
 
-A tato nejsou:
+And these are not:
 
 ```adblock
 domain.com###banner
@@ -1291,17 +1310,17 @@ domain.com###banner
 
 #### **`$genericblock`** {#genericblock-modifier}
 
-Zakáže generická základní pravidla na stránkách, které odpovídají pravidlu výjimky.
+Disables generic basic rules on pages that correspond to exception rule.
 
 **Příklady**
 
-- `@@||example.com^$genericblock` zakáže generická základní pravidla na `example.com` a všech subdoménách.
+- `@@||example.com^$genericblock` disables generic basic rules on any pages at `example.com` and all subdomains.
 
-##### omezení modifikátoru `$genericblock` {#genericblock-modifier-limitations}
+##### `$genericblock` modifier limitations {#genericblock-modifier-limitations}
 
 :::caution Omezení
 
-V AdGuardu pro iOS a AdGuardu pro Safari fungují pravidla `$genericblock` jako [$document exclusion](#document-modifier) — odblokování všeho.
+In AdGuard for iOS and AdGuard for Safari, rules with `$genericblock` work as [$document exclusion](#document-modifier) — unblock everything.
 
 :::
 
@@ -1313,47 +1332,47 @@ Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker
 
 #### **`$generichide`** {#generichide-modifier}
 
-Zakáže všechna generická [kosmetická pravidla](#cosmetic-rules) na stránkách, které odpovídají pravidlu výjimky.
+Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to the exception rule.
 
 **Příklady**
 
-- `@@||example.com^$generichide` zakáže všechna kosmetická pravidla na `example.com` a jejích subdoménách.
+- `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Místo plného názvu modifikátoru můžete použít kratší název (alias): `$ghide`.
+You may use a shorter name (alias) instead of using the full modifier name: `$ghide`.
 
 :::
 
 #### **`specifichide`** {#specifichide-modifier}
 
-Zakáže všechna specifická pravidla pro skrývání prvků a CSS, ale ne obecná pravidla. Má opačný účinek než [`$generichide`](#generichide-modifier).
+Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
 
 **Příklady**
 
-- `@@||example.org^$specifichide` zakáže `example.org##.banner`, ale ne `##.banner`.
+- `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Místo plného názvu modifikátoru můžete použít kratší název (alias): `$shide`.
+You may use a shorter name (alias) instead of using the full modifier name: `$shide`.
 
 :::
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Všechna kosmetická pravidla — nejen ta specifická — lze zakázat pomocí modifikátoru [`$elemhide`](#elemhide-modifier).
+All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$specifichide` nejsou AdGuardem pro iOS, Adguardem pro Safari a Blokátorem obsahu AdGuard podporována.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuard for Safari, and AdGuard Content Blocker.
 
 :::
 
 ### Pokročilé schopnosti {#advanced-modifiers}
 
-Tyto modifikátory mohou zcela změnit chování základních pravidel.
+These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
@@ -1382,18 +1401,18 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 | [$empty 👎](#empty-modifier "deprecated")    |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 | [$mp4 👎](#mp4-modifier "deprecated")        |                      ✅                      |                      ✅                       |                      ✅                       |                      ✅                       |             ❌              |               ❌               |                 ❌                 |
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
 - ✅ — plně podporováno
 - ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
 - ❌ — nepodporováno
-- 👎 — zastaralé; stále podporovano, ale v budoucnu bude odstraněno
+- 👎 — deprecated; still supported but will be removed in the future
 
 :::
 
 #### **`$all`** {#all-modifier}
 
-`$all` modifikátor je složen ze [všech modifikátorů typů obsahu](#content-type-modifiers) a [`$popup`](#popup-modifier). Např. pravidlo `||example.org^$all` se převádí na pravidlo:
+`$all` modifier is made of [all content-types modifiers](#content-type-modifiers) and [`$popup`](#popup-modifier). E.g. rule `||example.org^$all` is converting into rule:
 
 ```adblock
 ||example.org^$document,subdocument,font,image,media,object,other,ping,script,stylesheet,websocket,xmlhttprequest,popup
@@ -1401,11 +1420,11 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 
 :::caution Omezení
 
-Tento modifikátor nelze použít jako výjimku se znakem `@@`.
+This modifier cannot be used as an exception with the `@@` mark.
 
 :::
 
-##### omezení modifikátoru `$all` {#all-modifier-limitations}
+##### `$all` modifier limitations {#all-modifier-limitations}
 
 :::caution Omezení
 
@@ -1415,58 +1434,58 @@ Since `$popup` is a part if `$all`, the `$all` modifier is not supported by AdGu
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$all` nejsou Blokátorem obsahu AdGuard podporována.
+Rules with `$all` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
 #### **`$badfilter`** {#badfilter-modifier}
 
-Pravidla s modifikátorem `$badfilter` vypnou ostatní základní pravidla, na která se vztahují. To znamená, že text vypnutého pravidla by měl odpovídat textu pravidla `$badfilter` (bez modifikátoru `$badfilter`).
+The rules with the `$badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `$badfilter` rule (without the `$badfilter` modifier).
 
 **Příklady**
 
-- `||example.com$badfilter` zakáže `||example.com`
-- `||example.com$image,badfilter` zakáže `||example.com$image`
-- `@@||example.com$badfilter` zakáže `@@||example.com`
-- `||example.com$domain=domain.com,badfilter` zakáže `||example.com$domain=domain.com`
+- `||example.com$badfilter` disables `||example.com`
+- `||example.com$image,badfilter` disables `||example.com$image`
+- `@@||example.com$badfilter` disables `@@||example.com`
+- `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
-Pravidla s modifikátorem `$badfilter` mohou zakázat další základní pravidla pro konkrétní domény, pokud splňují následující podmínky:
+Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfill the following conditions:
 
 1. Pravidlo má modifikátor `$domain`
 1. Pravidlo nemá hodnotu modifikátoru negované domény `~` v `$domain`
 
-V takovém případě pravidlo `$badfilter` zakáže odpovídající pravidlo pro domény uvedené v pravidlech `$badfilter` i v základních pravidlech. Upozorňujeme, že [logika zástupných znaků TLD](#wildcard-for-tld) funguje i zde.
+In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
 
 **Příklady**
 
-- `/some$domain=example.com|example.org|example.io` je zakázána pro `example.com` pomocí `/some$domain=example.com,badfilter`
-- `/some$domain=example.com|example.org|example.io` ije zakázána pro `example.com` a `example.org` pomocí `/some$domain=example.com|example.org,badfilter`
-- `/some$domain=example.com|example.org` a `/some$domain=example.io` jsou kompletně zakázány pomocí `/some$domain=example.com|example.org|example.io,badfilter`
-- `/some$domain=example.com|example.org|example.io` je kompletně zakázána pomocí `/some$domain=example.*,badfilter`
-- `/some$domain=example.*` je zakázána pro `example.com` a `example.org` pomocí `/some$domain=example.com|example.org,badfilter`
-- `/some$domain=example.com|example.org|example.io` NENÍ zakázána pro `example.com` pomocí `/some$domain=example.com|~example.org,badfilter`, protože hodnota modifikátoru `$domain` obsahuje negovanou doménu
+- `/some$domain=example.com|example.org|example.io` is disabled for `example.com` by `/some$domain=example.com,badfilter`
+- `/some$domain=example.com|example.org|example.io` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+- `/some$domain=example.com|example.org` and `/some$domain=example.io` are disabled completely by `/some$domain=example.com|example.org|example.io,badfilter`
+- `/some$domain=example.com|example.org|example.io` is disabled completely by `/some$domain=example.*,badfilter`
+- `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+- `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `$domain` modifier contains a negated domain
 
-##### omezení modifikátoru `$badfilter` {#badfilter-modifier-limitations}
+##### `$badfilter` modifier limitations {#badfilter-modifier-limitations}
 
 :::caution Omezení
 
-In [AdGuard for Chromium MV3][ext-mv3], a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. Nemůžeme ho vypočítat, pokud je zrušeno pouze částečně. [Examples][badfilter-in-mv3].
+In [AdGuard for Chromium MV3][ext-mv3], a rule with the `$badfilter` modifier is applied in DNR only if it fully cancels the source rule. We cannot calculate it if it is only partially canceled. [Examples][badfilter-in-mv3].
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$badfilter` nejsou Blokátorem obsahu AdGuard podporována.
+Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
 #### **`$cookie`** {#cookie-modifier}
 
-Modifikátor `$cookie` zcela mění chování pravidla. Namísto blokování požadavku, tento modifikátor potlačí AdGuard nebo změní záhlaví `Cookie` a `Set-Cookie`.
+The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes AdGuard suppress or modify the `Cookie` and `Set-Cookie` headers.
 
-**Vícenásobná pravidla odpovídajících jednomu požadavku**
+**Multiple rules matching a single request**
 
-V případě, že jednomu požadavku odpovídá více pravidel `$cookie`, použijeme každé z nich.
+In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
 
 **Syntaxe**
 
@@ -1476,167 +1495,167 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 
 kde:
 
-- **`name`** — nepovinné, řetězec nebo regulární výraz pro přiřazení názvu cookie.
-- **`seconds`** — počet sekund aktuálního času pro posunutí data vypršení platnosti souboru cookie.
-- **`strategy`** — řetězec pro strategii [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite), která se má použít na cookies.
+- **`name`** — optional, string or regular expression to match cookie name.
+- **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
+- **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to be applied to the cookie.
 
-Např.
+For example,
 
 ```adblock
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
 
-pokaždé, když AdGuard narazí na cookie s názvem `NAME` v požadavku na `example.org`, provede následující kroky:
+every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
 
-- Nastaví datum vypršení platnosti na aktuální čas plus `3600` sekund
-- Přiměje cookie použít "laxní" strategii [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite).
+- Set its expiration date to current time plus `3600` seconds
+- Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) "lax" strategy.
 
-**Uvození speciálních znaků**
+**Escaping special characters**
 
-Pokud je pro porovnání použit regulární výraz `name`, musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. Každý z nich označte zpětným lomítkem `\`. Např. uvozená čárka vypadá takto: `\,`.
+If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` to escape each of them. For example, escaped comma looks like this: `\,`.
 
 **Příklady**
 
-- `||example.org^$cookie` blokuje **všechny** soubory cookie nastavené doménou `example.org`; to je ekvivalent nastavení `maxAge=0`
-- `$cookie=__cfduid` blokuje všude soubory cookie CloudFlare
-- `$cookie=/__utm[a-z]/` blokuje všude soubory cookie Google Analytics
-- `||facebook.com^$third-party,cookie=c_user` brání Facebooku ve sledování, i když jste přihlášeni
+- `||example.org^$cookie` blocks **all** cookies set by `example.org`; this is an equivalent to setting `maxAge=0`
+- `$cookie=__cfduid` blocks CloudFlare cookie everywhere
+- `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
+- `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-Existují dva způsoby, jak deaktivovat pravidla `$cookie`: primární metoda zahrnuje použití výjimky označené `@@` — `@@||example.org^$cookie`. Alternativní metoda využívá výjimku `$urlblock` (také zahrnutou pod aliasem výjimky `$document` — `$elemhide,jsinject,content,urlblock,extension`). Funguje to takto:
+There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` — `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias — `$elemhide,jsinject,content,urlblock,extension`). Here's how it works:
 
-- `@@||example.org^$cookie` odblokuje všechny soubory cookie nastavené doménou `example.org`
-- `@@||example.org^$urlblock` odblokuje všechny cookies nastavené doménou `example.org` a zakáže blokování všech požadavků odeslaných z `example.org`
-- `@@||example.org^$cookie=concept` odblokuje jeden soubor cookie s názvem `concept`
-- `@@||example.org^$cookie=/^_ga_/` odblokuje každý soubor cookie, který odpovídá regulárnímu výrazu
+- `@@||example.org^$cookie` unblocks all cookies set by `example.org`
+- `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
+- `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
+- `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-##### omezení modifikátoru `$cookie` {#cookie-modifier-limitations}
+##### `$cookie` modifier limitations {#cookie-modifier-limitations}
 
 :::caution Omezení
 
-In [AdGuard for Chromium MV3][ext-mv3], we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Vzhledem k tomu, že `onBeforeSendHeaders` a další posluchači již nejsou blokováni, je nemůžeme ve všech případech smazat. Pomocí [tohoto testu](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules) můžete zkontrolovat, zda pravidlo funguje.
+In [AdGuard for Chromium MV3][ext-mv3], we delete cookies in 2 ways: from `content-script` side (to which we have access) and from `onBeforeSendHeaders` listener. Since `onBeforeSendHeaders` and other listeners are no longer blocking, we are not able to delete them in all cases. You can check if a rule works with [this test](https://testcases.agrd.dev/Filters/cookie-rules/test-cookie-rules).
 
 :::
 
 :::caution Omezení
 
-Pravidla `$cookie` podporují tři typy modifikátorů: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`, `strict-third-party` a `strict-first-party`.
+`$cookie` rules support these types of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`, `strict-third-party`, and `strict-first-party`.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$cookie` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a AdGuardem pro Safari.
+Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
 #### **`$csp`** {#csp-modifier}
 
-Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, pravidlo nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
+This modifier completely changes the rule behavior. If it is applied to a rule, the rule will not block the matching request. Response headers will be modified instead.
 
 :::info
 
-Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy).
+In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
 :::
 
-U požadavků, které odpovídají pravidlu `$csp`, posílíme zásady zabezpečení odezvy posílením zásad zabezpečení obsahu, podobně jako u zásad zabezpečení obsahu modifikátoru obsahu `$csp`. Pravidla `$csp` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Mohou je ovlivnit **pouze výjimky na úrovni dokumentu** (viz část s příklady), ale žádná jiná základní pravidla.
+For the requests matching a `$csp` rule, we will strengthen response security policy by enhancing the content security policy, similar to the content security policy of the `$csp` modifier contents. `$csp` rules are applied independently from any other rule type. **Only document-level exceptions** can influence it (see the examples section), but no other basic rules.
 
-**Vícenásobná pravidla odpovídajících jednomu požadavku**
+**Multiple rules matching a single request**
 
-V případě, že jednomu požadavku odpovídá více pravidel `$csp`, použijeme každé z nich.
+In case if multiple `$csp` rules match a single request, we will apply each of them.
 
 **Syntaxe**
 
-Syntaxe hodnoty `$csp` je podobná syntaxi záhlaví Content Security Policy.
+`$csp` value syntax is similar to the Content Security Policy header syntax.
 
-Hodnota `$csp` může být v případě pravidel pro výjimky prázdná. Viz níže uvedený oddíl s příklady.
+`$csp` value can be empty in the case of exception rules. See examples section below.
 
 **Příklady**
 
-- `||example.org^$csp=frame-src 'none'` blokuje všechny obrázky na example.org a jejích subdoménách.
-- `@@||example.org/page/*$csp=frame-src 'none'` zakáže všechna pravidla s modifikátorem `$csp` přesně odpovídajícím příznakem `frame-src 'none'` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo.
-- `@@||example.org/page/*$csp` zakáže všechna pravidla `$csp` na všech stránkách odpovídajících vzoru pravidla.
-- `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` zakáže vložené skripty na všech stránkách odpovídajících vzoru pravidla.
-- `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$csp` na všech stránkách odpovídajících vzoru pravidla.
+- `||example.org^$csp=frame-src 'none'` blocks all frames on example.org and its subdomains.
+- `@@||example.org/page/*$csp=frame-src 'none'` disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+- `@@||example.org/page/*$csp` disables all the `$csp` rules on all the pages matching the rule pattern.
+- `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
+- `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
 
 :::caution Omezení
 
-- V hodnotě `$csp` je zakázáno několik znaků: `,`, `$`.
-- `$csp` pravidla podporují tři typy modifikátorů: `$domain`, `$important`, `$subdocument`.
-- Pravidla s direktivami `report-*` jsou považována za neplatná.
+- There are a few characters forbidden in the `$csp` value: `,`, `$`.
+- `$csp` rules support three types of modifiers: `$domain`, `$important`, `$subdocument`.
+- Rules with `report-*` directives are considered invalid.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$csp` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a AdGuardem pro Safari.
+Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
 
 :::
 
 #### **`$hls`** {#hls-modifier}
 
-Pravidla `$hls` upravují odpověď na shodný požadavek. Jsou určena k pohodlnému odstraňování segmentů ze seznamů stop [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
+`$hls` rules modify the response of a matching request. They are intended as a convenient way to remove segments from [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Slovo "segment" v tomto dokumentu znamená buď "mediální segment" nebo "seznam skladeb" jako součást "hlavního seznamu skladeb": pravidla `$hls` nerozlišují mezi "hlavním seznamem skladeb" a "mediálním seznamem skladeb".
+The word "segment" in this document means either a "Media Segment" or a "playlist" as part of a "Master Playlist": `$hls` rules do not distinguish between a "Master Playlist" and a "Media Playlist".
 
 :::
 
 **Syntaxe**
 
-- `||example.org^$hls=urlpattern` odstraní segmenty, jejichž adresa URL odpovídá vzoru adresy URL `urlpattern`. Vzor funguje stejně jako v základních pravidlech pro URL adresy, ale znaky `/`, `$` a `,` musí být uvozeny pomocí `\` uvnitř `urlpattern`.
-- `||example.org^$hls=/regexp/options` odstraní segmenty, kde URL nebo jeden ze znaků (u určitých možností, pokud jsou přítomny) odpovídá regulárnímu výrazu `regexp`. K dispozici jsou tyto možnosti `options`:
-    - `t` — namísto testování adresy URL segmentu otestujte každý znak segmentu podle regulárního výrazu. Segment se shodným znakem je odstraněn;
-    - `i` — regulární výraz nerozlišuje velká a malá písmena.
+- `||example.org^$hls=urlpattern` removes segments whose URL matches the URL pattern `urlpattern`. The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
+- `||example.org^$hls=/regexp/options` removes segments where the URL or one of the tags (for certain options, if present) is matched by the regular expression `regexp`. Available `options` are:
+    - `t` — instead of testing the segment's URL, test each of the segment's tags against the regular expression. A segment with a matching tag is removed;
+    - `i` — make the regular expression case-insensitive.
 
-Znaky `/`, `$` a `,` musí být uvnitř `regexp` uvozeny pomocí `\`.
+The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
 
 **Výjimky**
 
-Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$hls`. Lze je zakázat, jak je popsáno níže:
+Basic URL exceptions shall not disable rules with the `$hls` modifier. They can be disabled as described below:
 
-- `@@||example.org^$hls` zakáže všechna pravidla `$hls` pro odpovědi z URL odpovídajících `||example.org^`.
-- `@@||example.org^$hls=text` zakáže všechna pravidla `$hls` s hodnotou modifikátoru `$hls` shodným s `text` pro odpovědi z URL odpovídajících `||example.org^`.
+- `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 :::tip
 
-Pravidla `$hls` lze také zakázat pravidly výjimek `$document`, `$content` a `$urlblock`.
+`$hls` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
 :::
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Když vícenásobná pravidla `$hls` odpovídají stejnému požadavku, jejich účinek je kumulativní.
+When multiple `$hls` rules match the same request, their effect is cumulative.
 
 :::
 
 **Příklady**
 
-- `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` odstraní všechny segmenty se shodnou URL.
-- `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` dosáhne víceméně téhož pomocí regulárního výrazu namísto vzoru URL.
-- `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` odstraní všechny segmenty, které mají odpovídající znak.
+- `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` removes all segments with the matching URL.
+- `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` achieves more or less the same with a regular expression instead of a URL pattern.
+- `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` removes all segments which have the matching tag.
 
-**Anatomie seznamu stop HLS**
+**Anatomy of an HLS playlist**
 
-Stručné shrnutí [specifikace](https://datatracker.ietf.org/doc/html/rfc8216):
+A quick summary of the [specification](https://datatracker.ietf.org/doc/html/rfc8216):
 
 1. Seznam stop HLS je kolekce textových řádků
 1. Řádek může být prázdný, komentář (začíná `#`), znak (také začíná `#`, lze jej rozpoznat pouze podle názvu) nebo URL
 1. Řádek URL se nazývá "segment"
 1. Znaky se mohou vztahovat na jeden segment, tj. první řádek adresy URL za znakem, na všechny segmenty následující za znakem až do znaku se stejným názvem nebo na celý seznam skladeb
 
-Některé specifické body týkající se fungování pravidel `$hls`:
+Some points specific to the operation of `$hls` rules:
 
 1. Při odstranění segmentu se odstraní také všechny znaky, které se vztahují pouze k tomuto segmentu
 1. Pokud se znak vztahuje na více segmentů a všechny tyto segmenty jsou odstraněny, je odstraněna i znak
 1. Protože neexistuje způsob, jak rozpoznat různé druhy znaků podle syntaxe, rozpoznáváme všechny znaky uvedené v RFC a některé nestandardní znaky, se kterými jsme se setkali v praxi. Všechny řádky začínající na `#`. Ty, které nejsou rozpoznány jako znak, jsou předány bez úprav a nejsou porovnávány s pravidly
 1. Značky nebudou přiřazeny, pokud se vztahují na celý seznam stop a k jejich odstranění nelze použít pravidla `$hls`, protože tyto typy pravidel jsou určeny pro odstraňování segmentů. Pokud víte, co děláte, můžete pomocí pravidel `$replace` odstranit nebo přepsat pouze jeden znak ze seznamu skladeb
 
-**Příklad transformace provedené podle pravidel:**
+**An example of a transformation done by the rules:**
 
 <details>
-<summary>Původní odezva</summary>
+<summary>Original response</summary>
 
 ```text
 #EXTM3U
@@ -1663,7 +1682,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Použitá pravidla</summary>
+<summary>Applied rules</summary>
 
 ```adblock
 ||example.org^$hls=preroll
@@ -1673,7 +1692,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Modifikovaná odpověď</summary>
+<summary>Modified response</summary>
 
 ```text
 #EXTM3U
@@ -1692,22 +1711,22 @@ preroll.ts
 
 :::caution Omezení
 
-- Pravidla s modifikátorem `$hls` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
-- `$hls` pravidla jsou kompatibilní pouze s těmito modifikátory: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
-- `$hls` pravidla platí pouze pro seznamy stop HLS, což je text kódovaný v UTF-8 začínající řádkem `#EXTM3U`. Jakákoli jiná odpověď nebude těmito pravidly upravena.
-- Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
+- Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
+- `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
+- `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
+- `$hls` rules do not apply if the size of the original response is more than 10 MB.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$hls` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.10 nebo novější.
+Rules with the `$hls` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later.
 
 :::
 
 #### **`$inline-script`** {#inline-script-modifier}
 
-Modifikátor `$inline-script` je určen k blokování in-line JavaScriptu vloženého do webové stránky pomocí zásad zabezpečení obsahu (CSP). Zlepšuje zabezpečení a soukromí tím, že zabraňuje použití in-line reklam nebo potenciálně škodlivých skriptů. Pravidlo `||example.org^$inline-script` se převádí na syntaxi pravidel CSP:
+The `$inline-script` modifier is designed to block inline JavaScript embedded into the web page, using Content Security Policy (CSP). It improves security and privacy by preventing application of inline ads or potentially malicious scripts. The rule `||example.org^$inline-script` is converting into the CSP-syntax rule:
 
 ```adblock
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1715,7 +1734,7 @@ Modifikátor `$inline-script` je určen k blokování in-line JavaScriptu vlože
 
 #### **`$inline-font`** {#inline-font-modifier}
 
-Modifikátor `$inline-font` je určen k blokování in-line fontů vložených do webové stránky pomocí zásad zabezpečení obsahu (CSP). Zlepšuje zabezpečení a soukromí tím, že zabraňuje použití in-line fontů, které by mohly být použity ke shromažďování dat a čtení digitálních otisků. Pravidlo `||example.org^$inline-font` se převádí na syntaxi pravidel CSP:
+The `$inline-font` modifier is designed to block inline fonts embedded into the web page, using Content Security Policy (CSP). It improves security and privacy by preventing application of inline fonts that could be used for data collection and fingerprinting. The rule `||example.org^$inline-font` is converting into the CSP-syntax rule:
 
 ```adblock
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1723,17 +1742,17 @@ Modifikátor `$inline-font` je určen k blokování in-line fontů vložených d
 
 #### **`$jsonprune`** {#jsonprune-modifier}
 
-Pravidla `$jsonprune` upravují odpověď na odpovídající požadavek odstraněním položek JSON, které odpovídají upravenému výrazu [JSONPath](https://goessner.net/articles/JsonPath/). Nemění odpovědi, které nejsou platnými dokumenty JSON.
+`$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON documents.
 
-V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, `$jsonprune` podporuje také úpravu dokumentů JSONP (padded JSON).
+In AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntaxe**
 
-- `||example.org^$jsonprune=expression` odstraní z odpovědi položky, které odpovídají upravenému výrazu JSONPath `expression`.
+- `||example.org^$jsonprune=expression` removes items that match the modified JSONPath expression `expression` from the response.
 
-Vzhledem ke způsobu zpracování pravidel musí být znaky `$` a `,` uvnitř `výrazu` uvozeny pomocí `\`.
+Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
 
-Upravená syntaxe JSONPath má oproti původní následující rozdíly:
+The modified JSONPath syntax has the following differences from the original:
 
 1. Výrazy skriptů nejsou podporovány
 1. Podporované výrazy filtrů jsou:
@@ -1745,33 +1764,33 @@ Upravená syntaxe JSONPath má oproti původní následující rozdíly:
 1. Výrazy končící na `..` nejsou podporovány
 1. V hranatých závorkách lze zadat vícero dílků pole
 
-Existují různé online nástroje, které usnadňují práci s výrazy JSONPath:
+There are various online tools that make working with JSONPath expressions more convenient:
 
 https://www.site24x7.com/tools/jsonpath-finder-validator.html https://jsonpathfinder.com/ https://jsonpath.com/
 
-Mějte však na paměti, že všechny implementace JSONPath mají jedinečné vlastnosti a jsou vzájemně nekompatibilní.
+Keep in mind, though, that all JSONPath implementations have unique features/quirks and are subtly incompatible with each other.
 
 **Výjimky**
 
-Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$jsonprune`. Lze je zakázat, jak je popsáno níže:
+Basic URL exceptions shall not disable rules with the `$jsonprune` modifier. They can be disabled as described below:
 
-- `@@||example.org^$jsonprune` zakáže všechna pravidla `$jsonprune` pro odpovědi z URL odpovídajících `||example.org^`.
-- `@@||example.org^$jsonprune=text` zakáže všechna pravidla `$jsonprune` s hodnotou modifikátoru `$jsonprune` shodným s `text` pro odpovědi z URL odpovídajících `||example.org^`.
+- `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$jsonprune=text` disables all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
-Pravidla `$jsonprune` lze také zakázat pravidly výjimek `$document`, `$content` a `$urlblock`.
+`$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, jsou seřazena v lexikografickém pořadí, první pravidlo je aplikováno na původní odpověď a každé ze zbývajících pravidel je aplikováno na výsledek použití předchozího.
+When multiple `$jsonprune` rules match the same request, they are sorted in lexicographical order, the first rule is applied to the original response, and each of the remaining rules is applied to the result of applying the previous one.
 
 :::
 
 **Příklady**
 
-- `||example.org^$jsonprune=\$..[one\, "two three"]` odstraní všechny výskyty klíčů "one" a "two three" kdekoli v dokumentu JSON.
+- `||example.org^$jsonprune=\$..[one\, "two three"]` removes all occurrences of the keys "one" and "two three" anywhere in the JSON document.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```json
 {
@@ -1786,7 +1805,7 @@ Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, js
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```json
 {
@@ -1798,10 +1817,10 @@ Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, js
 
 </details>
 
-- `||example.org^$jsonprune=\$.a[?(has ad_origin)]` odstraní všechny potomky `a`, které mají klíč `ad_origin`.
+- `||example.org^$jsonprune=\$.a[?(has ad_origin)]` removes all children of `a` that have an `ad_origin` key.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```json
 {
@@ -1820,7 +1839,7 @@ Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, js
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```json
 {
@@ -1834,10 +1853,10 @@ Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, js
 
 </details>
 
-- `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` odstraní všechny položky, které jsou na úrovni vnoření 3 a mají vlastnost "Some key" rovnu "Some value".
+- `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` removes all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```json
 {
@@ -1849,7 +1868,7 @@ Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, js
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```json
 {
@@ -1860,14 +1879,14 @@ Když vícenásobná pravidla `$jsonprune` odpovídají stejnému požadavku, js
 
 </details>
 
-**Vnořené výrazy JSONPath**
+**Nested JSONPath expressions**
 
-V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, lze výrazy JSONPath použít jako klíče ve výrazech filtru.
+In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPath expressions may be used as keys in filter expressions.
 
-- `||example.org^$jsonprune=\$.elems[?(má "\$.abc")]` odstraní všechny potomky `elems`, které mají vlastnost volitelnou výrazem JSONPath `$.abc`.
+- `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```json
 {
@@ -1887,7 +1906,7 @@ V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, lze 
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```json
 {
@@ -1902,10 +1921,10 @@ V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, lze 
 
 </details>
 
-- `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` odstraní všechny potomky `elems`, které mají vlastnost volitelnou pomocí výrazu JSONPath `$.a.b.c` s hodnotou rovnou `"abc"`.
+- `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```json
 {
@@ -1923,7 +1942,7 @@ V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, lze 
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```json
 {
@@ -1939,48 +1958,48 @@ V AdGuardu pro Windows, Mac a Android s [CoreLibs][] v1.11 nebo novější, lze 
 
 :::caution Omezení
 
-- `$jsonprune` pravidla jsou kompatibilní pouze s těmito modifikátory: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
-- Pravidla `$jsonprune` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
+- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$jsonprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$jsonprune` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.10 nebo novější.
+Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later.
 
 :::
 
 #### **`$xmlprune`** {#xmlprune-modifier}
 
-Pravidla `$xmlprune` upravují odpověď na odpovídající požadavek odstraněním položek XML, které odpovídají upravenému výrazu[XPath 1.0](https://www.w3.org/TR/1999/REC-xpath-19991116/). Výraz musí vrátit [node-set](https://www.w3.org/TR/1999/REC-xpath-19991116/#node-sets). `$xmlprune` pravidla neupravují odpovědi, které nejsou dobře formulovanými dokumenty XML.
+`$xmlprune` rules modify the response to a matching request by removing XML items that match an [XPath 1.0](https://www.w3.org/TR/1999/REC-xpath-19991116/) expression. The expression must return a [node-set](https://www.w3.org/TR/1999/REC-xpath-19991116/#node-sets). `$xmlprune` rules do not modify responses which are not well-formed XML documents.
 
 **Syntaxe**
 
-- `||example.org^$xmlprune=expression` odstraní z odpovědi položky, které odpovídají výrazu XPath `expression`.
+- `||example.org^$xmlprune=expression` removes items that match the XPath expression `expression` from the response.
 
-Vzhledem ke způsobu zpracování pravidel musí být znaky `$` a `,` uvnitř `výrazu` uvozeny pomocí `\`.
+Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
 
 **Výjimky**
 
-Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$xmlprune`. Lze je zakázat, jak je popsáno níže:
+Basic URL exceptions shall not disable rules with the `$xmlprune` modifier. They can be disabled as described below:
 
-- `@@||example.org^$xmlprune` zakáže všechna pravidla `$xmlprune` pro odpovědi z URL odpovídajících `||example.org^`.
-- `@@||example.org^$xmlprune=text` zakáže všechna pravidla `$xmlprune` s hodnotou modifikátoru `$xmlprune` shodným s `text` pro odpovědi z URL odpovídajících `||example.org^`.
+- `@@||example.org^$xmlprune` disables all `$xmlprune` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$xmlprune=text` disables all `$xmlprune` rules with the value of the `$xmlprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
-Pravidla `$xmlprune` lze také zakázat pravidly výjimek `$document`, `$content` a `$urlblock`.
+`$xmlprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použita v lexikografickém pořadí.
+When multiple `$xmlprune` rules match the same request, they are applied in lexicographical order.
 
 :::
 
 **Příklady**
 
-- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` odstraní z knihkupectví knihy s lichými čísly.
+- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` removes odd-numbered books from the bookstore.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2025,7 +2044,7 @@ Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použi
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2055,10 +2074,10 @@ Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použi
 
 </details>
 
-- `||example.org^$xmlprune=/bookstore/book[year = 2003]` odstraní knihy z roku 2003 z knihkupectví.
+- `||example.org^$xmlprune=/bookstore/book[year = 2003]` removes books from the year 2003 from the bookstore.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2103,7 +2122,7 @@ Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použi
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2133,10 +2152,10 @@ Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použi
 
 </details>
 
-- `||example.org^$xmlprune=//*/@*` odstraní všechny atributy ze všech prvků.
+- `||example.org^$xmlprune=//*/@*` removes all attributes from all elements.
 
 <details>
-<summary>Vstup</summary>
+<summary>Input</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2156,7 +2175,7 @@ Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použi
 </details>
 
 <details>
-<summary>Výstup</summary>
+<summary>Output</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2177,98 +2196,98 @@ Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použi
 
 :::caution Omezení
 
-- `$xmlprune` pravidla jsou kompatibilní pouze s těmito modifikátory: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
-- Pravidla `$xmlprune` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
+- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$xmlprune` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.15 nebo novější.
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.15 or later.
 
 :::
 
 #### **`$network`** {#network-modifier}
 
-Jedná se v podstatě o pravidla typu brány Firewall, která umožňují plně zablokovat nebo odblokovat přístup na zadanou vzdálenou adresu.
+This is basically a Firewall-like rule allowing to fully block or unblock access to a specified remote address.
 
 1. Pravidla `$network` odpovídají **pouze IP adresám**! Nelze je použít k zablokování nebo odblokování přístupu k doméně.
 2. Chcete-li se shodovat s adresou IPv6, musíte použít sbalenou syntaxi, např. `[2001:4860:4860::8888]$network` namísto `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. Pravidlo seznamu povolených `$network` způsobí, že AdGuard bude obcházet data odpovídajícího koncového bodu, proto nebude provádět žádné další filtrování.
 4. Pokud část IP začíná a končí znakem `/`, je považována za regulární výraz.
 
-Pro lepší pochopení regulárních výrazů doporučujeme seznámit se s tímto [článkem](#regexp-support).
+We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
 
 :::caution Omezení
 
-Modifikátor `$network` lze v pravidlech použít pouze společně s modifikátory `$app` a `$important`, nikoli s žádnými jinými modifikátory.
+The `$network` modifier can only be used in rules together with the `$app` and `$important` modifiers, and not with any other modifiers.
 
 :::
 
 **Příklady**
 
-- `174.129.166.49:3478^$network` blokuje přístup k `174.129.166.49:3478` (ale ne k `174.129.166.49:34788`).
-- `[2001:4860:4860::8888]:443^$network` blokuje přístup k `[2001:4860:4860::8888]:443`.
-- `174.129.166.49$network` blokuje přístup k `174.129.166.49:*`.
-- `@@174.129.166.49$network` způsobí, že AdGuard bude koncovému bodu předávat data. Žádná jiná pravidla se neuplatňují.
-- `/.+:3[0-9]{4}/$network` blokuje přístup k libovolnému portu od 30000 do 39999.
-- `/8.8.8.(:?8|4)/$network` blokuje přístup k `8.8.8.8` a `8.8.8.4`.
+- `174.129.166.49:3478^$network` blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
+- `[2001:4860:4860::8888]:443^$network` blocks access to `[2001:4860:4860::8888]:443`.
+- `174.129.166.49$network` blocks access to `174.129.166.49:*`.
+- `@@174.129.166.49$network` makes AdGuard bypass data to the endpoint. No other rules will be applied.
+- `/.+:3[0-9]{4}/$network` blocks access to any port from 30000 to 39999.
+- `/8.8.8.(:?8|4)/$network` blocks access to both `8.8.8.8` and `8.8.8.4`.
 
 :::info Kompatibilita
 
-Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$network`.
+Only AdGuard for Windows, Mac, and Android are technically capable of using rules with `$network` modifier.
 
 :::
 
 #### **`$permissions`** {#permissions-modifier}
 
-Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, pravidlo nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
+This modifier completely changes the rule behavior. If it is applied to a rule, the rule will not block the matching request. Response headers will be modified instead.
 
 :::info
 
-Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy).
+In order to use this type of rules, it is required to have a basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
 :::
 
-U požadavků, které odpovídají pravidlu `$permissions`, AdGuard posiluje zásady funkcí odpovědi přidáním dalších zásad oprávnění, které se rovnají obsahu modifikátoru `$permissions`. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Mohou je ovlivnit **pouze výjimky na úrovni dokumentu** (viz část s příklady), ale žádná jiná základní pravidla.
+For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding an additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. **Only document-level exceptions** can influence it (see the examples section), but no other basic rules.
 
 **Syntaxe**
 
-Hodnota syntaxe `$permissions` je shodná se [syntaxí](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) záhlaví `Permissions-Policy` s následujícími výjimkami:
+`$permissions` value syntax is identical to that of the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with the following exceptions:
 
 1. Čárka, která odděluje více prvků **MUSÍ být uvozena** – viz příklady níže.
 2. Místo čárky lze pro oddělení funkcí použít znak `(|)`.
 
-Seznam dostupných direktiv je k dispozici v [Zásadách oprávnění](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Available directives are listed in the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives) article.
 
-Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
+`$permissions` value can be empty in the case of exception rules — see examples below.
 
 **Příklady**
 
-- `||example.org^$permissions=autoplay=()` zakáže automatické přehrávání médií vyžádaných prostřednictvím rozhraní `HTMLMediaElement` v rámci `example.org`.
-- `@@||example.org/page/*$permissions=autoplay=()` zakáže všechna pravidla s modifikátorem `$permissions` přesně odpovídajícím příznakem `autoplay=()` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo. Je důležité si uvědomit, že pravidlo výjimky se projeví pouze v případě **přesné shody hodnot**. Pokud například chcete zakázat pravidlo `$permissions=a=()\,b=()`, potřebujete pravidlo výjimky `@@$permissions=a=()\,b=()` a **ne** `@@$permissions=b=()\,a=()` **ani** `@@$permissions=b=()`, protože `b=()\,a=()` nebo `b=()` neodpovídá `a=()\,b=()`.
-- `@@||example.org/page/*$permissions` zakáže všechna pravidla `$permissions` na všech stránkách odpovídajících vzoru pravidla.
-- `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` zakáže použití API pro přístup k úložišti pro vyžádání přístupu k nerozděleným souborům cookies a používání vstupních zařízení videa napříč `example.org` a `example.com`.
-- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` dělá totéž — místo čárky lze k oddělení funkcí použít `|`.
-- `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$permission` na všech stránkách odpovídajících vzoru pravidla.
+- `||example.org^$permissions=autoplay=()` disallows autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
+- `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above. It is important to note that the exception rule only takes effect in the case of an **exact value match**. For example, if you want to disable the rule  `$permissions=a=()\,b=()`, you need exception rule `@@$permissions=a=()\,b=()`, and **not** `@@$permissions=b=()\,a=()`, **nor** `@@$permissions=b=()` because `b=()\,a=()` or `b=()` does not match with `a=()\,b=()`.
+- `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
+- `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
+- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` does the same — a `|` can be used to separate the features instead of an escaped comma.
+- `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Pravidla `$permissions` jsou účinná pouze pro požadavky hlavního rámce a vedlejšího rámce. To znamená, že se použijí při načtení stránky nebo iframe.
-
-:::
-
-:::note
-
-Pokud existuje více pravidel `$permissions`, která odpovídají stejnému požadavku, bude do odpovědi přidáno více záhlaví `Permissions-Policy` pro každé pravidlo s jejich hodnotou `$permissions`. Pokud tedy máte dvě pravidla: `||example.org^$permissions=autoplay=()` a `||example.org^$permissions=geolocation=()\,camera=()`, která odpovídají stejnému požadavku, bude odpověď obsahovat dvě záhlaví `Permissions-Policy`: `autoplay=()` a `geolocation=()\,camera=()`.
+`$permissions` rules only take effect for main frame and sub frame requests. This means they are applied when a page is loaded or when an iframe is loaded.
 
 :::
 
-##### omezení modifikátoru `$permissions` {#permissions-modifier-limitations}
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+
+If there are multiple `$permissions` rules that match the same request, multiple `Permissions-Policy` headers will be added to the response for each rule with their `$permissions` value. So if you have two rules: `||example.org^$permissions=autoplay=()` and `||example.org^$permissions=geolocation=()\,camera=()` that match the same request, the response will contain two `Permissions-Policy` headers: `autoplay=()` and `geolocation=()\,camera=()`.
+
+:::
+
+##### `$permissions` modifier limitations {#permissions-modifier-limitations}
 
 :::caution Omezení
 
-Firefox ignoruje záhlaví `Permissions-Policy`. Další informace naleznete v [tomto hlášení](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
+Firefox ignores the `Permissions-Policy` header. For more information, see [this issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
 
 :::
 
@@ -2282,43 +2301,43 @@ Firefox ignoruje záhlaví `Permissions-Policy`. Další informace naleznete v [
 
 :::info Kompatibilita
 
-- Pravidla s modifikátorem `$permissions` jsou podporována AdGuardem pro Windows, AdGuardem pro Mac, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.11 nebo novějším a rozšířením prohlížeče AdGuard s [TSUrlFilter][] v3.0.0 nebo novějším.
-- Oddělovač `|` místo uvozené čárky je podporován AdGuardem pro Windows, AdGuardem pro macOS, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.14 nebo novějším a rozšířením prohlížeče AdGuard s [TSUrlFilter][] v3.0.0 nebo novějším.
+- Rules with the `$permissions` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 
 :::
 
 #### **`$redirect`** {#redirect-modifier}
 
-AdGuard je schopen přesměrovat webové požadavky na místní "zdroj".
+AdGuard is able to redirect web requests to a local "resource".
 
 **Syntaxe**
 
-AdGuard používá stejnou syntaxi pravidel filtrování jako uBlock Origin. Je také kompatibilní s modifikátorem ABP `$rewrite=abp-resource`.
+AdGuard uses the same filtering rule syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
-`$redirect` je modifikátor pro [základní pravidla filtrování](#basic-rules), takže pravidla s tímto modifikátorem podporují všechny ostatní základní modifikátory, jako jsou `$domain`, `$third-party`, `$script` atd.
+`$redirect` is a modifier for the [basic filtering rules](#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
 
-Hodnota modifikátoru `$redirect` musí být název zdroje, který bude použit pro přesměrování.
+The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-##### Zakázání pravidel `$redirect`
+##### Disabling `$redirect` rules
 
-- `||example.org/script.js$script,redirect=noopjs` — toto pravidlo přesměruje všechny požadavky na `example.org/script.js` na zdroj s názvem `noopjs`.
-- `||example.org/test.mp4$media,redirect=noopmp4-1s` — toto pravidlo přesměruje všechny požadavky na `example.org/test.mp4` na zdroj s názvem `noopmp4-1s`.
-- `@@||example.org^$redirect` zakáže všechna pravidla `$redirect` pro URL adresy, které odpovídají `||example.org^`.
-- `@@||example.org^$redirect=nooptext` zakáže všechna pravidla s `$redirect=nooptext` pro všechny požadavky, které odpovídají `||example.org^`.
+- `||example.org/script.js$script,redirect=noopjs` — this rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
+- `||example.org/test.mp4$media,redirect=noopmp4-1s` — this rule redirects all requests to `example.org/test.mp4` to the resource named `noopmp4-1s`.
+- `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
+- `@@||example.org^$redirect=nooptext` will disable all rules with `$redirect=nooptext` for any request that matches `||example.org^`.
 
-Další informace o přesměrování a použití jsou k dispozici [na GitHubu](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
-##### Priority pravidel `$redirect` {#redirect-rule-priorities}
+##### Priorities of `$redirect` rules {#redirect-rule-priorities}
 
-Pravidla `$redirect` mají vyšší prioritu než běžná základní pravidla blokování. To znamená, že pokud existuje základní pravidlo blokování, pravidlo `$redirect` jej přepíše. Pravidla seznamu povolených se znakem `@@` mají vyšší prioritu než pravidla `$redirect`. Pokud se základní pravidlo s modifikátorem `$important` a pravidlem `$redirect` shoduje se stejnou adresou URL, je druhé pravidlo přepsáno, pokud není též označeno jako `$important`.
+`$redirect` rules have higher priority than regular basic blocking rules. This means that if there is a basic blocking rule, the `$redirect` rule will override it. Allowlist rules with `@@` mark have higher priority than `$redirect` rules. If a basic rule with the `$important` modifier and the `$redirect` rule matches the same URL, the latter is overridden unless it's also marked as `$important`.
 
 <!-- Please do not replace `>` by `→` -->
 
-**Ve zkratce: `$important` > `@@` > `$redirect` > `basic rules`.**
+**In short: `$important` > `@@` > `$redirect` > `basic rules`.**
 
 Další podrobnosti najdete v [prioritách pravidel](#rule-priorities).
 
-##### omezení modifikátoru `$redirect` {#redirect-modifier-limitations}
+##### `$redirect` modifier limitations {#redirect-modifier-limitations}
 
 :::caution Omezení
 
@@ -2328,18 +2347,18 @@ In [AdGuard for Chromium MV3][ext-mv3], allowlist rules with `$redirect` are not
 
 :::info Kompatibilita
 
-- Pravidla s modifikátorem `$redirect` nejsou podporována [Blokátorem obsahu AdGuard][and-cb], [AdGuardem pro iOS][ios-app] a [AdGuardem pro Safari][ext-saf].
-- `$redirect` v uBlock Origin podporuje zadané priority, např. `$redirect=noopjs:42`. AdGuard to nepodporuje a místo toho pouze zahodí prioritní postfix.
+- Rules with `$redirect` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], and [AdGuard for Safari][ext-saf] .
+- `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
 
 :::
 
 #### **`$redirect-rule`** {#redirect-rule-modifier}
 
-Toto je v podstatě alias [`$redirect`](#redirect-modifier), protože má stejné hodnoty "přesměrování" a logika je téměř podobná. Rozdíl je v tom, že `$redirect-rule` se použije pouze v případě, kdy je cílový požadavek blokován jiným základním pravidlem.
+This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
 
 Další podrobnosti najdete v [prioritách pravidel](#rule-priorities).
 
-Negace `$redirect-rule` funguje úplně stejně jako u běžných pravidel `$redirect`. Ještě více než to, bude `@@||example.org^$redirect` negovat jak pravidla `$redirect`, tak `$redirect-rule`.
+Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
 
 **Příklady**
 
@@ -2348,7 +2367,7 @@ Negace `$redirect-rule` funguje úplně stejně jako u běžných pravidel `$red
 ||example.org^$redirect-rule=noopjs
 ```
 
-V tomto případě budou pouze požadavky na `example.org/script.js` "přesměrovány" na `noopjs`. Všechny ostatní požadavky na `example.org` zůstanou nedotčeny.
+In this case, only requests to `example.org/script.js` will be "redirected" to `noopjs`. All other requests to `example.org` will be kept intact.
 
 :::info Kompatibilita
 
@@ -2358,61 +2377,61 @@ Rules with `$redirect-rule` modifier are not supported by [AdGuard Content Block
 
 #### **`$referrerpolicy`** {#referrerpolicy-modifier}
 
-Tato pravidla umožňují přepsat [zásady odkazovačů](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) stránky. V odezvách na shodné požadavky budou všechny hlavičky `Referrer-Policy` nahrazeny jedinou hlavičkou s hodnotou rovnou hodnotě modifikátoru shodného pravidla. Pokud odezva obsahuje dokument HTML se značkou `<meta name="referrer"...`, atribut `content` značky bude také nahrazen hodnotou modifikátoru.
+These rules allow overriding of a page's [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy). Responses to matching requests will have all of their `Referrer-Policy` headers replaced with a single header with the value equal to the matching rule's modifier value. If the response carries an HTML document with a `<meta name="referrer"...` tag, the `content` attribute of the tag will also be replaced with the modifier value.
 
-Pravidlo výjimky s hodnotou modifikátoru zakáže pravidlo blokování se stejnou hodnotou modifikátoru. Pravidlo výjimky bez hodnoty modifikátoru zakáže všechna odpovídající pravidla zásad odkazování.
+An exception rule with a modifier value disables the blocking rule with the same modifier value. An exception rule without a modifier value disables all matched referrer-policy rules.
 
-Pokud požadavek odpovídá více pravidlům `$referrerpolicy`, která nejsou zakázána výjimkami, použije se pouze jedno z nich (není uvedeno, které). `$referrerpolicy` pravidla bez specifikovaných [modifikátorů typu obsahu](#content-type-modifiers) platí pro `$document` a `$subdocument` typy obsahu.
+If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied. `$referrerpolicy` rules without specified [content-type modifiers](#content-type-modifiers) apply to `$document` and `$subdocument` content types.
 
 **Příklady**
 
-- `||example.com^$referrerpolicy=unsafe-url` přepíše zásady odkazování pro `example.com` pomocí `unsafe-url`.
-- `@@||example.com^$referrerpolicy=unsafe-url` zakáže předchozí pravidlo.
-- `@@||example.com/abcd.html^$referrerpolicy` zakáže všechna pravidla `$referrerpolicy` na `example.com/abcd.html`.
+- `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
+- `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
+- `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$referrerpolicy` jsou podporována AdGuardem pro Windows, Mac, Android a Linux s [CoreLibs][] v1.12 nebo novější.
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.12 or later.
 
 :::
 
 #### **`$removeheader`** {#removeheader-modifier}
 
-Pravidla s modifikátorem `$removeheader` jsou určena k odstranění záhlaví z požadavků a odpovědí HTTP. Původní motivací pro tento typ pravidla je možnost zbavit se záhlaví `Refresh`, které se často používá k přesměrování uživatelů na nežádoucí místo. To však není jediný případ, kdy může být tento modifikátor užitečný.
+Rules with `$removeheader` modifier are intended to remove headers from HTTP requests and responses. The initial motivation for this rule type is to be able to get rid of the `Refresh` header which is often used to redirect users to an undesirable location. However, this is not the only case where this modifier can be useful.
 
-Stejně jako `$csp`, `$redirect`, `$removeparam` a `$cookie` i tento modifikátor existuje samostatně, pravidla s ním nezávisí na běžných základních pravidlech, tj. pravidelná výjimka nebo pravidla blokování jej neovlivní. Ve výchozím nastavení ovlivňuje pouze záhlaví odpovědí. Můžete jej však také změnit tak, aby odstraňoval hlavičky z požadavků HTTP.
+Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exists independently, rules with it do not depend on the regular basic rules, i.e. regular exception or blocking rules will not affect it. By default, it only affects response headers. However, you can also change it to remove headers from HTTP requests as well.
 
 **Syntaxe**
 
-**Základní syntaxe**
+**Basic syntax**
 
-- `||example.org^$removeheader=header-name` odstraní **odpověď** záhlaví s názvem `header-name`
-- `||example.org^$removeheader=request:header-name` odstraní **požadavek** záhlaví s názvem `header-name`
+- `||example.org^$removeheader=header-name` removes a **response** header called `header-name`
+- `||example.org^$removeheader=request:header-name` removes a **request** header called `header-name`
 
-`$removeheader` nerozlišuje velká a malá písmena, doporučujeme vždy používat malá písmena.
+`$removeheader` is case-insensitive, but we suggest always using lower case.
 
-**Negace `$removeheader`**
+**Negating `$removeheader`**
 
-Tento typ pravidel funguje v podstatě stejně jako u modifikátorů `$csp` a `$redirect`.
+This type of rules works pretty much the same way it works with `$csp` and `$redirect` modifiers.
 
-K negaci `$removeheader` použijte `@@`:
+Use `@@` to negate `$removeheader`:
 
-- `@@||example.org^$removeheader` neguje **všechna** pravidla `$removeheader` pro URL adresy, které odpovídají `||example.org^`.
-- `@@||example.org^$removeheader=header` neguje všechna pravidla s `$removeheader=header` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+- `@@||example.org^$removeheader` negates **all** `$removeheader` rules for URLs that match `||example.org^`.
+- `@@||example.org^$removeheader=header` negates the rule with `$removeheader=header` for any request matching `||example.org^`.
 
-Pravidla `$removeheader` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$removeheader=p` pro požadavky na `example.com`, ale `@@||example.com^$urlblock` ano.
+`$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-V případě, že jednomu požadavku odpovídá více pravidel `$removeheader`, použijeme každé z nich.
+In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
 
 :::
 
 **Příklady**
 
-- `||example.org^$removeheader=refresh` odstraní záhlaví `Refresh` ze všech HTTP odpovědí vrácených doménou `example.org` a jejími subdoménami.
-- `||example.org^$removeheader=request:x-client-data` odstraní záhlaví `X-Client-Data` ze všech požadavků HTTP.
-- Další blok pravidel odstraní záhlaví `Refresh` a `Location` ze všech odpovědí HTTP vrácených doménou `example.org` s výjimkou požadavků na `example.org/path/*`, u kterých nebudou odstraněny žádné záhlaví:
+- `||example.org^$removeheader=refresh` removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
+- `||example.org^$removeheader=request:x-client-data` removes `X-Client-Data` header from all HTTP requests.
+- Next block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
 
     ```adblock
     ||example.org^$removeheader=refresh
@@ -2420,14 +2439,14 @@ V případě, že jednomu požadavku odpovídá více pravidel `$removeheader`, 
     @@||example.org/path/$removeheader
     ```
 
-##### omezení modifikátoru `$removeheader` {#removeheader-modifier-limitations}
+##### `$removeheader` modifier limitations {#removeheader-modifier-limitations}
 
 :::caution Omezení
 
 [AdGuard for Chromium MV3][ext-mv3] has some limitations:
 
-- Pravidla negace a seznamu povolených nejsou podporována.
-- Skupina podobných `$removeheader` pravidel bude sloučena do jednoho dekorativního pravidla. Např:
+- Negation and allowlist rules are not supported.
+- Group of similar `$removeheader` rules will be combined into one declarative rule. Např:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeheader=p1case1
@@ -2490,7 +2509,7 @@ V případě, že jednomu požadavku odpovídá více pravidel `$removeheader`, 
 
 :::caution Omezení
 
-Tento typ pravidel lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
+This type of rules can only be used [**in trusted filters**](#trusted-filters).
 
 1. Aby nedošlo k narušení bezpečnosti, nelze z níže uvedeného seznamu odstranit záhlaví `$removeheader`:
     - `access-control-allow-origin`
@@ -2548,84 +2567,84 @@ Tento typ pravidel lze použít [**pouze v důvěryhodných filtrech**](#trusted
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$removeheader` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
+Rules with `$removeheader` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
 
 :::
 
 #### **`$removeparam`** {#removeparam-modifier}
 
-:::note
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-`$queryprune` je alias `$removeparam`. Protože je `$queryprune` zastaralý, nepoužívejte jej a místo něj použijte `$removeparam`.
+`$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.
 
 :::
 
-Pravidla s modifikátorem `$removeparam` jsou určena k odstranění parametrů dotazu z požadavků adres URL. Upozorňujeme, že tato pravidla se vztahují pouze na požadavky `GET`, `HEAD`, `OPTIONS` a někdy `POST`.
+Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and sometimes `POST` requests.
 
 **Syntaxe**
 
-**Základní syntaxe**
+**Basic syntax**
 
-- `$removeparam=param` odstraní parametr dotazu s názvem `param` z URL libovolného požadavku, např. požadavek na `https://example.com/page?param=1&another=2` bude transformován na `https://example.com/page?another=2`.
+- `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `https://example.com/page?param=1&another=2` will be transformed into `https://example.com/page?another=2`.
 
-**Regulární výrazy**
+**Regular expressions**
 
-Regulární výrazy můžete použít také k porovnání parametrů dotazu a/nebo jejich hodnot:
+You can also use regular expressions to match query parameters and/or their values:
 
-- `$removeparam=/regexp/[options]` — odstraní parametry dotazu, které odpovídají regulárnímu výrazu `regexp` z adres URL jakéhokoli požadavku. Na rozdíl od základní syntaxe to znamená *"odebrat parametry dotazu normalizované na řetězec `name=value`, který odpovídá regulárnímu výrazu `regexp` "*. `[options]` zde je seznam možností regulárních výrazů. V současné době je jedinou podporovanou možností `i`, díky čemuž se nerozlišují malá a velká písmena.
+- `$removeparam=/regexp/[options]` — removes query parameters that matches the `regexp` regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the `regexp` regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
-**Uvození speciálních znaků**
+**Escaping special characters**
 
-Speciální znaky by měly být v pravidle URL zakódovány, aby správně odpovídaly textu URL.
+Special characters should be URL-encoded in a rule to correctly match the URL text.
 
-Například, pro odstranění `?$param=true` byste měli použít pravidlo `$removeparam=%24param`.
-
-Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
-
-Mezery a čárky by měly být také zakódovány v adrese URL, jinak pravidlo nebude odpovídat adrese URL. Nicméně, znaky `.`, `-`, `_` a `~` by měly být používány tak, jak jsou, protože nejsou označeny jako rezervované znaky v kódování URL.
-
-:::
-
-Nezapomeňte v regulárních výrazech používat uvození speciálních znaků, jako je například `.`. K tomu použijte znak `\`. Např. uvozená tečka by měla vypadat takto: `\.`.
-
-:::note
-
-Pravidla typu regexp se vztahují na název i hodnotu parametru. Pro minimalizaci chyb je bezpečnější začínat každý regexp znakem `/^`, pokud se nezaměřujete konkrétně na hodnoty parametrů.
-
-:::
-
-**Odebrat všechny parametry dotazu**
-
-Chcete-li odebrat všechny parametry dotazu, zadejte samostatně `$removeparam`:
-
-- `||example.org^$removeparam` — odstraní všechny parametry dotazu z adres URL odpovídajících `||example.org^`.
-
-**Inverze**
-
-Pro použití inverze použijte `~`:
-
-- `$removeparam=~param` — odstraní všechny parametry dotazu s názvem odlišným od `param`.
-- `$removeparam=~/regexp/` — odstraní všechny parametry dotazu, které neodpovídají regulárnímu výrazu `regexp`.
+For example, to remove `?$param=true`, you should use the `$removeparam=%24param` rule.
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-Pokud se `~` neobjeví na začátku pravidla, považuje se za symbol v textu.
+Spaces and commas should also be URL-encoded, otherwise the rule won't match the URL. However, `.`, `-`, `_`, and `~` should be used as they are, since they are not marked as reserved characters in URL encoding.
 
 :::
 
-**Negace `$removeparam`**
+Remember to escape special characters like `.` in the regular expressions. Use the `\` character to do this. For example, an escaped dot should look like this: `\.`.
 
-Tento druh pravidel funguje v podstatě stejně jako u modifikátorů [`$csp`](#csp-modifier) a [`$redirect`](#redirect-modifier).
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-K negaci `$removeparam` použijte `@@`:
+Regexp-type rules apply to both the name and value of the parameter. To minimize errors, it is safer to start each regexp with `/^`, unless you are specifically targeting parameter values.
 
-- `@@||example.org^$removeparam` neguje všechna pravidla `$removeparam` pro URL adresy, které odpovídají `||example.org^`.
-- `@@||example.org^$removeparam=param` neguje všechna pravidla s `$removeparam=param` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
-- `@@||example.org^$removeparam=/regexp/` neguje všechna pravidla s `$removeparam=/regexp/` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+:::
 
-**Vícenásobná pravidla odpovídajících jednomu požadavku**
+**Remove all query parameters**
 
-V případě, že jednomu požadavku odpovídá více pravidel `$removeparam`, bude každé z nich použito jedno po druhém.
+Specify naked `$removeparam` to remove all query parameters:
+
+- `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
+
+**Inversion**
+
+Use `~` to apply inversion:
+
+- `$removeparam=~param` — removes all query parameters with the name different from `param`.
+- `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
+
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
+
+If `~` does not appear at the beginning of the rule, it is treated as a symbol in the text.
+
+:::
+
+**Negating `$removeparam`**
+
+This sort of rules work pretty much the same way it works with [`$csp`](#csp-modifier) and [`$redirect`](#redirect-modifier) modifiers.
+
+Use `@@` to negate `$removeparam`:
+
+- `@@||example.org^$removeparam` negates all `$removeparam` rules for URLs that match `||example.org^`.
+- `@@||example.org^$removeparam=param` negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+- `@@||example.org^$removeparam=/regexp/` negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
+
+**Multiple rules matching a single request**
+
+In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
 
 **Příklady**
 
@@ -2635,15 +2654,15 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
-S těmito pravidly bude z jakéhokoli požadavku odstraněno [UTM parametrů](https://en.wikipedia.org/wiki/UTM_parameters), kromě toho, že požadavky na `example.com` nebudou odstraněny vůbec, např. `https://google.com/page?utm_source=s&utm_referrer= fb.com&utm_content=img` bude transformováno na `https://google.com/page`, ale `https://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` nebude ovlivněno pravidlem blokování.
+With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `https://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `https://google.com/page`, but `https://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
 
-- `$removeparam=utm_source` odstraní parametr dotazu `utm_source` ze všech požadavků.
+- `$removeparam=utm_source` removes `utm_source` query parameter from all requests.
 
-- `$removeparam=/utm_.*/` odstraní všechny parametry `utm_* query` z URL libovolného požadavku, např. požadavek na `https://example.com/page?utm_source=test` bude transformován na `https://example.com/page`.
+- `$removeparam=/utm_.*/` removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `https://example.com/page?utm_source=test` will be transformed to `https://example.com/page`.
 
-- `$removeparam=/^utm_source=campaign$/` odstraní parametr dotazu `utm_source` s hodnotou rovnou `campaign`. Nemá vliv na ostatní parametry `utm_source`.
+- `$removeparam=/^utm_source=campaign$/` removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
 
-**Negace pravidla `$removeparam` a jeho nahrazení jiným pravidlem**
+**Negating one `$removeparam` rule and replacing it with a different rule**
 
 ```adblock
 $removeparam=/^(gclid|yclid|fbclid)=/
@@ -2651,9 +2670,9 @@ $removeparam=/^(gclid|yclid|fbclid)=/
 ||example.com^$removeparam=/^(yclid|fbclid)=/
 ```
 
-Díky těmto pravidlům budou ze všech požadavků odstraněny identifikátory kliknutí Google, Yandex a Facebook. Existuje jedna výjimka: Z požadavků na example.com nebude odstraněno Google Click ID (gclid).
+With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There is one exception: Google Click ID (gclid) will not be removed from requests to example.com.
 
-**Negace pro všechny parametry `$removeparam`**
+**Negating `$removeparam` for all parameters**
 
 ```adblock
 $removeparam=/^(utm_source|utm_medium|utm_term)=/
@@ -2661,18 +2680,18 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
-Díky těmto pravidlům budou zadané parametry UTM odstraněny ze všech požadavků s výjimkou požadavků na `example.org`.
+With these rules, specified UTM parameters will be removed from any request save for requests to `example.org`.
 
-Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$removeparam=p` pro požadavky na **example.com**, ale `@@||example.com^$urlblock` ano.
+`$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-##### omezení modifikátoru `$removeparam` {#removeparam-modifier-limitations}
+##### `$removeparam` modifier limitations {#removeparam-modifier-limitations}
 
 :::caution Omezení
 
 [AdGuard for Chromium MV3][ext-mv3] has some limitations:
 
-- Regulární výrazy, negace a pravidla seznamu povolených nejsou podporovány.
-- Každé pravidlo `$removeparam` s pojmenovaným parametrem má své vlastní deklarativní pravidlo s parametrem `urlFilter` (například `^utm_source=`). Chrome DNR provede přesměrování pouze jednou za relaci, takže bez této funkce by se uplatnilo pouze pravidlo s nejvyšší prioritou a ostatní by byla přeskočena. Param-aware `urlFilter` způsobí, že se každé pravidlo spustí pouze v případě, že je přítomen jeho cílový parametr a vytvoří řetězec přesměrování — na každý skok je odstraněn jeden parametr — dokud nejsou všechny odstraněny. Chrome umožňuje až 20 přesměrování na jednu navigaci, což je dost pro reálné sledovací URL. Tyto skoky nejsou pro uživatele viditelné. Příklad:
+- Regular expressions, negation and allowlist rules are not supported.
+- Each `$removeparam` rule with a named parameter gets its own declarative rule with a param-aware `urlFilter` (e.g. `^utm_source=`). Chrome DNR applies a redirect only once per navigation, so without this, only the highest-priority rule would fire and the rest would be skipped. The param-aware `urlFilter` makes each rule fire only when its target parameter is present, forming a redirect chain — one parameter stripped per hop — until all are removed. Chrome allows up to 20 hops per navigation, which is enough for real-world tracking URLs. These hops are invisible to users. Příklad:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
@@ -2785,45 +2804,45 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 
 :::info Kompatibilita
 
-- Pravidla s modifikátorem `$removeparam` jsou podporována AdGuardem pro Windows, AdGuardem pro macOS, AdGuardem pro Android a AdGuardem pro Linux s [CoreLibs][] v1.7 nebo novější a Rozšířením prohlížeče AdGuard v3.6 nebo novějším.
-- Syntaxe `$removeparam` pro regulární výrazy je podporována AdGuardem pro Windows, AdGuardem pro macOS a AdGuardem pro Android s [CoreLibs][] v1.8 nebo novější a Rozšířením prohlížeče AdGuard v4.0 nebo novějším.
-- Typy požadavků `POST` podporuje pouze AdGuard pro Windows, Mac a Android s [CoreLibs][] v1.10 nebo novější a rozšíření prohlížeče AdGuard s [TSWebExtension][] v0.4.6 nebo novější.
+- Rules with `$removeparam` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.7 or later, and AdGuard Browser Extension v3.6 or later.
+- `$removeparam` syntax for regular expressions is supported AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.8 or later, and AdGuard Browser Extension v4.0 or later.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension][] v0.4.6 or later.
 
 :::
 
 #### **`$replace`** {#replace-modifier}
 
-Tento modifikátor zcela mění chování pravidla. Pokud je použitý, pravidlo požadavek nezablokuje. Namísto toho bude odpověď upravena.
+This modifier completely changes the rule behavior. If it is applied, the rule will not block the request. The response is going to be modified instead.
 
-K použití modifikátoru `$replace` budete potřebovat určité znalosti regulárních výrazů.
+You will need some knowledge of regular expressions to use `$replace` modifier.
 
-**Funkce**
+**Features**
 
-- Pravidla `$replace` platí pro jakoukoli textovou odpověď, ale neplatí pro binární (`media`, `image`, `object` atd.).
-- Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
-- Pravidla `$replace` mají vyšší prioritu než ostatní základní pravidla **včetně** pravidel výjimek. Pokud tedy požadavek odpovídá dvěma různým pravidlům, z nichž jedno má modifikátor `$replace`, použije se toto pravidlo.
-- Pravidla výjimek na úrovni dokumentu s modifikátory `$content` nebo `$document` zakáží pravidla `$replace` pro požadavky, které jim odpovídají.
-- Ostatní pravidla výjimek na úrovni dokumentu (`$generichide`, `$elemhide` nebo modifikátory `$jsinject`) se uplatňují vedle pravidel `$replace`. To znamená, že můžete upravit obsah stránky pomocí pravidla `$replace` a zároveň zde zakázat kosmetická pravidla.
+- `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB.
+- `$replace` rules have a higher priority than other basic rules, **including** exception rules. So if a request matches two different rules, one of which has the `$replace` modifier, this rule will be applied.
+- Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
+- Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
 
-Hodnota `$replace` může být v případě pravidel pro výjimky prázdná. Další informace naleznete v části Příklady.
+`$replace` value can be empty in the case of exception rules. See examples section for further information.
 
-**Vícenásobná pravidla odpovídajících jednomu požadavku**
+**Multiple rules matching a single request**
 
-V případě, že jednomu požadavku odpovídá více pravidel `$replace`, použijeme každé z nich. **Pořadí je stanoveno abecedně.**
+In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
 **Syntaxe**
 
-Obecně je syntaxe `$replace` podobná nahrazování regulárními výrazy v [Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
+In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 replace = "/" regexp "/" replacement "/" modifiers
 ```
 
-- **`regexp`** — regulární výraz.
-- **`replacement`** — řetězec, který bude použit k nahrazení řetězce odpovídajícího `regexp`.
-- **`modifiers`** — příznaky regulárního výrazu. Například `i` — necitlivé vyhledávání nebo `s` — jednořádkový režim.
+- **`regexp`** — a regular expression.
+- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
+- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
-V hodnotě `$replace` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. Použijte pro to zpětné lomítko `\`. Např. uvozená čárka vypadá takto: `\,`.
+In the `$replace` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
 
 **Příklady**
 
@@ -2831,38 +2850,38 @@ V hodnotě `$replace` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$
 ||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
 ```
 
-Toto pravidlo má tři části:
+There are three parts in this rule:
 
 - `regexp` — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
-- `replacement` — `\$1<\/VAST>` kde `$` je uvozeno;
-- `modifiers` — `i` pro necitlivé vyhledávání.
+- `replacement` — `\$1<\/VAST>` where `$` is escaped;
+- `modifiers` — `i` for insensitive search.
 
-Jak toto pravidlo funguje, se můžete podívat zde: https://regexr.com/3cesk
+You can see how this rule works here: https://regexr.com/3cesk
 
-**Vícenásobná pravidla `$replace`**
+**Multiple `$replace` rules**
 
 1. `||example.org^$replace=/X/Y/`
 2. `||example.org^$replace=/Z/Y/`
 3. `@@||example.org/page/*$replace=/Z/Y/`
 
-- Jak pravidlo 1, tak pravidlo 2 se použijí na všechny požadavky odeslané na `example.org`.
-- Pravidlo 2 je zakázáno pro požadavky odpovídající na `||example.org/page/`, **ale pravidlo 1 stále funguje!**
+- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
-**Zakázání pravidel `$replace`**
+**Disabling `$replace` rules**
 
-- `@@||example.org^$replace` zakáže všechna pravidla `$replace` odpovídající na `||example.org^`.
-- `@@||example.org^$document` nebo `@@||example.org^$content` zakáže všechna pravidla `$replace` **pocházející ze** stránek `example.org` **včetně stránky samotné**.
+- `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
+- `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
 :::caution Omezení
 
-- Pravidla s modifikátorem `$replace` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
-- Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 10 MB. Pro rozšíření AdGuard platí toto omezení od verze 5.2 nebo novější.
+- Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB. For AdGuard Browser Extension, this limit applies starting from v5.2 or later.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge. Taková pravidla v rozšířeních pro jiné prohlížeče nefungují, protože nemohou měnit obsah na úrovni sítě.
+Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
 
 :::
 
@@ -2870,21 +2889,21 @@ Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android
 
 The `$urltransform` rules allow you to modify the request URL by applying a series of transformations.
 
-**Funkce**
+**Features**
 
-- Pravidla `$urltransform` se obvykle vztahují pouze na části URL týkající se cesty a dotazu, viz níže jedna výjimka.
-- `$urltransform` nebude použito, pokud je původní URL blokována jinými pravidly.
-- `$urltransform` se použije před pravidly `$removeparam`.
+- `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
+- `$urltransform` will not be applied if the original URL is blocked by other rules.
+- `$urltransform` will be applied before `$removeparam` rules.
 
-Hodnota `$urltransform` může být pro pravidla výjimek prázdná.
+The `$urltransform` value can be empty for exception rules.
 
-**Vícenásobná pravidla odpovídajících jednomu požadavku**
+**Multiple rules matching a single request**
 
 If multiple `$urltransform` rules match a single request, they are applied one-by-one in lexicographical order, each rule being applied to the result of the previous one.
 
 **Syntaxe**
 
-Hodnota `$urltransform` je řada jedné nebo více transformací oddělených znakem `|`. První transformace se aplikuje na vstupní URL. Každá z následujících transformací se aplikuje na výstup předchozí transformace. Výstupem neúspěšné transformace (například pokud selhalo dekódování Base64 nebo pokud substituce nenašla žádné shody) je její vstup, beze změny. Formálně:
+`$urltransform` value is a series of one or more transformations separated by `|`. The first transformation is applied to the input URL. Each of the following transformations is applied to the output of the previous one. The output of a failed transformation (for example, if Base64 decoding failed or if substitution found no matches) is its input, unchanged. Formally:
 
 ```text
 urltransform = transforms
@@ -2894,22 +2913,22 @@ substitute = "/" regexp "/" replacement "/" modifiers
 decode = "b64" | "pct"
 ```
 
-- **`substitute`** je podobné nahrazení pomocí regulárních výrazů [v Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
-    - **`regexp`** — regulární výraz.
-    - **`replacement`** — řetězec, který nahrazuje vše, co odpovídá `regexp`. `$1`, `$2` atd. v náhradním řetězci jsou nahrazeny obsahem odpovídající zachycené skupiny.
-    - **`modifiers`** — příznaky regulárních výrazů, např. `i` pro vyhledávání bez rozlišení velkých a malých písmen.
-- **`b64`** — dekóduje řetězec [kódovaný v Base64](https://datatracker.ietf.org/doc/html/rfc4648), podporovány jsou jak výchozí abecedy, tak abecedy bezpečné pro URL.
-- **`pct`** — dekóduje [procenty kódovaný](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) řetězec.
+- **`substitute`** is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
+    - **`regexp`** — a regular expression.
+    - **`replacement`** — a string that replaces whatever is matched by `regexp`. `$1`, `$2`, etc. in the replacement string are replaced with the contents of the corresponding capture group.
+    - **`modifiers`** — regular expression flags, e.g., `i` for case-insensitive search.
+- **`b64`** — decodes a [Base64-encoded](https://datatracker.ietf.org/doc/html/rfc4648) string, both the default and the URL-safe alphabets are supported.
+- **`pct`** — decodes a [percent-encoded](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) string.
 
-V hodnotě `$urltransform` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. K tomu použijte znak zpětného lomítka `\`. Např. uvozená čárka vypadá takto: `\,`.
+In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
 
 :::info Kompatibilita
 
-Produkty AdGuard, které používají verzi [CoreLibs][] starší než 1.20, podporují pouze jednu `substituční` transformaci pro hodnotu modifikátoru `$urltransform`.
+AdGuard products that use a [CoreLibs][] version older than 1.20 only support a single `substitute` transformation for the value of the `$urltransform` modifier.
 
 :::
 
-**Změna původu**
+**Changing the origin**
 
 :::info Kompatibilita
 
@@ -2917,7 +2936,7 @@ This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for A
 
 :::
 
-Jak bylo uvedeno výše, pravidla `$urltransform` mohou normálně měnit pouze část URL obsahující cestu a dotaz. However, if the value of the `$urltransform` modifier begins with the string `/^http`, then the full URL becomes the input for, and can be modified by, the rule. Takové pravidlo se neuplatní, pokud transformace adresy URL nelze dosáhnout přesměrováním HTTP (například pokud je metoda požadavku `POST`).
+As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL. However, if the value of the `$urltransform` modifier begins with the string `/^http`, then the full URL becomes the input for, and can be modified by, the rule. Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
 
 **Příklady**
 
@@ -2925,46 +2944,46 @@ Jak bylo uvedeno výše, pravidla `$urltransform` mohou normálně měnit pouze 
 ||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
 ```
 
-Toto pravidlo má tři části:
+There are three parts in this rule:
 
 - `regexp` — `(pref\/).*\/(suf)`;
-- `replacement` — `\$1\$2` kde `$` je uvozeno;
-- `modifiers` — `i` pro necitlivé vyhledávání.
+- `replacement` — `\$1\$2` where `$` is escaped;
+- `modifiers` — `i` for insensitive search.
 
-**Vícenásobná pravidla `$urltransform`**
+**Multiple `$urltransform` rules**
 
 1. `||example.org^$urltransform=/X/Y/`
 2. `||example.org^$urltransform=/Z/Y/`
 3. `@@||example.org/page/*$urltransform=/Z/Y/`
 
-- Jak pravidlo 1, tak pravidlo 2 se použijí na všechny požadavky odeslané na `example.org`.
-- Pravidlo 2 je zakázáno pro požadavky odpovídající na `||example.org/page/`, **ale pravidlo 1 stále funguje!**
+- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
-**Opětovná shoda pravidel po transformaci URL**
+**Re-matching rules after transforming the URL**
 
-Po použití všech odpovídajících pravidel `$urltransform` bude transformovaný požadavek porovnán se všemi ostatními pravidly:
+After applying all matching `$urltransform` rules, the transformed request will be matched against all other rules:
 
-Např. s následujícími pravidly:
+E.g., with the following rules:
 
 ```adblock
 ||example.com^$urltransform=/firstpath/secondpath/
 ||example.com/secondpath^
 ```
 
-požadavek na `https://example.com/firstpath` bude zablokován.
+the request to `https://example.com/firstpath` will be blocked.
 
-**Zakázání pravidel `$urltransform`**
+**Disabling `$urltransform` rules**
 
-- `@@||example.org^$urltransform` zakáže všechna pravidla `$urltransform` odpovídající na `||example.org^`.
-- `@@||example.org^$urltransform=/Z/Y/` zakáže pravidlo s `$urltransform=/Z/Y/` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
 
-Pravidla `$urltransform` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$urltransform=/X/Y/` pro požadavky na **example.com**, ale `@@||example.com^$urlblock` ano.
+`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-**Příklad pravidla pro čištění partnerských odkazů**
+**The rule example for cleaning affiliate links**
 
-Mnoho webových stránek používá sledovací URL ke sledování kliknutí před přesměrováním na skutečný cíl. Tyto URL obsahují marketingové parametry a analytické tokeny, které lze odstranit, aby se zvýšila ochrana osobních údajů.
+Many websites use tracking URLs to monitor clicks before redirecting to the actual destination. These URLs contain marketing parameters and analytics tokens that can be removed to improve privacy.
 
-Níže je uveden příklad, jak získat čistý odkaz na cíl, abyste obešli sledovací webové stránky a přešli přímo na cíl.
+Below is an example of how to obtain the clean destination link to bypass tracking websites and go directly to the destination.
 
 In our first example, the destination URL is percent-encoded:
 
@@ -3035,17 +3054,17 @@ The `$reason` modifier allows you to add a custom explanation message that will 
 
 **Character limitations and escaping requirements:**
 
-- Pro text s odůvodněním neexistuje žádné omezení maximální délky
-- V textu důvodu jsou povoleny všechny znaky
-- Zvláštní znaky (například uvozovky, čárky a zpětné lomítko) musí být správně uvozeny pomocí zpětného lomítka (`\`)
+- There is no maximum length limit for the reason text
+- All characters are allowed in the reason text
+- Special characters (such as quotes, commas, and backslashes) must be properly escaped using the backslash (`\`)
 
 **Predefined localizable tokens:**
 
 Instead of custom text, you can use predefined tokens that will be automatically localized:
 
-- `malicious` — pro škodlivý obsah
-- `tracker` — pro sledování obsahu
-- `disreputable` — pro nedůvěryhodný obsah
+- `malicious` — for malicious content
+- `tracker` — for tracking content
+- `disreputable` — for disreputable content
 
 **Příklady**
 
@@ -3093,7 +3112,7 @@ Usually, blocked requests look like a server error to browser. If you use `$empt
 
 **Příklady**
 
-- `||example.org^$empty` vrátí prázdnou odpověď na všechny požadavky na `example.org` a všechny subdomény.
+- `||example.org^$empty` returns an empty response to all requests to `example.org` and all subdomains.
 
 :::info Kompatibilita
 
@@ -3113,7 +3132,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 **Příklady**
 
-- `||example.com/videa/$mp4` zablokuje všechna stahování videa z `||example.com/videa/*` a změní odpověď na zástupný videoklip.
+- `||example.com/videos/$mp4` blocks all video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
 
 :::info Kompatibilita
 
@@ -3147,8 +3166,8 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Kompatibilita
 
-- Koncept priority byl zaveden ve verzích [TSUrlFilter][] v2.1.0 a [CoreLibs][] v1.13. Dříve neměl AdGuard žádný speciální algoritmus pro výpočet priorit a zpracování kolizí se mohlo lišit v závislosti na produktu a verzi AdGuardu.
-- Aplikace AdGuard pro iOS, Safari a Blokátor obsahu AdGuard se spoléhají na implementaci prohlížečů a nemohou dodržovat zde uvedená pravidla.
+- The concept of priority has been introduced in [TSUrlFilter][] v2.1.0 and [CoreLibs][] v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
+- AdGuard for iOS, Safari, and AdGuard Content Blocker rely on the browsers implementation and they cannot follow the rules specified here.
 
 :::
 
@@ -3162,16 +3181,16 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 <!-- Please keep them sorted -->
 
-- [`$app`](#app-modifier) s negovanými aplikacemi za použití `~`,
+- [`$app`](#app-modifier) with negated applications using `~`,
 - [`$denyallow`](#denyallow-modifier),
-- [`$domain`](#domain-modifier) s negovanými doménami pomocí `~`,
+- [`$domain`](#domain-modifier) with negated domains using `~`,
 - [`$match-case`](#match-case-modifier),
-- [`$method`](#method-modifier) s negovanými metodami pomocí `~`,
+- [`$method`](#method-modifier) with negated methods using `~`,
 - [`$strict-first-party`](#strict-first-party-modifier),
 - [`$strict-third-party`](#strict-third-party-modifier),
 - [`$third-party`](#third-party-modifier),
 - [`$to`](#to-modifier),
-- omezené [typy obsahu](#content-type-modifiers) s `~`.
+- restricted [content-types](#content-type-modifiers) with `~`.
 
 When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
@@ -3360,8 +3379,8 @@ Element hiding rules may operate differently [depending on the platform](#cosmet
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-- **`selektor`** — [CSS selektor](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors) definuje prvky, které mají být skryty.
-- **`domains`** — omezení domény pro dané pravidlo.
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements to be hidden.
+- **`domains`** — domain restriction for the rule.
 
 If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
 
@@ -3379,9 +3398,9 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 
 **Příklady**
 
-- `example.com##div.textad` — skryje `div` s třídou `textad` na doméně `example.com` a všech subdoménách.
-- `example.com,example.org###adblock` — skryje prvek s atributem `id`, který se rovná `adblock` na `example.com`, `example.org` a všech subdoménách.
-- `~example.com##.textad` — skryje prvek s třídou `textad` na všech doménách kromě `example.com` a jejích subdomén.
+- `example.com##div.textad` — hides a `div` with the class `textad` at `example.com` and all subdomains.
+- `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+- `~example.com##.textad` — hides an element with the class `textad` at all domains, except `example.com` and its subdomains.
 
 **Omezení**
 
@@ -3428,9 +3447,9 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-- **`selektor`** — [CSS selektor](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors) definuje prvky, na které chceme styl použít.
-- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [pravidlech pro skrývání prvků](#cosmetic-elemhide-rules).
-- **`style`** — styl CSS, který chceme použít na vybrané prvky.
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
+- **`style`** — CSS style, that we want to apply to selected elements.
 
 **Příklady**
 
@@ -3495,17 +3514,19 @@ example.org#@#body{remove:true;}
 ### Rozšířené CSS selektory {#extended-css-selectors}
 
 - [Omezení](#extended-css-limitations)
-- [Pseudo-třída `:has()`](#extended-css-has)
-- [Pseudo-třída `:contains()`](#extended-css-contains)
+- [Pseudo-class `:has()`](#extended-css-has)
+- [Pseudo-class `:contains()`](#extended-css-contains)
 - [Pseudo-třída `:matches-css()`](#extended-css-matches-css)
-- [Pseudo-třída `:matches-attr()`](#extended-css-matches-attr)
-- [Pseudo-třída `:matches-property()`](#extended-css-property)
-- [Pseudo-třída `:xpath()`](#extended-css-xpath)
-- [Pseudo-třída `:nth-ancestor()`](#extended-css-nth-ancestor)
-- [Pseudo-třída `:upward()`](#extended-css-upward)
-- [Pseudo-třída `:remove()` a pseudo-vlastnost `remove`](#remove-pseudos)
-- [Pseudo-třída `:is()`](#extended-css-is)
-- [Pseudo-třída `:not()`](#extended-css-not)
+- [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
+- [Pseudo-class `:matches-property()`](#extended-css-property)
+- [Pseudo-class `:xpath()`](#extended-css-xpath)
+- [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
+- [Pseudo-class `:upward()`](#extended-css-upward)
+- [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
+- [Pseudo-class `:remove-attr()`](#extended-css-remove-attr)
+- [Pseudo-class `:remove-class()`](#extended-css-remove-class)
+- [Pseudo-class `:is()`](#extended-css-is)
+- [Pseudo-class `:not()`](#extended-css-not)
 - [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
 - [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
@@ -3529,17 +3550,17 @@ Regardless of the CSS pseudo-classes you are using in the rule, you can use spec
 
 The syntax for extended CSS rules:
 
-- `#?#` — pro skrytí prvku, `#@?#` — pro výjimky
-- `#$?#` — pro pravidlo CSS, `#@$?#` — pro výjimky
+- `#?#` — for element hiding, `#@?#` — for exceptions
+- `#$?#` — for CSS rules, `#@$?#` — for exceptions
 
 We **strongly recommend** using these markers any time when you use an extended CSS selector.
 
 **Příklady**
 
-- `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — toto pravidlo blokuje všechny prvky `div` obsahující podřízený uzel, který má odkaz s atributy `[target="_blank"][rel="nofollow"]`. Pravidlo platí pouze pro `example.org` a její subdomény.
-- `example.com#$?#h3:contains(cookies) { display: none!important; }` — toto pravidlo nastaví styl `display: none!important` všem prvkům `h3`, které obsahují slovo `cookies`. Pravidlo platí pouze pro `example.com` a všechny její subdomény.
-- `example.net#?#.banner:matches-css(width: 360px)` — toto pravidlo blokuje všechny prvky `.banner` s vlastností stylu `width: 360px`. Pravidlo platí pouze pro `example.net` a její subdomény.
-- `example.net#@?#.banner:matches-css(width: 360px)` — toto pravidlo zakáže předchozí pravidlo.
+- `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule blocks all `div` elements containing a child node that has a link with the attributes `[target="_blank"][rel="nofollow"]`. The rule applies only to `example.org` and its subdomains.
+- `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule sets the style `display: none!important` to all `h3` elements that contain the word `cookies`. The rule applies only to `example.com` and all its subdomains.
+- `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
+- `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
 You can apply standard CSS selectors using the ExtendedCss library by using the rule marker `#?#`, e.g. `#?#div.banner`.
 
@@ -3557,7 +3578,7 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
-2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
+2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), [`:remove()`](#extended-css-remove-limitations), [`:remove-attr()`](#extended-css-remove-attr-limitations), and [`:remove-class()`](#extended-css-remove-class-limitations).
 
 #### Pseudo-třída `:has()` {#extended-css-has}
 
@@ -3569,12 +3590,12 @@ Rules with the `:has()` pseudo-class must use the [native implementation of `:ha
 
 AdGuard products support the native implementation of `:has()`:
 
-- AdGuard pro Windows, AdGuard pro Mac, AdGuard pro Android a AdGuard pro Linux to **podporují** s [knihovnou CoreLibs][] v1.12 nebo novější.
-- AdGuard pro iOS a AdGuard pro Safari to **podporují** s [knihovnou SafariConverterLib](#safari-converter-lib) v2.0.39 a [prohlížečem Safari v16.4][safari-16.4] nebo novějším.
-- Rozšíření prohlížeče AdGuard to **podporuje** ve verzi 5.3 nebo novější:
-    - **Manifest V3** (na bázi Chromium): vždy používá nativní `:has()` jako výchozí.
-    - **Manifest V2**: Pokud prohlížeč nepodporuje nativní podporu `:has()`, použije `CSS.supports()` a vrátí se k ExtendedCss.
-- Všechny ostatní produkty AdGuardu **to** nepodporují.
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs][] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard Browser Extension **supports** it in v5.3 or later:
+    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
+    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
+- All other AdGuard products **do not support** it.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support), use the `#?#` or `#$?#` rule markers explicitly, e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
 
@@ -3598,8 +3619,8 @@ Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 [target]:has(selector)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `selector` — povinný, standardní nebo rozšířený selektor CSS
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `selector` — required, standard or extended CSS selector
 
 The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
 
@@ -3609,8 +3630,8 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 
 Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
 
-- zakazuje `:has()` uvnitř pseudo akceptující pouze složené selektory;
-- zakazuje `:has()` po běžných pseudoprvcích.
+- disallow `:has()` inside the pseudos accepting only compound selectors;
+- disallow `:has()` after regular pseudo-elements.
 
 Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
 
@@ -3675,7 +3696,7 @@ Native implementation does not allow any usage of `:scope` inside the `:has()` a
 
 :::
 
-#### Pseudo-třída `:contains()` {#extended-css-contains}
+#### Pseudo-class `:contains()` {#extended-css-contains}
 
 The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
@@ -3695,8 +3716,8 @@ Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibi
 [target]:contains(match)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `shoda` — povinný, řetězec nebo regulární výraz pro shodu prvku `textContent`. Příznaky regulárních výrazů jsou podporovány.
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `match` — required, string or regular expression for matching element `textContent`. Regular expression flags are supported.
 
 **Příklady**
 
@@ -3744,10 +3765,10 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 [target]:matches-css([pseudo-element, ] property: pattern)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `pseudo-element` — volitelný, platný standardní pseudoprvek, např. `before`, `after`, `first-line` atd.
-- `property` — povinný, název vlastnosti CSS, pro kterou se má prvek zkontrolovat
-- `pattern` — povinný, vzor hodnoty, který používá stejnou jednoduchou shodu se zástupnými znaky jako v základních pravidlech filtrování adres URL nebo regulární výraz. Při tomto typu porovnávání, AdGuard vždy porovnává bez ohledu na velikost písmen. V případě regulárního výrazu vypadá vzor takto: `/regexp/`.
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
+- `property` — required, a name of CSS property to check the element for
+- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic URL filtering rules or a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
 **Special characters escaping and unescaping**
 
@@ -3801,7 +3822,7 @@ Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are n
 
 :::
 
-#### Pseudo-třída `:matches-attr()` {#extended-css-matches-attr}
+#### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
 
 The `:matches-attr()` pseudo-class allows selecting an element by its attributes, especially if they are randomized.
 
@@ -3811,11 +3832,11 @@ The `:matches-attr()` pseudo-class allows selecting an element by its attributes
 [target]:matches-attr("name"[="value"])
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `name` — povinný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro shodu názvu atributu
-- `value` — volitelný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro shodu hodnoty atributu
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `name` — required, simple string *or* string with wildcard *or* regular expression for attribute name matching
+- `value` — optional, simple string *or* string with wildcard *or* regular expression for attribute value matching
 
-**Uvození speciálních znaků**
+**Escaping special characters**
 
 For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
 
@@ -3857,7 +3878,7 @@ Regexp patterns **do not support** flags.
 
 :::
 
-#### Pseudo-třída `:matches-property()` {#extended-css-property}
+#### Pseudo-class `:matches-property()` {#extended-css-property}
 
 The `:matches-property()` pseudo-class allows selecting an element by matching its properties.
 
@@ -3867,11 +3888,11 @@ The `:matches-property()` pseudo-class allows selecting an element by matching i
 [target]:matches-property("name"[="value"])
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `name` — povinný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro porovnávání názvů vlastností prvků
-- `value` — volitelný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro porovnávání názvů vlastností prvků
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `name` — required, simple string *or* string with wildcard *or* regular expression for element property name matching
+- `value` — optional, simple string *or* string with wildcard *or* regular expression for element property value matching
 
-**Uvození speciálních znaků**
+**Escaping special characters**
 
 For **regexp** patterns `"` and `\` must be escaped, e.g. `div:matches-property(prop=/[\\w]{4}/)`.
 
@@ -3942,8 +3963,8 @@ The `:xpath()` pseudo-class allows selecting an element by evaluating an XPath e
 [target]:xpath(expression)
 ```
 
-- `target` — volitelný, standardní nebo rozšířený selektor CSS
-- `expression` — povinný, platný výraz XPath
+- `target`- optional, standard or extended CSS selector
+- `expression` — required, valid XPath expression
 
 ##### `:xpath()` limitations {#extended-css-xpath-limitations}
 
@@ -3971,7 +3992,7 @@ Works properly only at the end of selector, except for [pseudo-class :remove()](
 </div>
 ```
 
-#### Pseudo-třída `:nth-ancestor()` {#extended-css-nth-ancestor}
+#### Pseudo-class `:nth-ancestor()` {#extended-css-nth-ancestor}
 
 The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
 
@@ -3979,8 +4000,8 @@ The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative 
 subject:nth-ancestor(n)
 ```
 
-- `subjectr` — povinný, standardní nebo rozšířený selektor CSS
-- `n` — povinné, číslo >= 1 a < 256, vzdálenost k potřebnému předkovi od prvku vybraného pomocí `subject`
+- `subject` — required, standard or extended CSS selector
+- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 **Syntaxe**
 
@@ -3988,8 +4009,8 @@ subject:nth-ancestor(n)
 subject:nth-ancestor(n)
 ```
 
-- `subjectr` — povinný, standardní nebo rozšířený selektor CSS
-- `n` — povinné, číslo >= 1 a < 256, vzdálenost k potřebnému předkovi od prvku vybraného pomocí `subject`
+- `subject` — required, standard or extended CSS selector
+- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
@@ -4016,7 +4037,7 @@ For such DOM:
 
 `.child:nth-ancestor(1)` selects the element `div#target1`, `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
 
-#### Pseudo-třída `:upward()` {#extended-css-upward}
+#### Pseudo-class `:upward()` {#extended-css-upward}
 
 The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
 
@@ -4026,10 +4047,10 @@ The `:upward()` pseudo-class allows to lookup the ancestor relative to the previ
 subject:upward(ancestor)
 ```
 
-- `subjectr` — povinný, standardní nebo rozšířený selektor CSS
-- `ancestor` — povinný, specifikace pro předka prvku vybraného pomocí `subject`, lze nastavit jako:
-    - *číslo* >= 1 a < 256 pro vzdálenost k požadovanému předkovi, stejně jako u položky [`:nth-ancestor()`](#extended-css-nth-ancestor)
-    - *standardní selektor CSS* pro shodu nejbližšího předka
+- `subject` — required, standard or extended CSS selector
+- `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
+    - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
+    - *standard CSS selector* for matching closest ancestor
 
 ##### `:upward()` limitations {#extended-css-upward-limitations}
 
@@ -4056,7 +4077,7 @@ For such DOM:
 
 `.inner:upward(div[data])` selects the element `div#target1`, `.inner:upward(div[id])` selects the element `div#target2`, `.child:upward(1)` selects the element `div#target1`, `.inner:upward(3)` selects the element `div#target2`.
 
-#### Pseudo-třída `:remove()` a pseudo-vlastnost `remove` {#remove-pseudos}
+#### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
 
@@ -4072,7 +4093,7 @@ selector:remove()
 selector { remove: true; }
 ```
 
-- `selector` — povinný, standardní nebo rozšířený selektor CSS
+- `selector` — required, standard or extended CSS selector
 
 ##### `:remove()` and `remove` limitations {#extended-css-remove-limitations}
 
@@ -4098,7 +4119,78 @@ Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-styl
 
 :::
 
-#### Pseudo-třída `:is()` {#extended-css-is}
+#### Pseudo-class `:remove-attr()` {#extended-css-remove-attr}
+
+The `:remove-attr()` pseudo-class removes attributes from matching elements instead of hiding them. It is compatible with the [`:remove-attr()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
+
+**The pseudo-class can be placed only at the end of a selector.**
+
+**Syntaxe**
+
+```text
+target:remove-attr(attr)
+```
+
+- `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
+- `attr` — required, an attribute name for exact match (optionally quoted, e.g. `"onclick"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+
+:::info Kompatibilita
+
+Added in ExtendedCSS v2.3.0.
+
+Rules with the `:remove-attr()` pseudo-class are supported by AdGuard Browser Extension v5.6 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Příklady**
+
+```adblock
+a:remove-attr(href)
+*:remove-attr(onclick)
+div:remove-attr(/^on[a-z]+/)
+div:remove-attr(/^data-(foo|bar)$/i)
+```
+
+##### `:remove-attr()` limitations {#extended-css-remove-attr-limitations}
+
+The `:remove-attr()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-attr` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
+
+#### Pseudo-class `:remove-class()` {#extended-css-remove-class}
+
+The `:remove-class()` pseudo-class removes classes from matching elements instead of hiding them. It is compatible with the [`:remove-class()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
+
+**The pseudo-class can be placed only at the end of a selector.**
+
+**Syntaxe**
+
+```text
+target:remove-class(class)
+```
+
+- `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
+- `class` — required, a class name for exact match (optionally quoted, e.g. `"ads"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+
+:::info Kompatibilita
+
+Added in ExtendedCSS v2.3.0.
+
+Rules with the `:remove-class()` pseudo-class are supported by AdGuard Browser Extension v5.6 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Příklady**
+
+```adblock
+div:remove-class(ads)
+*:remove-class(ads)
+div:remove-class(/^ad-/)
+```
+
+##### `:remove-class()` limitations {#extended-css-remove-class-limitations}
+
+The `:remove-class()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-class` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
+
+#### Pseudo-class `:is()` {#extended-css-is}
 
 The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
@@ -4108,8 +4200,8 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 [target]:is(selectors)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `selektory` — [*šetrný seznam*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) standardních nebo rozšířených selektorů. U rozšířených selektorů jsou podporovány pouze složené selektory, nikoli komplexní.
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `selectors` — [*forgiving selector list*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) of standard or extended selectors. For extended selectors, only compound selectors are supported, not complex.
 
 ##### `:is()` limitations {#extended-css-is-limitations}
 
@@ -4144,7 +4236,7 @@ Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not
 </div>
 ```
 
-#### Pseudo-třída `:not()` {#extended-css-not}
+#### Pseudo-class `:not()` {#extended-css-not}
 
 The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
@@ -4154,8 +4246,8 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 [target]:not(selectors)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
-- `selectors` — seznam standardních nebo rozšířených selektorů
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `selectors` — list of standard or extended selectors
 
 ##### `:not()` limitations {#extended-css-not-limitations}
 
@@ -4190,7 +4282,7 @@ The `:empty-trimmed` pseudo-class allows selecting elements without text content
 [target]:empty-trimmed
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 
 Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
@@ -4283,7 +4375,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — omezení domény pro dané pravidlo. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — required, attribute name; `value` — optional (may not be specified), substring that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -4297,7 +4389,7 @@ Syntax supported by AdGuard Browser Extension v5.3 or later:
 ```
 
 - **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the element(s) to be removed from the HTML code before the page is loaded.
-- **`domains`** — omezení domény pro dané pravidlo. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 
 :::caution Omezení
 
@@ -4547,7 +4639,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 rule = [domains] "#%#" script
 ```
 
-- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [pravidlech pro skrývání prvků](#cosmetic-elemhide-rules).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`script`** — arbitrary JavaScript code **in one string**.
 
 **Příklady**
@@ -5363,7 +5455,7 @@ Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s 
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — nepodporováno
-- 👎 — zastaralé; stále podporovano, ale v budoucnu bude odstraněno
+- 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — odstraněno a již nepodporováno
 
 :::
@@ -5388,18 +5480,14 @@ Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s 
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
-[ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ext-saf]: #what-product "AdGuard pro Safari"
 [ext-saf]: #what-product "AdGuard pro Safari"
 [ext-saf]: #what-product "AdGuard for Safari"
-[ext-saf]: #what-product "AdGuard for Safari"
-[and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
 [CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
-[knihovnou CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
 [TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
 [TSWebExtension]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tswebextension#tswebextension
