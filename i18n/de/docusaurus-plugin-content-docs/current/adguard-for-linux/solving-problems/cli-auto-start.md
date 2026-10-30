@@ -1,15 +1,15 @@
 ---
-title: Starting AdGuard for Linux automatically
+title: AdGuard für Linux automatisch starten
 sidebar_position: 1
 ---
 
-If you want AdGuard CLI to start automatically, configure it as a systemd service. This allows AdGuard protection to launch either at login or at system startup. Choose the option that best fits your needs.
+Wenn Sie möchten, dass AdGuard CLI automatisch gestartet wird, richten Sie es als systemd-Dienst ein. Dadurch kann der Schutz durch AdGuard entweder bei der Anmeldung oder beim Systemstart aktiviert werden. Wählen Sie die Option, die Ihren Anforderungen am besten entspricht.
 
-## Start AdGuard CLI at login
+## AdGuard CLI beim Anmelden starten
 
-To start AdGuard CLI automatically at login, create a user-level systemd service.
+Um AdGuard CLI beim Anmelden automatisch zu starten, erstellen Sie einen systemd-Dienst auf Benutzerebene.
 
-1. Create the service file `~/.config/systemd/user/adguard-cli.service` and add the following configuration:
+1. Erstellen Sie die Dienstdatei `~/.config/systemd/user/adguard-cli.service` und fügen Sie die folgende Konfiguration hinzu:
 
 ```ini
 [Unit]
@@ -31,18 +31,18 @@ RemainAfterExit=yes
 WantedBy=default.target
 ```
 
-1. Run the following commands to enable the service:
+1. Führen Sie die folgenden Befehle aus, um den Dienst zu aktivieren:
 
 ```sh
 systemctl --user daemon-reload
 systemctl --user enable --now adguard-cli
 ```
 
-## Start AdGuard CLI at system startup
+## AdGuard CLI beim Systemstart ausführen
 
-If you want AdGuard protection to start at system startup, create a system-level service.
+Wenn Sie möchten, dass der Schutz durch AdGuard beim Systemstart aktiviert wird, erstellen Sie einen Dienst auf Systemebene.
 
-1. Create the service file `/etc/systemd/system/adguard-cli.service` and add the following configuration:
+1. Erstellen Sie die Dienstdatei `/etc/systemd/system/adguard-cli.service` und fügen Sie die folgende Konfiguration hinzu:
 
 ````ini
 [Unit]
@@ -64,9 +64,9 @@ User=username
 [Install]
 WantedBy=multi-user.target
 
-In the `User=username` parameter, replace `username` with your Linux username.
+Ersetzen Sie im Parameter `User=username` `username` durch Ihren Linux-Benutzernamen.
 
-1. Run the following commands to enable the service:
+1. Führen Sie die folgenden Befehle aus, um den Dienst zu aktivieren:
 
 ```sh
 systemctl daemon-reload

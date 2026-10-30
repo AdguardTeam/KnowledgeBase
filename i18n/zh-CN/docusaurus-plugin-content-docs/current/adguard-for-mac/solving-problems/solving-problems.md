@@ -23,3 +23,4 @@ sidebar_position: 1
 - [在 Tor 浏览器中设置过滤](/adguard-for-mac/solving-problems/tor-filtering.md)
 - [与屏幕使用时间不兼容](/adguard-for-mac/solving-problems/screen-time-issues.md)
 - [How AdGuard Browser Assistant works on macOS Golden Gate and above](/adguard-for-mac/solving-problems/browser-assistant-macos-27.md)
+- [Why AdGuard appears in Full Disk Access on macOS](/adguard-for-mac/solving-problems/adguard-in-full-disk-access.md)

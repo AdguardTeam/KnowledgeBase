@@ -3,11 +3,11 @@ title: Adblocking
 sidebar_position: 1
 ---
 
-Afsnittet _Adblocking_ har ansvaret for at fjerne annoncer fra de besøgte websteder og fra de apps, som er installeret på enheden. For at filtrere bannere, pop op-vinduer, trackere og andre påtrængende elementer benytter AdGuard filtre — sæt af regler skrevet i en [særlig syntaks](/general/ad-filtering/create-own-filters). For mere info om, hvordan de fungerer, tjek vores [artikel om filtre](/general/ad-filtring/how-ad-blocking-works).
+Afsnittet _Adblocking_ er ansvarligt for at fjerne annoncer fra de besøgte websteder og fra de apps, som er installeret på enheden. For at filtrere bannere, pop op'er, trackere og andre påtrængende elementer benytter AdGuard filtre — sæt af regler skrevet i en [særlig syntaks](/general/ad-filtering/create-own-filters). For mere info om, hvordan de fungerer, tjek vores [artikel om filtre](/general/ad-filtring/how-ad-blocking-works).
 
 ![Adblocking \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/ad_blocking.png)
 
-Her kan man:
+Her er det muligt at:
 
 - slå basisbeskyttelse til,
 - blokere [søgeannoncer og selvpromovering](/general/ad-filtering/search-ads),

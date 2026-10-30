@@ -16,3 +16,4 @@ sidebar_position: 1
 - [Фильтрация не прекращается, когда AdGuard Mini отключён](/adguard-mini-for-mac/solving-problems/filters-after-disable.md)
 - [Как собирать логи в AdGuard Mini](/adguard-mini-for-mac/solving-problems/logs.md)
 - [AdGuard Mini не работает в приватных вкладках на macOS Sonoma](/adguard-mini-for-mac/solving-problems/private-sonoma.md)
+- [Why AdGuard Mini appears in Full Disk Access on macOS](/adguard-mini-for-mac/solving-problems/adguard-mini-in-full-disk-access.md)

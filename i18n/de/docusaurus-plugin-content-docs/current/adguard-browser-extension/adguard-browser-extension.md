@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+In diesem Artikel geht es um die AdGuard-Browsererweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -25,9 +25,9 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
   Kompatibilität der AdGuard Browsererweiterung mit den AdGuard-Desktop-Apps
 
-- [AdGuard Browser Extension MV3](/adguard-browser-extension/mv3-version/)
+- [AdGuard-Browsererweiterung MV3](/adguard-browser-extension/mv3-version/)
 
-  MV3 versions of the AdGuard Browser Extension for Chrome, Microsoft Edge, and Opera
+  MV3-Versionen der AdGuard-Browsererweiterung für Chrome, Microsoft Edge und Opera
 
 - [Browser-geschützte Seiten](/adguard-browser-extension/protected-pages)
 

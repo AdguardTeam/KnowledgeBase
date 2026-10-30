@@ -13,11 +13,11 @@ _Indstillinger_ er dét afsnit, der kræver størst opmærksomhed. Det er her, a
 
 ### Generelle indstillinger
 
-Her kan indstilles sprog og tema (Mørkt eller Lyst), aktivere AdGuard-start ved systemstart og opsættes automatiske opdateringer, vælges opdateringskanal og filteropdateringstjekinterval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect _Debug logs_](/archive/adguard-for-windows/solving-problems/adguard-logs.md).
+Her kan indstilles sprog og tema (Mørkt eller Lyst), aktivere AdGuard-start ved systemstart og opsættes automatiske opdateringer, vælges opdateringskanal og filteropdateringstjekinterval. Indstillinger er også stedet at gå til, hvis AdGuard til Windows ikke fungerer korrekt, og supportteamet beder om [indsamling af _Fejlretningslogger_](/archive/adguard-for-windows/solving-problems/adguard-logs.md).
 
 ![Indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/general_settings.png)
 
-Helt nederst på skærmen findes _Avancerede indstillinger_. Ændres nogle af dem tankeløst, kan det potentielt forårsage problemer med AdGuards ydeevne, ødelægge internetforbindelsen eller kompromittere sikkerhed og fortrolighed. Dette afsnit bør derfor kun åbnes, såfremt man ved, hvad man foretager sig, eller supportteamet har anmodet herom. If you want to know what can be set up in _Advanced Settings_, read the [dedicated article](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
+Helt nederst på skærmen findes _Avancerede indstillinger_. Ændres nogle af dem tankeløst, kan det potentielt forårsage problemer med AdGuards ydeevne, ødelægge internetforbindelsen eller kompromittere sikkerhed og fortrolighed. Dette afsnit bør derfor kun åbnes, såfremt man ved, hvad man foretager sig, eller supportteamet har anmodet herom. For at se, hvad der kan opsættes under _Avancerede indstillinger_, læs den ne[dedikerede artikel](/archive/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ![Avancerede indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/advanced_settings.png)
 
@@ -93,4 +93,4 @@ I modulet _Forældrekontrol_ kan der aktiveres _Sikker søgning_ og håndteres _
 
 ![Browser Assistent \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/settings/browser_assistant.png)
 
-Fra denne fane kan der nemt fortsættes med at installere AdGuard Browser Assistent, hvis primære funktion er at håndtere filtrering direkte fra webbrowseren. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](/archive/adguard-for-windows/browser-assistant.md).
+Fra denne fane kan der nemt fortsættes med at installere AdGuard Browser Assistent, hvis primære funktion er at håndtere filtrering direkte fra webbrowseren. Yderigere forklaring om, hvordan den bruges, samt hvad der kan gøres, hvis der ikke er nogen Browser Assistent til en aktuel webbrowser, findes i denne [særskilte artikel](/archive/adguard-for-windows/browser-assistant.md).

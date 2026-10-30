@@ -1,5 +1,5 @@
 ---
-title: Advanced (low-level) Settings guide
+title: Avanceret (lavniveau) Indstillingsvejledning
 sidebar_position: 7
 ---
 
