@@ -1447,7 +1447,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$urltransform](#urltransform-modifier) | ✅ | ✅ | ✅ [*[8]](#urltransform-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
-| [$reason](#reason-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$reason](#reason-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
