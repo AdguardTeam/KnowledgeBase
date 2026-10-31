@@ -3,7 +3,9 @@ title: Writing about AdGuard
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread the word and share your thoughts about it on social media or on a personal blog or website, this article may interest you.
+If you like AdGuard and want to spread the word and share your thoughts about it on social media or on a personal blog or on a website, this article may interest you.
+
+Our [media kits](https://adguard.com/media-materials.html) include all versions of the logo and other branding materials. Download them in just a few clicks.
 
 After sharing your experience, email [pr@adguard.com](mailto:pr@adguard.com) and include a link to your post. The authors of the most well-written reviews will receive a free AdGuard license key. It doesn't matter if your website's audience is small or large; we value every effort. Please note that your review should be around 300 to 500 words.
 
