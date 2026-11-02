@@ -33,7 +33,7 @@ If you wish to preserve your settings, it’s recommended that you export them b
 
     :::
 
-1. Install the previous version. You can find the download link in the *Assets* section of the latest stable v7 release on [GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.22.9).
+1. [Install AdGuard for Windows v7.22.10](https://agrd.io/adguardforwindows7).
 
 1. Exit version 7 from the system tray to stop filtering.
 
