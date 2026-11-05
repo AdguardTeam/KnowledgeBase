@@ -20,7 +20,7 @@ AdGuard Mini for Android is a free app present in Google Play. To install it on 
 
 1. Open the AdGuard Mini for Android app in [Google Play](https://agrd.io/adguard-mini-for-android).
 
-![AdGuard Mini for Android in Google Play *mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/google_play.png)
+  ![AdGuard Mini for Android in Google Play *mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/google_play.png)
 
 1. Tap *Get* → *Install* → *Open*.
 
@@ -28,7 +28,7 @@ AdGuard Mini for Android is a free app present in Google Play. To install it on 
 
 1. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the app by sending anonymized usage data and crash reports. Then click *Continue*.
 
-![First setup](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/first_setup.png)
+  ![First setup *mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/first_setup.png)
 
 :::note
 

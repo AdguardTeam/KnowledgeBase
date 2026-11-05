@@ -11,7 +11,7 @@ This page is about AdGuard Mini for Android, which safeguards Samsung Browser an
 
 *Statistics* shows an overview of what AdGuard Mini for Android has blocked.
 
-![Statistics](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/statistics.png)
+![Statistics *mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/statistics.png)
 
 *Recent activity* lists the domains your device has connected to. It helps you spot unwanted domains: if you see one, you can block it right from the list (available in the full version).
 
