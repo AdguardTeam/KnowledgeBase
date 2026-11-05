@@ -25,7 +25,7 @@ Více informací o dopadech politiky MV3 naleznete v našem [blogovém příspě
 
 ## Jak povolit režim pro vývojáře
 
-Chcete-li používat vlastní filtry a pravidla JavaScript na kartě _Uživatelská pravidla_, musíte nejprve nastavit prohlížeč. Rozšíření tak získá spolehlivý a bezpečný způsob vkládání skriptů do webových stránek v optimálním čase. V závislosti na verzi prohlížeče Chrome postupujte podle následujících pokynů.
+To use custom filters, JavaScript rules in the _User Rules_ tab, and the [_Block fingerprinting_](/adguard-browser-extension/features/stealth-mode#fingerprinting) option, you must set up your browser first. Rozšíření tak získá spolehlivý a bezpečný způsob vkládání skriptů do webových stránek v optimálním čase. V závislosti na verzi prohlížeče Chrome postupujte podle následujících pokynů.
 
 ### Pro verze prohlížeče Chrome před 138
 

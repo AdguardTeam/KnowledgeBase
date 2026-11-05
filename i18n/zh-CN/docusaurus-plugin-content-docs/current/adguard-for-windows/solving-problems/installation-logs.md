@@ -1,6 +1,6 @@
 ---
 title: AdGuard 安装日志收集方式
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

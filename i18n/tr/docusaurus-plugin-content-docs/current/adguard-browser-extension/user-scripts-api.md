@@ -25,7 +25,7 @@ Learn more about the impacts of the MV3 policies in our [blog post](https://adgu
 
 ## Geliştirici modu nasıl etkinleştirilir
 
-To use custom filters and JavaScript rules in the _User Rules_ tab, you must set up your browser first. Bu, uzantıya web sayfalarına en uygun zamanda komut dosyalarını enjekte etmek için güvenilir ve güvenli bir yöntem sağlar. Chrome sürümünüze bağlı olarak aşağıdaki talimatları izleyin.
+To use custom filters, JavaScript rules in the _User Rules_ tab, and the [_Block fingerprinting_](/adguard-browser-extension/features/stealth-mode#fingerprinting) option, you must set up your browser first. Bu, uzantıya web sayfalarına en uygun zamanda komut dosyalarını enjekte etmek için güvenilir ve güvenli bir yöntem sağlar. Chrome sürümünüze bağlı olarak aşağıdaki talimatları izleyin.
 
 ### 138'den önceki Chrome sürümleri için
 

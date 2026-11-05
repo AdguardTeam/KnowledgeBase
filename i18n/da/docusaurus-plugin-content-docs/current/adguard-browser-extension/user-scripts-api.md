@@ -25,7 +25,7 @@ Læs mere om virkningerne af MV3-politikkerne i vores [blogindlæg](https://adgu
 
 ## Sådan aktiveres Udviklertilstand
 
-For brug af tilpassede filtre og JavaScript-regler via fanen _Brugerregler_, skal webbrowseren først opsættes. Dette giver udvidelsen en pålidelig og sikker metode til script-injicering på websider på det optimale tidspunkt. Følg vejledningen nedenfor for den aktuelle Chrome-version.
+For brug af tilpassede filtre, JavaScript-regler under fanen _Brugerregler_ og indstillingen [_Blokér fingerprinting_](/adguard-browser-extension/features/stealth-mode#fingerprinting), skal webbrowseren først opsættes. Dette giver udvidelsen en pålidelig og sikker metode til script-injicering på websider på det optimale tidspunkt. Følg vejledningen nedenfor for den aktuelle Chrome-version.
 
 ### Til Chrome-versioner før 138
 

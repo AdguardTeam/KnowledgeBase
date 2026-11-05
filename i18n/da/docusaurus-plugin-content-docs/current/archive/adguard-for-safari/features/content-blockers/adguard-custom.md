@@ -1,8 +1,8 @@
 ---
-title: AdGuard Custom
+title: AdGuard Tilpasset
 sidebar_position: 7
 ---
 
-![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Fanen Tilpasset](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
+Er der behov for flere filtre, kan de føjes til _AdGuard Tilpasset_. For at tilføje et tilpasset filter, angiv en URL eller en lokal filsti i det relevante felt. Nye filtre kan findes på [filterlists.com](https://filterlists.com/).

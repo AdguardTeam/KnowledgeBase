@@ -9,7 +9,7 @@ Denne artikel omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowse
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need:
+Her er nogle problemer, som kan opleves, og løsninger samt guider og vejledninger, der muligvis bliver brug for.
 
 - [Rule limit issues](/adguard-mini-for-mac/solving-problems/rule-limit.md)
 - [Filtering doesn’t work and ads aren’t blocked](/adguard-mini-for-mac/solving-problems/ads-not-blocked.md)

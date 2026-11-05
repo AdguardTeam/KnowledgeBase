@@ -1,15 +1,15 @@
 ---
-title: Starting AdGuard for Linux automatically
+title: Automatisk start af AdGuard til Linux
 sidebar_position: 1
 ---
 
-If you want AdGuard CLI to start automatically, configure it as a systemd service. This allows AdGuard protection to launch either at login or at system startup. Choose the option that best fits your needs.
+Ønskes AdGuard CLI startet automatisk, opsæt den som en systemd-tjeneste. Dette tillader AdGuard-beskyttelsen at starte enten ved indlogning eller systemopstart. Vælg den mulighed, der bedst matcher behovet.
 
-## Start AdGuard CLI at login
+## Start AdGuard CLI ved indlogning
 
-To start AdGuard CLI automatically at login, create a user-level systemd service.
+For at autostarte AdGuard CLI ved indlogning, opret en brugerniveau-systemd-tjeneste.
 
-1. Create the service file `~/.config/systemd/user/adguard-cli.service` and add the following configuration:
+1. Opret tjenestefilen `~/.config/systemd/user/adguard-cli.service` og tilføj flg. opsætning:
 
 ```ini
 [Unit]
@@ -31,18 +31,18 @@ RemainAfterExit=yes
 WantedBy=default.target
 ```
 
-1. Run the following commands to enable the service:
+1. Eksekvér flg. kommandoer for at aktivere tjenesten:
 
 ```sh
 systemctl --user daemon-reload
 systemctl --user enable --now adguard-cli
 ```
 
-## Start AdGuard CLI at system startup
+## Start AdGuard CLI ved systemopstart
 
-If you want AdGuard protection to start at system startup, create a system-level service.
+Ønskes AdGuard-beskyttelsen startet ved systemopstart, opret en systemniveautjeneste.
 
-1. Create the service file `/etc/systemd/system/adguard-cli.service` and add the following configuration:
+1. Opret tjenestefilen `/etc/systemd/system/adguard-cli.service` og tilføj flg. opsætning:
 
 ````ini
 [Unit]
@@ -64,9 +64,9 @@ User=username
 [Install]
 WantedBy=multi-user.target
 
-In the `User=username` parameter, replace `username` with your Linux username.
+I `User=username`-parameterden, erstat `username` med det aktuelle Linux-brugernavn.
 
-1. Run the following commands to enable the service:
+1. Eksekvér flg. kommandoer for at aktivere tjenesten:
 
 ```sh
 systemctl daemon-reload

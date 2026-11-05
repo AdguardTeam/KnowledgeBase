@@ -25,6 +25,28 @@ Esta función bloquea los rastreadores y analíticas web mediante el filtro de p
 
 Si habilitas esta función, AdGuard usará su filtro contra seguimiento de URL para quitar parámetros de seguimiento como `utm_*` y `fb_ref` de las URL de las páginas.
 
+### Block fingerprinting {#fingerprinting}
+
+This feature prevents websites from identifying your browser and device by canvas fingerprinting.
+
+A canvas is a web page element for drawing images. A website can draw hidden text and shapes on a canvas and read the result back. The result depends on your device, graphics hardware, fonts, and browser, so it can identify you even without cookies.
+
+With this feature enabled, AdGuard slightly changes the images that websites read from a canvas. The changes are too small to see. Until you restart the browser or AdGuard is updated, each website gets the same changed result. Other websites get different results, so the result can’t be used to recognize you across websites.
+
+What you see on the page does not change. The feature does not cover WebGL and WebGPU fingerprinting or canvases drawn in web workers. Some websites may detect the protection or work around it.
+
+:::caution
+
+Web apps that export images from a canvas, such as online image editors, may get slightly changed images. If a website works incorrectly, add it to the allowlist or turn off the protection for it with a [rule](/general/ad-filtering/create-own-filters#stealth-modifier) like `@@||example.com^$stealth=fingerprinting`.
+
+:::
+
+:::note
+
+Available in [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) v5.6 or later.
+
+:::
+
 ### Ocultar consultas de búsqueda {#searchqueries}
 
 Esta función oculta tus consultas de búsqueda en los sitios web que visitas a través de los resultados de los motores de búsqueda. Por ejemplo, cuando abres un sitio web a través de un motor de búsqueda como Google o Yahoo, esta función oculta la consulta de búsqueda que usaste para encontrar ese sitio web.

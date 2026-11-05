@@ -13,7 +13,7 @@ sidebar_position: 1
 
 - [User rules](/adguard-mini-for-mac/features/rules.md)
 
-  Custom filtering rules to fine-tune ad blocking
+  Tilpassede filtreringsregler til finjustering af adblocking
 
 - [Settings](/adguard-mini-for-mac/features/settings/settings.md)
 

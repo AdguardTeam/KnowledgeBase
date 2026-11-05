@@ -25,6 +25,28 @@ sidebar_position: 4
 
 이 기능을 활성화하면 AdGuard는 AdGuard URL 추적 필터를 사용하여 페이지 URL에서 `utm_*` 및 `fb_ref와` 같은 추적 매개변수를 제거합니다.
 
+### Block fingerprinting {#fingerprinting}
+
+This feature prevents websites from identifying your browser and device by canvas fingerprinting.
+
+A canvas is a web page element for drawing images. A website can draw hidden text and shapes on a canvas and read the result back. The result depends on your device, graphics hardware, fonts, and browser, so it can identify you even without cookies.
+
+With this feature enabled, AdGuard slightly changes the images that websites read from a canvas. The changes are too small to see. Until you restart the browser or AdGuard is updated, each website gets the same changed result. Other websites get different results, so the result can’t be used to recognize you across websites.
+
+What you see on the page does not change. The feature does not cover WebGL and WebGPU fingerprinting or canvases drawn in web workers. Some websites may detect the protection or work around it.
+
+:::caution
+
+Web apps that export images from a canvas, such as online image editors, may get slightly changed images. If a website works incorrectly, add it to the allowlist or turn off the protection for it with a [rule](/general/ad-filtering/create-own-filters#stealth-modifier) like `@@||example.com^$stealth=fingerprinting`.
+
+:::
+
+:::note
+
+Available in [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) v5.6 or later.
+
+:::
+
 ### 검색어 숨기기 {#searchqueries}
 
 이 기능은 검색 엔진 결과를 통해 방문한 웹사이트에서 검색어를 숨깁니다. 예를 들어 Google이나 Yahoo와 같은 검색 엔진을 통해 웹사이트를 열면 이 기능은 해당 웹사이트를 찾는 데 사용한 검색어를 숨깁니다.

@@ -9,7 +9,7 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-Ecco alcuni problemi che puoi riscontrare e le loro soluzioni, guide e istruzioni di cui potresti avere bisogno.
+Here are some problems you may encounter and workarounds, guides, and instructions you may need.
 
 - [Problemi di consumo della batteria e del traffico](/adguard-for-android/solving-problems/battery.md)
 - [Come raccogliere informazioni di debug](/adguard-for-android/solving-problems/log.md)

@@ -1,5 +1,5 @@
 ---
-title: Funzioni
+title: Features
 sidebar_position: 1
 ---
 

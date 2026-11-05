@@ -1,37 +1,37 @@
 ---
-title: Sending feedback
+title: Indsendelse af feedback
 sidebar_position: 4
 ---
 
-## Report a problem or suggest a feature
+## Anmeld et problem eller foreslå en funktionalitet
 
-If you’ve found a bug in AdGuard for Linux or would like to suggest a new feature, here’s how to do it:
+Er der fundet en fejl i AdGuard til Linux eller ønskes en ny funktion tilføjet, så er fremgangsmåden:
 
-- Fill out the [feedback form](https://surveys.adguard.com/en/adguard_linux/form.html).
-- Create a [GitHub issue](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose). But before you do, check the [repository](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue) for similar issues.
+- Udfyld [feedbackformularen](https://surveys.adguard.com/en/adguard_linux/form.html).
+- Opret en [GitHub-problematik](https://github.com/AdguardTeam/AdGuardCLI/issues/new/choose). Inden det gøres, tjek først [repo'et](https://github.com/AdguardTeam/AdGuardCLI/issues?q=is%3Aissue) for lignende problematikker.
 
 :::note
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+Vil man støtte implementeringen af en ny funktion eller fejlrettelse, kan der stemme på den på GitHub. For at stemme, reagér blot med en emoji.
 
 :::
 
-## Collect and send logs
+## Indsamling og indsendelse af logger
 
-1. Enable debug logging:
+1. Aktivér fejlfindingslogning:
 
    `adguard-cli config set log_level debug`
 
 2. Genskab problemet, og prøv at huske det nøjagtige tidspunkt, hvor det opstod.
 
-3. Wait a while, then export the logs:
+3. Vent nogle øjeblikke, og eksportér dernæst logfilerne:
 
    `adguard-cli export-logs`
 
-   The archived log file will be downloaded to the application folder by default, and the path to the logs will be written to the console.
+   Den arkiverede logfil downloades til applikationsmappen som standard, og stien til logfilerne vil fremgå i konsollen.
 
-4. Send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Specify the time of the error and attach a link to your GitHub issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and share it with [devteam@adguard.com](mailto:devteam@adguard.com). Attach the file link to your GitHub issue.
+4. Indsend logfilen til <devteam@adguard.com>. Angiv tidspunktet for fejlen, og vedhæft et link til GitHub-problematikken eller dens nummer (angivet som #number ved siden af titlen). Alternativt kan logfilen uploades til Google Drev og deles med <devteam@adguard.com>. Føj fillinket til GitHub-problematikken.
 
-5. Switch the logging mode back to `info`:
+5. Skift logningsniveauet tilbage til `info`:
 
    `adguard-cli config set log_level info`

@@ -13,7 +13,7 @@ O Assistente de navegador AdGuard permite que você gerencie a proteção do AdG
 
 ![Janela do Assistente \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
-## Como funciona
+## How it works
 
 O Assistente de navegador AdGuard é uma extensão de navegador. Ele permite que você gerencie rapidamente o aplicativo AdGuard:
 

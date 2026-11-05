@@ -1,6 +1,6 @@
 ---
 title: Como coletar logs do sistema no Windows
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info
