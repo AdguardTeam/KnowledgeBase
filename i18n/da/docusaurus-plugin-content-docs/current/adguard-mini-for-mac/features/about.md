@@ -17,7 +17,7 @@ You can also find the links to:
 - Acknowledgements
 - Versionshistorik
 
-:::note Reminder
+:::note Påmindelse
 
 AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). A detailed setup instruction is available in [this Knowledge Base article](/adguard-mini-for-mac/installation/).
 

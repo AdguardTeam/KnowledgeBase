@@ -25,6 +25,28 @@ sidebar_position: 4
 
 Если вы включите эту функцию, AdGuard будет использовать свой Фильтр отслеживания URL, чтобы удалять такие параметры отслеживания, как `utm_*` и `fb_ref` из URL страниц.
 
+### Block fingerprinting {#fingerprinting}
+
+This feature prevents websites from identifying your browser and device by canvas fingerprinting.
+
+A canvas is a web page element for drawing images. A website can draw hidden text and shapes on a canvas and read the result back. The result depends on your device, graphics hardware, fonts, and browser, so it can identify you even without cookies.
+
+With this feature enabled, AdGuard slightly changes the images that websites read from a canvas. The changes are too small to see. Until you restart the browser or AdGuard is updated, each website gets the same changed result. Other websites get different results, so the result can’t be used to recognize you across websites.
+
+What you see on the page does not change. The feature does not cover WebGL and WebGPU fingerprinting or canvases drawn in web workers. Some websites may detect the protection or work around it.
+
+:::caution
+
+Web apps that export images from a canvas, such as online image editors, may get slightly changed images. If a website works incorrectly, add it to the allowlist or turn off the protection for it with a [rule](/general/ad-filtering/create-own-filters#stealth-modifier) like `@@||example.com^$stealth=fingerprinting`.
+
+:::
+
+:::note
+
+Available in [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) v5.6 or later.
+
+:::
+
 ### Скрывать поисковые запросы {#searchqueries}
 
 Эта функция скрывает ваши поисковые запросы от сайтов, на которые вы переходите через результаты поисковой системы. Например, когда вы попадаете на сайт через поисковую систему, такую как Google или Яндекс, эта функция скрывает поисковый запрос, который привёл вас на этот сайт.

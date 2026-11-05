@@ -3,12 +3,12 @@ title: Om
 sidebar_position: 5
 ---
 
-![About tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![Fanen Om](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
-In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
+På fanen Om fremgår den aktuelle produktversion samt links til juridiske dokumenter. Der er også et link til vores GitHub-repo. Dér kan man monitere produktudviklingen, oprette funktionsanmodninger og anmelde fejl.
 
-:::note Reminder
+:::note Påmindelse
 
-AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). En detaljeret opsætningsvejledning er tilgængelig i [vidensbasen](/archive/adguard-for-safari/installation/).
+AdGuard til Safari kan downloades gratis [fra App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). En detaljeret opsætningsvejledning er tilgængelig i [vidensbasen](/archive/adguard-for-safari/installation/).
 
 :::

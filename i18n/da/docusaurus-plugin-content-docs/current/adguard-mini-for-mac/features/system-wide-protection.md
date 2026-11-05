@@ -7,6 +7,18 @@ Fra version 3.0 introducerer AdGuard Mini til Mac _Systemniveaubeskyttelse_, en 
 
 Funktionen er tilgængelig for brugere med en AdGuard-licens. [Køb en licensen med det samme](https://adguard.com/license.html) eller klik på _Prøv gratis_ i _Avanceret beskyttelse_ for at starte en 14-dages gratis prøveperiode.
 
+:::caution
+
+_Systemniveaubeskyttelse_ er en eksperimentel funktion. Detn fungerer muligvis ikke for alle grundet en [uløst Apple-fejl](https://developer.apple.com/forums/thread/848364). Når funktionen bliver stabil for alle, vil vi gøre den til en kernedel af AdGuard Mini.
+
+:::
+
+Funktionen fungerer ikke korrekt på visse macOS-versioner, herunder **26.7.2** og **27.2**. Anvendes **macOS 26.0 og 27.0**, kan _Systemniveaubeskyttelse_ uden videre testes. Bemærk, at hvis _Systemniveaubeskyttelse_ fungerer fint på macOS 27.0, vil det højst sandsynligt ikke længere være tilfældet efter opdatering til macOS 27.2. Vær opmærksom på dette, før en opdatering af systemet foretages.
+
+I udgivelsesversionen er _Systemniveaubeskyttelse_ som standard skjult. For at få indstillingen vist, gå til _Indstillinger_ → _Diverse_ og slå _Vis systemniveaubeskyttelse (eksperimentel)_ til. Betaversionen viser den altid.
+
+![Eksperimentel omskifter](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/swp-experimental-toggle.png)
+
 ## Sådan fungerer den
 
 _Systemniveaubeskyttelse_ er indbygget i Apples [**URL-filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), en systemfiltrerings-API til brug for systemniveautrafikfiltrering. Sådan fungerer det.
@@ -45,6 +57,10 @@ Der er tre beskyttelsesniveauer at vælge imellem. _Essentiel_ er valgt som stan
 
 ## Fejlfinding
 
+### Systemniveaubeskyttelse fungerer ikke med macOS 27.2
+
+Dette skyldes en [uløst Apple-fejl](https://developer.apple.com/forums/thread/848364). På grund af dette er _Systemniveaubeskyttelse_ p.t. en eksperimentel funktion. Den fungerer med macOS 26 og 27.0, men muligvis ikke med macOS 27.2 beta. Anvendes en tidligere macOS-version, anbefaler vi at bliver på den, indtil Apple retter fejlen.
+
 ### Systemniveaubeskyttelse fungerer ikke med alle apps eller webbrowsere
 
 Dækningen afhænger af, hvordan hver enkelt app håndterer netværksforespørgsler, så nogle apps filtreres muligvis ikke. Dette er en begrænsning fra Apples side.
@@ -55,6 +71,7 @@ Chromium-baserede webbrowsere, såsom Chrome, Edge, Opera og Brave, bruger deres
 
 - **Mac'en kører en ældre macOS-version.** Apples URL-filter kræver minimum macOS 26 Tahoe. I tidligere versioner er indstillingen deaktiveret, og appen anmoder om at _opdatere til minimum macOS Tahoe 26_.
 - **Kontoen understøttes ikke.** _Systemniveaubeskyttelse_ fungerer kun med den første brugerkonto, der er oprettet på en Mac. Er kontoen tilføjet senere, er indstillingen deaktiveret og viser _Ikke understøttet på denne Mac-konto_. Se [Kan bruger-ID'et på en Mac-konto skiftes?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) nedenfor.
+- **Indstillingen er skjult.** I udgivelsesversionen er _Systemniveaubeskyttelse_ som standard skjult. Gå til _Indstillinger_ → _Diverse_ og slå _Vis systemniveaubeskyttelse (eksperimentel)_ til.
 - **Den gratis version benyttes.** For brug af _Systemniveaubeskyttelse_, [køb en AdGuard-licens](https://adguard.com/license.html) eller klik på _Prøv gratis_ under _Avanceret beskyttelse_ for at starte en 14-dages gratis prøveperiode.
 
 ### Kan en Mac-kontos bruger-ID skiftes?

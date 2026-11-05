@@ -16,11 +16,11 @@ AdGuard Mini for Mac uses the Content Blocking API to apply filtering rules to p
 AdGuard Mini for Mac has 6 content blockers:
 
 - AdGuard General
-- AdGuard Privacy
+- AdGuard Fortrolighed
 - AdGuard Social
-- AdGuard Security
-- AdGuard Other
-- AdGuard Custom
+- AdGuard Sikkerhed
+- AdGuard Andre
+- AdGuard Tilpasset
 
 This makes a total of 900,000 filtering rules.
 

@@ -1,85 +1,102 @@
 ---
-title: System-wide protection
+title: Protección de todo el sistema
 sidebar_position: 9
 ---
 
-Starting with version 3.0, AdGuard Mini for Mac introduces _System-wide protection_, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
+A partir de la versión 3.0, AdGuard Mini para Mac incorpora la _Protección de todo el sistema_, una función que bloquea anuncios y rastreadores no solo en Safari, sino también en otras aplicaciones de tu Mac.
 
-The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
+La función está disponible para los usuarios con una licencia de AdGuard. Puedes [comprar la licencia ahora mismo](https://adguard.com/license.html) o hacer clic en _Probar gratis_ en _Protección avanzada_ para iniciar una prueba gratuita de 14 días.
 
-## Cómo funciona
+:::caution
 
-_System-wide protection_ is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a system filtering API used for system-wide traffic filtering. Here’s how it works.
-
-First, macOS checks a URL against a bloom filter — a prefilter stored on your Mac that updates in the background. Most addresses are cleared locally, with no network request for the check itself.
-
-If the prefilter finds a possible match, macOS asks AdGuard’s server for a verdict using Private Information Retrieval (PIR). This method lets your Mac request data from the server without revealing which exact address it asked about. The request can’t be linked to your account or device. If the server doesn’t respond, the page loads normally.
-
-You can read [a detailed analysis of Apple’s approach to system-wide filtering](https://adguard.com/en/blog/apple-url-filter-system-wide-filtering-api.html) in our blog.
-
-## How to turn on System-wide protection
-
-You’ll find _System-wide protection_ under _Advanced protection_ in the AdGuard Mini app. To enable it, toggle the switch on.
-
-![System-wide protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/system-wide-protection.png)
-
-When you first enable _System-wide protection_, you’ll get a request to install the URL filter on your computer. Click _Install_, after which a system message will appear requesting to add filter configurations. This is standard macOS behavior. AdGuard does not see or store any of this data.
-
-![System-wide protection requires a URL filter](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/install-screen.png)
-
-After you install the URL filter, _System-wide protection_ will remain on by default. If you want it off, toggle off the _System-wide protection_ switch in _Advanced protection_.
-
-You can also click the context menu in the top right corner (⋮) and select _Remove URL Filter_. If you want to reset the filter without deleting it to troubleshoot connection issues, choose _Reset Cache_.
-
-It’s also possible to disable the URL filter in your Mac’s _System Settings_ → _Network_ → _VPN & Filters_ → _Filters & Proxies_. Change _Enabled_ to _Disabled_ in the _Status menu_. AdGuard Mini will then switch off _System-wide protection_ automatically.
-
-## Protection levels
-
-There are three levels of protection you can choose from. _Essential_ is selected by default.
-
-- _Essential_ — blocks ads and trackers
-- _Safe_ — blocks ads, trackers, phishing, and malware
-- _Family_ — blocks ads, trackers, phishing, malware, and adult content
-
-![Three levels of protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/levels-of-protection.png)
-
-## Troubleshooting
-
-### System-wide protection doesn’t work with every app or browser
-
-Coverage depends on how each app handles network requests, so some apps may not be filtered. This is a limitation on Apple’s side.
-
-Chromium-based browsers, such as Chrome, Edge, Opera, and Brave, use their own networking code instead of Apple’s frameworks, so the URL filter can’t check their requests.
-
-### System-wide protection doesn’t turn on
-
-- **Your Mac runs an older version of macOS.** Apple’s URL filter needs macOS 26 Tahoe or later. On earlier versions, the setting is disabled and the app asks you to _Update to macOS Tahoe 26 or later_.
-- **Your account isn’t supported.** _System-wide protection_ only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows _Not supported on this Mac account_. See [Can I change my Mac account’s user ID?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) below.
-- **You’re on the free version.** To use _System-wide protection_, [purchase an AdGuard license](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
-
-### Can I change my Mac account’s user ID?
-
-Yes. _System-wide protection_ only works with the first user account created on a Mac with the user ID (UID) of 501. If your Mac has more than one account, or if you migrated your account from an older Mac, your UID might be different. Follow the steps below to check your UID and, if needed, free up 501 and assign it to your account.
-
-:::warning
-
-This is an advanced, risky operation. Only do this if you have no other option. Freeing up UID 501 means deleting an existing account and creating a new one from Terminal. If something goes wrong, this can cause permanent data loss. Back up all the data on your Mac before proceeding.
+La _Protección de todo el sistema_ es una función experimental. Es posible que no funcione para todos los usuarios debido a un [error de Apple aún sin resolver](https://developer.apple.com/forums/thread/848364). Cuando la función sea estable para todos los usuarios, la convertiremos en una parte fundamental de AdGuard Mini.
 
 :::
 
-1. **Check your current UID.** Open Terminal, type `id -u`, and press Return. If the result is 501, your account already has the right UID. You don’t need to do anything else.
+La función no funciona correctamente en algunas versiones de macOS, incluidas **26.7.2** y **27.2**. Si usas **macOS 26.0 o 27.0**, puedes probar la _Protección de todo el sistema_ como de costumbre. Ten en cuenta que, si la _Protección de todo el sistema_ funciona bien en macOS 27.0, lo más probable es que deje de funcionar tras actualizar a macOS 27.2. Tenlo en cuenta antes de actualizar el sistema.
 
-2. **Find out who has UID 501.** If your UID is not 501, run this command:
+En la versión estable, la _Protección de todo el sistema_ está oculta de forma predeterminada. Para mostrarla, ve a _Configuración_ → _Varios_ y activa _Mostrar Protección de todo el sistema (Experimental)_. La versión beta siempre muestra esta función.
+
+![Opción experimental](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/swp-experimental-toggle.png)
+
+## Cómo funciona
+
+La _Protección de todo el sistema_ se basa en el [**filtro de URL**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url) de Apple, una API de filtrado del sistema que se utiliza para filtrar el tráfico de todo el sistema. Así es como funciona.
+
+Primero, macOS comprueba una URL mediante un filtro de Bloom: un prefiltro almacenado en tu Mac que se actualiza en segundo plano. La mayoría de las direcciones se permiten localmente, sin necesidad de realizar una solicitud de red para la propia comprobación.
+
+Si el prefiltro encuentra una posible coincidencia, macOS solicita un veredicto al servidor de AdGuard mediante la recuperación privada de información (PIR). Este método permite que tu Mac solicite datos al servidor sin revelar la dirección exacta que ha consultado. La solicitud no se puede vincular a tu cuenta ni a tu dispositivo. Si el servidor no responde, la página se carga con normalidad.
+
+Puedes leer [un análisis detallado del enfoque de Apple para el filtrado de todo el sistema](https://adguard.com/en/blog/apple-url-filter-system-wide-filtering-api.html) en nuestro blog.
+
+## Cómo activar la Protección de todo el sistema
+
+Encontrarás la _Protección de todo el sistema_ en _Protección avanzada_ dentro de la aplicación AdGuard Mini. Para habilitarla, activa el interruptor.
+
+![Protección de todo el sistema](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/system-wide-protection.png)
+
+Cuando actives la _Protección de todo el sistema_ por primera vez, recibirás una solicitud para instalar el filtro de URL en tu ordenador. Haz clic en _Instalar_. A continuación, aparecerá un mensaje del sistema solicitando añadir configuraciones de filtro. Este es el comportamiento habitual de macOS. AdGuard no ve ni almacena ninguno de estos datos.
+
+![La Protección de todo el sistema requiere un filtro de URL](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/install-screen.png)
+
+Después de instalar el filtro de URL, la _Protección de todo el sistema_ permanecerá activada de forma predeterminada. Si quieres desactivarla, desactiva el interruptor de _Protección de todo el sistema_ en _Protección avanzada_.
+
+También puedes hacer clic en el menú contextual de la esquina superior derecha (⋮) y seleccionar _Eliminar filtro de URL_. Si quieres restablecer el filtro sin eliminarlo para solucionar problemas de conexión, elige _Restablecer caché_.
+
+También puedes desactivar el filtro de URL en _Ajustes del Sistema_ → _Red_ → _VPN y filtros_ → _Filtros y proxies_ de tu Mac. Cambia _Activado_ por _Desactivado_ en el _menú Estado_. AdGuard Mini desactivará la _Protección de todo el sistema_ automáticamente.
+
+## Niveles de protección
+
+Puedes elegir entre tres niveles de protección. El nivel _Esencial_ está seleccionado de forma predeterminada.
+
+- _Esencial_ — bloquea anuncios y rastreadores
+- _Seguro_ — bloquea anuncios, rastreadores, phishing y malware
+- _Familiar_ — bloquea anuncios, rastreadores, phishing, malware y contenido para adultos
+
+![Tres niveles de protección](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/levels-of-protection.png)
+
+## Solución de problemas
+
+### La Protección de todo el sistema no funciona en macOS 27.2
+
+Esto se debe a un [error de Apple aún sin resolver](https://developer.apple.com/forums/thread/848364). Por este motivo, la _Protección de todo el sistema_ es actualmente una función experimental. Funciona en macOS 26 y 27.0, pero es posible que no funcione correctamente en macOS 27.2 beta. Si usas una versión anterior de macOS, te recomendamos seguir usándola hasta que Apple corrija el error.
+
+### La Protección de todo el sistema no funciona con todas las aplicaciones o navegadores
+
+La cobertura depende de cómo gestione cada aplicación las solicitudes de red, por lo que es posible que algunas aplicaciones no se filtren. Esta es una limitación de Apple.
+
+Los navegadores basados en Chromium, como Chrome, Edge, Opera y Brave, utilizan su propio código de red en lugar de los frameworks de Apple, por lo que el filtro de URL no puede comprobar sus solicitudes.
+
+### La Protección de todo el sistema no se activa
+
+- **Tu Mac utiliza una versión antigua de macOS.** El filtro de URL de Apple requiere macOS 26 Tahoe o posterior. En las versiones anteriores, la opción está desactivada y la aplicación te pide que _Actualices a macOS Tahoe 26 o posterior_.
+- **Tu cuenta no es compatible.** La _Protección de todo el sistema_ solo funciona con la primera cuenta de usuario creada en un Mac. Si tu cuenta se añadió después, la opción está desactivada y muestra _No compatible con esta cuenta del Mac_. Consulta [¿Puedo cambiar el ID de usuario de mi cuenta del Mac?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) más abajo.
+- **La opción está oculta.** En la versión estable, la _Protección de todo el sistema_ está oculta de forma predeterminada. Ve a _Configuración_ → _Varios_ y activa _Mostrar Protección de todo el sistema (Experimental)_.
+- **Estás usando la versión gratuita.** Para usar la _Protección de todo el sistema_, [compra una licencia de AdGuard](https://adguard.com/license.html) o haz clic en _Probar gratis_ en _Protección avanzada_ para iniciar una prueba gratuita de 14 días.
+
+### ¿Puedo cambiar el ID de usuario de mi cuenta del Mac?
+
+Sí. La _Protección de todo el sistema_ solo funciona con la primera cuenta de usuario creada en un Mac, cuyo ID de usuario (UID) es 501. Si tu Mac tiene más de una cuenta o si has migrado tu cuenta desde un Mac antiguo, es posible que tu UID sea diferente. Sigue los pasos que se indican a continuación para comprobar tu UID y, si es necesario, liberar el UID 501 y asignarlo a tu cuenta.
+
+:::warning
+
+Esta es una operación avanzada y arriesgada. Hazlo solo si no tienes otra opción. Liberar el UID 501 implica eliminar una cuenta existente y crear una nueva desde Terminal. Si algo sale mal, esto puede provocar una pérdida permanente de datos. Haz una copia de seguridad de todos los datos de tu Mac antes de continuar.
+
+:::
+
+1. **Comprueba tu UID actual.** Abre Terminal, escribe `id -u` y pulsa Retorno. Si el resultado es 501, tu cuenta ya tiene el UID correcto. No necesitas hacer nada más.
+
+2. **Averigua qué cuenta tiene el UID 501.** Si tu UID no es 501, ejecuta este comando:
 
     ```bash
     dscacheutil -q user -a uid 501 | grep -E '^(name|uid|gecos):'
     ```
 
-   This shows the username, UID, and full name of that account. Make sure you don’t need any files from it, or back them up before continuing.
+   Esto muestra el nombre de usuario, el UID y el nombre completo de esa cuenta. Asegúrate de que no necesitas ningún archivo de esa cuenta o haz una copia de seguridad de sus archivos antes de continuar.
 
-3. **Delete the account with UID 501.** While logged in to your own admin account, open _System Settings_ → _Users & Groups_, select the account from step 2, and delete it. When macOS asks what to do with its home folder, choose _Save the home folder in a disk image_ — this keeps the account’s files in case you need them later.
+3. **Elimina la cuenta con el UID 501.** Con la sesión iniciada en tu propia cuenta de administrador, abre _Ajustes del Sistema_ → _Usuarios y grupos_, selecciona la cuenta del paso 2 y elimínala. Cuando macOS te pregunte qué hacer con la carpeta de inicio de la cuenta, elige _Guardar la carpeta de inicio en una imagen de disco_: así se conservarán los archivos de la cuenta por si los necesitas más adelante.
 
-4. **Create a new account with UID 501.** Run the following command, replacing `username` and `Name Surname` with the details you want:
+4. **Crea una nueva cuenta con el UID 501.** Ejecuta el siguiente comando, sustituyendo `username` y `Name Surname` por los datos que quieras:
 
     ```bash
     sudo sysadminctl -addUser username \
@@ -89,6 +106,6 @@ This is an advanced, risky operation. Only do this if you have no other option. 
       -UID 501
     ```
 
-   `-password -` makes Terminal prompt you for the password interactively; `-admin` gives the new account administrator rights.
+   `-password -` hace que Terminal te solicite la contraseña de forma interactiva; `-admin` otorga permisos de administrador a la nueva cuenta.
 
-5. **Verify the change.** Log in to the new account, then check the UID again: open Terminal, type `id -u`, and press Return. The result should now be 501.
+5. **Verifica el cambio.** Inicia sesión en la nueva cuenta y comprueba de nuevo el UID: abre Terminal, escribe `id -u` y pulsa Retorno. El resultado ahora debería ser 501.

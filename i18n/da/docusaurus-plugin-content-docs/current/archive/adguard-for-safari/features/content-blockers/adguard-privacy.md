@@ -1,6 +1,6 @@
 ---
-title: AdGuard Privacy
+title: AdGuard Fortrolighed
 sidebar_position: 3
 ---
 
-This content blocker is the main tool against counters and other web analytics tools. The _AdGuard Tracking Protection filter_ is enabled by default.
+Denne indholdsblocker er det primære værktøjet mod tællere og andre webanalyseværktøjer. _AdGuard Tracking Protection-filteret_ er slået til som standard.

@@ -1,5 +1,5 @@
 ---
-title: How to avoid compatibility issues with FaceTime
+title: Sådan undgås kompatibilitetsproblemer med FaceTime
 sidebar_position: 3
 ---
 
@@ -9,20 +9,20 @@ Denne artikel dækker AdGuard til iOS, en multifunktionel adblocker, der beskytt
 
 :::
 
-It turned out that Full-Tunnel mode might interfere not only with compatibility with other VPN applications, but also with FaceTime.
+Det viste sig, at tilstanden Full-Tunnel kunne forstyrre ikke kun kompatibiliteten med andre VPN-applikationer, men også med FaceTime.
 
-Some users have encountered the problem that FaceTime does not work on the device when the AdGuard app for iOS is in Full-Tunnel mode.
+Nogle brugere er stødt på det problem, at FaceTime ikke fungerer på enheden, når AdGuard-appen til iOS er i tilstanden Fuld-Tunnel.
 
-It is likely but not guaranteed that FaceTime will work when AdGuard is in Full-Tunnel mode without VPN icon because it is also incompatible with other VPN apps and unstable.
+Det er sandsynligt, men ikke garanteret, at FaceTime vil fungere, når AdGuard er i Full-Tunnel tilstand uden VPN-ikon, da den også er inkompatibel med andre VPN-apps, samt ustabil.
 
-**If you want to use FaceTime and make sure that video/audio calls don't stop working, use Split-Tunnel mode.**
+**Vil man bruge FaceTime og sikre sig, at video-/lydopkald ikke ophører med at fungere, skal tilstanden Split-Tunnel bruges.**
 
-![Tunnel mode screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+![Tunneltilstandsskærm *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
-To enable it, follow the instructions:
+For at aktivere den, følg denne vejledning:
 
-1. Go to AdGuard for iOS *Settings* → *General settings*.
-2. Enable *Advanced mode* and go to the *Advanced settings* section that appears right after.
-3. Open *Tunnel mode* and select *Split-Tunnel*.
+1. Gå til AdGuard til iOS *Indstillinger* → *Generelle indstillinger*.
+2. Aktivér *Avanceret tilstand* og gå til afsnittet *Avancerede indstillinger*, der vises umiddelbart efter.
+3. Åbn *Tunneltilstand* og vælg *Split-Tunnel*.
 
-Udført! Now there should be no problems with FaceTime compatibility.
+Færdig! Nu skulle der ikke være problemer med FaceTime-kompatibilitet.

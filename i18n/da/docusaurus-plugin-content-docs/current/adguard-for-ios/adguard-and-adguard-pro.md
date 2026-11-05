@@ -1,5 +1,5 @@
 ---
-title: AdGuard and AdGuard Pro
+title: AdGuard og AdGuard Pro
 sidebar_position: 5
 ---
 
@@ -9,8 +9,8 @@ Denne artikel omhandler AdGuard til iOS, en multifunktionel adblocker, der besky
 
 :::
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection.
+Søges efter AdGuard i App Store, vises to apps — [AdGuard](https://itunes.apple.com/app/id1047223162) og [AdGuard Pro](https://itunes.apple.com/app/id1126386264). Disse apps er designet til at blokere annoncer og trackere i Safari, andre webbrowsere og apps samt til at håndtere DNS-beskyttelse.
 
-Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
+Bliv ikke forvirrede af deres navne, begge apps blokerer annoncer på Apple-mobiler og -tablets. De varierede tidligere i funktionalitet grundet de ændrede retningslinjer for App Store-revidering, men nu er disse to apps [i bund og grund den samme](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
 
-If you have purchased AdGuard premium, there is no need to get AdGuard Pro, and vice versa.
+Har man købt AdGuard Premium, er der derfor ingen grund til at købe AdGuard Pro, og omvendt.

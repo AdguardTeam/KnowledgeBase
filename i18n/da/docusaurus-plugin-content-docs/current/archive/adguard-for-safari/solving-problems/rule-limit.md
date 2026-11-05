@@ -16,11 +16,11 @@ AdGuard for Safari uses the Content Blocking API to apply filtering rules to pag
 AdGuard for Safari has 6 content blockers:
 
 - AdGuard General
-- AdGuard Privacy
+- AdGuard Fortrolighed
 - AdGuard Social
-- AdGuard Security
-- AdGuard Other
-- AdGuard Custom
+- AdGuard Sikkerhed
+- AdGuard Andre
+- AdGuard Tilpasset
 
 This makes a total of 900,000 filtering rules.
 

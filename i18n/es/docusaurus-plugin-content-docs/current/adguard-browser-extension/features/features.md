@@ -19,7 +19,7 @@ Este artículo trata sobre la extensión de navegador AdGuard, que protege solo 
 
 - [Protección de rastreo (Modo sigiloso)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Configuración para bloquear cookies, etiquetas UTM y análisis en línea que recopilan información del usuario
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Otras funciones y opciones](/adguard-browser-extension/features/other-features.md)
 
