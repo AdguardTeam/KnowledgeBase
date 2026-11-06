@@ -1,6 +1,6 @@
 ---
 title: Как собирать системные логи Windows
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

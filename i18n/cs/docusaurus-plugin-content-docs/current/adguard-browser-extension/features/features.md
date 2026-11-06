@@ -19,7 +19,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 - [Ochrana před sledováním (Režim utajení)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Nastavení pro blokování souborů cookies, značek UTM a online analýz, které shromažďují informace o uživateli
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Další funkce a možnosti](/adguard-browser-extension/features/other-features.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Incompatibility with Screen Time
+title: Inkompatibilitet med Screen Time
 sidebar_position: 11
 ---
 
@@ -9,10 +9,10 @@ Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der besky
 
 :::
 
-If you have Content Restrictions enabled in _Screen Time_ while AdGuard is on, you may experience problems loading web pages. To check if Content Restrictions are active:
+Er Indholdsrestriktioner aktiveret i _Screen Time_, mens AdGuard er aktiv, kan der opleves problemer med indlæsning af websider. For at tjekke, om Indholdsrestriktioner er aktive:
 
-1. Go to System Settings → Screen Time → Content & Privacy → Content Restrictions
+1. Gå til Systemindstillinger → Screen Time → Indhold og Fortrolighed → Indholdsrestriktioner
 
-2. Check if the setting for Access to Web Content is set to _Limit Adult Websites_
+2. Tjek, om indstillingen Adgang til webindhold er sat til _Begræns voksne websteder_
 
-If this setting is on, pages won’t load. To continue using AdGuard, disable Content & Privacy in Screen Time, and then restart the system.
+Er denne indstilling slået til, indlæses sider ikke. For at fortsætte med at bruge AdGuard skal Indhold og Fortrolighed i Screen Time slås fra og systemet genstartes.

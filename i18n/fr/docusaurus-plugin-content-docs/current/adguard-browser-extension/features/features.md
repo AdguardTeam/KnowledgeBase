@@ -19,7 +19,7 @@ Cet article concerne l'Extension de navigateur AdGuard, qui protège uniquement 
 
 - [Protection contre le suivi (Mode furtif)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Paramètres permettant de bloquer les cookies, les balises UTM et les outils d'analyse en ligne qui collectent des informations sur l'utilisateur
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Autres fonctionnalités et options](/adguard-browser-extension/features/other-features.md)
 

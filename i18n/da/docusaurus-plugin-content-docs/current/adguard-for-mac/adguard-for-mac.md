@@ -9,14 +9,14 @@ Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der besky
 
 :::
 
-- [Features](/adguard-for-mac/features/features.md)
+- [Funktioner](/adguard-for-mac/features/features.md)
 
-  Main features and settings available in AdGuard for Mac
+  Hovedfunktioner og indstillinger tilgængelige i AdGuard til Mac
 
 - [Installation](/adguard-for-mac/installation.md)
 
-  Installation, removal, and system requirements for AdGuard for Mac
+  Her findes systemkravene samt vejledning til, hvordan AdGuard til Mac installeres og afinstalleres
 
-- [Solving problems](/adguard-for-mac/solving-problems/solving-problems.md)
+- [Løsning af problemer](/adguard-for-mac/solving-problems/solving-problems.md)
 
-  Known issues and possible solutions
+  Dette afsnit indeholder forskellige artikler omhandlende kendte problemer og mulige løsninger

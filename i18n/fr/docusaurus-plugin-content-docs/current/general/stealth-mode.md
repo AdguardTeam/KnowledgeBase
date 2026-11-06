@@ -25,6 +25,28 @@ Cette fonctionnalité bloque les traqueurs et les analyses Web à l'aide du filt
 
 Si vous activez cette fonctionnalité, AdGuard utilisera son Filtre AdGuard du suivi des URL pour retirer les paramètres de suivi tels que `utm_*` et `fb_ref` des URL des pages.
 
+### Block fingerprinting {#fingerprinting}
+
+This feature prevents websites from identifying your browser and device by canvas fingerprinting.
+
+A canvas is a web page element for drawing images. A website can draw hidden text and shapes on a canvas and read the result back. The result depends on your device, graphics hardware, fonts, and browser, so it can identify you even without cookies.
+
+With this feature enabled, AdGuard slightly changes the images that websites read from a canvas. The changes are too small to see. Until you restart the browser or AdGuard is updated, each website gets the same changed result. Other websites get different results, so the result can’t be used to recognize you across websites.
+
+What you see on the page does not change. The feature does not cover WebGL and WebGPU fingerprinting or canvases drawn in web workers. Some websites may detect the protection or work around it.
+
+:::attention
+
+Web apps that export images from a canvas, such as online image editors, may get slightly changed images. If a website works incorrectly, add it to the allowlist or turn off the protection for it with a [rule](/general/ad-filtering/create-own-filters#stealth-modifier) like `@@||example.com^$stealth=fingerprinting`.
+
+:::
+
+:::note
+
+Available in [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) v5.6 or later.
+
+:::
+
 ### Masquer les requêtes de recherche {#searchqueries}
 
 Cette fonctionnalité masque vos requêtes de recherche sur les sites Web que vous visitez via les résultats des moteurs de recherche. Par exemple, lorsque vous ouvrez un site Web via un moteur de recherche comme Google ou Yahoo, cette fonctionnalité masque la requête de recherche que vous avez utilisée pour trouver ce site Web.
@@ -61,7 +83,7 @@ Ce paramètre supprime tous les cookies de tiers, y compris les informations rel
 
 :::
 
-:::note
+::note
 
 Disponible dans AdGuard pour Android, AdGuard pour Windows, AdGuard pour Mac, et l'Extension de navigateur AdGuard (navigateurs basés sur MV2).
 
@@ -73,13 +95,13 @@ Cette fonctionnalité empêche les sites Web de mémoriser vos informations, tel
 
 Définissez une période de temps (en minutes) au terme de laquelle tous les cookies seront supprimés. Pour bloquer ces cookies, définissez leur durée de vie à 0.
 
-:::attention
+:::caution
 
 Nous vous déconseillons d'activer cette option car elle pourrait gravement interférer avec le fonctionnement de certains sites web. Si vous bloquez ces cookies, certains sites Web peuvent planter ou cesser de fonctionner.
 
 :::
 
-::note
+:::note
 
 Disponible dans AdGuard pour Android, AdGuard pour Windows, AdGuard pour Mac, et l'Extension de navigateur AdGuard (navigateurs basés sur MV2).
 

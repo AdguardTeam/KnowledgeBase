@@ -19,7 +19,7 @@ Questo articolo riguarda l'Estensione per browser di AdGuard, che protegge solo 
 
 - [Protezione dal Tracciamento (Modalità Invisibile)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Impostazioni per bloccare cookie, tag UTM e le analisi in rete che raccolgono informazioni sugli utenti
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Altre funzioni e opzioni](/adguard-browser-extension/features/other-features.md)
 

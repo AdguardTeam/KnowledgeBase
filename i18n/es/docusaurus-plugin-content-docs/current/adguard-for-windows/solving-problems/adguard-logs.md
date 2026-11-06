@@ -1,6 +1,6 @@
 ---
 title: Cómo recopilar registros de AdGuard
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info

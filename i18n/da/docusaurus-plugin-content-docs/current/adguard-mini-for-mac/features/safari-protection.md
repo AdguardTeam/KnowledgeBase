@@ -11,15 +11,15 @@ Denne artikel omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowse
 
 ## Safari-beskyttelse
 
-![General tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
+![Fanen Generelt](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/safari-protection.png)
 
-The _Safari protection_ section is the most important area for the app’s core purpose. Settings are grouped logically and explained in plain language so you can quickly see what each option does.
+Afsnittet _Safari-beskyttelse_ er det vigtigste område for appens kerneformål. Indstillingerne er grupperet logisk og forklaret med klart sprog, så det er hurtigt at se, hvad hver indstilling gør.
 
-Here’s a simple explanation on what each group of settings does:
+Her er en simpel forklaring på, hvad hver gruppe af indstillinger gør:
 
-![Protection screen part one \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
+![Beskyttelsesskærm del et \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_1.png)
 
-![Protection screen part two \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)
+![Beskyttelsesskærm del to \*border](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/new/safari_protection_2.png)
 
 ### Sundhedstjek-notifikationer
 

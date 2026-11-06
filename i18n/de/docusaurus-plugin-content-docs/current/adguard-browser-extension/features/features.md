@@ -1,5 +1,5 @@
 ---
-title: Funktionen
+title: Features
 sidebar_position: 1
 ---
 
@@ -19,7 +19,7 @@ In diesem Artikel geht es um die AdGuard-Browsererweiterung, die nur Ihren Brows
 
 - [Tracking-Schutz (Privatsphäre)](/adguard-browser-extension/features/stealth-mode.md)
 
-  Einstellungen zum Blockieren von Cookies, UTM-Tags und Analyse-Tools, die Nutzerdaten sammeln
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [Weitere Funktionen und Optionen](/adguard-browser-extension/features/other-features.md)
 

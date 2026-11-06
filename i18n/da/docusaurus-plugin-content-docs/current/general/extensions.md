@@ -117,7 +117,7 @@ If you like the idea of customizing your browser with userscripts and have quest
 
 If you are developing your own userscript and want to test how it works with AdGuard, you can request a license by filling in [the form](https://surveys.adguard.com/en/for_developers_request/form.html).
 
-#### Compatibility
+#### Kompatibilitet
 
 ##### Metadata block
 
@@ -351,7 +351,7 @@ divElement.innerHTML = ADG_policyApi.convertPropertyToTrusted("div", "innerHTML"
 
 #### Matching SPA sites
 
-:::info Compatibility
+:::info Kompatibilitet
 
 This section only applies to AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs] v1.19 or later.
 
@@ -449,7 +449,7 @@ You can download userstyles from various websites. One of the most popular users
 
 4. Press the [+] button and paste the userstyle link
 
-5. Udført!
+5. Færdig!
 
 If you’re familiar with CSS rules, you can also create userstyles yourself.
 

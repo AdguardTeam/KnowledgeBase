@@ -1,6 +1,6 @@
 ---
 title: So erfassen Sie die Installationsprotokolle von AdGuard
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

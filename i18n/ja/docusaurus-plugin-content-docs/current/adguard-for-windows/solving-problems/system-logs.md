@@ -1,6 +1,6 @@
 ---
 title: Windows システムログを収集する方法
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::info

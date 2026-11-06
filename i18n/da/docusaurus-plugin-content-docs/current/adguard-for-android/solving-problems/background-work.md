@@ -45,7 +45,7 @@ Valgmulighed 2
 
 1. Gå til **Batterisparer** og tryk på **Ingen begrænsninger**
 
-Udført! AdGuard er nu sat op til at fungere i baggrunden.
+Færdig! AdGuard er nu sat op til at fungere i baggrunden.
 
 ### MIUI 12.0.8
 

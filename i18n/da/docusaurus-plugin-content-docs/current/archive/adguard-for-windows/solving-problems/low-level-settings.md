@@ -9,53 +9,53 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
+Avancerede indstillinger, tidligere kendt som lavniveauindstillinger, indeholder fortrinsvis indstillinger, som går ud over den gennemsnitlige brugerkompetence og ikke anvendes i daglig brug. AdGuard til Windows er designet til at fungere uden nogensinde at skulle ændre nogen af dem, men de vil tilbyde yderligere funktioner i visse særlige tilfælde, eller ved løsning af et usædvanligt problem.
 
 :::caution
 
-Tankeløs ændring af _Lavniveauindstillinger_ kan forårsage problemer med AdGuards ydeevne, ødelægge internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+Tankeløs ændring af _Lavniveauindstillinger_ kan forårsage problemer med AdGuards ydeevne, ødelægge internetforbindelsen eller kompromittere brugersikkerhed og -fortrolighed. Man bør kun foretages ændringer i disse indstillinger, såfremt man ved, hvad man foretager sig, eller hvis supportteamet har anmodet herom.
 
 :::
 
-## How to reach Advanced Settings
+## Sådan tilgås Avancerede indstillinger
 
 For at gå til _Avancerede indstillinger_, klik i hovedvinduerne på _Indstillinger → Generelle indstillinger_ og rul ned til _Avancerede indstillinger_. Alternativt, vælg _Avanceret → Avancerede indstillinger..._ i bakkemenuen.
 
-## Advanced Settings
+## Avancerede indstillinger
 
-Once you open Advanced Settings, you will be presented with the following options:
+Når Avancerede indstillinger åbnes, fremgår flg. muligheder:
 
-### Block TCP Fast Open
+### Blokér TCP Fast Open
 
-If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
+Hvis aktiveret, vil AdGuard blokere TCP Fast Open i Edge-webbrowseren. Genstart webbrowseren for at effektuere indstillingerne.
 
-### Use Encrypted Client Hello
+### Anvend Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. Aktivér muligheden _Brug Encrypted Client Hello_ for at drage fordel af den. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, Client Hello packet will be encrypted.
+Alle krypterede internetforbindelser har en ukrypteret del. Dette er den allerførste pakke indeholdende navnet på serveren, der oprettes forbindelse til. Encrypted Client Hello-teknologien sigter mod at løse dette problem og kryptere den sidste smule ukrypteret information. Aktivér muligheden _Brug Encrypted Client Hello_ for at drage fordel af den. Den bruger en lokal DNS-proxy til at søge efter domænets ECH-opsætningen. Hvis den findes, krypteres ClientHello-pakken.
 
-### Check websites' certificate transparency
+### Tjek websteders certifikatgennemsigtighed
 
-Bekræfter ægtheden af alle certifikater for domænet baseret på Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
+Bekræfter ægtheden af alle certifikater for domænet baseret på Chrome Certificate Transparency Policy. Overholder certifikatet ikke Chrome Certificate Transparency-politikken, filtrerer AdGuard ikke webstedet. Chrome vil til gengæld blokere det.
 
-### Enable SSL/TLS certificate revocation checks
+### Aktivér tjek for tilbagekaldte SSL/TLS-certifikater
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked.
+Når aktiveret, kører denne mulighed asynkrone OCSP-tjek for at kontrollere, om webstedets SSL/TLS-certifikat er ophævet.
 
-If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid.
+Hvis OCSP-tjekket fuldføres inden for den minimale timeout, vil AdGuard straks anvende resultatet: Blokere forbindelsen, hvis certifikatet er ophævet, eller oprette forbindelse, hvis certifikatet er gyldigt.
 
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. Er certifikatet tilbagekaldt, blokeres nuværende og fremtidige forbindelser til domænet.
+Tager bekræftelsen for lang tid, opretter AdGuard forbindelse og fortsætter med at tjekke i baggrunden. Er certifikatet ophævet, blokeres nuværende og fremtidige forbindelser til domænet.
 
-### Show AdGuard VPN in Settings
+### Vis AdGuard VPN i Indstillinger
 
-Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
+Aktiveres denne indstilling, visee fanen AdGuard VPN i Indstillinger for nem åbning af appen og produktwebstedet.
 
-### Undtag app fra filtrering ved at angive den fulde sti
+### Undtag app fra filtrering ved at angive dens fulde sti
 
-If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
+Skal AdGuard ikke filtrere visse apps, angiv den fulde sti til hver af dem, og de undtages fra filtrering. Adskil forskellige stier med semikolon.
 
 ### Aktivér AdGuard pop op-notifikationer
 
-Aktivér denne funktion for at se AdGuard pop op-notifikationer. De vises ikke for ofte og indeholder kun vigtig information. You can also use the tray menu to recall the last pop-up notification.
+Aktivér denne funktion for at se AdGuard pop op-notifikationer. De vises ikke for ofte og indeholder kun vigtig information. Den sidste pop op-notifikation kan også genkaldes via bakkemenuen.
 
 ### Opsnap automatisk filterabonnements-URL'er
 
@@ -63,7 +63,7 @@ Aktivér denne funktion, hvis AdGuard automatisk skal opsnappe filterabonnements
 
 ### Filterér HTTP/3
 
-If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+Er denne mulighed aktiveret, filtrerer AdGuard forespørgsler sendt over HTTP/3 i tillæg til andre forespørgselstyper.
 
 **Begrænsninger**:
 
@@ -73,46 +73,46 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 ### Brug omdirigeringsdrivertilstand
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
+Er denne indstilling aktiveret, opsnapper AdGuard al trafikken, og ruter den til den lokale proxyserver for yderligere filtrering.
 
-Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
+AdGuard vil ellers løbende filtrere al trafik uden omdirigering. I så tilfælde vil systemet betragte AdGuard som den eneste applikation, der opretter forbindelse til internet (andre applikationer rutes igennem den). Ulempen er, at det vil gøre system-firewall'en mindre effektiv. Fordelen er, at denne tilgang fungerer en smule hurtigere.
 
-### Open main window at system start-up
+### Åbn hovedvindue ved systemstart
 
-Enable this option to make the main AdGuard window open after the system is loaded. Denne indstilling, der ingen indflydelse har på, hvorvidt filtreringstjenesten faktisk startes eller ej, er placeret i _Indstillinger → Generelle indstillinger_.
+Aktivér denne indstilling for at åbne AdGuard-hovedvinduet, efter at systemet er indlæst. Denne indstilling, der ingen indflydelse har på, hvorvidt filtreringstjenesten faktisk startes eller ej, er placeret i _Indstillinger → Generelle indstillinger_.
 
 ### Aktivér filtrering ved systemstart
 
-Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
+Fra v7.12 filtrerer AdGuards tjeneste som standard ikke trafik efter OS-start, hvis indstillingen Start AdGuard ved systemstart er deaktiveret. AdGuards tjeneste startes med andre ord i "tomgangstilstand". Aktivér denne indstilling for at få AdGuard til at filtrere trafik, selvom appen ikke startes.
 
 :::note
 
-Før v7.12 startede AdGuard-tjenesten som standard i filtreringstilstand (selv hvis _Start AdGuard ved systemopstart_ var slået fra). If you were satisfied with the old behavior, enable this option.
+Før v7.12 startede AdGuard-tjenesten som standard i filtreringstilstand (selv hvis _Start AdGuard ved systemopstart_ var slået fra). Slå denne indstilling til, hvis den gamle adfærd foretrækkes.
 
 :::
 
 ### Filtrér localhost
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+Markér afkrydsningsfeltet, hvis AdGuard skal filtrere loopback-forbindelser. Denne valgmulighed vil altid være slået til, hvis AdGuard VPN er installeret, da den ellers ikke vil kunne fungere.
 
-### Exclude specified IP ranges from filtering
+### Undtag angive IP-områder fra filtrering
 
 Aktivér denne funktion, hvis AdGuard ikke skal filtrere bestemte undernet, og angiv IP-intervallerne i CIDR-notationen (f.eks. 98.51.100.14/24) i afsnittet **IP-intervaller undtaget fra filtrering** nedenfor.
 
-### Enable HAR writing
+### Aktivér HAR-skrivning
 
-Denne indstilling bør kun være aktiveret **til fejlfindingsformål**. Ticking the checkbox will make AdGuard create a file in the HAR 1.2 format containing information about all filtered HTTP requests. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+Denne indstilling bør kun være aktiveret **til fejlfindingsformål**. Markeres afkrydsningsfeltet, opretter AdGuard en fil i HAR 1.2-formatet indeholdende information om alle filtrerede HTTP-forespørgsler. Denne fil kan analyseres med Fiddler-appen. Bemærk, at HAR-skrivning kan gøre webbrowsing betydeligt langsommere.
 
-### Add an extra space to the plain HTTP request
+### Føj ekstra mellemrum til den almindelige HTTP-forespørgsel
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
+Føjer ekstra mellemrum mellem HTTP-metoden og URL'en og fjerner mellemrum efter feltet "Vært:" for at undgå Deep Packet Inspektion. F.eks. vil forespørgslen
 
 ```text
 GET /foo/bar/ HTTP/1.1
 Host: example.org
 ```
 
-will be converted to
+blive konverteret til
 
 ```text
 GET  /foo/bar/ HTTP/1.1
@@ -121,41 +121,31 @@ Host:example.org
 
 Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
 
-### Adjust size of fragmentation of initial TLS packet
+### Størrelsesjustering af den indledende TLS-pakkes fragmentering
 
-Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured (HTTPS) traffic.
+Angiver størrelsen på TCP-pakkefragmentering og undgår dyb pakkeinspektion. Denne indstilling påvirker kun sikret (HTTPS) trafik.
 
-If this option is enabled, AdGuard splits the initial TLS packet (the Client Hello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
+Er indstillingen aktiveret, opdeler AdGuard den indledende TLS-pakke (ClientHello-pakken) i to dele: Den første har den angivne længde, og den anden har resten, op til længden af hele den indledende TLS-pakke.
 
-Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
+Gyldige værdier: 1–1500. Angives en ugyldig størrelse, anvendes den systemvalgte størrelse. Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
 
-### Plain HTTP request fragment size
+### Fragmentstørrelse for almindelig HTTP-forespørgsel
 
-Justerer størrelsen af HTTP-forespørgselsfragmenteringen. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+Justerer størrelsen af HTTP-forespørgselsfragmenteringen. Denne indstilling påvirker kun almindelig HTTP-trafik. Aktiveres denne indstilling, opdeler AdGuard den første pakke i to dele: Den første har den angivne længde, og den anden indeholder resten op til længden af hele den oprindelige pakke.
 
-Gyldige værdier: 1–1500. If invalid size is specified, the value selected by the system will be used. Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
+Gyldige værdier: 1–1500. Angives en ugyldig størrelse, anvendes den systemvalgte størrelse. Denne indstilling anvendes kun, når indstillingen _Beskyt mod DPI_ Stealth-tilstanden er aktiv.
 
-### Show QUIC
+### Vis QUIC
 
-Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+Muliggør visning af QUIC-protokolposterne i filtreringsloggen. Kun for blokerede forespørgsler.
 
-### Enable TCP keepalive
+### Aktivér TCP keepalive
 
-Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use.
+Sender periodisk TCP-pakker over en inaktiv forbindelse for at sikre, at den holdes i live og at NAT-timeouts fornys. Denne indstilling kan være nyttig til at omgå de stringente NAT-indstillinger (Network Address Translation) brugt af visse internetudbydere.
 
-### TCP keepalive interval
+### TCP keepalive-interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
-
-:::note
-
-Denne indstilling fungerer kun, når indstillingen _Aktivér TCP keepalive_ er slået til.
-
-:::
-
-### TCP keepalive timeout
-
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Her kan angives en inaktiv tidsperiode i sekunder, før en keepalive probe sendes. Angives 0, benyttes en systemvalgt værdi.
 
 :::note
 
@@ -163,84 +153,94 @@ Denne indstilling fungerer kun, når indstillingen _Aktivér TCP keepalive_ er s
 
 :::
 
-### Block Java
+### TCP keepalive-timeout
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Selvom det besluttes at bruge muligheden _Blokér Java_, vil JavaScript stadig være aktiveret.
+Her kan angives tiden i sekunder, før der sendes endnu en keepalive-probe til en ikke-responsiv peer. Angives 0, benyttes en systemvalgt værdi.
 
-### DNS server timeout period
+:::note
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Denne indstilling fungerer kun, når indstillingen _Aktivér TCP keepalive_ er slået til.
 
-### Use HTTP/3 for DNS-over-HTTPS
+:::
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
+### Blokér Java
 
-### Use fallback DNS upstreams
+Nogle websteder og webtjenester understøtter stadig Java-plugins. API'en, der udgør basis for Java-plugins, har alvorlige sikkerhedssårbarheder. Sådanne plugins kan deaktiveres af sikkerhedshensyn. Selvom det besluttes at bruge muligheden _Blokér Java_, vil JavaScript stadig være aktiveret.
 
-Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+### DNS-server timeoutperiode
 
-### Query DNS upstreams in parallel
+Her kan angives den tid i millisekunder, AdGuard afventer svar fra den valgte DNS-server, før reservserveren bruges. Ved tomt felt, eller ugyldig værdi, benyttes standardværdien 5000.
 
-All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
+### Anvend HTTP/3 til DNS-over-HTTPS
 
-### Always respond to failed DNS queries
+Aktiverer HTTP/3 for DNS-over-HTTPS upstreams for at accelerere forbindelsen, hvis den valgte upstream understøtter denne protokol. Dette betyder, at aktivering af denne indstilling ikke garanterer, at alle DNS-forespørgsler sendes via HTTP/3.
 
-If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
+### Anvend reserve-DNS-upstreams
 
-### Enable filtering of secure DNS requests
+Normale forespørgsler omdirigeres til reserve-upstreamen, hvis alle DNS-forespørgsler til de valgte upstreams fejler.
 
-AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+### Forespørg DNS-upstreams parallelt
+
+Alle upstreams forespørges parallelt, og det første svar returneres. Da DNS-forespørgsler foretages parallelt, forøger aktivering af denne funktion internethastigheden.
+
+### Svar altid på fejlede DNS-forespørgsler
+
+Fejler adresseopløsningen på hver af de videresendte upstreams, såvel som på reservedomænerne, returneres DNS-forespørgselssvaret SERVFAIL\`.
+
+### Aktivér filtrering af sikre DNS-forespørgsler
+
+AdGuard omdirigerer sikre DNS-forespørgsler til den lokale DNS-proxy i tillæg til almindelige DNS-forespørgsler.
 
 ### Blokeringstilstand for hosts-regler
 
-Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Vælg her, hvordan AdGuard svarer, når et domæne blokeres af en DNS-regel baseret på [hosts-lignende syntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-- Reply with “Refused” error
-- Reply with “NxDomain” error
-- Reply with a custom IP address
+- Svar med "Refused"-fejl
+- Svar med "NxDomain"-fejl
+- Svar med en tilpasset IP-adr.
 
 ### Blokeringstilstand for adblock-lignende regler
 
-Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+Vælg her, hvordan AdGuard svarer, når et domæne blokeres af en DNS-regel baseret på [adblock-lignende syntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-- Reply with “Refused” error
-- Reply with “NxDomain” error
-- Reply with a custom IP address
+- Svar med "Refused"-fejl
+- Svar med "NxDomain"-fejl
+- Svar med en tilpasset IP-adr.
 
-### Custom IPv4 address
+### Tilpasset IPv4-adr.
 
-If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
+Er Tilpasset IP-adresse valgt i Blokeringstilstand for værtsregler eller i Blokeringstilstand for adblock-lignende regler, returneres denne IP-adresse som svar på blokerede A-forespørgsler. Er ingen angivet, svarer AdGuard med standardfejlen Refused.
 
-### Custom IPv6 address
+### Tilpasset IPv6-adr.
 
-If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
+Er Tilpasset IP-adresse valgt i Blokeringstilstand for værtsregler eller Blokeringstilstand for adblock-lignende regler, returneres denne IP-adresse som svar på blokerede AAAA-forespørgsler. Er ingen angivet, svarer AdGuard med standardfejlen Refused.
 
-### Fallback servers
+### Reserveservere (fallback)
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Her kan angives en alternativ DNS-server, hvortil en DNS-forespørgsel omrutes, hvis hovedserveren ikke reagerer inden for timeout-perioden angivet i næste afsnit. Der er tre indstillinger at vælge imellem:
 
-- Don’t use fallback servers;
-- Use system default servers;
-- Use custom servers.
+- Brug ikke reserveservere;
+- Brug systemets standardservere;
+- Brug tilpassede servere.
 
-### Block ECH
+### Blokér ECH
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
+Hvis aktiveret, fjerner AdGuard parametre for Encrypted Client Hello fra svar.
 
-### List of custom fallback servers
+### Liste over tilpassede reserveservere
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+Skal AdGuard anvende tilpassede reserveservere, angiv disse i dette afsnit (én pr. linje).
 
-### List of custom bootstrap addresses
+### Liste over tilpassede bootstrap-adresser
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in _DNS protection_. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+En bootstrap er en mellemliggende DNS-server brugt til at hente IP-adressen på den sikre DNS-server valgt tidligere i _DNS-beskyttelse_. Et sådant "kompromis" er nødvendigt ved brug af protokoller, som angiver serveradressen med bogstaver (såsom f.eks. DNS-over-TLS). I så tilfælde fungerer bootstrap'en som en oversætter, der omdanner bogstaverne til tal, som systemet kan forstå.
 
-By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
+Som standard anvendes system-DNS-opløseren, og den indledende bootstrap-forespørgsel sker via port 53. Ønskes dette ikke, angiv her IP-adresserne på de DNS-servere, som skal anvendes til at bestemme adressen på den krypterede DNS-server i en top til bund-rækkefølge. De angivne IP-adresser anvendes i den rækkefølge, de står opført. Angives ugyldige adresser, eller ingen adresser overhovedet, anvendes system-IP'erne.
 
-### DNS exclusions
+### DNS-undtagelser
 
-All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
+Alle DNS-forespørgsler til domæner angivet her omdirigeres til systemets standard DNS-server i stedet for til DNS-serveren angivet i appens indstillinger. DNS-blokeringsregler anvendes heller ikke på sådanne forespørgsler.
 
-### Exclude specified Wi-Fi networks names (SSIDs) from the DNS filtering
+### Undtag angivne Wi-Fi-netværksnavne (SSID'er) fra DNS-filtreringen
 
-DNS protection will not include Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.
+DNS-beskyttelse vil ikke omfatte Wi-Fi-netværk angivet i dette afsnit. Angiv Wi-Fi-netværksnavne (SSID'er), ét pr. linje. Dette kan være nyttigt, såfremt et bestemt Wi-Fi-netværk allerede beskyttes af AdGuard Home eller et andet DNS-beskyttelsessystem. I så tilfælde er det unødvendigt at filtrere DNS-forespørgsler igen.

@@ -1,6 +1,6 @@
 ---
 title: AdGuard 로그 수집하는 방법
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::정보

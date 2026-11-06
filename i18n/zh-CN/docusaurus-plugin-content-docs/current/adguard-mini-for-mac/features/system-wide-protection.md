@@ -7,6 +7,18 @@ Starting with version 3.0, AdGuard Mini for Mac introduces _System-wide protecti
 
 The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
 
+:::caution
+
+_System-wide protection_ is an experimental feature. It may not work for everyone due to an [unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Once the feature is stable for everyone, we’ll make it a core part of AdGuard Mini.
+
+:::
+
+The feature does not work correctly on some macOS versions, including **26.7.2** and **27.2**. If you’re on **macOS 26.0 and 27.0**, you can try _System-wide protection_ as usual. Note that if _System-wide protection_ works fine for you on macOS 27.0, it will most likely break after you update to macOS 27.2. Keep this in mind before you update your system.
+
+In the release version, _System-wide protection_ is hidden by default. To show it, go to _Settings_ → _Miscellaneous_ and turn on _Show System-wide protection (Experimental)_. The beta version always shows it.
+
+![Experimental toggle](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_for_mac/v3.0/swp-experimental-toggle.png)
+
 ## 工作原理
 
 _System-wide protection_ is built on Apple’s [**URL filter**](https://developer.apple.com/documentation/networkextension/filtering-traffic-by-url), a system filtering API used for system-wide traffic filtering. Here’s how it works.
@@ -45,6 +57,10 @@ There are three levels of protection you can choose from. _Essential_ is selecte
 
 ## Troubleshooting
 
+### System-wide protection doesn’t work on macOS 27.2
+
+This is caused by an [unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Because of it, _System-wide protection_ is currently an experimental feature. It works on macOS 26 and 27.0, but may not work correctly on macOS 27.2 beta. If you’re on an earlier macOS version, we recommend staying on it until Apple fixes the bug.
+
 ### System-wide protection doesn’t work with every app or browser
 
 Coverage depends on how each app handles network requests, so some apps may not be filtered. This is a limitation on Apple’s side.
@@ -55,6 +71,7 @@ Chromium-based browsers, such as Chrome, Edge, Opera, and Brave, use their own n
 
 - **Your Mac runs an older version of macOS.** Apple’s URL filter needs macOS 26 Tahoe or later. On earlier versions, the setting is disabled and the app asks you to _Update to macOS Tahoe 26 or later_.
 - **Your account isn’t supported.** _System-wide protection_ only works with the first user account created on a Mac. If your account was added later, the setting is disabled and shows _Not supported on this Mac account_. See [Can I change my Mac account’s user ID?](/adguard-mini-for-mac/features/system-wide-protection/#can-i-change-my-mac-accounts-user-id) below.
+- **The setting is hidden.** In the release version, _System-wide protection_ is hidden by default. Go to _Settings_ → _Miscellaneous_ and turn on _Show System-wide protection (Experimental)_.
 - **You’re on the free version.** To use _System-wide protection_, [purchase an AdGuard license](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
 
 ### Can I change my Mac account’s user ID?

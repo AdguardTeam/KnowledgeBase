@@ -19,7 +19,7 @@ sidebar_position: 1
 
 - [跟踪保护（隐身模式)](/adguard-browser-extension/features/stealth-mode.md)
 
-  用于拦截 Cookie、UTM 标签以及收集用户信息的在线分析工具的设置
+  Settings to block cookies, UTM tags, online analytics, and fingerprinting that collect user information
 
 - [其他功能与选项](/adguard-browser-extension/features/other-features.md)
 

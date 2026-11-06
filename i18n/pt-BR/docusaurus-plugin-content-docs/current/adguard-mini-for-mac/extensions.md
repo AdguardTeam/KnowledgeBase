@@ -13,7 +13,7 @@ This article is about AdGuard Mini for Mac, which safeguards only your Safari br
 
 As extensões para Safari são pequenos programas de software que adicionam funcionalidade ao navegador Safari. Eles permitem que os usuários personalizem e aprimorem sua experiência de navegação adicionando recursos que não estão nativamente integrados ao navegador. AdGuard Mini for Mac uses extensions primarily to apply filtering rules on websites opened in Safari.
 
-## Como funciona
+## How it works
 
 Para bloquear anúncios, rastreadores e incômodos em sites, o AdGuard usa regras de filtragem. The rules from AdGuard’s and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
 

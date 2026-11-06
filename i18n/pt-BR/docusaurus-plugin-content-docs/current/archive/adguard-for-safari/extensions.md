@@ -13,7 +13,7 @@ Este artigo é sobre o AdGuard para Safari, que protege apenas o seu navegador S
 
 As extensões para Safari são pequenos programas de software que adicionam funcionalidade ao navegador Safari. Eles permitem que os usuários personalizem e aprimorem sua experiência de navegação adicionando recursos que não estão nativamente integrados ao navegador. O AdGuard para Safari usa estas extensões principalmente para aplicar regras de filtragem em sites abertos no Safari.
 
-## Como funciona
+## How it works
 
 Para bloquear anúncios, rastreadores e incômodos em sites, o AdGuard usa regras de filtragem. As regras do AdGuard e seus filtros personalizados são convertidos em regras que o Safari é capaz de interpretar, integradas em 6 extensões do navegador:
 
