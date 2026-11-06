@@ -125,7 +125,7 @@ A seconda del sistema operativo del dispositivo di cui desideri filtrare il traf
 
 1. Sul tuo dispositivo iOS, apri **Impostazioni** → **Profilo Scaricato**, quindi tocca su **Installa** nell'angolo superiore destro. Inserisci la tua password e conferma l'installazione. Tocca **Fatto**.
 
-1. Vai in **Impostazioni** → **Generali** → **Informazioni** → **Impostazioni di Attendibilità Certificati**. Abilita l'interruttore affianco a *CA di Adguard Personal*. Il certificato è ora installato.
+1. Vai in **Impostazioni** → **Generali** → **Informazioni** → **Impostazioni di Attendibilità Certificati**. Abilita l'interruttore affianco a *CA di AdGuard Personal*. Il certificato è ora installato.
 
 1. Su quel dispositivo, apri le impostazioni avanzate della rete Wi-Fi attiva.
 

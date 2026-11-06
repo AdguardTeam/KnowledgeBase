@@ -153,7 +153,7 @@ Følg disse trin for at oprette en HAR-fil i Safari:
 
 Følg disse trin for at oprette HAR-filer:
 
-1. Åbn Adguard og gå til **Indstillinger**.
+1. Åbn AdGuard og gå til **Indstillinger**.
 
 1. Vælg menupunktet **Avanceret**.
 

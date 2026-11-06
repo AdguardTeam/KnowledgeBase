@@ -221,7 +221,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `© 2009–${new Date().getFullYear()} Adguard Software Ltd.`,
+      copyright: `© 2009–${new Date().getFullYear()} AdGuard Software Ltd.`,
     },
     prism: {
       theme: lightCodeTheme,
