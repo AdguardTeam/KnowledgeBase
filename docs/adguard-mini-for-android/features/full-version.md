@@ -3,9 +3,9 @@ title: Full version
 sidebar_position: 7
 ---
 
-:::note
+:::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -20,7 +20,7 @@ The full version unlocks advanced features:
 
 - [Tracking protection](https://adguard.com/kb/general/stealth-mode/): filters that protect your online activity and personal data from web trackers
 - [Custom filters](https://filterlists.com/): add any filter list by URL, in addition to the built-in ones
-- [DNS filters]: block more unwanted domains at the DNS level
+- [DNS filters](/adguard-mini-for-android/features/dns-protection.md): block more unwanted domains at the DNS level
 - Domain management: block and allow domains right from *Recent activity*
 
 The list of advanced features will continue to grow.

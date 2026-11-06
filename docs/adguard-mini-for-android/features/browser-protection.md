@@ -3,9 +3,9 @@ title: Browser protection
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -16,10 +16,11 @@ AdGuard Mini works through the Content Blocking API, a browser technology that a
 **How to enable Browser protection**
 
 1. Open AdGuard Mini for Android and go to *Protection* → *Browser protection*
-2. Toggle on the browser you use
-3. Confirm AdGuard as the ad blocker in the browser:
-Samsung Browser: open the browser menu, tap *Ad blockers*, and toggle on AdGuard
-Yandex Browser: go to browser *Settings* → *Content blocking extensions* and check that AdGuard is enabled.
+1. Toggle on the browser you use
+1. Confirm AdGuard as the ad blocker in the browser:
+
+- Samsung Browser: open the browser menu, tap *Ad blockers*, and toggle on AdGuard
+- Yandex Browser: go to browser *Settings* → *Content blocking extensions* and check that AdGuard is enabled.
 
 ![Browser protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/browser_protection.png?!)
 
@@ -30,12 +31,13 @@ Here you can also set up *Filters* and *User rules*.
 Filters are lists of rules that tell AdGuard Mini for Android what to block or hide on webpages. They are organized into categories:
 
 - **Ad blocking** blocks banners, popups, and other ads
-- **Tracking protection** hides your online activity and personal data from web trackers (available in the full version)
+- **Tracking protection** hides your online activity and personal data from web trackers (available in the [full version](https://adguard.com/license.html))
 - **Social widgets** removes social media buttons and embedded widgets
 - **Annoyances** hides cookie notices, newsletter popups, and other distracting elements
 - **Security** blocks known malicious and suspicious domains
 - **Language-specific** includes filters for specific languages and regions
 - **Other** covers additional filtering cases
+- **Custom filters** let you add any third-party filter list by URL for more targeted blocking (available in the [full version](https://adguard.com/license.html))
 
 ![Filters](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/filters.png)
 

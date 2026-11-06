@@ -3,9 +3,9 @@ title: DNS protection
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -29,7 +29,7 @@ To enable *DNS protection*, open AdGuard Mini for Android and go to *Protection*
 
 ## DNS server
 
-You can select a [*DNS server*](https://adguard-dns.io/kb/general/dns-providers/) in the *DNS protection* settings. Different servers handle DNS queries differently. For example, *AdGuard DNS* blocks advertising and tracking domains by default. Or you can choose a *Non-filtering DNS* server: it doesn’t block anything by itself, and you decide what to block with [DNS filters] and [DNS user rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
+You can select a [*DNS server*](https://adguard-dns.io/kb/general/dns-providers/) in the *DNS protection* settings. Different servers handle DNS queries differently. For example, *AdGuard DNS* blocks advertising and tracking domains by default. Or you can choose a *Non-filtering DNS* server: it doesn’t block anything by itself, and you decide what to block with [DNS filters](https://adguard-dns.io/kb/general/dns-filtering/) and [DNS user rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
 
 ![DNS server](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/dns_server.png)
 
@@ -37,7 +37,7 @@ You can select a [*DNS server*](https://adguard-dns.io/kb/general/dns-providers/
 
 :::note
 
-Available in the full version only
+Available in the [full version](https://adguard.com/en/license.html) only
 
 :::
 

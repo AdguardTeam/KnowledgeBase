@@ -3,9 +3,9 @@ title: Video browser
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -19,4 +19,4 @@ How to use Video browser:
 
 1. Open the YouTube app.
 1. Choose a video and tap *Share*.
-1. Tap *More*, then select *View in AdGuard Mini*.
+1. Select *View in AdGuard*.

@@ -3,16 +3,15 @@ title: Installation
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
 
 :::
 
 ## System requirements
 
 Operating system: Android 9 (Pie) or later
-How to install AdGuard Mini for Android
 
 ## How to install AdGuard Mini for Android
 
@@ -22,7 +21,7 @@ AdGuard Mini for Android is a free app present in Google Play. To install it on 
 
   ![AdGuard Mini for Android in Google Play *mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/google_play.png)
 
-1. Tap *Get* → *Install* → *Open*.
+1. Tap *Install* → *Open*.
 
 1. Decide if you want to allow AdGuard Mini to send the notifications. We recommend allowing them: notifications help AdGuard Mini stay active in the background. If you don’t allow them, [Android may stop the app to save battery](https://adguard.com/kb/adguard-for-android/solving-problems/background-work/), and protection will be interrupted without notice.
 
