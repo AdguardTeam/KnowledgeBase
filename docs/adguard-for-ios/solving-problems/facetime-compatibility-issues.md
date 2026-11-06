@@ -9,7 +9,7 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 :::
 
-It turned out that Full-Tunnel mode might interfere not only with compatibility with other VPN applications, but also with FaceTime.
+It turns out that Full-Tunnel mode might interfere not only with compatibility with other VPN applications, but also with FaceTime.
 
 Some users have encountered the problem that FaceTime does not work on the device when the AdGuard app for iOS is in Full-Tunnel mode.
 

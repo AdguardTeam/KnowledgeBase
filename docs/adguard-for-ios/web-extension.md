@@ -7,7 +7,7 @@ Web extensions add custom functionality to Safari. You can find [more informatio
 
 ![What the Web extension looks like in Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
 
-AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
+AdGuard's Safari Web extension is a tool that takes advantage of new features since iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
 
 ## What it does
 
@@ -37,7 +37,7 @@ AdGuard's Safari Web extension requires access to the web pages' content to oper
 
 :::
 
-### In the iOS settings
+### In the iOS & iPadOS settings
 
 The Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
@@ -85,4 +85,4 @@ If you use AdGuard for iOS without Premium subscription, you won't be able to en
 
 Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
 
-AdGuard's Safari Web extension only works on iOS versions 15 and later.
+AdGuard's Safari Web extension only works on iOS & iPadOS versions 15 and later.

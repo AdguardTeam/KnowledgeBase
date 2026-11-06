@@ -17,6 +17,6 @@ There are two ways to activate Premium features in the AdGuard for iOS app:
 
 :::note
 
-AdGuard Pro for iOS is our other iOS app. It can only be purchased from the [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
+AdGuard Pro for iOS is our other iOS & iPadOS app. It can only be purchased from the [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::
