@@ -11,7 +11,7 @@ This page is about AdGuard Mini for Android, which safeguards Samsung Browser an
 
 With *DNS protection*, AdGuard Mini for Android extends protection to the whole device. It encrypts your DNS queries, so your ISP can’t see which websites you visit, and blocks connections to advertising and tracking domains at the DNS level — in any browser or app, not just the supported ones.
 
-![DNS protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/dns_protection.png)
+![DNS protection](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_protection.png)
 
 ## How it works
 
@@ -31,7 +31,7 @@ To enable *DNS protection*, open AdGuard Mini for Android and go to *Protection*
 
 You can select a [*DNS server*](https://adguard-dns.io/kb/general/dns-providers/) in the *DNS protection* settings. Different servers handle DNS queries differently. For example, *AdGuard DNS* blocks advertising and tracking domains by default. Or you can choose a *Non-filtering DNS* server: it doesn’t block anything by itself, and you decide what to block with [DNS filters](https://adguard-dns.io/kb/general/dns-filtering/) and [DNS user rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
 
-![DNS server](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/dns_server.png)
+![DNS server](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_server.png)
 
 ## DNS filters
 
@@ -43,6 +43,6 @@ Available in the [full version](https://adguard.com/en/license.html) only
 
 DNS filters are lists of domains that should be blocked at the DNS level. Enable them to block more advertising and tracking domains across the whole device.
 
-![DNS server](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/dns_filters.png)
+![DNS server](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_filters.png)
 
 You can also add your own [*DNS user rules* rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/). They work like a personal DNS filter: one rule applies everywhere, in every browser and app. For example, `||example.org^` blocks `example.org` and all its subdomains on the entire device.

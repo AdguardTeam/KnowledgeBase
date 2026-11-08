@@ -22,7 +22,7 @@ AdGuard Mini works through the Content Blocking API, a browser technology that a
 - Samsung Browser: open the browser menu, tap *Ad blockers*, and toggle on AdGuard
 - Yandex Browser: go to browser *Settings* → *Content blocking extensions* and check that AdGuard is enabled.
 
-![Browser protection](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/browser_protection.png?!)
+![Browser protection](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/browser_protection.png)
 
 Here you can also set up *Filters* and *User rules*.
 
@@ -39,7 +39,7 @@ Filters are lists of rules that tell AdGuard Mini for Android what to block or h
 - **Other** covers additional filtering cases
 - **Custom filters** let you add any third-party filter list by URL for more targeted blocking (available in the [full version](https://adguard.com/license.html))
 
-![Filters](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/filters.png)
+![Filters](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/filters.png)
 
 To manage filters, go to *Protection* → *Browser protection* → *Filters*. Browse the categories and enable the filters you need. We recommend keeping *Ad blocking* filter and your *Language-specific* filters enabled.
 
@@ -49,6 +49,6 @@ User rules are custom filtering rules that let you adjust ad blocking yourself: 
 
 To add a rule, go to *Protection* → *Browser protection* → *User rules*.
 
-![User rules](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/user_rules.png)
+![User rules](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/user_rules.png)
 
 Keep in mind that *User rules* apply to *Browser protection*, that is, to webpages in Samsung Browser and Yandex Browser. To block domains at the DNS level across the whole device, use [DNS user rules](/adguard-mini-for-android/features/dns-protection.md) instead. And if a rule you added breaks a website, simply disable or delete it in the *User rules* list.

@@ -31,11 +31,11 @@ There are two ways to purchase a subscription:
 
 ### On Google Play
 
-You can purchase a subscription right in the app: *Settings* → *License* → *Get full version*. You'll be taken to a page with three subscription types:
+You can purchase a subscription via [Google Play](https://agrd.io/adguard-mini-for-android) directly in the app: *Settings* → *License* → *Get full version*. You'll be taken to a page with three subscription types:
 
 - Personal (3 devices)
 - Family (9 devices)
-- Mobile (1 device) – only available via [Google Play](https://agrd.io/adguard-mini-for-android)
+- Mobile (1 device) – only available via Google Play
 
 To use the license on other devices, bind it to your AdGuard account: go to *Settings* → *License* → *Bind license*, then log in to that account in other AdGuard Ad Blocker apps.
 

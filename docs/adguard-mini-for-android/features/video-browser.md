@@ -13,7 +13,7 @@ Video browser is a built-in feature of AdGuard Mini for Android that lets you wa
 
 YouTube serves ads from the same domains as the videos themselves, so blocking those domains at the DNS level would also block the videos. That’s why DNS protection can’t remove ads in the YouTube app. Video browser solves this differently: it opens videos in its own window using the YouTube player API, so videos play without ads.
 
-![Video browser](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/video_browser.png)
+![Video browser](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/video_browser.png)
 
 How to use Video browser:
 

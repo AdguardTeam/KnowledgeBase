@@ -11,7 +11,7 @@ This page is about AdGuard Mini for Android, which safeguards Samsung Browser an
 
 The *Settings* tab contains general app preferences: appearance, filter updates, diagnostics, and support options.
 
-![Settings *mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/settings.png)
+![Settings *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/settings.png)
 
 ## General
 
