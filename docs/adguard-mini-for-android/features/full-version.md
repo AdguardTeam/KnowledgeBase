@@ -41,7 +41,7 @@ To use the license on other devices, bind it to your AdGuard account: go to *Set
 
 ### On the AdGuard website
 
-On the [official website](https://adguard.com/license.html) you can purchase a yearly or a lifetime license:
+You can also purchase a yearly or a lifetime license on the [official website](https://adguard.com/license.html):
 
 - Personal (3 devices)
 - Family (9 devices)
