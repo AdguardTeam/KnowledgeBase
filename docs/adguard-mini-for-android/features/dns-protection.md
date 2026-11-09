@@ -37,7 +37,7 @@ You can select a [*DNS server*](https://adguard-dns.io/kb/general/dns-providers/
 
 :::note
 
-Available in the [full version](https://adguard.com/en/license.html) only
+This feature is available only in the [full version](https://adguard.com/license.html).
 
 :::
 
