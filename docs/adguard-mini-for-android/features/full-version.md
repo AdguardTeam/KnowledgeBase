@@ -47,3 +47,13 @@ You can also purchase a yearly or a lifetime license on the [official website](h
 - Family (9 devices)
 
 The license is universal: it can be used across all supported AdGuard Ad Blocker apps. It’s bound to your AdGuard account automatically.
+
+## How to activate an existing license
+
+If you already have an AdGuard license or previously bought a subscription on Google Play, you can activate the full version directly in the app. Make sure your license has an available device slot (you can manage your devices in your [AdGuard account](https://adguardaccount.com/account/licenses)).
+
+1. Go to *Settings* → *License* and tap *Already purchased?*
+1. Choose one of the options:
+   - **Log in**
+   - **Restore from Google Play**
+   - **Enter your activation code**
