@@ -43,6 +43,6 @@ Available in the [full version](https://adguard.com/en/license.html) only
 
 DNS filters are lists of domains that should be blocked at the DNS level. Enable them to block more advertising and tracking domains across the whole device.
 
-![DNS server](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_filters.png)
+![DNS filters](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_filters.png)
 
 You can also add your own [*DNS user rules* rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/). They work like a personal DNS filter: one rule applies everywhere, in every browser and app. For example, `||example.org^` blocks `example.org` and all its subdomains on the entire device.
