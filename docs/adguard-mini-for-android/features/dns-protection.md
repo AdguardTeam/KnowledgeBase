@@ -21,7 +21,7 @@ To do this, AdGuard Mini creates a local VPN on your device. It’s not a real V
 
 :::note
 
-Android allows only one active VPN connection at a time. If another VPN app is running, DNS protection won't work alongside it. Learn more in [Solving problems](/docs/adguard-mini-for-android/solving-problems/dns-protection-doesn't-work.md).
+Android allows only one active VPN connection at a time. If another VPN app is running, DNS protection won’t work alongside it. Learn more in [Solving problems](/docs/adguard-mini-for-android/solving-problems/dns-protection-doesn't-work.md).
 
 :::
 
