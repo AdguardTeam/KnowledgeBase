@@ -41,7 +41,7 @@ Filters are lists of rules that tell AdGuard Mini for Android what to block or h
 
 ![Filters](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/filters.png)
 
-To manage filters, go to *Protection* → *Browser protection* → *Filters*. Browse the categories and enable the filters you need. We recommend keeping *Ad blocking* filter and your *Language-specific* filters enabled.
+To manage filters, go to *Protection* → *Browser protection* → *Filters*. Browse the categories and enable the filters you need. We recommend keeping *Ad blocking* and your *Language-specific* filters enabled.
 
 ## User rules
 
