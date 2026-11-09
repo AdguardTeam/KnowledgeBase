@@ -1,6 +1,6 @@
 ---
 title: Comment collecter les journaux d'installation d'AdGuard
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

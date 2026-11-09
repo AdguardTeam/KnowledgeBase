@@ -25,7 +25,7 @@ User Scripts API 是一种工具，允许扩展程序在网页上运行自定义
 
 ## 如何启用开发者模式
 
-要在「用户规则」标签页中使用自定义过滤器和 JavaScript 规则，您必须先设置好浏览器。这将为扩展程序提供一种可靠且安全的方法，在最佳时机将脚本注入网页。请根据您的 Chrome 版本，按照以下说明进行操作。
+To use custom filters, JavaScript rules in the _User Rules_ tab, and the [_Block fingerprinting_](/adguard-browser-extension/features/stealth-mode#fingerprinting) option, you must set up your browser first. 这将为扩展程序提供一种可靠且安全的方法，在最佳时机将脚本注入网页。请根据您的 Chrome 版本，按照以下说明进行操作。
 
 ### 对于 138 版本之前的 Chrome
 

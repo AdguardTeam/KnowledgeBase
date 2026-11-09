@@ -1,5 +1,5 @@
 ---
-title: Setting up filtering in Tor Browser
+title: Opsætning af filtrering i Tor Browser
 sidebar_position: 10
 ---
 
@@ -9,22 +9,22 @@ Denne artikel omhandler AdGuard til Mac, en multifunktionel adblocker, der besky
 
 :::
 
-By default, Tor Browser is added to AdGuard’s list of filtered applications. However, to filter it, AdGuard needs to change Tor's security settings. This will make Tor trust AdGuard's CA certificate.
+Som standard føjes Tor Browser til AdGuards liste over filtrerede applikationer. For at filtrere den skal AdGuard dog ændre Tors sikkerhedsindstillinger. Dette vil få Tor til anse AdGuards CA-certifikat som betroet.
 
-If you decide to filter Tor and check it in *Preferences* → *Network* → *Applications*, AdGuard will show you this dialog box:
+Besluttes det at filtrere Tor og afkrydse den i *Præferencer* → *Netværk* → *Applikationer*, viser AdGuard denne dialogboks:
 
-![AdGuard dialog box](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
+![AdGuard-dialogboks](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
 
-By updating Tor settings, AdGuard will set the following:
+Ved at opdatere Tor-indstillingerne, opsætter AdGuard flg.:
 
 `security.enterprise_roots.enabled`: true
 
-This setting will cause Tor to trust root certificates. [Learn more](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox)
+Indstillingen får Tor til at anse rodcertifikater som betroede. [Læs mere](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox)
 
 `security.cert_pinning.enforcement_level`: 1
 
-Public Key Pinning is a security measure that allows websites to ensure that the connection between a website and a user is authentic. This involves the website publishing a list of public keys, or pins, that it trusts. With the enforcement level set to 1, pinning is not enforced for custom CAs. [Learn more](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
+Public Key Pinning er en sikkerhedsforanstaltning, hvormed websteder kan sikre sig, at forbindelsen mellem et websted og en bruger er reel. Dette indebærer, at webstedet udgiver en liste over offentlige nøgler eller PIN-koder, som det har tillid til. Med håndhævelsesniveauet sat til 1, håndhæves fastgørelse ikke for tilpassede CA'er. [Læs mere](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
 
-To apply the changes, you’ll need to restart Tor Browser.
+Genstart Tor Browser for at effektuere ændringerne.
 
-If you manually change these settings, Tor filtering will be stopped.
+Ændres disse indstillinger manuelt, stoppes Tor-filtreringen.

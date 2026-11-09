@@ -1,6 +1,6 @@
 ---
 title: How to switch back to v7 after updating to v8.0
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 :::info
@@ -33,7 +33,7 @@ If you wish to preserve your settings, it’s recommended that you export them b
 
    :::
 
-4. Install the previous version. You can find the download link in the _Assets_ section of the latest stable v7 release on [GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.22.9).
+4. [Install AdGuard for Windows v7.22.10](https://agrd.io/adguardforwindows7).
 
 5. Exit version 7 from the system tray to stop filtering.
 

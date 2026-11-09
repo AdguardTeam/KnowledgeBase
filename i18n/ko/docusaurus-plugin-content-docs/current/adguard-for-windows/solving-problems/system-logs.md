@@ -1,6 +1,6 @@
 ---
 title: Windows 로그 수집하는 방법
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 :::정보

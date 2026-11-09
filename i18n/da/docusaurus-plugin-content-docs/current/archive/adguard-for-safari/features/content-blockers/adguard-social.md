@@ -3,4 +3,4 @@ title: AdGuard Social
 sidebar_position: 4
 ---
 
-_AdGuard Social_ contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against popups, mobile app banners, cookie notices, and more. To enable them, find _Social Widgets_ in the Filters tab.
+_AdGuard Social_ indeholder filtre mod sociale medier-knapper, -widgets, -scripts og -ikoner. Andre irritationsfiltre kan også findes i dette afsnit: Filtre mod pop op'ere, mobil-app-bannere, cookiebeskeder mv. For at slå dem til, find _Sociale widgets_ på fanen Filtre.

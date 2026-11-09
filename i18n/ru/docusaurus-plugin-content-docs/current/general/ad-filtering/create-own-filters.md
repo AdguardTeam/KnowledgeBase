@@ -1063,9 +1063,9 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 | [$elemhide](#elemhide-modifier)         |               ✅                |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$extension](#extension-modifier)       |               ✅                |                ❌                |                    ❌                     |               ❌               |                      ❌                       |                      ❌                       |                 ❌                 |
 | [$jsinject](#jsinject-modifier)         |               ✅                |                ✅                | ✅ [*[1]](#jsinject-modifier-limitations) |               ✅               |                      ✅                       |                      ✅                       |                 ❌                 |
-| [$stealth](#stealth-modifier)           |               ✅                |                ✅                |                    ❌                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
-| [$urlblock](#urlblock-modifier)         |               ✅                |                ✅                |                    ❌                     |               ✅               |   ✅ [*[2]](#urlblock-modifier-limitations)   |   ✅ [*[2]](#urlblock-modifier-limitations)   |                 ❌                 |
-| [$genericblock](#genericblock-modifier) |               ✅                |                ✅                |                    ✅                     |               ✅               | ✅ [*[3]](#genericblock-modifier-limitations) | ✅ [*[3]](#genericblock-modifier-limitations) |                 ❌                 |
+| [$stealth](#stealth-modifier)           |               ✅                |                ✅                | ✅ [*[2]](#stealth-modifier-limitations)  |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
+| [$urlblock](#urlblock-modifier)         |               ✅                |                ✅                |                    ❌                     |               ✅               |   ✅ [*[3]](#urlblock-modifier-limitations)   |   ✅ [*[3]](#urlblock-modifier-limitations)   |                 ❌                 |
+| [$genericblock](#genericblock-modifier) |               ✅                |                ✅                |                    ✅                     |               ✅               | ✅ [*[4]](#genericblock-modifier-limitations) | ✅ [*[4]](#genericblock-modifier-limitations) |                 ❌                 |
 | [$generichide](#generichide-modifier)   |               ✅                |                ✅                |                    ✅                     |               ✅               |                      ✅                       |                      ✅                       |                 ✅                 |
 | [$specifichide](#specifichide-modifier) |               ✅                |                ✅                |                    ✅                     |               ✅               |                      ❌                       |                      ❌                       |                 ❌                 |
 
@@ -1199,47 +1199,66 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 The list of the available modifier options:
 
-- `searchqueries` отключает опцию [**Скрывать поисковые запросы**](../../stealth-mode#searchqueries)
-- `donottrack` отключает опцию [**Просить сайты не отслеживать вас**](../../stealth-mode#donottrack)
-- `3p-cookie` отключает [**Самоуничтожение сторонних куки**](../../stealth-mode#3p-cookie)
-- `1p-cookie` отключает [**Самоуничтожение куки сайта**](../../stealth-mode#1p-cookie)
-- `3p-cache` отключает опцию [**Блокировать заголовки ETag и If-None-Match**](../../stealth-mode#3p-cache)
-- `3p-auth` отключает опцию [**Блокировать сторонний заголовок авторизации**](../../stealth-mode#3p-auth)
-- `webrtc` отключает опцию [**Блокировать WebRTC**](../../stealth-mode#webrtc)
-- `push` отключает опцию [**Блокировать Push API**](../../stealth-mode#push)
-- `location` отключает опцию [**Блокировать Location API**](../../stealth-mode#location)
-- `flash` отключает опцию [**Блокировать Flash**](../../stealth-mode#flash)
-- `java` отключает опцию [**Блокировать Java**](../../stealth-mode#java)
-- `referrer` отключает опцию [**Скрывать Referer от третьих лиц**](../../stealth-mode#miscellaneous)
-- `useragent` отключает опцию [**Скрывать User-Agent**](../../stealth-mode#useragent)
-- `ip` отключает опцию [**Скрывать IP-адрес**](../../stealth-mode#ip)
-- `xclientdata` отключает опцию [**Удалять заголовок X-Client-Data**](../../stealth-mode#xclientdata)
-- `dpi` отключает опцию [**Защищать от DPI**](../../stealth-mode#dpi)
+- `fingerprinting` disables [**Block fingerprinting**](../../stealth-mode#fingerprinting) option
+- `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
+- `donottrack` disables [**Ask websites not to track you**](../../stealth-mode#donottrack) option
+- `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
+- `1p-cookie` disables [**Self-destructing first-party cookies**](../../stealth-mode#1p-cookie) option
+- `3p-cache` disables [**Disable cache for third-party requests**](../../stealth-mode#3p-cache) option
+- `3p-auth` disables [**Block third-party Authorization header**](../../stealth-mode#3p-auth) option
+- `webrtc` disables [**Block WebRTC**](../../stealth-mode#webrtc) option
+- `push` disables [**Block Push API**](../../stealth-mode#push) option
+- `location` disables [**Block Location API**](../../stealth-mode#location) option
+- `flash` disables [**Block Flash**](../../stealth-mode#flash) option
+- `java` disables [**Block Java**](../../stealth-mode#java) option
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
+- `useragent` disables [**Hide your User-Agent**](../../stealth-mode#useragent) option
+- `ip` disables [**Hide your IP address**](../../stealth-mode#ip) option
+- `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../../stealth-mode#xclientdata) option
+- `dpi` disables [**Protect from DPI**](../../stealth-mode#dpi) option
 
 **Примеры**
 
 - `@@||example.com^$stealth` полностью отключает Защиту от трекинга для запросов к `example.com` и поддоменам, кроме блокировки куки и скрытия параметров отслеживания (см. ниже).
 - `@@||domain.com^$script,stealth,domain=example.com` отключает Защиту от трекинга только для script-запросов к `domain.com` и поддоменам на `example.com` и всех его поддоменах.
 - `@@||example.com^$stealth=3p-cookie|dpi` отключает блокировку сторонних куки-файлов и меры защиты от DPI для запросов к `example.com`.
+- `@@||example.com^$stealth=fingerprinting` disables fingerprinting protection for `example.com` (and subdomains). Other Tracking protection features keep working.
 
 :::note
 
-Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier), and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Tracking protection features for a given domain, add three separate exception rules:
+
+- `@@||example.org^$stealth`
+- `@@||example.org^$removeparam`
+- `@@||example.org^$cookie`
+
+These modifiers cannot be combined in one rule: `@@||example.org^$stealth,removeparam,cookie` will not work.
+
+:::
+
+##### `$stealth` modifier limitations {#stealth-modifier-limitations}
+
+:::caution Limitations
+
+- In [AdGuard for Chromium MV3][ext-mv3], `$stealth` rules affect only *Block fingerprinting*: `@@||example.com^$stealth` and `@@||example.com^$stealth=fingerprinting` disable it, and other options have no effect.
+- In AdGuard Browser Extension, *Block fingerprinting* is disabled by the allowlist and by rules of the form `@@||example.com^` with `$stealth`, `$stealth=fingerprinting`, or `$document`. The `fingerprinting` option may be combined with other options, and the rule may include `$important`. Rules with paths, wildcards, regular expressions, or other modifiers, such as `$domain` or `$third-party`, do not disable it.
+- For *Block fingerprinting*, a `$stealth` rule is checked against the address of each page and frame. `@@||example.com^$stealth=fingerprinting` disables *Block fingerprinting* on `example.com` and its subdomains, including `example.com` frames on other websites. Frames from other websites on `example.com` stay protected. The `@@||example.com^$document` rule and the allowlist disable *Block fingerprinting* on `example.com` pages, including frames from other websites, but not in `example.com` frames on other websites. In Firefox, some frames from other websites may stay protected, see [Tracking protection in AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting).
 
 :::
 
 :::caution Ограничения
 
-- Параметры модификатора должны быть написаны строчными буквами, т. е. `$stealth=DPI` будет отклонено.
-- Параметры модификатора не могут отрицаться, т.е. `$stealth=~3p-cookie` будет отклонён.
-- Браузерное расширение AdGuard поддерживает только опции `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` и `3p-cookie`.
+- Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
+- Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
+- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie`, `3p-cookie`, and `fingerprinting` options. AdGuard for Chromium MV3 supports only `fingerprinting`.
 
 :::
 
 :::info Совместимость
 
-- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers, except AdGuard for Chromium MV3. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
+- Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers. AdGuard for Chromium MV3 v5.6 or later supports `$stealth` rules with [limitations](#stealth-modifier-limitations). All other products will ignore the rules with `$stealth` modifier.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
+- The `fingerprinting` option is supported by AdGuard Browser Extension v5.6 or later. AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and earlier versions of AdGuard Browser Extension consider rules with this option invalid and ignore the whole rule, including its other options. In filter lists for several products, put `fingerprinting` in a separate rule: use `@@||example.com^$stealth=3p-cookie` and `@@||example.com^$stealth=fingerprinting` instead of `@@||example.com^$stealth=3p-cookie|fingerprinting`.
 - In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
@@ -1250,9 +1269,9 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 **Примеры**
 
-- `@@||example.com^$urlblock` — любые запросы, отправленные со страниц сайта `example.com` и всех его поддоменов, не будут блокироваться.
+- `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
 
-##### Ограничения модификатора `$urlblock` {#urlblock-modifier-limitations}
+##### `$urlblock` modifier limitations {#urlblock-modifier-limitations}
 
 :::caution Limitations
 
@@ -1295,9 +1314,9 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 **Примеры**
 
-- `@@||example.com^$genericblock` отключает базовые правила generic на любых страницах `example.com` и всех поддоменах.
+- `@@||example.com^$genericblock` disables generic basic rules on any pages at `example.com` and all subdomains.
 
-##### Ограничения модификатора `$genericblock` {#genericblock-modifier-limitations}
+##### `$genericblock` modifier limitations {#genericblock-modifier-limitations}
 
 :::caution Limitations
 
@@ -1317,7 +1336,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 **Примеры**
 
-- `@@||example.com^$generichide` отключает косметические правила generic на страницах сайта `example.com` и всех его поддоменах.
+- `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
 :::note
 
@@ -1331,7 +1350,7 @@ Disables all specific element hiding and CSS rules, but not general ones. Has an
 
 **Примеры**
 
-- `@@||example.org^$specifichide` отключает `example.org##.banner`, но не `##.banner`.
+- `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
 
 :::note
 
@@ -1387,7 +1406,7 @@ These modifiers are able to completely change the behavior of basic rules.
 - ✅ — полностью поддерживается
 - ✅ * — поддерживается, но надёжность может быть разной или могут возникнуть ограничения; ознакомьтесь с описанием модификатора для получения подробной информации
 - ❌ — не поддерживается
-- 👎 — устарел; всё ещё поддерживается, но в будущем будет удалён
+- 👎 — deprecated; still supported but will be removed in the future
 
 :::
 
@@ -1405,7 +1424,7 @@ This modifier cannot be used as an exception with the `@@` mark.
 
 :::
 
-##### Ограничения модификатора `$all` {#all-modifier-limitations}
+##### `$all` modifier limitations {#all-modifier-limitations}
 
 :::caution Limitations
 
@@ -1425,10 +1444,10 @@ The rules with the `$badfilter` modifier disable other basic rules to which they
 
 **Примеры**
 
-- `||example.com$badfilter` отключает `||example.com`
-- `||example.com$image,badfilter` отключает `||example.com$image`
-- `@@||example.com$badfilter` отключает `@@||example.com`
-- `||example.com$domain=domain.com,badfilter` отключает `||example.com$domain=domain.com`
+- `||example.com$badfilter` disables `||example.com`
+- `||example.com$image,badfilter` disables `||example.com$image`
+- `@@||example.com$badfilter` disables `@@||example.com`
+- `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
 
 Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfill the following conditions:
 
@@ -1439,14 +1458,14 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 **Примеры**
 
-- `/some$domain=example.com|example.org|example.io` отключено для `example.com` правилом `/some$domain=example.com,badfilter`
-- `/some$domain=example.com|example.org|example.io` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
-- `/some$domain=example.com|example.org` и `/some$domain=example.io` полностью отключены правилом `/some$domain=example.com|example.org|example.io,badfilter`
-- `/some$domain=example.com|example.org|example.io` полностью отключено правилом `/some$domain=example.*,badfilter`
-- `/some$domain=example.*` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
-- `/some$domain=example.com|example.org|example.io` НЕ отключено для `example.com` правилом `/some$domain=example.com|~example.org,badfilter`, поскольку значение модификатора `$domain` содержит отрицание домена
+- `/some$domain=example.com|example.org|example.io` is disabled for `example.com` by `/some$domain=example.com,badfilter`
+- `/some$domain=example.com|example.org|example.io` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+- `/some$domain=example.com|example.org` and `/some$domain=example.io` are disabled completely by `/some$domain=example.com|example.org|example.io,badfilter`
+- `/some$domain=example.com|example.org|example.io` is disabled completely by `/some$domain=example.*,badfilter`
+- `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
+- `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `$domain` modifier contains a negated domain
 
-##### Ограничения модификатора `$badfilter` {#badfilter-modifier-limitations}
+##### `$badfilter` modifier limitations {#badfilter-modifier-limitations}
 
 :::caution Limitations
 
@@ -1476,9 +1495,9 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 
 where:
 
-- **`name`** — опционально, строка или регулярное выражение для сопоставления с именем куки.
-- **`seconds`** — количество секунд, на которое сместится истечение срока действия куки.
-- **`strategy`** — строка для стратегии [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite), которая будет применена к куки.
+- **`name`** — optional, string or regular expression to match cookie name.
+- **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
+- **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to be applied to the cookie.
 
 For example,
 
@@ -1488,8 +1507,8 @@ For example,
 
 every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
 
-- Установит дату истечения срока хранения на текущее время плюс `3600` секунд
-- Позволяет куки использовать стратегию [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite).
+- Set its expiration date to current time plus `3600` seconds
+- Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) "lax" strategy.
 
 **Escaping special characters**
 
@@ -1497,19 +1516,19 @@ If regular expression `name` is used for matching, two characters must be escape
 
 **Примеры**
 
-- `||example.org^$cookie` блокирует **все** куки, установленные `example.org`; это эквивалентно установке `maxAge=0`
-- `$cookie=__cfduid` блокирует куки CloudFlare везде
-- `$cookie=/__utm[a-z]/` блокирует куки Google Analytics везде
-- `||facebook.com^$third-party,cookie=c_user` не позволяет Facebook отслеживать вас, даже если вы вошли в систему
+- `||example.org^$cookie` blocks **all** cookies set by `example.org`; this is an equivalent to setting `maxAge=0`
+- `$cookie=__cfduid` blocks CloudFlare cookie everywhere
+- `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
+- `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
 There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` — `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias — `$elemhide,jsinject,content,urlblock,extension`). Here's how it works:
 
-- `@@||example.org^$cookie` разблокирует все куки-файлы, установленные `example.org`
-- `@@||example.org^$urlblock` разблокирует все файлы куки, установленные `example.org`, и отключает блокировку всех запросов, отправленных с `example.org`
-- `@@||example.org^$cookie=concept` разблокирует один куки-файл с именем `concept`
-- `@@||example.org^$cookie=/^_ga_/` разблокирует все куки, соответствующие регулярному выражению
+- `@@||example.org^$cookie` unblocks all cookies set by `example.org`
+- `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
+- `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
+- `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-##### Ограничения модификатора `$cookie` {#cookie-modifier-limitations}
+##### `$cookie` modifier limitations {#cookie-modifier-limitations}
 
 :::caution Limitations
 
@@ -1553,17 +1572,17 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 
 **Примеры**
 
-- `||example.org^$csp=frame-src 'none'` запрещает все фреймы на example.org и его поддоменах.
-- `@@||example.org/page/*$csp=frame-src 'none'` отключает все правила с модификатором `$csp`, в точности соответствующим `frame-src 'none'` на всех страницах, подходящих под паттерн правила. Например, правило выше.
-- `@@||example.org/page/*$csp` отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
-- `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` отключает инлайн-скрипты на всех страницах, подходящих под паттерн правила.
-- `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
+- `||example.org^$csp=frame-src 'none'` blocks all frames on example.org and its subdomains.
+- `@@||example.org/page/*$csp=frame-src 'none'` disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+- `@@||example.org/page/*$csp` disables all the `$csp` rules on all the pages matching the rule pattern.
+- `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
+- `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
 
 :::caution Ограничения
 
-- Некоторые символы запрещены в значении `$csp`: `,`, `$`.
-- Правила `$csp` поддерживают три типа модификаторов: `$domain`, `$important` и `$subdocument`.
-- Правила с директивами `report-*` считаются некорректными.
+- There are a few characters forbidden in the `$csp` value: `,`, `$`.
+- `$csp` rules support three types of modifiers: `$domain`, `$important`, `$subdocument`.
+- Rules with `report-*` directives are considered invalid.
 
 :::
 
@@ -1585,10 +1604,10 @@ The word "segment" in this document means either a "Media Segment" or a "playlis
 
 **Syntax**
 
-- `||example.org^$hls=urlpattern` удаляет сегменты, URL которых соответствует паттерну `urlpattern`. Паттерн работает так же, как в базовых URL-правилах, однако символы `/`, `$` и `,` в составе `urlpattern` необходимо экранировать с помощью `\`.
-- `||example.org^$hls=/regexp/options` удаляет сегменты, в которых URL-адрес или один из тегов (для определённых параметров, если они есть) соответствуют регулярному выражению `regexp`. Доступные значения `options`:
-    - `t` — вместо URL-адреса сегмента проверять каждый тег сегмента на соответствие регулярному выражению. Сегмент с соответствующим тегом будет удалён;
-    - `i` — сделать регулярное выражение нечувствительным к регистру символов.
+- `||example.org^$hls=urlpattern` removes segments whose URL matches the URL pattern `urlpattern`. The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
+- `||example.org^$hls=/regexp/options` removes segments where the URL or one of the tags (for certain options, if present) is matched by the regular expression `regexp`. Available `options` are:
+    - `t` — instead of testing the segment's URL, test each of the segment's tags against the regular expression. A segment with a matching tag is removed;
+    - `i` — make the regular expression case-insensitive.
 
 The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
 
@@ -1596,8 +1615,8 @@ The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
 
 Basic URL exceptions shall not disable rules with the `$hls` modifier. They can be disabled as described below:
 
-- `@@||example.org^$hls` отключает все правила `$hls` для ответов от URL-адресов, соответствующих `||example.org^ URL`.
-- `@@||example.org^$hls=text` отключает все правила `$hls`, у которых значение модификатора `$hls` равно `text`, для ответов с URL-адресов, соответствующих `||example.org^ URL`.
+- `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 :::tip
 
@@ -1613,9 +1632,9 @@ When multiple `$hls` rules match the same request, their effect is cumulative.
 
 **Примеры**
 
-- `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` удаляет все сегменты с соответствующим URL.
-- `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` делает почти то же самое, но с помощью регулярного выражения вместо URL-паттерна.
-- `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` удаляет все сегменты с соответствующим тегом.
+- `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` removes all segments with the matching URL.
+- `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` achieves more or less the same with a regular expression instead of a URL pattern.
+- `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` removes all segments which have the matching tag.
 
 **Anatomy of an HLS playlist**
 
@@ -1692,10 +1711,10 @@ preroll.ts
 
 :::caution Ограничения
 
-- Правила с модификатором `$hls` могут быть использованы [**только в доверенных фильтрах**](#trusted-filters).
-- Правила `$hls` совместимы только с модификаторами `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
-- Правила `$hls` применимы только к HLS-плейлистам, т. е. к тексту в кодировке UTF-8, начинающемуся со строки `#EXTM3U`. Никакие другие ответы не будут модифицированы этими правилами.
-- Правила с `$hls` не применяются к ответам размером больше 10 МБ.
+- Rules with the `$hls` modifier can only be used [**in trusted filters**](#trusted-filters).
+- `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
+- `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
+- `$hls` rules do not apply if the size of the original response is more than 10 MB.
 
 :::
 
@@ -1729,7 +1748,7 @@ In AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, `$jso
 
 **Syntax**
 
-- `||example.org^$jsonprune=expression` удаляет из ответа элементы, соответствующие изменённому JSONPath-выражению `expression`.
+- `||example.org^$jsonprune=expression` removes items that match the modified JSONPath expression `expression` from the response.
 
 Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
 
@@ -1755,8 +1774,8 @@ Keep in mind, though, that all JSONPath implementations have unique features/qui
 
 Basic URL exceptions shall not disable rules with the `$jsonprune` modifier. They can be disabled as described below:
 
-- `@@||example.org^$jsonprune` отключает все правила `$jsonprune` для ответов от URL-адресов, соответствующих `||example.org^`.
-- `@@||example.org^$jsonprune=text` отключает все правила `$jsonprune`, у которых значение модификатора `$jsonprune` равно `text`, для ответов с URL-адресов, соответствующих `||example.org^ URL`.
+- `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$jsonprune=text` disables all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
@@ -1768,7 +1787,7 @@ When multiple `$jsonprune` rules match the same request, they are sorted in lexi
 
 **Примеры**
 
-- `||example.org^$jsonprune=\$..[one\, "two three"]` удаляет все вхождения ключей one и two three в любом месте JSON-документа.
+- `||example.org^$jsonprune=\$..[one\, "two three"]` removes all occurrences of the keys "one" and "two three" anywhere in the JSON document.
 
 <details>
 <summary>Input</summary>
@@ -1798,7 +1817,7 @@ When multiple `$jsonprune` rules match the same request, they are sorted in lexi
 
 </details>
 
-- `||example.org^$jsonprune=\$.a[?(has ad_origin)]` удаляет всех прямых потомков `a`, которые обладают свойством `ad_origin`.
+- `||example.org^$jsonprune=\$.a[?(has ad_origin)]` removes all children of `a` that have an `ad_origin` key.
 
 <details>
 <summary>Input</summary>
@@ -1834,7 +1853,7 @@ When multiple `$jsonprune` rules match the same request, they are sorted in lexi
 
 </details>
 
-- `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` удаляет все элементы на уровне вложенности 3, обладающие свойством Some key, равным Some value.
+- `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` removes all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
 
 <details>
 <summary>Input</summary>
@@ -1864,7 +1883,7 @@ When multiple `$jsonprune` rules match the same request, they are sorted in lexi
 
 In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPath expressions may be used as keys in filter expressions.
 
-- `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` удаляет всех прямых потомков `elems`, которые обладают свойством, выбираемым JSONPath-выражением `$.a.b.c`.
+- `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
 
 <details>
 <summary>Input</summary>
@@ -1902,7 +1921,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 
 </details>
 
-- `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` удаляет всех прямых потомков `elems`, которые обладают свойством, выбираемым выражением JSONPath `$.a.b.c` со значением, равным `"abc"`.
+- `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
 
 <details>
 <summary>Input</summary>
@@ -1939,8 +1958,8 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPa
 
 :::caution Ограничения
 
-- Правила `$jsonprune` совместимы только с этими модификаторами: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
-- Правила с `$jsonprune` не применяются к ответам размером больше 10 МБ.
+- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$jsonprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
 
@@ -1956,7 +1975,7 @@ Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, AdGua
 
 **Syntax**
 
-- `||example.org^$xmlprune=expression` удаляет из ответа элементы, соответствующие XPath-выражению `expression`.
+- `||example.org^$xmlprune=expression` removes items that match the XPath expression `expression` from the response.
 
 Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
 
@@ -1964,8 +1983,8 @@ Due to the way rule parsing works, the characters `$` and `,` must be escaped wi
 
 Basic URL exceptions shall not disable rules with the `$xmlprune` modifier. They can be disabled as described below:
 
-- `@@||example.org^$xmlprune` отключает все правила `$xmlprune` для ответов от URL-адресов, соответствующих `||example.org^`.
-- `@@||example.org^$xmlprune=text` отключает все правила `$xmlprune`, у которых значение модификатора `$xmlprune` равно `text`, для ответов с URL-адресов, соответствующих `||example.org^ URL`.
+- `@@||example.org^$xmlprune` disables all `$xmlprune` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$xmlprune=text` disables all `$xmlprune` rules with the value of the `$xmlprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$xmlprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
@@ -1977,7 +1996,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 **Примеры**
 
-- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` удаляет книги с нечётными номерами из книжного магазина.
+- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` removes odd-numbered books from the bookstore.
 
 <details>
 <summary>Input</summary>
@@ -2055,7 +2074,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 </details>
 
-- `||example.org^$xmlprune=/bookstore/book[year = 2003]` удаляет книги за 2003 год из книжного магазина.
+- `||example.org^$xmlprune=/bookstore/book[year = 2003]` removes books from the year 2003 from the bookstore.
 
 <details>
 <summary>Input</summary>
@@ -2133,7 +2152,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 </details>
 
-- `||example.org^$xmlprune=//*/@*` удаляет все атрибуты из всех элементов.
+- `||example.org^$xmlprune=//*/@*` removes all attributes from all elements.
 
 <details>
 <summary>Input</summary>
@@ -2177,8 +2196,8 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 :::caution Ограничения
 
-- Правила `$xmlprune` совместимы только с этими модификаторами: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
-- Правила с `$xmlprune` не применяются к ответам размером больше 10 МБ.
+- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
 
@@ -2207,12 +2226,12 @@ The `$network` modifier can only be used in rules together with the `$app` and `
 
 **Примеры**
 
-- `174.129.166.49:3478^$network` блокирует доступ к `174.129.166.49:3478` (но не к `174.129.166.49:34788`).
-- `[2001:4860:4860::8888]:443^$network` блокирует доступ к `[2001:4860:4860::8888]:443`.
-- `174.129.166.49$network` блокирует доступ к `174.129.166.49:*`.
-- `@@174.129.166.49$network` заставляет AdGuard направлять трафик в конечную точку. Никакие другие правила применяться не будут.
-- `/.+:3[0-9]{4}/$network` блокирует доступ к диапазанону портов 30000–39999.
-- `/8.8.8.(:?8|4)/$network` блокирует доступ к `8.8.8.8` и к `8.8.8.4`.
+- `174.129.166.49:3478^$network` blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
+- `[2001:4860:4860::8888]:443^$network` blocks access to `[2001:4860:4860::8888]:443`.
+- `174.129.166.49$network` blocks access to `174.129.166.49:*`.
+- `@@174.129.166.49$network` makes AdGuard bypass data to the endpoint. No other rules will be applied.
+- `/.+:3[0-9]{4}/$network` blocks access to any port from 30000 to 39999.
+- `/8.8.8.(:?8|4)/$network` blocks access to both `8.8.8.8` and `8.8.8.4`.
 
 :::info Совместимость
 
@@ -2245,12 +2264,12 @@ Available directives are listed in the [Permissions Policy](https://developer.mo
 
 **Примеры**
 
-- `||example.org^$permissions=autoplay=()` запрещает автовоспроизведение медиафайлов, запрашиваемых через интерфейс `HTMLMediaElement` на сайте `example.org`.
-- `@@||example.org/page/*$permissions=autoplay=()` отключает все правила с модификатором `$permissions`, в точности соответствующим `autoplay=()` на всех страницах, подходящих под паттерн правила. Например, правило выше. Важно отметить, что правило исключения действует только в случае **точного совпадения значений**. Например, если вы хотите отключить правило `$permissions=a=()\,b=()`, вам нужно правило исключения `@@$permissions=a=()\,b=()`, а **не** `@@$permissions=b=()\,a=()` **или** `@@$permissions=b=()`, потому что `b=()\,a=()` или `b=()` не совпадает с `a=()\,b=()`.
-- `@@||example.org/page/*$permissions` отключает все `$permissions`-правила на всех страницах, подходящих под паттерн правила.
-- `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` запрещает использование Storage Access API для запроса доступа к неразмеченным куки, а также использование устройств видеоввода на сайтах `example.org` и `example.com`.
-- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` делает то же самое — вместо экранированной запятой для разделения функций можно использовать `|`.
-- `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$permission`-правила на всех страницах, подходящих под паттерн правила.
+- `||example.org^$permissions=autoplay=()` disallows autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
+- `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above. It is important to note that the exception rule only takes effect in the case of an **exact value match**. For example, if you want to disable the rule  `$permissions=a=()\,b=()`, you need exception rule `@@$permissions=a=()\,b=()`, and **not** `@@$permissions=b=()\,a=()`, **nor** `@@$permissions=b=()` because `b=()\,a=()` or `b=()` does not match with `a=()\,b=()`.
+- `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
+- `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
+- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` does the same — a `|` can be used to separate the features instead of an escaped comma.
+- `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
 :::note
 
@@ -2264,7 +2283,7 @@ If there are multiple `$permissions` rules that match the same request, multiple
 
 :::
 
-##### Ограничения модификатора `$permissions` {#permissions-modifier-limitations}
+##### `$permissions` modifier limitations {#permissions-modifier-limitations}
 
 :::caution Limitations
 
@@ -2299,16 +2318,16 @@ AdGuard uses the same filtering rule syntax as uBlock Origin. Also, it is compat
 
 The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-##### Отключение правил `$redirect`
+##### Disabling `$redirect` rules
 
-- `||example.org/script.js$script,redirect=noopjs` — это правило перенаправляет все запросы к `example.org/script.js` на ресурс с именем `noopjs`.
-- `||example.org/test.mp4$media,redirect=noopmp4-1s` — это правило перенаправляет все запросы к `example.org/script.js` на ресурс с именем `noopmp4-1s`.
-- `@@||example.org^$redirect` отключит все правила `$redirect` для URL-адресов, соответствующих `||example.org^`.
-- `@@||example.org^$redirect=nooptext` отключит все правила с `$redirect=nooptext` для любого запроса, который соответствует `||example.org^`.
+- `||example.org/script.js$script,redirect=noopjs` — this rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
+- `||example.org/test.mp4$media,redirect=noopmp4-1s` — this rule redirects all requests to `example.org/test.mp4` to the resource named `noopmp4-1s`.
+- `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
+- `@@||example.org^$redirect=nooptext` will disable all rules with `$redirect=nooptext` for any request that matches `||example.org^`.
 
 More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
-##### Приоритеты правил `$redirect` {#redirect-rule-priorities}
+##### Priorities of `$redirect` rules {#redirect-rule-priorities}
 
 `$redirect` rules have higher priority than regular basic blocking rules. This means that if there is a basic blocking rule, the `$redirect` rule will override it. Allowlist rules with `@@` mark have higher priority than `$redirect` rules. If a basic rule with the `$important` modifier and the `$redirect` rule matches the same URL, the latter is overridden unless it's also marked as `$important`.
 
@@ -2318,7 +2337,7 @@ More information on redirects and their usage is available [on GitHub](https://g
 
 Go to [rules priorities](#rule-priorities) for more details.
 
-##### Ограничения модификатора `$redirect` {#redirect-modifier-limitations}
+##### `$redirect` modifier limitations {#redirect-modifier-limitations}
 
 :::caution Limitations
 
@@ -2329,7 +2348,7 @@ In [AdGuard for Chromium MV3][ext-mv3], allowlist rules with `$redirect` are not
 :::info Совместимость
 
 - Rules with `$redirect` modifier are not supported by [AdGuard Content Blocker][and-cb], [AdGuard for iOS][ios-app], and [AdGuard for Safari][ext-saf] .
-- `$redirect` в uBlock Origin поддерживает указание приоритета, например, `$redirect=noopjs:42`. AdGuard не поддерживает его и вместо этого просто отбрасывает приоритетный постфикс.
+- `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
 
 :::
 
@@ -2366,9 +2385,9 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 
 **Примеры**
 
-- `||example.com^$referrerpolicy=unsafe-url` переопределяет политику referrer для `example.com` с `unsafe-url`.
-- `@@||example.com^$referrerpolicy=unsafe-url` отключает предыдущее правило.
-- `@@||example.com/abcd.html^$referrerpolicy` отключает все правила `$referrerpolicy` на `example.com/abcd.html`.
+- `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
+- `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
+- `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
 :::info Совместимость
 
@@ -2386,8 +2405,8 @@ Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exis
 
 **Basic syntax**
 
-- `||example.org^$removeheader=header-name` убирает заголовок **ответа** с названием `header-name`
-- `||example.org^$removeheader=request:header-name` убирает заголовок **запроса** с названием `header-name`
+- `||example.org^$removeheader=header-name` removes a **response** header called `header-name`
+- `||example.org^$removeheader=request:header-name` removes a **request** header called `header-name`
 
 `$removeheader` is case-insensitive, but we suggest always using lower case.
 
@@ -2397,8 +2416,8 @@ This type of rules works pretty much the same way it works with `$csp` and `$red
 
 Use `@@` to negate `$removeheader`:
 
-- `@@||example.org^$removeheader` отменяет **все** правила `$removeheader` для URL-адресов, соответствующих `||example.org^`.
-- `@@||example.org^$removeheader=header` отменяет все правила с `$removeheader=header` для любого запроса, соответствующего `||example.org^`.
+- `@@||example.org^$removeheader` negates **all** `$removeheader` rules for URLs that match `||example.org^`.
+- `@@||example.org^$removeheader=header` negates the rule with `$removeheader=header` for any request matching `||example.org^`.
 
 `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
 
@@ -2410,9 +2429,9 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 **Примеры**
 
-- `||example.org^$removeheader=refresh` убирает заголовок `Refresh` из всех HTTP-ответов, возвращённых `example.org` и его поддоменами.
-- `||example.org^$removeheader=request:x-client-data` убирает заголовок `X-Client-Data` из всех HTTP-запросов.
-- Данный блок правил убирает заголовки `Refresh` и `Location` из всех HTTP-ответов, возвращённых `example.org`, кроме запросов к `example.org/path/*`, для которого заголовки не будут убраны:
+- `||example.org^$removeheader=refresh` removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
+- `||example.org^$removeheader=request:x-client-data` removes `X-Client-Data` header from all HTTP requests.
+- Next block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
 
     ```adblock
     ||example.org^$removeheader=refresh
@@ -2420,14 +2439,14 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     @@||example.org/path/$removeheader
     ```
 
-##### Ограничения модификатора `$removeheader` {#removeheader-modifier-limitations}
+##### `$removeheader` modifier limitations {#removeheader-modifier-limitations}
 
 :::caution Limitations
 
 [AdGuard for Chromium MV3][ext-mv3] has some limitations:
 
-- Инверсия и правила белого списка не поддерживаются.
-- Группа похожих правил `$removeheader` будет объединена в одно декларативное правило. Например:
+- Negation and allowlist rules are not supported.
+- Group of similar `$removeheader` rules will be combined into one declarative rule. Например:
 
     ```bash
     ||testcases.adguard.com$xmlhttprequest,removeheader=p1case1
@@ -2572,7 +2591,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 You can also use regular expressions to match query parameters and/or their values:
 
-- `$removeparam=/regexp/[options]` убирает из URL-адреса любого запроса все параметры, соответствующие заданному регулярному выражению `regexp`. В отличие от базового синтаксиса, это означает *«‎убрать параметры запроса, нормализованные к строке `name=value`, которая соответствует `регулярному выражению`»*. `[options]` — это список опций регулярного выражения. На данный момент поддерживается только вариант `i`, который делает совпадение нечувствительным к регистру.
+- `$removeparam=/regexp/[options]` — removes query parameters that matches the `regexp` regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the `regexp` regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
 **Escaping special characters**
 
@@ -2598,14 +2617,14 @@ Regexp-type rules apply to both the name and value of the parameter. To minimize
 
 Specify naked `$removeparam` to remove all query parameters:
 
-- `||example.org^$removeparam` удаляет все параметры запроса из URL-адресов, соответствующих правилу `||example.org^`.
+- `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
 
 **Inversion**
 
 Use `~` to apply inversion:
 
-- `$removeparam=~param` удаляет все параметры запроса, кроме `param`.
-- `$removeparam=~/regexp/` удаляет все параметры запроса, которые не совпадают с заданным регулярным выражением `regexp`.
+- `$removeparam=~param` — removes all query parameters with the name different from `param`.
+- `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
 
 :::note
 
@@ -2619,9 +2638,9 @@ This sort of rules work pretty much the same way it works with [`$csp`](#csp-mod
 
 Use `@@` to negate `$removeparam`:
 
-- `@@||example.org^$removeparam` не даёт применять правила с `$removeparam` для URL, соответствующих `||example.org^`.
-- `@@||example.org^$removeparam=param` не даёт применять правила с `$removeparam=param` для запросов к `||example.org^`.
-- `@@||example.org^$removeparam=/regexp/` не даёт применять правила с `$removeparam=/regexp/` для запросов к `||example.org^`.
+- `@@||example.org^$removeparam` negates all `$removeparam` rules for URLs that match `||example.org^`.
+- `@@||example.org^$removeparam=param` negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+- `@@||example.org^$removeparam=/regexp/` negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
 
 **Multiple rules matching a single request**
 
@@ -2637,11 +2656,11 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `https://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `https://google.com/page`, but `https://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
 
-- `$removeparam=utm_source` удаляет параметр `utm_source` из всех запросов.
+- `$removeparam=utm_source` removes `utm_source` query parameter from all requests.
 
 - `$removeparam=/utm_.*/` removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `https://example.com/page?utm_source=test` will be transformed to `https://example.com/page`.
 
-- `$removeparam=/^utm_source=campaign$/` удаляет параметр `utm_source` со значением `campaign`. Не затрагивает другие параметры `utm_source`.
+- `$removeparam=/^utm_source=campaign$/` removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
 
 **Negating one `$removeparam` rule and replacing it with a different rule**
 
@@ -2665,13 +2684,13 @@ With these rules, specified UTM parameters will be removed from any request save
 
 `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-##### Ограничения модификатора `$removeparam` {#removeparam-modifier-limitations}
+##### `$removeparam` modifier limitations {#removeparam-modifier-limitations}
 
 :::caution Limitations
 
 [AdGuard for Chromium MV3][ext-mv3] has some limitations:
 
-- Регулярные выражения, отрицание и правила белого списка не поддерживаются.
+- Regular expressions, negation and allowlist rules are not supported.
 - Each `$removeparam` rule with a named parameter gets its own declarative rule with a param-aware `urlFilter` (e.g. `^utm_source=`). Chrome DNR applies a redirect only once per navigation, so without this, only the highest-priority rule would fire and the rest would be skipped. The param-aware `urlFilter` makes each rule fire only when its target parameter is present, forming a redirect chain — one parameter stripped per hop — until all are removed. Chrome allows up to 20 hops per navigation, which is enough for real-world tracking URLs. These hops are invisible to users. Пример:
 
     ```bash
@@ -2797,13 +2816,13 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 You will need some knowledge of regular expressions to use `$replace` modifier.
 
-**Функции**
+**Features**
 
-- Правила с `$replace` применяются к любому текстовому ответу, но не применяются к binary (`media`, `image`, `object` и т. д.).
-- Правила с `$replace` не применяются к ответам размером больше 10 МБ.
-- Правила с `$replace` обладают более высоким приоритетом, чем другие базовые правила, **включая** правила исключения. Если запрос соответствует двум различным правилам, одно из которых имеет модификатор `$replace`, применится именно это правило.
-- Правила исключений уровня document с модификаторами `$content` или `$document` отменяют срабатывание правил `$replace`, даже если запрос им соответствует.
-- Прочие правила исключений уровня document (с модификаторами `$generichide`, `$elemhide` или `$jsinject`) применяются вместе с правилами `$replace`. Это означает, что вы можете изменять содержимое страницы при помощи правила `$replace` и отключить косметические правила там же.
+- `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB.
+- `$replace` rules have a higher priority than other basic rules, **including** exception rules. So if a request matches two different rules, one of which has the `$replace` modifier, this rule will be applied.
+- Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
+- Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
 
 `$replace` value can be empty in the case of exception rules. See examples section for further information.
 
@@ -2819,9 +2838,9 @@ In general, `$replace` syntax is similar to replacement with regular expressions
 replace = "/" regexp "/" replacement "/" modifiers
 ```
 
-- **`regexp`** — регулярное выражение.
-- **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
-- **`modifiers `** — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, `s` — режим одной строки.
+- **`regexp`** — a regular expression.
+- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
+- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
 In the `$replace` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
 
@@ -2833,9 +2852,9 @@ In the `$replace` value, two characters must be escaped: comma `,` and dollar si
 
 There are three parts in this rule:
 
-- `regexp` (регулярное выражение) — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
-- `replacement` (замена) — `\$1<\/VAST>` где `$` экранируется;
-- `modifiers` (флаги регулярных выражений) — `i` для поиска без учёта регистра.
+- `regexp` — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
+- `replacement` — `\$1<\/VAST>` where `$` is escaped;
+- `modifiers` — `i` for insensitive search.
 
 You can see how this rule works here: https://regexr.com/3cesk
 
@@ -2845,18 +2864,18 @@ You can see how this rule works here: https://regexr.com/3cesk
 2. `||example.org^$replace=/Z/Y/`
 3. `@@||example.org/page/*$replace=/Z/Y/`
 
-- Правила 1 и 2 будут применены ко всем запросам, отправленным к `example.org`.
-- Правило 2 отключено для запросов, соответствующих `||example.org/page/`, **но правило 1 при этом всё равно работает!**
+- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
 **Disabling `$replace` rules**
 
-- `@@||example.org^$replace` отключит все правила `$replace`, соответствующие `||example.org^`.
-- `@@||example.org^$document` или `@@||example.org^$content` отключит все правила `$replace`, **исходящие** со страниц домена `example.org`, **включая саму эту страницу**.
+- `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
+- `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
 :::caution Ограничения
 
-- Правила с модификатором `$replace` могут использоваться [**только в доверенных фильтрах**](#trusted-filters).
-- Правила с `$replace` не применяются к ответам размером больше 10 МБ. Для Браузерного расширения AdGuard это ограничение действует начиная с версии 5.2.
+- Rules with the `$replace` modifier can only be used [**in trusted filters**](#trusted-filters).
+- `$replace` rules do not apply if the size of the original response is more than 10 MB. For AdGuard Browser Extension, this limit applies starting from v5.2 or later.
 
 :::
 
@@ -2870,11 +2889,11 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, AdGuard for
 
 The `$urltransform` rules allow you to modify the request URL by applying a series of transformations.
 
-**Функции**
+**Features**
 
-- Правила `$urltransform` обычно применяются только к частям URL-адреса, относящимся к пути и запросу, одно исключение см. ниже.
-- `$urltransform` не будет применяться, если исходный URL-адрес заблокирован другими правилами.
-- `$urltransform` будет применяться перед правилами `$removeparam`.
+- `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
+- `$urltransform` will not be applied if the original URL is blocked by other rules.
+- `$urltransform` will be applied before `$removeparam` rules.
 
 The `$urltransform` value can be empty for exception rules.
 
@@ -2895,10 +2914,10 @@ decode = "b64" | "pct"
 ```
 
 - **`substitute`** is similar to replacement with regular expressions [in Perl](https://perldoc.perl.org/perlrequick.html#Search-and-replace).
-    - **`regexp`** — регулярное выражение.
+    - **`regexp`** — a regular expression.
     - **`replacement`** — a string that replaces whatever is matched by `regexp`. `$1`, `$2`, etc. in the replacement string are replaced with the contents of the corresponding capture group.
     - **`modifiers`** — regular expression flags, e.g., `i` for case-insensitive search.
-- **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
+- **`b64`** — decodes a [Base64-encoded](https://datatracker.ietf.org/doc/html/rfc4648) string, both the default and the URL-safe alphabets are supported.
 - **`pct`** — decodes a [percent-encoded](https://datatracker.ietf.org/doc/html/rfc3986#section-2.1) string.
 
 In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
@@ -2928,8 +2947,8 @@ As stated above, normally `$urltransform` rules are only allowed to change the p
 There are three parts in this rule:
 
 - `regexp` — `(pref\/).*\/(suf)`;
-- `replacement` — `\$1\$2`, где `$` экранируется;
-- `modifiers` (флаги регулярных выражений) — `i` для поиска без учёта регистра.
+- `replacement` — `\$1\$2` where `$` is escaped;
+- `modifiers` — `i` for insensitive search.
 
 **Multiple `$urltransform` rules**
 
@@ -2937,8 +2956,8 @@ There are three parts in this rule:
 2. `||example.org^$urltransform=/Z/Y/`
 3. `@@||example.org/page/*$urltransform=/Z/Y/`
 
-- Правила 1 и 2 будут применены ко всем запросам, отправленным к `example.org`.
-- Правило 2 отключено для запросов, соответствующих `||example.org/page/`, **но правило 1 при этом всё равно работает!**
+- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
 **Re-matching rules after transforming the URL**
 
@@ -2955,8 +2974,8 @@ the request to `https://example.com/firstpath` will be blocked.
 
 **Disabling `$urltransform` rules**
 
-- `@@||example.org^$urltransform` отключит все правила с `$urltransform`, где есть `||example.org^`.
-- `@@||example.org^$urltransform=/Z/Y/` отключит правило с `$urltransform=/Z/Y/` для любого запроса, соответствующего `||example.org^`.
+- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
 
 `$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
@@ -3093,7 +3112,7 @@ Usually, blocked requests look like a server error to browser. If you use `$empt
 
 **Примеры**
 
-- `||example.org^$empty` возвращает пустой ответ для всех запросов к домену `example.org` и всех его поддоменов.
+- `||example.org^$empty` returns an empty response to all requests to `example.org` and all subdomains.
 
 :::info Совместимость
 
@@ -3113,7 +3132,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 **Примеры**
 
-- `||example.com/videos/$mp4` блокирует загрузку видео с адресов `||example.com/videos/*` и заменяет ответ на видео-заглушку.
+- `||example.com/videos/$mp4` blocks all video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
 
 :::info Совместимость
 
@@ -3147,8 +3166,8 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Совместимость
 
-- The concept of priority has been introduced in [TSUrlFilter][] v2.1.0 and [CoreLibs][] v1.13. До этого в AdGuard не было специального алгоритма вычисления приоритетов, и обработка конфликтов могла отличаться в зависимости от продукта и версии AdGuard.
-- AdGuard для iOS, Safari и AdGuard Content Blocker зависят от реализации браузера и не могут следовать указанным здесь правилам.
+- The concept of priority has been introduced in [TSUrlFilter][] v2.1.0 and [CoreLibs][] v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
+- AdGuard for iOS, Safari, and AdGuard Content Blocker rely on the browsers implementation and they cannot follow the rules specified here.
 
 :::
 
@@ -3162,16 +3181,16 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 <!-- Please keep them sorted -->
 
-- [`$app`](#app-modifier) с исключаемыми приложениями с использованием `~`,
+- [`$app`](#app-modifier) with negated applications using `~`,
 - [`$denyallow`](#denyallow-modifier),
-- [`$domain`](#domain-modifier) с исключаемыми доменами с использованием `~`,
+- [`$domain`](#domain-modifier) with negated domains using `~`,
 - [`$match-case`](#match-case-modifier),
-- [`$method`](#method-modifier) с исключаемыми методами с использованием `~`,
+- [`$method`](#method-modifier) with negated methods using `~`,
 - [`$strict-first-party`](#strict-first-party-modifier),
 - [`$strict-third-party`](#strict-third-party-modifier),
 - [`$third-party`](#third-party-modifier),
 - [`$to`](#to-modifier),
-- ограниченные модификаторы [сontent-type](#content-type-modifiers) с `~`.
+- restricted [content-types](#content-type-modifiers) with `~`.
 
 When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
@@ -3360,8 +3379,8 @@ Element hiding rules may operate differently [depending on the platform](#cosmet
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-- **`selector`** — [CSS селектор](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), определяет элементы, которые нужно скрыть.
-- **`domains`** — доменное ограничение для правила.
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements to be hidden.
+- **`domains`** — domain restriction for the rule.
 
 If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
 
@@ -3379,9 +3398,9 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 
 **Примеры**
 
-- `example.com##div.textad` скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
-- `example.com,example.org###adblock` скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
-- `~example.com##.textad` скроет элемент с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменов.
+- `example.com##div.textad` — hides a `div` with the class `textad` at `example.com` and all subdomains.
+- `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
+- `~example.com##.textad` — hides an element with the class `textad` at all domains, except `example.com` and its subdomains.
 
 **Ограничения**
 
@@ -3428,9 +3447,9 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-- **`selector`** — [CSS-селектор](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), определяющий элементы, к которым мы хотим применить стиль.
-- **`domains`** — ограничение на домены, на страницах которых будет применено правило. Строится по тем же правилам, что и в случае [правил скрытия элементов](#cosmetic-elemhide-rules).
-- **`style`** — CSS-стиль, который мы хотим применить к выбранным элементам.
+- **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
+- **`style`** — CSS style, that we want to apply to selected elements.
 
 **Примеры**
 
@@ -3495,17 +3514,19 @@ example.org#@#body{remove:true;}
 ### Расширенные CSS-селекторы {#extended-css-selectors}
 
 - [Ограничения](#extended-css-limitations)
-- [Псевдокласс `:has()`](#extended-css-has)
-- [Псевдокласс `:contains()`](#extended-css-contains)
+- [Pseudo-class `:has()`](#extended-css-has)
+- [Pseudo-class `:contains()`](#extended-css-contains)
 - [Псевдокласс `:matches-css()`](#extended-css-matches-css)
-- [Псевдокласс `:matches-attr()`](#extended-css-matches-attr)
-- [Псевдокласс `:matches-property()`](#extended-css-property)
-- [Псевдокласс `:xpath()`](#extended-css-xpath)
-- [Псевдокласс `:nth-ancestor()`](#extended-css-nth-ancestor)
-- [Псевдокласс `:upward()`](#extended-css-upward)
-- [Псевдокласс `:remove()` и псевдосвойство `remove`](#remove-pseudos)
-- [Псевдокласс `:is()`](#extended-css-is)
-- [Псевдокласс `:not()`](#extended-css-not)
+- [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
+- [Pseudo-class `:matches-property()`](#extended-css-property)
+- [Pseudo-class `:xpath()`](#extended-css-xpath)
+- [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
+- [Pseudo-class `:upward()`](#extended-css-upward)
+- [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
+- [Pseudo-class `:remove-attr()`](#extended-css-remove-attr)
+- [Pseudo-class `:remove-class()`](#extended-css-remove-class)
+- [Pseudo-class `:is()`](#extended-css-is)
+- [Pseudo-class `:not()`](#extended-css-not)
 - [Pseudo-class `:empty-trimmed`](#extended-css-empty-trimmed)
 - [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
@@ -3529,17 +3550,17 @@ Regardless of the CSS pseudo-classes you are using in the rule, you can use spec
 
 The syntax for extended CSS rules:
 
-- `#?#` — для скрытия элемента, `#@?#` — для исключений
-- `#$?#` — для CSS-правил, `#@$?#` — для исключений
+- `#?#` — for element hiding, `#@?#` — for exceptions
+- `#$?#` — for CSS rules, `#@$?#` — for exceptions
 
 We **strongly recommend** using these markers any time when you use an extended CSS selector.
 
 **Примеры**
 
-- `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — это правило блокирует все `div` элементы, содержащие дочерний узел, который имеет связь с атрибутами `[target="_blank"][rel="nofollow"]`. При этом правило будет работать только для домена `example.org` и всех его поддоменов.
-- `example.com#$?#h3:contains(cookies) { display: none!important; }` — это правило устанавливает стиль `display: none!important` для всех элементов `h3`, которые содержат слово `cookies`. При этом правило будет работать только для домена `example.com` и всех его поддоменов.
-- `example.net#?#.banner:matches-css(width: 360px)` — это правило блокирует все элементы `.banner`, которые содержат стиль `width: 360px`. При этом правило будет работать только для домена `example.net` и всех его поддоменов.
-- `example.net#@?#.banner:matches-css(width: 360px)` — это правило отключает действие предыдущего правила.
+- `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule blocks all `div` elements containing a child node that has a link with the attributes `[target="_blank"][rel="nofollow"]`. The rule applies only to `example.org` and its subdomains.
+- `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule sets the style `display: none!important` to all `h3` elements that contain the word `cookies`. The rule applies only to `example.com` and all its subdomains.
+- `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
+- `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
 You can apply standard CSS selectors using the ExtendedCss library by using the rule marker `#?#`, e.g. `#?#div.banner`.
 
@@ -3557,9 +3578,9 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
-2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
+2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), [`:remove()`](#extended-css-remove-limitations), [`:remove-attr()`](#extended-css-remove-attr-limitations), and [`:remove-class()`](#extended-css-remove-class-limitations).
 
-#### Псевдокласс `:has()` {#extended-css-has}
+#### Pseudo-class `:has()` {#extended-css-has}
 
 Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
 
@@ -3598,8 +3619,8 @@ Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 [target]:has(selector)
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `subject` — обязателен. Стандартный или расширенный CSS-селектор
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `selector` — required, standard or extended CSS selector
 
 The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
 
@@ -3609,8 +3630,8 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 
 Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
 
-- запретить `:has()` внутри псевдоселекторов, принимающих только составные селекторы;
-- запретить `:has()` после обычных псевдоэлементов.
+- disallow `:has()` inside the pseudos accepting only compound selectors;
+- disallow `:has()` after regular pseudo-elements.
 
 Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
 
@@ -3675,7 +3696,7 @@ Native implementation does not allow any usage of `:scope` inside the `:has()` a
 
 :::
 
-#### Псевдокласс `:contains()` {#extended-css-contains}
+#### Pseudo-class `:contains()` {#extended-css-contains}
 
 The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
@@ -3695,8 +3716,8 @@ Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibi
 [target]:contains(match)
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `match` — требуется, строка или регулярное выражение для соответствия элементу `textContent`. Также поддерживаются флаги регулярных выражений.
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `match` — required, string or regular expression for matching element `textContent`. Regular expression flags are supported.
 
 **Примеры**
 
@@ -3744,10 +3765,10 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 [target]:matches-css([pseudo-element, ] property: pattern)
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `pseudo-element` — необязательный, допустимый стандартный псевдоэлемент, например, `before`, `after`, `first-line` и т. д.
-- `property` — требуется, название CSS-свойства, которое будет проверено у элемента
-- `pattern` — требуется, шаблон значений, который использует то же простое сопоставление с подстановочными знаками, что и в основных правилах фильтрации URL-адресов, или регулярное выражение. При таком типе сопоставления AdGuard не учитывает регистр. В случае с регулярными выражениями шаблон будет выглядеть так: `/regexp/`.
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
+- `property` — required, a name of CSS property to check the element for
+- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic URL filtering rules or a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
 **Special characters escaping and unescaping**
 
@@ -3801,7 +3822,7 @@ Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are n
 
 :::
 
-#### Псевдокласс `:matches-attr()` {#extended-css-matches-attr}
+#### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
 
 The `:matches-attr()` pseudo-class allows selecting an element by its attributes, especially if they are randomized.
 
@@ -3811,9 +3832,9 @@ The `:matches-attr()` pseudo-class allows selecting an element by its attributes
 [target]:matches-attr("name"[="value"])
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `name` — требуется, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления имени атрибута
-- `value` — необязательный, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления значения атрибута
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `name` — required, simple string *or* string with wildcard *or* regular expression for attribute name matching
+- `value` — optional, simple string *or* string with wildcard *or* regular expression for attribute value matching
 
 **Escaping special characters**
 
@@ -3857,7 +3878,7 @@ Regexp patterns **do not support** flags.
 
 :::
 
-#### Псевдокласс `:matches-property()` {#extended-css-property}
+#### Pseudo-class `:matches-property()` {#extended-css-property}
 
 The `:matches-property()` pseudo-class allows selecting an element by matching its properties.
 
@@ -3867,9 +3888,9 @@ The `:matches-property()` pseudo-class allows selecting an element by matching i
 [target]:matches-property("name"[="value"])
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `name` — требуется, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления имени свойства элемента
-- `value` — необязательный, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления значения свойства элемента
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `name` — required, simple string *or* string with wildcard *or* regular expression for element property name matching
+- `value` — optional, simple string *or* string with wildcard *or* regular expression for element property value matching
 
 **Escaping special characters**
 
@@ -3932,7 +3953,7 @@ Regexp patterns **do not support** flags.
 
 :::
 
-#### Псевдокласс `:xpath()` {#extended-css-xpath}
+#### Pseudo-class `:xpath()` {#extended-css-xpath}
 
 The `:xpath()` pseudo-class allows selecting an element by evaluating an XPath expression.
 
@@ -3942,8 +3963,8 @@ The `:xpath()` pseudo-class allows selecting an element by evaluating an XPath e
 [target]:xpath(expression)
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор
-- `expression` — требуется, допустимое XPath выражение
+- `target`- optional, standard or extended CSS selector
+- `expression` — required, valid XPath expression
 
 ##### `:xpath()` limitations {#extended-css-xpath-limitations}
 
@@ -3971,7 +3992,7 @@ Works properly only at the end of selector, except for [pseudo-class :remove()](
 </div>
 ```
 
-#### Псевдокласс `:nth-ancestor()` {#extended-css-nth-ancestor}
+#### Pseudo-class `:nth-ancestor()` {#extended-css-nth-ancestor}
 
 The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
 
@@ -3979,7 +4000,7 @@ The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative 
 subject:nth-ancestor(n)
 ```
 
-- `subject` — обязателен. Стандартный или расширенный CSS-селектор
+- `subject` — required, standard or extended CSS selector
 - `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 **Syntax**
@@ -3988,7 +4009,7 @@ subject:nth-ancestor(n)
 subject:nth-ancestor(n)
 ```
 
-- `subject` — обязателен. Стандартный или расширенный CSS-селектор
+- `subject` — required, standard or extended CSS selector
 - `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
@@ -4016,7 +4037,7 @@ For such DOM:
 
 `.child:nth-ancestor(1)` selects the element `div#target1`, `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
 
-#### Псевдокласс `:upward()` {#extended-css-upward}
+#### Pseudo-class `:upward()` {#extended-css-upward}
 
 The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
 
@@ -4026,10 +4047,10 @@ The `:upward()` pseudo-class allows to lookup the ancestor relative to the previ
 subject:upward(ancestor)
 ```
 
-- `subject` — обязателен. Стандартный или расширенный CSS-селектор
-- `ancestor` — обязателен. Спецификация для предка элемента, выбранного `subject`, может быть задана как:
-    - *число* >= 1 и < 256 для указания расстояния до нужного предка, то же, что и [`:nth-ancestor()`](#extended-css-nth-ancestor)
-    - *стандартный CSS-селектор* для поиска ближайшего предка
+- `subject` — required, standard or extended CSS selector
+- `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
+    - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
+    - *standard CSS selector* for matching closest ancestor
 
 ##### `:upward()` limitations {#extended-css-upward-limitations}
 
@@ -4056,7 +4077,7 @@ For such DOM:
 
 `.inner:upward(div[data])` selects the element `div#target1`, `.inner:upward(div[id])` selects the element `div#target2`, `.child:upward(1)` selects the element `div#target1`, `.inner:upward(3)` selects the element `div#target2`.
 
-#### Псевдокласс `:remove()` и псевдосвойство `remove` {#remove-pseudos}
+#### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
 
@@ -4072,7 +4093,7 @@ selector:remove()
 selector { remove: true; }
 ```
 
-- `subject` — обязателен. Стандартный или расширенный CSS-селектор
+- `selector` — required, standard or extended CSS selector
 
 ##### `:remove()` and `remove` limitations {#extended-css-remove-limitations}
 
@@ -4098,7 +4119,78 @@ Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-styl
 
 :::
 
-#### Псевдокласс `:is()` {#extended-css-is}
+#### Pseudo-class `:remove-attr()` {#extended-css-remove-attr}
+
+The `:remove-attr()` pseudo-class removes attributes from matching elements instead of hiding them. It is compatible with the [`:remove-attr()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
+
+**The pseudo-class can be placed only at the end of a selector.**
+
+**Syntax**
+
+```text
+target:remove-attr(attr)
+```
+
+- `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
+- `attr` — required, an attribute name for exact match (optionally quoted, e.g. `"onclick"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+
+:::info Совместимость
+
+Added in ExtendedCSS v2.3.0.
+
+Rules with the `:remove-attr()` pseudo-class are supported by AdGuard Browser Extension v5.6 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Примеры**
+
+```adblock
+a:remove-attr(href)
+*:remove-attr(onclick)
+div:remove-attr(/^on[a-z]+/)
+div:remove-attr(/^data-(foo|bar)$/i)
+```
+
+##### `:remove-attr()` limitations {#extended-css-remove-attr-limitations}
+
+The `:remove-attr()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-attr` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
+
+#### Pseudo-class `:remove-class()` {#extended-css-remove-class}
+
+The `:remove-class()` pseudo-class removes classes from matching elements instead of hiding them. It is compatible with the [`:remove-class()`](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#subjectremove-attrarg-subjectremove-classarg) action operator of uBlock Origin.
+
+**The pseudo-class can be placed only at the end of a selector.**
+
+**Syntax**
+
+```text
+target:remove-class(class)
+```
+
+- `target` — required, standard or extended CSS selector; use the universal selector `*` to apply the action to any element
+- `class` — required, a class name for exact match (optionally quoted, e.g. `"ads"`), or a regexp literal `/.../` with optional `i`, `m`, `u` flags
+
+:::info Совместимость
+
+Added in ExtendedCSS v2.3.0.
+
+Rules with the `:remove-class()` pseudo-class are supported by AdGuard Browser Extension v5.6 or later. Such rules do not work in AdGuard Content Blocker.
+
+:::
+
+**Примеры**
+
+```adblock
+div:remove-class(ads)
+*:remove-class(ads)
+div:remove-class(/^ad-/)
+```
+
+##### `:remove-class()` limitations {#extended-css-remove-class-limitations}
+
+The `:remove-class()` pseudo-class works only at the end of a selector. All style properties declared in the same rule are ignored except for the [`debug` pseudo-property](#selectors-debug-mode). Unlike the [`remove-class` scriptlet](#scriptlets), the pseudo-class does not require a [trusted filter](#trusted-filters).
+
+#### Pseudo-class `:is()` {#extended-css-is}
 
 The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
@@ -4108,8 +4200,8 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 [target]:is(selectors)
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `selectors` — [*щадящий список*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) стандартных или расширенных селекторов. Для расширенных селекторов поддерживаются только составные селекторы, а не сложные.
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `selectors` — [*forgiving selector list*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) of standard or extended selectors. For extended selectors, only compound selectors are supported, not complex.
 
 ##### `:is()` limitations {#extended-css-is-limitations}
 
@@ -4144,7 +4236,7 @@ Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not
 </div>
 ```
 
-#### Псевдокласс `:not()` {#extended-css-not}
+#### Pseudo-class `:not()` {#extended-css-not}
 
 The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
@@ -4154,8 +4246,8 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 [target]:not(selectors)
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
-- `selectors` — список стандартных или расширенных селекторов
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
+- `selectors` — list of standard or extended selectors
 
 ##### `:not()` limitations {#extended-css-not-limitations}
 
@@ -4190,7 +4282,7 @@ The `:empty-trimmed` pseudo-class allows selecting elements without text content
 [target]:empty-trimmed
 ```
 
-- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 
 :::note
 
@@ -4283,7 +4375,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — доменное ограничение для правила. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — required, attribute name; `value` — optional (may not be specified), substring that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -4297,7 +4389,7 @@ Syntax supported by AdGuard Browser Extension v5.3 or later:
 ```
 
 - **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the element(s) to be removed from the HTML code before the page is loaded.
-- **`domains`** — доменное ограничение для правила. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 
 :::caution Limitations
 
@@ -4547,7 +4639,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 rule = [domains] "#%#" script
 ```
 
-- **`domains`** — доменное ограничение для правила. Строится по тем же правилам, что и в случае [правил скрытия элементов](#cosmetic-elemhide-rules).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`script`** — arbitrary JavaScript code **in one string**.
 
 **Примеры**
@@ -5363,7 +5455,7 @@ The following scriptlets also may be used for debug purposes:
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — не поддерживается
-- 👎 — устарел; всё ещё поддерживается, но в будущем будет удалён
+- 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — удалён и больше не поддерживается
 
 :::

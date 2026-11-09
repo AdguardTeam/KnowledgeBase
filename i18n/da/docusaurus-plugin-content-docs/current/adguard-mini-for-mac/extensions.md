@@ -18,11 +18,11 @@ Safari extensions are small software programs that add functionality to the Safa
 To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules. The rules from AdGuard’s and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
 
 - AdGuard General
-- AdGuard Privacy
+- AdGuard Fortrolighed
 - AdGuard Social
-- AdGuard Security
-- AdGuard Custom
-- AdGuard Other
+- AdGuard Sikkerhed
+- AdGuard Tilpasset
+- AdGuard Andre
 
 Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
 

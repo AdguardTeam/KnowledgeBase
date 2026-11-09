@@ -1,12 +1,12 @@
 ---
-title: AdGuard Other
+title: AdGuard Andre
 sidebar_position: 6
 ---
 
-_AdGuard Other_ contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
+_AdGuard Andre_ indeholder filtre med forskellige funktioner. F.eks. har den et filter, der afblokerer søgeannoncer og selvpromoverende annoncer. I nogle tilfælde bidrager det med at finde præcis det, der ledes efter, fordi den slags annoncer er mere relevante og mindre påtrængende end andre.
 
-:::note Disclaimer
+:::note Forbehold
 
-We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+Vi har ingen 'acceptable annoncer' betalt af annoncører. I stedet giver vi brugerne mulighed for at se [søgeannoncer og websteders selvpromovering](/general/ad-filtering/search-ads).
 
 :::
