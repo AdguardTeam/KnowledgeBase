@@ -54,6 +54,6 @@ If you already have an AdGuard license or previously bought a subscription on Go
 
 1. Go to *Settings* → *License* and tap *Already purchased?*
 1. Choose one of the options:
-   - **Log in**
-   - **Restore from Google Play**
-   - **Enter your activation code**
+   - Log in
+   - Restore from Google Play
+   - Enter your activation code
