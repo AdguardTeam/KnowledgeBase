@@ -25,7 +25,7 @@ AdGuard Mini for Android is a free app present in Google Play. To install it on 
 
 1. Decide if you want to allow AdGuard Mini to send the notifications. We recommend allowing them: notifications help AdGuard Mini stay active in the background. If you don’t allow them, [Android may stop the app to save battery](https://adguard.com/kb/adguard-for-android/solving-problems/background-work/), and protection will be interrupted without notice.
 
-1. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the app by sending anonymized usage data and crash reports. Then click *Continue*.
+1. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the app by sending anonymized usage data and crash reports. Then tap *Continue*.
 
   ![First setup *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/first_setup.png)
 
