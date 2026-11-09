@@ -23,7 +23,7 @@ Report a bug, suggest a feature, rate the app, or discuss it.
 
 ## License
 
-Activate, renew, or upgrade your license. Learn more in [Full version](https://adguard.com/en/license.html).
+Activate, renew, or upgrade your license. Learn more in the [full version](https://adguard.com/license.html).
 
 ## About
 
