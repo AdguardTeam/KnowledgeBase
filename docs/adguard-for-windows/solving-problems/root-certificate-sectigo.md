@@ -9,7 +9,7 @@ This error is not due to AdGuard's shortcomings, but a result of an ongoing tran
 
 ## Why this happens
 
-AAA Certificate Services, a legacy root certificate authority operated by Sectigo, uses an older SHA-1 signature algorithm, which is scheduled to expire in January 2028. Despite being nominally still in use, it is already being removed from major platform trust stores. 
+AAA Certificate Services, a legacy root certificate authority operated by Sectigo, uses an older SHA-1 signature algorithm, which is scheduled to expire in January 2028. Despite being nominally still in use, it is already being removed from major platform trust stores.
 
 On October 26, 2026, Microsoft removed the AAA Certificate Services root certificate from its trust list in an out-of-band update. This move, in turn, disrupted the correct functioning of AdGuard on Windows 7, as the signature chain for AdGuard 7.x files is validated solely through this certificate.
 
@@ -21,11 +21,11 @@ Follow these steps:
 
 Download the file from the [official Sectigo website](http://crt.sectigo.com/SectigoPublicCodeSigningRootR46.crt)
 
-2. Start the installation
+1. Start the installation
 
 Double-click the downloaded file and click *Install Certificate*.
 
-3. Choose the certificate store
+1. Choose the certificate store
 
 Select *Local Machine* → *Next*. If a User Account Control (UAC) prompt appears, allow the installation.
 Select *Place all certificates in the following store* and click *Browse*.
@@ -38,7 +38,7 @@ Click *Next* → *Finish*.
 
 :::
 
-4. Restart your computer
+1. Restart your computer
 
 After the restart, AdGuard should launch normally.
 
@@ -67,6 +67,6 @@ To deploy it across multiple computers, use Group Policy:
 
 ## How to remove the certificate
 
-If you no longer need the certificate, do the following: 
+If you no longer need the certificate, do the following:
 
 Open *certlm.msc* → *Trusted Root Certification Authorities* → *Certificates* → right-click *Sectigo Public Code Signing Root R46* → *Delete*.
