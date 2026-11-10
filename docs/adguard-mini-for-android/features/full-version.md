@@ -31,7 +31,7 @@ There are two ways to purchase a subscription:
 
 ### On Google Play
 
-You can purchase a subscription via [Google Play](https://agrd.io/adguard-mini-for-android) directly in the app: *Settings* → *License* → *Get full version*. You'll be taken to a page with three subscription types:
+You can purchase a subscription via [Google Play](https://agrd.io/adguard-mini-for-android) directly in the app: *Settings* → *License* → *Get full version*. You’ll be taken to a page with three subscription types:
 
 - Personal (3 devices)
 - Family (9 devices)
