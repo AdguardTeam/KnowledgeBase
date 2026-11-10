@@ -11,6 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 Here are some problems you may encounter and workarounds, as well as guides and instructions you may need:
 
+- [How to restore AdGuard after a failure of root certificate from AAA Certificate Services](/adguard-for-windows/solving-problems/root-certificate-sectigo.md)
 - [Filtering issues in Chrome 142+ when using the TDI driver](/adguard-for-windows/solving-problems/tdi-driver-and-Chrome-142.md)
 - [How to back up and restore AdGuard settings](/adguard-for-windows/solving-problems/backup-and-restore.md)
 - [How to collect AdGuard logs](/adguard-for-windows/solving-problems/adguard-logs.md)
