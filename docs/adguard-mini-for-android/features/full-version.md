@@ -18,7 +18,7 @@ The core features of AdGuard Mini for Android are free:
 
 The full version unlocks advanced features:
 
-- [Tracking protection](https://adguard.com/kb/general/stealth-mode/): filters that protect your online activity and personal data from web trackers
+- [Tracking protection](https://adguard.com/kb/general/stealth-mode/): protect your online activity and personal data from web trackers
 - [Custom filters](https://filterlists.com/): add any filter list by URL, in addition to the built-in ones
 - [DNS filters](/adguard-mini-for-android/features/dns-protection.md): block more unwanted domains at the DNS level
 - Domain management: block and allow domains right from *Recent activity*
