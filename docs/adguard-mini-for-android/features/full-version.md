@@ -18,8 +18,8 @@ The core features of AdGuard Mini for Android are free:
 
 The full version unlocks advanced features:
 
-- [Tracking protection](https://adguard.com/kb/general/stealth-mode/): protect your online activity and personal data from web trackers
-- [Custom filters](https://filterlists.com/): add any filter list by URL, in addition to the built-in ones
+- Tracking protection: protect your online activity and personal data from web trackers
+- Custom filters: add any filter list by URL, in addition to the built-in ones
 - [DNS filters](/adguard-mini-for-android/features/dns-protection.md): block more unwanted domains at the DNS level
 - Domain management: block and allow domains right from *Recent activity*
 
@@ -31,7 +31,7 @@ There are two ways to purchase a subscription:
 
 ### On Google Play
 
-You can purchase a subscription via [Google Play](https://agrd.io/adguard-mini-for-android) directly in the app: *Settings* → *License* → *Get full version*. You’ll be taken to a page with three subscription types:
+You can purchase a monthly or yearly subscription via [Google Play](https://agrd.io/adguard-mini-for-android) directly in the app: *Settings* → *License* → *Get full version*. You’ll be taken to a page with three subscription types:
 
 - Personal (3 devices)
 - Family (9 devices)
