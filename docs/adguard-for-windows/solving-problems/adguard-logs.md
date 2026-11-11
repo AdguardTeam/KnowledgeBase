@@ -21,31 +21,24 @@ AdGuard for Windows offers two logging levels: *Default* and *Debug*. For most t
 
 ## How to change the logging level {#change-level}
 
-You can change the logging level in either of two ways:
+1. Go to AdGuard settings → *Support* → *Logs*.
+1. In the *Logging level* dropdown select *Debug*.
 
-### Option 1: In the app
-
-Go to AdGuard settings → *Support* → *Logs*, and in the *Logging level* dropdown select *Debug*.
-
-![Logging level dropdown on Support page *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support_logs.png)
-
-### Option 2: From the tray menu
-
-Right-click the AdGuard icon in the system tray, select *Advanced* → *Logging level*, and choose *Debug*.
-
-![Logging level in tray menu *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/tray_menu_debug.png)
+![Logging level dropdown on Support page *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/export_logs_debug_dropdown.png)
 
 ## Debug logs {#debug-logs}
 
 For most issues, debug logs give the support team enough information to identify and fix the problem.
 
-1. Set the logging level to *Debug* using one of the methods described [above](#change-level).
+1. Set the logging level to *Debug* using the instructions [above](#change-level).
 
 1. Reproduce the issue. Note the exact time — it will help our support team find the relevant log entries and solve the problem faster.
 
 1. Go to AdGuard settings → *Support* → *Logs*, and click *Export logs and system info*.
 
-    Once the export is complete, you’ll see a confirmation message. You can click *Show in folder* to open the folder where the exported archive with logs and system information was saved.
+1. Choose the folder where you want to save the archive.
+
+1. Once the export is complete, you’ll see a confirmation message. You can click *Show in folder* to open the folder where the exported archive was saved. If the export fails, retry; if it keeps failing, contact support.
 
     :::note
 
@@ -83,7 +76,7 @@ Sometimes the support team may ask you for *trace* logs. Trace logging captures 
 
 ## Diagnostic report {#diagnostic-report}
 
-When contacting support through the form in Settings → *Support*, you can include a diagnostic report that automatically attaches application logs together with other system information.
+When contacting support through the form in Settings → *Support* → *Contact support*, you can include a diagnostic report that automatically attaches application logs together with other system information.
 
 The diagnostic report includes:
 
