@@ -23,7 +23,7 @@ Report a bug, suggest a feature, rate the app, or discuss it.
 
 ## License
 
-Activate, renew, or upgrade your license. Learn more in the [full version](/adguard-mini-for-android/features/full-version.md).
+Activate, renew, or upgrade your license. Learn more in [Full version](/adguard-mini-for-android/features/full-version.md).
 
 ## About
 
