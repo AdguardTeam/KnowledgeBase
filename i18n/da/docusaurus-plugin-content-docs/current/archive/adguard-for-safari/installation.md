@@ -21,7 +21,7 @@ AdGuard til Safari er en gratis app tilgængelig via App Store. Gør flg. for at
 
    ![AdGuard til Safari i App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-2. Press _Get_ → _Install_ → _Open_.
+2. Tryk på _Hent_ → _Installér_ → _Åbn_.
 
 3. For at opsætte AdGuard til Safari, aktivér AdGuard-udvidelserne i Safari-indstillingerne.
 
@@ -53,7 +53,7 @@ Gør flg. for at afinstallere AdGuard til Safari:
 
 3. Vælg fanen Udvidelser. En liste over udvidelser vises, AdGuard har otte.
 
-4. Uncheck all checkboxes and press _Uninstall_ below any of them.
+4. Ryd alle afkrydsningsfelter, og tryk på _Afinstallér_ under en vilkårlig af dem.
 
    ![Udvidelser afkrydset](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
 

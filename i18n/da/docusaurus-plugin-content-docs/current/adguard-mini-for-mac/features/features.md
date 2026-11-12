@@ -3,38 +3,38 @@ title: Funktioner
 sidebar_position: 1
 ---
 
-- [Safari protection](/adguard-mini-for-mac/features/safari-protection.md)
+- [Safari-beskyttelse](/adguard-mini-for-mac/features/safari-protection.md)
 
-  Core filtering feature with customizable options
+  Kernefiltreringsfunktion med tilpasselige muligheder
 
-- [Advanced blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
+- [Avancet blocking](/adguard-mini-for-mac/features/advanced-blocking.md)
 
-  Unlocks stronger filtering capabilities
+  Oplåser stærkere filtreringsfunktioner
 
-- [User rules](/adguard-mini-for-mac/features/rules.md)
+- [Brugerregler](/adguard-mini-for-mac/features/rules.md)
 
   Tilpassede filtreringsregler til finjustering af adblocking
 
-- [Settings](/adguard-mini-for-mac/features/settings/settings.md)
+- [Indstillinger](/adguard-mini-for-mac/features/settings/settings.md)
 
-  Various options that help you configure the app and filtering
+  Forskellige muligheder, som assisterer med at opsætte appen og filtreringen
 
 - [Support](/adguard-mini-for-mac/features/support.md)
 
-  Helpful options for when you have a question or encountered a problem
+  Nyttige muligheder, når der er spørgsmål eller opleves problemer
 
-- [About](/adguard-mini-for-mac/features/about.md)
+- [Om](/adguard-mini-for-mac/features/about.md)
 
-  Info about the app’s current version and a list of helpful links
+  Info om appens aktuelle version og en liste over nyttige links
 
-- [Safari toolbar menu](/adguard-mini-for-mac/features/toolbar-menu.md)
+- [Safari-værktøjsbjælkemenu](/adguard-mini-for-mac/features/toolbar-menu.md)
 
-  A handy menu in the Safari toolbar
+  En praktisk menu på Safari-værktøjsbjælken
 
 - [Systemniveaubeskyttelse](/adguard-mini-for-mac/features/system-wide-protection.md)
 
   En funktion, der blokerer annoncer og trackere, ikke kun i Safari, men i alle øvrige apps på Mac'en.
 
-- [Full version](/adguard-mini-for-mac/features/full-version.md)
+- [Fuld version](/adguard-mini-for-mac/features/full-version.md)
 
-  Advanced features that enhance filtering speed and power
+  Avancerede funktioner, som forbedrer filtreringshastighed og -kraft

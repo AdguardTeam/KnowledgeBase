@@ -471,7 +471,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 Устройства с OxygenOS — наиболее проблемные из-за специфической для ОС очистки кэша и освобождения оперативной памяти, включая оптимизацию ОС. Кроме того, OxygenOS может прервать работу AdGuard, если вы не пользуетесь им некоторое время. Чтобы исправить это, выполните следующие действия.
 
-#### Locking the app
+#### Блокировка приложения
 
 - Откройте **Настройки**
 
@@ -497,17 +497,17 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 :::
 
-#### Battery optimization
+#### Оптимизация батареи
 
 - Откройте настройки устройства → **Батарея** → **Оптимизация батареи** → откройте список **Все приложения** (верхнее меню) → выберите AdGuard → активируйте функцию **Не оптимизировать**
 
 - Откройте настройки устройства → **Батарея** → **Оптимизация батареи** → (⁝) трёхточечное меню → **Дополнительная оптимизация** → Отключите Глубокую Оптимизацию
 
-#### App Auto-Launch
+#### Автозапуск приложения
 
 Автозапуск приложений (на некоторых телефонах OnePlus), в сущности, предотвращает работу приложений в фоновом режиме. Please enable it for AdGuard.
 
-#### Enhanced / Advanced optimization
+#### Улучшенная / Расширенная оптимизация
 
 Для OnePlus 6 и выше:
 
@@ -519,7 +519,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 - Отключите **Настройки** → **Батарея** → **Оптимизация батареи** → (⁝) трёхточечное меню → **Улучшенная оптимизация**.
 
-#### Recent apps clearing behaviour
+#### Поведение при очистке последних приложений
 
 Обычно, когда вы смахиваете приложение, оно не закрывается. Однако в OnePlus это может работать иначе. Менеджер очистки последних приложений может быть настроен таким образом, что смахнув приложение, чтобы закрыть его, вы его полностью остановите. Чтобы настроить «нормальное» поведение:
 
@@ -527,34 +527,34 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 ### ColorOS
 
-On devices running ColorOS, the system may aggressively restrict background processes as well. To ensure AdGuard works properly in the background, configure the following settings:
+На устройствах с ColorOS система также может агрессивно ограничивать фоновые процессы. Чтобы AdGuard корректно работал в фоновом режиме, настройте следующие параметры:
 
 - Open **System settings** → **Battery → Battery mode** and select **High performance mode**
 
-![High performance mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
+![Режим высокой производительности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/high_performance_mode.jpg)
 
 - Go to **Apps → App management → AdGuard → Battery usage** and select **Allow background activity**
 
-![Allow background activity *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
+![Разрешить фоновую активность *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/allow_background_activity.jpg)
 
-- Go to **Apps → Auto launch** and enable the switch for AdGuard
+- Перейдите в раздел **Приложения → Автозапуск** и включите переключатель для AdGuard
 
-![Auto launch *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
+![Автозапуск *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/auto_launch.jpg)
 
-- To lock AdGuard in the **Recent apps** menu:
+- Чтобы закрепить AdGuard в меню **Недавние приложения**:
 
-    - Open the **Recent apps** screen
-    - Swipe the AdGuard app card down to lock it in memory
+    - Откройте экран **Недавние приложения**
+    - Проведите вниз по карточке приложения AdGuard, чтобы закрепить его в памяти
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
+Компания Sony первой из разработчиков мобильных OS внедрила нестандартную систему оптимизации фоновых процессов. Она называется **Stamina mode** и мгновенно прерывает все фоновые процессы, если включена. Чтобы решить эту проблему:
 
 Go to **Settings** → **Battery** → Disable **STAMINA mode**
 
-![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
+![Режим Sony Stamina *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
-On Android 11+, on the same screen with STAMINA mode, there is a setting called **Adaptive battery**, you should disable it too.
+На Android 11+ на том же экране с режимом STAMINA есть настройка **Адаптивная батарея**, её тоже следует отключить.
 
 You also need to be set AdGuard as Excepted from Power-saving feature:
 

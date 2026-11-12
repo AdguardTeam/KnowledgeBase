@@ -3,18 +3,18 @@ title: Brugerregler
 sidebar_position: 4
 ---
 
-![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
+![Brugerregler](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/user-rules.png)
 
-User rules can be used to customize ad blocking when you want something personal: exclude a website from filtering, unblock requests, or allow scripts on a certain webpage. They can be added manually, imported, or created automatically when you block an element on the page.
+Brugerregler kan bruges til at tilpasse adblocking, når der ønskes noget personligt: Undtage et websted fra filtrering, afblokere forespørgsler eller tillade scripts på en bestemt webside. De kan tilføjes manuelt, importeres eller oprettes automatisk, når brugeren blokerer et element på en side.
 
-To add your own filtering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
+Tilføjelse af egne filtreringsregler kræver brug af en [særlig syntaks](/general/ad-filtring/create-own-filters).
 
-### Rule constructor
+### Regelkonstruktør
 
-We understand that writing filtering rules yourself is not every user’s cup of tea. That’s why you can just click _Create rule_ to use a rule constructor: choose what you want to do, click through a few options, and you’re done. Block images, videos, scripts, or any other elements you’d rather not see on a page.
+Vi forstår, at det ikke er hver brugers kop te at skrive filtreringsregler selv. Derfor kan der blot klikkes på _Opret regel_ for at bruge en regelkonstruktør: Vælg, hvad der skal gøres, klik igennem nogle få valgmuligheder, hvorefter reglen er færdig. Blokér billeder, videoer, scripts eller alle andre elementer, som en side helst skulle være fri for.
 
-![Rule constructor](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
+![Regelkonstruktør](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/build-a-rule.png)
 
-Here’s an example of a tricky case — a cookie popup that resists filtering. Find it in the page code, then open _User rules_ and create a rule to block it:
+Her er et eksempel på en vanskelig sag — en cookie-pop op, der modstår filtrering. Find den i sidekoden, åbn derefter _Brugerregler_ og opret en regel til at blokere den:
 
 <iframe class="youtube-video" src="https://cdn.adtidy.org/content/blog/rule.mp4" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
