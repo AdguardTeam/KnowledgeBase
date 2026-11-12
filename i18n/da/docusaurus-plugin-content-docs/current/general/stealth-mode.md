@@ -3,15 +3,15 @@ title: Sporingsbeskyttelse (tidligere Skjult tilstand (Stealth Mode))
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, including their IP address, installed browser and operating system, screen resolution, and even the page from which they were redirected. Some web pages use cookies to mark your browser and save your settings and preferences, or to “recognize” you upon your next visit. **Tracking protection** safeguards your personal information from such data- and statistics-gathering systems.
+Mange websteder indsamler oplysninger om deres besøgende, såsom IP-adresser, oplysninger om den installerede webbrowser og operativsystem, skærmopløsning, og endda hvilken side brugeren kom, eller blev omdirigeret, fra. Visse websider bruger cookies til at markere webbrowseren og gemme personlige indstillinger, brugerpræferencer eller "genkende" brugere ved nye besøg. **Sporingsbeskyttelse** sikrer de personlige oplysninger mod sådanne data- og statistikindsamlingssystemer.
 
-You can adjust the tracking protection settings as needed. For example, you can prevent websites from receiving search engine queries that led you to them. You can automatically delete third-party and first-party cookies. You can also turn off browser geolocation sharing, which can be used to track your location. You can hide your true IP address or replace it with an arbitrary one.
+Indstillingerne til sporingsbeskyttelse kan justeres efter behov. Websteder kan f.eks. forhindres i at modtage søgemaskineforespørgsler, som ledte frem til dem. Tredjeparts- og førstepart-cookies kan slettes automatisk. Webbrowsergeolokationsdelingen, der kan bruges til at placeringssporing, kan også slås fra. Den reelle IP-adresse kan skjules eller erstattes med en vilkårlig.
 
-Below, we will list and describe the main features that you can control in the **Tracking protection** settings. The features are organized into the following sections: **General**, **Tracking methods**, **Browser API**,  **Windows tracking**, and **Miscellaneous**.
+Nedenfor oplistes og beskrives de vigtigste funktioner og muligheder, som kan styres i indstillingerne til **Sporingsbeskyttelse**. De er opdelt i fire grupper: **Generelt**, **Sporingsmetoder**, **Browser-API**og **Diverse**.
 
 :::note
 
-Some features are only available for certain products because of limitations from the operating system or browser.
+Nogle funktioner er kun tilgængelige i bestemte produkter grundet begrænsninger fra operativsystemet eller webbrowseren.
 
 :::
 
@@ -19,49 +19,49 @@ Some features are only available for certain products because of limitations fro
 
 ### Blokér trackere {#blocktrackers}
 
-This feature blocks trackers and web analytics using the AdGuard Tracking Protection filter.
+Denne funktion blokerer trackere og webanalysværktøjer via AdGuard Sporingsbeskyttelsesfilter.
 
 ### Fjern sporingsparametre fra URL'er {#removetracking}
 
-If you enable this feature, AdGuard will use its AdGuard URL Tracking filter to remove tracking parameters like `utm_*` and `fb_ref` from page URLs.
+Aktiveres denne funktion, bruger AdGuard sit URL-sporingsfilter til at fjerne sporingsparametre, såsom `utm_*` og `fb_ref`, fra sider-URL'er.
 
-### Block fingerprinting {#fingerprinting}
+### Blokér fingerprinting {#fingerprinting}
 
-This feature prevents websites from identifying your browser and device by canvas fingerprinting.
+Denne funktion forhindrer websteder i at identificere webbrowseren og enheden via lærred-fingerprinting.
 
-A canvas is a web page element for drawing images. A website can draw hidden text and shapes on a canvas and read the result back. The result depends on your device, graphics hardware, fonts, and browser, so it can identify you even without cookies.
+Et canvas er et websideelement til at tegne billeder. Et websted kan tegne skjult tekst og former på et lærred og læse resultatet tilbage. Resultatet afhænger af enheden, grafikhardware, skrifttyper og webbrowser, så det kan identificere brugeren selv uden cookies.
 
-With this feature enabled, AdGuard slightly changes the images that websites read from a canvas. The changes are too small to see. Until you restart the browser or AdGuard is updated, each website gets the same changed result. Other websites get different results, so the result can’t be used to recognize you across websites.
+Med denne funktion aktiveret ændrer AdGuard en smule på de billeder, som websteder læser fra et lærred. Ændringerne er for små til at se. Indtil webbrowseren genstartes, eller AdGuard opdateres, får hvert websted det samme ændrede resultat. Andre websteder får forskellige resultater, så resultatet kan ikke bruges til at genkende brugeren på tværs af websteder.
 
-What you see on the page does not change. The feature does not cover WebGL and WebGPU fingerprinting or canvases drawn in web workers. Some websites may detect the protection or work around it.
+Det, der ses på siden, ændrer sig ikke. Funktionen dækker ikke WebGL- og WebGPU-fingerprinting eller lærreder tegnet i Web workers. Nogle websteder kan detektere beskyttelsen eller omgå den.
 
 :::caution
 
-Web apps that export images from a canvas, such as online image editors, may get slightly changed images. If a website works incorrectly, add it to the allowlist or turn off the protection for it with a [rule](/general/ad-filtering/create-own-filters#stealth-modifier) like `@@||example.com^$stealth=fingerprinting`.
+Web-apps, som eksporterer billeder fra et lærred, såsom online-billededitorer, kan få let ændrede billeder. Fejlfungerer et websted, kan det føjes det til hvidlisten eller beskyttelsen slås fra for det med en [regel](/general/ad-filtering/create-own-filters#stealth-modifier) såsom `@@||example.com^$stealth=fingerprinting`.
 
 :::
 
 :::note
 
-Available in [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) v5.6 or later.
+Tilgængelig i [AdGuard Browser Extension](/adguard-browser-extension/features/stealth-mode#fingerprinting) fra v5.6.
 
 :::
 
 ### Skjul søgeforespørgsler {#searchqueries}
 
-This feature hides your search queries from websites that you visit via search engine results. For example, when you open a website through a search engine like Google or Yahoo, this feature hides the search query you used to find that website.
+Denne funktion skjuler søgeforespørgslen fra websteder besøgt via søgemaskineresultater. Åbnes f.eks. et websted via en søgemaskine, såsom Google eller Yahoo, skjuler denne funktion søgeforespørgslen brugt til at finde dette websted.
 
 ### Bed websteder undlade sporing {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
+Sender signalerne [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) og [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) til de besøgte websteder.
 
 ### Andre fortrolighedsfiltre {#otherprivacyfilters}
 
-This feature displays other privacy filters enabled in **Filters**.
+Denne funktion viser andre fortrolighedsfiltre, som er aktiveret i **Filtre**.
 
 :::note
 
-Available in AdGuard for Android and AdGuard for Windows.
+Tilgængelig i AdGuard til Android og AdGuard til Windows.
 
 :::
 
@@ -69,31 +69,31 @@ Available in AdGuard for Android and AdGuard for Windows.
 
 ### Slet tredjepartscookies {#3p-cookie}
 
-This feature prevents advertisers from tracking your behavior across multiple pages by limiting the lifetime of third-party cookies.
+Denne funktion forhindrer annoncører i at spore brugeradfærd på tværs af flere sider ved at begrænse levetiden for tredjepartscookies.
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends the website your cookies belonging to the website, allowing it to “remember” your data.
+Websteder bruger cookies til at gemme besøgendes oplysninger og præferencer, såsom valgte sprog, geoplacering eller en indkøbskurvs vareindhold. Når brugeren returnerer til et websted, sender webbrowser webstedet de dertilhørende cookies, hvormed det kan "huske" brugerens data.
 
-Third-party cookies are implemented by a website other than the one you are currently browsing. For example, cnn.com may have a Facebook “Like” widget on its homepage. This widget installs a cookie that Facebook can read later. Some advertisers use such cookies to track what other websites you visit that have their ads.
+Tredjepartscookies er implementeret af et andet websted end det aktuelt besøgte. F.eks. kan cnn.com have en Facebook "Like"-widget på sin hjemmeside. Denne widget installerer en cookie, som Facebook kan læse senere. Visse annoncører bruger sådanne cookies til at spore, hvilke øvrige websteder indeholdende deres annoncer, som besøges.
 
-Set a time period (in minutes) after which all third-party cookies will be deleted. To block these cookies, set their lifetime to 0.
+Indstil en tidsperiode (i minutter), efter hvilken alle tredjepartscookies slettes. For at blokere disse cookies, indstil deres levetid til 0.
 
 :::caution
 
-This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+Denne indstilling sletter alle tredjepartscookies, inkl. loginoplysninger via sociale netværk eller andre tredjepartstjenester. Der skal muligvis periodisk logges ind på nogle websteder igen og håndteres andre cookie-relaterede problemer. Brug [*AdGuard Sporingsbeskyttelse-filteret*](/general/ad-filtering/filter-policy/#tracking-protection-filter) for kun at blokere sporingscookies.
 
 :::
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+Tilgængelig i AdGuard til Android/Windows/Mac samt AdGuard Browser Extension (MV2-baserede webbrowsere).
 
 :::
 
 ### Slet førstepartscookies (ikke anbefalet) {#1p-cookie}
 
-This feature prevents websites from remembering your details, such as your login credentials and language preferences, by limiting the lifetime of first-party cookies.
+Denne funktion forhindrer websteder i at huske brugeroplysninger, såsom login-legitimationsoplysninger og sprogpræferencer, ved at begrænse levetiden af førstepartscookies.
 
-Set a time period (in minutes) after which all cookies will be deleted. To block these cookies, set their lifetime to 0.
+Indstil en tidsperiode (i minutter), efter hvilken alle cookie slettes. For at blokere disse cookies, indstil deres levetid til 0.
 
 :::caution
 
@@ -103,31 +103,31 @@ Denne indstilling anbefalers ikke aktiveret, da den markant kan forstyrre visse 
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (MV2-based browsers).
+Tilgængelig i AdGuard til Android/Windows/Mac samt AdGuard Browser Extension (MV2-baserede webbrowsere).
 
 :::
 
-### Block ETag and If-None-Match headers {#3p-cache}
+### Blokér ETag og If-None-Match-headere {#3p-cache}
 
-This feature removes the ETag and If-None-Match headers from requests and responses to prevent tracking by them.
+Denne funktion fjerner ETag og If-None-Match headere fra forespørgsel og svar for at forhindre sporing via disse.
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+Når en webbrowser tilgår en side, tildeles denne side et ETag af serveren. Dette ETag bruges af webbrowseren til at cache sideindholdet. Ved efterfølgende forespørgsler sender webbrowseren ETag'et til den relevante server, og underretter den dermed om den besøgendes identitet. Så længe webstedets filer er cachelagret, sendes ETag'en, hver gang webbrowseren tilgår dette websted. Hvis webstedet har indlejret indhold fra en anden server (såsom et billede eller iframe), kan denne server upåagtet spore besøgendes aktiviteter.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Tilgængelig i AdGuard til Android/Windows/macOS.
 
 :::
 
 ### Blokér tredjeparts Godkendelses-header {#3p-auth}
 
-This feature disables cached authorization data that can be used for tracking. Kan forstyrre funktionaliteten af visse webbrowserudvidelser og websteder.
+Denne funktion deaktiverer cachelagrede godkendelsesdata, som kan bruges til sporingsformål. Kan forstyrre funktionaliteten af visse webbrowserudvidelser og websteder.
 
-The “Authorization” header value is cached by the browser and sent alongside every request to that domain. This means it can be used for tracking purposes, just like cookies.
+Headerværdien "Godkendelse" cachelagres af webbrowseren og sendes dernæst sammen med hver forespørgsel til det pågældende domæne. Det betyder, at den kan bruges til sporingsformål, ligesom cookies.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Tilgængelig i AdGuard til Android/Windows/macOS.
 
 :::
 
@@ -135,148 +135,148 @@ Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
 
 :::note
 
-Only the **Block WebRTC** feature is available for AdGuard Browser Extension. You can find it in the **Miscellaneous** section.
+Kun funktionen **Blokér WebRTC** er tilgængelig i AdGuard Browser Extension. Den kan findes i afsnittet **Diverse**.
 
 :::
 
 ### Blokér WebRTC {#webrtc}
 
-Denne funktion blokerer WebRTC, der kan lække den reelle IP-adresse selv ved brug af proxy eller VPN.
+Denne funktion blokerer WebRTC, en kendt sårbarhed, der kan lække den reelle IP-adresse selv ved brug af proxy eller VPN.
 
-WebRTC (Web Real-Time Communication) is a technology that enables direct streaming of data between browsers and apps. However, it can let others know your true IP address, even when using a proxy or VPN.
+WebRTC (Web Real-Time Communication) er en teknologi, der muliggør direkte streaming af data mellem webbrowsere og apps. Den kan dog lade andre se den reelle IP-adresse, selv ved brug af proxy eller VPN.
 
 :::caution
 
-Enabling this option can disrupt the work of certain browser applications, such as messengers, streaming platforms, chats, or games.
+Aktivering af denne indstilling kan forstyrre funktionen af visse webbrowserapplikationer, såsom besked- og chat-apps, streamingplatforme eller spil.
 
 :::
 
 :::note
 
-In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` are not supported. For per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+I AdGuard Browser Extension anvendes *Blokér WebRTC* globalt og kan ikke styres pr. websted. Undtagelsesregler, såsom `@@||example.com^$stealth=webrtc`, understøttes ikke. Til WebRTC-styring pr. websted, anvend den fuldt udstyrede AdGuard-app til Windows, Mac eller Android.
 
 :::
 
 ### Blokér Push-API {#push}
 
-This feature blocks push notifications from websites.
+Denne funktion blokerer push-notifikationer fra websteder.
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. This means that you can see notifications from various websites even when your browser is minimized or closed. Enable this option to block the browser’s Push API completely.
+Push-API'en tillader servere at sende beskeder til webapplikationer uanset webbrowserens aktivitetsstatus. Det betyder, at notifikationer fra forskellige websteder kan ses, selv når webbrowseren er minimeret eller lukket. Aktivér denne indstilling for helt at blokere webbrowserens Push-API.
 
 ### Blokér Lokations-API {#location}
 
-This feature prevents websites from detecting your location.
+Denne funktion forhindrer websteder i at registrere placering.
 
-Enabling this option prevents your browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+Aktivering af denne indstilling forhindrer webbrowseren i at sende GPS-data, som kan bruges til placeringsbestemmelse, ændring af søgeresultater eller på anden måde påvirke weboplevelsen.
 
 ### Blokér Flash {#flash}
 
-This feature increases protection and speeds up website loading by blocking Flash Player support in browsers.
+Denne funktion øger beskyttelsen og accelererer webstedsindlæsning ved at blokere Flash Player-support i webbrowsere.
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly increase website load times. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+Flash Player-plugin'et er blevet mere og mere sårbart over for onlinetrusler, såsom vira og hackere. Det kan også forøge websteders indlæsningstid betydeligt. Aktiveres denne indstilling, blokerer AdGuard webbrowserens evne til at detektere komponenter (såsom plugins og ActiveXObject-objekter), som tillader visning af Flash-indhold. Dette betyder reelt, at webbrowsere ikke kan håndtere Flash-indhold.
 
 ### Blokér Java {#java}
 
-This feature disables Java plugins on websites and web services because the API has serious security issues. Does not disable JavaScript.
+Funktionen deaktiverer Java-plugins på websteder og i webtjenester, da API'en har alvorlige sikkerhedsproblemer. Deaktiverer ikke JavaScript.
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the “Block Java” option, JavaScript will still be enabled.
+Visse websteder og webtjenester bruger stadig den gamle teknologi til at understøtte Java-plugins. Java-plugin API'en, der er grundlaget for Java-plugins, har alvorlige sikkerhedsfejl. Af sikkerhedshensyn kan sådanne plugins deaktiveres. Selvom det besluttes at bruge indstillingen "Blokér Java", vil JavaScript fortsat være aktiveret.
 
 ## Windows-sporing {#windowstracking}
 
 :::note
 
-These features are only available in AdGuard for Windows.
+Disse funktioner er kun tilgængelige i AdGuard til Windows.
 
 :::
 
 ### Deaktivér Windows-telemetri {#windowstelemetry}
 
-This feature disables sending technical data about your system and app usage.
+Denne funktion deaktiverer indsendelsen af tekniske data om systemet og app-brug.
 
 ### Deaktivering af Windows Recall {#windowsrecall}
 
-This feature prevents Windows from taking and analyzing screenshots of your desktop activity.
+Denne funktion forhindrer Windows i at tage og analysere skærmfotos af computeraktiviteten.
 
 ### Slå Reklame-ID fra {#advertisingid}
 
-This feature disables Advertising ID to block tracking of your app usage.
+Denne funktion deaktiverer Reklame-ID for at blokere sporing af apps-brug.
 
 ### Deaktivér automatisk anmeldelse fra Microsoft Defender {#windowsautoreport}
 
-This feature blocks automatic reporting and sampling of suspected malware.
+Funktionen blokerer automatisk anmeldelse og prøveudtagning af formodet malware.
 
 ### Deaktivér WAP Push-besked rutningstjeneste {#wappushrouting}
 
-This feature disables data collection about Windows component problems.
+Funktionen deaktiverer dataindsamling om Windows-komponentproblemer.
 
 ## Diverse {#miscellaneous}
 
 ### Skjul Referer fra tredjeparter {#referer}
 
-This feature prevents third parties from knowing what websites you visit.
+Funktionen forhindrer tredjeparters adgang til info om besøgte websteder.
 
-Referer is an HTTP header used in browser-to-server requests. Den indeholder forespørgselskildens URL. Når der navigeres fra en side til en anden, gemmer Referer'en den oprindelige sides URL. Serveren, der hoster destinationswebsiden, har ofte software, der analyserer Referer og udtrækker diverse information herfra. Enabling the *Hide Referer from third parties* setting hides the current website from third-party websites by altering the HTTP header.
+Referer er en HTTP-header brugt i webbrowser-til-server forespørgsler. Den indeholder forespørgselskildens URL. Når der navigeres fra en side til en anden, gemmer Referer'en den oprindelige sides URL. Serveren, der hoster destinationswebsiden, har ofte software, der analyserer Referer og udtrækker diverse information herfra. Aktivering af indstillingen *Skjul Referer fra tredjeparter* skjuler det aktuelle websted for tredjepartswebsteder ved at ændre HTTP-headeren.
 
-You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. Lad feltet stå tomt for brug af standard-Referer.
+En vilkårlig værdi kan også opsættes for Referer ved at angive denne i feltet *Tilpasset Referer*. Lad feltet stå tomt for brug af standard-Referer.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
+Bemærk, at AdGuard-applikationer 'opsnapper' webbrowser-til-server forespørgsler for at kunne filtrere trafik. Forespørgsler til reklame-, sporings- og phishing-servere kan ændres, før de sendes til serveren, eller blokeres fuldstændigt. Det samme gælder for indstillingen *Skjul Referer fra tredjeparter*: AdGuard opsnapper HTTP(S)-forespørgsler for at fjerne eller ændre Referer-headeren, når denne indstilling er aktiveret. Det sker dog først, efter at disse forespørgsler "forlader" webbrowseren. Det betyder, at hvis Referer monitoreres i selve webbrowseren (f.eks. vha. Chromes udviklerværktøjer), så ses den oprindelige Referer, da forespørgslen endnu ikke har nået AdGuard. Software, såsom [Fiddler](https://www.telerik.com/fiddler), kan anvendes for at sikre, at Referer ændres korrekt.
 
-Due to the nature of all web browser extensions, AdGuard Browser Extension instead works 'inside' the web browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
+Grundet webbrowserudvidelsers basisfunktion, fungerer AdGuard Browser Extension til gengæld 'inde i' webbrowseren. Den vil på stedet ændre Referer, så Udviklerværktøjer viser den ønskede Referer for forespørgslerne.
 
-### Hide User-Agent {#useragent}
+### Skjul User-Agent (Brugeragent) {#useragent}
 
-This feature removes identifying information from the User-Agent header.
+Denne funktion fjerner identificerende oplysninger fra User-Agent-headeren.
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with “User-Agent:”. It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+Når et websted besøges, sender webbrowseren sine oplysninger til serveren. Det ligner en tekstlinje, der er en del af en HTTP-forespørgsel, der begynder med "User-Agent:". Den inkluderer normalt webbrowsernavn og -version, operativsysteminfo og sprogindstillinger. Vi afskærer User-Agent fra identificerende oplysninger, så annoncører ikke får dem.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+En vilkårlig værdi kan også opsættes for User-Agent ved at angive denne i feltet Tilpasset User-Agent. Lad feltet stå tomt for brug af standard User-Agent.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Tilgængelig i AdGuard til Android/Windows/macOS.
 
 :::
 
 ### Maskér IP-adresse {#ip}
 
-This feature tricks websites into believing you are a proxy with the IP address you specify.
+Denne funktion narrer websteder til at tro, at man er en proxy med den IP-adresse, man angiver.
 
-Tracking protection cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+Sporingsbeskyttelse kan ikke skjule brugerens IP-adresse. Vi kan dog skjule den, så websteder tror, at de besøges af en proxy. Nogle gange virker dette, og websteder ignorerer den reelle IP-adresse.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. Lad feltet stå tomt for brug af standard IP-adressen.
+Der kan opsættes en vilkårlig IP-adresse, som andre vil opfatte som den reelle, ved blot at angive adressen i det relevante felt. Lad feltet stå tomt for brug af standard IP-adressen.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Tilgængelig i AdGuard til Android/Windows/macOS.
 
 :::
 
 ### Fjern X-Client-Data header {#xclientdata}
 
-This feature blocks Google Chrome from sending its version and modifications information to Google domains (including Double Click and Google Analytics).
+Denne funktion forhindrer Google Chrome i at indsende sine versions- og ændringsoplysninger til Google-domæner (herunder DoubleClick og Google Analytics).
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, AdGuard for Mac, and AdGuard Browser Extension (Chromium-based browsers).
+Tilgængelig i AdGuard til Android/Windows/Mac samt AdGuard Browser Extension (Chromium-baserede webbrowsere).
 
 :::
 
 ### Beskyt mod DPI {#dpi}
 
-This feature modifies your outgoing traffic so that your ISP’s Deep Packet Inspection systems can’t detect the websites you visit. Can’t guarantee complete protection against all DPI systems.
+Funktionen ændrer den udgående trafik, så ISP'ens Deep Packet Inspection-systemer ikke kan detektere de besøgte websteder. Garanterer dog ikke 100% beskyttelse mod alle DPI-systemer.
 
 Deep Packet Inspection er et system til dybdegående analyse og filtrering af trafik baseret på pakkeindhold samt akkumulering af statistiske data. Via denne teknologi har internetudbydere mulighed for at tjekke trafik og begrænse deres kunders adgang til indhold.
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+AdGuard kan ændre udgående pakkedata, så klienten ikke falder ind under DPI-blokeringskriterierne. Det betyder, at brugeren ved at aktivere denne mulighed kan få adgang til det indhold, der ønskes. Ikke alle DPI-systemer kan p.t. omgås, men vi arbejder konstant på at forbedre dette aspekt.
 
 :::note
 
-Available in AdGuard for Android, AdGuard for Windows, and AdGuard for Mac.
+Tilgængelig i AdGuard til Android/Windows/macOS.
 
 :::
 
 :::caution
 
-If this feature is enabled in AdGuard for Windows, it may interfere with ESET antivirus. Anti-DPI will prevent ESET from filtering traffic, leaving blacklisted and malicious websites unblocked.
+Er denne funktion aktiveret i AdGuard til Windows, kan den forstyrre ESET-antivirus. Anti-DPI forhindrer ESET i at filtrere trafik og efterlader sortlistede og ondsindede websteder ublokerede.
 
 :::

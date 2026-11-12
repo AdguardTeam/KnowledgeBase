@@ -1259,7 +1259,7 @@ Disse modifikatorer kan ikke kombineres i én regel: `@@||example.org^$stealth,r
 - Tracking protection (formerly Stealth Mode) is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension for Firefox and Chromium-based browsers. AdGuard for Chromium MV3 v5.6 or later supports `$stealth` rules with [limitations](#stealth-modifier-limitations). All other products will ignore the rules with `$stealth` modifier.
 - Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter][] v3.0.0 or later.
 - The `fingerprinting` option is supported by AdGuard Browser Extension v5.6 or later. AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and earlier versions of AdGuard Browser Extension consider rules with this option invalid and ignore the whole rule, including its other options. In filter lists for several products, put `fingerprinting` in a separate rule: use `@@||example.com^$stealth=3p-cookie` and `@@||example.com^$stealth=fingerprinting` instead of `@@||example.com^$stealth=3p-cookie|fingerprinting`.
-- In AdGuard Browser Extension, *Block WebRTC* is applied globally and cannot be controlled on a per-site basis. Exception rules like `$stealth=webrtc` have no effect.
+- I AdGuard Browser Extension anvendes *Blokér WebRTC* globalt og kan ikke styres pr. websted. Exception rules like `$stealth=webrtc` have no effect.
 
 :::
 

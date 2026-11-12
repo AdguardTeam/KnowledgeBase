@@ -1,93 +1,93 @@
 ---
-title: How to report bugs
+title: Sådan anmeldes fejl
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+Er der bemærket fejl under brugen af AdGuard-produkter, så hjælp os venligst med at løse dem. Sådan anmeldes fejl mest effektivt.
 
-## Inden man starter
+## Inden der startes
 
-### When to report bugs
+### Hvornår fejl skal anmeldes
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+Tjek, at seneste opdaterede version bruges, og hvis ikke, opdatér/opgradér, da fejlen muligvis allerede er løst i den seneste version.
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+Tjek, at fejlen ikke allerede er anmeldt. Vi anbefaler at tjekke både åbne og lukkede problematikker.
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![Lukkede problematikker](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### Sådan beskrives en problematik
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we expect a bug report to include:
+Forsøg at inkludere flest mulige detaljer, da det vil gøre det nemmere for os både at genskabe fejlen samt at udbedre den. Her er, hvad vi forventer, at en fejlrapport indeholder:
 
-- Your app version
-- Your OS version
-- When you noticed the problem
-- What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-- Whether it recurred and with what frequency
-- Whether you have a VPN or an antivirus software
+- App-version
+- OS-version
+- Hvornår problematikken blev bemærket
+- Hvad man lavede, eller hvad der skete med appen, inden problematikken blev bemærket. Trin til at genskabe den
+- Hvorvidt den gentog sig, og med hvilken hyppighed
+- Om der anvendes VPN- eller en antivirussoftware
 
 ### Sådan indsamles logfiler
 
-Read about collecting logs in dedicated articles for each platform.
+Læs om indsamling af logfiler i dedikerede artikler til hver platform.
 
-## How to vote for bug reports or feature requests
+## Sådan stemmes på fejlanmeldelser eller funktionsanmodninger
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+Vil man støtte implementeringen af en ny funktion eller fejlrettelse, kan der stemme på den på GitHub. For at stemme, reagér blot med en emoji.
 
-![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![GitHub-problematik med reaktioner](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![GitHub-problematik uden reaktioner](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+Reaktioner kan findes øverst til højre eller nederst på en problematik.
 
-## Instructions for all platforms
+## Vejledninger til alle platforme
 
 ### AdGuard til Windows
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. Tjek [Windows-repo'et](https://github.com/AdguardTeam/AdGuardforWindows/issues) for at sikre, at problematikken endnu ikke er anmeldt.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. Åbn en [side til oprettelse af nye problematikker](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) og vælg *Fejlanmeldelse*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Udfyld formularen. Om muligt, vedhæft skærmfotos eller en skærmoptagelse.
 
-![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![Anmeldelse af en fejl via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
 ### AdGuard til Mac
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. Tjek [Mac-repo'et](https://github.com/AdguardTeam/AdGuardforMac/issues) for at sikre, at problematikken endnu ikke er anmeldt.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. Åbn en [side til oprettelse af nye problematikker](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Udfyld formularen. Om muligt, vedhæft skærmfotos eller en skærmoptagelse.
 
 ### AdGuard til Android
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. Tjek [Android-repo'et](https://github.com/AdguardTeam/AdGuardforAndroid/issues) for at sikre, at problematikken endnu ikke er anmeldt.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. Åbn en [side til oprettelse af nye problematikker](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) og vælg *Fejlanmeldelse*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Udfyld formularen. Om muligt, vedhæft skærmfotos eller en skærmoptagelse.
 
 ### AdGuard til iOS
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. Tjek [iOS-repo'et](https://github.com/AdguardTeam/AdGuardforiOS/issues) for at sikre, at problematikken endnu ikke er anmeldt.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. Åbn en [side til oprettelse af nye problematikker](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose) og vælg *Fejlanmeldelse*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Udfyld formularen. Om muligt, vedhæft skærmfotos eller en skærmoptagelse.
 
 ### AdGuard Browser Extesion
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. Tjek [Browser Extension-repo'et](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) for at sikre, at problematikken endnu ikke er anmeldt.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. Åbn en [side til oprettelse af nye problematikker](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) og vælg *Fejlanmeldelse*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Udfyld formularen. Om muligt, vedhæft skærmfotos eller en skærmoptagelse.
 
 ### AdGuard til Safari
 
-1. Check out the [repo](https://github.com/AdguardTeam/AdguardMiniForMac/issues) to make sure the issue hasn’t been reported yet.
+1. Tjek [Mini for Mac-repo'et](https://github.com/AdguardTeam/AdGuardMiniForMac/issues) for at sikre, at problematikken endnu ikke er anmeldt.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardMiniForMac/issues/new/choose) and select *Bug report*.
+2. Åbn en [side til oprettelse af nye problematikker](https://github.com/AdguardTeam/AdGuardMiniForMac/issues/new/choose) og vælg *Fejlanmeldelse*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Udfyld formularen. Om muligt, vedhæft skærmfotos eller en skærmoptagelse.

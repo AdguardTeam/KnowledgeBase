@@ -3,16 +3,16 @@ title: Forældrekontrol
 sidebar_position: 6
 ---
 
-There are several websites that children shouldn’t be able to access. _Parental control_ helps you solve this problem.
+Der er adskillige websteder, som børn ikke bør kunne tilgå. _Forældrekontrol_ hjælper med at løse dette problem.
 
 ![Forældrekontrol \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/parental.png)
 
-When _Parental control_ is enabled, AdGuard scans the content of webpages and blocks those that may be harmful or inappropriate for children. This includes adult images and text, crude language, violence, and drug-related content.
+Når _Forældrekontrol_ er slået til, skanner AdGuard indholdet på websider og blokerer dem, som kan være skadelige eller upassende for børn. Dette omfatter billeder og tekst for voksne, groft sprog, vold og narkotikarelateret indhold.
 
-You can also turn on _Safe search_ to remove inappropriate links from search results.
+_Sikker søgning_ kan også slås til for at fjerne upassende links fra søgeresultater.
 
-To prevent children from downloading unwanted programs, enable the _Block downloading exe.files_ option. This option blocks them from downloading and installing software.
+For at forhindre børn i at downloade uønskede programmer, slå valgmuligheden _Blokér download af exe.filer_ til. Denne indstilling hindrer dem i at downloade og installere software.
 
-You can manage the _Blocklist_ and the _Allowlist_ to decide which websites should be blocked and which should be allowed.
+Der kan håndteres _Sortliste_ og _Hvidliste_ for at afgøre, hvilke websteder, som skal blokeres, og hvilke som skal tillades.
 
-Finally, you can protect these settings with a password and choose which user accounts they apply to.
+Endelig kan disse indstillinger beskyttes med en adgangskode, og brugerkonti, de skal anvendes for, kan vælges.

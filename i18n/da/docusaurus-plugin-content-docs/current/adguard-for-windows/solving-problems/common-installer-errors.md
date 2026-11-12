@@ -1,5 +1,5 @@
 ---
-title: Common installer errors
+title: Almindelige installer-fejl
 sidebar_position: 7
 ---
 
@@ -9,104 +9,104 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+Denne artikel indeholder nogle af de mest almindelige fejl, som kan opleves under installationen af AdGuard til Windows, samt mulige måder at løse dem på.
 
-### Error 5: Access Denied {#error-5}
+### Fejl 5: Adgang nægtet {#error-5}
 
-This error message appears when required permissions haven't been granted. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+Denne fejlmeddelelse vises, hvis de nødvendige tilladelser ikke er tildelt. Der kan være flere årsager til, at AdGuard-installeren ikke har de tilladelser, som kræves for at afslutte installationsprocessen korrekt. Flg. trin kan prøves:
 
-- Temporarily disable your antivirus. Some of them may interfere with the installation, depending on the severity of their settings.
+- Deaktivér midlertidigt antivirusprogrammet. Nogle antivirusprogrammer kan forstyrre installationen, afhængigt af deres indstillinger.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Vælg en anden installationsmappe. Det er muligt, at den aktuelle installationsmappe har nogle adgangsbegrænsninger. Undgå også at vælge et eksternt drev, virtuelt drev mv.
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- Genstart computeren. Nogle gange er tilladelsesproblemerne midlertidige og kan løses ved en genstart af PC'en.
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### Fejl 112: Disken er fuld, Fejl 1632: Midlertidig mappe fuld eller utilgængelig {#error-112}
 
-These are two different errors with very similar solutions. As their titles suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+Disse er to forskellige fejl med meget ens løsninger. Som deres titler antyder, fandt AdGuard-installeren ikke nok diskplads til at fuldføre installationen. Flere ting kan forsøges for at løse problemet:
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- Afinstallér nogle programmer, eller slet unødvendige filer fra det drev, hvor AdGuard forsøges installeret.
 
-- Download, install, and run [AdwCleaner](https://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstalled programs and such. It will help clean up some disk space.
+- Download, installér og kør [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), et gratis værktøj fra Malwarebytes. Det renser blandt andet systemet for alle mulige "filefterladenskaber", som måtte restere efter ukorrekte programafinstallationer mv. Det kan hjælpe med rense og frigøre diskplads.
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- Genstart computeren. Nogle gange kan midlertidige filer optage en anseelig mængde diskplads, og genstart af PC'en er den mest pålidelige måde at slippe af med dem på.
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### Fejl 1601: Windows-installationsprogram er utilgængeligt {#error-1601}
 
-You could say this is a particular subcategory of Error 1603. The possible solutions are similar:
+Man kan sige, at dette er en særlig underkategori af Fejl 1603. De mulige løsninger er ens:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Start og genregistrér Microsoft Installer-tjenesten. Dette kræver lidt arbejde.
 
-    - Press *Win + R* and enter **services.msc**.
-    - Find in the list and double-click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
-    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
+    - Tryk på *Win + R* og skriv **services.msc**.
+    - På listen, find og dobbeltklik på *Windows Installer*.
+    - Tryk på *Start*-knappen under *Tjenestestatus* og tryk på *OK*. Er tjenestestatussen **kører**, klik da først på *Stop* og dernæst på *Start*.
+    - Tryk på *Win + R*, skriv ***msiexec /unregister*** og tryk på *Retur*.
+    - Tryk igen på *Win + R*, skriv ***msiexec /regserver*** og tryk på *Retur*
 
-- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
+- Genstart PC'en og start installationen forfra. Nogle gange er dette nok til at løse problemet.
 
-### Error 1602: Canceled by user {#error-1602}
+### Fejl 1602: Afbrudt af bruger {#error-1602}
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+Denne fejlkode indikerer, at installationsprocessener på en eller anden måde er blevet afbrudt manuelt. Hvad der kan gøres, er:
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- Undlad at lukke installationsvinduet. Når installationen er færdig, lukkes vinduet automatisk.
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking "No" will cancel the installation.
+- Dukker et dialogvindue op under installationen, tryk på "Ja" for at tildele installationsprogrammet de nødvendige tilladelser. Klikkes på "Nej", afbrydes installationen.
 
-- Don't start other processes while the installation process is going on.
+- Undlad at starte andre processer, mens installationsprocessen kører.
 
-### Error 1603: Fatal error during installation {#error-1603}
+### Fejl 1603: Fatal fejl under installationen {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
+Fejlen lyder mere skræmmende, end den faktisk er. Reelt er der tale om en ret generisk fejl med mange forskellige årsager, hvoraf nogle nemt kan rettes. Prøv flg. løsninger:
 
-- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
+- Tryk på *Win*-tasten, søg efter *Kommandoprompt* og kør den. Skriv dernæst `sfc /scannow` på kommandolinjen og tryk på *Retur*.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Vælg en anden installationsmappe. Det er muligt, at den aktuelle installationsmappe har nogle adgangsbegrænsninger. Undgå også at vælge et eksternt drev, virtuelt drev mv.
 
-- Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
+- Afinstallér AdGuard via vores særlige [afinstallationsværktøj](../../installation#advanced) og start derefter installationen forfra.
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Start og genregistrér Microsoft Installer-tjenesten. Dette kræver lidt arbejde.
 
-    - Press *Win + R* and enter ***services.msc***.
-    - Find in the list and double-click *Windows Installer*.
-    - Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
-    - Press *Win + R*, type ***msiexec /unregister***, and hit *Enter*.
-    - Press *Win + R* again, type ***msiexec /regserver***, and hit *Enter*
+    - Tryk på *Win + R* og skriv ***services.msc***.
+    - På listen, find og dobbeltklik på *Windows Installer*.
+    - Tryk på *Start*-knappen under *Tjenestestatus* og tryk på *OK*. Er tjenestestatussen **kører**, klik da først på *Stop* og dernæst på *Start*.
+    - Tryk på *Win + R*, skriv ***msiexec /unregister*** og tryk på *Retur*.
+    - Tryk igen på *Win + R*, skriv ***msiexec /regserver*** og tryk på *Retur*
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- Få tildelt fulde tilladelser på installationsdrevet. En fejl 1603 vil blive vist, såfremt alle tilladelser til filplaceringen ikke er blevet tildelt. Løsningen er heller ikke så nem, som nogle af de øvrige muligheder:
 
-    - Open *File Explorer*, right-click the drive containing the installation location and select *Properties*.
-    - Go to *Security* tab and click *Edit*.
-    - Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*.
-    - Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
-    - Click *Change Permissions*.
-    - On *Permissions* tab, double-click *Administrators*.
-    - Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
-    - Do the same operation above (from item 7) for *SYSTEM*.
-    - Click *OK* all the way out. Try installing AdGuard again.
+    - Åbn *Stifinder*, højreklik på drevet med installationsplaceringen og vælg *Egenskaber*.
+    - Gå til fanen *Sikkerhed* og klik på *Redigér*.
+    - Klik på *SYSTEM* og sørg for, at feltet *Tillad* er markeret (hvis muligt) for alle punkter i *Tilladelser for SYSTEM*. Udfør samme tjek for *Administratorer*.
+    - Klik på *OK* for at returnere til dialogboksen *Egenskaber*. Klik dernæst på *Avanceret*.
+    - Klik på *Skift tilladelser*.
+    - På fanen *Tilladelse*, dobbeltklik på *Administratorer*.
+    - Vælg *Denne mappe, undermapper og filer* i feltet *Gælder for* og markér alle de tilgængelige *Basistilladelser*. Tryk dernæst på *OK*.
+    - Udfør samme handling, som ovenfor (fra punkt 7), for *SYSTEM*.
+    - Klik på *OK* hele vejen ud. Prøv at installere AdGuard igen.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Fejl 1618: En anden installation er allerede i gang {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+Denne fejl vises, når flere forekomster af AdGuard-installeren kører samtidigt. Hvad der skal gøres, hvis denne fejl ses:
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- Genstart PC'en og start installationen forfra. Når computeren genstartes, stopper alle igangværende processer, inkl. alle forekomster af installeren.
 
-- Don't make multiple clicks on the installer even if it doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Klik ikke på installeren flere gange, selvom den (ser ud som om, at den) ikke starter med det samme. Somme tider tage det nogle sekunder at få vist installer-UI'en.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Fejl 1638: En anden version af dette produkt er allerede installeret {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+Det er meget sandsynligt, at AdGuard allerede er blevet installeret tidligere.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- Tjek, om AdGuard allerede er installeret på computeren. Det kan gøres ved at trykke på *Win*-tasten og skrive ***AdGuard***.
 
-- Maybe there're some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](/archive/adguard-for-windows/installation#advanced) and then repeat the installation.
+- Der findes måske nogle efterladenskaber fra en tidligere AdGuard-installation. Afinstallér AdGuard via vores særlige [afinstallationsværktøj](../../installation#advanced) og start derefter installationen forfra.
 
-### Other errors {#other}
+### Andre fejl {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+Opleves en fejl, der ikke er angivet ovenfor, er det muligt, at vi selv kan løse den. For at gøre det, behøver vi dog logfiler fra brugeren. Udfør derfor flg. trin:
 
-- Find and archive the **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Find og arkivér **AdGuard-installationslogfilerne**, som beskrevet i [denne artikel](../installation-logs).
 
-- Find and save to disk the **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Find **Hændelsesoversigt**-logfilerne og gem dem på disken. [Denne artikel](../system-logs) forklarer, hvordan dette gøres.
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Send en e-mail vedhæftet alle filer fra de to tidligere trin — inkl. en problembeskrivelse i beskedfeltet — til supportteamet via **support@adguard.com**. Vores tekniske supportmedarbejdere vil svare hurtigst muligt.

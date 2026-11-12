@@ -1,5 +1,5 @@
 ---
-title: Rule limit issues
+title: Regelkvoteproblemer
 sidebar_position: 1
 ---
 
@@ -9,28 +9,28 @@ Denne artikel omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowse
 
 :::
 
-## Safari content blocker rule limit
+## Regelkvote i Safari-indholdsblocker
 
-AdGuard Mini for Mac uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content-blocking extension.
+AdGuard Mini for Mac uses the Content Blocking API to apply filtering rules to pages in the Safari browser. P.t. tillades maks. 150.000 regler pr. indholdsblokerende udvidelse.
 
 AdGuard Mini for Mac has 6 content blockers:
 
-- AdGuard General
+- AdGuard Generelt
 - AdGuard Fortrolighed
 - AdGuard Social
 - AdGuard Sikkerhed
 - AdGuard Andre
 - AdGuard Tilpasset
 
-This makes a total of 900,000 filtering rules.
+Dette muliggør i alt 900.000 filtreringsregler.
 
-However, **one extension can contain only up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
+However, **one extension can contain only up to 150,000 rules**. Overskrides denne kvote, vil nogle af reglerne ikke blive anvendt. Dette kan medføre forkert blokering.
 
-## How to check if you are exceeding the rule limit
+## Sådan tjekkes, om kvoten overskrides
 
 1. Open AdGuard Mini app.
 2. Go to _Settings_ → _Safari extensions_.
 3. Below each extension, you can see the enabled filters and the number of active rules.
-   ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
+   ![Fanen Udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to _Filters_, select the problematic category, and disable the filters or user rules you don’t need.
+Er mere end 150.000 regler aktiveret i en indholdsblocker, skal nogle af dens filtre eller brugerregler muligvis deaktiveres. Gå til _Filtre_, vælg den problematiske kategori og deaktivér de filtre eller brugerregler, som ikke behøves.
