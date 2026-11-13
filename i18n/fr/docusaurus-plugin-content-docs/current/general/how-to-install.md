@@ -7,6 +7,8 @@ Selon l'application AdGuard ou l'extension de navigateur que vous souhaitez inst
 
 [AdGuard pour Android](/adguard-for-android/installation)
 
+[AdGuard Mini for Android](/adguard-mini-for-android/installation.md)
+
 [AdGuard pour iOS](/adguard-for-ios/installation)
 
 [AdGuard pour Windows](/adguard-for-windows/)
@@ -16,5 +18,3 @@ Selon l'application AdGuard ou l'extension de navigateur que vous souhaitez inst
 [Extension de navigateur AdGuard](/adguard-browser-extension/installation)
 
 [AdGuard pour Safari](/archive/adguard-for-safari/installation)
-
-[Bloqueur de contenu AdGuard](/adguard-content-blocker/installation)

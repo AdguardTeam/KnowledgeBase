@@ -7,6 +7,8 @@ sidebar_position: 10
 
 [AdGuard Android版](/adguard-for-android/installation)
 
+[AdGuard Mini for Android](/adguard-mini-for-android/installation.md)
+
 [AdGuard iOS版](/adguard-for-ios/installation)
 
 [AdGuard Windows版](/adguard-for-windows/)
@@ -16,5 +18,3 @@ sidebar_position: 10
 [AdGuard 浏览器扩展](/adguard-browser-extension/installation)
 
 [AdGuard Safari版](/archive/adguard-for-safari/installation)
-
-[AdGuard 内容拦截器](/adguard-content-blocker/installation)
