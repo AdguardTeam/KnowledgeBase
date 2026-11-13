@@ -1,5 +1,5 @@
 ---
-title: How to collect Windows system logs
+title: Sådan indsamles Windows-systemlogfiler
 sidebar_position: 6
 ---
 
@@ -11,40 +11,40 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Data og/eller filer tilgængelige i systemlogfiler behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occur with the installed software, including AdGuard. Below is the brief instruction describing the way to get the log files and to send them to our support service if necessary.
+For at analysere og diagnosticere forskellige potentielle problematikker, kan AdGuard-supporttjenesten have brug for Windows-systemlogfiler. Windows-hændelseslogfiler indeholder poster om alle opståede fejl med den installerede software, herunder AdGuard. Nedenfor beskriver en kort vejledning måden, hvorpå logfilerne om nødvendigt hentes og indsendes til vores supporttjeneste.
 
-1. Press *Win + R*
+1. Tryk på *Win + r*
 
-1. In the window that appears type in `eventvwr` and click *OK*:
+1. Skriv `eventvwr` i det åbnede vindue og klik på *OK*:
 
-    ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+    ![Kør-vindue *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-1. Event Viewer window appears as shown in the picture.
+1. Begivenhedsoversigtsvinduet vises som på billedet.
 
-    ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+    ![Begivenhedsoversigt *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-    To save files that we need, do the following:
+    Gør flg. for at gemme de nædvendige filer:
 
-    - Open *Application*: *Event Viewer (Local)* → *Windows Logs* → *Application*.
+    - Åbn *Applikation*: *Begivenhedsoversigt (Lokal)* → *Windows-logfiler* → *Applikation*.
 
-    - Right-click *Application* and in the drop-down menu select *Save All Events As...*
+    - Højreklik på *Applikation* og vælg i rullemenuen *Gem Alle begivenheder som...*
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. Click *OK*.
+    - Vælg et navn samt en destination og klik på *Gem*. Vælg *Vis information for følgende sprog*. Markér afkrydsningsfeltet ud for *Engelsk*. Klik på *OK*.
 
-    - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
+    - Åbn *System*: *Begivenhedsoversigt (Lokal)* → *Windows-logfiler* → *System*.
 
-    - Right-click *System* and in the drop-down menu select *Save All Events As...*
+    - Højreklik på *System* og vælg i rullemenuen *Gem Alle begivenheder som...*
 
-    - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+    - Vælg en destinationsmappe, angiv navnet og klik på *Gem*. Vælg *Vis information for følgende sprog*. Afkryds her feltet ud for *Engelsk*. Klik på *OK*.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Indsend de to netop filer gemte filer via **support@adguard.com**.
 
 :::note
 
-AdGuard er dedikeret til beskyttelse af brugerfortrolighed. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Før indsendelse af logfiler til supportteamet, bedes filen gennemgået, da den også kan indeholde oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger strikst vores [Fortrolighedspolitik](https://adguard.com/privacy/windows.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logfiler til supportteamet, bedes filen gennemgået, da den kan indeholde yderligere oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefales disse slettet først.
 
 :::

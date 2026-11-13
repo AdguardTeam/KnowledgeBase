@@ -3,25 +3,25 @@ title: App-håndtering
 sidebar_position: 1
 ---
 
-In the _App management_ section, you can manage routing and filtering settings for all apps installed on your device.
+I afsnittet _App-håndtering_ kan rutnings- og filtreringsindstillinger håndteres for alle apps installeret på enheden.
 
-Once AdGuard detects that an app has gone online, it is automatically added to _App management_, and its traffic is routed through AdGuard.
+Når AdGuard registrerer, at en app er gået online, føjes den automatisk til _App-håndtering_, og dens trafik rutes igennem AdGuard.
 
-By default, AdGuard filters all traffic, but you can choose what to exclude.
+Som standard filtrerer AdGuard al trafik, men det er muligt at vælge, hvad der skal undtages.
 
-AdGuard also filters HTTPS traffic, as most websites today use HTTPS. This is especially important for blocking ads on sites like youtube.com, facebook.com, and x.com, where it is impossible to remove ads without HTTPS filtering.
+AdGuard filtrerer også HTTPS-trafik, da de fleste websteder i dag bruger HTTPS. Dette er især vigtigt for at blokere annoncer på sider såsom youtube.com, facebook.com og x.com, hvor det er umuligt at fjerne annoncer uden HTTPS-filtrering.
 
-When routing and filtering are enabled for an app, the icons below each app will appear green.
+Når rutning og filtrering er slået til for en app, bliver ikonerne nedenfor hver app grønne.
 
-You can leave the settings as they are, disable both filtering and routing, or fine-tune them manually for each app. You can also access the app’s stats.
+Indstillingerne kan bibeholdes som de er, filtrering og rutning kan slås fra eller finjusteres manuelt for hver app. Der er ligeledes adgang til app-statistik.
 
-![App-statistikker \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
+![App-statistik \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/app_management/stats_app.png)
 
 ## Sådan fungerer app-filtrering og rutning i AdGuard til Windows v8.0
 
 AdGuard til Windows v8.0 introducerer opdateret logik til håndtering af apps. Det bidrager til at forhindre kompatibilitetsproblemer, mens der stadig er kontrol over, hvilke apps som filtreres. Lad os gennemgå, hvordan det fungerer.
 
-Der er "uproblematisk" og "problematiske" apps. Some work correctly when filtered, while others may not function when their traffic is processed by AdGuard. This can be caused by features like HTTPS interception or proxying.
+Der er "kompatible" og "inkompatible" apps. Nogle fungerer korrekt, når de filtreres, mens andre muligvis ikke fungerer, når deres trafik behandles af AdGuard. Dette kan skyldes funktioner såsom HTTPS-opsnapning eller proxying.
 
 For at undgå app-fejlfunktioner fra starten, filtrerer AdGuard ikke alt vilkårligt. Den refererer i stedet til en kompatibilitetsliste — en samling apps kendt for at fungere korrekt med filtrering aktiveret.
 
@@ -66,11 +66,11 @@ Når deaktiveret, behandles nye apps ikke af AdGuard — rutning af dem vil skul
 
 Her er en hurtig oversigt over forskellige app-kategoriers adfærd relateret til denne indstilling:
 
-| App-kategori                                                                                           | Slå til (standard)                         | Slå fra                                            |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | -------------------------------------------------- |
-| Kompatibel eller uproblematisk (f.eks. webbrowsere) | · Rutning ✅ <br /> · Filtrering ✅ <br /> · HTTPS-filtrering ✅ | Samme adfærd — afhænger ikke af til/fra-knappen    |
-| Problematisk (fra undtagelseslister, filtrering kan medføre problemer)              | · Rutning ❌ <br /> · Filtrering ❌ <br /> · HTTPS-filtrering ❌ | Samme adfærd — afhænger ikke af til/fra-knappen    |
-| Øvrige / (nyligt detekterede, ukendte, ikke på lister)                              | · Rutning ✅ <br /> · Filtrering ✅ <br /> · HTTPS-filtrering ❌ | Ikke rutet igennem AdGuard, skal aktiveres manuelt |
+| App-kategori                                                                              | Slå til (standard)                         | Slå fra                                            |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------- |
+| Kompatibel (f.eks. webbrowsere)        | · Rutning ✅ <br /> · Filtrering ✅ <br /> · HTTPS-filtrering ✅ | Samme adfærd — afhænger ikke af til/fra-knappen    |
+| Inkompatibel (fra undtagelseslister, filtrering kan medføre problemer) | · Rutning ❌ <br /> · Filtrering ❌ <br /> · HTTPS-filtrering ❌ | Samme adfærd — afhænger ikke af til/fra-knappen    |
+| Øvrige / (nyligt detekterede, ukendte, ikke på lister)                 | · Rutning ✅ <br /> · Filtrering ✅ <br /> · HTTPS-filtrering ❌ | Ikke rutet igennem AdGuard, skal aktiveres manuelt |
 
 :::info Hvad der sker ved nulstilling
 
