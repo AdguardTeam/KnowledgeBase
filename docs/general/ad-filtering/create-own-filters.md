@@ -5213,6 +5213,12 @@ An absolute URL from the same origin is allowed from any folder.
 
 If an included file inside this directory is not found or unavailable, the whole filter update should fail.
 
+:::info Compatibility
+
+Ignoring an `!#include` that points outside the directory of the file that contains the directive is supported by the [FiltersDownloader][gh-filters-downloader] v3.1.0 or later. Earlier versions may download such an include or fail the filter update.
+
+:::
+
 Same-origin limitation should be disabled for local custom filters.
 
 **Examples**
