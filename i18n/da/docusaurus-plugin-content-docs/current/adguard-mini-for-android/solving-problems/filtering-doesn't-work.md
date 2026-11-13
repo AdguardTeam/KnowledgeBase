@@ -5,24 +5,24 @@ sidebar_position: 2
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
 ## Samsung Browser
 
-- Make sure AdGuard is selected as the ad blocker in Samsung Browser: open the browser menu, tap _Ad blockers_, and check that AdGuard is toggled on.
+- Sørg for, at AdGuard er valgt som adblocker i Samsung Browser: Åbn webbrowsermenuen, tryk på _Adblockere_, og tjek, at AdGuard er slået til.
 
-- Make sure the necessary filters are enabled in AdGuard Mini: go to _Protection_ → _Browser protection_ → _Filters_ and check that _Ad blocking_ and your _Language-specific_ filters are turned on.
+- Sørg for, at de nødvendige filtre er aktiveret i AdGuard Mini: Gå til _Beskyttelse_ → _Browserbeskyttelse_ → _Filtre_, og tjek, at _Adblocking_ og de _Sprogspecifikke_ filtre er slået til.
 
-- Check for filter updates: on the app’s main screen, tap the update icon in the top-right corner.
+- Tjek for filteropdateringer: Tryk på opdateringsikonet øverst til højre på app-hovedskærmen.
 
 ## Yandex Browser
 
-- Make sure AdGuard is enabled in Yandex Browser: open the browser menu, go to _Settings_ → _Content blocking extensions_, and check that AdGuard is toggled on.
+- Sørg for, at AdGuard er aktiveret i Yandex Browser: Åbn webbrowserens menu, gå til _Indstillinger_ → _Udvidelser til indholdsblokering_, og tjek, at AdGuard er slået til.
 
-- Make sure the necessary filters are enabled in AdGuard Mini: go to _Protection_ → _Browser protection_ → _Filters_ and check that _Ad blocking_ and your _Language-specific_ filters are turned on.
+- Sørg for, at de nødvendige filtre er aktiveret i AdGuard Mini: Gå til _Beskyttelse_ → _Browserbeskyttelse_ → _Filtre_, og tjek, at _Adblocking_ og de _Sprogspecifikke_ filtre er slået til.
 
-- Check for filter updates: on the app’s main screen, tap the update icon in the top-right corner.
+- Tjek for filteropdateringer: Tryk på opdateringsikonet øverst til højre på app-hovedskærmen.
 
-If the problem persists, go to _Settings_ → _Support_ → _Report incorrect blocking_, and we’ll look into it.
+Fortsætter problemet, gå til _Indstillinger_ → _Support_ → _Anmeld forkert blokering_, så undersøger vi det.

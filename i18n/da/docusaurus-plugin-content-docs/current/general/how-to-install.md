@@ -7,7 +7,7 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard til Android](/adguard-for-android/installation)
 
-[AdGuard Mini for Android](/adguard-mini-for-android/installation.md)
+[AdGuard Mini til Android](/adguard-mini-for-android/installation.md)
 
 [AdGuard til iOS](/adguard-for-ios/installation)
 

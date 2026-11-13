@@ -5,55 +5,55 @@ sidebar_position: 7
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-The core features of AdGuard Mini for Android are free:
+Kernefunktionerne i AdGuard Mini til Android er gratis:
 
-- Protection in Samsung Browser and Yandex Browser
+- Beskyttelse i Samsung Browser og Yandex Browser
 - DNS-beskyttelse
-- Video browser
-- Statistics and Recent activity
+- Video-browser
+- Statistik og seneste aktivitet
 
-The full version unlocks advanced features:
+Den fulde version oplåser avancerede funktioner:
 
-- Tracking protection: protect your online activity and personal data from web trackers
-- Custom filters: add any filter list by URL, in addition to the built-in ones
-- [DNS filters](/adguard-mini-for-android/features/dns-protection.md): block more unwanted domains at the DNS level
-- Domain management: block and allow domains right from _Recent activity_
+- Sporingsbeskyttelse: Beskyt onlineaktiviteten og personlige data mod webtrackere
+- Tilpassede filtre: Tilføj alle filterlister via URL, ud over de indbyggede
+- [DNS-filtre](/adguard-mini-for-android/features/dns-protection.md): Blokér flere uønskede domæner på DNS-niveau
+- Domænehåndtering: Blokér og tillad domæner direkte fra _Seneste aktivitet_
 
-The list of advanced features will continue to grow.
+Listen over avancerede funktioner vil fortsætte med at vokse.
 
-## How to get the full version
+## Sådan fås den fulde version
 
-There are two ways to purchase a subscription:
+Der er to måder at købe et abonnement på:
 
-### On Google Play
+### Via Google Play
 
-You can purchase a monthly or yearly subscription via [Google Play](https://agrd.io/adguard-mini-for-android) directly in the app: _Settings_ → _License_ → _Get full version_. You’ll be taken to a page with three subscription types:
+Der kan købes et måneds- eller årsabonnement via [Google Play](https://agrd.io/adguard-mini-for-android) direkte i appen: _Indstillinger_ → _Licens_ → _Få fuld version_. Der omdirigeres til en side med tre abonnementstyper:
 
-- Personal (3 devices)
-- Family (9 devices)
-- Mobile (1 device) – only available via Google Play
+- Personal (3 enheder)
+- Family (9 enheder)
+- Mobile (1 enhed) – kun tilgængelig via Google Play
 
-To use the license on other devices, bind it to your AdGuard account: go to _Settings_ → _License_ → _Bind license_, then log in to that account in other AdGuard Ad Blocker apps.
+For at anvende licensen på andre enheder, knyt den til AdGuard-kontoen: Gå til _Indstillinger_ → _Licens_ → _Tilknyt licens_, og log derefter ind på den konto i andre AdGuard Ad Blocker-apps.
 
-### On the AdGuard website
+### Via AdGuard-webstedet
 
-You can also purchase a yearly or a lifetime license on the [official website](https://adguard.com/license.html):
+En års- eller livstidslicens kan også købes via det [officielle websted](https://adguard.com/license.html):
 
-- Personal (3 devices)
-- Family (9 devices)
+- Personal (3 enheder)
+- Family (9 enheder)
 
-The license is universal: it can be used across all supported AdGuard Ad Blocker apps. It’s bound to your AdGuard account automatically.
+Licensen er universel: Den kan bruges i alle understøttede AdGuard Ad Blocker-apps. Den tilknyttes automatisk AdGuard-kontoen.
 
-## How to activate an existing license
+## Sådan aktiveres en eksisterende licens
 
-If you already have an AdGuard license or previously bought a subscription on Google Play, you can activate the full version directly in the app. Make sure your license has an available device slot (you can manage your devices in your [AdGuard account](https://adguardaccount.com/account/licenses)).
+Haves allerede en AdGuard-licens, eller er der tidligere købt et abonnement via Google Play, kan den fulde version aktiveres direkte i appen. Sørg for, at licensen har en ledig enhedsplads (enheder kan håndteres via [AdGuard-kontoen](https://adguardaccount.com/account/licenses)).
 
-1. Go to _Settings_ → _License_ and tap _Already purchased?_
-2. Choose one of the options:
-   - Log in
-   - Restore from Google Play
-   - Enter your activation code
+1. Gå til _Indstillinger_ → _Licens_ og tryk på _Allerede købt?_
+2. Vælg én af mulighederne:
+   - Log ind
+   - Gendan fra Google Play
+   - Angiv aktiveringskoden

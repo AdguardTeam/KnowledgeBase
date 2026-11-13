@@ -1,22 +1,22 @@
 ---
-title: DNS protection won’t turn on
+title: DNS-beskyttelse aktiveres ikke
 sidebar_position: 3
 ---
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-DNS protection may fail to start for one of two reasons:
+Start af DNS-beskyttelse kan mislykkes af en af to årsager:
 
-**Another VPN app is running**
+**En anden VPN-app kører**
 
-Android allows only one active VPN connection at a time, and AdGuard Mini for Android needs a local VPN to work. Disconnect the other VPN app and re-enable DNS protection.
+Android tillader kun én aktiv VPN-forbindelse ad gangen, og AdGuard Mini til Android behøver et lokalt VPN for at fungere. Afbryd den anden VPN-app og genaktivér DNS-beskyttelse.
 
-**Private DNS is enabled in Android settings**
+**Privat DNS er aktiveret i Android-indstillinger**
 
-Private DNS overrides other DNS settings and prevents DNS protection from working. Open your device settings, go to _Network & internet_ → _Private DNS_, and select Off. The exact path may vary depending on the manufacturer.
+Privat DNS tilsidesætter andre DNS-indstillinger og forhindrer DNS-beskyttelse i at fungere. Åbn enhedsindstillingerne, gå til _Netværk og internet_ → _Privat DNS_, og vælg Fra. Den nøjagtige sti kan variere afhængigt af producent.
 
-If the problem persists, go to _Settings_ → _Support_ → _Contact support_.
+Fortsætter problemet, gå til _Indstillinger_ → _Support_ → _Kontakt supporten_.
