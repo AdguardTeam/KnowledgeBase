@@ -106,41 +106,41 @@ Er en webbrowser ikke er opført, følg den manualle vejledningen nedenfor for a
 
 Eksisterer nøglen ikke, kan den oprettes manuelt. Eksempel til Chrome:
 
-- Right-click _Policies_ → _New_ → _Key_ and name it `Google`
-- Inside `Google`, create another key named `Chrome`
+- Højreklik på _Politikker_ → _Ny_ → _Nøgle_ og navngiv den `Google`
+- I nøglen `Google`, opret endnu en nøgle med navnet `Chrome`
 
-Repeat the same logic for Chromium, Edge, Brave, Vivaldi, Yandex Browser, etc. You should end up with a key that looks like `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\<Vendor>\<Product>`.
+Gentag den samme logik for Chromium, Edge, Brave, Vivaldi, Yandex Browser mv. Resultatet bør være en nøgle, der ser således ud: `HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\<Vendor>\\<Product>`.
 
-1. Add the required registry values:
+1. Tilføj de nødvendige registreringsdatabaseværdier:
 
-   - In the correct key, click the right panel → _New_ → _DWORD (32-bit) Value_
+   - I den korrekte nøgle, klik på højre panel → _Ny_ → _DWORD (32-bit) Værdi_
 
-   - Name it `RendererAppContainerEnabled`
+   - Navngiv den `RendererAppContainerEnabled`
 
-   - Double-click it and set:
+   - Dobbeltklik på den og indstil:
 
-     - **Value:** 0
-     - **Base:** Hexadecimal or Decimal (either is fine)
+     - **Værdi:** 0
+     - **Base:** Hexadecimal eller Decimal (begge valg er fine)
 
-   - Repeat the process and create a second DWORD `NetworkServiceSandboxEnabled`.
+   - Gentag processen og opret endnu en DWORD `NetworkServiceSandboxEnabled`.
 
-   - Set its value to 0.
+   - Angiv dens værdi til 0.
 
-   Both parameters must be `REG_DWORD` and have the value **0**.
+   Begge parametre skal være `REG_DWORD` med værdien **0**.
 
-2. Close the browser and apply the settings. To ensure the policy is loaded:
+2. Luk webbrowseren og effektuér indstillingerne. For at sikre, at politikken er indlæst:
 
-   - Fully close the browser
-   - Check Task Manager and make sure no processes such as _chrome.exe_, _msedge.exe_, _brave.exe_ remain running
-   - Reopen the browser
+   - Luk webbrowseren fuldstændigt
+   - Tjek Jobliste og sørg for, at ingen processer, såsom _chrome.exe_, _msedge.exe_, _brave.exe_, fortsat kører
+   - Åbn webbrowseren igen
 
-3. Verify that the policies have been applied by opening the policy viewer for your browser.
+3. Bekræft politikkernes effektuering ved at åbne webbrowserens politikviser.
 
-You should see the following policies active:
+Flg. aktive politikker bør kunne ses:
 
 - `RendererAppContainerEnabled` — **0 / false**
 - `NetworkServiceSandboxEnabled` — **0 / false**
 
-If available, click _Reload policies_.
+Hvis tilgængelig, klik på _Genindlæs politikker_.
 
 Færdig!

@@ -1,5 +1,5 @@
 ---
-title: How to collect AdGuard installation logs
+title: Sådan indsamles AdGuard-installationslogfiler
 sidebar_position: 5
 ---
 
@@ -11,20 +11,20 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::note
 
-Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+Data og/eller filer tilgængelige i systemlogfiler behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/en/privacy.html).
 
 :::
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+Opstår der problemer under installationen af AdGuard, kan supportteamet bede om indsamling og indsendelse AdGuard-installationslogfiler. I så tilfælde skal flg. gøres:
 
-1. Select the *Run* command in Start menu or press *Win + R* on the keyboard.
+1. Vælg *Kør*-kommandoen i menuen Start, eller tryk på *Win + R* på tastaturet.
 
-1. Type in *%tmp%* and click *OK*.
+1. Skriv *%tmp%* og klik på *OK*.
 
-    ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+    ![Åbn temp-mappe *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
-1. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+1. Vælg i den åbnede mappe alle filer startende med `Adguard` og føj dem til arkivet (med WinRAR, WinZIP eller andet arkiveringsprogram).
 
-    ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+    ![AdGuard-installationslogfiler *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-1. Send this archive to AdGuard tech support at **support@adguard.com**.
+1. Indsend arkivet til AdGuards tekniske support via **support@adguard.com**.

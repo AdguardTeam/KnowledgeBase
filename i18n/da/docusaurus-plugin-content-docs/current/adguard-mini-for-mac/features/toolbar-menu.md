@@ -1,36 +1,36 @@
 ---
-title: Safari toolbar menu
+title: Safari-værktøjsbjælkemenu
 sidebar_position: 8
 ---
 
-![Safari toolbar assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
+![Safari-værktøjsbjælkeassistent](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/assistant.png)
 
-AdGuard Mini has a handy menu right in the Safari toolbar. To open it, click the icon located to the left of the search bar.
+AdGuard Mini har et praktisk menu direkte på Safari-værktøjsbjælken. For at åbne den, klik på ikonet placeret til venstre for værktøjsbjælken.
 
-Here’s what you can do in the toolbar menu:
+Her er, hvad der kan gøres i værktøjsbjælkemenuen:
 
-- **Pause icon**
+- **Pauseikon**
 
-  Disables AdGuard Mini
+  Slår AdGuard Mini fra
 
-- **Settings icon**
+- **Indstillingsikon**
 
-  Takes you to AdGuard Mini’s _Settings_ screen
+  Åbner AdGuard Mini-skærmen _Indstillinger_
 
-- **Website info**
+- **Webstedsinfo**
 
-  Indicates the website you are currently on
+  Angiver det websted, der aktuelt besøges
 
-- **Protection**
+- **Beskyttelse**
 
-  Turning it off disables filtering on the website you are currently on. Turning it back on resumes filtering on the website
+  Slås den fra, deaktiveres filtrering på det websted, der p.t. besøges. Slås den til igen, genoptages filtrering på webstedet
 
-- **Block element**
+- **Blokere element**
 
-  Lets you manually select and block any element on the page: select the element, adjust the selection frame (if needed), and click the _Block_ button. To unblock an element, go to _Settings_ → _User rules_ and delete or uncheck the corresponding rule
+  Muliggør manuelt at vælge og blokere et hvilket som helst element på siden: Vælg elementet, justér om nødvendigt markeringsrammen, og klik på knappen _Blokér_. For at afblokere et element, gå til _Indstillinger_ → _Brugerregler_ og slet eller afmarkér den korresponderende regel
 
-  ![Manual blocking](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
+  ![Manuel blokering](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/manual-blocking.png)
 
-- **Report an issue**
+- **Anmeld et problem**
 
-  Takes you to a special form for reporting issues with some information automatically pre-filled
+  Åbner en særlig problemanmeldelsesformular med visse oplysninger automatisk præudfyldt

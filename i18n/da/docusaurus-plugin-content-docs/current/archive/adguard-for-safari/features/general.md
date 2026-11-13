@@ -9,10 +9,10 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 :::
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard til Safari er designet til at overholde Apples restriktioner for adblocker-webbrowserudvidelser og er den mest populære adblocker til Safari. Selvom den ikke kan sammenlignes med vores computeradblocker-apps, er den gratis og kan beskytte mod annoncer, trackere, phishing og ondsindede websteder.
 
-## General tab
+## Fanen Generelt
 
-![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![Fanen Generelt](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
-The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AdGuard icon in the menu bar. There you can also turn on content blockers to block ads, trackers, annoyances, etc.
+Den første fane er skærmen Generelt, hvor grundlæggende ting, såsom notifikationer, opdateringsintervaller og start af AdGuard ved systemstart, kan opsættes. Det kan også vælges at få AdGuard-ikonet vist på menubjælken. Herfra kan indholdsblockere også slås til for at blokere annoncer, trackere, irritationer mv.
