@@ -212,7 +212,7 @@
     "description": "The label for category 'AdGuard for Windows v7' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.AdGuard Mini for Android": {
-    "message": "AdGuard Mini for Android",
+    "message": "Android için AdGuard Mini",
     "description": "The label for category 'AdGuard Mini for Android' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.features-adguard-mini-for-android": {

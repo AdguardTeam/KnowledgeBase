@@ -1,12 +1,12 @@
 ---
-title: Protection stops when the app is in the background
+title: Beskyttelsen stopper, når appen er i baggrunden
 sidebar_position: 4
 ---
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-Android’s battery optimization may stop apps that have been running in the background for a long time. To prevent this, follow the steps in [How to protect AdGuard from being disabled by the system](https://adguard.com/kb/adguard-for-android/solving-problems/background-work/).
+Androids batterioptimering kan stoppe apps, som har kørt i baggrunden i lang tid. For at forhindre dette, følg trinnene i [Sådan beskyttes AdGuard mod at blive deaktiveret af systemet](https://adguard.com/kb/adguard-for-android/solving-problems/background-work/).
