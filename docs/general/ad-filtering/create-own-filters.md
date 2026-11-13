@@ -5203,11 +5203,15 @@ The `!#include` directive allows to include contents of a specified file into th
 !#include file_path
 ```
 
-where `file_path` is a same origin absolute or relative file path to be included.
+where `file_path` is a same origin absolute URL or a path relative to the directory of the file that contains the directive. A path that starts with `/` is also relative to that directory: the leading slash is ignored.
 
 The files must originate from the same domain, but may be located in a different folder.
 
-If included file is not found or unavailable, the whole filter update should fail.
+A relative or root-absolute include must stay inside the directory of the file that contains the directive. If such an include points outside this directory, the ad blocker ignores the include and continues the filter update. The ad blocker does not download the file. This also applies to paths with `..`, percent-encoded dot segments, or encoded path separators.
+
+An absolute URL from the same origin is allowed from any folder.
+
+If an included file inside this directory is not found or unavailable, the whole filter update should fail.
 
 Same-origin limitation should be disabled for local custom filters.
 
@@ -5219,8 +5223,11 @@ Filter URL: `https://example.org/path/filter.txt`
 ! Valid (same origin):
 !#include https://example.org/path/includedfile.txt
 !
-! Valid (relative path):
+! Valid (relative or root-absolute path inside the directory):
 !#include /includedfile.txt
+!#include includedfile.txt
+!
+! Ignored (outside the directory):
 !#include ../path2/includedfile.txt
 !
 ! Invalid (another origin):
