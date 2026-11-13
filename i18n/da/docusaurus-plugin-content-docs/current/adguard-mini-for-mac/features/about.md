@@ -3,22 +3,22 @@ title: Om
 sidebar_position: 7
 ---
 
-![About tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
+![Om-fane](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/about.png)
 
-On the _About_ tab, you can check:
+På fanen _Om_ kan flg. tjekkes:
 
-- Current version of your AdGuard Mini app
-- Current versions of the libraries
+- Aktuel version af AdGuard Mini-appen
+- Aktuelle biblioteksversioner
 
-You can also find the links to:
+Der kan også findes links til:
 
-- Our official website
-- EULA and Privacy policy
-- Acknowledgements
+- Vores officielle websted
+- EULA og Fortrolighedspolitik
+- Anerkendelser
 - Versionshistorik
 
 :::note Påmindelse
 
-AdGuard Mini for Mac can be downloaded for free [from the App Store](https://agrd.io/mini_mac). A detailed setup instruction is available in [this Knowledge Base article](/adguard-mini-for-mac/installation/).
+AdGuard Mini til Mac kan downloades gratis [fra App Store](https://agrd.io/mini_mac). En detaljeret opsætningsvejledning er tilgængelig i [denne Vidensbase-artikel](/adguard-mini-for-mac/installation/).
 
 :::

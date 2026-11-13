@@ -1,5 +1,5 @@
 ---
-title: Filtering doesn’t stop when AdGuard for Safari is disabled
+title: Filtrering stopper ikke, når AdGuard til Safari er slået fra
 sidebar_position: 3
 ---
 
@@ -9,16 +9,16 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 :::
 
-If filtering doesn’t stop when AdGuard for Safari is disabled, it may be because content blockers take too long to update.
+Hvis filtreringen ikke stopper, når AdGuard til Safari er slået fra, kan dette skyldes, at det tager for langt tid at opdatere indholdsblockere.
 
-## How to fix
+## Sådan udbedres dette
 
-1. Open Safari.
-2. Click _Safari_ in the left upper corner menu.
-3. Click _Settings…_ → _Extensions_.
-4. Clear the checkboxes for AdGuard’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, _AdGuard for Safari_, and _AdGuard Assistant_.
-   ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
-5. Restart Safari.
-6. Return to _Settings..._ → _Extensions_ and re-enable the content-blocking extensions.
+1. Åbn Safari.
+2. Klik på _Safari_ i menuen øverste til venstre.
+3. Klik på _Indstillinger…_ → _Udvidelser_.
+4. Ryd afkrydsningsfelterne for AdGuards udvidelser: _Tilpasset_, _Generelt_, _Andre_, _Fortrolighed_, _Sikkerhed_, _Socialt_, _AdGuard til Safari_ og _AdGuard Assistent_.
+   ![Afmarkerede indholdsblockere](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+5. Genstart Safari.
+6. Returnér til _Indstillinger..._ → _Udvidelser_ og slå indholdsblockerudvidelserne til igen.
 
-Now everything should work as intended: filtering is on when AdGuard for Safari is enabled, and filtering is off when it is disabled.
+Nu burde alt fungere som tilsigtet: Filtrering er slået til, når AdGuard til Safari er aktiveret, og filtrering er slået fra, når den er deaktiveret.

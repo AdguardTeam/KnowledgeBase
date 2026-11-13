@@ -1,5 +1,5 @@
 ---
-title: Filtering doesn’t work and ads aren’t blocked
+title: Filtrering virker ikke, og annoncer blokeres ikke
 sidebar_position: 2
 ---
 
@@ -9,22 +9,22 @@ Denne artikel omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowse
 
 :::
 
-In some cases, filtering may not work and ads may still be displayed even though AdGuard Mini for Mac and the proper filters are enabled. This usually happens when something goes wrong with filter updates due to Safari bugs.
+I nogle tilfælde fungerer filtrering muligvis ikke, og annoncer kan stadig vises, selvom AdGuard Mini til Mac og de korrekte filtre er slået til. Dette sker normalt, når noget går galt med filteropdateringer grundet Safari-fejl.
 
-### How to fix
+### Sådan udbedres dette
 
-1. Open Safari.
-2. Click _Safari_ in the left upper corner menu.
-3. Click _Settings…_ → _Extensions_.
-4. Clear the checkboxes for AdGuard Mini’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, and _AdGuard for Safari_.
-   ![Unchecked extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
-5. Restart Safari.
-6. Return to Safari → _Settings..._ → _Extensions_ and re-enable the AdGuard extensions.
-7. Open AdGuard Mini’s menu.
-8. Click _Check for updates_ icon.
-   ![Update button \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
-9. Do not close the AdGuard Mini window until the filters are updated.
+1. Åbn Safari.
+2. Klik på _Safari_ i menuen øverste til venstre.
+3. Klik på _Indstillinger…_ → _Udvidelser_.
+4. Ryd afkrydsningsfelterne for AdGuard Mini-udvidelserne: _Tilpasset_, _Generelt_, _Andre_, _Fortrolighed_, _Sikkerhed_, _Socialt_ og _AdGuard til Safari_.
+   ![Afmarkerede udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/unchecked-extensions.png)
+5. Genstart Safari.
+6. Returnér til Safari → _Indstillinger..._ → _Udvidelser_ og genaktivér AdGuard-udvidelserne.
+7. Åbn AdGuard Minis menu.
+8. Klik på ikonet _Tjek for opdateringer_.
+   ![Knappen Opdatér \*mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/update-button.png)
+9. Luk ikke AdGuard Mini-vinduet, før filtrene er blevet opdateret.
 
-If this doesn’t help and ads are still not being blocked, please contact our support at [support@adguard.com](mailto:support@adguard.com).
+Hjælper dette ikke, og annoncer stadig ikke blokeres, kontakt supporten via [support@adguard.com](mailto:support@adguard.com).
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard Mini icon next to the Safari search bar and then click _Report an issue_.
+Opleves kun problemer med én bestemt side/websted, kan det anmeldes direkte fra webbrowseren: Klik på AdGuard Mini-ikonet ved siden af Safari-søgebjælken, og klik dernæst på _Anmeld et problem_.

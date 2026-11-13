@@ -1,149 +1,149 @@
 ---
-title: How to report websites and apps
+title: Sådan indrapporteres websteder og apps
 sidebar_position: 3
 ---
 
 
-When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
+Ved brug af adblockere kan visse websteder fejlfungere eller have ødelagte sideelementer. Disse problemer kan opstå grundet en række faktorer:
 
-- Incorrect user rules;
-- Modified algorithms of adding ads;
-- Added filters/extensions from third-party developers;
-- The authors of one of the filters made a mistake when creating the rule;
-- Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
+- Forkerte brugerregler;
+- Ændrede algoritmer for annoncetilføjelser;
+- Tilføjede filtre/udvidelser fra tredjepartsudviklere;
+- Forfatterne af et af filtrene begik en fejl ved oprettelsen af reglen;
+- Genindsættelse af annoncer. Find mere om denne metode på vores [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
-You can help us by filling in a form with examples of ads you have encountered. To do it, please, use instructions for your OS.
+Hjælp os gerne ved at udfylde en formular med eksempler på annoncer, der er stødt på. For at gøre dette, følg vejledningen for det aktuelle OS.
 
-## Report a website {#report}
+## Anmeld et websted {#report}
 
 :::note
 
-When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+Når en klage indsendes via appen eller AdGuard Browser Assistent, udfyldes alle oplysninger automatisk. Skærmfotos skal dog oprettes manuelt og dernæst vedhæftes. Anvendes et [direkte link](https://reports.adguard.com/new_issue.html), skal data dog angives manuelt.
 
 :::
 
-To report a reinsertion of an ad or incorrect displaying of a website, you need to:
+For at anmelde en genindsættelse af en annonce eller forkert visning af et websted:
 
-### Browser extension {#extension}
+### Browserudvidelse {#extension}
 
-- Open the browser extension settings by clicking the corresponding icon;
-- Click **Report an issue**:
+- Åbn webbrowserudvidelsesindstillingerne ved at klikke på det relevante ikon;
+- Klik på **Anmeld et problem**:
 
 ![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
-- After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Når formularen er udfyldt, oprettes der automatisk en problematik på [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). Der vil også være et link til at monitorere fremskridt hen imod løsningen af problematikken.
 
 ### Windows {#windows}
 
-- Open [AdGuard Browser Assistant](/archive/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+- Åbn [AdGuard Browser Assistent](/adguard-for-windows/browser-assistant) og tryk på **Anmeld et problem**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
-- Fill in the form for reporting a complaint;
-- After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Udfyld formularen til anmeldelse af en klage;
+- Når formularen er udfyldt, oprettes der automatisk en problematik på [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). Der vil også være et link til at monitorere fremskridt hen imod løsningen af problematikken.
 
 ### Android {#android}
 
-- Open AdGuard settings;
-- Choose **Support**, then **Report incorrect blocking**:
+- Åbn AdGuard-indstillingerne;
+- Vælg **Support**, dernæst **Anmeld forkert blokering**:
 
 ![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
-- After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Når formularen er udfyldt, oprettes der automatisk en problematik på [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). Der vil også være et link til at monitorere fremskridt hen imod løsningen af problematikken.
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- Åbn [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) og tryk på **Anmeld et problem**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
-- Fill in the form for reporting a complaint;
-- After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Udfyld formularen til anmeldelse af en klage;
+- Når formularen er udfyldt, oprettes der automatisk en problematik på [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). Der vil også være et link til at monitorere fremskridt hen imod løsningen af problematikken.
 
 ### iOS {#ios}
 
-- Open AdGuard settings;
-- Choose **Support**, then **Report incorrect blocking**:
+- Åbn AdGuard-indstillingerne;
+- Vælg **Support**, dernæst **Anmeld forkert blokering**:
 
-![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
+![iOS *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
-- Fill in the form for reporting a complaint;
-- After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Udfyld formularen til anmeldelse af en klage;
+- Når formularen er udfyldt, oprettes der automatisk en problematik på [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). Der vil også være et link til at monitorere fremskridt hen imod løsningen af problematikken.
 
-## Filling in the form {#form}
+## Udfyldelse af formularen {#form}
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+Når en klage indsendes via appen eller AdGuard Browser Assistent, udfyldes alle oplysninger automatisk. Skærmfotos skal dog oprettes manuelt og dernæst vedhæftes. Anvendes et [direkte link](https://reports.adguard.com/new_issue.html), skal data dog angives manuelt.
 
 :::
 
-1. Filling in the form starts with detailing the type and version of a product;
+1. Udfyldelse af formularen starter med angivelse af produkttypen og -versionen;
 
     ![forma1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma1en.png)
 
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+2. Angiv problematiktypen samt yderligere oplysninger om brug af tredjepartssoftware (antivirus, VPN);
 
     ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
 
-3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
+3. Angiv adressen på siden og webbrowseren (eller downloadlinket i tilfælde af en app), hvor problemet opstod;
 
     ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
 
-4. Application configuration must be specified:
+4. Applikationsopsætning skal angives:
 
-    - Filters you use;
-    - Stealth mode settings, if this function is enabled.
+    - Filtre, som anvendes;
+    - Stealth Mode-indstillinger, såfremt funktionen er aktiveret.
 
     ![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
 
-5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
+5. [Brug et skærmfoto](../take-screenshot), hvoraf kernen af problemet fremgår;
 
-    - **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
+    - **Vigtigt**: Skjul alle personlige oplysninger (e-mail, telefonnummer mv.), da skærmfotos vil være offentligt tilgængelige.
 
     ![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
 
-6. Provide additional information that will help filter developers understand the situation;
+6. Angiv yderligere oplysninger, som vil hjælpe filterudviklere med at forstå situationen;
 
-    Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+    Angiv også **GitHub**-kontoen, hvis den er tilgængelig (det kan være nødvendigt for udviklerne at indhente yderligere oplysninger);
 
     ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
 
-7. Check each step before sending the form;
+7. Tjek hvert trin, inden formularen indsendes;
 
     ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
 
-8. You'll be provided with a link to track progress on your task.
+8. Et link til at tjekke fremskridt for opgaven vil være tilgængeligt.
 
     ![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
 
-## Diagnosis of an issue {#issue}
+## Diagnosticering af et problem {#issue}
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+Denne mulighed er velegnet til dem, som ikke er bange for vanskeligheder og ikke har noget imod at prøve at finde problemet på egen hånd. Dette kræver ingen særlige færdigheder eller indgående kendskab til HTML og CSS.
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+Det kan f.eks. være en situation, hvor yndlingswebstedet ikke åbner, godkendelsen er ikke fungerer eller nogle sideelementer vises forkert. Årsagen kan være brug af et bestemt filter/udvidelse/Stealth Mode-indstilling. For at diagnosticere disse problemer, skal flg. gøres:
 
 ### **Filtre**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
+1. Deaktivér **Ad Blocker**;
+2. Løste det problemet, genaktivér da modulet og deaktivér filtrene ét efter ét. Dette gøres for at identificere det filter, der "ødelægger" siden;
+3. Er det lykkedes at finde det filter, der "ødelægger" en side, bør udviklerne informeres herom, når formularen udfyldes (se ovenfor). I så tilfælde er det ønskeligt at returnere til de oprindelige indstillinger;
+4. Givet det ikke nogen resultater at slå alle filtre fra, anvend da reglen **@@||eksempel.com^$document,extension**; hvor **eksempel.com** vil skulle erstattes med det relevante webstedsnavn;
+5. I tilfælde af at problemet ikke løses, gå til afsnittet **Stealth Mode**.
 
 ### **Stealth Mode**
 
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure (issue not solved), turn to section **Extensions**.
+1. Deaktivér **Stealth Mode**;
+2. Løste dette problemet, aktivér da modulet og slå **Stealth Mode**-indstillingerne fra én efter én. Dette gøres for at identificere de filtre, som "ødelægger" siden;
+3. Er det lykkedes at finde den indstilling, der "ødelægger" en side, bør udviklerne informeres herom, når formularen udfyldes (se ovenfor). I så tilfælde er det ønskeligt at returnere til de oprindelige indstillinger;
+4. I tilfælde af at problemet ikke løses, gå til afsnittet **Udvidelser**.
 
 ### **Udvidelser**
 
-1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
-3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
+1. Deaktivér **Udvidelser**;
+2. Løste dette problemet, aktivér da modulet og slå indstillingerne i **Udvidelser** fra én efter én. Dette gøres for at finde ud af, hvilken indstilling, der "ødelægger" siden;
+3. Er det lykkedes at finde den indstilling, der "ødelægger" en side, bør udviklerne informeres herom, når formularen udfyldes (se ovenfor). I så tilfælde er det ønskeligt at returnere til de oprindelige indstillinger.
 
-### **Third-party blockers**
+### **Tredjepartsblockere**
 
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+Visse webbrowsere og antivirusprogrammer (såsom Yandex Browser, Kaspersky mv.) har indbyggede adblockere. De kan påvirke — og medføre driftsproblemer for — websteder. Anvendes sådanne programmer, tjek da, at problemet hidrører fra **AdGuard**: Deaktivér **AdGuard**-filtrering og forsøg at genskabe problemet. Fortsætter fejlen, forårsages problemet i så fald af en anden applikation eller webbrowser. Skyldes problemet **AdGuard**, følg da trinnene beskrevet i de foregående afsnit.
