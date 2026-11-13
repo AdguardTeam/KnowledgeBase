@@ -27,16 +27,16 @@ Double-click the downloaded file and click *Install Certificate*.
 
 3. Choose the certificate store
 
-Select *Local Machine* → *Next*. If a User Account Control (UAC) prompt appears, allow the installation.
-Select *Place all certificates in the following store* and click *Browse*.
-Choose *Trusted Root Certification Authorities* → *OK*.
-Click *Next* → *Finish*.
-
 :::note
 
 ⚠️ Important: the certificate must go into *Trusted Root Certification Authorities*, not into *Trusted Publishers*. In any other store it will not help.
 
 :::
+
+Select *Local Machine* → *Next*. If a User Account Control (UAC) prompt appears, allow the installation.
+Select *Place all certificates in the following store* and click *Browse*.
+Choose *Trusted Root Certification Authorities* → *OK*.
+Click *Next* → *Finish*.
 
 4. Restart your computer
 
