@@ -7,6 +7,8 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard til Android](/adguard-for-android/installation)
 
+[AdGuard Mini for Android](/adguard-mini-for-android/installation.md)
+
 [AdGuard til iOS](/adguard-for-ios/installation)
 
 [AdGuard til Windows](/adguard-for-windows/)
@@ -16,5 +18,3 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 [AdGuard Browser Extesion](/adguard-browser-extension/installation)
 
 [AdGuard til Safari](/archive/adguard-for-safari/installation)
-
-[AdGuard Content Blocker](/adguard-content-blocker/installation)
