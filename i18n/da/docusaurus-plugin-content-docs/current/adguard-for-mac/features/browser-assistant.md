@@ -13,7 +13,7 @@ AdGuard Browser Assistent muliggør håndtering af AdGuard-beskyttelse direkte f
 
 ![Assistent-vinduet \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
-## Sådan fungerer den
+## Sådan fungerer det
 
 AdGuard Browser Assistent er en webbrowserudvidelse. Den muliggør hurtigt håndtering af AdGuard-appen:
 

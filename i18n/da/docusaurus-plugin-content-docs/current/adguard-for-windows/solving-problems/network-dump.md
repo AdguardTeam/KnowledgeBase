@@ -1,5 +1,5 @@
 ---
-title: How to collect network dump with WireShark
+title: Sådan indsamles netværksdump med WireShark
 sidebar_position: 12
 ---
 
@@ -9,38 +9,38 @@ Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der b
 
 :::
 
-Sometimes, diagnosing network issues requires seeing exactly how your device communicates with the Internet. Collecting a network dump allows us to analyze this traffic and find the cause of your problem. In this guide, we will show you how to capture a network dump using Wireshark.
+Nogle gange kræver diagnosticering af netværksproblemer, at det præcist kan ses, hvordan enheden kommunikerer med internet. Indsamling af en netværksdump tillader os at analysere denne trafik og finde problemårsagen. I denne vejledning vise vi, hvordan et netværksdump oprettes vha. Wireshark.
 
 :::note
 
-Data and files provided in dump files are processed in accordance with the [AdGuard Privacy policy](https://adguard.com/privacy.html).
+Data og filer indeholdt i dump-filer behandles i overensstemmelse med [AdGuard Fortrolighedspolitik](https://adguard.com/privacy.html).
 
 :::
 
-## 1. Install Wireshark
+## 1. Installation af Wireshark
 
-Download Wireshark from the [official website](https://www.wireshark.org/download.html). Run the installer and follow the instructions. When prompted, install Npcap — this driver is necessary for Wireshark to capture network packets.
+Download Wireshark fra det [officielle websted](https://www.wireshark.org/download.html). Eksekvér installeren og følg vejledningen. Når promptet, installér Npcap — denne driver er nødvendig for, at Wireshark kan opfange/registrere netværkspakker.
 
-## 2. Prepare for capture
+## 2. Klargør til optagelse
 
-Before starting, **close all unnecessary programs and browser tabs**. This will help reduce unrelated data in the dump.
+Før der startes, **luk alle unødvendige programmer og webbrowserfaner**. Dette vil bidrage til at reducere irrelevante data i dumpet.
 
-## 3. Capture network traffic
+## 3. Optag netværkstrafik
 
-Open Wireshark, and you will see a list of network interfaces. Select the one you need: Ethernet if you have a wired connection, or Wireless if you’re using Wi-Fi.
+Åbn Wireshark, hvorefter en liste over netværksgrænseflader vises. Vælg den ønskede: Ethernet for kablet forbindelse, eller Wireless for Wi-Fi.
 
-If you’re not sure which interface to choose, pick the one with the most activity in the graph — the higher the graph, the more traffic goes through it.
+Ved usikkerhed om valg af grænseflade, vælg den med mest aktivitet i grafen — jo højere grafen er, desto mere trafik går igennem den.
 
-![Main screen \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
+![Hovedskærm \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/main_screen.png)
 
-Double-click the selected interface to start the capture. Now, reproduce the issue you are experiencing, making sure to perform only the necessary actions to trigger the problem and avoid any other processes. This helps isolate the issue and ensures relevant traffic is recorded.
+Dobbeltklik på den valgte grænseflade for at starte optagelsen. Genskab nu det oplevede problem, og sørg for kun at udføre de nødvendige handlinger for at udløse problemet og undgå andre processer. Dette bidrager til at isolere problemet og sikrer, at relevant trafik registreres.
 
-## 4. Stop capture and save the dump
+## 4. Stop optagelsen og gem dumpet
 
-After reproducing the issue, click the red Stop button at the top to finish the capture.
+Efter genskabelse af problemet, klik på den røde Stop-knap øverst for at afslutte optagelsen.
 
-![Capture process \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
+![Optagelsesproces \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/capturing_process.png)
 
-To save the data, press Ctrl+S, enter a file name, and choose the .pcapng format. That’s it — your network dump file is ready.
+Gem dataene ved at trykke på Ctrl+S, angive et filnavn og vælge .pcapng-formatet. Det var det — netværksdump-filen er klar.
 
-When sending the dump, please also provide a timeline of events. Describe the main actions you took, such as when you launched the app and the steps that led to the issue, and include the approximate time the issue occurred.
+Når dump-filen indsendes, bedes også angivet en tidslinje for begivenhederne. Beskriv de vigtigste foretagede handlinger, såsom hvornår appen blev startet samt de trin, som ledte til problemet, og inkludér det omtrentlige tidspunkt for problemets opståen.

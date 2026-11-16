@@ -1,62 +1,62 @@
 ---
-title: Adware & viruses
+title: Adware og vira
 sidebar_position: 6
 ---
 
 :::note
 
-AdGuard is not an antivirus program. It can warn you when you're going to visit a malware or phishing website, but **it does not remove viruses from your device.**
+AdGuard er ikke et antivirusprogram. Den kan advare, hvis brugere er ved at besøge et malware- eller phishing-websted, men **den fjerner ikke vira fra enheden.**
 
 :::
 
-If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+Ved mistanke om, at computeren er blevet inficeret med malware eller vira, kan den indledningsvis skannes med værktøjer fra førende antivirusfirmaer.
 
-## Free antivirus utilities {#free-antivirus}
+## Gratis antivirusværktøjer {#free-antivirus}
 
-There are many of them and you can use any one you prefer. If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+Der findes mange, og det foretrukne værktøj kan blot anvendes. Afslører skanning med antivirusværktøjer intet, men computeren opfører sig stadig mistænkeligt, kan den testes for adware, der kan indsætte sin annoncer på alle sider, som åbnes.
 
-## How to clean your system from Adware {#adware}
+## Sådan renses et system for Adware {#adware}
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. These adware scanners are quite easy to use and you will be able to handle them by yourself.
+På internet kan der findes en masse applikationer rettet mod at bekæmpe dette problem. Ethvert foretrukket værktøj kan benyttes. Vi anbefaler dog kraftigt at bruge **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** fra **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** fra **Avast** eller **[Adaware](https://www.adaware.com)**. Disse adware-skannere er ret nemme for brugeren at benytte.
 
-Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
+Lad os tage AdwareCleaner som et eksempel. Efter download og installation af applikationen, udfør flg. trin:
 
-1. Start the application and click **Scan now**.
+1. Start applikationen og klik på **Skan nu**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. Når skanningen er udført, sæt mistænkelige objekter i **Karantæne**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. Når objekterne er sat (flyttet) i **Karantæne**, kan der vælges **Ryd systemet** for at fjerne unødvendig ballast.
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. Det vil i nogle tilfælde være nødvendigt at **Genstarte systemet** efter rensningen er udført.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. Når systemet er genstartet, færdiggøres rensningen. Om ønsket kan **Skanningsrapporten** over det udførte arbejde gennemgås.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+Hvis det ikke hjalp, deaktivér midlertidigt alle udvidelser og visse yderligere indstillinger i webbrowseren jævnfør [denne vejledning](#instructions).
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+Hjælper deaktivering af indstillinger og udvidelser ikke, prøv at [genskabe webbrowserens genveje](#shortcuts).
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+Længere nede på denne side findes vejledninger til, hvordan nogle af de mest almindeligt forekommende annonceudvidelser fjernes.
 
-## How to disable settings and extensions in the browser {#instructions}
+## Sådan deaktiveres indstillinger og udvidelser i webbrowseren {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+Nedenfor er vejledningen til, hvordan indstillinger og udvidelser deaktiveres i de mest populære webbrowsere:
 
-- [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-- [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-- [for Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [Opera](https://help.opera.com/en/latest/customization/#extensions)
 
-## How to recreate shortcuts for your browsers {#shortcuts}
+## Sådan genskabes webbrowserens genveje {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+Meget ofte installerer malware- og adware-programmer deres hjemmeside på en meget enkel måde — de erstatter webbrowserens genvej på skrivebordet samt menuemner på proceslinjen og i *Start*.
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+Den enkleste løsning er i så tilfælde manuelt at slette alle genveje og genskabe dem selv.

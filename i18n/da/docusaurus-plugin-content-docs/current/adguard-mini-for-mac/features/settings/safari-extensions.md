@@ -1,33 +1,33 @@
 ---
-title: Safari extensions
+title: Safari-udvidelser
 sidebar_position: 3
 ---
 
-![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
+![Fanen Udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
-Safari extensions are mechanisms that allow implementing content blockers — thematic clusters of filters. For example, privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Safari-udvidelser er mekanismer, som tillader implementering af indholdsblockere — tematiske klynger af filtre. F.eks. er fortrolighedsrelaterede filtre inkluderet i indholdsblockeren med det korresponderende navn — _AdGuard Privacy_.
 
-Content blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Indholdsblockere er designet til to formål: Filterstrukturering og overholdelse af Apple-restriktioner.
 
-[I 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) indførte Apple begrænsninger for adblockere til Safari, så disse kun kunne anvende 50.000 filtreringsregler samtidigt. As this number was not enough for an ad blocker to provide a good filtering quality (_AdGuard Base Filter_ alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[I 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) indførte Apple begrænsninger for adblockere til Safari, så disse kun kunne anvende 50.000 filtreringsregler samtidigt. Da dette tal var utilstrækkeligt til, at en adblocker kunne levere en god filtreringskvalitet (_AdGuard Base Filter_ alene har 30.000 filtreringsregler), blev AdGuard til Safari opdelt i seks indholdsblockere, hver med op til 50.000 regler.
 
-[I 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html) øgede Apple filtreringsregelkvoten for hver indholdsblocker til 150.000 samtidigt anvendte regler. Regarding AdGuard Mini for Mac, up to 900,000 rules can be enabled for all six content blockers.
+[I 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html) øgede Apple filtreringsregelkvoten for hver indholdsblocker til 150.000 samtidigt anvendte regler. I AdGuard Mini til Mac kan op til 900.000 regler aktiveres for alle seks indholdsblockere.
 
 Mens kvoten er blevet øget, er strukturen for indholdsblockere forblevet uændret.
 
-In _Safari extensions_, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+I _Safari-udvidelser_ kan ses, hvilke indholdsblockere, som er aktiveret, hvor mange regler, hver af dem bruger, og hvilke filtre, som er i funktion.
 
 :::tip
 
-You can manage enabled filters in _Settings_ → _Filters_. In _Safari extensions_, you can only see the list of enabled filters and the number of enabled rules.
+Aktiverede filtre kan håndteres via _Indstillinger_ → _Filtre_. I _Safari-udvidelser_ kan kun ses listen over aktiverede filtre og antallet af aktiverede regler.
 
 :::
 
-## List of AdGuard Mini’s Safari extensions
+## Liste over AdGuard Mini Safari-udvidelser
 
-### AdGuard General
+### AdGuard Generelt
 
-_AdGuard Generel_ er en indholdsblocker, der kombinerer de vigtigste adblockingfiltre. We recommend keeping _AdGuard Base Filter_ always enabled.
+_AdGuard Generel_ er en indholdsblocker, der kombinerer de vigtigste adblockingfiltre. Det anbefales, at _AdGuard Base Filter_ altid er aktiveret.
 
 ### AdGuard Fortrolighed
 
@@ -35,7 +35,7 @@ Denne indholdsblocker er det primære værktøjet mod tællere og andre webanaly
 
 ### AdGuard Social
 
-_AdGuard Social_ indeholder filtre mod sociale medier-knapper, -widgets, -scripts og -ikoner. Other annoyance filters can also be found in this section: filters against popups, banners, cookie notices, and more. To enable them, find _Social Widgets_ in _Settings_ → _Filters_.
+_AdGuard Social_ indeholder filtre mod sociale medier-knapper, -widgets, -scripts og -ikoner. Andre irritationfiltere kan også findes i dette afsnit: Filtre mod pop op-vinduer, bannere, cookie-meddelelser og mere. For at aktivere dem, find _Sociale widgets_ i _Indstillinger_ → _Filtre_.
 
 ### AdGuard Sikkerhed
 
@@ -47,14 +47,14 @@ _AdGuard Andre_ indeholder filtre med forskellige funktioner. F.eks. har den et 
 
 :::note Forbehold
 
-We don’t have any “acceptable ads” paid by advertisers. Instead, we provide users with an option to see [search ads and websites’ self-promotion](/general/ad-filtering/search-ads).
+Vi har ingen "acceptable annoncer" betalt af annoncrer. I stedet giver vi brugerne mulighed for at se [søgeannoncer og websteders selvpromovering](/general/ad-filtering/search-ads).
 
 :::
 
 ### AdGuard Tilpasset
 
-![Create custom filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
+![Opret tilpasset filter](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/create-custom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_ extension.
+Er der behov for flere filtre, kan de føjes til _AdGuard Tilpasset_-udvidelsen.
 
-To add a custom filter, go to _Settings_ → _Filters_ → _Custom filters_ and enter a URL or a local file path in the relevant field. Nye filtre kan findes på [filterlists.com](https://filterlists.com/).
+For at tilføje et tilpasset filter, gå til _Indstillinger_ → _Filtre_ → _Tilpassede filtre_ og indtast en URL eller en lokal filsti i det relevante felt. Nye filtre kan findes på [filterlists.com](https://filterlists.com/).

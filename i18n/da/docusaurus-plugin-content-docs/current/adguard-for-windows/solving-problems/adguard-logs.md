@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
+Denne artikel omhandler AdGuard til Windows, en multifunktionel adblocker, der beskytter enheden på systemniveau. For at se, hvordan den fungerer, [download AdGuard-appen](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ Data og filer tilgængelige i logfiler behandles i overensstemmelse med [AdGuard
 
 :::
 
-To diagnose problems you may encounter while using AdGuard, our support team may need AdGuard log files. These files record errors and other events that occur in the application. This article explains how to change the logging level, collect the logs, and send them to support.
+For at analysere og diagnosticere forskellige potentielle problematikker, kan AdGuard-supporttjenesten få brug for AdGuard-logfiler. Disse filer indeholder poster over fejl og andre hændelser, som opstår med softwaren. Denne artikel forklarer, hvordan man ændrer logningsniveauet, indsamler logfilerne og indsender dem til supporten.
 
 AdGuard til Windows tilbyder to logningsniveauer: *Standard* og *Fejlfinding*. Til de fleste former for fejlfinding er *Fejlfinding* tilstrækkelig, men det kan gøre appen langsommere.
 
@@ -31,11 +31,11 @@ Gå til AdGuard-indstillinger → *Support* → *Logfiler*, og vælg *Fejlfindin
 
 ### Mulighed 2: Via systembakkemenu
 
-Right-click the AdGuard icon in the system tray, select *Advanced* → *Logging level*, and choose *Debug*.
+Højreklik på AdGuard-ikonet i systembakken, vælg *Avanceret* → *Logningsniveau* og vælg *Fejlfinding*.
 
 ![Logningsniveau i bakkemenu *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/tray_menu_debug.png)
 
-## Debug logs {#debug-logs}
+## Fejlfindingslogger {#debug-logs}
 
 For de fleste problemer giver fejlfindingslogfiler supportteamet tilstrækkelige oplysninger til at identificere og løse problemet.
 
@@ -43,7 +43,7 @@ For de fleste problemer giver fejlfindingslogfiler supportteamet tilstrækkelige
 
 1. Genskab problematikken. Notér det nøjagtige tidspunkt — det hjælper vores supportteam med at finde de relevante logposter og løse problemet hurtigere.
 
-1. Go to AdGuard settings → *Support* → *Logs*, and click *Export logs and system info*.
+1. Gå til AdGuard-indstillinger → *Support* → *Logfiler* og klik på *Eksportere logfiler og systemoplysninger*.
 
     Når eksporten er fuldført, vises en bekræftelsesmeddelelse. Der kan klikkes på *Vis i mappe* for at åbne den mappe, hvori det eksporterede arkiv med logfiler og systemoplysninger er gemt.
 
@@ -56,17 +56,17 @@ For de fleste problemer giver fejlfindingslogfiler supportteamet tilstrækkelige
 
 1. Indsend arkivet til **support@adguard.com**, beskriv problemet og angiv det klokkeslæt, hvor problemet blev genskabt.
 
-## Trace logs {#trace-logs}
+## Sporingslogfiler {#trace-logs}
 
 Nogle gange kan supportteamet anmode om *sporingslogfiler*. Sporingslogning registrerer flere detaljer end fejlfindingslogning og er kun tilgængelig via kommandolinjen.
 
-1. Exit AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*.
+1. Stop AdGuard ved at højreklikke på dens ikon i bakkemenuen og vælge *Afslut AdGuard*:
 
-    ![Exit AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/exit_adguard.png)
+    ![Afslut AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/exit_adguard.png)
 
-    If prompted to keep the service running in the background, make sure to stop it — the service must not be running when you start AdGuard with trace logging.
+    Anmodes der om at lade tjenesten køre i baggrunden, så sørg for at stoppe den — tjenesten må ikke køre, når AdGuard startes med sporingslogning.
 
-1. Open the command prompt (type `cmd` in the Start menu search).
+1. Åbn konsollen (skriv `cmd` i Startpanelet).
 
 1. Kør AdGuard med sporingslogning aktiveret:
 
@@ -99,6 +99,6 @@ For at bruge denne mulighed, markér afkrydsningsfeltet *Tilføj diagnosticering
 
 :::note
 
-AdGuard er dedikeret til beskyttelse af brugerfortrolighed. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Før indsendelse af logfiler til supportteamet, bedes filen gennemgået, da den også kan indeholde oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger strikst vores [Fortrolighedspolitik](https://adguard.com/privacy/windows.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logger til supportteamet, bedes filen gennemgået, da den kan indeholde yderligere oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefales disse slettet først.
 
 :::

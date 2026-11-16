@@ -7,6 +7,8 @@ Podle toho, kterou aplikaci AdGuard nebo rozšíření prohlížeče chcete nain
 
 [AdGuard pro Android](/adguard-for-android/installation)
 
+[AdGuard Mini for Android](/adguard-mini-for-android/installation.md)
+
 [AdGuard pro iOS](/adguard-for-ios/installation)
 
 [AdGuard pro Windows](/adguard-for-windows/)
@@ -16,5 +18,3 @@ Podle toho, kterou aplikaci AdGuard nebo rozšíření prohlížeče chcete nain
 [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/installation)
 
 [AdGuard pro Safari](/archive/adguard-for-safari/installation)
-
-[Blokátor obsahu AdGuard](/adguard-content-blocker/installation)
