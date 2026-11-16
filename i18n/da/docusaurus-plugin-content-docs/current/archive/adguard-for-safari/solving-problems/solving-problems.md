@@ -9,7 +9,7 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 :::
 
-Here are some problems you may encounter and workarounds, as well as guides and instructions you may need.
+Her er nogle problemer, man kan støde på, og løsninger samt guider og vejledninger, man muligvis får brug for.
 
 - [Regelbegrænsningsproblemer](/archive/adguard-for-safari/solving-problems/rule-limit.md)
 - [Filtrering virker ikke, og annoncer blokeres ikke](/archive/adguard-for-safari/solving-problems/ads-not-blocked.md)

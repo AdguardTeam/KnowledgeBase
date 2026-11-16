@@ -1,95 +1,95 @@
 ---
-title: How to take a screenshot
+title: Sådan tages et skærmfoto
 sidebar_position: 5
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Et skærmfoto er et foto af computerens eller mobilenhedens skærm, der kan oprettes med standardværktøjer eller et særligt program/app.
 
-Sometimes screenshots are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
+I visse tilfælde beder supportteamet om skærmfoto(s) for en bedre forståelse. Her findes alle de nødvendige genvejstaster, man bør kende, for at tage skærmfotos på en computer eller mobilenhed.
 
 ### Android {#android}
 
-Taking a screenshot on an Android device can be done in various ways, depending on the device model and its manufacturer.
+Et skærmfoto på en Android-enhed kan tages på forskellige måder afhængigt af enhedsmodel og -producent.
 
-Generally, the following button combination is used for Android:
+Generelt kan flg. knapkombination bruges i Android:
 
-- **Press the *Volume Down* and the *Power* buttons at the same time**
+- **Tryk på knapperne *Lydstyrke ned* og *Tænd/Sluk* samtidigt**
 
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
+Android-enheden tager et foto af hele skærmen, der gemmes som en billedfil. Skærmfotoet vil nu kunne findes i mappen *Screenshots* i Galleri-appen.
 
-For older devices, you may use following combinations:
+På ældre enheder kan flg. kombinationer bruges:
 
-- **Press *Home* and *Power* at the same time**
-- **Press *Back* and *Home* at the same time**
+- **Tryk på *Hjem* og *Tænd/Sluk* samtidigt**
+- **Tryk på *Tilbage* og *Hjem* samtidigt**
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example, with swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or with swiping down three fingers (OnePlus devices), etc.
+På Android 8 og senere kan der også tages et skærmfoto via andre manipulationer, f.eks. ved at stryge hånden over skærmen i en 90-graders vinkel for at udløse et skærmfoto (Samsung-enheder), eller ved at stryge tre fingre ned (OnePlus-enheder) mv.
 
-The options for taking a screenshot vary by brand and model. Check your device’s settings to find the method that works best for you.
+Valgmulighederne for at tage et skærmfoto varierer efter mærke og model. Tjek enhedsindstillingerne for at finde den mest passende metode.
 
-Besides, you can always use any special apps for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+Særlige skærmfoto-apps kan dog altid bruges, f.eks. *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* mv.
 
 ### iOS {#ios}
 
-Any iOS device (except very old ones) lets you take a screenshot using standard tools.
+Alle iOS-enhed (bortset fra meget gamle) har skærmfotomulighed via standardværktøjer.
 
-To take a screenshot on an iOS device, use the following combination:
+Brug flg. knapkombinationer for at tage skærmfotos på en iOS-enhed:
 
-- **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
+- **Tryk på (side)knappen *Sov/Vågn* og *Hjem* samtidigt, og slip dem derefter hurtigt**
 
-and this one for iPhone X or later:
+og denne til iPhone X+:
 
-- **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
+- **Tryk på knappen *Sov/Vågn* og *Lydstyrke op* samtidigt, og slip dem derefter hurtigt**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
+iOS-enheden tager et foto af hele skærmen og gemme det som en billedfil. Det kan herefter findes i en standard Foto-app.
 
 ### Windows {#windows}
 
-- **To take a screenshot on Windows, press the *PrtScn* key**
+- **Tryk på tasten *PrtScn* for at tage et skærmfoto i Windows**
 
-On some notebooks you have to hold *Fn* and then press *PrtScn*.
+På visse bærbare skal tasten *Fn* holdes nede, før der trykkes på *PrtScn*.
 
-*Please note: The PrtScn (Print Screen) key may be abbreviated differently on different keyboards — PrntScrn, PrtScn, PrtScr, or PrtSc.*
+*Bemærk, at knappen PrtScn (Print Screen) forkortes forskelligt på forskellige tastaturer — PrntScrn, PrtScn, PrtScr eller PrtSc.*
 
-Windows captures the entire screen and copies it to the clipboard.
+Windows affotograferer hele skærmen og kopierer det til udklipsholderen.
 
-To take a screenshot of an active window, use the following shortcut keys:
+Brug flg. genvejstaster til at tage et skærmfoto af et aktivt vindue:
 
-- **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
+- **Hold *Alt* nede, og tryk på *PrtScr* (eller *Fn + Alt + PrtScn* på visse bærbare)**
 
-To take a screenshot of a specific area, use the following shortcut keys:
+Brug flg. genvejstaster til at tage et skærmfoto af et bestemt område:
 
-- ***Press ***Win + Shift + S******
+- ***Tryk på ***Win + Shift + S******
 
-After you take a screenshot, it will be saved in the clipboard. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same shortcut keys or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+Når skærmfotoet er taget, gemmes det i udklipsholderen. Det vil derefter normalt kunne indsættes i f.eks. et dokument vha. tastekombinationen *Ctrl + V*. Er der behov for at gemme skærmfotoet i en fil, åbn standardprogrammet **Paint** (eller et andet lign. billedbehandlingsprogram). Indsæt skærmfotoet dér vha. samme genvejstaster, eller ved at klikke på knappen Indsæt (normalt øverst til venstre), og gem det dernæst.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut keys. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
+Et skærmfoto kan i Windows 8 og 10 tages meget hurtigt via genvejstasterne *Win + PrtScn*. Så snart der trykkes på disse taster, gemmes skærmfotoet automatisk som en billedfil i mappen *Billeder* → *Skærmfotos*.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+Der er også et dedikeret program til at tage skærmfotos kaldet *Snipping Tool*, der kan findes via Start-menuen blandt computerens standardprogrammer. Med Snipping Tool kan et skrivebordsområde eller hele skærmen affotograferes. Efter at have taget et skærmfoto med dette program, kan fotoet redigeres og gemmes på computeren.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
+Tjek evt. også forskellige apps til at tage computerskærmfotos, såsom **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** mv.
 
 ### macOS {#mac}
 
-To take a screenshot on Mac, use the following shortcut keys:
+Brug flg. genvejstaster for at tage et skærmfoto på en Mac:
 
-- ***Press and hold ***⌘ Cmd + Shift + 3******
+- ***Tryk og hold på ***⌘ Cmd + Shift + 3******
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Mac'en affotograferer hele skærmen og gemme den som en billedfil på skrivebordet.
 
-To take a screenshot of an active window, use the following shortcut keys:
+Brug flg. genvejstaster til at tage et skærmfoto af et aktivt vindue:
 
-- **Press and hold *⌘ Cmd + Shift + 4 + Space bar*. The pointer will change to a camera icon. Click the window to capture it. Press Esc to cancel taking a screenshot**
+- **Tryk og hold på *⌘ Cmd + Shift + 4 + Mellemrum*. Markøren skifter herefter til et kameraikon. Klik på vinduet for at affotografere det. Tryk på Esc for at annullere et skærmfoto**
 
-To take a screenshot of a specific area, use the following shortcut keys:
+Brug flg. genvejstaster til at tage et skærmfoto af et bestemt område:
 
-- ***Press ***⌘ Cmd + Shift + 5******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
+- ***Tryk på ***⌘ Cmd + Shift + 5******. Træk trådkorset for at vælge det ønskede område. Slip musetasten/pegefeltet for at tage skærmfotoet, tryk på Esc for at annullere det.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut keys:
+Brug flg. genvejstaster for at tage et skærmfoto af *Touch Bar* (MacBook Pro):
 
-- ***Press ***⌘ Cmd + Shift + 6******
+- ***Tryk på ***⌘ Cmd + Shift + 6******
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+Mac'en fotograferer hele *Touch Bar* og gemmer den som en billedfil på skrivebordet.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcut keys above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut keys.
+For at kopiere et skærmfoto til udklipsholderen i stedet for at gemme det, hold *Ctrl* nede sammen med en af genvejstasterne ovenfor. Skærmfotoet kan dernæst indsættes fra udklipsholderen i f.eks. et dokument eller et andet billede via genvejstasterne *Cmd + V*.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+Skærmfotos kan også tage med **Preview**, vælg **Tag skærmfoto** (af det valgte område, vindue eller hele skærmen). Med **Preview** kan skærmfotos gemmes som JPG, TIFF, PDF mv.

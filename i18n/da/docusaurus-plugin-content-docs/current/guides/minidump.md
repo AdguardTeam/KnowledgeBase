@@ -1,79 +1,79 @@
 ---
-title: How to create a minidump file to fix the BSoD error
+title: Sådan oprettes en minidump-fil for at rette BSoD-fejlen
 sidebar_position: 8
 ---
 
-Almost all Windows users are familiar with the [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death) error unfortunately. BSoD occurs when the Windows system encounters problems that can affect safe system operation, such as problems with third-party driver code, hardware, or Microsoft code. To solve the blue screen error, users can use a minidump file.
+Næsten alle Windows-brugere er desværre bekendt med fejlen [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death). BSoD opstår, når Windows-systemet støder på problemer, som kan påvirke sikker systemdrift, såsom problemer med tredjeparts driverkode, hardware eller Microsoft-kode. For at løse den blå skærm-fejl kan brugere bruge en minidump-fil.
 
-## What is Minidump file?
+## Hvad er en Minidump-fil?
 
-A minidump file is a file that contains the information about the nature of the system crash. It is created just before the blue screen appears and it has the minimum amount of useful information that can be used to solve the problem. The minidump file usually has a *.dmp* extension.
+En minidump-fil er en fil indeholdende oplysninger om arten af systemnedbruddet. Den oprettes lige før den blå skærm vises, og den har den minimale mængde nyttig information, der kan bruges til at løse problemet. Minidump-filen har normalt filtypenavnet *.dmp*.
 
 :::note
-On Windows 10, the blue screen shows a stop code and a QR code. The user can use this information and search the Web for the specific problem.
+På Windows 10 viser den blå skærm en stopkode og en QR-kode. Brugeren kan bruge disse oplysninger til at søge efter det specifikke problem på nettet.
 
 :::
 
-The option to create the minidump file is disabled by default, so before we go into more detail on how to use the file, let’s take a closer look at how to enable it.
+Muligheden for at oprette minidump-filen er deaktiveret som standard, så før vi går mere i detaljer om, hvordan filen bruges, lad os se nærmere på, hvordan den aktiveres.
 
-## Set up Windows to create the Minidump file
+## Opsæt Windows til at oprette Minidump-filen
 
-Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Please follow the instructions below to automatically create the minidump file.
+Selvom der ikke opleves nogen BSoD-nedbrudsfejl, kan denne mulighed stadig indstilles — dette er en generel anbefaling, der ikke nødvendigvis er relateret til AdGuard-produkter. Følg vejledningen nedenfor for automatisk at oprette minidump-filen.
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Indtast *sysdm.cpl* på Windows-søgebjælken, og klik på **Åbn**. Kontrolpanelelementet **Systemegenskaber** vises på skærmen.
 
     :::tip
 
-    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
+    Alternativt, klik på **Indstillinger** → **System** → **Om** → **Avancerede systemindstillinger**.
 
 
 :::
 
-    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![Systemegenskaber *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. Gå til fanen **Avanceret**.
+ 1. Klik i afsnittet **Opstart og Gendannelse** på **Indstillinger**.
 
-    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Opstart og Gendannelse *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. Aktivér flg. tre muligheder:
 
-    - Write an event to the system log
-    - Automatically restart
-    - Writing debugging information → Small memory dump (256 kb)
+    - Skriv en hændelse til systemloggen
+    - Genstart automatisk
+    - Skrivning af fejlretningsoplysninger → Lille hukommelsesdump (256 kb)
 
-    ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
+    ![Tre valgmuligheder *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
- 1. Click **OK** to apply the settings.
- 1. Restart the computer.
+ 1. Klik på **OK** for anvende indstillingerne.
+ 1. Genstart computeren.
 
-You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
+Oprettelse af minidump-fil er nu aktiveret. Den oprettes nu automatisk ved et systemnedbrud.
 
 :::note
 
-By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
+Som standard gemmes minidump-filen i mappen **%SystemRoot%\Minidump**. Mappeplaceringen kan frit ændres, men det bør bemærkes, at mange programmer er indstillet til at søge efter/på denne placering som standard, så en ændring heraf anbefales ikke.
 
 :::
 
-## Collecting wfpdiag.cab file
+## Indsamling af wfpdiag.cab-fil
 
-Our support team may request a wfpdiag.cab file, along with a minidump file, to analyze system logs more thoroughly and diagnose issues. To collect the file, please follow these steps:
+Supportteamet kan anmode om en wfpdiag.cab-fil sammen med en minidump-fil for at analysere systemets logfiler mere grundigt og diagnosticere problemer. For at indsamle filindholdet, følg disse trin:
 
 1. Aktivér AdGuard-beskyttelsen.
 
-1. Click *Start* and type `cmd` to open Command Prompt
+1. Klik på *Start* og skriv `cmd` for at åbne Kommandprompt
 
-1. Right-click Command Prompt and choose *Run as administrator*
+1. Højreklik på Kommandoprompt og vælg *Kør som administrator*
 
     :::note
 
-    A wfpdiag.cab file is created in your current directory. You can change the location by typing `cd <folder_name>`.
+    En wfpdiag.cab-fil oprettes i den aktuelle mappe. Placeringen kan ændres ved at skrive `cd <folder_name>`.
 
 
 :::
 
-1. To start logging, enter the following command: `netsh wfp capture start`
+1. For at starte logning, indtast flg. kommando: `netsh wfp capture start`
 
-1. Visit any website to route traffic through AdGuard and log the filtering process
+1. Besøg et hvilket som helst websted for at rute trafik igennem AdGuard og logge filtreringsprocessen
 
-1. To stop logging, enter `netsh wfp capture stop`
+1. For at stoppe logning, indtast `netsh wfp capture stop`

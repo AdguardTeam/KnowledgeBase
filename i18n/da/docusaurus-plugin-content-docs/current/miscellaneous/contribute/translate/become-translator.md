@@ -3,58 +3,58 @@ title: At blive oversætter/korrekturlæser
 sidebar_position: 2
 ---
 
-If you want to help translate AdGuard products, websites, and Knowledge Bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
+Vil man hjælpe med at oversætte AdGuard-produkter, websteder og vidensbaser, gå til [Crowdin](https://crowdin.com/), hvor man kan tilmelde sig/logge ind.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 
-Once you do, go to [our page](https://crowdin.com/profile/adguard/). You will see AdGuard projects, each with folders for different product strings.
+Når det er gjort det, gå til [vores side](https://crowdin.com/profile/adguard/). Her vil AdGuard-projekterne kunne ses, hver med mapper til forskellige produktstrenge.
 
 ![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_page.png)
 
 :::note
 
-*AdGuard Glossary* is only used for storing and managing terms — it doesn’t need to be translated.
+*AdGuard-ordliste* bruges kun til at gemme og håndtere termer – den kræver ikke oversættelse.
 
 :::
 
-Choose a project you’d like to translate, click *Join*, and choose your language.
+Vælg det projekt man ønsker at oversætte, klik på *Deltag*, og vælg sprog.
 
 ![crowdin *border](https://cdn.adtidy.org/content/kb/ad_blocker/miscellaneous/adguard_translations/adguard_kb.png)
 
-You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
+Start oversættelsen af det ønskede produkt ved at vælge den respektive mappe. Vi har nogle anbefalinger til [hvilke filer, som det er bedst at starte med i AdGuard Websites-projektet](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filter phrases that are not yet translated and start your translation history.
+Filtrér sætninger, som endnu ikke er oversat, og påbegynd oversættelse.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Suggest your version in the text box and save it.
+Angiv oversættelsesforslaget i arbejdsområdet og gem det.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-If you don’t agree with an existing translation, you can suggest your version. You can also upvote and downvote suggestions made by other volunteers by clicking the plus and minus buttons.
+Er man uenig i en eksisterende oversættelse, kan en anden foreslås. Forslag udført af andre frivillige kan også stemmes op og ned ved et klik på knapperne plus og minus.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
+Det er desuden muligt at åbne oversættelser i Afstemningstilstand, såfremt oversættelser blot skal gradueres.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please take a look at it.
+Der findes nogle [nyttige tips til oversættelse af AdGuard i denne artikel](../guidelines). Tag et kig på den.
 
 ### Sådan bliver man korrekturlæser (proofreader) {#proofreaders}
 
-We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
+Vi har korrekturlæsere (tidligere kendt som moderatorer) til hvert sprog. Enhver aktiv oversætter har mulighed for at blive korrekturlæser.
 
-So, what are proofreaders responsible for?
+Hvad er korrekturlæsere så ansvarlige for?
 
-**Proofreaders:**
+**Korrekturlæsere:**
 
-- Approve high-quality translations and disapprove the bad ones;
+- Godkende oversættelser af høj kvalitet og afvise de dårlige;
 
-- Look after the relevance of translations;
+- Se efter relevansen af oversættelser;
 
-- Respond to comments related to translations in their language.
+- Svar på kommentarer relateret til oversættelser på deres sprog.
 
-Every year, the best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
+Hvert år modtager de bedste korrekturlæsere gaver af AdGuard. Aktive oversættere går heller ikke ubelønnede hen. Læs mere om vores [belønningssystem](../rewards).

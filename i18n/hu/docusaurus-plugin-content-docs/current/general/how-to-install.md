@@ -7,6 +7,8 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard for Android](/adguard-for-android/installation)
 
+[AdGuard Mini for Android](/adguard-mini-for-android/installation.md)
+
 [AdGuard for iOS](/adguard-for-ios/installation)
 
 [AdGuard for Windows](/adguard-for-windows/)
@@ -16,5 +18,3 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 [AdGuard Browser Extension](/adguard-browser-extension/installation)
 
 [AdGuard for Safari](/archive/adguard-for-safari/installation)
-
-[AdGuard Tartalomblokkoló](/adguard-content-blocker/installation)
