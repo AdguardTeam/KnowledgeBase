@@ -5,48 +5,48 @@ sidebar_position: 2
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
 ## Systemkrav
 
-Operating system: Android 9 (Pie) or later
+Operativsystem: Minimum Android 9 (Pie)
 
-## How to install AdGuard Mini for Android
+## Sådan installeres AdGuard Mini til Android
 
-AdGuard Mini for Android is a free app present in Google Play. To install it on your Android, do the following:
+AdGuard Mini til Android er en gratis app tilgængelig i Google Play. Gør flg. for at installere den på Android-enheden:
 
-1. Open the AdGuard Mini for Android app in [Google Play](https://agrd.io/adguard-mini-for-android).
+1. Åbn appen AdGuard Mini til Android i [Google Play](https://agrd.io/adguard-mini-for-android).
 
-![AdGuard Mini for Android in Google Play \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/google_play.png)
+![AdGuard Mini til Android i Google Play \*mobile](https://cdn.adtidy.org/content/release_notes/ad_blocker/mini_android/v3/google_play.png)
 
-1. Tap _Install_ → _Open_.
+1. Tryk på _Installér_ → _Åbn_.
 
-2. Decide if you want to allow AdGuard Mini to send the notifications. We recommend allowing them: notifications help AdGuard Mini stay active in the background. If you don’t allow them, [Android may stop the app to save battery](https://adguard.com/kb/adguard-for-android/solving-problems/background-work/), and protection will be interrupted without notice.
+2. Beslut, hvorvidt AdGuard Mini skal tillades at indsende notifikationer. Vi anbefaler at tillade dem: Notifikationer hjælper AdGuard Mini med at forblive aktiv i baggrunden. Tillades de ikke, [vil Android kunne stoppe appen for at spare strøm](https://adguard.com/kb/adguard-for-android/solving-problems/background-work/), og beskyttelsen afbrydes uden varsel.
 
-3. In the opened AdGuard Mini window, accept EULA and Privacy policy. Here you can also choose to help us improve the app by sending anonymized usage data and crash reports. Then tap _Continue_.
+3. I det åbnede AdGuard Mini-vindue, acceptér EULA og Fortrolighedspolitik. Her kan det også vælges at hjælpe os med at forbedre appen ved at indsende anonymiserede brugsdata og nedbrudsrapporter. Tryk dernæst på _Fortsæt_.
 
-![First setup \*mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/first_setup.png)
+![Første opsætning \*mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/first_setup.png)
 
 :::note
 
-If you choose to share app usage data with AdGuard, the app will collect anonymized information such as UI interactions and session identifiers. This consent is optional and can be withdrawn at any time. All collected data is fully anonymized, used only internally, and never shared with third parties.
+Vælges det at dele app-brugsdata med AdGuard, indsamler appen anonymiserede oplysninger, såsom UI-interaktioner og sessionsidentifikatorer. Dette samtykke er frivilligt og kan når som helst trækkes tilbage. Alle indsamlede data er fuldt anonymiserede, bruges kun internt og deles aldrig med tredjeparter.
 
 :::
 
-## How to uninstall AdGuard Mini for Android
+## Sådan afinstalleres AdGuard Mini til Android
 
-To uninstall AdGuard Mini for Android, do the following:
+Gør flg. for at afinstallér AdGuard Mini til Android:
 
 1. Afslut appen.
-2. Long-tap the AdGuard Mini icon on your home screen.
-3. Tap _Uninstall_.
+2. Tryk og hold på AdGuard Mini-ikonet på startskærmen.
+3. Tryk på _Afinstallér_.
 
-Alternatively, go to Android _Settings_ → _Apps_ → _AdGuard Mini_ → _Uninstall_.
+Alternativt, gå til Android _Indstillinger_ → _Apps_ → _AdGuard Mini_ → _Afinstallér_.
 
 :::note
 
-The exact steps may vary depending on your device manufacturer and Android version.
+De præcise trin kan variere afhængigt af enhedsproducent og Android-version.
 
 :::

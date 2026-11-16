@@ -1,49 +1,49 @@
 ---
-title: Installing AdGuard on older OS versions
+title: Installation af AdGuard i ældre OS-versioner
 sidebar_position: 10
 ---
 
-If your device runs an older operating system, you may not be able to install the latest version of AdGuard. If this is the case, you can download an earlier, compatible version of the app using the links below.
+Kører enheden et ældre operativsystem, kan den seneste version af AdGuard muligvis ikke installeres. Er dette tilfældet, kan en tidligere, kompatibel version af appen downloades via linkene nedenfor.
 
 :::note
 
-Older versions of the app may not include the latest features and may no longer receive updates.
+Ældre versioner af appen indeholder muligvis ikke de nyeste funktioner eller modtager opdateringer længere.
 
 :::
 
 ## Android
 
-AdGuard Ad Blocker for Android and Android TV require **Android 9 or later**.
+AdGuard Ad Blocker til Android og Android TV kræver **minimum Android 9**.
 
-If your device runs an older Android version, you can install an earlier version of the app:
+Såfremt enheden kører en ældre Android-version, kan en tidligere version af appen installeres:
 
 - https://agrd.io/android-older-version
 
-Download the `.apk` file and install the app as usual.
+Download `.apk`-filen, og installér appen som normalt.
 
 :::note
 
-To install the `.apk` file, you may need to allow [installation from unknown sources](https://adguard.com/kb/adguard-for-android/installation/#installation) in your Android settings.
+For at installere `.apk`-filen kan det være nødvendigt at tillade [installation fra ukendte kilder](https://adguard.com/kb/adguard-for-android/installation/#installation) i Android-indstillingerne.
 
 :::
 
 ## iOS
 
-AdGuard Ad Blocker requires **iOS 15.4 or later**.
+AdGuard Ad Blocker kræver **minimum iOS 15.4**.
 
 :::note
 
-Apple does not allow installing older app versions manually. If your device runs an older iOS version, AdGuard may not be available for installation.
+Apple tillader ikke manuel installation af ældre app-versioner. Kører enheden en ældre iOS-version, er AdGuard muligvis ikke tilgængelig for installation.
 
 :::
 
 ## macOS
 
-Starting with AdGuard for Mac v2.18 beta, the minimum supported system version is **macOS 12 Monterey**.
+Fra AdGuard til Mac v2.18 beta er den understøttede systemversion minimum **macOS 12 Monterey**.
 
-If your Mac runs an older version of macOS, install one of the following releases:
+Kører Mac'en en en ældre version af macOS, installér en af flg. udgivelser:
 
-- macOS 10.9 and older (64-bit only)
+- macOS 10.9 og tidligere (kun 64-bit)
   https://agrd.io/macos-10-9
 
 - macOS 10.12
@@ -55,13 +55,13 @@ If your Mac runs an older version of macOS, install one of the following release
 - macOS 10.15–11
   https://agrd.io/macos-10-15-11
 
-Download the `dmg` file and install the app as usual.
+Download `dmg`-filen og installér appen som normalt.
 
 ## Windows
 
-Starting with AdGuard for Windows v8.0 requires **Windows 10 or later**.
+Fra AdGuard til Windows v8.0 kræves **minimum Windows 10**.
 
-If you are using an older Windows version, you can install one of the following releases:
+Anvendes en ældre Windows-version, kan en af flg. udgivelser installeres:
 
 - Windows XP
   https://agrd.io/windows-xp
@@ -69,38 +69,38 @@ If you are using an older Windows version, you can install one of the following 
 - Windows 7
   https://agrd.io/windows-7
 
-- Windows 8 and 8.1
+- Windows 8/8.1
   https://agrd.io/windows-8-8-1
 
-Download the `.exe` file and install the app as usual.
+Download `.exe`-filen og installér appen som normalt.
 
-## AdGuard Mini for Mac (formerly AdGuard for Safari)
+## AdGuard Mini til Mac (tidligere AdGuard til Safari)
 
-AdGuard Mini for Mac requires **Safari 15 or later (macOS 12 Monterey)**.
+AdGuard Mini til Mac kræver **minimum Safari 15 (macOS 12 Monterey)**.
 
-If your device cannot run a newer Safari version, try installing beta builds of AdGuard Mini through TestFlight:
+Kan enheden ikke køre en nyere version af Safari, prøv at installere beta-builds af AdGuard Mini via TestFlight:
 
-- AdGuard Mini on TestFlight
+- AdGuard Mini på TestFlight
   https://agrd.io/adguard_for_safari_testflight
 
 :::note
 
-TestFlight builds are available for a limited time.
+TestFlight-builds er tilgængelige i en begrænset periode.
 
 :::
 
-If your system uses an older Safari version, you can try installing one of the earlier releases:
+Anvender systemet en ældre Safari-version, prøv at installere en af de tidligere udgivelser:
 
-- AdGuard for Safari v1.11.24
+- AdGuard til Safari v1.11.24
   https://agrd.io/safari_release
 
-- AdGuard for Safari v1.3.3
+- AdGuard til Safari v1.3.3
   https://agrd.io/safari-1-3-3
 
-- AdGuard for Safari v1.4.1
+- AdGuard til Safari v1.4.1
   https://agrd.io/safari-1-4-1
 
-- AdGuard for Safari v1.5.2
+- AdGuard til Safari v1.5.2
   https://agrd.io/safari-1-5-2
 
-Older Safari versions may not support modern content blocking API. If possible, we recommend updating your browser or operating system to the latest version supported by your device.
+Ældre Safari-versioner kan være uunderstøttet af moderne indholdsblocker-API'er. Om muligt, anbefaler vi, at webbrowseren eller operativsystemet opdateres til den seneste version understøttet af enheden.

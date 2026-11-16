@@ -5,30 +5,30 @@ sidebar_position: 6
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-The _Settings_ tab contains general app preferences: appearance, filter updates, diagnostics, and support options.
+Fanen _Indstillinger_ indeholder generelle app-præferencer: Udseende, filteropdateringer, diagnostik og supportmuligheder.
 
-![Settings \*mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/settings.png)
+![Indstillinger \*mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/settings.png)
 
 ## Generelt
 
-Manage the app’s look and functionality. Here you can change the app’s theme (light, dark, or system default) and set up filter updates. In _Advanced_ settings, you can select the logging level, export logs, and turn _Send anonymized app usage data_ and _Send crash reports automatically_ on or off.
+Håndtér app-udseende og -funktionalitet. Her kan der ændres app-tema (lyst, mørkt eller systemstandard) og opsætte filteropdateringer. I indstillingerne _Avanceret_ kan der vælges logningsniveau, eksporteres logfiler, og _Indsend anonymiserede app-brugsdata_ og _Indsend nedbrudsrapporter automatisk_ kan slås til/fra.
 
 ## Support
 
-Report a bug, suggest a feature, rate the app, or discuss it.
+Anmeld en fejl, foreslå en funktion, bedøm appen eller drøft den.
 
 ## Licens
 
-Activate, renew, or upgrade your license. Learn more in [Full version](/adguard-mini-for-android/features/full-version.md).
+Aktivér, forny eller opgradér licensen. Få mere at vide i [Fuld version](/adguard-mini-for-android/features/full-version.md).
 
 ## Om
 
-The app’s version info and legal documents: Privacy policy, License agreement, Acknowledgements, Version history, and a link to the official website.
+Appens versionsoplysninger og juridiske dokumenter: Fortrolighedspolitik, Licensaftale, Anerkendelser, Versionshistorik og link til det officielle websted.
 
-## Quit
+## Afslut
 
-Stop the application.
+Stop applikationen.
