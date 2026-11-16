@@ -3643,7 +3643,6 @@ example.org#@#body{remove:true;}
 ### Extended CSS selectors {#extended-css-selectors}
 
 - [Limitations](#extended-css-limitations)
-- [Pseudo-class `:has()`](#extended-css-has)
 - [Pseudo-class `:contains()`](#extended-css-contains)
 - [Pseudo-class `:matches-css()`](#extended-css-matches-css)
 - [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
@@ -3686,7 +3685,7 @@ We **strongly recommend** using these markers any time when you use an extended 
 
 **Examples**
 
-- `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule blocks all `div` elements containing a child node that has a link with the attributes `[target="_blank"][rel="nofollow"]`. The rule applies only to `example.org` and its subdomains.
+- `example.org#?#div:matches-attr("data-ad")` — this rule blocks all `div` elements with the `data-ad` attribute. The rule applies only to `example.org` and its subdomains.
 - `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule sets the style `display: none!important` to all `h3` elements that contain the word `cookies`. The rule applies only to `example.com` and all its subdomains.
 - `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
 - `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
@@ -3697,9 +3696,9 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 :::note
 
-Some pseudo-classes do not require selector before it. Still adding the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)`, but the second one is more obvious.
+Some pseudo-classes do not require selector before it. Still adding the [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :contains(ads)` works exactly like `#block *:contains(ads)`, but the second one is more obvious.
 
-Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still the lower-case names are used commonly.
+Pseudo-class names are case-insensitive, e.g. `:CONTAINS()` works as `:contains()`. Still the lower-case names are used commonly.
 
 :::
 
@@ -3708,135 +3707,7 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
 2. Specific pseudo-class may have its own limitations:
-[`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), [`:remove()`](#extended-css-remove-limitations), [`:remove-attr()`](#extended-css-remove-attr-limitations), and [`:remove-class()`](#extended-css-remove-class-limitations).
-
-#### Pseudo-class `:has()` {#extended-css-has}
-
-Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
-
-:::note
-
-Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has]
-if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside.
-If it is not supported by the product (or by the browser in case of AdGuard Browser Extension),
-ExtendedCss implementation will be used automatically as a fallback,
-even for rules with the `##` marker.
-
-AdGuard products support the native implementation of `:has()`:
-
-- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
-- AdGuard Browser Extension **supports** it in v5.3 or later:
-    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
-    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
-- All other AdGuard products **do not support** it.
-
-To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
-use the `#?#` or `#$?#` rule markers explicitly,
-e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: none !important; }`.
-
-And since the `:has()` pseudo-class cannot be nested within another `:has()`
-in native implementation, e.g. `div:has(p:has(a))`,
-it is always treated as extended in AdGuard Browser Extension.
-
-:::
-
-[native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
-[safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
-
-**Compatibility with other pseudo-classes**
-
-Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
-
-:::danger Removal notice
-
-`:if()` is no longer supported as a synonym for `:has()`.
-
-:::
-
-**Syntax**
-
-```text
-[target]:has(selector)
-```
-
-- `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
-- `selector` — required, standard or extended CSS selector
-
-The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
-
-A selector list can be set in `selector` as well. In this case **all** selectors in the list are being matched for now. In the future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
-
-##### `:has()` limitations {#extended-css-has-limitations}
-
-Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
-
-- disallow `:has()` inside the pseudos accepting only compound selectors;
-- disallow `:has()` after regular pseudo-elements.
-
-Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
-
-Native implementation does not allow any usage of `:scope` inside the `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope a)` which we continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
-
-**Examples**
-
-`div:has(.banner)` selects all `div` elements which **include** an element with the `banner` class:
-
-```html
-<!-- HTML code -->
-<div>Not selected</div>
-<div>Selected
-  <span class="banner">inner element</span>
-</div>
-```
-
-`div:has(> .banner)` selects all `div` elements which **include** an `banner` class element as a *direct child* of `div`:
-
-```html
-<!-- HTML code -->
-<div>Not selected</div>
-<div>Selected
-  <p class="banner">child element</p>
-</div>
-```
-
-`div:has(+ .banner)` selects all `div` elements **preceding** `banner` class element which *immediately follows* the `div` and both are children of the same parent:
-
-```html
-<!-- HTML code -->
-<div>Not selected</div>
-<div>Selected</div>
-<p class="banner">adjacent sibling</p>
-<span>Not selected</span>
-```
-
-`div:has(~ .banner)` selects all `div` elements **preceding** `banner` class element which *follows* the `div` but *not necessarily immediately* and both are children of the same parent:
-
-```html
-<!-- HTML code -->
-<div>Not selected</div>
-<div>Selected</div>
-<span>Not selected</span>
-<p class="banner">general sibling</p>
-```
-
-`div:has(span, .banner)` selects all `div` elements which **include both** `span` element and `banner` class element:
-
-```html
-<!-- HTML code -->
-<div>Not selected</div>
-<div>Selected
-  <span>child span</span>
-  <p class="banner">child .banner</p>
-</div>
-```
-
-:::danger Old syntax
-
-[Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has)
-is supported but **not recommended**.
-
-:::
+[`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), [`:remove()`](#extended-css-remove-limitations), [`:remove-attr()`](#extended-css-remove-attr-limitations), and [`:remove-class()`](#extended-css-remove-class-limitations).
 
 #### Pseudo-class `:contains()` {#extended-css-contains}
 
@@ -5279,6 +5150,7 @@ where:
         - `adguard_app_cli` — AdGuard for Linux
         - `adguard_app_android` — AdGuard for Android
         - `adguard_app_ios` — AdGuard for iOS
+        - `adguard_corelibs` — all [CoreLibs]-based products: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux. It is a shortcut for `adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli`
         - `adguard_ext_safari` — AdGuard for Safari
         - `adguard_ext_chromium` — AdGuard Browser Extension for Chrome (and chromium-based browsers, e.g. new Microsoft Edge)
         - `adguard_ext_chromium_mv3` — [AdGuard for Chromium MV3][ext-mv3]
@@ -5289,7 +5161,7 @@ where:
         - `adguard_ext_opera_mv3` — AdGuard Browser Extension for Opera MV3
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry]
-        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and AdGuard Browser Extension for Firefox
 - `!#else` — start of the block when conditions are false
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
@@ -5484,6 +5356,14 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
+The `corelibs` alias stands for `windows,mac,cli,android`, i.e. all [CoreLibs]-based apps. It can be used in both `PLATFORM` and `NOT_PLATFORM`:
+
+```adblock
+! the same as !+ PLATFORM(windows,mac,cli,android)
+!+ PLATFORM(corelibs)
+||example.org^
+```
+
 **Examples**
 
 This rule will be available only in AdGuard for Windows, Mac, Android:
@@ -5509,6 +5389,19 @@ This hint is used to skip validation of the rule. It is useful for rules for whi
 ```adblock
 !+ NOT_VALIDATE
 ||example.org^$newmodifier
+```
+
+#### `NOT_CONVERT`
+
+This hint disables conversion of the next rule to AdGuard syntax. It applies only to the rule directly after the hint. The rule is passed to the output as-is, so it must already be written in the syntax that the target product understands.
+
+Such a rule is not validated either: the compiler only logs a warning that it was kept as-is.
+
+Use `NOT_CONVERT` for rules that are valid but use something the current compiler version does not know yet, e.g. a new scriptlet. Without the hint, such a rule may be converted incorrectly or discarded. If conversion is fine and only validation has to be skipped, use `NOT_VALIDATE` instead.
+
+```adblock
+!+ NOT_CONVERT
+example.org#%#//scriptlet('new-scriptlet', 'arg')
 ```
 
 ## How to debug filtering rules
@@ -5590,7 +5483,7 @@ Now you can now use the `ExtendedCss` from global scope, and run its method [`qu
 **Examples**
 
 ```js
-const selector = 'div.block:has=(.header:matches-css(after, content: Ads))';
+const selector = 'div.block:has(.header:matches-css(after, content: Ads))';
 
 // array of HTMLElements matched the `selector` is to be returned
 ExtendedCss.query(selector);
