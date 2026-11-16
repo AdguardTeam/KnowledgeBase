@@ -1,24 +1,24 @@
 ---
-title: AdGuard Mini for Android
+title: AdGuard Mini til Android
 sidebar_position: 1
 ---
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-AdGuard Mini for Android (formerly AdGuard Content Blocker) is a lightweight ad blocker available on Google Play. It blocks ads on websites in Samsung Browser and Yandex Browser and protects you from ads and trackers system-wide with DNS protection.
+AdGuard Mini til Android (tidligere AdGuard Content Blocker) er en letvægts-adblocker tilgængelig via Google Play. Den blokerer annoncer på websteder i Samsung Browser og Yandex Browser og beskytter mod annoncer og trackere på systemniveau med DNS-beskyttelse.
 
 - [Installation](/adguard-mini-for-android/installation.md)
 
-    Installation, removal, and system requirements for AdGuard Mini for Android
+    Installation, afinstallation og systemkrav til AdGuard Mini til Android
 
-- [Features](/adguard-mini-for-android/features/features.md)
+- [Funktioner](/adguard-mini-for-android/features/features.md)
 
-    Main features and settings available in AdGuard Mini for Android
+    Primære funktioner og indstillinger tilgængelige i AdGuard Mini til Android
 
-- [Solving problems](/adguard-mini-for-android/solving-problems/solving-problems.md)
+- [Problemløsning](/adguard-mini-for-android/solving-problems/solving-problems.md)
 
     Kendte problemer og mulige løsninger

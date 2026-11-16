@@ -5,44 +5,44 @@ sidebar_position: 3
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-With _DNS protection_, AdGuard Mini for Android extends protection to the whole device. It encrypts your DNS queries, so your ISP can’t see which websites you visit, and blocks connections to advertising and tracking domains at the DNS level — in any browser or app, not just the supported ones.
+Med _DNS-beskyttelse_ udvider AdGuard Mini til Android beskyttelsen til hele enheden. Den krypterer DNS-forespørgsler, så ISP'en ikke kan se de besøgte websteder, og blokerer forbindelser til reklame- og sporingsdomæner på DNS-niveau — i alle webbrowsere og apps, ikke kun de understøttede.
 
-![DNS protection](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_protection.png)
+![DNS-beskyttelse](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_protection.png)
 
 ## Sådan fungerer det
 
-Whenever an app or website connects to the Internet, your device first sends a DNS query to translate the domain name into an IP address. DNS protection routes these queries through the DNS server of your choice. If a domain is known for serving ads or tracking, the connection is blocked.
+Hver gang en app eller et websted opretter forbindelse til internet, sender enheden først en DNS-forespørgsel for at oversætte domænenavnet til en IP-adresse. DNS-beskyttelse ruter disse forespørgsler gennem den valgte DNS-server. Er et domæne kendt for at levere annoncer eller sporing, blokeres forbindelsen.
 
-To do this, AdGuard Mini creates a local VPN on your device. It’s not a real VPN: your traffic is not routed through remote servers, and all filtering happens on your device.
+For at gøre dette opretter AdGuard Mini et lokalt VPN på enheden. Det er ikke et "rigtigt" VPN: Trafikken rutes ikke igennem fjernservere, al filtrering sker på den lokale enhed.
 
 :::note
 
-Android allows only one active VPN connection at a time. If another VPN app is running, DNS protection won’t work alongside it. Learn more in [Solving problems](/adguard-mini-for-android/solving-problems/dns-protection-doesn't-work.md).
+Android tillader kun én aktiv VPN-forbindelse ad gangen. Kører en anden VPN-app, vil DNS-beskyttelse ikke fungere sammen med den. Læs mere i [Problemløsning](/adguard-mini-for-android/solving-problems/dns-protection-doesn't-work.md).
 
 :::
 
-To enable _DNS protection_, open AdGuard Mini for Android and go to _Protection_ → _DNS protection_, and toggle it on.
+For at aktivere _DNS-beskyttelse_, åbn AdGuard Mini til Android og gå til _Beskyttelse_ → _DNS-beskyttelse_, og slå den til.
 
 ## DNS-server
 
-You can select a [_DNS server_](https://adguard-dns.io/kb/general/dns-providers/) in the _DNS protection_ settings. Different servers handle DNS queries differently. For example, _AdGuard DNS_ blocks advertising and tracking domains by default. Or you can choose a _Non-filtering DNS_ server: it doesn’t block anything by itself, and you decide what to block with [DNS filters](https://adguard-dns.io/kb/general/dns-filtering/) and [DNS user rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
+En [_DNS-server_](https://adguard-dns.io/kb/general/dns-providers/) kan vælges i indstillingerne for _DNS-beskyttelse_. Forskellige servere håndterer DNS-forespørgsler forskelligt. F.eks. blokerer _AdGuard DNS_ som standard reklame- og sporingsdomæner. Der kan også vælges en _ikke-filtrerende DNS_-server: Den blokerer ikke noget af sig selv, da det bestemmes af brugeren via [DNS-filtre](https://adguard-dns.io/kb/general/dns-filtering/) og [DNS-brugerregler](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
 
-![DNS server](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_server.png)
+![DNS-server](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_server.png)
 
 ## DNS-filtre
 
 :::note
 
-This feature is available only in the [full version](https://adguard.com/license.html).
+Denne funktion er kun tilgængelig i den [fulde version](https://adguard.com/license.html).
 
 :::
 
-DNS filters are lists of domains that should be blocked at the DNS level. Enable them to block more advertising and tracking domains across the whole device.
+DNS-filtre er lister over domæner, som bør blokeres på DNS-niveau. Aktivér dem for at blokere flere reklame- og sporingsdomæner på enhedsniveau.
 
-![DNS filters](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_filters.png)
+![DNS-filtre](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/dns_filters.png)
 
-You can also add your own [_DNS user rules_ rules](https://adguard-dns.io/kb/general/dns-filtering-syntax/). They work like a personal DNS filter: one rule applies everywhere, in every browser and app. For example, `||example.org^` blocks `example.org` and all its subdomains on the entire device.
+Der kan også tilføjes egne [_DNS-brugerregler_](https://adguard-dns.io/kb/general/dns-filtering-syntax/). De fungerer som et personligt DNS-filter: Én regel anvendes overalt, i enhver webbrowser og app. F.eks. blokerer `||example.org^` `example.org`, inkl. underdomæner, på hele enheden.

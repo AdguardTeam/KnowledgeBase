@@ -1,22 +1,22 @@
 ---
-title: Video browser
+title: Video-browser
 sidebar_position: 4
 ---
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-Video browser is a built-in feature of AdGuard Mini for Android that lets you watch YouTube videos without ads.
+Videobrowser er en indbygget funktion i AdGuard Mini til Android, der muliggør at se YouTube-videoer uden reklamer.
 
-YouTube serves ads from the same domains as the videos themselves, so blocking those domains at the DNS level would also block the videos. That’s why DNS protection can’t remove ads in the YouTube app. Video browser solves this differently: it opens videos in its own window using the YouTube player API, so videos play without ads.
+YouTube viser reklamer fra de samme domæner som selve videoerne, så blokering af disse domæner på DNS-niveau vil også blokere videoerne. Det er derfor, DNS-beskyttelse ikke kan fjerne annoncer i YouTube-appen. Videobrowser løser dette anderledes: Den åbner videoer i sit eget vindue via YouTube-videoafspiller-API'en, så videoer afspilles uden annoncer.
 
-![Video browser](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/video_browser.png)
+![Videobrowser](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/video_browser.png)
 
-How to use Video browser:
+Sådan bruges Videobrowser:
 
 1. Åbn YouTube-appen.
-2. Choose a video and tap _Share_.
-3. Select _View in AdGuard_.
+2. Vælg en video, og tryk på _Del_.
+3. Vælg _Kig i AdGuard_.
