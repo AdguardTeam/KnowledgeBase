@@ -3,26 +3,26 @@ title: Funktioner
 sidebar_position: 1
 ---
 
-- [Browser protection](/adguard-mini-for-android/features/browser-protection.md)
+- [Browserbeskyttelse](/adguard-mini-for-android/features/browser-protection.md)
 
-    Core filtering feature for Samsung Browser and Yandex Browser, with customizable filters
+    Kernefiltreringsfunktion til Samsung Browser og Yandex Browser med filtre, som kan tilpasses
 
-- [DNS protection](/adguard-mini-for-android/features/dns-protection.md)
+- [DNS-beskyttelse](/adguard-mini-for-android/features/dns-protection.md)
 
-    System-wide protection from ads and trackers, with encrypted DNS and configurable servers
+    Systemniveaubeskyttelse mod annoncer og trackere, med krypteret DNS og opsættelige servere
 
-- [Video browser](/adguard-mini-for-android/features/video-browser.md)
+- [Videobrowser](/adguard-mini-for-android/features/video-browser.md)
 
-    A built-in way to watch YouTube videos without ads
+    En indbygget måde at kigge YouTube-videoer på, uden annoncer
 
-- [Statistics and Recent activity](/adguard-mini-for-android/features/statistics.md)
+- [Statistik og Seneste aktivitet](/adguard-mini-for-android/features/statistics.md)
 
-    An overview of blocked ads and trackers and your device’s DNS activity
+    En oversigt over blokerede annoncer og trackere samt enhedens DNS-aktivitet
 
-- [Settings](/adguard-mini-for-android/features/settings.md)
+- [Indstillinger](/adguard-mini-for-android/features/settings.md)
 
     Forskellige muligheder, som assisterer med at opsætte appen og filtreringen
 
-- [Full version](/adguard-mini-for-android/features/full-version.md)
+- [Fuld version](/adguard-mini-for-android/features/full-version.md)
 
-    Advanced features that enhance filtering power and control
+    Avancerede funktioner, som forbedrer filtreringskraft og -kontrol
