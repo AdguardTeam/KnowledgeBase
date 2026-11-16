@@ -47,7 +47,7 @@ Følg disse trin for at installere AdGuard på en Windows-PC eller -tablet:
 
    ![Complete installation \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/installer3_en.png)
 
-   Sådan! AdGuard has been successfully installed. En anmodning om at opsætte beskyttelse jævnfør egne præferencer vises.
+   Sådan! AdGuard er nu installeret. En anmodning om at opsætte beskyttelse jævnfør egne præferencer vises.
 
    ![Setting up protection \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/installation_new/setting_up_protection_en.png)
 
@@ -57,7 +57,7 @@ Følg disse trin for at installere AdGuard på en Windows-PC eller -tablet:
 
 ### Almindelig metode
 
-If you need to uninstall or reinstall AdGuard, do the following:
+Gør flg. for enten at afinstallere eller geninstallere AdGuard:
 
 - For Microsoft Windows 10 & 11: Open the _Start Menu_ by clicking _Start_, then select _Settings_. In the window that opens, click  _Apps_ → _Installed apps_. Select _AdGuard_ from the list of your installed apps, click the three-dot menu, and select _Uninstall_.
 
@@ -105,7 +105,7 @@ Følg kun de næste trin, såfremt gennemførelsen af de første to trin viser s
 
 AdGuard er hermed afinstalleret!
 
-#### Running the uninstaller in console mode
+#### Kørsel af afinstalleren i konsoltilstand
 
 Udover at køre den avancerede afinstaller i sin bruger-interaktive tilstand, kan kommandolinjeargumenter også bruges til at afinstallere AdGuard til Windows. Følg vejledningen nedenfor for at gøre dette:
 

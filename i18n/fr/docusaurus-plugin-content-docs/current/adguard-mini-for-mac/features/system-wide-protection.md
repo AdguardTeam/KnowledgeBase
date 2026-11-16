@@ -1,5 +1,5 @@
 ---
-title: System-wide protection
+title: Protection à l'échelle du système
 sidebar_position: 9
 ---
 

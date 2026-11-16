@@ -13,7 +13,7 @@ For at filtrere HTTPS-trafik benytter AdGuard sit eget certifikat. I modsætning
 
 Vi bruger Firefox som eksempel. Andre Gecko-baserede webbrowsere fungerer på en lignende måde, selvom nogle menunavne kan være anderledes.
 
-## Inden man starter
+## Inden der startes
 
 Sørg for, at:
 

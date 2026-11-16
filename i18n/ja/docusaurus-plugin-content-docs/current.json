@@ -210,5 +210,17 @@
   "sidebar.tutorialSidebar.category.AdGuard for Windows v7": {
     "message": "AdGuard for Windows v7",
     "description": "The label for category 'AdGuard for Windows v7' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AdGuard Mini for Android": {
+    "message": "AdGuard Mini for Android",
+    "description": "The label for category 'AdGuard Mini for Android' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.features-adguard-mini-for-android": {
+    "message": "Features",
+    "description": "The label for category 'Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.solving-problems-adguard-mini-for-android": {
+    "message": "問題解決",
+    "description": "The label for category 'Solving problems' in sidebar 'tutorialSidebar'"
   }
 }

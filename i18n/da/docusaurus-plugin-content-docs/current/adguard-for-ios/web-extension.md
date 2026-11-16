@@ -61,7 +61,7 @@ Sørg længere nede på skærmen for, at *Alle websteder* er sat til *Tillad* el
 
 ![AdGuard-udvidelse i Indstillinger *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ag-webext-in-settings.png)
 
-### I Safari
+### In Safari
 
 For at aktivere AdGuard-udvidelsen direkte fra Safari-webbrowseren, tryk på ikonet til venstre for URL-feltet:
 

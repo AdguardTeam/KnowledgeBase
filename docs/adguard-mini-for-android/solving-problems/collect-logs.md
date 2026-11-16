@@ -1,0 +1,18 @@
+---
+title: How to collect logs in AdGuard Mini for Android
+sidebar_position: 5
+---
+
+:::info
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy policy](https://adguard.com/privacy.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
+
+To export logs from AdGuard Mini:
+
+1. Open the app and go to *Settings* → *General* → *Advanced*
+1. Tap *Export logs*
+1. Save the file or send it directly to our support team
+
+If our support team asked you for debug logs, follow the steps in [How to collect and send debug logs](https://adguard.com/kb/adguard-for-android/solving-problems/log/).

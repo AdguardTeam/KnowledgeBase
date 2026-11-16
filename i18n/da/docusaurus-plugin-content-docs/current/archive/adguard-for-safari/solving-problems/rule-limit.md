@@ -1,5 +1,5 @@
 ---
-title: Rule limit issues
+title: Regelkvoteproblemer
 sidebar_position: 1
 ---
 
@@ -9,28 +9,28 @@ Denne artikel omhandler AdGuard til Safari, der kun beskytter Safari-webbrowsere
 
 :::
 
-## Safari content blocker rule limit
+## Regelkvote i Safari-indholdsblocker
 
-AdGuard for Safari uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content-blocking extension.
+AdGuard til Safari bruger Content Blocking API'en til anvendelse af filtreringsregler på sider i Safari-webbrowseren. P.t. tillades maks. 150.000 regler pr. indholdsblokerende udvidelse.
 
-AdGuard for Safari has 6 content blockers:
+AdGuard til Safari har 6 indholdsblockere:
 
-- AdGuard General
+- AdGuard Generelt
 - AdGuard Fortrolighed
 - AdGuard Social
 - AdGuard Sikkerhed
 - AdGuard Andre
 - AdGuard Tilpasset
 
-This makes a total of 900,000 filtering rules.
+Dette muliggør i alt 900.000 filtreringsregler.
 
-However, **an extension can contain up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
+Dog kan **en udvidelse indeholde op til 150.000 regler**. Overskrides denne kvote, vil nogle af reglerne ikke blive anvendt. Dette kan medføre forkert blokering.
 
-## How to check if you are exceeding the rule limit
+## Sådan tjekkes, om kvoten overskrides
 
 1. Åbn AdGuard til Safari-appen.
-2. Scroll down and click _Content blockers_.
-3. Below each content blocker, you can see the enabled filters and the number of active rules.
-   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+2. Rul ned og klik på _Indholdsblockere_.
+3. Under hver indholdsblocker ses de aktiverede filtre og antallet af aktive regler.
+   ![Indholdsblockere](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
-If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to _Filters_, select the problematic category, and disable the filters or user rules you don’t need.
+Er mere end 150.000 regler aktiveret i en indholdsblocker, skal nogle af dens filtre eller brugerregler muligvis deaktiveres. Gå til _Filtre_, vælg den problematiske kategori og deaktivér de filtre eller brugerregler, som ikke behøves.

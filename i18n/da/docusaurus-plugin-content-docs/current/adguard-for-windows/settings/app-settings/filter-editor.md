@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ![Filter-editor \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/editor.png)
 
-Filter-editoren er et værktøj, der muliggør at se og håndtere filtre på de individuelle reglelniveauer. Filters are combined into thematic categories: _Ad Blocking_, _Privacy_, _Language-specific_ filters, _Custom_, and _Other_.
+Filter-editoren er et værktøj, der muliggør at se og håndtere filtre på de individuelle reglelniveauer. Filtre er kombineret i tematiske kategorier: _Adblocking_, _Fortrolighed_, _Sprogspecifikke_ filtre, _Tilpassede_ og _Andre_.
 
 Med denne filter-editor er det muligt at:
 
