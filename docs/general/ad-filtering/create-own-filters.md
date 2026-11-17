@@ -3716,10 +3716,18 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has]
 if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside.
+If it is not supported by the product (or by the browser in case of AdGuard Browser Extension),
 ExtendedCss implementation will be used automatically as a fallback,
 even for rules with the `##` marker.
 
-AdGuard products support the native implementation of `:has()`.
+AdGuard products support the native implementation of `:has()`:
+
+- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with Safari 15.4 or later. To use `:has()` in rules converted by [SafariConverterLib](#safari-converter-lib), use v2.0.39 or later and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard Browser Extension **supports** it in v5.3 or later:
+    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
+    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
+- AdGuard Content Blocker passes `##:has()` rules to the browser. They work only if the engine supports `:has()`: Samsung Internet 20+ or Chromium 105+. Content Blocker does not support ExtendedCss, so it cannot fall back.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
 use the `#?#` or `#$?#` rule markers explicitly,
@@ -3727,10 +3735,13 @@ e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: n
 
 And since the `:has()` pseudo-class cannot be nested within another `:has()`
 in native implementation, e.g. `div:has(p:has(a))`,
+such rules are always treated as extended CSS in products that support ExtendedCss.
+AdGuard Content Blocker drops them.
 
 :::
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
+[safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
 
 **Compatibility with other pseudo-classes**
 
@@ -5600,7 +5611,7 @@ Now you can now use the `ExtendedCss` from global scope, and run its method [`qu
 **Examples**
 
 ```js
-const selector = 'div.block:has=(.header:matches-css(after, content: Ads))';
+const selector = 'div.block:has(.header:matches-css(after, content: Ads))';
 
 // array of HTMLElements matched the `selector` is to be returned
 ExtendedCss.query(selector);
