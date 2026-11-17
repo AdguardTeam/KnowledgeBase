@@ -969,7 +969,7 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 
 - AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.sendBeacon()`.
   Using `$ping` is not recommended in the filter lists that are supposed to be used by CoreLibs-based AdGuard products.
-- For AdGuard for Safari and AdGuard for iOS, rules with `$ping` (including `$~ping`) are supported starting with Safari 14: SafariConverterLib converts them to the native Safari `"ping"` resource type. For older Safari versions, the rule is discarded.
+- For AdGuard Mini for Mac and AdGuard for iOS, rules with `$ping` (including `$~ping`) are supported starting with Safari 14: SafariConverterLib converts them to the native Safari `"ping"` resource type. For older Safari versions, the rule is discarded.
 
 :::
 
