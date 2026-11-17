@@ -15,7 +15,7 @@ On October 26, 2026, Microsoft removed the AAA Certificate Services root certifi
 
 ## How to restore AdGuard's functionality on Windows 7
 
-Follow these steps:
+To install the certificate, you need administrator rights on the computer and AdGuard for Windows v7.x.
 
 1. Download the certificate
 
