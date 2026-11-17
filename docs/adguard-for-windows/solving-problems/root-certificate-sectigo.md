@@ -5,7 +5,7 @@ sidebar_position: 14
 
 Some AdGuard for Windows 7 users may notice that the app cannot launch after verification of the root certificate by AAA Certificate Services fails with error code 0x800B0109.
 
-This error is not due to AdGuard's shortcomings, but a result of an ongoing transition to newer types of security certificates.
+This is not a bug in AdGuard for Windows: the certificate chain that v7.x relies on is no longer trusted by Windows.
 
 ## Why this happens
 
