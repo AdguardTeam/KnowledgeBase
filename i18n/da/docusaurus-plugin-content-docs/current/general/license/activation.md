@@ -113,7 +113,7 @@ Vælg dernæst en af de to muligheder:
 
     ![Activation options](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/already-purchased-options-license.png)
 
-    - **Log in**
+    - **Log ind**
 
       Log in to your AdGuard account that has a valid license in it.
 

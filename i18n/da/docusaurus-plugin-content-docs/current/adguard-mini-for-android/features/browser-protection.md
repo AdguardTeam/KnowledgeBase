@@ -1,54 +1,54 @@
 ---
-title: Browser protection
+title: Browserbeskyttelse
 sidebar_position: 2
 ---
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-Browser protection is the core filtering feature of AdGuard Mini for Android. It blocks ads on webpages in Samsung Browser and Yandex Browser.
+Browserbeskyttelse er kernefiltreringsfunktionen i AdGuard Mini til Android. Den blokerer annoncer på websider i Samsung Browser og Yandex Browser.
 
-AdGuard Mini works through the Content Blocking API, a browser technology that allows apps to block ads and apply filtering rules on webpages. This approach is fully in line with Google Play policies.
+AdGuard Mini fungerer via Content Blocking API, en webbrowserteknologi, der tillader apps at blokere annoncer og anvende filtreringsregler på websider. Denne tilgang er fuldt ud i overensstemmelse med Google Play-politikker.
 
-**How to enable Browser protection**
+**Sådan aktiveres Browserbeskyttelse**
 
-1. Open AdGuard Mini for Android and go to _Protection_ → _Browser protection_
-2. Toggle on the browser you use
-3. Confirm AdGuard as the ad blocker in the browser:
+1. Åbn AdGuard Mini til Android og gå til _Beskyttelse_ → _Browserbeskyttelse_
+2. Slå den webbrowser til, der anvendes
+3. Bekræft AdGuard som adblocker i webbrowseren:
 
-- Samsung Browser: open the browser menu, tap _Ad blockers_, and toggle on AdGuard
-- Yandex Browser: go to browser _Settings_ → _Content blocking extensions_ and check that AdGuard is enabled.
+- Samsung Browser: Åbn webbrowserens menu, tryk på _Adblockere_, og slå AdGuard til
+- Yandex Browser: Gå til webbrowserens _Indstillinger_ → _Udvidelser til indholdsblokering_, og tjek, at AdGuard er aktiveret.
 
-![Browser protection](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/browser_protection.png)
+![Browserbeskyttelse](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/browser_protection.png)
 
-Here you can also set up _Filters_ and _User rules_.
+Her kan der også opsættes _Filtre_ og _Brugerregler_.
 
 ## Filtre
 
-Filters are lists of rules that tell AdGuard Mini for Android what to block or hide on webpages. They are organized into categories:
+Filtre er lister over regler, som fortæller AdGuard Mini til Android, hvad der skal blokeres eller skjules på websider. De er organiseret i kategorier:
 
-- **Ad blocking** blocks banners, popups, and other ads
-- **Tracking protection** hides your online activity and personal data from web trackers (available in the [full version](https://adguard.com/license.html))
-- **Social widgets** removes social media buttons and embedded widgets
-- **Annoyances** hides cookie notices, newsletter popups, and other distracting elements
-- **Security** blocks known malicious and suspicious domains
-- **Language-specific** includes filters for specific languages and regions
-- **Other** covers additional filtering cases
-- **Custom filters** let you add any third-party filter list by URL for more targeted blocking (available in the [full version](https://adguard.com/license.html))
+- **Adblocking** blokerer bannere, pop op-vinduer og andre annoncer
+- **Sporingsbeskyttelse** skjuler onlineaktiviteten og personlige data for webtrackere (tilgængelig i den [fulde version](https://adguard.com/license.html))
+- **Sociale widgets** fjerner knapper til sociale medier og indlejrede widgets
+- **Irritationer** skjuler cookie-meddelelser, pop op-vinduer med nyhedsbreve og andre forstyrrende elementer
+- **Sikkerhed** blokerer kendte ondsindede og mistænkelige domæner
+- **Sprogspecifik** inkluderer filtre til bestemte sprog og regioner
+- **Andet** dækker yderligere filtreringstilfælde
+- **Tilpassede filtre** muliggør at tilføje en tredjepartsfilterliste efter URL for mere målrettet blokering (tilgængelig i den [fulde version](https://adguard.com/license.html))
 
-![Filters](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/filters.png)
+![Filtre](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/filters.png)
 
-To manage filters, go to _Protection_ → _Browser protection_ → _Filters_. Browse the categories and enable the filters you need. We recommend keeping _Ad blocking_ and your _Language-specific_ filters enabled.
+For at håndtere filtre, gå til _Beskyttelse_ → _Browserbeskyttelse_ → _Filtre_. Gennemse kategorierne, og aktivér de filtre, som der er behov for. Vi anbefaler at holde _Adblocking_ og relevante _Sprogspecifik_-filtre aktiveret.
 
 ## Brugerregler
 
-User rules are custom filtering rules that let you adjust ad blocking yourself: disable filtering on a website that doesn’t work correctly, add a rule you got from support, or write your own rule for a specific page. They form your personal filter list, applied on top of the enabled filters, and use the same filtering rules syntax as all [AdGuard filters](https://adguard.com/kb/general/ad-filtering/create-own-filters/).
+Brugerregler er tilpassede filtreringsregler, som muliggør justering af adblocking: Deaktivere filtrering på et websted, der ikke fungerer korrekt, tilføje en regel modtaget fra supporten eller skrive en egen regel til en bestemt side. De udgør den personlige filterliste, der anvendes oven på de aktiverede filtre, og bruger samme syntaks for filtreringsregler som alle [AdGuard-filtre](https://adguard.com/kb/general/ad-filtering/create-own-filters/).
 
-To add a rule, go to _Protection_ → _Browser protection_ → _User rules_.
+For at tilføje en regel, gå til _Beskyttelse_ → _Browserbeskyttelse_ → _Brugerregler_.
 
-![User rules](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/user_rules.png)
+![Brugerregler](https://cdn.adtidy.org/content/Kb/ad_blocker/mini_android/user_rules.png)
 
-Keep in mind that _User rules_ apply to _Browser protection_, that is, to webpages in Samsung Browser and Yandex Browser. To block domains at the DNS level across the whole device, use [DNS user rules](/adguard-mini-for-android/features/dns-protection.md) instead. And if a rule you added breaks a website, simply disable or delete it in the _User rules_ list.
+Husk, at _Brugerregler_ gælder for _Browserbeskyttelse_, det vil sige på websider i Samsung Browser og Yandex Browser. For at blokere domæner på DNS-niveau på hele enheden, anvend [DNS-brugerregler](/adguard-mini-for-android/features/dns-protection.md) i stedet. Fungerer en tilføjet regel ikke på et websted, kan den blot deaktiveres eller slettes fra listen _Brugerregler_.

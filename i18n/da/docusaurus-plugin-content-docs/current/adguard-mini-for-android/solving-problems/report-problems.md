@@ -1,12 +1,12 @@
 ---
-title: How to report incorrect blocking
+title: Sådan anmeldes fejlagtig blokering
 sidebar_position: 6
 ---
 
 :::info
 
-This page is about AdGuard Mini for Android, which safeguards Samsung Browser and Yandex Browser and provides DNS protection. To protect your Android device entirely and get more advanced settings, [download AdGuard for Android](https://agrd.io/download-kb-adblock).
+Denne side omhandler AdGuard Mini til Android, der beskytter Samsung Browser og Yandex Browser samt yder DNS-beskyttelse. For at beskytte Android-enheden fuldstændigt og få mere avancerede indstillinger, [download AdGuard til Android](https://agrd.io/download-kb-adblock).
 
 :::
 
-If ads slip through or a website doesn’t work correctly with filtering enabled, go to _Settings_ → _Support_ → _Report incorrect blocking_. This sends us the details we need to fix the filters.
+Slipper annoncer igennem, eller fungerer et websted ikke korrekt med filtrering aktiveret, gå til _Indstillinger_ → _Support_ → _Anmeld fejlagtig blokering_. Dette indsender de oplysninger til os, som vi har brug for til at rette filtrene.
