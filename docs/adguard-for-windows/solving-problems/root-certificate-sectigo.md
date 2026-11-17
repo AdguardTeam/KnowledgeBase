@@ -29,7 +29,7 @@ Double-click the downloaded file and click *Install Certificate*.
 
 :::note
 
-⚠️ Important: the certificate must go into *Trusted Root Certification Authorities*, not into *Trusted Publishers*. In any other store it will not help.
+The certificate must go into *Trusted Root Certification Authorities*, not into *Trusted Publishers*. In any other store it will not help.
 
 :::
 
