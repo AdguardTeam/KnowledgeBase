@@ -1,5 +1,5 @@
 ---
-title: How to restore AdGuard's functioning after root certificate failure
+title: How to restore AdGuard for Windows on Windows 7 after the root certificate update
 sidebar_position: 14
 ---
 
