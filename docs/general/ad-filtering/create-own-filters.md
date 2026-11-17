@@ -3712,24 +3712,14 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 #### Pseudo-class `:has()` {#extended-css-has}
 
-Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
-
 :::note
 
 Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has]
 if they use the `##` rule marker and if it is possible, i.e., there are no other extended CSS selectors inside.
-If it is not supported by the product (or by the browser in case of AdGuard Browser Extension),
 ExtendedCss implementation will be used automatically as a fallback,
 even for rules with the `##` marker.
 
-AdGuard products support the native implementation of `:has()`:
-
-- AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
-- AdGuard Browser Extension **supports** it in v5.3 or later:
-    - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
-    - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
-- All other AdGuard products **do not support** it.
+AdGuard products support the native implementation of `:has()`.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
 use the `#?#` or `#$?#` rule markers explicitly,
@@ -3737,12 +3727,10 @@ e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: n
 
 And since the `:has()` pseudo-class cannot be nested within another `:has()`
 in native implementation, e.g. `div:has(p:has(a))`,
-it is always treated as extended in AdGuard Browser Extension.
 
 :::
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
-[safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
 
 **Compatibility with other pseudo-classes**
 
