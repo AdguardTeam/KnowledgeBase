@@ -973,7 +973,7 @@ AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.
 
 :::caution Compatibility
 
-Rules with `$ping` (including `$~ping`) are supported by AdGuard for iOS and AdGuard Mini for Mac. Starting with  (iOS 14, macOS Big Sur), SafariConverterLib maps this modifier to Safari's native ping resource type; on older Safari versions such rules are considered invalid and are discarded.
+Rules with `$ping` (including `$~ping`), are supported by AdGuard for iOS and AdGuard Mini for Mac. Starting with iOS 14 and macOS Big Sur (version 11), SafariConverterLib maps this modifier to Safari’s native ping resource type. On older versions of Safari, such rules are considered invalid and discarded.
 For more details, see the [SafariConverterLib section](#safari-converter-lib).
 
 :::
