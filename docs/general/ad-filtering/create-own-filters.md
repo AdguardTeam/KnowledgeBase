@@ -352,7 +352,7 @@ For basic rules the described logic is applicable only for the domains specified
 
 :::info Compatibility
 
-In AdGuard for Windows, Mac, Android, and AdGuard Browser Extension rules with wildcard `.*` match any [public suffix (or eTLD)](https://publicsuffix.org/list/). But for AdGuard Mini for Mac (formerly AdGuard for Safari) and AdGuard for iOS [the supported list of top-level domains](https://github.com/AdguardTeam/SafariConverterLib/blob/v2.0.31/Sources/ContentBlockerConverter/Compiler/BlockerEntryFactory.swift#L44) is limited due to Safari limitations.
+In AdGuard for Windows, Mac, and Android, as well in AdGuard Browser Extension, rules with the wildcard `.*` match any [public suffix (or eTLD)](https://publicsuffix.org/list/). However, the [list of supported top-level domains](https://github.com/AdguardTeam/SafariConverterLib/blob/v2.0.31/Sources/ContentBlockerConverter/Compiler/BlockerEntryFactory.swift#L44) for AdGuard Mini for Mac (formerly AdGuard for Safari) and AdGuard for iOS is limited due to Safari limitations.
 
 :::
 
