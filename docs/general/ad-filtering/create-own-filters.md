@@ -3256,7 +3256,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Compatibility
 
-- The concept of priority has been introduced in [TSUrlFilter] v2.1.0 and [CoreLibs] v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
+- The concept of priority has been introduced in [TSUrlFilter] v2.1.0 and [CoreLibs] v1.13. Before that AdGuard didn’t have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
 - AdGuard for iOS, Safari, and AdGuard Mini for Android rely on the browsers implementation and they cannot follow the rules specified here.
 
 :::
