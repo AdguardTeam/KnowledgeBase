@@ -24,9 +24,9 @@ For at blokere annoncer, trackere og irritationer på websteder bruger AdGuard f
 - AdGuard Tilpasset
 - AdGuard Andre
 
-Hver indholdsblokerende udvidelse kan indeholde op til 150.000 aktive filtreringsregler. Regelantallet inden for de fleste filtergrupper overstiger ikke 150.000. Aktiveres imidlertid for mange sprogspecifikke eller tilpassede filtre, vil kvoten kunne overskrides. I så tilfælde vil tilfældige regler, som overskrider kvoten, automatisk blive slået fra, hvilket kan medføre forkert blokering. **We strongly recommend activating only the filters you need**.
+Hver indholdsblokerende udvidelse kan indeholde op til 150.000 aktive filtreringsregler. Regelantallet inden for de fleste filtergrupper overstiger ikke 150.000. Aktiveres imidlertid for mange sprogspecifikke eller tilpassede filtre, vil kvoten kunne overskrides. I så tilfælde vil tilfældige regler, som overskrider kvoten, automatisk blive slået fra, hvilket kan medføre forkert blokering. **Vi anbefaler kraftigt kun at aktivere de filtre, som behøves**.
 
-There is also one more extension responsible for other features: _AdGuard for Safari_, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
+Der er også endnu en udvidelse, der er ansvarlig for andre funktioner: _AdGuard til Safari_, der tilføjer AdGuard-ikonet ved siden af søgebjælken i Safari og tillader brug af avancerede regler til at blokere komplekse annoncer.
 
 ![Safari-udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
@@ -36,33 +36,33 @@ Mere om hver udvidelse nedenfor.
 
 _AdGuard Generel_ anvender regler fra filtre, som findes i _Filtre_ → _Adblocking_ og _Filtre_ → _Sprogspecifikke_. Denne udvidelse fokuserer på omfattende adblocking og inkluderer filtre til sprogspecifikke annoncer.
 
-_AdGuard Privacy_ applies rules from filters located in _Filters_ → _Privacy_. Den blokerer sporingsmekanismer og sikrer, at browsingaktiviteten forbliver fortrolig.
+_AdGuard Privacy_ anvender regler fra filtre placeret i _Filtre_ → _Fortrolighed_. Den blokerer sporingsmekanismer og sikrer, at browsingaktiviteten forbliver fortrolig.
 
-_AdGuard Social_ applies rules from filters that can be found in _Filters_ → _Social Widgets_ and _Filters_ → _Annoyances_. Den blokerer pop op'er, knapper på sociale medier, online-assistentvinduer og andre elementer på websider, som måske findes irriterende.
+_AdGuard Social_ anvender regler fra filtre, som findes i _Filtre_ → _Sociale Widgets_ og _Filtre_ → _Irritationer_. Den blokerer pop op'er, knapper på sociale medier, online-assistentvinduer og andre elementer på websider, som måske findes irriterende.
 
-_AdGuard Security_ applies rules from filters under _Filters_ → _Security_. Denne udvidelse identificerer og blokerer potentielt skadelige elementer og beskytter brugerne mod ondsindet indhold.
+_AdGuard Security_ anvender regler fra filtre under _Filtre_ → _Sikkerhed_. Denne udvidelse identificerer og blokerer potentielt skadelige elementer og beskytter brugerne mod ondsindet indhold.
 
 _AdGuard Andre_ anvender regler fra filtre, som ikke falder ind under ovennævnte kategorier og er placeret under _Filtre_ → _Andre_: _Filter til afblokering af søgeannoncer og selvpromovering_, _AdGuard DNS-filter_, og _AdGuard Eksperimentelt filter_.
 
-_AdGuard Custom_ applies rules from filters that you add on your own to _Custom filters_.
+_AdGuard Custom_ anvender regler fra filtre, som brugeren selv føjer til _Tilpassede filtre_.
 
 Brugerregler og hvidlisteregler er inkluderet i hver udvidelse.
 
 ## AdGuard til Safari
 
-_AdGuard for Safari_ activates the AdGuard icon next to the search bar. Det er nyttigt, hvis beskyttelse hurtigt skal opsætte på et bestemt websted eller annoncer skal blokeres manuelt. Den indeholder også avancerede regler, som ikke konverteres til det format, Safari understøtter. These include [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [extended CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), which allow AdGuard to block complex ads, such as those on YouTube.
+_AdGuard til Safari_ aktiverer AdGuard-ikonet ved siden af søgebjælken. Det er nyttigt, hvis beskyttelse hurtigt skal opsætte på et bestemt websted eller annoncer skal blokeres manuelt. Den indeholder også avancerede regler, som ikke konverteres til det format, Safari understøtter. Disse omfatter [CSS-regler](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [udvidede CSS-vælgere](/general/ad-filtering/create-own-filters#extended-css-selectors) og [scriptlets](/general/ad-filtering/create-own-filters#scriptlets), som tillader AdGuard at blokere komplekse annoncer, såsom dem på YouTube.
 
 ## Sådan håndteres Safari-udvidelser
 
-1. Open Safari and click _Safari_ in the upper left corner of the screen to expand the menu.
+1. Åbn Safari, og klik på _Safari_ øverste til venstre på skærmen for at få vist menuen.
 
-   ![Safari settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+   ![Safari-indstillinger \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
 
-2. Click _Settings..._
+2. Klik på _Indstillinger..._
 
-3. Select _Extensions_.
+3. Vælg _Udvidelser_.
 
-   ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+   ![Fanen Udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
 ## Hvorfor AdGuard til Safari kræver tilladelse
 
@@ -71,4 +71,4 @@ Når _AdGuard til Safari_-udvidelsen aktiveres, bemærkes muligvis, at den kræv
 - Adgang til websideindhold kræves for korrekt funktion af manuel adblocking og avancerede blokeringsregler
 - Adgang til webbrowserhistorik kræves for at tjekke beskyttelsesstatussen på websteder og bestemme, hvilke avancerede regler, som skal anvendes
 
-Vi bruger ikke disse data til andre formål eller deler dem med nogen. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+Vi bruger ikke disse data til andre formål eller deler dem med nogen. For yderligere info, tjek vores [Fortrolighedspolitik](https://adguard.com/privacy.html).

@@ -19,7 +19,7 @@ The list of protected data depends on the macOS version. Apple changes these rul
 
 macOS also keeps entries after an app is deleted and after macOS is updated. An entry you see today may have been created years ago by an earlier version of the app.
 
-## AdGuard Mini для Mac
+## AdGuard Mini for Mac
 
 AdGuard Mini for Mac doesn’t add itself to the list. The entry comes from AdGuard for Safari — [the previous name of the same app](https://adguard.com/support/adguard-mini-mac/about/what_is.html).
 

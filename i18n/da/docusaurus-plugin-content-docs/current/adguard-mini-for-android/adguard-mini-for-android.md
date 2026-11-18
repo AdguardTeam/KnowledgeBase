@@ -1,5 +1,5 @@
 ---
-title: AdGuard Mini til Android
+title: AdGuard Mini for Android
 sidebar_position: 1
 ---
 

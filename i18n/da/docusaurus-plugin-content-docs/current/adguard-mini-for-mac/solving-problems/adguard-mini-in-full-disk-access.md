@@ -19,7 +19,7 @@ Listen over beskyttede data afhænger af macOS-versionen. Apple ændrer disse re
 
 macOS beholder også poster, efter at en app er slettet, og efter at macOS er opdateret. En post, der ses i dag, kan være oprettet for år siden af en tidligere version af appen.
 
-## AdGuard Mini til Mac
+## AdGuard Mini for Mac
 
 AdGuard Mini til Mac føjer sig ikke selv til listen. Posten stammer fra AdGuard til Safari — [det tidligere navn på den samme app](https://adguard.com/support/adguard-mini-mac/about/what_is.html).
 
