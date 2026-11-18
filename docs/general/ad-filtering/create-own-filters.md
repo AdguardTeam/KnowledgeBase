@@ -5351,7 +5351,7 @@ The following products will support it in the mentioned versions or later:
 
 #### Safari affinity {#safari-affinity-directive}
 
-Safari's limit for each content blocker is 150,000 active rules. But in AdGuard Mini for Mac and AdGuard for iOS, we've split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
+Safari’s limit for each content blocker is 150,000 active rules. But in AdGuard Mini for Mac and AdGuard for iOS, we’ve split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
 
 Here is the composition of each content blocker:
 
