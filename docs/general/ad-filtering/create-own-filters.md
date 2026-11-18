@@ -1647,7 +1647,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 
 :::info Compatibility
 
-Rules with `$csp` modifier are not supported by AdGuard Mini for Android, AdGuard for iOS and AdGuard Mini for Mac.
+Rules with `$csp` modifier are not supported by AdGuard Mini for Android, AdGuard for iOS, and AdGuard Mini for Mac.
 
 :::
 
