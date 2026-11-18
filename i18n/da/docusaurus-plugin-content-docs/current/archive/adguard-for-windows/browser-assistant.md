@@ -5,7 +5,7 @@ sidebar_position: 3
 
 AdGuard Assistents primære funktion er at håndtere filtrering direkte fra webbrowseren. Den har eksisteret ret længe, og dens form og indhold har ændret sig. Det plejede blot at være et userscript inkorporeret i AdGuard til Windows-appen, men blev med tiden en fuldgyldig webbrowserudvidelse. Nu giver den flere fordele.
 
-![Browser Assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistent \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Fordele
 
@@ -15,7 +15,7 @@ AdGuard Browser Assistent er en udvidelse installeret i en webbrowser, så der e
 
 ### Kompatibilitet med hoved-appen
 
-If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
+Er det blevet en vane at bruge vores tidligere [AdGuard Ad Blocker-udvidelse](/adguard-browser-extension/compatibility), vil løsningen, som vi har udviklet til den nye Browser Assistent, måske virke tiltalende.
 
 Baggrundsinformation:
 
@@ -29,7 +29,7 @@ Når Browser Assistent bruges, er alle disse problemer ligegyldige, da der i det
 
 Den nye Browser Assistent har sin egen fane under indstillingerne i AdGuard til Windows sammen med Stealth Mode, Browsing Sikkerhed, Forældrekontrol mv. Her findes også et link til at downloade udvidelsen til standardbrowseren. Desuden er der et afkrydsningsfelt til aktivering af den ældre Assistent.
 
-![Settings \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Indstillinger \*border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Legacy Assistant
 
@@ -43,4 +43,4 @@ Der kan være to tilfælde, hvor man måske vil vælge den i stedet for den nye 
 
 Installation af Browser Assistent i standardwebbrowseren kan ske direkte fra app-indstillingerne, hvorfra den også kan installeres i andre webbrowsere.
 
-AdGuard Browser Assistent kan fås til alle populære webbrowsere: Chrome, Firefox, Safari, Edge, Opera og Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the _Install_ button. Det var det!
+AdGuard Browser Assistent kan fås til alle populære webbrowsere: Chrome, Firefox, Safari, Edge, Opera og Yandex. For at installere den ønskede (eller de ønskede — det er ikke forbudt, men tilrådes tværtimod), gå til [vores websted](https://adguard.com/adguard-assistant/overview.html), klik på webbrowserikonet og dernæst på knappen _Installér_. Det var det!

@@ -1,37 +1,37 @@
 ---
-title: What can be done in the AdGuard account
+title: Hvad kan gøres i AdGuard-kontoen
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+Via kontoen kan der håndtere licenser, enheder knyttet hertil, personlige data, e-mail og adgangskode, ses produktkøb og kontakte supporten.
 
-## Manage account settings
+## Håndtering af kontoindstillinger
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable one-time code login or [two-factor authentication](../2fa), view the data stored about you by AdGuard, and select the language of your account and notifications.
+Man kan i afsnittet *Indstillinger* i AdGuard-kontoen opdatere eller nulstille sin adgangskode, skifte e-mailadresse, aktivere engangskode-login eller [tofaktorgodkendelse](../2fa), se de data, AdGuard har gemt om brugeren samt vælge sprog for sin personlige konto og meddelelser.
 
-In this section, you can also manage your email preferences:
+I dette afsnit kan der også håndteres e-mailpræferencer:
 
-- Receive AdGuard newsletter
-- Receive transactional emails
-- Send read receipts to AdGuard
-- Opt-out preferences
+- Modtage AdGuard-nyhedsbrev
+- Modtage transaktionsrelaterede e-mails
+- Sende læst-kvitteringer til AdGuard
+- Fravalgspræferencer
 
-## Manage licenses
+## Licenshåndtering
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+I afsnittet *Licenser* kan der håndteres licenser samt de hertil knyttede enheder.
 
-[AdGuard licenses](../../license/what-is) can be:
+[AdGuard-licenser](../../license/what-is) kan:
 
-- bound and unbound,
-- extended,
-- upgraded.
+- tilknyttes og frigøres,
+- forlænges,
+- opgraderes,
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. To unbind unused devices, click the number of bound devices next to *Devices*, then select `>` → *Remove*.
+Enheder tilknyttet AdGuard Ad Blocker-licenser kan frigøres eller omdøbes. For at fjerne tilknytningen af ubrugte enheder, klik på antallet af tilknyttede enheder ud for *Enheder* og vælg dernæst `>` → *Fjern*.
 
-## View purchases
+## Se produktkøb
 
-The *Purchases* section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+Afsnittet *Købshistorik* viser alle de licenser, som nogensinde er købt via den e-mailkonto, hvormed AdGuard-kontoen blev registreret. Her findes også oplysninger om købsdato, ordre-/bestillingsnummer, betalingsmetode og købspris.
 
-## Activity
+## Aktivitet
 
-The *Activity* tab allows you to monitor login activity for your AdGuard account. It displays the email address used, location, and login date. You can also filter records by product: *All products*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.
+Fanen *Aktivitet* muliggør monitorering af loginaktiviteten for AdGuard-kontoen. Den viser den anvendte e-mailadresse, placering og logindato. Der kan også filtreres poster efter produkt: *Alle produkter*, *AdGuard Ad Blocker*, *AdGuard VPN*, *AdGuard DNS*.

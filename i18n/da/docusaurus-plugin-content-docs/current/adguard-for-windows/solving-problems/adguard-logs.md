@@ -19,33 +19,23 @@ For at analysere og diagnosticere forskellige potentielle problematikker, kan Ad
 
 AdGuard til Windows tilbyder to logningsniveauer: *Standard* og *Fejlfinding*. Til de fleste former for fejlfinding er *Fejlfinding* tilstrækkelig, men det kan gøre appen langsommere.
 
-## Sådan skiftes logningsniveau {#change-level}
-
-Logningsniveau kan skiftes på én af to måder:
-
-### Mulighed 1: Via appen
-
-Gå til AdGuard-indstillinger → *Support* → *Logfiler*, og vælg *Fejlfinding* i rullemenuen *Logningsniveau*.
-
-![Rullemenu Logningsniveau på siden Support *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/settings/support_logs.png)
-
-### Mulighed 2: Via systembakkemenu
-
-Højreklik på AdGuard-ikonet i systembakken, vælg *Avanceret* → *Logningsniveau* og vælg *Fejlfinding*.
-
-![Logningsniveau i bakkemenu *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/tray_menu_debug.png)
-
 ## Fejlfindingslogger {#debug-logs}
 
 For de fleste problemer giver fejlfindingslogfiler supportteamet tilstrækkelige oplysninger til at identificere og løse problemet.
 
-1. Indstil logningsniveauet til *Fejlfinding* via en af de metoder, som er beskrevet [ovenfor](#change-level).
+1. Gå til *Indstillinger* → *Support* → *Logfiler*.
+
+1. I rullemenuen *Logningsniveau*, vælg *Fejlfinding*.
+
+    ![Rullemenu Logningsniveau på skærmen Logfiler *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/export_logs_debug_dropdown.png)
 
 1. Genskab problematikken. Notér det nøjagtige tidspunkt — det hjælper vores supportteam med at finde de relevante logposter og løse problemet hurtigere.
 
-1. Gå til AdGuard-indstillinger → *Support* → *Logfiler* og klik på *Eksportere logfiler og systemoplysninger*.
+1. Klik på *Eksportér logfiler og systeminfo*.
 
-    Når eksporten er fuldført, vises en bekræftelsesmeddelelse. Der kan klikkes på *Vis i mappe* for at åbne den mappe, hvori det eksporterede arkiv med logfiler og systemoplysninger er gemt.
+1. I systemdialogboksen, vælg den mappe, hvor arkivet ønskes gemt.
+
+1. Når eksporten er fuldført, vises en notifikation med arkivfilens navn, f.eks. *Logfiler eksporteret til adguard_logs_4.0.688_2303_144521.zip*. Klik på *Vis i mappe* for at åbne mappen, hvori den er gemt.
 
     :::note
 
@@ -53,6 +43,8 @@ For de fleste problemer giver fejlfindingslogfiler supportteamet tilstrækkelige
 
 
 :::
+
+1. Mislykkes eksporten, vises *Mislykkedes at eksportere logfiler. Forsøg igen, eller kontakt supporten*.
 
 1. Indsend arkivet til **support@adguard.com**, beskriv problemet og angiv det klokkeslæt, hvor problemet blev genskabt.
 
@@ -76,29 +68,35 @@ Nogle gange kan supportteamet anmode om *sporingslogfiler*. Sporingslogning regi
 
 1. Genskab problematikken. Notér det nøjagtige tidspunkt — det hjælper vores supportteam med at finde de relevante logposter og løse problemet hurtigere.
 
-1. Eksportér de indsamlede logfiler: Gå til Indstillinger → *Support* → *Logfiler* → *Eksportere logfiler og systemoplysninger*.
+1. Gå til *Indstillinger* → *Support* → *Logfiler*.
 
-    Hvis logfilen er stor, bare rolig – vi har behøver så mange detaljer som muligt for at løse problemet.
+1. Klik på *Eksportér logfiler og systeminfo*.
 
-1. Når sporingslogfilerne er eksporteret, så luk AdGuard og genstart den normalt for at returnere til standardlogningsniveauet.
+    Er logfilen stor, bare rolig – vi har behøver så mange detaljer som muligt for at løse problemet.
+
+1. I systemdialogboksen, vælg den mappe, hvor arkivet ønskes gemt.
+
+1. Når eksporten er fuldført, vises en notifikation med arkivfilens navn. Klik på *Vis i mappe* for at åbne mappen, hvori den er gemt.
+
+1. Når sporingslogfilerne er eksporteret, luk AdGuard og genstart den normalt for at returnere til standardlogningsniveauet.
 
 ## Diagnostisk rapport {#diagnostic-report}
 
-Når supporten kontaktes via formularen i Indstillinger → *Support*, kan en diagnosticeringsrapport inkluderes, der automatisk vedhæfter applikationslogfiler sammen med andre systemoplysninger.
+Når supporten kontaktes via formularen i *Indstillinger* → *Support* → *Kontakt support*, kan en diagnosticeringsrapport inkluderes, der automatisk vedhæfter applikationslogfiler sammen med andre systemoplysninger.
 
-Diagnostikrapporten omfatter:
+Diagnostikrapporten indeholder:
 
 - Oplysninger om systemet
 - En liste over kørende processer
 - Oplysninger om AdGuard-indstillinger, herunder aktiverede filtre og installerede udvidelser
 - Applikationslogfiler
 
-For at bruge denne mulighed, markér afkrydsningsfeltet *Tilføj diagnosticeringsrapport*, før beskeden afsendes.
+For at bruge denne valgmulighed, markér afkrydsningsfeltet *Tilføj diagnosticeringsrapport*, før beskeden afsendes.
 
-![Valgmulighed for diagnosticeringsrapport *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/add_report.png)
+![Valgmuligheden Diagnosticeringsrapport *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/solving_problems/add_report.png)
 
 :::note
 
-AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger strikst vores [Fortrolighedspolitik](https://adguard.com/privacy/windows.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logger til supportteamet, bedes filen gennemgået, da den kan indeholde yderligere oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefales disse slettet først.
+AdGuard er dedikeret til beskyttelse af brugerfortrolighed. Vi følger strikst vores [Fortrolighedspolitik](https://adguard.com/privacy/windows.html) og indsamler ingen private oplysninger om brugere. Før indsendelse af logfiler til supportteamet, bedes filen gennemgået, da den også kan indeholde oplysninger, som muligvis ikke ønskes delt. Indeholder den sådanne uønskede oplysninger, anbefaler disse slettet først.
 
 :::
