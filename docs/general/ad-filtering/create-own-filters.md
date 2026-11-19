@@ -3723,7 +3723,7 @@ even for rules with the `##` marker.
 AdGuard products support the native implementation of `:has()`:
 
 - AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **support** it with Safari 15.4 or later. To use `:has()` in rules converted by [SafariConverterLib](#safari-converter-lib), use v2.0.39 or later and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 or later and [Safari browser v16.4][safari-16.4] or later. Safari supports native `:has()` since 15.4, but content blockers apply `:has()` rules only since 16.4 ([WebKit bug 250609][webkit-250609]).
 - AdGuard Browser Extension **supports** it in v5.3 or later:
     - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
     - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
@@ -3742,6 +3742,7 @@ AdGuard Content Blocker drops them.
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
+[webkit-250609]: https://bugs.webkit.org/show_bug.cgi?id=250609
 
 **Compatibility with other pseudo-classes**
 
