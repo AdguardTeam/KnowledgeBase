@@ -33,18 +33,18 @@ Ad blocking in Safari may continue working normally even when ads appear in othe
 
 In iOS 27, Apple renamed *Wi-Fi Assist* to *Connectivity Assist* and moved it to *Settings* → *Wi-Fi*. When turned on, it allows your device to use mobile data to supplement Wi-Fi whenever the wireless connection is slow or unstable.
 
-This can interfere with DNS protection: when iOS routes network traffic over mobile data instead of the filtered Wi-Fi connection, DNS requests bypass AdGuard’s local tunnel. As a result, ad domains are resolved without filtering, and ads can slip through.
+This mechanism directly conflicts with DNS protection. When an app requests an ad domain over Wi-Fi, the query reaches AdGuard’s local tunnel and is blocked as expected. However, because no valid response is returned, iOS misinterprets the block as a network resolution failure on Wi-Fi. *Connectivity Assist* then intervenes and automatically repeats the exact same DNS request over the cellular network. In *Split-Tunnel* mode, this cellular fallback bypasses AdGuard’s local VPN tunnel completely. As a result, the ad domain resolves unfiltered over mobile data, and ads slip through.
 
 ## How to fix this issue
 
 1. Open the iOS *Settings* app.
 1. Tap *Wi-Fi* and make sure Wi-Fi is turned on.
 1. Scroll down to *Connectivity Assist* and turn it off.
-1. Verify the result: use your device normally for a few minutes with *DNS protection* enabled. To confirm that traffic is reaching AdGuard, open the app and go to the *Activity* screen (the chart icon in the bottom bar). The request counter and recent activity should actively update, confirming that DNS queries are routed through AdGuard.
+1. Verify the result: open the apps or websites where ads previously appeared to confirm they no longer load.
 
-:::tip
+:::note
 
-You can also turn off *Connectivity Assist* for a specific network instead of system-wide: go to *Settings* → *Wi-Fi*, tap the Info icon next to the network, and turn off *Use Connectivity Assist*. This is useful if you only need reliable DNS filtering on your home or office network.
+Do not use the *Activity* screen to verify the fix. AdGuard records blocked DNS queries on the Wi-Fi interface regardless of whether iOS subsequently circumvents the tunnel via cellular. As a result, the *Activity* log will show blocked requests even when ads are actively loading on your device.
 
 :::
 
