@@ -3723,11 +3723,11 @@ even for rules with the `##` marker.
 AdGuard products support the native implementation of `:has()`:
 
 - AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
-- AdGuard for iOS and AdGuard for Safari **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 or later and [Safari browser v16.4][safari-16.4] or later. Safari supports native `:has()` since 15.4, but content blockers apply `:has()` rules only since 16.4 ([WebKit bug 250609][webkit-250609]).
+- AdGuard for iOS and AdGuard Mini for Mac **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 or later and [Safari browser v16.4][safari-16.4] or later. Safari supports native `:has()` since 15.4, but content blockers apply `:has()` rules only since 16.4 ([WebKit bug 250609][webkit-250609]).
 - AdGuard Browser Extension **supports** it in v5.3 or later:
     - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
     - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
-- AdGuard Mini for Android passes `##:has()` rules to the browser. They work only if the engine supports `:has()`: Samsung Internet 20+ or Chromium 105+. Content Blocker does not support ExtendedCss, so it cannot fall back.
+- AdGuard Mini for Android passes native `:has()` to the browser. They work only if the engine supports `:has()`: Samsung Internet 20+ or Chromium 105+. Content Blocker does not support ExtendedCss, so it cannot fall back.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
 use the `#?#` or `#$?#` rule markers explicitly,
@@ -5292,7 +5292,7 @@ where:
         - `adguard_app_cli` — AdGuard for Linux
         - `adguard_app_android` — AdGuard for Android
         - `adguard_app_ios` — AdGuard for iOS
-        - `adguard_ext_safari` — AdGuard for Safari
+        - `adguard_ext_safari` — AdGuard Mini for Mac
         - `adguard_ext_chromium` — AdGuard Browser Extension for Chrome (and chromium-based browsers, e.g. new Microsoft Edge)
         - `adguard_ext_chromium_mv3` — [AdGuard for Chromium MV3][ext-mv3]
         - `adguard_ext_firefox` — AdGuard Browser Extension for Firefox
