@@ -3727,7 +3727,7 @@ AdGuard products support the native implementation of `:has()`:
 - AdGuard Browser Extension **supports** it in v5.3 or later:
     - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
     - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
-- AdGuard Mini for Android passes native `:has()` to the browser. They work only if the engine supports `:has()`: Samsung Internet 20+ or Chromium 105+. Content Blocker does not support ExtendedCss, so it cannot fall back.
+- AdGuard Mini for Android passes native `:has()` to the browser. They work only if the engine supports `:has()`: Samsung Internet 20+ and Yandex Browser 23+. Content Blocker does not support ExtendedCss, so it cannot fall back.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
 use the `#?#` or `#$?#` rule markers explicitly,
