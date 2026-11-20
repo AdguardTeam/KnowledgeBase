@@ -19,7 +19,7 @@ Because this is a known issue, AdGuard proactively displays a one-time warning d
 - *Tunnel mode* is set to *Split*
 - The warning has not been shown or dismissed before
 
-![Connectivity Assist warning dialog](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/connectivity-assist-warning.png)
+![Connectivity Assist warning dialog](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/%D1%81onnectivity-assist-warning.png)
 
 This alert can appear on the main screen, the *Protection* screen, or the *DNS protection* screen. It points only to a potential conflict: iOS restricts third-party apps from reading system toggles, so AdGuard cannot detect whether *Connectivity Assist* is actually turned on. If you have already dismissed the dialog, it will not appear again.
 
@@ -39,7 +39,7 @@ This mechanism directly conflicts with DNS protection. When an app requests an a
 
 1. Open the iOS *Settings* app.
 1. Tap *Wi-Fi* and make sure Wi-Fi is turned on.
-1. Scroll down to *Connectivity Assist* and turn it off.
+1. Scroll down to *Connectivity Assist* and turn it off. If this option is not visible, make sure *Mobile Data* (or *Cellular*) is turned on in *Settings* for the toggle to appear.
 1. Verify the result: open the apps or websites where ads previously appeared to confirm they no longer load.
 
 :::note
