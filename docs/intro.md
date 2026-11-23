@@ -21,7 +21,7 @@ For browsers, we offer lightweight apps and extensions with free core features a
 We also maintain free browser extensions for all popular browsers:
 
 - [AdGuard Browser Extension](/adguard-browser-extension/availability)
-- [AdGuard for Safari](/archive/adguard-for-safari/)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## Not just ad blocking
 
