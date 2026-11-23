@@ -12,7 +12,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 Here are some problems you may encounter and workarounds, guides, and instructions you may need.
 
 - [WFP driver compatibility](/archive/adguard-for-windows/solving-problems/wfp-driver/)
-- [How to restore AdGuard after a failure of root certificate from AAA Certificate Services](/adguard-for-windows/solving-problems/root-certificate-sectigo.md)
+- [How to restore AdGuard after a failure of root certificate from AAA Certificate Services](/archive/adguard-for-windows/solving-problems/root-certificate-sectigo/)
 - [Certificate-related issues](/archive/adguard-for-windows/solving-problems/connection-not-trusted/)
 - [How to collect AdGuard logs](/archive/adguard-for-windows/solving-problems/adguard-logs/)
 - [How to collect AdGuard installation logs](/adguard-for-windows/solving-problems/installation-logs/)
