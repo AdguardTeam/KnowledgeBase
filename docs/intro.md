@@ -13,7 +13,7 @@ AdGuard is one of the leaders on the market of ad-blocking software with 15+ yea
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
 
-We offer lightweight extensions for browsers on popular operating systems with free core features and additional advanced features:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
 
 - [AdGuard Mini for Android](/adguard-mini-for-android/)
 - [AdGuard Mini for Mac](/adguard-mini-for-mac/)
