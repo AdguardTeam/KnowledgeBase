@@ -18,7 +18,7 @@ We offer lightweight extensions for browsers on popular operating systems with f
 - [AdGuard Mini for Android](/adguard-mini-for-android/)
 - [AdGuard Mini for Mac](/adguard-mini-for-mac/)
 
-We also maintain free browser extensions for popular browsers:
+We also maintain free browser extensions for all popular browsers:
 
 - [AdGuard Browser Extension](/adguard-browser-extension/availability)
 - [AdGuard for Safari](/archive/adguard-for-safari/)
