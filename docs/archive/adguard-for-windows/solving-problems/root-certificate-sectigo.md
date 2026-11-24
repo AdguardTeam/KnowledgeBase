@@ -54,7 +54,7 @@ The list should contain *Sectigo Public Code Signing Root R46*.
 
 Reinstalling the app or rolling back Windows updates won't solve the problem: a rollback only helps until the next update. If AdGuard still doesn't start after installing the certificate and restarting, please contact support at support@adguard.com and attach the logs. You can find them in *C* → *ProgramData* → *AdGuard*. Note that those folders are hidden, you have to make them accessible first.
 
-To do that, open *Start* → *Control Panel* → *Appearance and Personalization* → *Folder Options* → *View tab*
+To do that, open *Start* → *Control Panel* → *Appearance and Personalization* → *Folder Options* → *View*.
 Then, in the *Advanced settings* list, find *Hidden files and folders* → *Show hidden files, folders, and drives* → *OK*
 
 ## For administrators
