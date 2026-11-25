@@ -3712,8 +3712,6 @@ Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still 
 
 #### Pseudo-class `:has()` {#extended-css-has}
 
-Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
-
 :::note
 
 Rules with the `:has()` pseudo-class must use the [native implementation of `:has()`][native-has]
@@ -3725,11 +3723,11 @@ even for rules with the `##` marker.
 AdGuard products support the native implementation of `:has()`:
 
 - AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux **support** it with [CoreLibs] v1.12 or later.
-- AdGuard for iOS and AdGuard Mini for Mac **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 and [Safari browser v16.4][safari-16.4] or later.
+- AdGuard for iOS and AdGuard Mini for Mac **support** it with [SafariConverterLib](#safari-converter-lib) v2.0.39 or later and [Safari browser v16.4][safari-16.4] or later. Safari supports native `:has()` since 15.4, but content blockers apply `:has()` rules only since 16.4 ([WebKit bug 250609][webkit-250609]).
 - AdGuard Browser Extension **supports** it in v5.3 or later:
     - **Manifest V3** (Chromium-based): always uses native `:has()` by default.
     - **Manifest V2**: Detects native `:has()` support using `CSS.supports()` and falls back to ExtendedCss if the browser doesn’t support it natively.
-- All other AdGuard products **do not support** it.
+- AdGuard Mini for Android passes native `:has()` to the browser. They work only if the engine supports `:has()`: Samsung Internet 20+ and Yandex Browser 23+. Content Blocker does not support ExtendedCss, so it cannot fall back.
 
 To force the ExtendedCss implementation of `:has()` to be used (regardless of native support),
 use the `#?#` or `#$?#` rule markers explicitly,
@@ -3737,12 +3735,14 @@ e.g., `example.com#?#p:has(> a)` or `example.com#$?#div:has(> span) { display: n
 
 And since the `:has()` pseudo-class cannot be nested within another `:has()`
 in native implementation, e.g. `div:has(p:has(a))`,
-it is always treated as extended in AdGuard Browser Extension.
+such rules are always treated as extended CSS in products that support ExtendedCss.
+AdGuard Mini for Android drops them.
 
 :::
 
 [native-has]: https://developer.mozilla.org/docs/Web/CSS/:has
 [safari-16.4]: https://www.webkit.org/blog/13966/webkit-features-in-safari-16-4/
+[webkit-250609]: https://bugs.webkit.org/show_bug.cgi?id=250609
 
 **Compatibility with other pseudo-classes**
 
@@ -5302,7 +5302,7 @@ where:
         - `adguard_ext_opera_mv3` — AdGuard Browser Extension for Opera MV3
         - `adguard_ext_android_cb` — AdGuard Mini for Android for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry]
-        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, AdGuard for Android, AdGuard for Linux, and AdGuard Browser Extension for Firefox
 - `!#else` — start of the block when conditions are false
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
@@ -5497,6 +5497,14 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
+The `corelibs` alias stands for `windows,mac,cli,android`, i.e. all [CoreLibs]-based apps. It can be used in both `PLATFORM` and `NOT_PLATFORM`:
+
+```adblock
+! the same as !+ PLATFORM(windows,mac,cli,android)
+!+ PLATFORM(corelibs)
+||example.org^
+```
+
 **Examples**
 
 This rule will be available only in AdGuard for Windows, Mac, Android:
@@ -5522,6 +5530,19 @@ This hint is used to skip validation of the rule. It is useful for rules for whi
 ```adblock
 !+ NOT_VALIDATE
 ||example.org^$newmodifier
+```
+
+#### `NOT_CONVERT`
+
+This hint disables conversion of the next rule to AdGuard syntax. It applies only to the rule directly after the hint. The rule is passed to the output as-is, so it must already be written in the syntax that the target product understands.
+
+Such a rule is not validated either: the compiler only logs a warning that it was kept as-is.
+
+Use `NOT_CONVERT` for rules that are valid but use something the current compiler version does not know yet, e.g. a new scriptlet. Without the hint, such a rule may be converted incorrectly or discarded. If conversion is fine and only validation has to be skipped, use `NOT_VALIDATE` instead.
+
+```adblock
+!+ NOT_CONVERT
+example.org#%#//scriptlet('new-scriptlet', 'arg')
 ```
 
 ## How to debug filtering rules
@@ -5603,7 +5624,7 @@ Now you can now use the `ExtendedCss` from global scope, and run its method [`qu
 **Examples**
 
 ```js
-const selector = 'div.block:has=(.header:matches-css(after, content: Ads))';
+const selector = 'div.block:has(.header:matches-css(after, content: Ads))';
 
 // array of HTMLElements matched the `selector` is to be returned
 ExtendedCss.query(selector);
