@@ -7,7 +7,7 @@ Annoyance filters are designed to improve website usability by blocking non-adve
 
 Annoyance filters may contain rules that are not suitable for all users. Rules are added by filter developers on a rule-by-rule basis.
 
-*Annoyance blocking* is a section of the app where you can choose which categories of distractions to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
+*Annoyance blocking* is a section of the app where you can choose which categories of irritating elements to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
 
 ![Annoyance filters *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/version_8/protection/annoyance_blocking.png)
 
