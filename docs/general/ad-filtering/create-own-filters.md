@@ -5349,6 +5349,12 @@ The following products will support it in the mentioned versions or later:
 
 :::
 
+:::info Compatibility
+
+Unspaced `&&` and `||` operators in `!#if` conditions are supported by the [FiltersDownloader][gh-filters-downloader] v3.2.0 or later. Earlier versions remove the last character of the left operand when the operator has no spaces, for example `!#if adguard&&adguard_ext_chromium` may drop the block.
+
+:::
+
 #### Safari affinity {#safari-affinity-directive}
 
 Safari’s limit for each content blocker is 150,000 active rules. But in AdGuard Mini for Mac and AdGuard for iOS, we’ve split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
