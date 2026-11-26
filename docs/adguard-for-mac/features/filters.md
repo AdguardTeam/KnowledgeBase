@@ -19,7 +19,7 @@ We recommend enabling the following filters:
 
 - AdGuard Base filter
 - AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filters for your language
 
 These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
