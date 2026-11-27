@@ -13,11 +13,16 @@ AdGuard, 15 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlar
 - [Android için AdGuard](/adguard-for-android/features/protection/ad-blocking)
 - [iOS için AdGuard](/adguard-for-ios/features/safari-protection)
 
-Ancak tüm popüler tarayıcılar için ücretsiz tarayıcı uzantıları da geliştiriyor ve sürdürüyoruz:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
+
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
 
 - [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/availability)
-- [Safari için AdGuard](/archive/adguard-for-safari/features/general)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## Sadece reklam engelleme değil
 
-AdGuard Reklam Engelleyici, reklamları engellemekten daha fazlasını yapar. Sizi çevrimiçi izlemeden korur ve gizliliğinizi birçok yönden geliştirir. Belirli ürüne bağlı olarak AdGuard, daha kapsamlı koruma için DNS filtreleme, çocuklarınızı uygunsuz içerikten korumak için Ebeveyn Denetimi, internet trafiğiniz üzerinde daha iyi kontrol sahibi olmak için Filtreleme günlüğü ve daha fazlası gibi avantajlar da sunabilir. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

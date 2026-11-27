@@ -163,7 +163,6 @@ Para melhor personalização, os filtros de incômodo são divididos por finalid
 - Filtro de banners para aplicativos móveis do AdGuard
 - Filtro de widgets do AdGuard
 - Filtro de outros aborrecimentos do AdGuard
-- Filtro contra elementos irritantes do AdGuard: um filtro combinado que inclui todos os 5 filtros especializados contra elementos irritantes
 
 ### O propósito desses filtros
 

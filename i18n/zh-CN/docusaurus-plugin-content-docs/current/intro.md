@@ -13,11 +13,16 @@ AdGuard 是广告拦截软件市场的引领者之一，拥有 15 多年的经�
 - [AdGuard Android版](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard iOS版](/adguard-for-ios/features/safari-protection)
 
-但我们也为所有主流的浏览器开发和维护免费的浏览器扩展：
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
+
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
 
 - [AdGuard 浏览器扩展](/adguard-browser-extension/availability)
-- [AdGuard Safari版](/archive/adguard-for-safari/features/general)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## 不仅仅是广告拦截
 
-AdGuard 广告拦截程序可不只能拦截广告。它将保护用户免受在线跟踪的危害并以多种方式增强个人隐私。根据具体的产品，AdGuard 还可以提供诸如 「DNS 过滤」来提供更全面的保护、「家长控制」以保护您的孩子免受不当内容的侵害、「过滤日志」以更好地控制您的互联网流量等等。该知识库包含有关所有这些内容的详细信息，请随意跳转到任何引起您兴趣的文章。
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

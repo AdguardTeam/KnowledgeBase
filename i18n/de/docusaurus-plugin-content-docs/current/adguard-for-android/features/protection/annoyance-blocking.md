@@ -13,4 +13,6 @@ Sie können auf das Modul „Tracking-Schutz“ zugreifen, indem Sie auf den Tab
 
 Diese Funktion basiert auf den AdGuard-Belästigungsfiltern und ermöglicht das Blockieren von Pop-ups, Online-Hilfefenstern, Cookie-Benachrichtigungen, Aufforderungen zum Herunterladen von mobilen Apps und ähnlichen Belästigungen, die keine Werbung sind, aber dennoch das Surfen beeinträchtigen. [Erfahren Sie mehr über Belästigungsfilter](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Belästigungsblockierung \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+_Annoyance blocking_ is a section of the app where you can choose which categories of irritating elements to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
+
+![Annoyance blocking \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

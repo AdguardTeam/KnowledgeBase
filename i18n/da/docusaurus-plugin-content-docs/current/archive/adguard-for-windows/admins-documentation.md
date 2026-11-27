@@ -5,30 +5,30 @@ sidebar_position: 5
 
 Denne side beskriver funktionerne og detaljerne i AdGuards centrale styring af politikker og præferencer.
 
-## 1. Download the MSI {#msi-download}
+## 1. Download MSI'en {#msi-download}
 
-Download the [AdGuard MSI x86](https://agrd.io/adguard_setup86_msi)
+Download [AdGuard MSI x86-filen](https://agrd.io/adguard_setup86_msi)
 
-Download the [AdGuard MSI x64](https://agrd.io/adguard_setup64_msi)
+Download [AdGuard MSI x64-filen](https://agrd.io/adguard_setup64_msi)
 
-## 2. Configure the settings for your network {#settings-configuring}
+## 2. Opsæt netværksindstillingerne {#settings-configuring}
 
-On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
+På maskiner forbundet til et Active Directory-domæne kan politikindstillinger også være gemt i registreringsdatabasen under `HKEY_LOCAL_MACHINE` på flg. sti: `Software\Policies\AdGuard\`.
 
-The only supported policy is `LicenseKey`. Er denne politik opsat, foretrækkes den af AdGuard, fremfor hvad brugeren måtte angive i grænsefladen. Denne licensnøgle vil blive brugt til licensstatuskontrol.
+Den eneste understøttede politik er `LicenseKey`. Er denne politik opsat, foretrækkes den af AdGuard, fremfor hvad brugeren måtte angive i grænsefladen. Denne licensnøgle vil blive brugt til licensstatuskontrol.
 
-## 3. Make sure that AdGuard servers are available {#servers-available}
+## 3. Sørg for, at AdGuard-serverene er tilgængelige {#servers-available}
 
-AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Sørg for, at begge AdGuard-servere er tilgængelige.
+AdGuard opretter forbindelse til to værter: `api.adguard.org` og `filters.adtidy.org`. Sørg for, at begge AdGuard-servere er tilgængelige.
 
-## 4. Push the MSI out to your network {#msi-push}
+## 4. Push MSI'en ud til netværket {#msi-push}
 
 Bruges normalt SMS eller andre værktøjer, så brug dem til at pushe AdGuard-MSI ud ligesom det normalt ville ske med enhver anden installationspakke.
 
-Otherwise, you can run the MSI on the target machine directly (and silently) with this command:
+Alternativt kan MSI'en køres (tavst) direkte på målmaskinen med denne kommando:
 `Msiexec /q /i AdGuard.msi`
 
-If you need to roll out an update, use this command:
+Ved behov for at udrulle en opdatering, brug denne kommando:
 `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 :::note
@@ -43,14 +43,14 @@ Skal AdGuard installeres på en Windows 7-computer, så sørg for, at den har .N
 
 Er AdGuard til Windows installeret fra en MSI-fil, opdateres AdGuard ikke automatisk. Sådan muliggøres manuelle opdateringer:
 
-- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+- Slet i versioner udgivet efter v7.16 parameteren `ForbidCheckUpdates` eller sæt dens værdi til `NO` (ikke minuskel/majuskel sensitiv) i registreringsdatabasen under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
-- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Enhver anden eller ingen værdi for denne parameter deaktiverer automatiske opdateringer.
+- Sæt i versioner op til og med v7.16 parameteren `AllowCheckUpdates` til `YES` (ikke minuskel/majuskel sensitiv) for nøglen `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` på x86 OS eller `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` på x64 OS. Enhver anden eller ingen værdi for denne parameter deaktiverer automatiske opdateringer.
 
 Bemærk, at en sådan installation af applikationen og manuelle opdateringer ikke anbefales og kan forårsage tekniske problemer.
 
 :::
 
-## 5. Test your installation {#installation-test}
+## 5. Test installationen {#installation-test}
 
 Start AdGuard på en målmaskine. Åbn licensskærmen for at tjekke, at den bruger den angivne licens. Der skal muligvis klikkes på "Opdatér status", før AdGuard bekræfter licensnøglen.

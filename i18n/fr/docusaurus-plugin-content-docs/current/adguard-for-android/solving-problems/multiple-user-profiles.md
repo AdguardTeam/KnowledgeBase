@@ -9,17 +9,17 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
+Dans cet article, vous découvrirez comment résoudre les problèmes liés à AdGuard lorsque vous configurez *plusieurs comptes* ou des *profils restreints* sur vos appareils Android.
 
 ## Problèmes causés par des profils d'utilisateurs multiples
 
-Sur Android 9 et les versions ultérieures, si AdGuard est installé pour plus d'un profil d'utilisateur sur votre appareil, vous pouvez rencontrer des problèmes lors de la désinstallation de l'application. Lorsque vous désinstallez AdGuard d'un profil d'utilisateur, l'application apparaîtra toujours dans la liste des applications, mais vous ne pourrez pas la désinstaller ou la réinstaller. This happens because AdGuard is installed for a different user profile on the device.
+Sur Android 9 et les versions ultérieures, si AdGuard est installé pour plus d'un profil d'utilisateur sur votre appareil, vous pouvez rencontrer des problèmes lors de la désinstallation de l'application. Lorsque vous désinstallez AdGuard d'un profil d'utilisateur, l'application apparaîtra toujours dans la liste des applications, mais vous ne pourrez pas la désinstaller ou la réinstaller. Cela se produit parce qu'AdGuard est installé pour un profil d'utilisateur différent sur l'appareil.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
+Si vous essayez de réinstaller AdGuard après une tentative de suppression infructueuse, vous verrez apparaître le message d'erreur "Vous ne pouvez pas installer l'application sur votre appareil”.
 
-Pour résoudre ce problème, vous devez désinstaller l'application pour tous les utilisateurs : allez dans Paramètres → Toutes les applications → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+Pour résoudre ce problème, vous devez désinstaller l'application pour tous les utilisateurs : allez dans Paramètres → Toutes les applications → AdGuard. Appuyez sur le menu à trois points dans le coin supérieur droit et sélectionnez *Désinstaller pour tous les utilisateurs*.
 
-![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
+![Désinstallation *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
 ## Problèmes causés par l'utilisation d'un profil sous le Mode restreint
 
@@ -68,7 +68,7 @@ Pour savoir comment gérer les comptes utilisateurs à partir d'un appareil Andr
 
 :::note
 
-Dans certains cas, les comptes d'utilisateurs restreints sont créés implicitement et ne peuvent pas être supprimés. For instance, when you use Dual Messenger or Dual App features on **Samsung** or **LG** devices. Vous pouvez lire ci-dessous comment résoudre le problème dans ces cas.
+Dans certains cas, les comptes d'utilisateurs restreints sont créés implicitement et ne peuvent pas être supprimés. Par exemple, lorsque vous utilisez les fonctionnalités Dual Messenger ou Dual App sur des appareils **Samsung** ou **LG**. Vous pouvez lire ci-dessous comment résoudre le problème dans ces cas.
 
 :::
 
@@ -84,8 +84,8 @@ Les propriétaires de téléphones **LG** ou **Samsung** peuvent rencontrer un p
 
 - Ouvrez les **Paramètres**;
 - Appuyez **Paramètres avancés** ;
-- Scroll down and press **Dual Messenger**;
-- Disable the **Dual Messenger** for all apps;
+- Faites défiler vers le bas, puis appuyez sur **Dual Messenger** ;
+- Désactivez le **Dual Messenger** pour toutes les applications ;
 - Verrouillez l'appareil pendant 5 minutes ;
 - Déverrouillez l'écran et réessayez de créer le profil VPN.
 
@@ -93,6 +93,6 @@ Les propriétaires de téléphones **LG** ou **Samsung** peuvent rencontrer un p
 
 - Ouvrez les **Paramètres**;
 - Choisissez l'onglet **Général** ;
-- Scroll down and press **Dual App**;
-- Remove all apps from the list;
+- Faites défiler vers le bas, puis appuyez sur **Dual app** ;
+- Supprimez toutes les applications de la liste ;
 - Redémarrez votre appareil.

@@ -13,4 +13,6 @@ The Annoyance blocking feature can be accessed by tapping the _Protection_ tab (
 
 この機能は、AdGuardの迷惑要素フィルタをベースにしており、ポップアップ、オンライン・アシスタント・ウィンドウ、Cookie使用同意通知、モバイルアプリのダウンロードを促すプロンプトなど、広告でなくてもネット閲覧の邪魔をする迷惑要素をブロックしてくれます。[迷惑要素フィルタについてもっと読む](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![迷惑要素ブロック \*mobile_border](https://cdn.adtidy.org/blog/new/sibyggScreenshot_20230621-163719_AdGuard.jpg)
+_Annoyance blocking_ is a section of the app where you can choose which categories of irritating elements to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
+
+![Annoyance blocking \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

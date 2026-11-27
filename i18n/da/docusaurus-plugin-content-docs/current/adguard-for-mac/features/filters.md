@@ -19,7 +19,7 @@ Vi anbefaler aktivering af flg. filtre:
 
 - AdGuard Base-filter
 - AdGuard Tracking Protection-filter og AdGuard URL Tracking-filter
-- AdGuard Annoyances-filter
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filtre til dit sprog
 
 Disse filtre er vigtige for blokering af de fleste annoncer, trackere og irriterende elementer. For mere avanceret adblocking kan der bruges tilpassede filtre og brugerregler.

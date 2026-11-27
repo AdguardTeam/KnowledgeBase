@@ -1,32 +1,32 @@
 ---
-title: How to register
+title: Sådan tilmelder man sig
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## Hvad en AdGuard-konto er
 
-[AdGuard account](https://adguardaccount.com) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+En [AdGuard-konto](https://my.adguard.com/) er en brugerkonto indeholdende brugerens oplysninger om AdGuard-licenser og -abonnementer, aktive enheder, købshistorik, foretrukket sprog og øvrige præferencer. Mange AdGuard-produkter tilbyder mulighed for aktivering ved at angive legitimationsoplysningerne fra AdGuard-kontoen, forudsat at den indeholder en gyldig licens.
 
-## How to create an account
+## Sådan oprettes en konto
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and click the *Log in* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
-
-:::tip
-
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
-
-:::
-
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
-
-After the account is created, activate it by following the link in the activation email.
+For at oprette en konto, gå til [AdGuards officielle websted](https://adguard.com/welcome.html) og tryk på knappen *Log ind* øverste til højre. Angiv en e-mailadresse og opret en adgangskode, hvorefter kontoen registreres.
 
 :::tip
 
-After you've registered your account, you can use the *One-time code* option to log in to the application. Enter your email address and choose to enter either your password or the the code sent to your email address.
+Angives en e-mailadresse under købet af en licens, eller modtages en licens tilknyttet en e-mailadresse som gave, oprettes en konto automatisk. For at angive en adgangskode, følg et link fra et transaktions- eller gavebrev. Tilmelding kan også ske via ovenstående metode.
 
 :::
 
-## How to create an account via a social network
+En konto kan også oprettes direkte i en AdGuard-app. Tryk på knappen *Log ind* eller *Aktivér* (den kan findes i afsnittet *Licens* eller på en separat skærm), angiv en e-mail og opret en adgangskode.
 
-To create an account via a social network, simply follow the [link](https://auth.adguardaccount.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).
+Når kontoen er oprettet, aktivér den via linket i aktiveringsmailen.
+
+:::tip
+
+Når kontoen er registreret, kan muligheden *Engangskode* benyttes for at logge ind i appen. Angiv e-mailadressen, og vælg at angive enten adgangskoden eller koden sendt til e-mailadressen.
+
+:::
+
+## Sådan oprettes en konto via et socialt netværk
+
+For at oprette en konto via et socialt netværk, følg blot [-linket](https://auth.adguard.com/login.html) og log ind på kontoen. Efter tilmeldingen, tjek indbakken — der vil være en bekræftelsesmail. Opsæt en adgangskode, og det er det! Nu er alle [AdGuard-kontoens funktioner](https://adguard.com/kb/general/account/features/) tilgængelige.

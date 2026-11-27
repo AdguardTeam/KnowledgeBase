@@ -163,7 +163,6 @@ What it blocks:
 - AdGuard 모바일 앱 배너 필터
 - AdGuard 위젯 필터
 - AdGuard 기타 방해 요소 필터
-- AdGuard 방해 요소 필터 — 5가지 특수 방해 요소 필터를 모두 포함하는 통합 필터
 
 ### 이러한 필터의 목적
 

@@ -163,7 +163,6 @@ Pro lepší přizpůsobení jsou filtry obtěžování rozděleny podle účelu:
 - AdGuard Mobile App Banners filter
 - AdGuard Widgets filter
 - AdGuard Other Annoyances filter
-- AdGuard Annoyances filter — kombinovaný filtr, který obsahuje všech 5 speciálních filtrů obtěžování
 
 ### Účel těchto filtrů
 

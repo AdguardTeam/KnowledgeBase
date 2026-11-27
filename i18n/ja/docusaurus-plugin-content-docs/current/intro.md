@@ -13,11 +13,16 @@ AdGuard は、15 年以上の経験、さまざまなプラットフォーム向
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
 
-また、一般的なブラウザ向けの無料ブラウザ拡張機能の開発とメンテナンスも行っております:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
+
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
 
 - [AdGuard ブラウザ拡張機能](/adguard-browser-extension/availability)
-- [AdGuard for Safari](/archive/adguard-for-safari/features/general)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## 広告ブロック以外の機能もたくさんあります
 
-AdGuard 広告ブロッカーは、広告をブロックするだけではありません。トラッキングから守り、さまざまな方法であなたのオンラインプライバシーを強化してくれます。各製品によって、保護層を増やしてくれる*DNSフィルタリング*、不適切なコンテンツから子供を守る*ペアレンタルコントロール*、インターネットトラフィックを制御するための*フィルタリングログ*などという機能も提供しています。 This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

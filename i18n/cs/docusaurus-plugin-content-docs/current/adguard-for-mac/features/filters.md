@@ -19,7 +19,7 @@ Doporučujeme povolit následující filtry:
 
 - AdGuard Base filter
 - Filtry AdGuard Tracking Protection a AdGuard URL Tracking
-- Filtr AdGuard Annoyances
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filtry pro váš jazyk
 
 Tyto filtry jsou důležité pro blokování většiny reklam, slídičů a obtěžujících prvků. Pro pokročilejší blokování reklam můžete použít vlastní filtry a uživatelská pravidla.

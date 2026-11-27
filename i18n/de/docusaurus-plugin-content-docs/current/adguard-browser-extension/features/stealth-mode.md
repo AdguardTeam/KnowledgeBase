@@ -5,48 +5,46 @@ sidebar_position: 3
 
 :::info
 
-In diesem Artikel geht es um die AdGuard-Browsererweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard Browsererweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
 Das Ziel des _Tracking-Schutzes_ ist es, Ihre sensiblen persönlichen Daten vor Online-Trackern und Betrügern zu schützen. Es gibt geringfügige Unterschiede bei den Tracking-Schutzfunktionen zwischen Chromium-basierten Browsern, die MV3 unterstützen, und Nicht-Chromium-Browsern, die MV2 unterstützen.
 
-_Tracking protection_ in Chromium-based browsers
-![Tracking protection in Chromium-based browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv3.png)
+![Tracking-Schutz in Chromium-basierten Browsern \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_mv3_trackingProtection.png)
 
-_Tracking protection_ in non-Chromium browsers
-![Tracking protection in non-Chromium browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/tracking_protection_mv2.png)
+_Tracking-Schutz_ in Chromium-basierten Browsern
 
-_Tracking protection_ features prevent websites from seeing the search query you used to find them on the Internet, automatically delete third-party and website cookies, and more. A [separate article](/general/stealth-mode) is devoted to all these features.
+_Tracking-Schutz_ verhindert, dass Websites die Suchanfrage einsehen können, mit der Sie sie im Internet gefunden haben — es werden automatisch Cookies von Drittanbietern und Websites gelöscht und vieles mehr. Alle diese Funktionen werden in einem [separaten Artikel](/general/stealth-mode) beschrieben.
 
 :::note
 
-Browser extensions are limited to a specific browser and are subject to its technical restrictions. Therefore, they cannot offer all the tracking protection features available in full-fledged ad-blocking apps.
+Browsererweiterungen sind auf einen bestimmten Browser beschränkt und unterliegen dessen technischen Beschränkungen. Daher können sie nicht alle Tracking-Schutzfunktionen bieten, die in vollwertigen Werbeblocker-Apps zur Verfügung stehen.
 
 :::
 
 :::caution
 
-In AdGuard Browser Extension, the _Block WebRTC_ option works globally — it either blocks or allows WebRTC for all websites. It cannot be controlled on a per-site basis. Exception rules like `@@||example.com^$stealth=webrtc` have no effect in the browser extension because the `webrtc` option is not among the [supported `$stealth` modifier options](/general/ad-filtering/create-own-filters#stealth-modifier). If you need per-site WebRTC control, use the full-fledged AdGuard app for Windows, Mac, or Android.
+In der AdGuard Browser-Erweiterung funktioniert die Option _WebRTC blockieren_ global — sie blockiert oder erlaubt WebRTC für alle Websites. Dieses Verhalten lässt sich nicht für jede Website einzeln steuern. Ausnahmeregeln wie `@@||example.com^$stealth=webrtc` haben in der Browsererweiterung keine Wirkung, da die Option `webrtc` nicht zu den [unterstützten Optionen für den Modifikator `$stealth`](/general/ad-filtering/create-own-filters#stealth-modifier) gehört. Wenn Sie WebRTC-Einstellungen für einzelne Websites vornehmen möchten, nutzen Sie die vollwertige App AdGuard für Windows, Mac oder Android.
 
 :::
 
-## Block fingerprinting {#fingerprinting}
+## Fingerprinting blockieren {#fingerprinting}
 
-Starting with version 5.6, the _General_ section of _Tracking protection_ has the _Block fingerprinting_ option. It slightly changes the images that websites read from a canvas, so websites can’t use them to identify your browser and device. A [separate article](/general/stealth-mode#fingerprinting) describes how it works.
+Ab Version 5.6 enthält der Bereich _Allgemein_ des _Tracking-Schutzes_ die Option _Fingerprinting blockieren_. Sie verändert leicht die Bilder, die Websites aus einem Canvas auslesen, sodass Websites diese nicht verwenden können, um Ihren Browser und Ihr Gerät zu identifizieren. Ein [separater Artikel](/general/stealth-mode#fingerprinting) beschreibt, wie dies funktioniert.
 
-The option is off by default. It works only while AdGuard protection and _Tracking protection_ are on. Changes to the option, the allowlist, and user rules apply to pages you open or reload afterwards.
+Die Option ist standardmäßig deaktiviert. Sie funktioniert nur, wenn der AdGuard-Schutz und der _Tracking-Schutz_ aktiviert sind. Änderungen an der Option, der Positivliste und den Benutzerregeln gelten für Seiten, die Sie danach öffnen oder neu laden.
 
-_Block fingerprinting_ is available in all browsers that AdGuard Browser Extension supports, including Firefox for Android. How early the protection starts depends on the browser:
+_Fingerprinting blockieren_ ist in allen Browsern verfügbar, die von der AdGuard Browsererweiterung unterstützt werden, einschließlich Firefox für Android. Wie früh der Schutz einsetzt, hängt vom Browser ab:
 
-- In the [MV3 version](/adguard-browser-extension/mv3-version) of the extension and in Firefox 128 or later, the protection starts before the website’s own scripts.
-- In the MV2 version for Chromium-based browsers, the protection may start too late on some pages, so a website can read the original image.
-- In Firefox versions earlier than 128, the protection starts before the website’s own scripts, except on websites with a strict Content Security Policy: there it may start too late or not at all.
+- In der [MV3-Version](/adguard-browser-extension/mv3-version) der Erweiterung und in Firefox 128 oder neuer startet der Schutz vor den Skripten der Website selbst.
+- In der MV2-Version für Chromium-basierte Browser kann der Schutz auf manchen Seiten zu spät starten, sodass eine Website das Originalbild auslesen kann.
+- In Firefox-Versionen vor 128 startet der Schutz vor den Skripten der Website selbst, außer auf Websites mit einer strengen Content Security Policy: Dort kann er zu spät oder gar nicht starten.
 
-In the MV3 version, _Block fingerprinting_ needs the same browser setting as custom filters: _Allow user scripts_, or _Developer mode_ in Chrome versions prior to 138. While the option is on and the setting is off, AdGuard shows a reminder under the option. Learn [how to enable the setting](/adguard-browser-extension/user-scripts-api). Then return to the _Tracking protection_ page in AdGuard settings: you don’t need to turn the option off and on again.
+In der MV3-Version erfordert _Fingerprinting blockieren_ dieselbe Browsereinstellung wie benutzerdefinierte Filter: _Benutzerskripte zulassen_ oder _Entwicklermodus_ in Chrome-Versionen vor 138. Solange die Option aktiviert und die Einstellung deaktiviert ist, zeigt AdGuard eine Erinnerung unter der Option an. Erfahren Sie, [wie Sie die Einstellung aktivieren](/adguard-browser-extension/user-scripts-api). Kehren Sie anschließend zur Seite _Tracking-Schutz_ in den AdGuard-Einstellungen zurück: Sie müssen die Option nicht aus- und wieder einschalten.
 
-In private windows, the protection works only if you allow AdGuard to run there.
+In privaten Fenstern funktioniert der Schutz nur, wenn Sie AdGuard erlauben, dort ausgeführt zu werden.
 
-The protection is off on websites in the [allowlist](/adguard-browser-extension/features/filters#allowlist). With _Invert allowlist_ on, it works only on websites from the list. To turn off only _Block fingerprinting_ for a website and keep other _Tracking protection_ features, add a user rule like `@@||example.com^$stealth=fingerprinting`. Learn more about the [`$stealth` modifier](/general/ad-filtering/create-own-filters#stealth-modifier) and its [limitations](/general/ad-filtering/create-own-filters#stealth-modifier-limitations).
+Der Schutz ist auf Websites in der [Positivliste](/adguard-browser-extension/features/filters#allowlist) deaktiviert. Wenn _Positivliste invertieren_ aktiviert ist, funktioniert er nur auf Websites aus der Liste. Um nur _Fingerprinting blockieren_ für eine Website zu deaktivieren und andere Funktionen des _Tracking-Schutzes_ beizubehalten, fügen Sie eine Benutzerregel wie `@@||example.com^$stealth=fingerprinting` hinzu. Erfahren Sie mehr über den [Modifikator `$stealth`](/general/ad-filtering/create-own-filters#stealth-modifier) und seine [Einschränkungen](/general/ad-filtering/create-own-filters#stealth-modifier-limitations).
 
-In Firefox, a frame from another website, such as an embedded widget, may not know which page it is on: always in versions earlier than 148, and in later versions when the page hides its address from the frame. Such a frame gets the same result on every website that embeds it, and the allowlist does not turn off the protection in it. To turn off the protection in such a frame, add a rule for the frame’s domain, for example `@@||widget.example.com^$stealth=fingerprinting`.
+In Firefox weiß ein Frame von einer anderen Website, wie etwa ein eingebettetes Widget, möglicherweise nicht, auf welcher Seite er sich befindet: immer in Versionen vor 148 und in neueren Versionen, wenn die Seite ihre Adresse vor dem Frame verbirgt. Ein solcher Frame erhält auf jeder Website, die ihn einbettet, dasselbe Ergebnis, und die Positivliste deaktiviert den Schutz darin nicht. Um den Schutz in einem solchen Frame zu deaktivieren, fügen Sie eine Regel für die Domain des Frames hinzu, zum Beispiel `@@||widget.example.com^$stealth=fingerprinting`.

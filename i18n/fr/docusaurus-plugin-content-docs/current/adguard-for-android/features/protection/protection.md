@@ -13,7 +13,7 @@ L'onglet _Protection_ inclut les fonctionnalités ou paramètres suivants. Vous 
 
 - [Blocage des publicités](/adguard-for-android/features/protection/ad-blocking.md)
 
-  Settings to block ads in browsers and apps
+  Paramètres permettant de bloquer les publicités dans les navigateurs et les applications
 
 - [Protection contre le suivi](/adguard-for-android/features/protection/tracking-protection.md)
 

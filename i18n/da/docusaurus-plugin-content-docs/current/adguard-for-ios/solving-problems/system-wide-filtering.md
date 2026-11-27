@@ -29,6 +29,12 @@ Når DNS-beskyttelse er slået til, er der tre valgmuligheder:
 - **Brug en blokerende DNS-server.** Gå til *Beskyttelse* → *DNS-beskyttelse* → *DNS-server*, og vælg *AdGuard DNS* eller en anden blokerende server efter eget valg.
 - **Tilføj et tilpasset DNS-filter eller hosts-fil.** Flere DNS-filtre og hosts-filer kan tilføjes. Vær opmærksom på, at brug af for mange kan gøre AdGuard langsommere.
 
+:::info
+
+Stopper systemniveaufiltrering med at blokere annoncer i apps på iOS 27 eller nyere, tjek da, om *Connectivity Assist* er aktiveret. Læs mere i [Sådan rettes adblocking i apps i iOS 27](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27/).
+
+:::
+
 ## Sådan tilføjes tilpasset DNS-filter/hosts-fil
 
 Lad os f.eks. tilføje [OISD Blocklist Big](https://oisd.nl/).

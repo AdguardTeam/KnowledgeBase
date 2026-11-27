@@ -19,7 +19,7 @@ sidebar_position: 4
 
 - AdGuard 基础过滤器
 - AdGuard 跟踪保护过滤器和 AdGuard URL 跟踪过滤器
-- AdGuard 恼人广告过滤器
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - 语言过滤器
 
 这些过滤器对于拦截大多数广告、跟踪器和恼人的元素非常重要。要进行更高级的广告拦截，用户可以使用自定义过滤器和用户规则。

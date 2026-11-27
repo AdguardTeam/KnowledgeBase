@@ -13,11 +13,16 @@ O AdGuard é um dos líderes no mercado de software de bloqueio de anúncios com
 - [AdGuard para Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard para iOS](/adguard-for-ios/features/safari-protection)
 
-Mas também desenvolvemos e mantemos extensões gratuitas para os principais navegadores:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
 
-- [AdGuard para navegadores](/adguard-browser-extension/availability)
-- [AdGuard para Safari](/archive/adguard-for-safari/features/general)
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
+
+- [Extensão do AdGuard para navegador](/adguard-browser-extension/availability)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## Mais que bloqueio de anúncios
 
-O bloqueador do AdGuard faz muito mais do que apenas bloquear anúncios. Ele o protege de rastreadores online e eleva sua privacidade de diversas formas. Dependendo do produto, o AdGuard também pode prover vantagens como filtragem de DNS para uma proteção mais eficaz, controle parental para manter seu filho seguro de conteúdo impróprio, registro de filtragem para um maior controle sobre o seu tráfego de internet e muito mais. Esta documentação introdutória contém informações detalhadas sobre todas e quaisquer um deles. Sinta-se à vontade para acessar qualquer artigo que lhe interesse.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

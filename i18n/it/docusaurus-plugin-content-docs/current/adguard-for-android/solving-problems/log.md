@@ -15,24 +15,24 @@ Data and/or files provided in logs are processed in accordance with [the AdGuard
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. I registri di debug forniscono informazioni dettagliate sul funzionamento interno di AdGuard per Android. Se il gruppo di assistenza AdGuard ti chiede di fornire i registri di debug, segui semplicemente queste istruzioni.
 
 :::note
 
-AdGuard si impegna a proteggere la tua privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Prima di inviare i registri al team di supporto, esamina il file poiché potrebbe contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
+AdGuard si impegna a proteggere la tua riservatezza. Rispettiamo rigorosamente la nostra [Politica di riservatezza](https://adguard.com/privacy/android.html) e non raccogliamo alcuna informazione privata sugli utenti. Prima di inviare i registri al gruppo di assistenza, esamina il file poiché può contenere informazioni aggiuntive che non desideri condividere. Se contiene tali informazioni personali, ti consigliamo di eliminarle prima.
 
 :::
 
-### Recording debug log
+### Registrazione informazioni di debug
 
-To collect **debug** log and send it to us, you need to perform following steps:
+Per raccogliere il registro di **debug** e inviarcelo, devi eseguire i seguenti passaggi:
 
-1. Go to *Settings* → *General* → *Advanced*.
-1. Tap *Logging level* and set it to *Debug*.
+1. Vai a *Impostazioni* → *Generale* → *Avanzate*.
+1. Tocca *Livello di registrazione* e impostalo su *Debug*.
 1. Riproduci il problema e cerca di ricordare l'ora esatta in cui si è verificato.
-1. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Aspetta qualche istante, quindi torna a *Impostazioni* e scegli la scheda *Supporto*. Tocca *Segnala un bug* e completa i campi richiesti. Non dimenticare di selezionare la casella di controllo *Invia registri app e informazioni di sistema*. Infine tocca *Invia*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Se sei interessato a seguire la risoluzione del problema e ad avviare un dialogo con gli sviluppatori, ti consigliamo di eseguire i seguenti passaggi dopo aver completato i primi tre:
 
-1. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-1. After creating an issue on GitHub, send the log file to [devteam@adguard.com](mailto:devteam@adguard.com). Includi l'ora del bug e allega un link al tuo problema o il suo numero (appare come #numero accanto al titolo). Alternatively, you can upload the log file to Google Drive and send it to [devteam@adguard.com](mailto:devteam@adguard.com). Add the file link to your GitHub issue
+1. Attendere qualche istante, quindi tornare alla schermata *Avanzate* ed esportare i registri tramite *Esporta registri e informazioni di sistema*. Quindi segnala un bug su GitHub seguendo queste [istruzioni](/guides/report-bugs.md).
+1. Dopo aver creato un inghippo su GitHub, invia il file di annotazione a [devteam@adguard.com](mailto:devteam@adguard.com). Includi l'ora del bug e allega un link al tuo problema o il suo numero (appare come #numero accanto al titolo). In alternativa, puoi caricare il file di annotazione su Google Drive e inviarlo a [devteam@adguard.com](mailto:devteam@adguard.com). Aggiungi il link del file al tuo problema su GitHub

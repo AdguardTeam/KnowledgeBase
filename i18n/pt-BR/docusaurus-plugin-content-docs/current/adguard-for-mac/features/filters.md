@@ -19,7 +19,7 @@ Recomendamos ativar os seguintes filtros:
 
 - Filtro base do AdGuard
 - Filtro de proteção contra rastreamento do AdGuard e filtro de rastreamento de URL do AdGuard
-- Filtro de aborrecimentos do AdGuard
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filtros para o seu idioma
 
 Esses filtros são importantes para bloquear a maioria dos anúncios, rastreadores e elementos irritantes. Para um bloqueio de anúncios mais avançado, é possível usar filtros personalizados e regras de usuário.

@@ -1,5 +1,5 @@
 ---
-title: Local.adguard.org and injections.adguard.org domains
+title: Local.adguard.org og injections.adguard.org domæner
 sidebar_position: 3
 ---
 
@@ -7,11 +7,11 @@ Brugere af AdGuard til Windows, Mac og Android bemærker måske, at AdGuard tilf
 
 ## `local.adguard.org`-domænet
 
-This isn’t a real domain, and there’s no server behind that name. AdGuard uses it to apply cosmetic filtering to web pages: everything happens locally on your device, without connecting to any server.
+Dette er ikke et rigtigt domæne, og der er ingen server bag navnet. Domænet bruges til effektuering af kosmetisk filtrering på websider, men alt foregår lokalt direkte på enheden uden at oprette forbindelse til nogen server.
 
 ### Teknisk forklaring
 
-AdGuard is a network-level content blocker, so it cannot simply add custom JavaScript and CSS to web pages the way browser extensions do. However, this is crucial for quality content blocking.
+AdGuard er en indholdsblocker på netværksniveau, så den kan ikke bare føje tilpasset JavaScript og CSS til websider, som webbrowserudvidelser gør. Dette er imidlertid afgørende for indholdsblockingskvaliteten.
 
 For at gøre dette injicerer AdGuard et indholdsscript, der ser således ud:
 
@@ -21,10 +21,10 @@ Indholdsscriptet skjuler eller fjerner annonceindhold fra websider. Forbindelser
 
 **Hvorfor kræves en rigtig IP-adresse?**
 
-- We cannot use `127.0.0.1` as the browsers won't accept it.
-- Using some IP address from the private subnets is possible, but this solution has two downsides.
-    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- Vi kan ikke bruge `127.0.0.1`, da webbrowserne ikke accepterer det.
+- Brug af IP-adresser fra de private undernet er muligt, men denne løsning har to ulemper.
+    - For det første er der en lille chance for at interferere med en eksisterende intranettjeneste og ødelægge adgangen hertil.
+    - For det andet kan nogle DNS-servere betragte dette som et DNS-genbindingsangreb og nægte `local.adguard.org` svar.
 
 ### Bekræftelse
 

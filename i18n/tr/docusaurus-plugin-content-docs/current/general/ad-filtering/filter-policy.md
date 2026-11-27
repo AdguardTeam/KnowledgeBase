@@ -163,7 +163,6 @@ For better customization, annoyance filters are divided by their purpose:
 - AdGuard Mobil Uygulama Afişleri filtresi
 - AdGuard Araçlar filtresi
 - AdGuard Diğer Can Sıkıcı Öğeler filtresi
-- AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
 
 ### Bu filtrelerin amacı
 

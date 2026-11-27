@@ -56,10 +56,10 @@ AdGuard cannot filter its traffic when operating in the *Manual proxy* mode beca
 
 Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
 
-- There is no solution at this moment
+- Il n'y a pas de solution pour le moment
 
 ### Puffin Browser: Puffin Browser, Puffin Browser Pro
 
-Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Le navigateur Puffin achemine le trafic via une compression proxy par défaut et AdGuard ne peut pas le décompresser et le filtrer en même temps.
 
-- There is no solution at this moment
+- Il n'y a pas de solution pour le moment

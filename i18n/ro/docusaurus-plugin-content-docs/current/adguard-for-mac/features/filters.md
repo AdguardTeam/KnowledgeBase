@@ -19,7 +19,7 @@ Recomandăm activarea următoarelor filtre:
 
 - Filtru de bază AdGuard
 - Filtrul AdGuard de protecție a urmăririi și filtrul de urmărire URL AdGuard
-- AdGuard Annoyances filter
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filtre pentru limba ta
 
 Aceste filtre sunt importante pentru a bloca cele mai multe reclame, trackere și elemente deranjante. Pentru o blocare mai avansată a reclamelor, poți folosi filtre personalizate și reguli utilizator.

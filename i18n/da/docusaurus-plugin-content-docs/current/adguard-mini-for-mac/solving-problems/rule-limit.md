@@ -11,9 +11,9 @@ Denne artikel omhandler AdGuard Mini til Mac, der kun beskytter Safari-webbrowse
 
 ## Regelkvote i Safari-indholdsblocker
 
-AdGuard Mini for Mac uses the Content Blocking API to apply filtering rules to pages in the Safari browser. P.t. tillades maks. 150.000 regler pr. indholdsblokerende udvidelse.
+AdGuard Mini til Mac bruger Content Blocking API'en til at anvende filtreringsregler på sider i Safari-webbrowseren. P.t. tillades maks. 150.000 regler pr. indholdsblokerende udvidelse.
 
-AdGuard Mini for Mac has 6 content blockers:
+AdGuard Mini til Mac har 6 indholdsblockere:
 
 - AdGuard Generelt
 - AdGuard Fortrolighed
@@ -24,13 +24,13 @@ AdGuard Mini for Mac has 6 content blockers:
 
 Dette muliggør i alt 900.000 filtreringsregler.
 
-However, **one extension can contain only up to 150,000 rules**. Overskrides denne kvote, vil nogle af reglerne ikke blive anvendt. Dette kan medføre forkert blokering.
+Dog **kan én udvidelse kun indeholde op til 150.000 regler**. Overskrides denne kvote, vil nogle af reglerne ikke blive anvendt. Dette kan medføre forkert blokering.
 
 ## Sådan tjekkes, om kvoten overskrides
 
-1. Open AdGuard Mini app.
-2. Go to _Settings_ → _Safari extensions_.
-3. Below each extension, you can see the enabled filters and the number of active rules.
+1. Åbn AdGuard Mini-appen.
+2. Gå til _Indstillinger_ → _Safari-udvidelser_.
+3. Nedenfor hver udvidelse fremgår de aktiverede filtre og antallet af aktive regler.
    ![Fanen Udvidelser](https://cdn.adtidy.org/content/kb/ad_blocker/mini_mac/extensions.png)
 
 Er mere end 150.000 regler aktiveret i en indholdsblocker, skal nogle af dens filtre eller brugerregler muligvis deaktiveres. Gå til _Filtre_, vælg den problematiske kategori og deaktivér de filtre eller brugerregler, som ikke behøves.

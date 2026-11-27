@@ -13,11 +13,16 @@ Az AdGuard az egyik vezető a hirdetésblokkoló szoftverpiacon 15 éves tapaszt
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
 
-De ingyenes böngészőbővítményeket is fejlesztünk és tartunk fenn minden népszerű böngészőhöz:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
 
-- [AdGuard Böngészőkiegészítő](/adguard-browser-extension/availability)
-- [AdGuard for Safari](/archive/adguard-for-safari/features/general)
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
+
+- [AdGuard Browser Extension](/adguard-browser-extension/availability)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## Nem csak reklámblokkolás
 
-Az AdGuard Ad Blocker nem csak a hirdetéseket blokkolja. Megvédi Önt az online nyomon követéstől, és számos módon javítja a magánéletét. Az adott terméktől függően az AdGuard olyan előnyöket is kínálhat, mint a DNS-szűrés a kerekebb védelem érdekében, a szülői felügyelet, amely megvédi a gyerekeket a nem megfelelő tartalomtól, a szűrési napló az internetes forgalom jobb ellenőrzése érdekében és még sok más. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

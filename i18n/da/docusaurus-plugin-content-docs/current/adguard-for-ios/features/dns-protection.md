@@ -25,6 +25,10 @@ Dette afsnit har to muligheder: AdGuard- og Native-implementering. Disse er grun
 
 I Native-implementeringen håndteres DNS af systemet og ikke appen. Det betyder, at AdGuard ikke behøver oprette et lokalt VPN. Desværre vil dette ikke hjælpe med at omgå systemrestriktioner og anvende AdGuard sammen med andre VPN-baserede apps — er et andet VPN aktivt, ignoreres den indbyggede DNS. Følgelig vil trafikfiltrering lokalt eller brug af vores helt nye [DNS-over-QUIC-protokol (DoQ)](https://adguard.com/en/blog/dns-over-quic.html) ikke være mulig.
 
+:::note
+Ved brug af _AdGuard_-implementeringen i iOS 27 eller nyere kan systemets _Connectivity Assist_-funktion rute DNS-forespørgsler uden for den lokale tunnel i _Split-Tunnel_-tilstand. Bemærkes det, at der vises annoncer i apps, mens DNS-beskyttelse er aktiv, se [Sådan rettes adblocking i apps i iOS 27](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27/).
+:::
+
 ### DNS-servere: {#dns-servers}
 
 Det næste afsnit vist på skærmen DNS-beskyttelse er DNS-server. Den viser den aktuelt valgte DNS-server og krypteringstype. For at skifte den, tryk på knappen for at åbne skærmen DNS-server.
@@ -37,7 +41,7 @@ I bunden af skærmen er der også mulighed for at tilføje en tilpasset DNS-serv
 
 #### HTTP-basisgodkendelse for DNS-over-HTTPS
 
-Denne funktion bringer godkendelsesmulighederne for HTTP-protokollen til DNS, der ikke har indbygget godkendelse. Godkendelse i DNS er nyttig, hvis adgangen til en tilpassede DNS-server ønskes begrænset til bestemte brugere.
+Denne funktion bringer godkendelsesmulighederne for HTTP-protokollen til DNS, der ikke har indbygget godkendelse. Godkendelse i DNS er nyttig, hvis adgangen til en tilpasset DNS-server ønskes begrænset til bestemte brugere.
 
 Sådan aktiveres denne funktion:
 
@@ -53,7 +57,7 @@ Besøg vores [diagnostikside](https://adguard.com/en/test.html) for at tjekke, o
 
 ![Skærmen Netværksindstillinger \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-På skærmen Netværksindstillinger kan brugere også håndtere DNS-sikkerhed. _Filtrér mobildata_ og _Filtér Wi-Fi_ slår DNS-beskyttelse til/fra for de respektive netværkstyper. Længere nede kan der via _Wi-Fi undtagelser_ undtages bestemte Wi-Fi netværk fra DNS-beskyttelsen (f.eks. hjemmenetværket, hvis der gøres brug af [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
+På skærmen Netværksindstillinger kan brugere også håndtere DNS-sikkerhed. _Filtrér mobildata_ og _Filtér Wi-Fi_ slår DNS-beskyttelse til/fra for de respektive netværkstyper. Længere nede kan der via _Wi-Fi-undtagelser_ undtages bestemte Wi-Fi-netværk fra DNS-beskyttelsen (f.eks. hjemmenetværket, hvis der gøres brug af [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
 ### DNS-filtrering {#dns-filtering}
 
@@ -67,8 +71,8 @@ _Beskyttelse_ (skjoldikonet på nederste menubjælke) → _DNS-beskyttelse_ → 
 
 #### DNS-filtre {#dns-filters}
 
-I lighed med filtre, som fungerer i Safari, er DNS-filtre sæt af regler skrevet i en særlig [syntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard vil overvåge DNS-trafikken og blokere forespørgsler matchende en eller flere regler. Der kan bruges filtre såsom [AdGuard DNS-filter](https://github.com/AdguardTeam/AdguardSDNSFilter) eller tilføjes værtsfiler som filtre. Flere filtre kan tilføjes samtidigt. For at vide, hvordan dette gøres, konsultér [denne udtømmende manual](adguard-for-ios/solving-problems/system-wide-filtring).
+I lighed med filtre, som fungerer i Safari, er DNS-filtre sæt af regler skrevet i en særlig [syntaks](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard vil monitorere DNS-trafikken og blokere forespørgsler matchende en eller flere regler. Der kan bruges filtre såsom [AdGuard DNS-filter](https://github.com/AdguardTeam/AdguardSDNSFilter) eller tilføjes værtsfiler som filtre. Flere filtre kan tilføjes samtidigt. For at vide, hvordan dette gøres, konsultér [denne udtømmende manual](adguard-for-ios/solving-problems/system-wide-filtring).
 
 #### Hvidliste og Sortliste {#allowlist-blocklist}
 
-Ud over DNS-filtre, kan DNS-filtrering målrettet påvirkes ved at føje enkelte domæner til sort- eller hvidlisten. Sortlisten understøtter endda den samme DNS-syntaks, og begge kan importeres og eksporteres, ligesom hvidlisten i Safari-indholdsblokering.
+Ud over DNS-filtre kan DNS-filtrering målrettet påvirkes ved at føje enkelte domæner til en Sortliste eller Hvidliste. Sortliste understøtter endda den samme DNS-syntaks, og begge kan importeres og eksporteres, ligesom Hvidliste i Safari-indholdsblokering.

@@ -163,7 +163,6 @@ Pour une meilleure personnalisation, les filtres anti-nuisances sont divisés se
 - Filtre AdGuard Mobile App Banners
 - Filtre AdGuard Widgets
 - Filtre Autres nuisances
-- Filtre Anti nuisances AdGuard — un filtre combiné qui inclut les 5 filtres de nuisances spécialisés
 
 ### L'objectif de ces filtres
 

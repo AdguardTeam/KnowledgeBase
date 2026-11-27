@@ -1,5 +1,5 @@
 ---
-title: Certificate installation in a Secure folder
+title: Installation du certificat dans un dossier sécurisé
 sidebar_position: 12
 ---
 
@@ -9,11 +9,11 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-If you install AdGuard [in the *Secure folder*](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) on your Android device (this mainly applies to Samsung devices), you may have difficulty installing the HTTPS certificate. The *Secure folder* has its own storage space for certificates. However, if you follow the [regular certificate installation instructions](/adguard-for-android/features/settings#https-filtering), the certificate will be installed in the main memory and will not affect your ad blocker in the *Secure folder*. To install the certificate for AdGuard for Android in the *Secure folder’s* storage, follow these instructions instead:
+Si vous installez AdGuard [dans le *Dossier sécurisé*](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) sur votre Android (cela s'applique principalement aux appareils Samsung), vous pourriez rencontrer certaines difficultés lors de l'installation du certificat HTTPS. Le *Dossier sécurisé* a son propre espace de stockage pour les certificats. Toutefois, si vous suivez les [instructions habituelles d'installation du certificat](/adguard-for-android/features/settings#https-filtering), celui-ci sera installé dans la mémoire principale et n'aura aucune incidence sur votre bloqueur de publicités situé dans le *Dossier sécurisé*. Pour installer le certificat pour AdGuard pour Android dans le stockage du *Dossier sécurisé*, suivez plutôt ces instructions :
 
-1. After installing the app and connecting the local VPN, tap *HTTPS filtering is off* on the main screen.
-1. Tap **Continue** → **Next** → **Save certificate**.
-1. Save the certificate (at this stage, you can rename it to make it easier to locate it later, which you will need to do).
+1. Après avoir installé l'application et connecté le VPN local, appuyez sur *Le filtrage HTTPS est désactivé* sur l'écran principal.
+1. Appuyez sur **Continuer** → **Suivant** → **Enregistrer le certificat**.
+1. Enregistrez le certificat (à ce stade, vous pouvez le renommer pour le retrouver plus facilement par la suite, ce dont vous aurez besoin).
 1. Lorsque la fenêtre contextuelle *Instructions d'installation* apparaît, **N'APPUYEZ PAS** sur **Ouvrir les paramètres**.
 1. Réduisez l'application et accédez au *Dossier sécurisé*.
 1. Appuyez sur le menu à trois points et accédez à **Paramètres** → **Autres paramètres de sécurité**.

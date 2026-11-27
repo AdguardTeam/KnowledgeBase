@@ -1,19 +1,19 @@
 ---
-title: System-wide protection
+title: Системная защита
 sidebar_position: 9
 ---
 
-Starting with version 3.0, AdGuard Mini for Mac introduces _System-wide protection_, a feature that blocks ads and trackers not just in Safari, but across other apps on your Mac.
+Начиная с версии 3.0, в AdGuard Mini для Mac появилась _Защита на уровне системы_ — функция, которая блокирует рекламу и трекеры не только в Safari, но и в других приложениях на вашем Mac.
 
-The feature is available for users with an AdGuard license. You can [purchase the license right away](https://adguard.com/license.html) or click _Try for free_ in _Advanced protection_ to start a 14-day free trial.
+Функция доступна пользователям с лицензией AdGuard. Вы можете [сразу купить лицензию](https://adguard.com/license.html) или нажать _Попробовать бесплатно_ в _Расширенной защите_ — у вас будет 14 дней пробного периода.
 
 :::caution
 
-_System-wide protection_ is an experimental feature. It may not work for everyone due to an [unresolved bug on Apple’s side](https://developer.apple.com/forums/thread/848364). Once the feature is stable for everyone, we’ll make it a core part of AdGuard Mini.
+_Системная защита_ — это экспериментальная функция. Она может работать не у всех из-за [неисправленной ошибки на стороне Apple](https://developer.apple.com/forums/thread/848364). Как только функция станет стабильной для всех, мы сделаем её основной частью AdGuard Mini.
 
 :::
 
-The feature does not work correctly on some macOS versions, including **26.7.2** and **27.2**. If you’re on **macOS 26.0 and 27.0**, you can try _System-wide protection_ as usual. Note that if _System-wide protection_ works fine for you on macOS 27.0, it will most likely break after you update to macOS 27.2. Keep this in mind before you update your system.
+Функция работает некорректно на некоторых версиях macOS, включая **26.7.2** и **27.2**. Если у вас **macOS 26.0 и 27.0**, вы можете попробовать _Системную защиту_. Обратите внимание: если _Системная защита_ нормально работает у вас на macOS 27.0, скорее всего, она перестанет работать после обновления до macOS 27.2. Keep this in mind before you update your system.
 
 In the release version, _System-wide protection_ is hidden by default. To show it, go to _Settings_ → _Miscellaneous_ and turn on _Show System-wide protection (Experimental)_. The beta version always shows it.
 

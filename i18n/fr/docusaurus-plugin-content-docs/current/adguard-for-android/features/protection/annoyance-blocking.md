@@ -13,4 +13,6 @@ Le module de Protection contre le suivi est accessible en appuyant sur l'onglet 
 
 Cette fonction est basée sur les filtres de nuisance d'AdGuard et vous permet de bloquer les fenêtres contextuelles, les fenêtres des assistants en ligne, les notifications de cookies, les invitations à télécharger des applications mobiles et d'autres nuisances similaires qui ne sont pas des publicités mais qui nuisent à votre expérience en ligne. [En savoir plus sur les filtres anti-nuisances](/general/ad-filtering/adguard-filters/#adguard-filters)
 
+_Annoyance blocking_ is a section of the app where you can choose which categories of irritating elements to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
+
 ![Blocage des nuisances \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

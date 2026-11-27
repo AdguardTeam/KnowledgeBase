@@ -17,9 +17,9 @@ sidebar_position: 2
 - **防跟踪保护过滤器** — 各种在线计数器和网络分析工具的综合列表。用它来隐藏用户在网上的活动，避免跟踪。[查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
 - **URL 跟踪过滤器**从网址中移除跟踪参数加强隐私保护。当用户选择在隐身模式下拦截跟踪参数时，此过滤器将自动启用。[查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
 - **社交媒体过滤器**此过滤器移除社交媒体小工具「点赞」和「分享」按钮及类似的元素。[查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
-- **恼人广告过滤器**屏蔽网页上的恼人元素。[查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)。包括以下 AdGuard 过滤器（以下过滤器都可以与烦恼过滤器分开启用）：
+- **Annoyance filters** block irritating elements on webpages. The following AdGuard filters are available:
 
-    - **Cookie 通知**在网页上拦截 Cookie 通知。[查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
+    - **Cookie Notices** blocks cookie notices on webpages. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
     - **Popups** blocks all kinds of popups that are not necessary for websites' operation. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
     - **移动拦截程序横幅广告**阻止宣传网站移动应用的横幅。[查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     - **小工具**阻止第三方小工具：在线助手、实时客服支持聊天等 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)

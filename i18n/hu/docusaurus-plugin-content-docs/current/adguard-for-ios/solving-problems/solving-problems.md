@@ -16,3 +16,4 @@ Here are some problems you may encounter and workarounds, guides, and instructio
 - [How to avoid compatibility issues with FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
 - [How to block YouTube ads](/adguard-for-ios/solving-problems/block-youtube-ads.md)
 - [Low-level settings guide](/adguard-for-ios/solving-problems/low-level-settings.md)
+- [Connectivity Assist compatibility issues](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27.md)

@@ -13,4 +13,6 @@ The Annoyance blocking feature can be accessed by tapping the _Protection_ tab (
 
 이 기능은 AdGuard의 방해 요소 필터를 기반으로 하며 팝업, 온라인 지원 창, 쿠키 알림, 모바일 앱 다운로드 프롬프트 및 이와 유사한 성가신 요소를 차단할 수 있습니다. [방해 요소 필터에 대해 자세히 알아보기](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![방해 요소 차단 \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+_Annoyance blocking_ is a section of the app where you can choose which categories of irritating elements to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
+
+![Annoyance blocking \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
