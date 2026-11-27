@@ -1443,11 +1443,11 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ [*[5]](#redirect-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$removeheader](#removeheader-modifier) | ✅ | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ✅ [*[7]](#removeheader-modifier-limitations) | ❌ | ❌ | ❌ |
-| [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[6]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
+| [$removeheader](#removeheader-modifier) | ✅ | ✅ [*[6]](#removeheader-modifier-limitations) | ✅ [*[6]](#removeheader-modifier-limitations) | ✅ [*[6]](#removeheader-modifier-limitations) | ❌ | ❌ | ❌ |
+| [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ [*[7]](#removeparam-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$urltransform](#urltransform-modifier) | ✅ | ✅ | ✅ [*[8]](#urltransform-modifier-limitations) | ✅ | ❌ | ❌ | ❌ |
-| [$reason](#reason-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$reason](#reason-modifier) | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ❌ |
 | [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
@@ -1456,6 +1456,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ⏳ — feature that is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -3165,7 +3166,11 @@ Instead of custom text, you can use predefined tokens that will be automatically
 
 :::info Compatibility
 
-AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later support rules with the `$reason` modifier. AdGuard Mini for Android does not support these rules.
+- Rules with the `$reason` modifier are supported by AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard for Linux with CoreLibs v1.20 or later.
+- Support for these rules is planned in:
+    - AdGuard Browser Extension — see [tsurlfilter#163](https://github.com/AdguardTeam/tsurlfilter/issues/163).
+    - AdGuard for iOS and AdGuard Mini for Mac — see [SafariConverterLib#83](https://github.com/AdguardTeam/SafariConverterLib/issues/83).
+- AdGuard Mini for Android does not support these rules.
 
 :::
 
