@@ -13,11 +13,16 @@ AdGuard este unul dintre liderii pe piața software-ului de blocare a reclamelor
 - [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
 
-Dar dezvoltăm și menținem extensii de browser gratuite pentru toate browserele populare:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
+
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
 
 - [Extensia de browser AdGuard](/adguard-browser-extension/availability)
-- [AdGuard for Safari](/archive/adguard-for-safari/features/general)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## Nu doar blocarea reclamelor
 
-AdGuard Ad Blocker face mai mult decât să blocheze reclamele. Te va proteja de urmărirea online și îți va îmbunătăți intimitatea în multe moduri. În funcție de produsul specific, AdGuard poate oferi, de asemenea, beneficii precum filtrarea DNS pentru o protecție mai completă, Control parental pentru a-ți proteja copiii de conținut inadecvat, jurnal de filtrare pentru a avea un control mai bun asupra traficului tău de internet și altele. Această bază de cunoștințe conține informații detaliate despre oricare și toate produsele — nu ezita să accesezi orice articol care te interesează.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

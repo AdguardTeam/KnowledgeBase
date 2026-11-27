@@ -163,7 +163,6 @@ Zur besseren Anpassung sind die Belästigungsfilter nach ihrem Zweck unterteilt:
 - AdGuard-Filter gegen Mobile-App-Banner
 - AdGuard Widgets-Filter
 - AdGuard-Filter gegen andere Belästigungen
-- AdGuard Belästigungsfilter — ein kombinierter Filter, der alle 5 speziellen Belästigungsfilter enthält
 
 ### Der Zweck dieser Filter
 

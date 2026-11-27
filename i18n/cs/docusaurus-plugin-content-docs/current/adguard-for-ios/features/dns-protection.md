@@ -25,50 +25,54 @@ Tato část má dvě možnosti: AdGuard a Nativní implementace. V podstatě se 
 
 V nativní implementaci se o DNS stará systém, nikoli aplikace. To znamená, že AdGuard nemusí vytvářet lokální VPN. Bohužel vám to nepomůže obejít systémová omezení a používat AdGuard spolu s jinými aplikacemi založenými na VPN — pokud je povolena jakákoli VPN, nativní DNS je ignorován. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard-dns.io/blog/dns-over-quic.html).
 
-### DNS servery {#dns-servers}
+:::note
+When using the _AdGuard_ implementation on iOS 27 or later, the system _Connectivity Assist_ feature can route DNS queries outside the local tunnel in _Split-Tunnel_ mode. If you notice ads appearing in apps while DNS protection is active, see [How to fix ad blocking in apps on iOS 27](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27/).
+:::
 
-Další část, která se zobrazí na obrazovce Ochrana DNS, je DNS server. Zobrazuje aktuálně vybraný DNS server a typ šifrování. Chcete-li některý z nich změnit, klepněte na tlačítko a přejděte na obrazovku DNS serveru.
+### DNS servers {#dns-servers}
+
+The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
 
 ![DNS servers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
-Servery se liší rychlostí, použitým protokolem, důvěryhodností, zásadami protokolování atd. Ve výchozím nastavení nabídne AdGuard několik DNS serverů z těch nejoblíbenějších (včetně AdGuard DNS). Klepnutím na libovolný server změníte typ šifrování (pokud takovou možnost vlastník serveru poskytuje) nebo zobrazíte domovskou stránku serveru. Přidali jsme štítky jako `Bez zaznamenávání`, `Blokování reklam`, `Zabezpečení`, abychom vám usnadnili výběr.
+Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
 
-V dolní části obrazovky je navíc možnost přidat vlastní DNS server. Podporuje běžné servery, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS a DNS-over-QUIC.
+In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC servers.
 
-#### Základní ověřování HTTP pro DNS-over-HTTPS
+#### HTTP basic authentication for DNS-over-HTTPS
 
-Tato funkce přináší možnosti ověřování protokolu HTTP do DNS, která nemá vestavěné ověřování. Ověřování v DNS je užitečné, pokud chcete omezit přístup k vlastnímu DNS serveru na konkrétní uživatele.
+This feature brings the authentication capabilities of the HTTP protocol to DNS, which does not have built-in authentication. Authentication in DNS is useful if you want to restrict access to your custom DNS server to specific users.
 
-Chcete-li tuto funkci povolit:
+To enable this feature:
 
-1. V AdGuard DNS přejděte do _Nastavení serveru_ → _Zařízení_ → _Nastavení_ a změňte DNS server na server s ověřováním. Kliknutím na _Zamítnout další protokoly_ odeberete další možnosti použití protokolu, ponecháte zapnuté pouze ověřování DNS-over-HTTPS a zabráníte jeho použití třetími stranami. Zkopírujte vygenerovanou adresu.
+1. In AdGuard DNS, go to _Server settings_ → _Devices_ → _Settings_ and change the DNS server to the one with authentication. Clicking _Deny other protocols_ will remove other protocol usage options, leaving only DNS-over-HTTPS authentication enabled and preventing its use by third parties. Copy the generated address.
 
 ![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
-1. V AdGuard pro iOS přejděte na _Ochrana_ → _DNS ochrana_ → _DNS server_ a vložte vygenerovanou adresu do pole _Přidat vlastní DNS server_. Uložte a vyberte novou konfiguraci.
+1. In AdGuard for iOS, go to the _Protection tab_ → _DNS protection_ → _DNS server_ and paste the generated address into the _Add a custom DNS server_ field. Save and select the new configuration.
 
-Chcete-li zkontrolovat, zda je vše správně nastaveno, navštivte naši [stránku diagnostiky](https://adguard.com/en/test.html).
+To check if everything is set up correctly, visit our [diagnostics page](https://adguard.com/en/test.html).
 
-### Nastavení sítě {#network-settings}
+### Network settings {#network-settings}
 
 ![Network settings screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. _Filtrování mobilních dat_ a _Filtrování Wi-Fi_ povolují nebo zakazují DNS ochranu pro příslušné typy sítí. Dále ve _výjimkách Wi-Fi_ můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
+Users can also handle their DNS security on the Network settings screen. _Filter mobile data_ and _Filter Wi-Fi_ enable or disable DNS protection for the respective network types. Further down, at _Wi-Fi exceptions_, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
-### DNS filtrování {#dns-filtering}
+### DNS filtering {#dns-filtering}
 
-DNS filtrování umožňuje přizpůsobit provoz DNS povolením filtru AdGuard DNS, přidáním vlastních filtrů DNS a použitím seznamu zakázanách/povolených DNS.
+DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
 
-Jak získat přístup:
+How to access:
 
-_Ochrana_ (ikona štítu v dolní liště menu) → _DNS ochrana_ → _DNS filtrování_
+_Protection_ (the shield icon in the bottom menu bar) → _DNS protection_ → _DNS filtering_
 
 ![DNS filtering screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
-#### DNS filtry {#dns-filters}
+#### DNS filters {#dns-filters}
 
-Podobně jako filtry v prohlížeči Safari jsou DNS filtry sadami pravidel zapsaných podle speciální [syntaxe](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard bude monitorovat provoz DNS a blokovat požadavky, které odpovídají jednomu nebo více pravidlům. Můžete použít filtry, jako je [filtr AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), nebo přidat soubory hostitelů jako filtry. Lze přidávat více filtrů současně. Chcete-li vědět, jak na to, seznamte se s [touto vyčerpávající příručkou](/adguard-for-ios/solving-problems/system-wide-filtering).
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
-#### Seznam povolených a seznam zakázaných {#allowlist-blocklist}
+#### Allowlist and Blocklist {#allowlist-blocklist}
 
-Kromě DNS filtrů můžete filtrování DNS cíleně ovlivnit přidáním jednotlivých domén do seznamu zakázaných nebo do seznamu povolených. Seznam zakázaných dokonce podporuje stejnou syntaxi DNS a oba tyto seznamy lze importovat a exportovat, stejně jako seznam povolených v aplikaci Safari pro blokování obsahu.
+On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.

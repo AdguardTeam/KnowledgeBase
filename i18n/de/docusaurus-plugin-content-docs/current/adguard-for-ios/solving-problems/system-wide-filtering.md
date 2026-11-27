@@ -29,9 +29,15 @@ Sobald der DNS-Schutz aktiviert ist, haben Sie drei Optionen:
 - **Einen blockierenden DNS-Server verwenden.** Gehen Sie zu *Schutz* → *DNS-Schutz* → *DNS-Server* und wählen Sie *AdGuard DNS* oder einen anderen Blockierungsserver nach Ihrem Geschmack.
 - **Einen benutzerdefinierten DNS-Filter oder eine Hosts-Datei hinzufugen.** Es können mehrere DNS-Filter und Hosts-Dateien hinzugefügt werden. Beachten Sie, dass die Verwendung von zu vielen Filtern AdGuard verlangsamen kann.
 
+:::info
+
+If system-wide filtering stops blocking ads in apps on iOS 27 or later, check if *Connectivity Assist* is enabled. Learn more in [How to fix ad blocking in apps on iOS 27](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27/).
+
+:::
+
 ## Hinzufügen von benutzerdefinierten DNS-Filtern und Hosts-Dateien
 
-Fügen wir zum Beispiel die [OISD-Blockliste Big](https://oisd.nl/) hinzu.
+For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
 
 1. Kopieren Sie den Link für OISD Blocklist Big: `https://big.oisd.nl`
 2. Öffnen Sie *Schutz*  → *DNS-Schutz* → *DNS-Filterung* → *DNS-Filter*.
@@ -39,6 +45,6 @@ Fügen wir zum Beispiel die [OISD-Blockliste Big](https://oisd.nl/) hinzu.
 4. Fügen Sie den Link in das URL-Feld des Filters ein.
 5. Tippen Sie auf *Weiter* → *Hinzufügen*.
 
-![Hinzufügen eines DNS-Filters *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
 
-Fügen Sie beliebig viele DNS-Filter hinzu, indem Sie Schritt 4 mit einer anderen URL wiederholen. Verschiedene Filterlisten und deren Links finden Sie unter [filterlists.com](https://filterlists.com).
+Add any number of DNS filters by repeating step 4 with a different URL. You can find various filter lists and their links at [filterlists.com](https://filterlists.com).

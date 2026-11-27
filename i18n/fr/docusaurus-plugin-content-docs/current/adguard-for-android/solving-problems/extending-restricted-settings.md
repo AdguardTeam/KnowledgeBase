@@ -1,5 +1,5 @@
 ---
-title: Problems caused by extending restricted settings
+title: Problèmes causés par l'extension des paramètres restreints
 sidebar_position: 17
 ---
 
@@ -9,52 +9,52 @@ Cet article concerne AdGuard pour Android, un bloqueur de publicité multifoncti
 
 :::
 
-In an effort to improve user privacy, Google has expanded the restriction settings in Android 15. More settings, such as _App usage access_, now require an additional permission to be enabled. Étant donné que les fonctionnalités _[Pare-feu](/adguard-for-android/features/protection/firewall)_ et _[Détecter Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ nécessitent que le paramètre _Accès à l'utilisation des applications_ soit activé pour qu'elles fonctionnent correctement, vous avez peut-être rencontré des problèmes lors de leur utilisation. To resolve these issues, please follow the steps below.
+Afin d'améliorer la confidentialité utilisateur, Google a étendu les paramètres restreints dans Android 15. D'autres paramètres, tels que l'_accès à l'utilisation des applications_, nécessite désormais une autorisation supplémentaire pour être activés. Étant donné que les fonctionnalités _[Pare-feu](/adguard-for-android/features/protection/firewall)_ et _[Détecter Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea)_ nécessitent que le paramètre _Accès à l'utilisation des applications_ soit activé pour qu'elles fonctionnent correctement, vous avez peut-être rencontré des problèmes lors de leur utilisation. Pour résoudre ces problèmes, veuillez suivre les étapes ci-dessous.
 
 :::note
 
-AdGuard has a strict no-logging policy, which means that we do not collect your data or send it to third parties. We only ask for access to data without which the application cannot function.
+AdGuard a une politique stricte de non-conservations des journaux, ce qui signifie que nous ne collectons pas vos données et ne les envoyons pas à des tiers. Nous demandons uniquement l'accès aux données sans lesquelles l'application ne peut pas fonctionner.
 
 :::
 
-## Basic instructions
+## Instructions basiques
 
-1. On your Android device, open the **Settings app**.
-2. Tap **Apps**.
-3. Tap **AdGuard**
+1. Sur votre appareil Android, ouvrez l'**application Paramètres**.
+2. Appuyez sur **Applications**.
+3. Appuyez sur **AdGuard**
 
-![AdGuard in Apps \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
+![AdGuard dans Applications \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted1.png)
 
-If you can't find it, first tap **See all apps** or **App info**.
+Si vous ne la trouvez pas, appuyez d'abord sur **Voir toutes les applications** ou **Infos sur l'application**.
 
-1. Tap **More** (⁝) → _Allow restricted settings_.
+1. Appuyez sur **Plus** (⁝) → _Autoriser les paramètres restreints_.
 
-![Allow restricted settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
+![Autoriser les paramètres restreints \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted2.png)
 
-Follow the on-screen instructions.
+Suivez les instructions à l'écran.
 
-All done! Now the _Firewall_ and _Detect Samsung Pay_ features will work correctly.
+C'est fait ! Maintenant, les fonctionnalités _Pare-feu_ et _Détecter Samsung Pay_ fonctionneront correctement.
 
-![Restricted settings allowed for AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
+![Paramètres restreints autorisés pour AdGuard \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/restricted3.png)
 
-## For OneUI 7.0 users
+## Pour les utilisateurs de OneUI 7.0
 
-For Samsung devices with OneUI 7.0, the app permission settings follow a different path. Follow these steps to configure app usage access:
+Pour les appareils Samsung avec OneUI 7.0, les paramètres d'autorisation de l'application suivent un chemin différent. Suivez ces étapes pour configurer l'accès à l'utilisation de l'application :
 
-1. Open _System settings_ → _Apps_
+1. Ouvrez _Paramètres système_ → _Applications_
 
-![Apps settings \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
+![Paramètres des applications \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/apps.jpg)
 
-1. Tap the menu icon (⋮) in the top-right corner, then select _Special access_
+1. Appuyez sur l'icône de menu (⋮) située dans le coin supérieur droit, puis sélectionnez _Accès spécial_
 
-![Special access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
+![Accès spécial \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/three-dots.jpg)
 
-1. Select _Usage data access_
+1. Sélectionnez _Accès aux données d'utilisation_
 
-![Special access menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
+![Menu d'accès spécial \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/special.jpg)
 
-1. Find and enable _AdGuard_
+1. Trouvez et activez _AdGuard_
 
-![Usage data access \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
+![Accès aux données d'utilisation](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/problems-caused-by-extending-restricted-settings/usage_data.jpg)
 
-All done!
+C'est fait !

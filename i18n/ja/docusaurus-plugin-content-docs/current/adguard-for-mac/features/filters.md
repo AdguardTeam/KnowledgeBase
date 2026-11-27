@@ -19,7 +19,7 @@ sidebar_position: 4
 
 - AdGuard ベースフィルタ
 - AdGuard 追跡防止フィルタと AdGuard URL追跡防止フィルタ
-- AdGuard 迷惑要素フィルタ
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - お使いの言語に応じたフィルタ（AdGuard 日本語フィルタなど）
 
 これらのフィルタは、広告、トラッカー、迷惑要素のほとんどをブロックしてくれます。より高度な広告ブロックには、カスタムフィルタとユーザールールを使用できます。

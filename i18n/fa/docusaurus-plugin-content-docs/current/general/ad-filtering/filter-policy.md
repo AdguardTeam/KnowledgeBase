@@ -163,7 +163,6 @@ For better customization, annoyance filters are divided by their purpose:
 - AdGuard Mobile App Banners filter
 - AdGuard Widgets filter
 - AdGuard Other Annoyances filter
-- AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
 
 ### The purpose of these filters
 

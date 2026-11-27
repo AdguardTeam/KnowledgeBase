@@ -1,5 +1,5 @@
 ---
-title: Known compatibility issues with Android apps
+title: Problemi di compatibilità noti con le app di Android
 sidebar_position: 14
 ---
 
@@ -9,24 +9,24 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-## VPN apps
+## App VPN
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Se stai usando AdGuard in modalità di filtraggio *VPN Locale*, non puoi eseguire altre app VPN in contemporanea. Per risolvere questo problema, ti suggeriamo di:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
+- Utilizzare [AdGuard VPN](https://adguard-vpn.com/welcome.html): la sua *modalità integrata* consente a due app di operare simultaneamente
+- Configurare la tua app VPN affinché agisca da [proxy in uscita](../solving-problems/outbound-proxy.md) e configurare un proxy in uscita locale utilizzando i parametri dall'app di terze parti
+- Passare alla modalità *Proxy automatico*. Una volta fatto, AdGuard non utilizzerà più la VPN locale, riconfigurando invece le iptable
+- Passare alla modalità *Proxy manuale*. Per farlo, vai in *Impostazioni* → *Filtraggio* → *Rete* → *Modalità d'instradamento*
 
 :::note Compatibilità
 
-The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
+La modalità *Proxy automatico* è accessibile soltanto sui dispositivi con root. Per il *Proxy manuale*, il root è necessario sui dispositivi con Android 10 o versioni successive.
 
 :::
 
-## Private DNS
+## DNS Privato
 
-The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
+La funzionalità del DNS privato è stata introdotta in Android Pie. Prima della versione Q, il DNS Privato non interrompeva la logica di filtraggio DNS di AdGuard e l'inoltro DNS tramite AdGuard funzionava normalmente. Ma a partire dalla versione Q, la presenza di DNS Privato forza le app a reindirizzare il traffico tramite il risolutore di sistema, anziché AdGuard. Visualizza il [blog per sviluppatori](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) di Android per ulteriori dettagli.
 
 - To solve the problem with Private DNS, use the `$network` rule
 

@@ -17,9 +17,9 @@ sidebar_position: 2
 - **AdGuard 追跡防止フィルタ**は、さまざまなオンラインカウンターとウェブ解析ツールの包括的なリストです。オンライン上で自分の行動を隠し、追跡を避けるために使えます。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
 - **AdGuard URL追跡防止フィルタ**は、URLからトラッキング（追跡）パラメーターを除去し、プライバシーを向上させます。ユーザーがAdGuardの「ステルスモード」でトラッキングパラメーターのブロックを選択すると、このフィルタは自動的に有効になります。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
 - **AdGuard SNS用フィルタ**は、人気ウェブサイトにある「いいね！」や「ツイート」ボタンなどのソーシャルメディア統合要素を削除します。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt)
-- **AdGuard 迷惑要素フィルタ**は、ウェブページ上の刺激的な要素をブロックします。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)以下のAdGuardフィルタが含まれています（以下のフィルタは、迷惑要素フィルタとは別に、一つ一つを有効にすることもできます）:
+- **Annoyance filters** block irritating elements on webpages. The following AdGuard filters are available:
 
-    - **Cookie通知フィルタ** は、Web ページ上の Cookie 通知をブロックします。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
+    - **Cookie Notices** blocks cookie notices on webpages. [含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt)
     - **ポップアップフィルタ**は、Webサイトの動作に関係ないすべてのポップアップをブロックします。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt)
     - **モバイルアプリバナーフィルタ**は、ウェブサイトのモバイルアプリを宣伝するバナーをブロックします。[含まれているルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     - **ウィジェットフィルタ**は、サードパーティのウィジェット（オンラインアシスタント、ライブサポートチャット）などをブロックします:。 [ルールを見る](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)

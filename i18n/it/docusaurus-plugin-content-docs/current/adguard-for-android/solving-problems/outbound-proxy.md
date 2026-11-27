@@ -1,5 +1,5 @@
 ---
-title: How to set up outbound proxy
+title: Come configurare il proxy in uscita
 sidebar_position: 7
 ---
 
@@ -9,83 +9,83 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-Below is a list of the most well-known applications that can be configured to work as proxies in AdGuard.
+Segue un elenco delle app più famose che possono essere configurate affinché operino da proxy in AdGuard.
 
 :::note
 
-If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
+Se la tua app non è elencata di seguito, ti preghiamo di controllarne le configurazioni del proxy nelle impostazioni, o di contattarne il team di supporto.
 
 :::
 
-AdGuard allows you to route your device's traffic through a proxy server. To access proxy settings, open **Settings** and then proceed to **Filtering** → **Network** → **Proxy**.
+AdGuard ti consente di instradare il traffico del tuo dispositivo attraverso un server proxy. Per accedere alle impostazioni proxy, apri **Impostazioni** e poi procedi a **Filtraggio** → **Rete** → **Proxy**.
 
-## Proxy configuration examples
+## Esempi di configurazione del proxy
 
-In this article we give examples of how to set up some of the most popular proxies to work with AdGuard.
+In questo articolo forniamo esempi di come configurare alcuni dei proxy più popolari per lavorare con AdGuard.
 
-### How to use AdGuard with Tor
+### Come utilizzare AdGuard con Tor
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
+1. Apri AdGuard e vai su **Impostazioni** → **Filtraggio** → **Rete** → **Proxy**. Scarica “Orbot: Proxy with Tor” direttamente da [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) oppure toccando **Integra con Tor** e poi **Installa**.
 
-1. Open Orbot and press the **Start** button on the application's main screen.
+1. Apri Orbot e premi il pulsante **Avvia** sulla schermata principale dell'applicazione.
 
-1. Go back to the **Proxy** screen of AdGuard.
+1. Torna alla schermata **Proxy** di AdGuard.
 
-1. Tap the **Integrate with Tor** button.
+1. Tocca il pulsante **Integra con Tor**.
 
-1. All the required fields will be pre-filled:
+1. Tutti i campi necessari saranno precompilati:
 
-    | Field      | Value                |
-    | ---------- | -------------------- |
-    | Proxy type | *SOCKS4* or *SOCKS5* |
-    | Proxy host | *127.0.0.1*          |
-    | Proxy port | *9050*               |
+    | Campo         | Valore              |
+    | ------------- | ------------------- |
+    | Tipo di proxy | *SOCKS4* o *SOCKS5* |
+    | Host proxy    | *127.0.0.1*         |
+    | Porta proxy   | *9050*              |
 
-    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as the default proxy.
+    Altrimenti, puoi toccarre **Proxy** → **Aggiungi proxy**, inserire questi valori manualmente, e impostare Orbot come proxy predefinito.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Abilita l'interruttore principale del Proxy e la protezione di AdGuard per instradare il traffico del tuo dispositivo attraverso il proxy.
 
-    Now AdGuard will route all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable the outbound proxy settings in AdGuard.
+    Ora, AdGuard inoltrerà tutto il traffico attraverso Orbot. Se disabiliti Orbot, la connessione alla rete globale non sarà disponibile, finché non disabiliterai le impostazioni del proxy in uscita in AdGuard.
 
-### How to use AdGuard with PIA (Private Internet Access)
+### Come usare AdGuard con PIA (Accesso Privato a Internet)
 
-*Here we presume that you are already a PIA VPN client and have it installed on your device.*
+*Qui supponiamo che tu abbia già un client VPN PIA e lo abbia installato sul tuo dispositivo.*
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Apri AdGuard e vai su **Impostazioni** → **Filtraggio** → **Rete** → **Proxy** → **Server proxy**.
 
-1. Tap the **Add proxy server** button and enter the following data:
+1. Tocca il pulsante **Aggiungi server proxy** e inserisci i seguenti dati:
 
-    | Field      | Value                                |
-    | ---------- | ------------------------------------ |
-    | Proxy type | *SOCKS5*                             |
-    | Proxy host | *proxy-nl.privateinternetaccess.com* |
-    | Proxy port | *1080*                               |
+    | Campo         | Valore                               |
+    | ------------- | ------------------------------------ |
+    | Tipo di proxy | *SOCKS5*                             |
+    | Host proxy    | *proxy-nl.privateinternetaccess.com* |
+    | Porta proxy   | *1080*                               |
 
 1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
 
-1. Tap **Save and select**.
+1. Tocca **Salva e seleziona**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Abilita l'interruttore principale del Proxy e la protezione di AdGuard per instradare il traffico del tuo dispositivo attraverso il proxy.
 
 ### How to use AdGuard with TorGuard
 
 *Here we presume that you are already a TorGuard client and have it installed on your device.*
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Apri AdGuard e vai su **Impostazioni** → **Filtraggio** → **Rete** → **Proxy** → **Server proxy**.
 
-1. Tap the **Add proxy server** button and enter the following data:
+1. Tocca il pulsante **Aggiungi server proxy** e inserisci i seguenti dati:
 
-    | Field      | Value                                       |
-    | ---------- | ------------------------------------------- |
-    | Proxy type | *SOCKS5*                                    |
-    | Proxy host | *proxy.torguard.org* or *proxy.torguard.io* |
-    | Proxy port | *1080* or *1085* or *1090*                  |
+    | Campo         | Valore                                      |
+    | ------------- | ------------------------------------------- |
+    | Tipo di proxy | *SOCKS5*                                    |
+    | Host proxy    | *proxy.torguard.org* or *proxy.torguard.io* |
+    | Porta proxy   | *1080* or *1085* or *1090*                  |
 
 1. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
 
-1. Tap **Save and select**.
+1. Tocca **Salva e seleziona**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Abilita l'interruttore principale del Proxy e la protezione di AdGuard per instradare il traffico del tuo dispositivo attraverso il proxy.
 
 ### How to use AdGuard with NordVPN
 
@@ -101,17 +101,17 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Enter the following data:
 
-    | Field      | Value                                                                                                                         |
-    | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
-    | Proxy type | *SOCKS5*                                                                                                                      |
-    | Proxy host | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
-    | Proxy port | *1080*                                                                                                                        |
+    | Campo         | Valore                                                                                                                        |
+    | ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+    | Tipo di proxy | *SOCKS5*                                                                                                                      |
+    | Host proxy    | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent) |
+    | Porta proxy   | *1080*                                                                                                                        |
 
 1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
-1. Tap **Save and select**.
+1. Tocca **Salva e seleziona**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Abilita l'interruttore principale del Proxy e la protezione di AdGuard per instradare il traffico del tuo dispositivo attraverso il proxy.
 
 ### How to use AdGuard with Shadowsocks
 
@@ -123,19 +123,19 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 :::
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Apri AdGuard e vai su **Impostazioni** → **Filtraggio** → **Rete** → **Proxy** → **Server proxy**.
 
 1. Tap the **Add proxy server** and fill in the fields:
 
-    | Field      | Value       |
-    | ---------- | ----------- |
-    | Proxy type | *SOCKS5*    |
-    | Proxy host | *127.0.0.1* |
-    | Proxy port | *1080*      |
+    | Campo         | Valore      |
+    | ------------- | ----------- |
+    | Tipo di proxy | *SOCKS5*    |
+    | Host proxy    | *127.0.0.1* |
+    | Porta proxy   | *1080*      |
 
-1. Tap **Save and select**.
+1. Tocca **Salva e seleziona**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Abilita l'interruttore principale del Proxy e la protezione di AdGuard per instradare il traffico del tuo dispositivo attraverso il proxy.
 
 ### How to use AdGuard with Clash
 
@@ -147,13 +147,13 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-1. Tap **Add proxy server** and fill in the fields:
+1. Tocca **Aggiungi server proxy** e compila i campi:
 
-    | Field      | Value       |
-    | ---------- | ----------- |
-    | Proxy type | *SOCKS5*    |
-    | Proxy host | *127.0.0.1* |
-    | Proxy port | *7891*      |
+    | Campo         | Valore      |
+    | ------------- | ----------- |
+    | Tipo di proxy | *SOCKS5*    |
+    | Host proxy    | *127.0.0.1* |
+    | Porta proxy   | *7891*      |
 
 ### How to use AdGuard with WG Tunnel
 
@@ -165,18 +165,18 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-1. Tap **Add proxy server** and fill in the fields:
+1. Tocca **Aggiungi server proxy** e compila i campi:
 
-    | Field      | Value       |
-    | ---------- | ----------- |
-    | Proxy type | *SOCKS5*    |
-    | Proxy host | *127.0.0.1* |
-    | Proxy port | *25344*     |
+    | Campo         | Valore      |
+    | ------------- | ----------- |
+    | Tipo di proxy | *SOCKS5*    |
+    | Host proxy    | *127.0.0.1* |
+    | Porta proxy   | *25344*     |
 
-1. Tap **Save and select**.
+1. Tocca **Salva e seleziona**.
 
-1. Enable the main proxy switch and AdGuard protection to route your device’s traffic through the proxy.
+1. Attivare l'interruttore proxy principale e la protezione AdGuard per instradare il traffico del dispositivo attraverso il proxy.
 
 ## Limitazioni
 
-However, at least one factor may prevent certain traffic from being routed through the outbound proxy, even after configuring the AdGuard proxy settings. That would be if the app itself isn't configured to send its traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.
+Tuttavia, almeno un fattore può impedire che il traffico sia instradato attraverso il proxy in uscita, anche dopo aver configurato le impostazioni del proxy di AdGuard. Questo accadrebbe se l'app stessa non fosse configurata per inviare il suo traffico attraverso AdGuard. Per farlo, devi procedere a **Gestione app**, scegliere l'app e attivare **Instrada il traffico attraverso AdGuard**.

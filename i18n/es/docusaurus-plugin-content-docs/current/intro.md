@@ -13,11 +13,16 @@ AdGuard es uno de los líderes en el mercado de software de bloqueo de anuncios 
 - [AdGuard para Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard para iOS](/adguard-for-ios/features/safari-protection)
 
-Pero también desarrollamos y mantenemos extensiones de navegador gratuitas para todos los navegadores populares:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
+
+- [AdGuard Mini for Android](/adguard-mini-for-android/)
+- [AdGuard Mini for Mac](/adguard-mini-for-mac/)
+
+We also maintain free browser extensions for all popular browsers:
 
 - [Extensión de navegador AdGuard](/adguard-browser-extension/availability)
-- [AdGuard para Safari](/archive/adguard-for-safari/features/general)
+- [AdGuard for Safari](/archive/adguard-for-safari/) — legacy, replaced by AdGuard Mini for Mac
 
 ## No solo bloqueo de anuncios
 
-El bloqueador de anuncios AdGuard hace más que simplemente bloquear anuncios. Te protegerá del seguimiento en línea y mejorará tu privacidad de muchas maneras. Dependiendo del producto específico, AdGuard también puede ofrecer ventajas como filtrado DNS para una protección más completa, control parental para proteger a tus hijos de contenido inapropiado, registro de filtrado para tener un mejor control sobre tu tráfico de Internet y más. Esta Base de conocimientos contiene información detallada sobre todos y cada uno de ellos. No dudes en consultar cualquier artículo que te interese.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

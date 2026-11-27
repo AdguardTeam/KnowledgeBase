@@ -16,3 +16,4 @@ Zde jsou uvedeny některé problémy, se kterými se můžete setkat, řešení,
 - [Jak se vyhnout problémům s kompatibilitou FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
 - [Jak blokovat reklamy na YouTube](/adguard-for-ios/solving-problems/block-youtube-ads.md)
 - [Průvodce nízkoúrovňovým nastavením](/adguard-for-ios/solving-problems/low-level-settings.md)
+- [Connectivity Assist compatibility issues](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27.md)

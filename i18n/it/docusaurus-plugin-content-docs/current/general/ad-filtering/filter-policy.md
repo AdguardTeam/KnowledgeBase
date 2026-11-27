@@ -163,7 +163,6 @@ Per una migliore personalizzazione, i filtri anti-fastidi sono divisi a seconda 
 - Filtro per Banner App Mobili di AdGuard
 - Filtro per Widget di AdGuard
 - Filtro Altri Fastidi di AdGuard
-- Filtro Anti-Fastidi di AdGuard: un filtro combinato che include tutti i 5 filtri anti-fastidi specializzati
 
 ### Lo scopo di questi filtri
 

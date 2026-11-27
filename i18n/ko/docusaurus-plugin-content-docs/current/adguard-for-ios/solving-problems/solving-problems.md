@@ -16,3 +16,4 @@ sidebar_position: 1
 - [FaceTime과의 호환성 문제를 피하는 방법](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
 - [YouTube 광고 차단하는 방법](/adguard-for-ios/solving-problems/block-youtube-ads.md)
 - [로우 레벨 설정](/adguard-for-ios/solving-problems/low-level-settings.md)
+- [Connectivity Assist compatibility issues](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27.md)

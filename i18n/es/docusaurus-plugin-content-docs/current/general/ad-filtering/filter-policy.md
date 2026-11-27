@@ -163,7 +163,6 @@ Para una mejor personalización, los filtros de molestias se dividen según su f
 - Filtro de banners en aplicaciones móviles
 - Filtro de widgets de AdGuard
 - Filtro AdGuard de otros elementos molestos
-- Filtro contra elementos irritantes de AdGuard: un filtro combinado que incluye todos los 5 filtros especializados contra elementos irritantes
 
 ### La finalidad de estos filtros
 

@@ -29,9 +29,15 @@ Jakmile je DNS ochrana zapnutá, máte tři možnosti:
 - **Použijte blokovací DNS server.** Jděte do *Ochrana* → *DNS ochrana* → *DNS server* a vyberte *AdGuard DNS* nebo jiný blokovací server podle svých představ.
 - **Přidejte vlastní DNS filtr nebo soubor hosts.** Můžete přidat více DNS filtrů a souborů hosts. Uvědomte si, že použití příliš velkého počtu může zpomalit AdGuard.
 
+:::info
+
+If system-wide filtering stops blocking ads in apps on iOS 27 or later, check if *Connectivity Assist* is enabled. Learn more in [How to fix ad blocking in apps on iOS 27](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27/).
+
+:::
+
 ## Jak přidat vlastní soubor DNS filtrování a soubor hosts
 
-Pro příklad přidejme [OISD Blocklist Big](https://oisd.nl/).
+For example, let’s add the [OISD Blocklist Big](https://oisd.nl/).
 
 1. Zkopírujte odkaz na OISD Blocklist Big: `https://big.oisd.nl`
 2. Otevřete *Ochranu*  → *DNS ochrana* → *DNS filtrování* → *DNS filtry*.
@@ -41,4 +47,4 @@ Pro příklad přidejme [OISD Blocklist Big](https://oisd.nl/).
 
 ![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/adding_dns_filter.png)
 
-Opakováním kroku 4 s jinou adresou URL přidejte libovolný počet filtrů DNS. Různé seznamy filtrů a odkazy na ně najdete na adrese [filterlists.com](https://filterlists.com).
+Add any number of DNS filters by repeating step 4 with a different URL. You can find various filter lists and their links at [filterlists.com](https://filterlists.com).

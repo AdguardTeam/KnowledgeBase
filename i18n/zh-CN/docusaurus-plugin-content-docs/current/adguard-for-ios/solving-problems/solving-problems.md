@@ -16,3 +16,4 @@ sidebar_position: 1
 - [如何避免与 FaceTime 的兼容性问题](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
 - [如何在 YouTube 应用中拦截广告](/adguard-for-ios/solving-problems/block-youtube-ads.md)
 - [低级设置指南](/adguard-for-ios/solving-problems/low-level-settings.md)
+- [Connectivity Assist compatibility issues](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27.md)

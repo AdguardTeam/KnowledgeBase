@@ -1,5 +1,5 @@
 ---
-title: How to generate HAR files
+title: Come generare file HAR
 sidebar_position: 5
 ---
 
@@ -11,37 +11,37 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::note
 
-HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+I file HAR sono trattati in conformità con [la Politica di riservatezza di AdGuard](https://adguard.com/en/privacy.html).
 
 :::
 
-## What are HAR files?
+## Cosa sono i file HAR?
 
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format define archival data for HTTP transactions that a browser uses to export detailed information about the web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](https://www.softwareishard.com/blog/har-12-spec/) website.
+Il formato HAR (HTTP ARchive) è un file di archivio formattato in JSON per la registrazione dell'interazione di un browser web con un sito. Le specifiche del formato HAR definiscono i dati di archiviazione per le transazioni HTTP, usate da un browser per esportare informazioni dettagliate sulle pagine web caricate. Una descrizione più dettagliata del formato del file HAR e le sue specifiche si può trovare sul sito web di [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to generate HAR files
+## Come generare file HAR
 
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files, follow these steps:
+Talvolta dobbiamo analizzarli per bloccare annunci specifici, difficili da riprodurre per qualche motivo. Per ottenere i file HAR, segui questi passaggi:
 
-1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
-2. Tap **General** →**Advanced** → **Low-level settings**.
-3. Scroll down and activate **Capture HAR** in the Filtering section.
-4. Open the app and perform the necessary actions to reproduce the problem.
-5. Turn **Capture HAR** off.
-6. Go back to **Advanced**.
-7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
+1. Apri AdGuard e vai su **Impostazioni** (icona ⚙ nell'angolo in basso a destra).
+2. Tocca **Generale** →**Avanzate** → **Impostazioni di basso livello**.
+3. Scorri verso il basso e attiva **Cattura HAR** nella sezione Filtraggio.
+4. Apri l'app ed esegui le azioni necessarie per riprodurre il problema.
+5. Disattiva **Cattura HAR**.
+6. Torna a **Avanzato**.
+7. Tocca **Esporta registri e informazioni di sistema** → **Consenti** (se necessario) → **Salva**.
 
-**Send the generated file with the logs to the AdGuard support service.**
+**Invia il file generato con i registri al servizio di assistenza di AdGuard.**
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+Il nostro team di supporto elaborerà il tuo ticket molto più velocemente se specifichi il numero del ticket HelpDesk o il numero del problema GitHub nel tuo messaggio.
 
 :::
 
-## How to analyze HAR files
+## Come analizzare i file HAR
 
-Here are some sources that we can recommend to analyze HAR files:
+Ecco alcune fonti che consigliamo per analizzare i file HAR:
 
-- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-- [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) è uno strumento di analisi HAR che visualizza i file di registro HTTP ARchive (HAR) creati dagli strumenti di monitoraggio di HTTP.
+- [Fiddler](https://www.telerik.com/fiddler) è un proxy di debug web che ti consente di catturare, ispezionare e monitorare tutto il traffico HTTP(S) tra il tuo computer e Internet, imitare le richieste e diagnosticare i problemi di rete.

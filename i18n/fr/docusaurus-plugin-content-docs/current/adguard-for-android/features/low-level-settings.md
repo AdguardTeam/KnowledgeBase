@@ -17,11 +17,11 @@ La modification des paramètres de bas niveau peut entraîner des problèmes de 
 
 :::
 
-Pour accéder aux _Paramètres de bas niveau_, ouvrez l'application AdGuard et appuyez sur l'icône d'engrenage dans le coin inférieur droit de l'écran. Then select _General → Advanced → Low-level settings_.
+Pour accéder aux _Paramètres de bas niveau_, ouvrez l'application AdGuard et appuyez sur l'icône d'engrenage dans le coin inférieur droit de l'écran. Sélectionnez ensuite _Général → Avancé → Paramètres de bas niveau_.
 
 ## Paramètres de bas niveau
 
-For AdGuard for Android v4.x we’ve completely redesigned the low-level settings. Nous avons retravaillé la liste des paramètres et les avons organisés en groupes thématiques avec des descriptions améliorées. Nous avons également ajouté une validation de l'input et d'autres dispositifs de sécurité.
+Pour AdGuard pour Android v4.x, nous avons entièrement repensé les paramètres de bas niveau. Nous avons retravaillé la liste des paramètres et les avons organisés en groupes thématiques avec des descriptions améliorées. Nous avons également ajouté une validation de l'input et d'autres dispositifs de sécurité.
 
 ### Protection DNS
 
@@ -30,7 +30,7 @@ For AdGuard for Android v4.x we’ve completely redesigned the low-level setting
 Ici, vous pouvez spécifier le ou les résolveurs DNS de traitement de secours à utiliser lorsque le serveur configuré n'est pas disponible. Options disponibles :
 
 - _DNS automatique_: Sélectionnez cette option si vous souhaitez utiliser le DNS système ou le DNS AdGuard.
-- _None_: Select this option if you do not want to have any fallback.
+- _Aucun_ : Sélectionnez cette option si vous ne souhaitez pas de solution de repli.
 - _DNS personnalisé_ : Sélectionnez cette option et saisissez des adresses IPv4 ou IPv6 de serveur DNS simples, une par ligne. Ces adresses seront utilisées en amont.
 
 #### Domaines de secours
@@ -50,20 +50,20 @@ Bootstrap DNS pour les DNS chiffrés en amont, tels que les serveurs DoH, DoT et
 
 #### Mode de blocage pour les règles de type adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for example, `||example.org^`). Options disponibles :
+Ici, vous pouvez spécifier le type de réponse pour les domaines bloqués par les règles DNS basées sur la syntaxe des règles de blocage publicitaire (par exemple, `||example.org^`). Options disponibles :
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Vous devrez entrer une adresse IPv4 pour les requêtes A bloquées et une adresse IPv6 pour les requêtes AAAA bloquées.
+- _REFUSED_ : Répondre avec le code REFUSED
+- _NXDOMAIN_ : Répondre avec le code NXDOMAIN
+- _Adresse IP personnalisée_ : sélectionnez cette option pour renvoyer une adresse IP personnalisée. Vous devrez entrer une adresse IPv4 pour les requêtes A bloquées et une adresse IPv6 pour les requêtes AAAA bloquées.
 
 #### Mode de blocage pour les règles d’hôtes
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax
-(for example, `<ip> <domain> 0.0.0.0 example.com`).
+Ici, vous pouvez spécifier le type de réponse pour les domaines bloqués par les règles DNS basées sur la syntaxe de règle d'hôtes
+(par exemple, `<ip> <domain> 0.0.0.0 example.com`).
 
-- _REFUSED_: Respond with REFUSED
-- _NXDOMAIN_: Respond with NXDOMAIN
-- _Custom IP address_: Select this option to respond with a custom IP address. Vous devrez entrer une adresse IPv4 pour les requêtes A bloquées et une adresse IPv6 pour les requêtes AAAA bloquées.
+- _REFUSED_ : Répondre avec le code REFUSED
+- _NXDOMAIN_ : Répondre avec le code NXDOMAIN
+- _Adresse IP personnalisée_ : sélectionnez cette option pour renvoyer une adresse IP personnalisée. Vous devrez entrer une adresse IPv4 pour les requêtes A bloquées et une adresse IPv6 pour les requêtes AAAA bloquées.
 
 #### Délai d'attente pour les requêtes DNS
 
@@ -104,9 +104,9 @@ Si cette option est activée, AdGuard filtrera les requêtes DNS chiffrées en p
 
 Ce paramètre dispose de deux modes :
 
-- **Filter on the fly**. Dans ce mode, AdGuard filtrera le trafic DNS-over-HTTPS sans le rediriger vers le proxy DNS local. Il utilisera le serveur DNS indiqué dans les paramètres du navigateur.
+- **Filtrer à la volée**. Dans ce mode, AdGuard filtrera le trafic DNS-over-HTTPS sans le rediriger vers le proxy DNS local. Il utilisera le serveur DNS indiqué dans les paramètres du navigateur.
 
-- **Redirect to DNS proxy**. Dans ce mode, AdGuard redirigera les requêtes DNS-over-HTTPS vers le proxy DNS local pour le filtrage. Il utilisera le serveur DNS sélectionné dans les paramètres DNS de l'application AdGuard.
+- **Redirection vers un proxy DNS**. Dans ce mode, AdGuard redirigera les requêtes DNS-over-HTTPS vers le proxy DNS local pour le filtrage. Il utilisera le serveur DNS sélectionné dans les paramètres DNS de l'application AdGuard.
 
 ### Filtrage
 
@@ -122,7 +122,7 @@ Ce paramètre peut ralentir votre appareil. Utilisez-le uniquement à des fins d
 
 Si cette option est activée, AdGuard chiffrera les requêtes ClientHellos, si nécessaire. Cette fonctionnalité nécessite l'activation du filtrage HTTPS. Cette fonctionnalité utilise un proxy DNS local pour rechercher la configuration ECH du domaine. Si elle est trouvée, le paquet Client Hello sera chiffré. Veillez à utiliser un serveur DNS crypté doté de cette fonctionnalité.
 
-**About ClientHellos and ECH**: Every encrypted Internet connection has an unencrypted part. Il s'agit du tout premier paquet qui contient le nom du serveur auquel vous vous connectez. La technologie Encrypted Client Hello est conçue pour résoudre ce problème en chiffrant ce paquet.
+**À propos des ClientHellos et ECH** : Toute connexion Internet chiffrée comporte une partie non chiffrée. Il s'agit du tout premier paquet qui contient le nom du serveur auquel vous vous connectez. La technologie Encrypted Client Hello est conçue pour résoudre ce problème en chiffrant ce paquet.
 
 #### Vérification OCSP
 
@@ -136,61 +136,61 @@ Si la vérification prend trop de temps, AdGuard autorisera la connexion tout en
 
 Si cette option est activée, AdGuard filtrera les requêtes envoyées via HTTP/3 en plus des autres types de requêtes. Cette fonctionnalité nécessite l'activation du filtrage HTTPS.
 
-**About HTTP/3**: This is the latest version of the HTTP protocol, based on QUIC.
+**À propos de HTTP/3** : Il s’agit de la dernière version du protocole HTTP, basée sur QUIC.
 
 **Limitations**:
 
-- Chrome-based browsers do not accept user certificates, so HTTP/3 filtering is not supported in them.
-- Firefox-based browsers behave similarly by default, but you can set the `network.http.http3.disable_when_third_party_roots_found` option in `about:config` to `false` to allow user certificates for HTTP/3.
-- Safari supports HTTP/3 filtering without additional configuration.
+- Les navigateurs basés sur Chrome n'acceptent pas les certificats utilisateur, le filtrage HTTP/3 n'y est donc pas pris en charge.
+- Les navigateurs basés sur Firefox se comportent de manière similaire par défaut, mais vous pouvez définir l'option `network.http.http3.disable_when_third_party_roots_found` dans `about:config` sur `false` pour autoriser les certificats utilisateur pour HTTP/3.
+- Safari prend en charge le filtrage HTTP/3 sans configuration supplémentaire.
 
 ### Proxy sortant
 
 #### Afficher le paramètre « Filtrer les requêtes DNS »
 
-When this setting is enabled, the _Filter DNS requests_ switch is displayed in the _Add proxy server_ dialog. To access the dialog, open **Settings**, then go to **Filtering** → **Network** → **Proxy** → **Proxy server**, and click _+ Add proxy server_. L'activation de ce paramètre permet de filtrer les requêtes DNS transitant par le proxy sortant spécifié.
+Lorsque ce paramètre est activé, le bouton _Filtrer les requêtes DNS_ s'affiche dans la boîte de dialogue _Ajouter un serveur proxy_. Pour accéder à la boîte de dialogue, ouvrez **Paramètres**, puis accédez à **Filtrage** → **Réseau** → **Proxy** → **Serveur proxy**, puis cliquez sur _+ Ajouter un serveur proxy_. L'activation de ce paramètre permet de filtrer les requêtes DNS transitant par le proxy sortant spécifié.
 
 ### Protection
 
 #### Plages de ports
 
-Ce paramètre vous permet de définir les plages de ports à filtrer. Saisissez les plages de ports, une plage par ligne. Use `..` to specify the range. For example, `80..5221`.
+Ce paramètre vous permet de définir les plages de ports à filtrer. Saisissez les plages de ports, une plage par ligne. Utilisez `..` pour spécifier la plage. Par exemple, `80..5221`.
 
 #### Journaliser les événements HTML supprimés
 
-If this setting is enabled, AdGuard will write information about blocked HTML elements to _Recent activity_. To access the logs, go to go to **Statistics** → **Recent activity**.
+Si ce paramètre est activé, AdGuard enregistrera les informations relatives aux éléments HTML bloqués dans _Activité récente_. Pour accéder aux logs, rendez-vous dans _Statistiques_ → _Activité récente_.
 
-#### Scriptlet debugging
+#### Débogage de scriptlets
 
-If this setting is enabled, the app will display debugging information in the browser console. In this mode, debugging in scriptlets is activated, and the browser logs the events that occur when applying scriptlet rules are applied.
+Si ce paramètre est activé, l'application affichera des informations de débogage dans la console du navigateur. Dans ce mode, le débogage des scriptlets est activé, et le navigateur consigne les événements qui se produisent lors de l'application des règles de scriptlet.
 
-#### Excluded apps
+#### Applications exclues
 
-This setting allows you to list the packages and UIDs to exclude from AdGuard protection. Enter package names or UIDs, one per line. Vous pouvez utiliser `//` pour les commentaires.
+Ce paramètre vous permet de répertorier les paquets et les UID à exclure de la protection AdGuard. Saisissez les noms de paquets ou les UID, un par ligne. Vous pouvez utiliser `//` pour les commentaires.
 
-#### QUIC bypass packages
+#### Paquets de contournement QUIC
 
-Here you can specify package names for which AdGuard should bypass QUIC traffic. Enter package names, one per line. Vous pouvez utiliser `//` pour les commentaires.
+Ici, vous pouvez indiquer les noms des paquets pour lesquels AdGuard doit contourner le trafic QUIC. Saisissez les noms des paquets, un par ligne. Vous pouvez utiliser `//` pour les commentaires.
 
-#### Reconfigure Automatic proxy when network changes
+#### Reconfigurer le proxy automatique en cas de changement de réseau
 
-If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy parameters when your device connects to another network. This setting only applies when _Routing mode_ is set to _Automatic proxy_.
+Si cette option est activée, la protection AdGuard redémarrera afin de reconfigurer les paramètres du proxy automatique lorsque votre appareil se connectera à un autre réseau. Ce paramètre ne s'applique que lorsque le _Mode de routage_ est réglé sur _Proxy automatique_.
 
-#### IPv6 filtering
+#### Filtrage IPv6
 
-If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
+Si ce paramètre est activé, AdGuard filtrera les réseaux IPv6 lorsqu'une interface réseau IPv6 est disponible.
 
-#### IPv4 ranges excluded from filtering
+#### Plages IPv4 exclues du filtrage
 
-Here you can list the IPv4 ranges to exclude from filtering. Saisissez une plage d'adresses IP par ligne. Vous pouvez utiliser `//` pour les commentaires.
+Ici, vous pouvez indiquer les plages d'adresses IPv4 à exclure du filtrage. Saisissez une plage d'adresses IP par ligne. Vous pouvez utiliser `//` pour les commentaires.
 
-#### IPv6 ranges excluded from filtering
+#### Plages IPv6 exclues du filtrage
 
-Here you can list the IPv6 ranges to exclude from filtering. Saisissez une plage d'adresses IP par ligne. Vous pouvez utiliser `//` pour les commentaires.
+Ici, vous pouvez indiquer les plages d'adresses IPv6 à exclure du filtrage. Saisissez une plage d'adresses IP par ligne. Vous pouvez utiliser `//` pour les commentaires.
 
-#### TCP keepalive for outgoing sockets
+#### Maintien de connexion TCP pour les sockets sortants
 
-If this setting is enabled, AdGuard will send a keepalive probe after the specified time interval to ensure that the TCP connection is still alive. After a system-defined number of unsuccessful attempts to get a response from the server, the system will automatically close the TCP connection.
+Si ce paramètre est activé, AdGuard enverra une sonde de maintien de connexion après l’intervalle de temps spécifié afin de s’assurer que la connexion TCP est toujours active. Après un nombre défini par le système de tentatives infructueuses pour obtenir une réponse du serveur, le système fermera automatiquement la connexion TCP.
 
 Ce paramètre vous permet de spécifier :
 

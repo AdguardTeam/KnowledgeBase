@@ -19,7 +19,7 @@ sidebar_position: 4
 
 - AdGuard 베이스 필터
 - AdGuard 추적 보호 필터 및 AdGuard URL 추적 필터
-- AdGuard 방해 요소 필터
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - 언어별 필터
 
 이러한 필터는 대부분의 광고, 추적기 및 성가신 요소를 차단하는 데 중요한 역할을 합니다. 고급 광고 차단을 위해 사용자 정의 필터와 사용자 규칙을 사용할 수 있습니다.

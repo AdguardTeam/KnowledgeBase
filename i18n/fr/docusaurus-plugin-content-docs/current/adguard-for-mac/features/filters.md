@@ -19,7 +19,7 @@ Nous vous recommandons d'activer les filtres suivants :
 
 - Filtre de base AdGuard
 - Filtre de protection contre le suivi AdGuard et Filtre anti-suivi des URL AdGuard
-- Filtre anti-nuisances AdGuard
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filtres pour votre langue
 
 Ces filtres sont importants pour bloquer la plupart des publicités, traqueurs et éléments ennuyeux. Pour un blocage des publicités plus avancé, vous pouvez utiliser des filtres personnalisés et des règles utilisateur.

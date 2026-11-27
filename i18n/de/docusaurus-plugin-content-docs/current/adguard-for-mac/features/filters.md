@@ -19,7 +19,7 @@ Wir empfehlen, die folgenden Filter zu aktivieren:
 
 - AdGuard Basisfilter
 - AdGuard Tracking-Schutzfilter und AdGuard URL-Tracking-Filter
-- AdGuard Belästigungsfilter
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filter für Ihre Sprache
 
 Diese Filter sind wichtig, um die meiste Werbung, Tracker und störende Elemente zu blockieren. Für eine erweiterte Werbeblockierung können Sie benutzerdefinierte Filter und Benutzerregeln verwenden.

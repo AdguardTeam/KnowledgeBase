@@ -16,3 +16,4 @@ sidebar_position: 1
 - [Как избежать проблем совместимости с FaceTime](/adguard-for-ios/solving-problems/facetime-compatibility-issues.md)
 - [Как заблокировать рекламу на YouTube](/adguard-for-ios/solving-problems/block-youtube-ads.md)
 - [Низкоуровневые настройки](/adguard-for-ios/solving-problems/low-level-settings.md)
+- [Connectivity Assist compatibility issues](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27.md)

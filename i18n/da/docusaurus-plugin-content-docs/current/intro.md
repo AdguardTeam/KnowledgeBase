@@ -13,11 +13,16 @@ AdGuard er en af de førende på markedet for adblockingsoftware med 15+ års er
 - [AdGuard til Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard til iOS](/adguard-for-ios/features/safari-protection)
 
-Vi udvikler og vedligeholder dog også gratis webbrowserudvidelser til alle populære webbrowsere:
+For browsers, we offer lightweight apps and extensions with free core features and a paid full version:
 
-- [AdGuard Browser Extension](/adguard-browser-extension/availability)
-- [AdGuard til Safari](/archive/adguard-for-safari/features/general)
+- [AdGuard Mini til Android](/adguard-mini-for-android/)
+- [AdGuard Mini til Mac](/adguard-mini-for-mac/)
+
+Vi vedligeholder også gratis webbrowserudvidelser til alle populære webbrowsere:
+
+- [AdGuard Browser Extesion](/adguard-browser-extension/availability)
+- [AdGuard til Safari](/archive/adguard-for-safari/) — uddateret, erstattet af AdGuard Mini til Mac
 
 ## Ikke kun adblocking
 
-AdGuard Ad Blocker gør mere end blot blokere annoncer. Den beskytter også mod onlinesporing og styrker fortroligheden på mange måder. Afhængigt af det specifikke produkt kan AdGuard også tilbyde fordele såsom DNS-filtrering for en mere omfattende beskyttelse, Forældrekontrol for at beskytte børn mod upassende indhold, Filtreringslog for at opnå bedre styring af internettrafik og meget mere. Denne Vidensbase indeholder detaljerede oplysninger om dem alle — spring blot til en hvilken som helst artikel, der måtte have interesse.
+AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge Base contains detailed information about any and all of them — feel free to jump to any article that interests you.

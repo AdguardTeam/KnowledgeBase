@@ -25,50 +25,54 @@ DNS設定を管理するには、AdGuardアプリはローカルVPNの確立を�
 
 「ネイティブ」実装では、DNS はアプリではなくシステムによって処理されます。つまりこの場合、AdGuard はローカルVPNを作成する必要がありません。しかし残念ながら、この方法ですと、システムの制限を回避し、他のVPNベースアプリと一緒にAdGuardを使用することはできません。VPNが有効になっている場合、ネイティブDNSは無視されるからです。その結果、トラフィックをローカルでフィルタリングしたり、新しい[DNS-over-QUICプロトコル(DoQ)](https://adguard-dns.io/blog/dns-over-quic.html)を使用することができなくなります。
 
-### DNSサーバー
+:::note
+When using the _AdGuard_ implementation on iOS 27 or later, the system _Connectivity Assist_ feature can route DNS queries outside the local tunnel in _Split-Tunnel_ mode. If you notice ads appearing in apps while DNS protection is active, see [How to fix ad blocking in apps on iOS 27](/adguard-for-ios/solving-problems/how-to-fix-ad-blocking-in-apps-ios-27/).
+:::
 
-DNS通信を保護画面で次に表示されるセクションは「DNS サーバー」です。ここでは、現在選択されているDNSサーバーと暗号化タイプが表示されます。これを変更するには、ボタンをタップしてDNSサーバー画面に入ります。
+### DNS servers {#dns-servers}
+
+The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
 
 ![DNS servers \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
-DNSサーバーはいろいろあり、その速度、採用されているプロトコル、信頼性、ロギングポリシーなどによって異なります。デフォルトでは、AdGuard は、最も一般的なDNSサーバー（AdGuard DNS を含む）の中から複数のDNSサーバーを一覧として提案します。暗号化タイプを変更したり（変更できるオプションがサーバーの所有者によって提供されている場合）、サーバーのホームページを表示するには、それぞれのDNSサーバーをタップします。選びやすいように、一覧にあるDNSサーバーに「ノーログポリシー」、「広告ブロック」、「セキュリティ」などのラベルを追加しております。
+Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
 
-さらに、画面の下部にはカスタムDNSサーバーを追加するオプションもあります。このオプションは、通常のサーバー、DNSCryptサーバー、DNS-over-HTTPSサーバー、DNS-over-TLSサーバー、DNS-over-QUICサーバーをサポートしています。
+In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC servers.
 
-#### DNS-over-HTTPSのHTTPベーシック認証
+#### HTTP basic authentication for DNS-over-HTTPS
 
-この機能は、HTTPプロトコルの認証機能を、認証を内蔵していないDNSにもたらしてくれます。 DNS認証は、カスタムDNSサーバーへのアクセスを特定のユーザーに制限したい場合に便利です。
+This feature brings the authentication capabilities of the HTTP protocol to DNS, which does not have built-in authentication. Authentication in DNS is useful if you want to restrict access to your custom DNS server to specific users.
 
-この機能を有効にするには:
+To enable this feature:
 
-1. AdGuard DNS ダッシュボードに移動し、_サーバー設定_ → _デバイス_ → _設定_ で、DNSサーバーを認証付きのものに変更します。「_他のプロトコルを拒否_」をクリックすると、他のプロトコルの使用オプションが削除され、DNS-over-HTTPS 認証のみが有効になり、第三者による使用が防止されます。次に、生成されたアドレスをコピーします。
+1. In AdGuard DNS, go to _Server settings_ → _Devices_ → _Settings_ and change the DNS server to the one with authentication. Clicking _Deny other protocols_ will remove other protocol usage options, leaving only DNS-over-HTTPS authentication enabled and preventing its use by third parties. Copy the generated address.
 
-![認証付きDNS-over-HTTPS](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-ja.png)
+![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
-1. AdGuard for iOS アプリで、_AdGuardによる保護_（画面下の左から2番目の盾アイコン） → _DNS通信を保護_ → _DNS サーバー_ に移動し、生成されたアドレスを「_カスタム DNS サーバーを追加する_」フィールドに貼り付けます。新しい構成を保存して選択します。
+1. In AdGuard for iOS, go to the _Protection tab_ → _DNS protection_ → _DNS server_ and paste the generated address into the _Add a custom DNS server_ field. Save and select the new configuration.
 
-すべてが正しく設定されているかどうかを確認するには、[AdGuard診断ページ](https://adguard.com/en/test.html)にアクセスしてください。
+To check if everything is set up correctly, visit our [diagnostics page](https://adguard.com/en/test.html).
 
-### ネットワーク設定
+### Network settings {#network-settings}
 
 ![Network settings screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-ネットワーク設で DNS セキュリティを管理することもできます。[_モバイルデータをフィルタリング_]と[_Wi-Fiをフィルタリング_]という設定は、それぞれのネットワークタイプのDNS通信保護を有効・無効にします。さらに下にある「_Wi-Fi除外_」では、特定のWi-FiネットワークをDNS通信保護から除外できます（たとえば、[AdGuard Home](https://adguard.com/adguard-home/overview.html)を使用している場合は、ホームネットワークを除外しておくことができます）。
+Users can also handle their DNS security on the Network settings screen. _Filter mobile data_ and _Filter Wi-Fi_ enable or disable DNS protection for the respective network types. Further down, at _Wi-Fi exceptions_, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
-### DNSフィルタリング
+### DNS filtering {#dns-filtering}
 
-「DNSフィルタリング」では、AdGuard DNS フィルタを有効にしたり、カスタムDNSフィルタを追加したり、DNSブラックリスト・ホワイトリストを使用したりすることで、DNSトラフィックをカスタマイズできます。
+DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
 
-この設定を開く方法:
+How to access:
 
-_AdGuardによる保護_（画面下の左から2番目の盾アイコン） → _DNS通信を保護_ → _DNSフィルタリング_
+_Protection_ (the shield icon in the bottom menu bar) → _DNS protection_ → _DNS filtering_
 
 ![DNS filtering screen \*mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
-#### DNSフィルタ
+#### DNS filters {#dns-filters}
 
-Safariで動作するフィルタと同様に、DNSフィルタは[特別な構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)に従って記述されたルールのセットです。 AdGuard は、DNSトラフィックを監視し、フィルタのルール1つ以上にマッチするDNSリクエストをブロックします。 [AdGuard DNS フィルタ](https://github.com/AdguardTeam/AdguardSDNSFilter)などのフィルターを使用したり、フィルタとしてhostsファイルを追加したりできます。同時に複数のフィルタも追加できます。 To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [this exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering).
 
-#### ホワイトリストとブラックリスト
+#### Allowlist and Blocklist {#allowlist-blocklist}
 
-DNSフィルタに加えて、単一のドメインをブラックリストまたはホワイトリストに追加することで、DNSフィルタリングに的を絞った影響を与えることができます。ブラックリストは同じDNS構文もサポートしており、Safariコンテンツブロックのホワイトリストと同様に、両方をインポートおよびエクスポートできます。
+On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.

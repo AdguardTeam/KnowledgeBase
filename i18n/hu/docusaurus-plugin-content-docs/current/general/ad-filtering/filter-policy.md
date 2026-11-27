@@ -163,7 +163,6 @@ A jobb testreszabás érdekében a bosszúságszűrőket céljuk szerint osztjá
 - AdGuard Mobile App Banners szűrő
 - AdGuard Widgets szűrő
 - AdGuard Egyéb Kellemetlenségek elleni szűrő
-- AdGuard Annoyances szűrő – egy kombinált szűrő, amely mind az 5 speciális bosszúságszűrőt tartalmazza
 
 ### Ezeknek a szűrőknek a célja
 

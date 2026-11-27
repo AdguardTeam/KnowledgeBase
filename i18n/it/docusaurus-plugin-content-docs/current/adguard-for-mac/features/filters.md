@@ -19,7 +19,7 @@ Ti consigliamo di abilitare i seguenti filtri:
 
 - Filtro di base di AdGuard
 - Filtro di protezione dal tracciamento AdGuard e filtro di tracciamento degli URL AdGuard
-- Filtro AdGuard Anti-Fastidio
+- Annoyance filters: Cookie Notices, Popups, Mobile App Banners, Widgets, and Other Annoyances
 - Filtri per la tua lingua
 
 Questi filtri sono importanti per bloccare la maggior parte degli annunci, tracker ed elementi fastidiosi. Per un blocco degli annunci più avanzato, puoi utilizzare filtri personalizzati e regole utente.

@@ -1,5 +1,5 @@
 ---
-title: Certificate installation on devices with Android 11+
+title: Installazione dei certificati sui dispositivi con Android 11+
 sidebar_position: 11
 ---
 
@@ -9,46 +9,46 @@ Questo articolo riguarda AdGuard per Android, un blocca-inserzioni multifunziona
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install its certificate into your device’s user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+Per poter [filtrare il traffico HTTPS](/general/https-filtering/what-is-https-filtering.md) (estremamente importante, poiché adoperato da gran parte delle inserzioni), AdGuard deve installare un certificato nell'archivio utente del tuo dispositivo. Sulle versioni precedenti di Android, ciò avveniva automaticamente, ma su Android 11 e successivi, gli utenti devono installarlo manualmente.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
+![Certificato *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/screenCA.gif)
 
-Follow these steps to install the AdGuard certificate:
+Segui questi passaggi per installare il certificato di AdGuard:
 
-1. Open the app. On the *Home* screen, tap *HTTPS filtering is off*.
+1. Apri l'app. Nella schermata *Inizio*, tocca *filtraggio HTTPS disattivato*.
 
-1. Then you’ll be presented with three screens:
-    - HTTPS filtering is critical for ad blocking
-    - AdGuard’s HTTPS filtering is safe
-    - AdGuard certificate
+1. Quindi, ti si presenteranno tre schermate che spiegano:
+    - Perché filtrare il traffico HTTPS
+    - La sicurezza di questo processo di filtraggio
+    - Certificato di AdGuard
 
-1. Consecutively, tap *Continue* → *Next* → *Save certificate*.
+1. Successivamente, tocca *Continua* → *Avanti* → *Salva certificato*.
 
-1. Tap *Save* at the bottom of the opened *Download* folder.
+1. Tocca su *Salva* in fondo alla cartella *Download* che si è aperta.
 
-1. After saving, copy the text from the *CA Certificate* field and tap *Open Settings*.
+1. Dopo aver salvato, copia il testo dal campo *Certificato CA* e tocca *Apri impostazioni*.
 
-1. Open *Settings* and either paste or type *CA Certificate* in the search bar. Tap the respective option.
+1. Apri *Impostazioni* e incolla o digita *Certificato CA* nella barra di ricerca. Tocca l'opzione corrispondente.
 
-1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
+1. Potresti visualizzare un avviso. In tal caso, tocca *Installa comunque* e, se necessario, inserisci il tuo PIN.
 
-1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
+1. Seleziona il file del certificato di AdGuard. Il suo nome dovrebbe somigliare a *adguard_1342:020322.crt*.
 
-You’re all set! Once the certificate is installed successfully, you’ve enabled HTTPS filtering.
+Sei pronto! Una volta installato correttamente il certificato, avrai abilitato il filtraggio HTTPS.
 
-If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
+Se riscontri problemi durante l'installazione manuale del certificato (ad esempio, hai installato il certificato, ma l'applicazione continua a ignorarlo), puoi seguire una delle soluzioni seguenti.
 
-1. Restart AdGuard.
-1. Try to install the correct certificate (AdGuard Personal CA) one more time.
+1. Riavvia AdGuard.
+1. Prova nuovamente a installare il certificato corretto (AdGuard Personal CA).
 
-## Security warnings
+## Avvisi di sicurezza
 
-In earlier versions of Android, the quick settings panel displayed the message “Network may be monitored.” Tapping it will open a window with detailed information.
+Nelle versioni precedenti di Android, il pannello delle impostazioni rapide mostrava il messaggio "La rete dedicata può essere monitorata." Toccandolo si aprirà una finestra con informazioni dettagliate.
 
-Starting with Android 15, in addition to “Network may be monitored”, users will see a warning notification after installing a certificate and after restarting the device: “Certificate authorities installed by an unknown third party.” This means that the system has detected third-party certificates in the user certificate store. Tapping the notification opens a list of certificates in the user certificate store.
+A partire da Android 15, oltre a "La rete dedicata può essere monitorata", gli utenti vedranno un avviso di notifica dopo aver installato un certificato e dopo aver riavviato il dispositivo: "Autorità di certificazione installate da una terza parte sconosciuta." Ciò significa che il sistema ha rilevato certificati di terze parti nell'archivio dei certificati dell'utente. Toccando la notifica si apre una lista di certificati presenti nell'archivio certificati utente.
 
-Despite these warnings, your traffic remains secure. Your connection to remote servers stays encrypted. What AdGuard does is simply verify the server’s certificate before deciding whether to filter the connection — similar to how a browser works.
+Nonostante questi avvisi, il tuo traffico rimane sicuro. La tua connessione con i server remoti resta crittografata. Quello che fa AdGuard è semplicemente verificare il certificato del server prima di decidere se filtrare la connessione, in modo simile a come funziona un browser.
 
-[Learn more about HTTPS filtering and how the certificate works](/general/https-filtering/what-is-https-filtering.md).
+[Scopri di più sul filtraggio HTTPS e su come funziona il certificato](/general/https-filtering/what-is-https-filtering.md).
 
-If you still encounter a problem and can’t install the certificate, please contact our support team at [support@adguard.com](mailto:support@adguard.com).
+Se riscontri ancora un problema e non riesci a installare il certificato, contatta il nostro gruppo di assistenza all'indirizzo [support@adguard.com](mailto:support@adguard.com).

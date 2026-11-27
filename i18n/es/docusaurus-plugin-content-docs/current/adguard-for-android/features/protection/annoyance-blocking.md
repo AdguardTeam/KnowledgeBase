@@ -13,4 +13,6 @@ La característica de Bloqueo de elementos molestos se puede acceder tocando la 
 
 Esta función se basa en los filtros de molestias de AdGuard y te permite bloquear ventanas emergentes, ventanas de asistente en línea, notificaciones de cookies, indicaciones para descargar aplicaciones móviles y molestias similares que no son anuncios pero que aun así restan valor a tu experiencia en línea. [Más información sobre los filtros de molestias](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Bloqueo de molestias \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+_Annoyance blocking_ is a section of the app where you can choose which categories of irritating elements to block. The toggle next to its name turns all of them on or off at once. Each option below is a separate filter: you can enable only the ones you need.
+
+![Annoyance blocking \*mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

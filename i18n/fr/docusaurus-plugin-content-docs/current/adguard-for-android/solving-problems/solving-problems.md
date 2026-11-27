@@ -16,7 +16,7 @@ Voici quelques problèmes auxquels vous pourriez faire face ainsi que des soluti
 - [Comment automatiser AdGuard pour Android](/adguard-for-android/solving-problems/tasker.md)
 - [Comment obtenir les journaux système](/adguard-for-android/solving-problems/logcat.md)
 - [Comment générer des fichiers HAR](/adguard-for-android/solving-problems/har.md)
-- [How to block ads in the YouTube app](adguard-for-android/solving-problems/youtube-ads.md)
+- [Comment bloquer les publicités dans l'application YouTube](adguard-for-android/solving-problems/youtube-ads.md)
 - [Comment configurer un proxy sortant](/adguard-for-android/solving-problems/outbound-proxy.md)
 - [Comment empêcher AdGuard d'être désactivé par le système](/adguard-for-android/solving-problems/background-work.md)
 - [Problèmes causés par plusieurs profils d'utilisateurs](/adguard-for-android/solving-problems/multiple-user-profiles.md)
